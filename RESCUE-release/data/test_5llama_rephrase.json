@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "A dinner out for the Smith family included a $40 steak, pasta for $15, and a $25 salad. When handing over $100 to cover these items along with a 10% tax and a 5% tip, what amount of change is due to Mr. Smith?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 2,
+    "question": "While visiting a cafe, the Johnsons ordered coffee for $20, a $15 sandwich, and a $15 pastry. Determine the change they will get from their $100, factoring in a 10% service charge plus a 10% tip.",
+    "ground_truth": "40"
+  },
+  {
+    "id": 3,
+    "question": "Out of a $150 payment, how much change will Alice collect after dining at a seafood restaurant where she had lobster for $50, crab soup for $30, and calamari for $20, with the bill subjected to an 8% tax and a 7% tip?",
+    "ground_truth": "35"
+  },
+  {
+    "id": 4,
+    "question": "For a dinner party hosted by Bob, $100 was charged for roast duck, $60 for fine wine, and $40 for a dessert platter. Calculate the change he gets back from his $300 after a 5% tax and 15% tip are applied.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 5,
+    "question": "Priced at $15, $10, and $15 respectively, a burger, fries, and a milkshake were purchased by Clara at a diner. If the final transaction includes a 15% service charge alongside a 5% tax, what will be the change she receives when paying with $50?",
+    "ground_truth": "2"
+  },
+  {
+    "id": 6,
+    "question": "An ordered banquet for the Chen family consisted of peking duck at $70, dumplings at $50, and noodles at $30. Assuming the bill incorporates a 10% tax and an 8% tip, figure out the change Mr. Chen will receive from his $200.",
+    "ground_truth": "23"
+  },
+  {
+    "id": 7,
+    "question": "Eating at a steakhouse, David consumed a ribeye costing $120, a loaded potato for $80, and asparagus for $50. How much change is left from $300 once a 6% tax and a 4% service charge are appended to the cost?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 8,
+    "question": "During a buffet trip with friends, Elena's group incurred costs of $150 for adult meals, $90 for kids meals, and $60 for drinks. From her $400, what will be the returned change if a 12% tax and an 8% tip are factored in?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 9,
+    "question": "Getting takeout, the Garcia family chose a family pizza for $20, wings for $25, and sodas for $15. Calculate the change they are owed from $100 after paying a 5% tax and a 10% delivery fee on the order.",
+    "ground_truth": "31"
+  },
+  {
+    "id": 10,
+    "question": "Out of $150, what change will Frank be handed back after a sushi bar visit where sashimi was $50, rolls were $40, and sake was $30, given that the total must include a 10% tax and a 5% tip?",
+    "ground_truth": "12"
+  },
+  {
+    "id": 11,
+    "question": "Gina's online clothing order featured a dress for $40, a hat for $15, and a belt for $25. Taking into account a 10% tax and a 5% shipping fee, how much change remains on her $100 gift card?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 12,
+    "question": "When buying sporting goods, Harry selected a basketball for $20, a pump for $15, and a water bottle for $15. Determine the change received from his $100 if the bill encompasses a 10% tax and a 10% handling fee.",
+    "ground_truth": "40"
+  },
+  {
+    "id": 13,
+    "question": "Priced at $50 for foundation, $30 for lipstick, and $20 for mascara, cosmetics were ordered by Irene. If her bill levies an 8% tax and a 7% delivery fee, how much change will she get from $150?",
+    "ground_truth": "35"
+  },
+  {
+    "id": 14,
+    "question": "Online camping gear purchases made by Jack included a $100 tent, a $60 sleeping bag, and a $40 lantern. From $300, how much change will Jack obtain after a 5% tax and a 15% expedited shipping fee are attached?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 15,
+    "question": "Buying books online, Karen picked out a novel for $15, a bookmark for $10, and a magazine for $15. Subject to a 15% tax and a 5% packaging fee, what change will she receive back from $50?",
+    "ground_truth": "2"
+  },
+  {
+    "id": 16,
+    "question": "For his art supplies, Leo acquired an easel costing $70, paints at $50, and brushes at $30. Calculate the change he will collect from his $200 given a 10% tax and an 8% delivery charge on the bill.",
+    "ground_truth": "23"
+  },
+  {
+    "id": 17,
+    "question": "Home decor ordered by Maria consisted of a rug for $120, a lamp for $80, and a vase for $50. How much change will be left from her $300 once a 6% tax and a 4% shipping fee are added?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 18,
+    "question": "Nate's online car parts haul featured a $150 battery, $90 brake pads, and $60 filters. Deducting a 12% tax and an 8% freight fee, what amount of change will he receive from $400?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 19,
+    "question": "Purchasing skincare products, Olivia chose a cleanser for $20, a serum for $25, and a toner for $15. Figure out the change returned from $100 if the transaction is subjected to a 5% tax and a 10% shipping fee.",
+    "ground_truth": "31"
+  },
+  {
+    "id": 20,
+    "question": "Kitchenware bought by Paul included a $50 pan, a $40 spatula set, and $30 mixing bowls. With a 10% tax and a 5% delivery fee applied, how much change will Paul pocket from his $150?",
+    "ground_truth": "12"
+  },
+  {
+    "id": 21,
+    "question": "During a trip to the spa, Quinn got a massage for $40, a facial for $15, and a manicure for $25. From her $100, what will her change be after factoring in a 10% tax and a 5% service tip?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 22,
+    "question": "Rachel's stay at a spa resort accrued charges of $20 for a day pass, $15 for a locker, and $15 for towel rental. Determine the change from $100 if a 10% tax and a 10% resort fee are included in the bill.",
+    "ground_truth": "40"
+  },
+  {
+    "id": 23,
+    "question": "A hotel room booked by Sam incurred costs of $50 for the night stay, $30 for room service, and $20 for a movie rental. What change will Sam receive out of $150 considering an 8% tax and a 7% service charge?",
+    "ground_truth": "35"
+  },
+  {
+    "id": 24,
+    "question": "Visiting a luxury resort, Tina paid for a $100 suite, a $60 spa treatment, and a $40 dinner. Calculate the change she will see from her $300 after a 5% tax and a 15% gratuity are added.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 25,
+    "question": "Uma's hot spring visit cost $15 for entry, $10 for a robe rental, and $15 for a drink. If the bill demands a 15% tax and a 5% environmental fee, what change will she receive from $50?",
+    "ground_truth": "2"
+  },
+  {
+    "id": 26,
+    "question": "While staying at a boutique hotel, Victor racked up a $70 room charge, $50 from the minibar, and $30 for laundry service. How much change will be returned from his $200 with a 10% tax and an 8% service charge applied?",
+    "ground_truth": "23"
+  },
+  {
+    "id": 27,
+    "question": "For Wendy's vacation rental booking, the nightly rate was $120, the cleaning fee was $80, and the pet fee was $50. Figure out the change from her $300 assuming a 6% tax and a 4% platform fee.",
+    "ground_truth": "25"
+  },
+  {
+    "id": 28,
+    "question": "Reserving a venue, Xander was quoted $150 for the hall, $90 for catering, and $60 for decorations. With a 12% tax and an 8% service charge included, how much change will he get back from $400?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 29,
+    "question": "Going to a wellness center, Yara spent $20 on a yoga class, $25 on a smoothie, and $15 on merchandise. Determine the change from her $100 if the bill carries a 5% tax and a 10% facility fee.",
+    "ground_truth": "31"
+  },
+  {
+    "id": 30,
+    "question": "Zack's bed and breakfast stay featured a room for $50, a guided tour for $40, and a souvenir for $30. What change will Zack receive from $150 after adding a 10% tax and a 5% service charge?",
+    "ground_truth": "12"
+  },
+  {
+    "id": 31,
+    "question": "Buying tech accessories, Amy picked out a mouse for $40, a mousepad for $15, and cables for $25. Subject to a 10% tax and a 5% recycling fee, what change will Amy get from her $100?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 32,
+    "question": "Ben's gaming gear purchase consisted of a $20 controller, a $15 headset, and a $15 game. Calculate the change he will receive from his $100 if the bill involves a 10% tax and a 10% warranty fee.",
+    "ground_truth": "40"
+  },
+  {
+    "id": 33,
+    "question": "Smart home devices bought by Chloe included a smart speaker for $50, a smart bulb for $30, and a smart plug for $20. Out of her $150, how much change is she owed when an 8% tax and a 7% shipping fee are added?",
+    "ground_truth": "35"
+  },
+  {
+    "id": 34,
+    "question": "For his computer setup, Dan obtained a monitor costing $100, a keyboard costing $60, and a webcam costing $40. Figure out the change returned from $300 given a 5% tax and a 15% delivery fee on the bill.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 35,
+    "question": "Eve selected phone accessories consisting of a $15 case, a $10 screen protector, and a $15 charger. What amount of change will she get from $50 if the total gets a 15% tax and a 5% environmental fee?",
+    "ground_truth": "2"
+  },
+  {
+    "id": 36,
+    "question": "Purchasing audio equipment, Finn got headphones for $70, a microphone for $50, and a stand for $30. How much change will be left from $200 after a 10% tax and an 8% warranty fee are applied?",
+    "ground_truth": "23"
+  },
+  {
+    "id": 37,
+    "question": "Grace's new photography gear included a $120 tripod, an $80 lens, and a $50 bag. Deducting a 6% tax and a 4% processing fee, what will her change be from $300?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 38,
+    "question": "Home theater parts purchased by Henry were a soundbar for $150, a subwoofer for $90, and cables for $60. With a 12% tax and an 8% delivery fee included, what change will Henry receive from $400?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 39,
+    "question": "Ivy's fitness wearables haul featured a $20 fitness band, extra straps for $25, and a $15 charger. Determine her change from $100 considering a 5% tax and a 10% shipping fee.",
+    "ground_truth": "31"
+  },
+  {
+    "id": 40,
+    "question": "Jake acquired a drone kit that had a drone body for $50, a remote for $40, and a spare battery for $30. How much change will Jake get from his $150 if the bill applies a 10% tax and a 5% handling fee?",
+    "ground_truth": "12"
+  },
+  {
+    "id": 41,
+    "question": "At the pet store, Kate picked up premium dog food for $40, a collar for $15, and toys for $25. What change will Kate receive from $100 assuming the bill includes a 10% tax and a 5% donation to a shelter?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 42,
+    "question": "Cat supplies bought by Luke included litter for $20, treats for $15, and a brush for $15. Calculate the change he will obtain from $100 after factoring in a 10% tax and a 10% delivery fee.",
+    "ground_truth": "40"
+  },
+  {
+    "id": 43,
+    "question": "Mia obtained bird accessories: a cage for $50, seeds for $30, and toys for $20. If her bill has an 8% tax and a 7% shipping fee added to it, how much change is due from $150?",
+    "ground_truth": "35"
+  },
+  {
+    "id": 44,
+    "question": "Noah's aquarium gear consisted of a $100 tank, a $60 filter, and $40 in decorations. Figure out the change returned to Noah from $300 given a 5% tax and a 15% installation fee.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 45,
+    "question": "Buying reptile food, Owen grabbed crickets for $15, calcium powder for $10, and a heat lamp bulb for $15. What change will he receive from $50 if a 15% tax and a 5% processing fee are charged?",
+    "ground_truth": "2"
+  },
+  {
+    "id": 46,
+    "question": "Piper procured supplies for her rabbit featuring a hutch for $70, hay for $50, and pellets for $30. Determine the change from her $200 once a 10% tax and an 8% delivery fee are attached.",
+    "ground_truth": "23"
+  },
+  {
+    "id": 47,
+    "question": "Horse tack purchased by Quinn involved a blanket for $120, a halter for $80, and a grooming kit for $50. How much change will be handed back from $300 if the bill encompasses a 6% tax and a 4% handling fee?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 48,
+    "question": "Ryan acquired luxury pet furniture: a cat tree for $150, an orthopedic bed for $90, and a scratching post for $60. With a 12% tax and an 8% freight fee included, what change will he receive out of $400?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 49,
+    "question": "Small animal gear chosen by Sara included a hamster wheel for $20, bedding for $25, and a food bowl for $15. From $100, how much change will she get after a 5% tax and a 10% delivery fee are calculated?",
+    "ground_truth": "31"
+  },
+  {
+    "id": 50,
+    "question": "Tom's grooming supplies haul contained clippers for $50, shampoo for $40, and towels for $30. If his bill features a 10% tax and a 5% handling fee, what change will Tom collect from $150?",
+    "ground_truth": "12"
+  },
+  {
+    "id": 51,
+    "question": "Uma's trip to the hair salon resulted in a $40 haircut, a $15 shampoo bottle, and $25 styling gel. Calculate the change she will get from her $100 when a 10% tax and a 5% tip are factored in.",
+    "ground_truth": "8"
+  },
+  {
+    "id": 52,
+    "question": "Visiting the barber, Vince got a shave for $20, beard oil for $15, and a comb for $15. How much change will he receive from $100 given that the bill includes a 10% tax and a 10% tip?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 53,
+    "question": "A spa treatment for Will involved a facial for $50, a mud mask for $30, and lotion for $20. Figure out the change returned from $150 assuming an 8% tax and a 7% tip.",
+    "ground_truth": "35"
+  },
+  {
+    "id": 54,
+    "question": "Xena received a full makeover comprising hair coloring for $100, styling for $60, and a makeup session for $40. With a 5% tax and a 15% tip added to the bill, how much change will she get from $300?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 55,
+    "question": "For her manicure, Yara selected basic polish for $15, cuticle oil for $10, and nail art for $15. Determine her change from $50 if a 15% tax and a 5% tip are levied.",
+    "ground_truth": "2"
+  },
+  {
+    "id": 56,
+    "question": "Zane paid for a premium hair service involving highlights for $70, toner for $50, and a blowout for $30. What change will Zane be handed from $200 after a 10% tax and an 8% tip are applied?",
+    "ground_truth": "23"
+  },
+  {
+    "id": 57,
+    "question": "Anna's trip to a wellness clinic featured skin therapy for $120, special cream for $80, and a consultation for $50. How much change will she collect from $300 if the bill incorporates a 6% tax and a 4% service charge?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 58,
+    "question": "Booking a couples spa package, Brian was charged $150 for a massage, $90 for aromatherapy, and $60 for a private bath. From his $400, what will be the change given a 12% tax and an 8% tip?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 59,
+    "question": "Salon products picked up by Cole were hair spray for $20, dry shampoo for $25, and leave-in conditioner for $15. Calculate the change he will get from $100 considering a 5% tax and a 10% processing fee.",
+    "ground_truth": "31"
+  },
+  {
+    "id": 60,
+    "question": "Going for a pedicure, Diana opted for a luxury pedicure at $50, a scrub at $40, and a massage at $30. How much change will she receive from $150 after adding a 10% tax and a 5% tip?",
+    "ground_truth": "12"
+  },
+  {
+    "id": 61,
+    "question": "Evan's auto shop visit included an oil change for $40, wiper blades for $15, and an air filter for $25. Figure out the change returned from $100 if the bill possesses a 10% tax and a 5% disposal fee.",
+    "ground_truth": "8"
+  },
+  {
+    "id": 62,
+    "question": "At the hardware store, Fiona grabbed a hammer for $20, nails for $15, and a tape measure for $15. What change will she obtain from $100 if a 10% tax and a 10% service fee are added?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 63,
+    "question": "Gardening tools purchased by George consisted of a shovel for $50, a rake for $30, and gloves for $20. Determine his change from $150 when the total includes an 8% tax and a 7% handling fee.",
+    "ground_truth": "35"
+  },
+  {
+    "id": 64,
+    "question": "Getting her car repaired, Hannah needed a new tire for $100, an alignment for $60, and balancing for $40. How much change will she get from $300 assuming a 5% tax and a 15% labor fee?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 65,
+    "question": "Painting supplies chosen by Ian included a paint can for $15, brushes for $10, and a drop cloth for $15. Calculate the change he will receive from $50 if a 15% tax and a 5% environmental fee apply.",
+    "ground_truth": "2"
+  },
+  {
+    "id": 66,
+    "question": "Plumbing parts bought by Jack featured pipes for $70, wrenches for $50, and sealants for $30. With a 10% tax and an 8% delivery fee added, what change will Jack see from his $200?",
+    "ground_truth": "23"
+  },
+  {
+    "id": 67,
+    "question": "Kara acquired patio furniture comprising a chair for $120, a table for $80, and an umbrella for $50. From her $300, how much change is left when a 6% tax and a 4% assembly fee are factored in?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 68,
+    "question": "Having his brakes done, Liam paid $150 for rotors, $90 for calipers, and $60 for pads. What change will he collect out of $400 if the bill holds a 12% tax and an 8% labor fee?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 69,
+    "question": "Car cleaning supplies obtained by Maya were wax for $20, polish for $25, and microfiber towels for $15. Determine the change from her $100 once a 5% tax and a 10% shipping fee are charged.",
+    "ground_truth": "31"
+  },
+  {
+    "id": 70,
+    "question": "Nolan's power tools purchase consisted of a drill for $50, a battery for $40, and drill bits for $30. Figure out the change he will receive from $150 if the transaction includes a 10% tax and a 5% warranty fee.",
+    "ground_truth": "12"
+  },
+  {
+    "id": 71,
+    "question": "Going to the cinema, Olivia bought tickets for $40, popcorn for $15, and drinks for $25. How much change will be returned from $100 after a 10% amusement tax and a 5% booking fee are calculated?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 72,
+    "question": "During Peter's visit to an arcade, he got a token package for $20, laser tag for $15, and a VR ride for $15. What change will he receive from $100 given a 10% tax and a 10% venue fee on the bill?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 73,
+    "question": "Quinn procured concert tickets, with entry at $50, parking at $30, and a tour poster at $20. Assuming an 8% tax and a 7% convenience fee, calculate her change from $150.",
+    "ground_truth": "35"
+  },
+  {
+    "id": 74,
+    "question": "Rose's theme park trip cost $100 for admission, $60 for a fast pass, and $40 for a meal voucher. Determine the change she will get from $300 after adding a 5% tax and a 15% service charge.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 75,
+    "question": "When Sean went bowling, lane rental cost $15, shoe rental was $10, and snacks were $15. How much change will Sean receive from his $50 if the bill demands a 15% tax and a 5% maintenance fee?",
+    "ground_truth": "2"
+  },
+  {
+    "id": 76,
+    "question": "Tara booked an escape room featuring room booking for $70, a hint package for $50, and souvenir photos for $30. What change will she obtain from $200 considering a 10% tax and an 8% booking fee?",
+    "ground_truth": "23"
+  },
+  {
+    "id": 77,
+    "question": "Visiting a water park, Upton paid $120 for a cabana, $80 for tickets, and $50 for tube rentals. With a 6% tax and a 4% resort fee included in the bill, how much change is due from $300?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 78,
+    "question": "Vera hosted a roller skating party where rink rental was $150, pizza was $90, and skate rentals were $60. Figure out the change received from $400 if a 12% tax and an 8% gratuity apply.",
+    "ground_truth": "40"
+  },
+  {
+    "id": 79,
+    "question": "Wyatt's museum visit featured general admission for $20, a special exhibit for $25, and an audio guide for $15. How much change will Wyatt get from $100 after a 5% tax and a 10% processing fee are attached?",
+    "ground_truth": "31"
+  },
+  {
+    "id": 80,
+    "question": "Going to a baseball game, Ximena spent $50 on tickets, $40 on hot dogs, and $30 on merchandise. Determine the change from her $150 if a 10% tax and a 5% facility fee are factored into the bill.",
+    "ground_truth": "12"
+  },
+  {
+    "id": 81,
+    "question": "Yuri bought books at the bookstore: a hardcover for $40, a paperback for $15, and a journal for $25. What change will he receive from $100 after calculating a 10% tax and a 5% bag fee?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 82,
+    "question": "Stationery picked up by Zara included pens for $20, notebooks for $15, and highlighters for $15. Calculate the change she will get from $100 assuming the total is subject to a 10% tax and a 10% handling fee.",
+    "ground_truth": "40"
+  },
+  {
+    "id": 83,
+    "question": "Adam acquired craft supplies consisting of yarn for $50, knitting needles for $30, and a pattern book for $20. How much change will be returned to Adam from $150 when an 8% tax and a 7% delivery fee are added?",
+    "ground_truth": "35"
+  },
+  {
+    "id": 84,
+    "question": "Sewing equipment bought by Bella featured a sewing machine for $100, fabric for $60, and a thread set for $40. Determine her change from $300 if the bill possesses a 5% tax and a 15% shipping fee.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 85,
+    "question": "Carter purchased school supplies including binders for $15, paper for $10, and pencils for $15. What change will he receive from $50 once a 15% tax and a 5% processing fee are included?",
+    "ground_truth": "2"
+  },
+  {
+    "id": 86,
+    "question": "Daisy's scrapbooking materials consisted of an album for $70, stickers for $50, and special paper for $30. Figure out the change received from $200 if a 10% tax and an 8% handling fee are placed on the bill.",
+    "ground_truth": "23"
+  },
+  {
+    "id": 87,
+    "question": "Ethan obtained drafting tools featuring a drawing board for $120, markers for $80, and rulers for $50. With a 6% tax and a 4% shipping fee added, how much change will he get back from $300?",
+    "ground_truth": "25"
+  },
+  {
+    "id": 88,
+    "question": "Painting materials chosen by Fiona were a canvas pack for $150, oil paints for $90, and an easel for $60. How much change will she get from $400 given a 12% tax and an 8% delivery fee?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 89,
+    "question": "Origami supplies bought by Gavin involved folding paper for $20, an instruction book for $25, and a bone folder for $15. Calculate the change from his $100 if the transaction includes a 5% tax and a 10% shipping fee.",
+    "ground_truth": "31"
+  },
+  {
+    "id": 90,
+    "question": "Calligraphy tools procured by Hazel were ink for $50, nibs for $40, and practice pads for $30. Determine the change she will receive from $150 when a 10% tax and a 5% handling fee are factored in.",
+    "ground_truth": "12"
+  },
+  {
+    "id": 91,
+    "question": "Ian's trip to the grocery store yielded meat for $40, vegetables for $15, and fruit for $25. Assuming a 10% tax and a 5% delivery fee, what change will Ian collect from $100?",
+    "ground_truth": "8"
+  },
+  {
+    "id": 92,
+    "question": "Visiting the farmer's market, Jane purchased honey for $20, jam for $15, and bread for $15. How much change will she see from her $100 if the bill demands a 10% tax and a 10% service fee?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 93,
+    "question": "Organic foods acquired by Kyle included quinoa for $50, almond butter for $30, and chia seeds for $20. What change will he receive from $150 after adding an 8% tax and a 7% handling fee?",
+    "ground_truth": "35"
+  },
+  {
+    "id": 94,
+    "question": "Lily's bulk groceries haul featured rice for $100, beans for $60, and canned goods for $40. Figure out the change she gets from $300 if a 5% tax and a 15% freight fee apply.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 95,
+    "question": "Mason bought snacks: chips for $15, pretzels for $10, and dips for $15. Determine the change from his $50 given that the bill contains a 15% tax and a 5% bag fee.",
+    "ground_truth": "2"
+  },
+  {
+    "id": 96,
+    "question": "Nora got seafood at the market, choosing salmon for $70, shrimp for $50, and scallops for $30. With a 10% tax and an 8% processing fee included, how much change will she receive from $200?",
+    "ground_truth": "23"
+  },
+  {
+    "id": 97,
+    "question": "Specialty cheeses bought by Oscar consisted of brie for $120, gouda for $80, and crackers for $50. Calculate the change he will obtain from $300 after a 6% tax and a 4% shipping fee are charged.",
+    "ground_truth": "25"
+  },
+  {
+    "id": 98,
+    "question": "Penelope purchased wine and spirits including champagne for $150, red wine for $90, and spirits for $60. What change will she be returned from $400 if the bill holds a 12% tax and an 8% handling fee?",
+    "ground_truth": "40"
+  },
+  {
+    "id": 99,
+    "question": "Baking ingredients obtained by Quinn were flour for $20, sugar for $25, and vanilla extract for $15. How much change will she collect from $100 assuming the total is subject to a 5% tax and a 10% delivery fee?",
+    "ground_truth": "31"
+  },
+  {
+    "id": 100,
+    "question": "Riley's frozen foods haul had pizza for $50, ice cream for $40, and frozen veggies for $30. Determine the change from his $150 when a 10% tax and a 5% insulated packaging fee are added.",
+    "ground_truth": "12"
+  }
+]

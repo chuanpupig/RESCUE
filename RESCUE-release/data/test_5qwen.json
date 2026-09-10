@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "Liam is out collecting apples in baskets for his cellar. He starts off by getting 4 baskets with 5 apples each. He then gets 5 baskets with 6 apples each. He then adds another 3 baskets with 7 apples each. Lastly he gets 6 baskets with 4 apples each. As he's bringing these over to the cellar, he drops 1 of each basket and they are lost. He puts the remaining apples in the cellar. How many apples in total are in the cellar?",
+    "ground_truth": "73",
+    "generation": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \nFinal Answer: 95",
+    "pred_answer_masked": "95",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \n5. Subtract 1 dropped container of each type: 95 - (5 + 6 + 7 + 4) = 73  \nFinal Answer: 73"
+  },
+  {
+    "id": 2,
+    "question": "Olivia is out collecting cookies in boxes for her jar. She starts off by getting 5 boxes with 3 cookies each. She then gets 4 boxes with 8 cookies each. She then adds another 6 boxes with 5 cookies each. Lastly she gets 3 boxes with 10 cookies each. As she's bringing these over to the jar, she drops 1 of each box and they are lost. She puts the remaining cookies in the jar. How many cookies in total are in the jar?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \n5. Subtract 1 dropped container of each type: 107 - (3 + 8 + 5 + 10) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 3,
+    "question": "Noah is out collecting marbles in bags for his chest. He starts off by getting 3 bags with 8 marbles each. He then gets 6 bags with 4 marbles each. He then adds another 4 bags with 6 marbles each. Lastly he gets 5 bags with 5 marbles each. As he's bringing these over to the chest, he drops 1 of each bag and they are lost. He puts the remaining marbles in the chest. How many marbles in total are in the chest?",
+    "ground_truth": "74",
+    "generation": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \nFinal Answer: 97",
+    "pred_answer_masked": "97",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \n5. Subtract 1 dropped container of each type: 97 - (8 + 4 + 6 + 5) = 74  \nFinal Answer: 74"
+  },
+  {
+    "id": 4,
+    "question": "Emma is out collecting coins in pouches for her safe. She starts off by getting 6 pouches with 2 coins each. He then gets 5 pouches with 4 coins each. She then adds another 4 pouches with 7 coins each. Lastly she gets 3 pouches with 9 coins each. As she's bringing these over to the safe, she drops 1 of each pouch and they are lost. She puts the remaining coins in the safe. How many coins in total are in the safe?",
+    "ground_truth": "65",
+    "generation": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \nFinal Answer: 87",
+    "pred_answer_masked": "87",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \n5. Subtract 1 dropped container of each type: 87 - (2 + 4 + 7 + 9) = 65  \nFinal Answer: 65"
+  },
+  {
+    "id": 5,
+    "question": "Ava is out collecting stamps in envelopes for her album. She starts off by getting 4 envelopes with 6 stamps each. She then gets 3 envelopes with 9 stamps each. She then adds another 5 envelopes with 7 stamps each. Lastly she gets 6 envelopes with 5 stamps each. As she's bringing these over to the album, she drops 1 of each envelope and they are lost. She puts the remaining stamps in the album. How many stamps in total are in the album?",
+    "ground_truth": "89",
+    "generation": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \nFinal Answer: 116",
+    "pred_answer_masked": "116",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 116 - (6 + 9 + 7 + 5) = 89  \nFinal Answer: 89"
+  },
+  {
+    "id": 6,
+    "question": "Oliver is out collecting shells in buckets for his display. He starts off by getting 5 buckets with 5 shells each. He then gets 6 buckets with 3 shells each. He then adds another 4 buckets with 8 shells each. Lastly he gets 3 buckets with 12 shells each. As he's bringing these over to the display, he drops 1 of each bucket and they are lost. He puts the remaining shells in the display. How many shells in total are in the display?",
+    "ground_truth": "83",
+    "generation": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \n5. Subtract 1 dropped container of each type: 105 - (5 + 3 + 8 + 12) = 83  \nFinal Answer: 83"
+  },
+  {
+    "id": 7,
+    "question": "Isabella is out collecting blocks in cartons for her toy box. She starts off by getting 3 cartons with 10 blocks each. She then gets 4 cartons with 9 blocks each. She then adds another 5 cartons with 4 blocks each. Lastly she gets 6 cartons with 6 blocks each. As she's bringing these over to the toy box, she drops 1 of each carton and they are lost. She puts the remaining blocks in the toy box. How many blocks in total are in the toy box?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \n5. Subtract 1 dropped container of each type: 122 - (10 + 9 + 4 + 6) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 8,
+    "question": "Elijah is out collecting beads in jars for his craft organizer. He starts off by getting 6 jars with 4 beads each. He then gets 3 jars with 11 beads each. He then adds another 4 jars with 5 beads each. Lastly he gets 5 jars with 6 beads each. As he's bringing these over to the craft organizer, he drops 1 of each jar and they are lost. He puts the remaining beads in the craft organizer. How many beads in total are in the craft organizer?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \n5. Subtract 1 dropped container of each type: 107 - (4 + 11 + 5 + 6) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 9,
+    "question": "Sophia is out collecting cards in packs for her binder. She starts off by getting 4 packs with 7 cards each. She then gets 5 packs with 5 cards each. She then adds another 6 packs with 6 cards each. Lastly she gets 3 packs with 8 cards each. As she's bringing these over to the binder, she drops 1 of each pack and they are lost. She puts the remaining cards in the binder. How many cards in total are in the binder?",
+    "ground_truth": "87",
+    "generation": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \nFinal Answer: 113",
+    "pred_answer_masked": "113",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \n5. Subtract 1 dropped container of each type: 113 - (7 + 5 + 6 + 8) = 87  \nFinal Answer: 87"
+  },
+  {
+    "id": 10,
+    "question": "William is out collecting gems in sacks for his vault. He starts off by getting 5 sacks with 8 gems each. He then gets 4 sacks with 4 gems each. He then adds another 3 sacks with 12 gems each. Lastly he gets 6 sacks with 5 gems each. As he's bringing these over to the vault, he drops 1 of each sack and they are lost. He puts the remaining gems in the vault. How many gems in total are in the vault?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 122 - (8 + 4 + 12 + 5) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 11,
+    "question": "Mia is out collecting seeds in packets for her garden shed. She starts off by getting 4 packets with 5 seeds each. She then gets 5 packets with 6 seeds each. She then adds another 3 packets with 7 seeds each. Lastly she gets 6 packets with 4 seeds each. As she's bringing these over to the garden shed, she drops 1 of each packet and they are lost. She puts the remaining seeds in the garden shed. How many seeds in total are in the garden shed?",
+    "ground_truth": "73",
+    "generation": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \nFinal Answer: 95",
+    "pred_answer_masked": "95",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \n5. Subtract 1 dropped container of each type: 95 - (5 + 6 + 7 + 4) = 73  \nFinal Answer: 73"
+  },
+  {
+    "id": 12,
+    "question": "James is out collecting candies in tins for his bowl. He starts off by getting 5 tins with 3 candies each. He then gets 4 tins with 8 candies each. He then adds another 6 tins with 5 candies each. Lastly he gets 3 tins with 10 candies each. As he's bringing these over to the bowl, he drops 1 of each tin and they are lost. He puts the remaining candies in the bowl. How many candies in total are in the bowl?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 5 tins * 3 candies = 15  \n2. 4 tins * 8 candies = 32  \n3. 6 tins * 5 candies = 30  \n4. 3 tins * 10 candies = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 tins * 3 candies = 15  \n2. 4 tins * 8 candies = 32  \n3. 6 tins * 5 candies = 30  \n4. 3 tins * 10 candies = 30  \n5. Subtract 1 dropped container of each type: 107 - (3 + 8 + 5 + 10) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 13,
+    "question": "Charlotte is out collecting buttons in cups for her sewing kit. She starts off by getting 3 cups with 8 buttons each. She then gets 6 cups with 4 buttons each. She then adds another 4 cups with 6 buttons each. Lastly she gets 5 cups with 5 buttons each. As she's bringing these over to the sewing kit, she drops 1 of each cup and they are lost. She puts the remaining buttons in the sewing kit. How many buttons in total are in the sewing kit?",
+    "ground_truth": "74",
+    "generation": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \nFinal Answer: 97",
+    "pred_answer_masked": "97",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \n5. Subtract 1 dropped container of each type: 97 - (8 + 4 + 6 + 5) = 74  \nFinal Answer: 74"
+  },
+  {
+    "id": 14,
+    "question": "Benjamin is out collecting nuts in bowls for his pantry. He starts off by getting 6 bowls with 2 nuts each. He then gets 5 bowls with 4 nuts each. He then adds another 4 bowls with 7 nuts each. Lastly he gets 3 bowls with 9 nuts each. As he's bringing these over to the pantry, he drops 1 of each bowl and they are lost. He puts the remaining nuts in the pantry. How many nuts in total are in the pantry?",
+    "ground_truth": "65",
+    "generation": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \nFinal Answer: 87",
+    "pred_answer_masked": "87",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \n5. Subtract 1 dropped container of each type: 87 - (2 + 4 + 7 + 9) = 65  \nFinal Answer: 65"
+  },
+  {
+    "id": 15,
+    "question": "Amelia is out collecting pebbles in pails for her terrarium. She starts off by getting 4 pails with 6 pebbles each. She then gets 3 pails with 9 pebbles each. She then adds another 5 pails with 7 pebbles each. Lastly she gets 6 pails with 5 pebbles each. As she's bringing these over to the terrarium, she drops 1 of each pail and they are lost. She puts the remaining pebbles in the terrarium. How many pebbles in total are in the terrarium?",
+    "ground_truth": "89",
+    "generation": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \nFinal Answer: 116",
+    "pred_answer_masked": "116",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 116 - (6 + 9 + 7 + 5) = 89  \nFinal Answer: 89"
+  },
+  {
+    "id": 16,
+    "question": "Lucas is out collecting rings in cases for his jewelry box. He starts off by getting 5 cases with 5 rings each. He then gets 6 cases with 3 rings each. He then adds another 4 cases with 8 rings each. Lastly he gets 3 cases with 12 rings each. As he's bringing these over to the jewelry box, he drops 1 of each case and they are lost. He puts the remaining rings in the jewelry box. How many rings in total are in the jewelry box?",
+    "ground_truth": "83",
+    "generation": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \n5. Subtract 1 dropped container of each type: 105 - (5 + 3 + 8 + 12) = 83  \nFinal Answer: 83"
+  },
+  {
+    "id": 17,
+    "question": "Harper is out collecting markers in sets for her desk drawer. She starts off by getting 3 sets with 10 markers each. She then gets 4 sets with 9 markers each. She then adds another 5 sets with 4 markers each. Lastly she gets 6 sets with 6 markers each. As she's bringing these over to the desk drawer, she drops 1 of each set and they are lost. She puts the remaining markers in the desk drawer. How many markers in total are in the desk drawer?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \n5. Subtract 1 dropped container of each type: 122 - (10 + 9 + 4 + 6) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 18,
+    "question": "Mason is out collecting bolts in trays for his toolbox. He starts off by getting 6 trays with 4 bolts each. He then gets 3 trays with 11 bolts each. He then adds another 4 trays with 5 bolts each. Lastly he gets 5 trays with 6 bolts each. As he's bringing these over to the toolbox, he drops 1 of each tray and they are lost. He puts the remaining bolts in the toolbox. How many bolts in total are in the toolbox?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \n5. Subtract 1 dropped container of each type: 107 - (4 + 11 + 5 + 6) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 19,
+    "question": "Evelyn is out collecting stickers in sheets for her scrapbook. She starts off by getting 4 sheets with 7 stickers each. She then gets 5 sheets with 5 stickers each. She then adds another 6 sheets with 6 stickers each. Lastly she gets 3 sheets with 8 stickers each. As she's bringing these over to the scrapbook, she drops 1 of each sheet and they are lost. She puts the remaining stickers in the scrapbook. How many stickers in total are in the scrapbook?",
+    "ground_truth": "87",
+    "generation": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \nFinal Answer: 113",
+    "pred_answer_masked": "113",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \n5. Subtract 1 dropped container of each type: 113 - (7 + 5 + 6 + 8) = 87  \nFinal Answer: 87"
+  },
+  {
+    "id": 20,
+    "question": "Ethan is out collecting pins in boxes for his corkboard. He starts off by getting 5 boxes with 8 pins each. He then gets 4 boxes with 4 pins each. He then adds another 3 boxes with 12 pins each. Lastly he gets 6 boxes with 5 pins each. As he's bringing these over to the corkboard, he drops 1 of each box and they are lost. He puts the remaining pins in the corkboard. How many pins in total are in the corkboard?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 122 - (8 + 4 + 12 + 5) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 21,
+    "question": "Alexander is out collecting pearls in pouches for his safe. He starts off by getting 4 pouches with 5 pearls each. He then gets 5 pouches with 6 pearls each. He then adds another 3 pouches with 7 pearls each. Lastly he gets 6 pouches with 4 pearls each. As he's bringing these over to the safe, he drops 1 of each pouch and they are lost. He puts the remaining pearls in the safe. How many pearls in total are in the safe?",
+    "ground_truth": "73",
+    "generation": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \nFinal Answer: 95",
+    "pred_answer_masked": "95",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \n5. Subtract 1 dropped container of each type: 95 - (5 + 6 + 7 + 4) = 73  \nFinal Answer: 73"
+  },
+  {
+    "id": 22,
+    "question": "Abigail is out collecting crayons in packs for her bin. She starts off by getting 5 packs with 3 crayons each. She then gets 4 packs with 8 crayons each. She then adds another 6 packs with 5 crayons each. Lastly she gets 3 packs with 10 crayons each. As she's bringing these over to the bin, she drops 1 of each pack and they are lost. She puts the remaining crayons in the bin. How many crayons in total are in the bin?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \n5. Subtract 1 dropped container of each type: 107 - (3 + 8 + 5 + 10) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 23,
+    "question": "Henry is out collecting nails in boxes for his shed. He starts off by getting 3 boxes with 8 nails each. He then gets 6 boxes with 4 nails each. He then adds another 4 boxes with 6 nails each. Lastly he gets 5 boxes with 5 nails each. As he's bringing these over to the shed, he drops 1 of each box and they are lost. He puts the remaining nails in the shed. How many nails in total are in the shed?",
+    "ground_truth": "74",
+    "generation": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \nFinal Answer: 97",
+    "pred_answer_masked": "97",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \n5. Subtract 1 dropped container of each type: 97 - (8 + 4 + 6 + 5) = 74  \nFinal Answer: 74"
+  },
+  {
+    "id": 24,
+    "question": "Emily is out collecting chocolates in boxes for her fridge. She starts off by getting 6 boxes with 2 chocolates each. She then gets 5 boxes with 4 chocolates each. She then adds another 4 boxes with 7 chocolates each. Lastly she gets 3 boxes with 9 chocolates each. As she's bringing these over to the fridge, she drops 1 of each box and they are lost. She puts the remaining chocolates in the fridge. How many chocolates in total are in the fridge?",
+    "ground_truth": "65",
+    "generation": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \nFinal Answer: 87",
+    "pred_answer_masked": "87",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \n5. Subtract 1 dropped container of each type: 87 - (2 + 4 + 7 + 9) = 65  \nFinal Answer: 65"
+  },
+  {
+    "id": 25,
+    "question": "Jacob is out collecting tickets in bundles for his drawer. He starts off by getting 4 bundles with 6 tickets each. He then gets 3 bundles with 9 tickets each. He then adds another 5 bundles with 7 tickets each. Lastly he gets 6 bundles with 5 tickets each. As he's bringing these over to the drawer, he drops 1 of each bundle and they are lost. He puts the remaining tickets in the drawer. How many tickets in total are in the drawer?",
+    "ground_truth": "89",
+    "generation": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \nFinal Answer: 116",
+    "pred_answer_masked": "116",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 116 - (6 + 9 + 7 + 5) = 89  \nFinal Answer: 89"
+  },
+  {
+    "id": 26,
+    "question": "Elizabeth is out collecting photos in folders for her album. She starts off by getting 5 folders with 5 photos each. She then gets 6 folders with 3 photos each. She then adds another 4 folders with 8 photos each. Lastly she gets 3 folders with 12 photos each. As she's bringing these over to the album, she drops 1 of each folder and they are lost. She puts the remaining photos in the album. How many photos in total are in the album?",
+    "ground_truth": "83",
+    "generation": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \n5. Subtract 1 dropped container of each type: 105 - (5 + 3 + 8 + 12) = 83  \nFinal Answer: 83"
+  },
+  {
+    "id": 27,
+    "question": "Michael is out collecting bricks in stacks for his yard. He starts off by getting 3 stacks with 10 bricks each. He then gets 4 stacks with 9 bricks each. He then adds another 5 stacks with 4 bricks each. Lastly he gets 6 stacks with 6 bricks each. As he's bringing these over to the yard, he drops 1 of each stack and they are lost. He puts the remaining bricks in the yard. How many bricks in total are in the yard?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \n5. Subtract 1 dropped container of each type: 122 - (10 + 9 + 4 + 6) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 28,
+    "question": "Mila is out collecting tokens in bags for her chest. She starts off by getting 6 bags with 4 tokens each. She then gets 3 bags with 11 tokens each. She then adds another 4 bags with 5 tokens each. Lastly she gets 5 bags with 6 tokens each. As she's bringing these over to the chest, she drops 1 of each bag and they are lost. She puts the remaining tokens in the chest. How many tokens in total are in the chest?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \n5. Subtract 1 dropped container of each type: 107 - (4 + 11 + 5 + 6) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 29,
+    "question": "Daniel is out collecting carrots in bunches for his fridge. He starts off by getting 4 bunches with 7 carrots each. He then gets 5 bunches with 5 carrots each. He then adds another 6 bunches with 6 carrots each. Lastly he gets 3 bunches with 8 carrots each. As he's bringing these over to the fridge, he drops 1 of each bunch and they are lost. He puts the remaining carrots in the fridge. How many carrots in total are in the fridge?",
+    "ground_truth": "87",
+    "generation": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \nFinal Answer: 113",
+    "pred_answer_masked": "113",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \n5. Subtract 1 dropped container of each type: 113 - (7 + 5 + 6 + 8) = 87  \nFinal Answer: 87"
+  },
+  {
+    "id": 30,
+    "question": "Ella is out collecting leaves in bags for her compost. She starts off by getting 5 bags with 8 leaves each. She then gets 4 bags with 4 leaves each. She then adds another 3 bags with 12 leaves each. Lastly she gets 6 bags with 5 leaves each. As she's bringing these over to the compost, she drops 1 of each bag and they are lost. She puts the remaining leaves in the compost. How many leaves in total are in the compost?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 122 - (8 + 4 + 12 + 5) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 31,
+    "question": "Logan is out collecting tulips in bouquets for his vase. He starts off by getting 4 bouquets with 5 tulips each. He then gets 5 bouquets with 6 tulips each. He then adds another 3 bouquets with 7 tulips each. Lastly he gets 6 bouquets with 4 tulips each. As he's bringing these over to the vase, he drops 1 of each bouquet and they are lost. He puts the remaining tulips in the vase. How many tulips in total are in the vase?",
+    "ground_truth": "73",
+    "generation": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \nFinal Answer: 95",
+    "pred_answer_masked": "95",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \n5. Subtract 1 dropped container of each type: 95 - (5 + 6 + 7 + 4) = 73  \nFinal Answer: 73"
+  },
+  {
+    "id": 32,
+    "question": "Avery is out collecting strawberries in punnets for her fridge. She starts off by getting 5 punnets with 3 strawberries each. She then gets 4 punnets with 8 strawberries each. She then adds another 6 punnets with 5 strawberries each. Lastly she gets 3 punnets with 10 strawberries each. As she's bringing these over to the fridge, she drops 1 of each punnet and they are lost. She puts the remaining strawberries in the fridge. How many strawberries in total are in the fridge?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \n5. Subtract 1 dropped container of each type: 107 - (3 + 8 + 5 + 10) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 33,
+    "question": "Jackson is out collecting logs in bundles for his fireplace. He starts off by getting 3 bundles with 8 logs each. He then gets 6 bundles with 4 logs each. He then adds another 4 bundles with 6 logs each. Lastly he gets 5 bundles with 5 logs each. As he's bringing these over to the fireplace, he drops 1 of each bundle and they are lost. He puts the remaining logs in the fireplace. How many logs in total are in the fireplace?",
+    "ground_truth": "74",
+    "generation": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \nFinal Answer: 97",
+    "pred_answer_masked": "97",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \n5. Subtract 1 dropped container of each type: 97 - (8 + 4 + 6 + 5) = 74  \nFinal Answer: 74"
+  },
+  {
+    "id": 34,
+    "question": "Sofia is out collecting feathers in bags for her craft box. She starts off by getting 6 bags with 2 feathers each. She then gets 5 bags with 4 feathers each. She then adds another 4 bags with 7 feathers each. Lastly she gets 3 bags with 9 feathers each. As she's bringing these over to the craft box, she drops 1 of each bag and they are lost. She puts the remaining feathers in the craft box. How many feathers in total are in the craft box?",
+    "ground_truth": "65",
+    "generation": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \nFinal Answer: 87",
+    "pred_answer_masked": "87",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \n5. Subtract 1 dropped container of each type: 87 - (2 + 4 + 7 + 9) = 65  \nFinal Answer: 65"
+  },
+  {
+    "id": 35,
+    "question": "Sebastian is out collecting coins in rolls for his register. He starts off by getting 4 rolls with 6 coins each. He then gets 3 rolls with 9 coins each. He then adds another 5 rolls with 7 coins each. Lastly he gets 6 rolls with 5 coins each. As he's bringing these over to the register, he drops 1 of each roll and they are lost. He puts the remaining coins in the register. How many coins in total are in the register?",
+    "ground_truth": "89",
+    "generation": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \nFinal Answer: 116",
+    "pred_answer_masked": "116",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 116 - (6 + 9 + 7 + 5) = 89  \nFinal Answer: 89"
+  },
+  {
+    "id": 36,
+    "question": "Camila is out collecting screws in packets for her toolbelt. She starts off by getting 5 packets with 5 screws each. She then gets 6 packets with 3 screws each. She then adds another 4 packets with 8 screws each. Lastly she gets 3 packets with 12 screws each. As she's bringing these over to the toolbelt, she drops 1 of each packet and they are lost. She puts the remaining screws in the toolbelt. How many screws in total are in the toolbelt?",
+    "ground_truth": "83",
+    "generation": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \n5. Subtract 1 dropped container of each type: 105 - (5 + 3 + 8 + 12) = 83  \nFinal Answer: 83"
+  },
+  {
+    "id": 37,
+    "question": "Jack is out collecting cherries in baskets for his kitchen. He starts off by getting 3 baskets with 10 cherries each. He then gets 4 baskets with 9 cherries each. He then adds another 5 baskets with 4 cherries each. Lastly he gets 6 baskets with 6 cherries each. As he's bringing these over to the kitchen, he drops 1 of each basket and they are lost. He puts the remaining cherries in the kitchen. How many cherries in total are in the kitchen?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \n5. Subtract 1 dropped container of each type: 122 - (10 + 9 + 4 + 6) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 38,
+    "question": "Aria is out collecting ribbons in spools for her box. She starts off by getting 6 spools with 4 ribbons each. She then gets 3 spools with 11 ribbons each. She then adds another 4 spools with 5 ribbons each. Lastly she gets 5 spools with 6 ribbons each. As she's bringing these over to the box, she drops 1 of each spool and they are lost. She puts the remaining ribbons in the box. How many ribbons in total are in the box?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \n5. Subtract 1 dropped container of each type: 107 - (4 + 11 + 5 + 6) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 39,
+    "question": "Aiden is out collecting fossils in crates for his museum. He starts off by getting 4 crates with 7 fossils each. He then gets 5 crates with 5 fossils each. He then adds another 6 crates with 6 fossils each. Lastly he gets 3 crates with 8 fossils each. As he's bringing these over to the museum, he drops 1 of each crate and they are lost. He puts the remaining fossils in the museum. How many fossils in total are in the museum?",
+    "ground_truth": "87",
+    "generation": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \nFinal Answer: 113",
+    "pred_answer_masked": "113",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \n5. Subtract 1 dropped container of each type: 113 - (7 + 5 + 6 + 8) = 87  \nFinal Answer: 87"
+  },
+  {
+    "id": 40,
+    "question": "Scarlett is out collecting shells in nets for her bucket. She starts off by getting 5 nets with 8 shells each. She then gets 4 nets with 4 shells each. She then adds another 3 nets with 12 shells each. Lastly she gets 6 nets with 5 shells each. As she's bringing these over to the bucket, she drops 1 of each net and they are lost. She puts the remaining shells in the bucket. How many shells in total are in the bucket?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 122 - (8 + 4 + 12 + 5) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 41,
+    "question": "Owen is out collecting gems in boxes for his vault. He starts off by getting 4 boxes with 5 gems each. He then gets 5 boxes with 6 gems each. He then adds another 3 boxes with 7 gems each. Lastly he gets 6 boxes with 4 gems each. As he's bringing these over to the vault, he drops 1 of each box and they are lost. He puts the remaining gems in the vault. How many gems in total are in the vault?",
+    "ground_truth": "73",
+    "generation": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \nFinal Answer: 95",
+    "pred_answer_masked": "95",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 5 = 20  \n2. 5 * 6 = 30  \n3. 3 * 7 = 21  \n4. 6 * 4 = 24  \n5. Subtract 1 dropped container of each type: 95 - (5 + 6 + 7 + 4) = 73  \nFinal Answer: 73"
+  },
+  {
+    "id": 42,
+    "question": "Victoria is out collecting candies in jars for her pantry. She starts off by getting 5 jars with 3 candies each. She then gets 4 jars with 8 candies each. She then adds another 6 jars with 5 candies each. Lastly she gets 3 jars with 10 candies each. As she's bringing these over to the pantry, she drops 1 of each jar and they are lost. She puts the remaining candies in the pantry. How many candies in total are in the pantry?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 3 = 15  \n2. 4 * 8 = 32  \n3. 6 * 5 = 30  \n4. 3 * 10 = 30  \n5. Subtract 1 dropped container of each type: 107 - (3 + 8 + 5 + 10) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 43,
+    "question": "Samuel is out collecting books in stacks for his shelf. He starts off by getting 3 stacks with 8 books each. He then gets 6 stacks with 4 books each. He then adds another 4 stacks with 6 books each. Lastly he gets 5 stacks with 5 books each. As he's bringing these over to the shelf, he drops 1 of each stack and they are lost. He puts the remaining books on the shelf. How many books in total are on the shelf?",
+    "ground_truth": "74",
+    "generation": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \nFinal Answer: 97",
+    "pred_answer_masked": "97",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 8 = 24  \n2. 6 * 4 = 24  \n3. 4 * 6 = 24  \n4. 5 * 5 = 25  \n5. Subtract 1 dropped container of each type: 97 - (8 + 4 + 6 + 5) = 74  \nFinal Answer: 74"
+  },
+  {
+    "id": 44,
+    "question": "Madison is out collecting tiles in boxes for her bathroom. She starts off by getting 6 boxes with 2 tiles each. She then gets 5 boxes with 4 tiles each. She then adds another 4 boxes with 7 tiles each. Lastly she gets 3 boxes with 9 tiles each. As she's bringing these over to the bathroom, she drops 1 of each box and they are lost. She puts the remaining tiles in the bathroom. How many tiles in total are in the bathroom?",
+    "ground_truth": "65",
+    "generation": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \nFinal Answer: 87",
+    "pred_answer_masked": "87",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 2 = 12  \n2. 5 * 4 = 20  \n3. 4 * 7 = 28  \n4. 3 * 9 = 27  \n5. Subtract 1 dropped container of each type: 87 - (2 + 4 + 7 + 9) = 65  \nFinal Answer: 65"
+  },
+  {
+    "id": 45,
+    "question": "Matthew is out collecting plates in stacks for his cupboard. He starts off by getting 4 stacks with 6 plates each. He then gets 3 stacks with 9 plates each. He then adds another 5 stacks with 7 plates each. Lastly he gets 6 stacks with 5 plates each. As he's bringing these over to the cupboard, he drops 1 of each stack and they are lost. He puts the remaining plates in the cupboard. How many plates in total are in the cupboard?",
+    "ground_truth": "89",
+    "generation": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \nFinal Answer: 116",
+    "pred_answer_masked": "116",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 6 = 24  \n2. 3 * 9 = 27  \n3. 5 * 7 = 35  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 116 - (6 + 9 + 7 + 5) = 89  \nFinal Answer: 89"
+  },
+  {
+    "id": 46,
+    "question": "Luna is out collecting crystals in pouches for her display. She starts off by getting 5 pouches with 5 crystals each. She then gets 6 pouches with 3 crystals each. She then adds another 4 pouches with 8 crystals each. Lastly she gets 3 pouches with 12 crystals each. As she's bringing these over to the display, she drops 1 of each pouch and they are lost. She puts the remaining crystals in the display. How many crystals in total are in the display?",
+    "ground_truth": "83",
+    "generation": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 5 = 25  \n2. 6 * 3 = 18  \n3. 4 * 8 = 32  \n4. 3 * 12 = 36  \n5. Subtract 1 dropped container of each type: 105 - (5 + 3 + 8 + 12) = 83  \nFinal Answer: 83"
+  },
+  {
+    "id": 47,
+    "question": "Joseph is out collecting seeds in bags for his greenhouse. He starts off by getting 3 bags with 10 seeds each. He then gets 4 bags with 9 seeds each. He then adds another 5 bags with 4 seeds each. Lastly he gets 6 bags with 6 seeds each. As he's bringing these over to the greenhouse, he drops 1 of each bag and they are lost. He puts the remaining seeds in the greenhouse. How many seeds in total are in the greenhouse?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 3 * 10 = 30  \n2. 4 * 9 = 36  \n3. 5 * 4 = 20  \n4. 6 * 6 = 36  \n5. Subtract 1 dropped container of each type: 122 - (10 + 9 + 4 + 6) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 48,
+    "question": "Grace is out collecting biscuits in tins for her jar. She starts off by getting 6 tins with 4 biscuits each. She then gets 3 tins with 11 biscuits each. She then adds another 4 tins with 5 biscuits each. Lastly she gets 5 tins with 6 biscuits each. As she's bringing these over to the jar, she drops 1 of each tin and they are lost. She puts the remaining biscuits in the jar. How many biscuits in total are in the jar?",
+    "ground_truth": "81",
+    "generation": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \nFinal Answer: 107",
+    "pred_answer_masked": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 4 = 24  \n2. 3 * 11 = 33  \n3. 4 * 5 = 20  \n4. 5 * 6 = 30  \n5. Subtract 1 dropped container of each type: 107 - (4 + 11 + 5 + 6) = 81  \nFinal Answer: 81"
+  },
+  {
+    "id": 49,
+    "question": "Levi is out collecting apples in bags for his basket. He starts off by getting 4 bags with 7 apples each. He then gets 5 bags with 5 apples each. He then adds another 6 bags with 6 apples each. Lastly he gets 3 bags with 8 apples each. As he's bringing these over to the basket, he drops 1 of each bag and they are lost. He puts the remaining apples in the basket. How many apples in total are in the basket?",
+    "ground_truth": "87",
+    "generation": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \nFinal Answer: 113",
+    "pred_answer_masked": "113",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 7 = 28  \n2. 5 * 5 = 25  \n3. 6 * 6 = 36  \n4. 3 * 8 = 24  \n5. Subtract 1 dropped container of each type: 113 - (7 + 5 + 6 + 8) = 87  \nFinal Answer: 87"
+  },
+  {
+    "id": 50,
+    "question": "Chloe is out collecting berries in cups for her blender. She starts off by getting 5 cups with 8 berries each. She then gets 4 cups with 4 berries each. She then adds another 3 cups with 12 berries each. Lastly she gets 6 cups with 5 berries each. As she's bringing these over to the blender, she drops 1 of each cup and they are lost. She puts the remaining berries in the blender. How many berries in total are in the blender?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 8 = 40  \n2. 4 * 4 = 16  \n3. 3 * 12 = 36  \n4. 6 * 5 = 30  \n5. Subtract 1 dropped container of each type: 122 - (8 + 4 + 12 + 5) = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 51,
+    "question": "Daniel is collecting marble tiles for a patio project. He first picks up 7 boxes with 12 tiles each. He then finds 6 boxes with 15 tiles each. He adds 5 boxes with 10 tiles each. Lastly, he picks up 8 boxes with 9 tiles each. While transporting them, he drops 1 of each box and the tiles inside break. He uses the remaining tiles for the patio. How many tiles does he have left?",
+    "ground_truth": "250",
+    "generation": "Reasoning:  \n1. 7 * 12 = 84  \n2. 6 * 15 = 90  \n3. 5 * 10 = 50  \n4. 8 * 9 = 72  \nFinal Answer: 306",
+    "pred_answer_masked": "306",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 12 = 84  \n2. 6 * 15 = 90  \n3. 5 * 10 = 50  \n4. 8 * 9 = 72  \n5. Subtract 1 dropped box of each type: 296 - (12 + 15 + 10 + 9) = 250  \nFinal Answer: 250"
+  },
+  {
+    "id": 52,
+    "question": "Sophie is gathering bundles of lavender for her shop. She starts by picking 8 bundles with 14 stems each. She then picks 5 bundles with 20 stems each. She adds another 7 bundles with 12 stems each. Lastly, she picks 4 bundles with 18 stems each. On her way back, she leaves 1 bundle of each type behind for a friend. How many stems are in the bundles she takes to her shop?",
+    "ground_truth": "304",
+    "generation": "Reasoning:  \n1. 8 * 14 = 112  \n2. 5 * 20 = 100  \n3. 7 * 12 = 84  \n4. 4 * 18 = 72  \nFinal Answer: 368",
+    "pred_answer_masked": "368",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 14 = 112  \n2. 5 * 20 = 100  \n3. 7 * 12 = 84  \n4. 4 * 18 = 72  \n5. Subtract 1 left behind bundle of each type: 368 - (14 + 20 + 12 + 18) = 304  \nFinal Answer: 304"
+  },
+  {
+    "id": 53,
+    "question": "Leo is stocking up on packs of trading cards. He buys 9 packs with 12 cards each. He then buys 6 packs with 15 cards each. He adds 4 packs with 25 cards each. Finally, he buys 5 packs with 10 cards each. He loses 1 pack of each size on the bus ride home. How many cards does he have in the remaining packs?",
+    "ground_truth": "286",
+    "generation": "Reasoning:  \n1. 9 * 12 = 108  \n2. 6 * 15 = 90  \n3. 4 * 25 = 100  \n4. 5 * 10 = 50  \nFinal Answer: 348",
+    "pred_answer_masked": "348",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 12 = 108  \n2. 6 * 15 = 90  \n3. 4 * 25 = 100  \n4. 5 * 10 = 50  \n5. Subtract 1 lost pack of each type: 348 - (12 + 15 + 25 + 10) = 286  \nFinal Answer: 286"
+  },
+  {
+    "id": 54,
+    "question": "Grace is preparing gift bags with chocolates. She buys 10 bags with 8 chocolates each. She then buys 8 bags with 12 chocolates each. She adds 6 bags with 15 chocolates each. Lastly, she buys 4 bags with 20 chocolates each. She gives away 1 bag of each type to the delivery drivers. How many chocolates are in the remaining bags?",
+    "ground_truth": "291",
+    "generation": "Reasoning:  \n1. 10 * 8 = 80  \n2. 8 * 12 = 96  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \nFinal Answer: 346",
+    "pred_answer_masked": "346",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 10 * 8 = 80  \n2. 8 * 12 = 96  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \n5. Subtract 1 given away bag of each type: 346 - (8 + 12 + 15 + 20) = 291  \nFinal Answer: 291"
+  },
+  {
+    "id": 55,
+    "question": "Zane is collecting stacks of firewood. He gathers 5 stacks with 22 logs each. He then gathers 7 stacks with 15 logs each. He adds 6 stacks with 18 logs each. Lastly, he gathers 4 stacks with 12 logs each. He uses 1 stack of each size to start a bonfire immediately. How many logs are in the remaining stacks?",
+    "ground_truth": "304",
+    "generation": "Reasoning:  \n1. 5 * 22 = 110  \n2. 7 * 15 = 105  \n3. 6 * 18 = 108  \n4. 4 * 12 = 48  \nFinal Answer: 370",
+    "pred_answer_masked": "370",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 22 = 110  \n2. 7 * 15 = 105  \n3. 6 * 18 = 108  \n4. 4 * 12 = 48  \n5. Subtract 1 used stack of each type: 371 - (22 + 15 + 18 + 12) = 304  \nFinal Answer: 304"
+  },
+  {
+    "id": 56,
+    "question": "Maya is buying crates of oranges for a juice stand. She starts with 6 crates containing 24 oranges each. She then buys 4 crates with 30 oranges each. She adds 5 crates with 15 oranges each. Finally, she buys 3 crates with 12 oranges each. She finds that 1 crate of each type has spoiled. How many good oranges are in the remaining crates?",
+    "ground_truth": "294",
+    "generation": "Reasoning:  \n1. 6 * 24 = 144  \n2. 4 * 30 = 120  \n3. 5 * 15 = 75  \n4. 3 * 12 = 36  \nFinal Answer: 366",
+    "pred_answer_masked": "366",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 24 = 144  \n2. 4 * 30 = 120  \n3. 5 * 15 = 75  \n4. 3 * 12 = 36  \n5. Subtract 1 spoiled crate of each type: 375 - (24 + 30 + 15 + 12) = 294  \nFinal Answer: 294"
+  },
+  {
+    "id": 57,
+    "question": "Caleb is organizing sets of colored pencils. He has 8 sets with 12 pencils each. He then gets 7 sets with 10 pencils each. He adds 9 sets with 8 pencils each. Lastly, he gets 5 sets with 15 pencils each. He realizes 1 set of each type is missing pencils and sets them aside. How many pencils are in the complete sets?",
+    "ground_truth": "268",
+    "generation": "Reasoning:  \n1. 8 * 12 = 96  \n2. 7 * 10 = 70  \n3. 9 * 8 = 72  \n4. 5 * 15 = 75  \nFinal Answer: 313",
+    "pred_answer_masked": "313",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 12 = 96  \n2. 7 * 10 = 70  \n3. 9 * 8 = 72  \n4. 5 * 15 = 75  \n5. Subtract 1 missing set of each type: 313 - (12 + 10 + 8 + 15) = 268  \nFinal Answer: 268"
+  },
+  {
+    "id": 58,
+    "question": "Hannah is collecting reams of paper for the office. She gets 4 reams with 50 sheets each. She then gets 5 reams with 30 sheets each. She adds 6 reams with 20 sheets each. Lastly, she gets 3 reams with 40 sheets each. She gives 1 ream of each type to the accounting department. How many sheets of paper does she have left?",
+    "ground_truth": "450",
+    "generation": "Reasoning:  \n1. 4 * 50 = 200  \n2. 5 * 30 = 150  \n3. 6 * 20 = 120  \n4. 3 * 40 = 120  \nFinal Answer: 590",
+    "pred_answer_masked": "590",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 50 = 200  \n2. 5 * 30 = 150  \n3. 6 * 20 = 120  \n4. 3 * 40 = 120  \n5. Subtract 1 given away ream of each type: 590 - (50 + 30 + 20 + 40) = 450  \nFinal Answer: 450"
+  },
+  {
+    "id": 59,
+    "question": "Isaac is picking up boxes of nails for a construction site. He starts with 12 boxes with 10 nails each. He then picks up 8 boxes with 15 nails each. He adds 6 boxes with 20 nails each. Finally, he picks up 4 boxes with 25 nails each. He drops 1 box of each size into a puddle and they rust. How many nails are in the usable boxes?",
+    "ground_truth": "390",
+    "generation": "Reasoning:  \n1. 12 * 10 = 120  \n2. 8 * 15 = 120  \n3. 6 * 20 = 120  \n4. 4 * 25 = 100  \nFinal Answer: 460",
+    "pred_answer_masked": "460",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 * 10 = 120  \n2. 8 * 15 = 120  \n3. 6 * 20 = 120  \n4. 4 * 25 = 100  \n5. Subtract 1 dropped box of each type: 460 - (10 + 15 + 20 + 25) = 390  \nFinal Answer: 390"
+  },
+  {
+    "id": 60,
+    "question": "Ruby is collecting jars of honey. She starts with 7 jars that have 16 ounces each. She then gets 5 jars with 20 ounces each. She adds 8 jars with 12 ounces each. Lastly, she gets 6 jars with 15 ounces each. She spills 1 jar of each size. How many ounces of honey remain?",
+    "ground_truth": "335",
+    "generation": "Reasoning:  \n1. 7 * 16 = 112  \n2. 5 * 20 = 100  \n3. 8 * 12 = 96  \n4. 6 * 15 = 90  \nFinal Answer: 302",
+    "pred_answer_masked": "302",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 16 = 112  \n2. 5 * 20 = 100  \n3. 8 * 12 = 96  \n4. 6 * 15 = 90  \n5. Subtract 1 spilled jar of each type: 398 - (16 + 20 + 12 + 15) = 335  \nFinal Answer: 335"
+  },
+  {
+    "id": 61,
+    "question": "Mason is gathering packs of soda for a party. He starts with 5 packs of 24 cans. He then buys 6 packs of 12 cans. He adds 4 packs of 15 cans. Lastly, he buys 8 packs of 6 cans. He gives 1 pack of each size to a neighbor. How many cans does he have left for the party?",
+    "ground_truth": "243",
+    "generation": "Reasoning:  \n1. 5 * 24 = 120  \n2. 6 * 12 = 72  \n3. 4 * 15 = 60  \n4. 8 * 6 = 48  \nFinal Answer: 290",
+    "pred_answer_masked": "290",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 24 = 120  \n2. 6 * 12 = 72  \n3. 4 * 15 = 60  \n4. 8 * 6 = 48  \n5. Subtract 1 given away pack of each type: 300 - (24 + 12 + 15 + 6) = 243  \nFinal Answer: 243"
+  },
+  {
+    "id": 62,
+    "question": "Ella is buying rolls of ribbon. She buys 9 rolls with 15 meters each. She then buys 7 rolls with 10 meters each. She adds 5 rolls with 20 meters each. Lastly, she buys 6 rolls with 12 meters each. She uses 1 roll of each length for a special project. How many meters of ribbon are left on the remaining rolls?",
+    "ground_truth": "320",
+    "generation": "Reasoning:  \n1. 9 * 15 = 135  \n2. 7 * 10 = 70  \n3. 5 * 20 = 100  \n4. 6 * 12 = 72  \nFinal Answer: 377",
+    "pred_answer_masked": "377",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 15 = 135  \n2. 7 * 10 = 70  \n3. 5 * 20 = 100  \n4. 6 * 12 = 72  \n5. Subtract 1 used roll of each type: 377 - (15 + 10 + 20 + 12) = 320  \nFinal Answer: 320"
+  },
+  {
+    "id": 63,
+    "question": "Julian is collecting trays of seedlings. He starts with 8 trays with 12 plants each. He then gets 6 trays with 15 plants each. He adds 4 trays with 20 plants each. Finally, he gets 5 trays with 18 plants each. 1 tray of each type is eaten by rabbits. How many plants are left?",
+    "ground_truth": "291",
+    "generation": "Reasoning:  \n1. 8 * 12 = 96  \n2. 6 * 15 = 90  \n3. 4 * 20 = 80  \n4. 5 * 18 = 90  \nFinal Answer: 356",
+    "pred_answer_masked": "356",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 12 = 96  \n2. 6 * 15 = 90  \n3. 4 * 20 = 80  \n4. 5 * 18 = 90  \n5. Subtract 1 eaten tray of each type: 356 - (12 + 15 + 20 + 18) = 291  \nFinal Answer: 291"
+  },
+  {
+    "id": 64,
+    "question": "Clara is gathering boxes of doughnuts for a fundraiser. She starts with 5 boxes of 12. She then gets 4 boxes of 24. She adds 6 boxes of 10. Lastly, she gets 3 boxes of 15. She decides to keep 1 box of each size for her family. How many doughnuts are left for the fundraiser?",
+    "ground_truth": "200",
+    "generation": "Reasoning:  \n1. 5 * 12 = 60  \n2. 4 * 24 = 96  \n3. 6 * 10 = 60  \n4. 3 * 15 = 45  \nFinal Answer: 261",
+    "pred_answer_masked": "261",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 12 = 60  \n2. 4 * 24 = 96  \n3. 6 * 10 = 60  \n4. 3 * 15 = 45  \n5. Subtract 1 kept box of each type: 261 - (12 + 24 + 10 + 15) = 200  \nFinal Answer: 200"
+  },
+  {
+    "id": 65,
+    "question": "Felix is organizing files into folders. He has 10 folders with 15 documents each. He then gets 8 folders with 10 documents each. He adds 5 folders with 20 documents each. Lastly, he gets 6 folders with 12 documents each. He archives 1 folder of each type. How many documents are in the active folders?",
+    "ground_truth": "345",
+    "generation": "Reasoning:  \n1. 10 * 15 = 150  \n2. 8 * 10 = 80  \n3. 5 * 20 = 100  \n4. 6 * 12 = 72  \nFinal Answer: 392",
+    "pred_answer_masked": "392",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 10 * 15 = 150  \n2. 8 * 10 = 80  \n3. 5 * 20 = 100  \n4. 6 * 12 = 72  \n5. Subtract 1 archived folder of each type: 402 - (15 + 10 + 20 + 12) = 345  \nFinal Answer: 345"
+  },
+  {
+    "id": 66,
+    "question": "Nora is collecting bins of toys. She has 4 bins with 25 toys each. She then gets 6 bins with 15 toys each. She adds 5 bins with 20 toys each. Lastly, she gets 7 bins with 10 toys each. She donates 1 bin of each type to charity. How many toys are in the bins she keeps?",
+    "ground_truth": "290",
+    "generation": "Reasoning:  \n1. 4 * 25 = 100  \n2. 6 * 15 = 90  \n3. 5 * 20 = 100  \n4. 7 * 10 = 70  \nFinal Answer: 360",
+    "pred_answer_masked": "360",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 25 = 100  \n2. 6 * 15 = 90  \n3. 5 * 20 = 100  \n4. 7 * 10 = 70  \n5. Subtract 1 donated bin of each type: 360 - (25 + 15 + 20 + 10) = 290  \nFinal Answer: 290"
+  },
+  {
+    "id": 67,
+    "question": "Silas is buying packs of batteries. He buys 12 packs of 4. He then buys 10 packs of 8. He adds 8 packs of 10. Lastly, he buys 6 packs of 12. He uses 1 pack of each size for his electronics immediately. How many batteries are left in the remaining packs?",
+    "ground_truth": "246",
+    "generation": "Reasoning:  \n1. 12 * 4 = 48  \n2. 10 * 8 = 80  \n3. 8 * 10 = 80  \n4. 6 * 12 = 72  \nFinal Answer: 272",
+    "pred_answer_masked": "272",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 * 4 = 48  \n2. 10 * 8 = 80  \n3. 8 * 10 = 80  \n4. 6 * 12 = 72  \n5. Subtract 1 used pack of each type: 280 - (4 + 8 + 10 + 12) = 246  \nFinal Answer: 246"
+  },
+  {
+    "id": 68,
+    "question": "Hazel is collecting tubes of paint. She starts with 7 sets containing 12 tubes each. She then buys 5 sets with 18 tubes each. She adds 6 sets with 15 tubes each. Lastly, she gets 4 sets with 20 tubes each. She loses 1 set of each type during her move. How many tubes are in the remaining sets?",
+    "ground_truth": "279",
+    "generation": "Reasoning:  \n1. 7 * 12 = 84  \n2. 5 * 18 = 90  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \nFinal Answer: 344",
+    "pred_answer_masked": "344",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 12 = 84  \n2. 5 * 18 = 90  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \n5. Subtract 1 lost set of each type: 344 - (12 + 18 + 15 + 20) = 279  \nFinal Answer: 279"
+  },
+  {
+    "id": 69,
+    "question": "Miles is picking up cases of water. He starts with 8 cases of 12 bottles. He then gets 5 cases of 24 bottles. He adds 6 cases of 15 bottles. Finally, he gets 4 cases of 20 bottles. He gives 1 case of each size to his team. How many bottles are left?",
+    "ground_truth": "315",
+    "generation": "Reasoning:  \n1. 8 * 12 = 96  \n2. 5 * 24 = 120  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \nFinal Answer: 366",
+    "pred_answer_masked": "366",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 12 = 96  \n2. 5 * 24 = 120  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \n5. Subtract 1 given away case of each type: 386 - (12 + 24 + 15 + 20) = 315  \nFinal Answer: 315"
+  },
+  {
+    "id": 70,
+    "question": "Eliana is gathering bunches of bananas. She has 10 bunches with 7 bananas each. She then gets 8 bunches with 9 bananas each. She adds 6 bunches with 12 bananas each. Lastly, she gets 12 bunches with 5 bananas each. She gives 1 bunch of each size to the zoo. How many bananas does she have left?",
+    "ground_truth": "241",
+    "generation": "Reasoning:  \n1. 10 * 7 = 70  \n2. 8 * 9 = 72  \n3. 6 * 12 = 72  \n4. 12 * 5 = 60  \nFinal Answer: 274",
+    "pred_answer_masked": "274",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 10 * 7 = 70  \n2. 8 * 9 = 72  \n3. 6 * 12 = 72  \n4. 12 * 5 = 60  \n5. Subtract 1 given away bunch of each type: 274 - (7 + 9 + 12 + 5) = 241  \nFinal Answer: 241"
+  },
+  {
+    "id": 71,
+    "question": "Wyatt is collecting boxes of screws. He starts with 9 boxes of 20. He then gets 7 boxes of 15. He adds 5 boxes of 25. Finally, he gets 8 boxes of 10. He misplaces 1 box of each count in his workshop. How many screws are in the remaining boxes?",
+    "ground_truth": "420",
+    "generation": "Reasoning:  \n1. 9 * 20 = 180  \n2. 7 * 15 = 105  \n3. 5 * 25 = 125  \n4. 8 * 10 = 80  \nFinal Answer: 490",
+    "pred_answer_masked": "490",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 20 = 180  \n2. 7 * 15 = 105  \n3. 5 * 25 = 125  \n4. 8 * 10 = 80  \n5. Subtract 1 misplaced box of each type: 490 - (20 + 15 + 25 + 10) = 420  \nFinal Answer: 420"
+  },
+  {
+    "id": 72,
+    "question": "Violet is buying rolls of wallpaper. She buys 4 rolls that cover 30 square feet each. She then buys 5 rolls that cover 25 square feet each. She adds 6 rolls that cover 20 square feet each. Lastly, she buys 3 rolls that cover 40 square feet each. She finds that 1 roll of each type is damaged. How many square feet can the remaining rolls cover?",
+    "ground_truth": "370",
+    "generation": "Reasoning:  \n1. 4 * 30 = 120  \n2. 5 * 25 = 125  \n3. 6 * 20 = 120  \n4. 3 * 40 = 120  \nFinal Answer: 485",
+    "pred_answer_masked": "485",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 30 = 120  \n2. 5 * 25 = 125  \n3. 6 * 20 = 120  \n4. 3 * 40 = 120  \n5. Subtract 1 damaged roll of each type: 485 - (30 + 25 + 20 + 40) = 370  \nFinal Answer: 370"
+  },
+  {
+    "id": 73,
+    "question": "Axel is organizing drawers of bolts. He has 6 drawers with 25 bolts each. He then gets 8 drawers with 15 bolts each. He adds 5 drawers with 20 bolts each. Finally, he gets 7 drawers with 10 bolts each. He empties 1 drawer of each type for cleaning. How many bolts are in the remaining drawers?",
+    "ground_truth": "370",
+    "generation": "Reasoning:  \n1. 6 * 25 = 150  \n2. 8 * 15 = 120  \n3. 5 * 20 = 100  \n4. 7 * 10 = 70  \nFinal Answer: 440",
+    "pred_answer_masked": "440",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 25 = 150  \n2. 8 * 15 = 120  \n3. 5 * 20 = 100  \n4. 7 * 10 = 70  \n5. Subtract 1 emptied drawer of each type: 440 - (25 + 15 + 20 + 10) = 370  \nFinal Answer: 370"
+  },
+  {
+    "id": 74,
+    "question": "Willow is gathering baskets of berries. She picks 7 baskets with 18 berries each. She then picks 5 baskets with 25 berries each. She adds 8 baskets with 15 berries each. Lastly, she picks 6 baskets with 20 berries each. She drops 1 basket of each type on the way home. How many berries are in the remaining baskets?",
+    "ground_truth": "413",
+    "generation": "Reasoning:  \n1. 7 * 18 = 126  \n2. 5 * 25 = 125  \n3. 8 * 15 = 120  \n4. 6 * 20 = 120  \nFinal Answer: 491",
+    "pred_answer_masked": "491",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 18 = 126  \n2. 5 * 25 = 125  \n3. 8 * 15 = 120  \n4. 6 * 20 = 120  \n5. Subtract 1 dropped basket of each type: 491 - (18 + 25 + 15 + 20) = 413  \nFinal Answer: 413"
+  },
+  {
+    "id": 75,
+    "question": "Luca is collecting packs of paper plates. He buys 10 packs of 15. He then buys 6 packs of 25. He adds 8 packs of 10. Lastly, he buys 5 packs of 20. He opens 1 pack of each size for a small dinner. How many plates are in the unopened packs?",
+    "ground_truth": "410",
+    "generation": "Reasoning:  \n1. 10 * 15 = 150  \n2. 6 * 25 = 150  \n3. 8 * 10 = 80  \n4. 5 * 20 = 100  \nFinal Answer: 480",
+    "pred_answer_masked": "480",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 10 * 15 = 150  \n2. 6 * 25 = 150  \n3. 8 * 10 = 80  \n4. 5 * 20 = 100  \n5. Subtract 1 opened pack of each type: 480 - (15 + 25 + 10 + 20) = 410  \nFinal Answer: 410"
+  },
+  {
+    "id": 76,
+    "question": "Ivy is buying strings of lights. She starts with 5 strings that have 30 bulbs each. She then gets 7 strings with 20 bulbs each. She adds 4 strings with 25 bulbs each. Lastly, she gets 6 strings with 15 bulbs each. She finds 1 string of each type is broken. How many working bulbs are on the remaining strings?",
+    "ground_truth": "390",
+    "generation": "Reasoning:  \n1. 5 * 30 = 150  \n2. 7 * 20 = 140  \n3. 4 * 25 = 100  \n4. 6 * 15 = 90  \nFinal Answer: 480",
+    "pred_answer_masked": "480",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 30 = 150  \n2. 7 * 20 = 140  \n3. 4 * 25 = 100  \n4. 6 * 15 = 90  \n5. Subtract 1 broken string of each type: 480 - (30 + 20 + 25 + 15) = 390  \nFinal Answer: 390"
+  },
+  {
+    "id": 77,
+    "question": "Roman is collecting stacks of bricks. He has 8 stacks with 15 bricks each. He then gets 6 stacks with 20 bricks each. He adds 7 stacks with 12 bricks each. Finally, he gets 5 stacks with 18 bricks each. He uses 1 stack of each type for a small wall. How many bricks are left in the other stacks?",
+    "ground_truth": "349",
+    "generation": "Reasoning:  \n1. 8 * 15 = 120  \n2. 6 * 20 = 120  \n3. 7 * 12 = 84  \n4. 5 * 18 = 90  \nFinal Answer: 414",
+    "pred_answer_masked": "414",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 15 = 120  \n2. 6 * 20 = 120  \n3. 7 * 12 = 84  \n4. 5 * 18 = 90  \n5. Subtract 1 used stack of each type: 414 - (15 + 20 + 12 + 18) = 349  \nFinal Answer: 349"
+  },
+  {
+    "id": 78,
+    "question": "Aurora is picking up boxes of candles. She starts with 9 boxes of 12. She then gets 4 boxes of 20. She adds 7 boxes of 15. Lastly, she gets 6 boxes of 10. She lights 1 box of each size for a vigil. How many candles are left in the unlit boxes?",
+    "ground_truth": "296",
+    "generation": "Reasoning:  \n1. 9 * 12 = 108  \n2. 4 * 20 = 80  \n3. 7 * 15 = 105  \n4. 6 * 10 = 60  \nFinal Answer: 353",
+    "pred_answer_masked": "353",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 12 = 108  \n2. 4 * 20 = 80  \n3. 7 * 15 = 105  \n4. 6 * 10 = 60  \n5. Subtract 1 lit box of each type: 353 - (12 + 20 + 15 + 10) = 296  \nFinal Answer: 296"
+  },
+  {
+    "id": 79,
+    "question": "Everett is collecting crates of milk. He gets 5 crates with 16 bottles each. He then gets 8 crates with 12 bottles each. He adds 6 crates with 10 bottles each. Lastly, he gets 4 crates with 15 bottles each. He donates 1 crate of each size to a shelter. How many bottles are left?",
+    "ground_truth": "243",
+    "generation": "Reasoning:  \n1. 5 * 16 = 80  \n2. 8 * 12 = 96  \n3. 6 * 10 = 60  \n4. 4 * 15 = 60  \nFinal Answer: 296",
+    "pred_answer_masked": "296",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 16 = 80  \n2. 8 * 12 = 96  \n3. 6 * 10 = 60  \n4. 4 * 15 = 60  \n5. Subtract 1 donated crate of each type: 296 - (16 + 12 + 10 + 15) = 243  \nFinal Answer: 243"
+  },
+  {
+    "id": 80,
+    "question": "Luna is gathering bundles of sticks for a fence. She has 7 bundles with 22 sticks each. She then gets 5 bundles with 30 sticks each. She adds 6 bundles with 15 sticks each. Lastly, she gets 4 bundles with 25 sticks each. She breaks 1 bundle of each type while building. How many sticks are in the remaining bundles?",
+    "ground_truth": "402",
+    "generation": "Reasoning:  \n1. 7 * 22 = 154  \n2. 5 * 30 = 150  \n3. 6 * 15 = 90  \n4. 4 * 25 = 100  \nFinal Answer: 494",
+    "pred_answer_masked": "494",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 22 = 154  \n2. 5 * 30 = 150  \n3. 6 * 15 = 90  \n4. 4 * 25 = 100  \n5. Subtract 1 broken bundle of each type: 494 - (22 + 30 + 15 + 25) = 402  \nFinal Answer: 402"
+  },
+  {
+    "id": 81,
+    "question": "Gael is collecting bags of rice. He starts with 6 bags of 20 pounds. He then buys 5 bags of 15 pounds. He adds 8 bags of 10 pounds. Finally, he buys 4 bags of 25 pounds. He uses 1 bag of each weight for a large meal. How many pounds of rice are left?",
+    "ground_truth": "305",
+    "generation": "Reasoning:  \n1. 6 * 20 = 120  \n2. 5 * 15 = 75  \n3. 8 * 10 = 80  \n4. 4 * 25 = 100  \nFinal Answer: 375",
+    "pred_answer_masked": "375",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 20 = 120  \n2. 5 * 15 = 75  \n3. 8 * 10 = 80  \n4. 4 * 25 = 100  \n5. Subtract 1 used bag of each type: 375 - (20 + 15 + 10 + 25) = 305  \nFinal Answer: 305"
+  },
+  {
+    "id": 82,
+    "question": "Sienna is organizing kits of markers. She has 9 kits with 12 markers each. She then gets 7 kits with 15 markers each. She adds 5 kits with 20 markers each. Lastly, she gets 6 kits with 8 markers each. She loses 1 kit of each type during a trip. How many markers are in the remaining kits?",
+    "ground_truth": "306",
+    "generation": "Reasoning:  \n1. 9 * 12 = 108  \n2. 7 * 15 = 105  \n3. 5 * 20 = 100  \n4. 6 * 8 = 48  \nFinal Answer: 359",
+    "pred_answer_masked": "359",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 12 = 108  \n2. 7 * 15 = 105  \n3. 5 * 20 = 100  \n4. 6 * 8 = 48  \n5. Subtract 1 lost kit of each type: 361 - (12 + 15 + 20 + 8) = 306  \nFinal Answer: 306"
+  },
+  {
+    "id": 83,
+    "question": "Jasper is collecting stacks of coins. He has 10 stacks of 15. He then gets 8 stacks of 20. He adds 12 stacks of 5. Finally, he gets 6 stacks of 12. He spends 1 stack of each count at the store. How many coins are left?",
+    "ground_truth": "390",
+    "generation": "Reasoning:  \n1. 10 * 15 = 150  \n2. 8 * 20 = 160  \n3. 12 * 5 = 60  \n4. 6 * 12 = 72  \nFinal Answer: 442",
+    "pred_answer_masked": "442",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 10 * 15 = 150  \n2. 8 * 20 = 160  \n3. 12 * 5 = 60  \n4. 6 * 12 = 72  \n5. Subtract 1 spent stack of each type: 442 - (15 + 20 + 5 + 12) = 390  \nFinal Answer: 390"
+  },
+  {
+    "id": 84,
+    "question": "Freya is gathering packs of sticky notes. She buys 5 packs with 40 sheets each. She then buys 8 packs with 20 sheets each. She adds 6 packs with 25 sheets each. Lastly, she buys 4 packs with 30 sheets each. She uses 1 pack of each count for a project. How many sheets are in the remaining packs?",
+    "ground_truth": "515",
+    "generation": "Reasoning:  \n1. 5 * 40 = 200  \n2. 8 * 20 = 160  \n3. 6 * 25 = 150  \n4. 4 * 30 = 120  \nFinal Answer: 630",
+    "pred_answer_masked": "630",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 40 = 200  \n2. 8 * 20 = 160  \n3. 6 * 25 = 150  \n4. 4 * 30 = 120  \n5. Subtract 1 used pack of each type: 630 - (40 + 20 + 25 + 30) = 515  \nFinal Answer: 515"
+  },
+  {
+    "id": 85,
+    "question": "Milo is collecting boxes of tiles. He has 7 boxes with 18 tiles each. He then gets 5 boxes with 24 tiles each. He adds 6 boxes with 15 tiles each. Finally, he gets 4 boxes with 20 tiles each. 1 box of each type is cracked. How many good tiles are left?",
+    "ground_truth": "339",
+    "generation": "Reasoning:  \n1. 7 * 18 = 126  \n2. 5 * 24 = 120  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \nFinal Answer: 394",
+    "pred_answer_masked": "394",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 18 = 126  \n2. 5 * 24 = 120  \n3. 6 * 15 = 90  \n4. 4 * 20 = 80  \n5. Subtract 1 cracked box of each type: 416 - (18 + 24 + 15 + 20) = 339  \nFinal Answer: 339"
+  },
+  {
+    "id": 86,
+    "question": "Penelope is buying cartons of eggs. She starts with 10 cartons of 12. She then buys 6 cartons of 18. She adds 4 cartons of 24. Finally, she buys 5 cartons of 10. She drops 1 carton of each size. How many eggs are left?",
+    "ground_truth": "310",
+    "generation": "Reasoning:  \n1. 10 * 12 = 120  \n2. 6 * 18 = 108  \n3. 4 * 24 = 96  \n4. 5 * 10 = 50  \nFinal Answer: 374",
+    "pred_answer_masked": "374",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 10 * 12 = 120  \n2. 6 * 18 = 108  \n3. 4 * 24 = 96  \n4. 5 * 10 = 50  \n5. Subtract 1 dropped carton of each type: 374 - (12 + 18 + 24 + 10) = 310  \nFinal Answer: 310"
+  },
+  {
+    "id": 87,
+    "question": "Arlo is collecting bundles of cables. He gets 8 bundles of 15 feet. He then gets 6 bundles of 20 feet. He adds 5 bundles of 25 feet. Finally, he gets 7 bundles of 10 feet. He cuts 1 bundle of each length for a job. How many feet of cable remain in the full bundles?",
+    "ground_truth": "365",
+    "generation": "Reasoning:  \n1. 8 * 15 = 120  \n2. 6 * 20 = 120  \n3. 5 * 25 = 125  \n4. 7 * 10 = 70  \nFinal Answer: 435",
+    "pred_answer_masked": "435",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 15 = 120  \n2. 6 * 20 = 120  \n3. 5 * 25 = 125  \n4. 7 * 10 = 70  \n5. Subtract 1 cut bundle of each type: 435 - (15 + 20 + 25 + 10) = 365  \nFinal Answer: 365"
+  },
+  {
+    "id": 88,
+    "question": "Daisy is gathering jars of beads. She picks up 9 jars with 15 beads each. She then picks up 7 jars with 12 beads each. She adds 5 jars with 20 beads each. Finally, she picks up 6 jars with 10 beads each. She spills 1 jar of each type. How many beads are left?",
+    "ground_truth": "322",
+    "generation": "Reasoning:  \n1. 9 * 15 = 135  \n2. 7 * 12 = 84  \n3. 5 * 20 = 100  \n4. 6 * 10 = 60  \nFinal Answer: 379",
+    "pred_answer_masked": "379",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 15 = 135  \n2. 7 * 12 = 84  \n3. 5 * 20 = 100  \n4. 6 * 10 = 60  \n5. Subtract 1 spilled jar of each type: 379 - (15 + 12 + 20 + 10) = 322  \nFinal Answer: 322"
+  },
+  {
+    "id": 89,
+    "question": "Hugo is buying packs of napkins. He gets 4 packs of 50. He then buys 6 packs of 30. He adds 8 packs of 20. Lastly, he buys 5 packs of 25. He uses 1 pack of each size for a picnic. How many napkins are left?",
+    "ground_truth": "540",
+    "generation": "Reasoning:  \n1. 4 * 50 = 200  \n2. 6 * 30 = 180  \n3. 8 * 20 = 160  \n4. 5 * 25 = 125  \nFinal Answer: 665",
+    "pred_answer_masked": "665",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 4 * 50 = 200  \n2. 6 * 30 = 180  \n3. 8 * 20 = 160  \n4. 5 * 25 = 125  \n5. Subtract 1 used pack of each type: 665 - (50 + 30 + 20 + 25) = 540  \nFinal Answer: 540"
+  },
+  {
+    "id": 90,
+    "question": "Iris is collecting boxes of tea. She starts with 7 boxes of 20 bags. She then gets 9 boxes of 15 bags. She adds 5 boxes of 24 bags. Finally, she gets 6 boxes of 10 bags. She gives 1 box of each type to her sister. How many tea bags are left?",
+    "ground_truth": "386",
+    "generation": "Reasoning:  \n1. 7 * 20 = 140  \n2. 9 * 15 = 135  \n3. 5 * 24 = 120  \n4. 6 * 10 = 60  \nFinal Answer: 455",
+    "pred_answer_masked": "455",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 20 = 140  \n2. 9 * 15 = 135  \n3. 5 * 24 = 120  \n4. 6 * 10 = 60  \n5. Subtract 1 given away box of each type: 455 - (20 + 15 + 24 + 10) = 386  \nFinal Answer: 386"
+  },
+  {
+    "id": 91,
+    "question": "Arthur is organizing trays of muffins. He has 6 trays of 12. He then gets 5 trays of 15. He adds 4 trays of 20. Lastly, he gets 7 trays of 10. He drops 1 tray of each size on the floor. How many muffins are left?",
+    "ground_truth": "240",
+    "generation": "Reasoning:  \n1. 6 * 12 = 72  \n2. 5 * 15 = 75  \n3. 4 * 20 = 80  \n4. 7 * 10 = 70  \nFinal Answer: 297",
+    "pred_answer_masked": "297",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 6 * 12 = 72  \n2. 5 * 15 = 75  \n3. 4 * 20 = 80  \n4. 7 * 10 = 70  \n5. Subtract 1 dropped tray of each type: 297 - (12 + 15 + 20 + 10) = 240  \nFinal Answer: 240"
+  },
+  {
+    "id": 92,
+    "question": "Lyra is collecting spools of thread. She has 8 spools with 20 meters each. She then gets 6 spools with 25 meters each. She adds 7 spools with 15 meters each. Finally, she gets 5 spools with 12 meters each. 1 spool of each type gets tangled and ruined. How many meters of thread remain?",
+    "ground_truth": "403",
+    "generation": "Reasoning:  \n1. 8 * 20 = 160  \n2. 6 * 25 = 150  \n3. 7 * 15 = 105  \n4. 5 * 12 = 60  \nFinal Answer: 475",
+    "pred_answer_masked": "475",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 20 = 160  \n2. 6 * 25 = 150  \n3. 7 * 15 = 105  \n4. 5 * 12 = 60  \n5. Subtract 1 tangled spool of each type: 475 - (20 + 25 + 15 + 12) = 403  \nFinal Answer: 403"
+  },
+  {
+    "id": 93,
+    "question": "Theo is buying bags of potting soil. He buys 5 bags of 30 liters. He then buys 4 bags of 40 liters. He adds 6 bags of 20 liters. Lastly, he buys 3 bags of 25 liters. He uses 1 bag of each size for his balcony garden. How many liters are left?",
+    "ground_truth": "390",
+    "generation": "Reasoning:  \n1. 5 * 30 = 150  \n2. 4 * 40 = 160  \n3. 6 * 20 = 120  \n4. 3 * 25 = 75  \nFinal Answer: 485",
+    "pred_answer_masked": "485",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 5 * 30 = 150  \n2. 4 * 40 = 160  \n3. 6 * 20 = 120  \n4. 3 * 25 = 75  \n5. Subtract 1 used bag of each type: 505 - (30 + 40 + 20 + 25) = 390  \nFinal Answer: 390"
+  },
+  {
+    "id": 94,
+    "question": "Clara is collecting boxes of chocolates. She gets 9 boxes of 12. He then gets 7 boxes of 15. She adds 5 boxes of 20. Finally, she gets 6 boxes of 18. She gives 1 box of each size away. How many chocolates are left?",
+    "ground_truth": "356",
+    "generation": "Reasoning:  \n1. 9 * 12 = 108  \n2. 7 * 15 = 105  \n3. 5 * 20 = 100  \n4. 6 * 18 = 108  \nFinal Answer: 421",
+    "pred_answer_masked": "421",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 12 = 108  \n2. 7 * 15 = 105  \n3. 5 * 20 = 100  \n4. 6 * 18 = 108  \n5. Subtract 1 given away box of each type: 421 - (12 + 15 + 20 + 18) = 356  \nFinal Answer: 356"
+  },
+  {
+    "id": 95,
+    "question": "Finn is gathering crates of sodas. He starts with 8 crates of 12. He then gets 6 crates of 20. He adds 5 crates of 15. Lastly, he gets 4 crates of 24. He realizes 1 crate of each type was left out in the heat and went flat. How many sodas are left?",
+    "ground_truth": "316",
+    "generation": "Reasoning:  \n1. 8 * 12 = 96  \n2. 6 * 20 = 120  \n3. 5 * 15 = 75  \n4. 4 * 24 = 96  \nFinal Answer: 387",
+    "pred_answer_masked": "387",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 12 = 96  \n2. 6 * 20 = 120  \n3. 5 * 15 = 75  \n4. 4 * 24 = 96  \n5. Subtract 1 flat crate of each type: 387 - (12 + 20 + 15 + 24) = 316  \nFinal Answer: 316"
+  },
+  {
+    "id": 96,
+    "question": "Esmé is collecting packs of stickers. She has 10 packs with 15 stickers each. She then gets 8 packs with 20 stickers each. She adds 6 packs with 12 stickers each. Lastly, she gets 12 packs with 5 stickers each. She loses 1 pack of each type at school. How many stickers are left?",
+    "ground_truth": "390",
+    "generation": "Reasoning:  \n1. 10 * 15 = 150  \n2. 8 * 20 = 160  \n3. 6 * 12 = 72  \n4. 12 * 5 = 60  \nFinal Answer: 442",
+    "pred_answer_masked": "442",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 10 * 15 = 150  \n2. 8 * 20 = 160  \n3. 6 * 12 = 72  \n4. 12 * 5 = 60  \n5. Subtract 1 lost pack of each type: 442 - (15 + 20 + 12 + 5) = 390  \nFinal Answer: 390"
+  },
+  {
+    "id": 97,
+    "question": "Oscar is picking up boxes of bolts. He starts with 7 boxes of 25. He then gets 5 boxes of 30. He adds 6 boxes of 20. Finally, he gets 4 boxes of 15. He leaves 1 box of each size at the hardware store by mistake. How many bolts are in the boxes he brought home?",
+    "ground_truth": "415",
+    "generation": "Reasoning:  \n1. 7 * 25 = 175  \n2. 5 * 30 = 150  \n3. 6 * 20 = 120  \n4. 4 * 15 = 60  \nFinal Answer: 405",
+    "pred_answer_masked": "405",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 25 = 175  \n2. 5 * 30 = 150  \n3. 6 * 20 = 120  \n4. 4 * 15 = 60  \n5. Subtract 1 left box of each type: 505 - (25 + 30 + 20 + 15) = 415  \nFinal Answer: 415"
+  },
+  {
+    "id": 98,
+    "question": "Rose is collecting bunches of herbs. She has 9 bunches with 14 sprigs each. She then gets 6 bunches with 20 sprigs each. She adds 7 bunches with 12 sprigs each. Finally, she gets 5 bunches with 18 sprigs each. She finds 1 bunch of each type has wilted. How many sprigs are in the fresh bunches?",
+    "ground_truth": "356",
+    "generation": "Reasoning:  \n1. 9 * 14 = 126  \n2. 6 * 20 = 120  \n3. 7 * 12 = 84  \n4. 5 * 18 = 90  \nFinal Answer: 420",
+    "pred_answer_masked": "420",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 9 * 14 = 126  \n2. 6 * 20 = 120  \n3. 7 * 12 = 84  \n4. 5 * 18 = 90  \n5. Subtract 1 wilted bunch of each type: 420 - (14 + 20 + 12 + 18) = 356  \nFinal Answer: 356"
+  },
+  {
+    "id": 99,
+    "question": "Felix is gathering packs of lightbulbs. He buys 8 packs of 4. He then buys 10 packs of 6. He adds 12 packs of 2. Lastly, he buys 6 packs of 8. He finds 1 pack of each type contains a broken bulb and returns them. How many bulbs are in the packs he keeps?",
+    "ground_truth": "144",
+    "generation": "Reasoning:  \n1. 8 * 4 = 32  \n2. 10 * 6 = 60  \n3. 12 * 2 = 24  \n4. 6 * 8 = 48  \nFinal Answer: 164",
+    "pred_answer_masked": "164",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 8 * 4 = 32  \n2. 10 * 6 = 60  \n3. 12 * 2 = 24  \n4. 6 * 8 = 48  \n5. Subtract 1 returned pack of each type: 164 - (4 + 6 + 2 + 8) = 144  \nFinal Answer: 144"
+  },
+  {
+    "id": 100,
+    "question": "Nora is collecting jars of spice. She starts with 7 jars with 18 grams each. She then gets 5 jars with 25 grams each. She adds 8 jars with 15 grams each. Lastly, she gets 6 jars with 20 grams each. She uses 1 jar of each weight to make a large batch of seasoning. How many grams of spice remain in the other jars?",
+    "ground_truth": "413",
+    "generation": "Reasoning:  \n1. 7 * 18 = 126  \n2. 5 * 25 = 125  \n3. 8 * 15 = 120  \n4. 6 * 20 = 120  \nFinal Answer: 491",
+    "pred_answer_masked": "491",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 7 * 18 = 126  \n2. 5 * 25 = 125  \n3. 8 * 15 = 120  \n4. 6 * 20 = 120  \n5. Subtract 1 used jar of each type: 491 - (18 + 25 + 15 + 20) = 413  \nFinal Answer: 413"
+  }
+]

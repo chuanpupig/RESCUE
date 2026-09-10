@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "Mike's reading goal is 40 pages per day. On Monday, Mike was only able to read 15 pages, so he decided that he would make up for the rest on Tuesday. However, he was only able to read 20 pages on Tuesday. How many pages would Mike have to read on Wednesday to meet his minimum goal and make up for the ones he didn't read?",
+    "ground_truth": "85",
+    "generation": "1. Mike's goal is 40 pages per day, but he only read 15 pages on Monday, so he needs to read 40 - 15 = 25 pages to meet his goal.\n2. On Tuesday, Mike read 20 pages, but he still needs to read 25 pages to meet his goal, so he needs to read 25 - 20 = 5 more pages to meet his goal.\n3. To meet his goal and make up for the ones he didn't read, Mike needs to read his goal of 40 pages on Wednesday, plus the 5 pages he still needs to read, so he needs to read 40 + 5 = 45 pages on Wednesday.\n4. Since Mike needs to read 45 pages on Wednesday, and his goal is 40 pages per day, he will have read a total of 15 + 20 + 45 = 80 pages by the end of Wednesday, which is more than his goal of 40 pages per day, so he will have met his minimum goal and made up for the ones he didn't read.\nFinal Answer: 45",
+    "pred_answer_masked": "45",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Mike's goal is 40 pages per day, but he only read 15 pages on Monday, so he missed 40 - 15 = 25 pages.\n2. On Tuesday, Mike read 20 pages, but his daily goal is 40 pages, so he missed 40 - 20 = 20 pages.\n3. To meet his goal and make up for the ones he didn't read, Mike needs to read his daily goal of 40 pages on Wednesday, plus the 25 and 20 pages he missed.\n4. So he needs to read 40 + 25 + 20 = 85 pages on Wednesday to meet his minimum goal and make up for the ones he didn't read.\nFinal Answer: 85"
+  },
+  {
+    "id": 2,
+    "question": "Sarah's baking target is 50 muffins daily. On Friday, Sarah was only able to bake 25 muffins, so she decided that she would make up for the remainder on Saturday. However, she was only able to bake 30 muffins on Saturday. How many muffins would Sarah have to bake on Sunday to meet her minimum goal and make up for the ones she didn't bake?",
+    "ground_truth": "95",
+    "generation": "Reasoning:\n1. Sarah's target is 50 muffins daily, and she baked 25 on Friday, so she needs to bake 50 - 25 = 25 muffins on Saturday to meet her goal.\n2. However, she was only able to bake 30 muffins on Saturday, so she has already met her goal for Saturday and has 30 - 25 = 5 extra muffins.\n3. To meet her goal for the weekend, she needs to bake 50 muffins on Sunday, and since she already has 25 muffins from Friday and 30 muffins from Saturday, she needs to bake 50 - (25 + 30) = 50 - 55 = -5 muffins to meet her goal, but since you can't bake a negative number of muffins, she actually needs to bake 5 muffins to make up for the ones she didn't bake on Friday.\n4. However, since she has 5 extra muffins from Saturday, she actually needs to bake 5 - 5 = 0 muffins on Sunday to meet her goal and make up for the ones she didn't bake.\n\nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Sarah's target is 50 muffins daily, and she baked 25 on Friday, so she has a deficit of 50 - 25 = 25 muffins for Friday.\n2. On Saturday, she was only able to bake 30 muffins, so she has a deficit of 50 - 30 = 20 muffins for Saturday.\n3. To meet her minimum goal for Sunday and make up for the ones she didn't bake, she needs to bake her daily goal of 50 muffins plus the 25 and 20 muffins she missed.\n4. So, she needs to bake 50 + 25 + 20 = 95 muffins on Sunday.\n\nFinal Answer: 95"
+  },
+  {
+    "id": 3,
+    "question": "David's running goal is 20 miles. On day one, David was only able to run 10 miles, so he decided that he would make up for the rest on day two. However, he was only able to run 15 miles on day two. How many miles would David have to run on day three to meet his minimum goal and make up for the ones he didn't run?",
+    "ground_truth": "35",
+    "generation": "Reasoning:\n1. David's goal is 20 miles, and he ran 10 miles on day one, so he needs to run 20 - 10 = 10 miles on day two and day three combined.\n2. On day two, he ran 15 miles, so he needs to run 10 - 15 = -5 miles on day three to meet his goal.\n3. Since you can't run a negative number of miles, David needs to run enough miles on day three to make up for the 5 miles he didn't run on day two.\n4. David needs to run 5 miles on day three to meet his minimum goal and make up for the ones he didn't run.\n\nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. David's goal is 20 miles daily, and he ran 10 miles on day one, so he has a deficit of 20 - 10 = 10 miles for day one.\n2. On day two, he ran 15 miles, so he has a deficit of 20 - 15 = 5 miles for day two.\n3. To meet his minimum goal for day three and make up for the ones he didn't run, David needs to run his daily goal of 20 miles plus the 10 and 5 miles missed.\n4. David needs to run 20 + 10 + 5 = 35 miles on day three.\n\nFinal Answer: 35"
+  },
+  {
+    "id": 4,
+    "question": "Emma's memorization goal is 100 vocabulary words. On Monday, Emma was only able to learn 40 words, so she decided that she would make up for the rest on Tuesday. However, she was only able to learn 50 words on Tuesday. How many words would Emma have to memorize on Wednesday to meet her minimum goal and make up for the ones she didn't learn?",
+    "ground_truth": "210",
+    "generation": "1. Emma's goal is 100 words, and she learned 40 on Monday, so she needs 100 - 40 = 60 more words.\n2. On Tuesday, she learned 50 words, but she still needs 60 more words, so she now needs 60 - 50 = 10 more words.\n3. Since she needs 10 more words, and her goal is 100 words, she will have 100 + 10 = 110 words.\n4. To meet her goal, she needs 100 words, so she has 110 - 100 = 10 extra words, but she actually needs to learn 10 more words to meet her goal.\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Emma's goal is 100 words daily, and she learned 40 on Monday, so she missed 100 - 40 = 60 words for Monday.\n2. On Tuesday, she learned 50 words, so she missed 100 - 50 = 50 words for Tuesday.\n3. To meet her goal for Wednesday and make up for the missed words, she needs her daily goal of 100 words plus the 60 and 50 missed words.\n4. So, she needs to memorize 100 + 60 + 50 = 210 words on Wednesday.\nFinal Answer: 210"
+  },
+  {
+    "id": 5,
+    "question": "James's daily target is 35 lines of code. On Monday, James was only able to write 10 lines, so he decided that he would make up for the rest on Tuesday. However, he was only able to write 12 lines on Tuesday. How many lines would James have to write on Wednesday to meet his minimum goal and make up for the ones he didn't write?",
+    "ground_truth": "83",
+    "generation": "Reasoning:\n1. James's target for Monday and Tuesday is 35 * 2 = 70 lines.\n2. He wrote 10 lines on Monday, so he needs to write 70 - 10 = 60 lines on Tuesday and Wednesday combined.\n3. He wrote 12 lines on Tuesday, so he needs to write 60 - 12 = 48 lines on Wednesday.\n4. James needs to write 48 lines on Wednesday to meet his minimum goal and make up for the ones he didn't write.\nFinal Answer: 48",
+    "pred_answer_masked": "48",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. James's target is 35 lines of code daily. He wrote 10 lines on Monday, so he missed 35 - 10 = 25 lines.\n2. He wrote 12 lines on Tuesday, so he missed 35 - 12 = 23 lines for Tuesday.\n3. For Wednesday, he needs to write his daily target of 35 lines plus the missed 25 and 23 lines.\n4. James needs to write 35 + 25 + 23 = 83 lines on Wednesday to meet his minimum goal and make up for the ones he didn't write.\nFinal Answer: 83"
+  },
+  {
+    "id": 6,
+    "question": "Linda's sales goal is 60 shirts. On Thursday, Linda was only able to sell 20 shirts, so she decided that she would make up for the rest on Friday. However, she was only able to sell 40 shirts on Friday. How many shirts would Linda have to sell on Saturday to meet her minimum goal and make up for the ones she didn't sell?",
+    "ground_truth": "120",
+    "generation": "1. Linda's goal is 60 shirts, and she sold 20 on Thursday, so she needs to sell 60 - 20 = 40 more shirts.\n2. On Friday, she sold 40 shirts, but she still needs to sell 40 more shirts to meet her goal, so she needs to sell 40 more shirts on Saturday.\n3. However, she also needs to make up for the 20 shirts she didn't sell on Thursday, so she needs to sell 40 (to meet her goal) + 20 (to make up for Thursday) = 60 more shirts on Saturday.\n4. Since she sold 40 shirts on Friday, she still needs to sell 60 - 40 = 20 more shirts on Saturday to meet her goal and make up for the ones she didn't sell.\n\nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Linda's goal is 60 shirts daily, and she sold 20 on Thursday, so she needs to make up 60 - 20 = 40 shirts.\n2. On Friday, she sold 40 shirts, so she needs to make up 60 - 40 = 20 shirts for Friday.\n3. To meet her goal for Saturday and make up for the ones she didn't sell, she needs to sell her daily goal of 60 shirts plus the 40 from Thursday and 20 from Friday.\n4. So she needs to sell 60 + 40 + 20 = 120 shirts on Saturday.\n\nFinal Answer: 120"
+  },
+  {
+    "id": 7,
+    "question": "Tom's planting goal is 80 trees. On Monday, Tom was only able to plant 50 trees, so he decided that he would make up for the rest on Tuesday. However, he was only able to plant 60 trees on Tuesday. How many trees would Tom have to plant on Wednesday to meet his minimum goal and make up for the ones he didn't plant?",
+    "ground_truth": "130",
+    "generation": "1. Tom's goal is 80 trees, and he planted 50 on Monday, so he needs to plant 80 - 50 = 30 more trees.\n2. On Tuesday, he planted 60 trees, but he still needs to plant 30 more trees to meet his goal, so he needs to plant 30 - 60 = -30 trees on Wednesday to make up for the ones he didn't plant.\n3. Since Tom can't plant a negative number of trees, he needs to plant enough trees to make up for the -30 trees, which is 30 trees.\n4. Tom already needs to plant 30 trees to meet his goal, and he also needs to plant 30 more trees to make up for the ones he didn't plant, so he needs to plant 30 + 30 = 60 trees on Wednesday.\n\nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Tom's goal is 80 trees daily, and he planted 50 on Monday, so he missed 80 - 50 = 30 trees.\n2. On Tuesday, he planted 60 trees, so he missed 80 - 60 = 20 trees for Tuesday.\n3. On Wednesday, Tom needs to plant his daily goal of 80 trees, plus the 30 from Monday and 20 from Tuesday.\n4. Tom needs to plant 80 + 30 + 20 = 130 trees on Wednesday to meet his minimum goal and make up for the ones he didn't plant.\n\nFinal Answer: 130"
+  },
+  {
+    "id": 8,
+    "question": "Sophia's crafting goal is 45 bracelets. On Monday, Sophia was only able to make 20 bracelets, so she decided that she would make up for the rest on Tuesday. However, she was only able to make 25 bracelets on Tuesday. How many bracelets would Sophia have to make on Wednesday to meet his minimum goal and make up for the ones she didn't make?",
+    "ground_truth": "90",
+    "generation": "Reasoning:\n1. Sophia's goal is 45 bracelets, and she made 20 on Monday, so she needs 45 - 20 = 25 more.\n2. However, she made 25 on Tuesday, so she now needs 25 - 25 = 0 more to meet her goal.\n3. But she made 25 on Tuesday, so she actually needs to make up for the 25 she made on Tuesday to meet her goal of 45, so she needs 45 - 20 = 25 more.\n4. Since she needs to make up for the 25 she made on Tuesday, and she needs 25 more to meet her goal, she needs to make 25 + 25 = 50 bracelets on Wednesday.\n\nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Sophia's goal is 45 bracelets daily, and she made 20 on Monday, so she missed 45 - 20 = 25 bracelets.\n2. She made 25 on Tuesday, so she missed 45 - 25 = 20 bracelets for Tuesday.\n3. On Wednesday, she needs to make her daily goal of 45 bracelets, plus the 25 and 20 missed bracelets.\n4. So, she needs to make 45 + 25 + 20 = 90 bracelets on Wednesday to meet her minimum goal and make up for the ones she didn't make.\n\nFinal Answer: 90"
+  },
+  {
+    "id": 9,
+    "question": "Robert's daily water goal is 75 ounces. On Monday, Robert was only able to drink 30 ounces, so he decided that he would make up for the rest on Tuesday. However, he was only able to drink 40 ounces on Tuesday. How many ounces would Robert have to drink on Wednesday to meet his minimum goal and make up for the ones he didn't drink?",
+    "ground_truth": "155",
+    "generation": "1. Robert's goal for Monday and Tuesday is 75 * 2 = 150 ounces.\n2. He drank 30 ounces on Monday, so he needs 150 - 30 = 120 ounces for Tuesday.\n3. He only drank 40 ounces on Tuesday, so he still needs 120 - 40 = 80 ounces for Tuesday.\n4. To meet his goal for the three days, Robert needs 75 * 3 = 225 ounces. He has 30 + 40 = 70 ounces so far, so he needs 225 - 70 = 155 ounces for Wednesday.",
+    "pred_answer_masked": "155",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Robert's goal for Monday and Tuesday is 75 * 2 = 150 ounces.\n2. He drank 30 ounces on Monday, so he needs 150 - 30 = 120 ounces for Tuesday.\n3. He only drank 40 ounces on Tuesday, so he still needs 120 - 40 = 80 ounces for Tuesday.\n4. To meet his goal for the three days, Robert needs 75 * 3 = 225 ounces. He has 30 + 40 = 70 ounces so far, so he needs 225 - 70 = 155 ounces for Wednesday.\nFinal Answer: 155"
+  },
+  {
+    "id": 10,
+    "question": "Olivia's painting goal is 90 portraits. On Monday, Olivia was only able to paint 45 portraits, so she decided that she would make up for the rest on Tuesday. However, she was only able to paint 55 portraits on Tuesday. How many portraits would Olivia have to paint on Wednesday to meet her minimum goal and make up for the ones she didn't paint?",
+    "ground_truth": "170",
+    "generation": "Reasoning:\n1. Olivia painted 45 portraits on Monday.\n2. She painted 55 portraits on Tuesday, so in total she painted 45 + 55 = 100 portraits.\n3. Since her goal is 90 portraits, she has already exceeded her goal by 10 portraits, so she doesn't need to paint any more to meet her minimum goal.\n4. However, she still needs to make up for the 10 extra portraits she painted, so she needs to paint 10 more portraits to meet her goal of 90 portraits.\n\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Olivia's goal is 90 portraits daily. She painted 45 portraits on Monday, so she missed 90 - 45 = 45 portraits.\n2. She painted 55 portraits on Tuesday, so she missed 90 - 55 = 35 portraits.\n3. For Wednesday, she needs to paint her daily goal of 90 portraits plus the 45 and 35 missed portraits.\n4. Therefore, she needs to paint 90 + 45 + 35 = 170 portraits on Wednesday to meet her minimum goal and make up for the ones she didn't paint.\n\nFinal Answer: 170"
+  },
+  {
+    "id": 11,
+    "question": "William's assembly goal is 30 toys. On Monday, William was only able to assemble 10 toys, so he decided that he would make up for the rest on Tuesday. However, he was only able to assemble 15 toys on Tuesday. How many toys would William have to assemble on Wednesday to meet his minimum goal and make up for the ones he didn't assemble?",
+    "ground_truth": "65",
+    "generation": "Reasoning:\n1. William's goal is 30 toys, and he assembled 10 on Monday, so he needs 30 - 10 = 20 more toys.\n2. On Tuesday, he assembled 15 toys, so he now needs 20 - 15 = 5 more toys.\n3. Since he needs 5 more toys and his goal is 30, he will have 10 + 15 + x = 30 toys on Wednesday, where x is the number of toys he needs to assemble.\n4. 10 + 15 + x = 30, so 25 + x = 30, and x = 30 - 25 = 5.\n\nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. William's goal is 30 toys daily, and he assembled 10 on Monday, so he needs 30 - 10 = 20 more toys to make up for Monday.\n2. On Tuesday, he assembled 15 toys, so he needs 30 - 15 = 15 more toys to make up for Tuesday.\n3. Since he needs his daily goal of 30, plus 20 and 15, he will have to assemble 30 + 20 + 15 = 65 toys on Wednesday.\n\nFinal Answer: 65"
+  },
+  {
+    "id": 12,
+    "question": "Mia's writing goal is 55 articles. On Monday, Mia was only able to write 25 articles, so she decided that she would make up for the rest on Tuesday. However, she was only able to write 35 articles on Tuesday. How many articles would Mia have to write on Wednesday to meet her minimum goal and make up for the ones she didn't write?",
+    "ground_truth": "105",
+    "generation": "Reasoning:\n1. Mia's goal is 55 articles, and she wrote 25 on Monday, so she still needs 55 - 25 = 30 articles.\n2. On Tuesday, she wrote 35 articles, but she still needs to make up for the 30 articles she didn't write on Monday, so she now needs 30 + 35 = 65 articles in total.\n3. Since she already wrote 25 + 35 = 60 articles on Monday and Tuesday, she needs to write 65 - 60 = 5 articles on Wednesday.\n4. Mia needs to write 5 articles on Wednesday to meet her minimum goal and make up for the ones she didn't write.\n\nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Mia's daily goal is 55 articles, and she wrote 25 on Monday, so she missed 55 - 25 = 30 articles.\n2. On Tuesday, she wrote 35 articles, so she missed 55 - 35 = 20 articles.\n3. On Wednesday, she needs to meet her daily goal of 55 and make up for the 30 and 20 missed articles.\n4. Mia needs to write 55 + 30 + 20 = 105 articles on Wednesday.\n\nFinal Answer: 105"
+  },
+  {
+    "id": 13,
+    "question": "Charles's stretching goal is 25 minutes. On Monday, Charles was only able to stretch for 5 minutes, so he decided that he would make up for the rest on Tuesday. However, he was only able to stretch for 10 minutes on Tuesday. How many minutes would Charles have to stretch on Wednesday to meet his minimum goal and make up for the ones he didn't stretch?",
+    "ground_truth": "60",
+    "generation": "1. Charles's goal is 25 minutes, and he stretched for 5 minutes on Monday, so he needs to stretch 25 - 5 = 20 minutes in total.\n2. He stretched for 10 minutes on Tuesday, so he still needs to stretch 20 - 10 = 10 minutes in total.\n3. Since he needs to stretch for 10 minutes in total, and he will stretch for some minutes on Wednesday, let x be the number of minutes he will stretch on Wednesday.\n4. The equation is x + 10 = 10, so x = 0 minutes.",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Charles's daily goal is 25 minutes, and he stretched for 5 minutes on Monday, so he needs to make up 25 - 5 = 20 minutes.\n2. He stretched for 10 minutes on Tuesday, so he needs to make up 25 - 10 = 15 minutes.\n3. On Wednesday, he needs to meet his daily goal of 25 minutes and make up the 20 and 15 minutes missed.\n4. So he needs to stretch for 25 + 20 + 15 = 60 minutes.\nFinal Answer: 60"
+  },
+  {
+    "id": 14,
+    "question": "Ava's photography goal is 70 photos. On Monday, Ava was only able to take 30 photos, so she decided that she would make up for the rest on Tuesday. However, she was only able to take 40 photos on Tuesday. How many photos would Ava have to take on Wednesday to meet her minimum goal and make up for the ones she didn't take?",
+    "ground_truth": "140",
+    "generation": "1. Ava's goal is 70 photos, and she took 30 on Monday, so she needs 70 - 30 = 40 more photos.\n2. On Tuesday, she took 40 photos, but she still needs 40 more photos to meet her goal, so she now needs 40 - 40 = 0 more photos to meet her goal, but she still needs to make up for the 30 photos she didn't take on Monday.\n3. To make up for the 30 photos she didn't take on Monday, she needs to take 30 more photos on Wednesday.\n4. Since she needs to make up for 30 photos, the total number of photos she needs to take on Wednesday is 30.",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Ava's daily goal is 70 photos, and she took 30 on Monday, so she needs 70 - 30 = 40 more photos to make up for Monday.\n2. On Tuesday, she took 40 photos, so she needs 70 - 40 = 30 more photos to make up for Tuesday.\n3. To make up for the missed photos and meet her daily goal, she needs 70 + 40 + 30 = 140 photos on Wednesday.\nFinal Answer: 140"
+  },
+  {
+    "id": 15,
+    "question": "Joseph's delivering goal is 85 packages. On Monday, Joseph was only able to deliver 40 packages, so he decided that he would make up for the rest on Tuesday. However, he was only able to deliver 50 packages on Tuesday. How many packages would Joseph have to deliver on Wednesday to meet his minimum goal and make up for the ones he didn't deliver?",
+    "ground_truth": "165",
+    "generation": "1. Joseph's goal is 85 packages, and he delivered 40 on Monday, so he has 85 - 40 = 45 packages left to deliver.\n2. On Tuesday, he delivered 50 packages, so he now has 45 - 50 = -5 packages left to deliver, meaning he's behind his goal.\n3. To meet his goal, Joseph needs to deliver 85 packages in total, and he's already delivered 40 + 50 = 90 packages, so he actually has 90 - 85 = 5 packages more than his goal.\n4. Since he has 5 extra packages, and he needs to make up for the 5 packages he didn't deliver, he doesn't need to deliver any packages on Wednesday to meet his goal.\n\nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Joseph's daily goal is 85 packages, and he delivered 40 on Monday, so he missed 85 - 40 = 45 packages.\n2. On Tuesday, he delivered 50 packages, so he missed 85 - 50 = 35 packages.\n3. To meet his daily goal for Wednesday and make up for the missed packages, he needs to deliver 85 + 45 + 35 = 165 packages.\n\nFinal Answer: 165"
+  },
+  {
+    "id": 16,
+    "question": "Isabella's knitting goal is 15 rows. On Monday, Isabella was only able to knit 5 rows, so she decided that she would make up for the rest on Tuesday. However, she was only able to knit 8 rows on Tuesday. How many rows would Isabella have to knit on Wednesday to meet her minimum goal and make up for the ones she didn't knit?",
+    "ground_truth": "32",
+    "generation": "1. Isabella's goal is 15 rows, and she already knitted 5 rows on Monday, so she needs 15 - 5 = 10 more rows.\n2. On Tuesday, she knitted 8 rows, but she still needs 10 more rows, so she needs 10 - 8 = 2 more rows.\n3. Since she needs 2 more rows to meet her minimum goal, and she wants to make up for the ones she didn't knit, she needs to knit 2 more rows on Wednesday.\n4. However, she also needs to account for the 5 rows she didn't knit on Monday, so she needs to knit 2 + 5 = 7 rows on Wednesday.\nFinal Answer: 7",
+    "pred_answer_masked": "7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Isabella's daily goal is 15 rows, and she knitted 5 rows on Monday, so she needs 15 - 5 = 10 more rows to make up for Monday.\n2. On Tuesday, she knitted 8 rows, so she needs 15 - 8 = 7 more rows to make up for Tuesday.\n3. On Wednesday, she needs to meet her daily goal of 15 rows and make up the 10 and 7 rows.\n4. She needs to knit 15 + 10 + 7 = 32 rows on Wednesday.\nFinal Answer: 32"
+  },
+  {
+    "id": 17,
+    "question": "Matthew's sorting goal is 65 files. On Monday, Matthew was only able to sort 20 files, so he decided that he would make up for the rest on Tuesday. However, he was only able to sort 30 files on Tuesday. How many files would Matthew have to sort on Wednesday to meet his minimum goal and make up for the ones he didn't sort?",
+    "ground_truth": "145",
+    "generation": "Reasoning:\n1. Matthew's goal is 65 files, and he sorted 20 on Monday, so he needs to sort 65 - 20 = 45 more files.\n2. On Tuesday, he sorted 30 files, so he has already sorted 20 + 30 = 50 files.\n3. Since he has already sorted 50 files, he still needs to sort 45 - 50 = -5 files, but since you can't sort a negative number of files, he actually needs to sort 5 more files to meet his goal.\n4. However, he needs to make up for the ones he didn't sort, which is 50 - 45 = 5 files, so he actually needs to sort 5 + 5 = 10 files on Wednesday to meet his minimum goal and make up for the ones he didn't sort.\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Matthew's daily goal is 65 files, and he sorted 20 on Monday, so he needs to make up 65 - 20 = 45 files.\n2. On Tuesday, he sorted 30 files, so he needs to make up 65 - 30 = 35 files.\n3. On Wednesday, he needs to meet his goal of 65 files and make up the 45 and 35 files.\n4. Matthew needs to sort 65 + 45 + 35 = 145 files on Wednesday.\nFinal Answer: 145"
+  },
+  {
+    "id": 18,
+    "question": "Charlotte's cleaning goal is 110 windows. On Monday, Charlotte was only able to clean 60 windows, so she decided that she would make up for the rest on Tuesday. However, she was only able to clean 70 windows on Tuesday. How many windows would Charlotte have to clean on Wednesday to meet her minimum goal and make up for the ones she didn't clean?",
+    "ground_truth": "200",
+    "generation": "1. Charlotte's goal is 110 windows. \n2. She cleaned 60 windows on Monday, so she still needs 110 - 60 = 50 windows.\n3. On Tuesday, she cleaned 70 windows, but she still needs to make up for the 60 windows she didn't clean on Monday, so she still needs 50 + 60 = 110 windows.\n4. Since she cleaned 70 windows on Tuesday, she still needs 110 - 70 = 40 windows on Wednesday.\n\nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Charlotte's daily goal is 110 windows. \n2. She cleaned 60 windows on Monday, so she missed 110 - 60 = 50 windows.\n3. On Tuesday, she cleaned 70 windows, so she missed 110 - 70 = 40 windows.\n4. On Wednesday, she needs to clean her daily goal of 110 windows plus the missed 50 and 40 windows, which is 110 + 50 + 40 = 200 windows.\n\nFinal Answer: 200"
+  },
+  {
+    "id": 19,
+    "question": "Anthony's packing goal is 120 boxes. On Monday, Anthony was only able to pack 50 boxes, so he decided that he would make up for the rest on Tuesday. However, he was only able to pack 80 boxes on Tuesday. How many boxes would Anthony have to pack on Wednesday to meet his minimum goal and make up for the ones he didn't pack?",
+    "ground_truth": "230",
+    "generation": "Reasoning:\n1. Anthony's goal is 120 boxes, and he packed 50 on Monday, so he needs 120 - 50 = 70 more boxes.\n2. On Tuesday, he packed 80 boxes, but he still needs 70 more boxes, so he needs 70 - 80 = -10 more boxes on Wednesday to meet his goal.\n3. However, since Anthony can't pack a negative number of boxes, he needs to pack enough boxes to make up for the -10 boxes, which is 10 more boxes than he needs to meet his goal.\n4. To meet his goal and make up for the ones he didn't pack, Anthony needs to pack 70 + 10 = 80 boxes on Wednesday.\n\nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Anthony's daily goal is 120 boxes, and he packed 50 on Monday, so he missed 120 - 50 = 70 boxes.\n2. On Tuesday, he packed 80 boxes, so he missed 120 - 80 = 40 boxes.\n3. On Wednesday, he needs to pack his daily goal of 120 boxes plus the missed 70 and 40 boxes.\n4. Anthony needs to pack 120 + 70 + 40 = 230 boxes on Wednesday.\n\nFinal Answer: 230"
+  },
+  {
+    "id": 20,
+    "question": "Amelia's translating goal is 150 sentences. On Monday, Amelia was only able to translate 75 sentences, so she decided that she would make up for the rest on Tuesday. However, she was only able to translate 100 sentences on Tuesday. How many sentences would Amelia have to translate on Wednesday to meet her minimum goal and make up for the ones she didn't translate?",
+    "ground_truth": "275",
+    "generation": "Reasoning:\n1. Amelia's goal is 150 sentences, and she translated 75 on Monday, so she still needs 150 - 75 = 75 sentences.\n2. On Tuesday, she translated 100 sentences, but she still needs 75 sentences, so she now needs 75 - 100 = -25 sentences.\n3. Since she needs -25 sentences, it means she has a deficit of 25 sentences, so she needs to make up for this deficit on Wednesday.\n4. To make up for the deficit, she needs to translate 25 sentences on Wednesday to meet her minimum goal.\n\nFinal Answer: 25",
+    "pred_answer_masked": "25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Amelia's daily goal is 150 sentences, and she translated 75 on Monday, so she missed 150 - 75 = 75 sentences.\n2. On Tuesday, she translated 100 sentences, so she missed 150 - 100 = 50 sentences.\n3. On Wednesday, she needs to translate her daily goal of 150 sentences plus the missed 75 and 50 sentences.\n4. Amelia needs to translate 150 + 75 + 50 = 275 sentences.\n\nFinal Answer: 275"
+  },
+  {
+    "id": 21,
+    "question": "Brian's workout goal is 42 pushups. On Monday, Brian was only able to do 12 pushups, so he decided that he would make up for the rest on Tuesday. However, he was only able to do 22 pushups on Tuesday. How many pushups would Brian have to do on Wednesday to meet his minimum goal and make up for the ones he didn't do?",
+    "ground_truth": "92",
+    "generation": "Reasoning:\n1. Brian's goal is 42 pushups, and he did 12 on Monday, so he needs to do 42 - 12 = 30 more pushups.\n2. On Tuesday, he did 22 pushups, but he still needs to make up for the 30 pushups from Monday, so he needs to do 30 + 22 = 52 pushups in total.\n3. Since he already did 22 pushups on Tuesday, he needs to do 52 - 22 = 30 pushups on Wednesday.\n4. To meet his minimum goal, Brian needs to do 42 pushups on Wednesday, but since he only needs to make up for the ones he didn't do, he only needs to do 30 pushups.\nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Brian's daily goal is 42 pushups, and he did 12 on Monday, so he missed 42 - 12 = 30 pushups.\n2. On Tuesday, he did 22 pushups, so he missed 42 - 22 = 20 pushups.\n3. On Wednesday, he needs to do his daily goal of 42 pushups plus the missed 30 and 20 pushups.\n4. Brian needs to do 42 + 30 + 20 = 92 pushups.\nFinal Answer: 92"
+  },
+  {
+    "id": 22,
+    "question": "Evelyn's walking goal is 58 blocks. On Monday, Evelyn was only able to walk 28 blocks, so she decided that she would make up for the rest on Tuesday. However, she was only able to walk 38 blocks on Tuesday. How many blocks would Evelyn have to walk on Wednesday to meet her minimum goal and make up for the ones she didn't walk?",
+    "ground_truth": "108",
+    "generation": "Reasoning:\n1. Evelyn's goal is 58 blocks, and she walked 28 blocks on Monday, so she has 58 - 28 = 30 blocks left to meet her goal.\n2. On Tuesday, she walked 38 blocks, but she still needs to make up for the 30 blocks she didn't walk, so she now has 30 + 38 = 68 blocks.\n3. Since Evelyn's goal is 58 blocks, and she now has 68 blocks, she has 68 - 58 = 10 blocks extra.\n4. To meet her minimum goal and make up for the ones she didn't walk, Evelyn would have to walk 58 - 68 = -10 blocks, but since you can't walk a negative number of blocks, she would have to walk 10 blocks to make up for the extra blocks she walked.\n\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Evelyn's daily goal is 58 blocks, and she walked 28 blocks on Monday, so she missed 58 - 28 = 30 blocks.\n2. On Tuesday, she walked 38 blocks, so she missed 58 - 38 = 20 blocks.\n3. On Wednesday, she needs to walk her daily goal of 58 blocks plus the missed 30 and 20 blocks.\n4. Evelyn would have to walk 58 + 30 + 20 = 108 blocks.\n\nFinal Answer: 108"
+  },
+  {
+    "id": 23,
+    "question": "Kevin's coding goal is 24 functions. On Monday, Kevin was only able to write 14 functions, so he decided that he would make up for the rest on Tuesday. However, he was only able to write 18 functions on Tuesday. How many functions would Kevin have to write on Wednesday to meet his minimum goal and make up for the ones he didn't write?",
+    "ground_truth": "40",
+    "generation": "Reasoning:\n1. Kevin's goal is 24 functions, and he wrote 14 on Monday, so he needs 24 - 14 = 10 more functions.\n2. On Tuesday, he wrote 18 functions, but he still needs 10 more, so he has 18 - 10 = 8 functions left to write.\n3. Since he needs 10 functions in total, and he has 8 functions left to write, he needs to write 10 - 8 = 2 functions on Wednesday.\n4. Kevin needs to write 2 functions on Wednesday to meet his minimum goal and make up for the ones he didn't write.\nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Kevin's daily goal is 24 functions, and he wrote 14 on Monday, so he missed 24 - 14 = 10 functions.\n2. On Tuesday, he wrote 18 functions, so he missed 24 - 18 = 6 functions.\n3. On Wednesday, he needs to write his daily goal of 24 functions plus the missed 10 and 6 functions.\n4. Kevin needs to write 24 + 10 + 6 = 40 functions.\nFinal Answer: 40"
+  },
+  {
+    "id": 24,
+    "question": "Harper's review goal is 72 documents. On Monday, Harper was only able to review 32 documents, so she decided that she would make up for the rest on Tuesday. However, she was only able to review 42 documents on Tuesday. How many documents would Harper have to review on Wednesday to meet his minimum goal and make up for the ones he didn't review?",
+    "ground_truth": "142",
+    "generation": "1. Harper's goal is 72 documents, and she reviewed 32 on Monday, so she needs to review 72 - 32 = 40 more documents to meet her goal.\n2. On Tuesday, she reviewed 42 documents, but she still needs to review 40 more documents to meet her goal, so she has reviewed 42 - 40 = 2 extra documents.\n3. Since she has reviewed 2 extra documents, she actually needs to review 40 + 2 = 42 more documents to meet her goal and make up for the ones she didn't review.\n4. Harper has already reviewed 32 + 42 = 74 documents, but her goal is 72, so she actually needs to review 74 - 72 = 2 fewer documents than she thought.\n5. However, since she needs to review 42 more documents to meet her goal and make up for the ones she didn't review, she actually needs to review 42 - 2 = 40 documents on Wednesday.",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Harper's daily goal is 72 documents, and she reviewed 32 on Monday, so she missed 72 - 32 = 40 documents.\n2. On Tuesday, she reviewed 42 documents, so she missed 72 - 42 = 30 documents.\n3. On Wednesday, she needs to review her daily goal of 72 documents plus the missed 40 and 30 documents.\n4. Harper would have to review 72 + 40 + 30 = 142 documents on Wednesday.\nFinal Answer: 142"
+  },
+  {
+    "id": 25,
+    "question": "Steven's daily target is 88 calls. On Monday, Steven was only able to make 48 calls, so he decided that he would make up for the rest on Tuesday. However, he was only able to make 58 calls on Tuesday. How many calls would Steven have to make on Wednesday to meet his minimum goal and make up for the ones he didn't make?",
+    "ground_truth": "158",
+    "generation": "1. Steven's target for Monday and Tuesday is 88 * 2 = 176 calls.\n2. He made 48 calls on Monday, so he needs to make 176 - 48 = 128 calls on Tuesday and Wednesday combined.\n3. He made 58 calls on Tuesday, so he needs to make 128 - 58 = 70 calls on Wednesday.\n4. To meet his minimum goal, Steven needs to make 88 calls on Wednesday, but since he only needs to make up for 70 calls, he can make 88 - 70 = 18 calls more than needed.\n\nFinal Answer: 88",
+    "pred_answer_masked": "88",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Steven's target is 88 calls daily. He made 48 calls on Monday, so he missed 88 - 48 = 40 calls.\n2. He made 58 calls on Tuesday, so he missed 88 - 58 = 30 calls.\n3. For Wednesday, he needs to make his daily target of 88 calls plus the missed 40 and 30 calls.\n4. Steven needs to make 88 + 40 + 30 = 158 calls on Wednesday.\n\nFinal Answer: 158"
+  },
+  {
+    "id": 26,
+    "question": "Abigail's sketch goal is 18 pages. On Monday, Abigail was only able to draw 8 pages, so she decided that she would make up for the rest on Tuesday. However, she was only able to draw 12 pages on Tuesday. How many pages would Abigail have to draw on Wednesday to meet her minimum goal and make up for the ones she didn't draw?",
+    "ground_truth": "34",
+    "generation": "Reasoning:\n1. Abigail's goal is 18 pages, and she drew 8 on Monday, so she needs 18 - 8 = 10 more pages.\n2. On Tuesday, she drew 12 pages, but she still needs 10 more pages, so she now needs 10 - 12 = -2 more pages.\n3. Since she needs -2 more pages, she actually needs to draw 2 pages to make up for the ones she didn't draw.\n4. Abigail's goal is 18 pages, and she has already drawn 8 + 12 = 20 pages, so she has 18 - 20 = -2 pages left to draw to meet her goal.\n5. Combining the two, Abigail needs to draw 2 pages to make up for the ones she didn't draw and 2 pages to meet her goal, so she needs to draw 2 + 2 = 4 pages on Wednesday.\n\nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Abigail's daily goal is 18 pages, and she drew 8 on Monday, so she missed 18 - 8 = 10 pages.\n2. On Tuesday, she drew 12 pages, so she missed 18 - 12 = 6 pages.\n3. On Wednesday, she needs to draw her daily goal of 18 pages plus the missed 10 and 6 pages.\n4. Abigail needs to draw 18 + 10 + 6 = 34 pages.\n\nFinal Answer: 34"
+  },
+  {
+    "id": 27,
+    "question": "Richard's mixing goal is 68 batches. On Monday, Richard was only able to mix 28 batches, so he decided that he would make up for the rest on Tuesday. However, he was only able to mix 38 batches on Tuesday. How many batches would Richard have to mix on Wednesday to meet his minimum goal and make up for the ones he didn't mix?",
+    "ground_truth": "138",
+    "generation": "1. Richard's goal is 68 batches, and he mixed 28 on Monday, so he needs to mix 68 - 28 = 40 more batches.\n2. On Tuesday, he mixed 38 batches, but he still needs to mix 40 more batches, so he needs to mix 40 - 38 = 2 more batches on Tuesday to meet his goal.\n3. However, since he can't mix more batches on Tuesday, he will still need to mix 40 more batches on Wednesday to meet his goal.\n4. Since he already mixed 28 + 38 = 66 batches, he needs to mix 68 - 66 = 2 batches on Wednesday to meet his goal.",
+    "pred_answer_masked": "2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Richard's daily goal is 68 batches, and he mixed 28 on Monday, so he missed 68 - 28 = 40 batches.\n2. On Tuesday, he mixed 38 batches, so he missed 68 - 38 = 30 batches.\n3. On Wednesday, he needs to mix his daily goal of 68 batches plus the missed 40 and 30 batches.\n4. Richard would have to mix 68 + 40 + 30 = 138 batches on Wednesday.\nFinal Answer: 138"
+  },
+  {
+    "id": 28,
+    "question": "Emily's debugging goal is 105 issues. On Monday, Emily was only able to fix 45 issues, so she decided that she would make up for the rest on Tuesday. However, she was only able to fix 65 issues on Tuesday. How many issues would Emily have to fix on Wednesday to meet her minimum goal and make up for the ones she didn't fix?",
+    "ground_truth": "205",
+    "generation": "Reasoning:\n1. Emily's goal is 105 issues, and she fixed 45 on Monday, so she has 105 - 45 = 60 issues left to fix.\n2. On Tuesday, she fixed 65 issues, but she still has 60 issues left to fix, so she now has 60 - 65 = -5 issues left to fix, but this is incorrect because you can't have a negative number of issues left to fix.\n3. Since she has -5 issues left to fix, she actually has 5 issues more than she needs to fix to meet her goal, so she needs to fix 5 issues on Wednesday to meet her goal.\n4. However, she also needs to make up for the 5 issues she didn't fix on Tuesday, so she actually needs to fix 5 + 5 = 10 issues on Wednesday to meet her goal and make up for the ones she didn't fix.\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Emily's daily goal is 105 issues, and she fixed 45 on Monday, so she missed 105 - 45 = 60 issues.\n2. On Tuesday, she fixed 65 issues, so she missed 105 - 65 = 40 issues.\n3. On Wednesday, she needs to fix her daily goal of 105 issues plus the missed 60 and 40 issues.\n4. Emily would have to fix 105 + 60 + 40 = 205 issues on Wednesday.\nFinal Answer: 205"
+  },
+  {
+    "id": 29,
+    "question": "Jason's chopping goal is 115 carrots. On Monday, Jason was only able to chop 55 carrots, so he decided that he would make up for the rest on Tuesday. However, he was only able to chop 75 carrots on Tuesday. How many carrots would Jason have to chop on Wednesday to meet his minimum goal and make up for the ones he didn't chop?",
+    "ground_truth": "215",
+    "generation": "Reasoning:\n1. Jason needs to chop a total of 115 carrots.\n2. On Monday, Jason chopped 55 carrots, so he still needs 115 - 55 = 60 carrots.\n3. On Tuesday, Jason chopped 75 carrots, but he still needs 60 carrots, so he now needs 60 - 75 = -15 carrots.\n4. Since Jason can't chop a negative number of carrots, he needs to chop 15 more carrots to meet his minimum goal and make up for the ones he didn't chop.\nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Jason's daily goal is 115 carrots. On Monday, Jason chopped 55 carrots, so he missed 115 - 55 = 60 carrots.\n2. On Tuesday, Jason chopped 75 carrots, so he missed 115 - 75 = 40 carrots.\n3. On Wednesday, Jason needs to chop his daily goal of 115 carrots plus the missed 60 and 40 carrots.\n4. Jason would have to chop 115 + 60 + 40 = 215 carrots.\nFinal Answer: 215"
+  },
+  {
+    "id": 30,
+    "question": "Elizabeth's baking target is 125 cookies. On Monday, Elizabeth was only able to bake 65 cookies, so she decided that she would make up for the rest on Tuesday. However, she was only able to bake 85 cookies on Tuesday. How many cookies would Elizabeth have to bake on Wednesday to meet her minimum goal and make up for the ones she didn't bake?",
+    "ground_truth": "225",
+    "generation": "1. Elizabeth's target is 125 cookies. \n2. She baked 65 cookies on Monday, so she still needs 125 - 65 = 60 cookies.\n3. On Tuesday, she baked 85 cookies, but she still needs 60 cookies, so she now has 85 - 60 = 25 cookies.\n4. Elizabeth has 25 cookies from Monday and Tuesday, so she still needs 125 - 25 = 100 cookies.\n\nFinal Answer: 100",
+    "pred_answer_masked": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Elizabeth's daily target is 125 cookies.\n2. She baked 65 cookies on Monday, so she missed 125 - 65 = 60 cookies.\n3. On Tuesday, she baked 85 cookies, so she missed 125 - 85 = 40 cookies.\n4. On Wednesday, she needs to bake her daily goal of 125 cookies plus the missed 60 and 40 cookies, which is 125 + 60 + 40 = 225 cookies.\n\nFinal Answer: 225"
+  },
+  {
+    "id": 31,
+    "question": "Gary's swimming goal is 33 laps. On Monday, Gary was only able to swim 13 laps, so he decided that he would make up for the rest on Tuesday. However, he was only able to swim 19 laps on Tuesday. How many laps would Gary have to swim on Wednesday to meet his minimum goal and make up for the ones he didn't swim?",
+    "ground_truth": "67",
+    "generation": "Reasoning:\n1. Gary's goal is 33 laps, and he swam 13 on Monday, so he needs to swim 33 - 13 = 20 laps to meet his goal.\n2. On Tuesday, he swam 19 laps, so he has already swum 13 + 19 = 32 laps.\n3. Since he needs to swim 20 laps to meet his goal, and he has already swum 32 laps, he has actually swum 32 - 33 = -1 laps too many.\n4. To meet his goal, Gary would need to swim 1 lap on Wednesday to make up for the extra lap he swam on Tuesday.",
+    "pred_answer_masked": "1",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Gary's daily goal is 33 laps, and he swam 13 on Monday, so he missed 33 - 13 = 20 laps.\n2. On Tuesday, he swam 19 laps, so he missed 33 - 19 = 14 laps.\n3. On Wednesday, he needs to swim his daily goal of 33 laps plus the missed 20 and 14 laps.\n4. Gary would have to swim 33 + 20 + 14 = 67 laps.\nFinal Answer: 67"
+  },
+  {
+    "id": 32,
+    "question": "Sofia's practice goal is 53 scales. On Monday, Sofia was only able to play 23 scales, so she decided that she would make up for the rest on Tuesday. However, she was only able to play 33 scales on Tuesday. How many scales would Sofia have to play on Wednesday to meet her minimum goal and make up for the ones she didn't play?",
+    "ground_truth": "103",
+    "generation": "1. Sofia's goal is 53 scales, and she played 23 on Monday, so she needs to play 53 - 23 = 30 more scales.\n2. On Tuesday, Sofia played 33 scales, but she still needs to make up for the 30 scales she didn't play on Monday.\n3. Since Sofia played 33 scales on Tuesday, she has already played 23 + 33 = 56 scales in total.\n4. To meet her goal, Sofia needs to play 53 scales in total, so she needs to play 56 - 53 = 3 more scales on Wednesday.",
+    "pred_answer_masked": "3",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Sofia's daily goal is 53 scales, and she played 23 on Monday, so she missed 53 - 23 = 30 scales.\n2. On Tuesday, Sofia played 33 scales, so she missed 53 - 33 = 20 scales.\n3. On Wednesday, Sofia needs to play her daily goal of 53 scales plus the missed 30 and 20 scales.\n4. Sofia would have to play 53 + 30 + 20 = 103 scales.\nFinal Answer: 103"
+  },
+  {
+    "id": 33,
+    "question": "Timothy's typing goal is 26 pages. On Monday, Timothy was only able to type 16 pages, so he decided that he would make up for the rest on Tuesday. However, he was only able to type 20 pages on Tuesday. How many pages would Timothy have to type on Wednesday to meet his minimum goal and make up for the ones he didn't type?",
+    "ground_truth": "42",
+    "generation": "Reasoning:\n1. Timothy's goal is 26 pages, and he typed 16 pages on Monday, so he needs to type 26 - 16 = 10 pages to meet his goal.\n2. However, he typed 20 pages on Tuesday, so he needs to type 10 - 20 = -10 pages to meet his goal.\n3. Since you can't type a negative number of pages, Timothy needs to type 10 + 10 = 20 pages to make up for the ones he didn't type.\n4. Timothy has already typed 20 pages on Tuesday, so he needs to type 20 + 10 = 30 pages on Wednesday to meet his minimum goal and make up for the ones he didn't type.\nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Timothy's daily goal is 26 pages, and he typed 16 pages on Monday, so he missed 26 - 16 = 10 pages.\n2. He typed 20 pages on Tuesday, so he missed 26 - 20 = 6 pages.\n3. On Wednesday, Timothy needs to type his daily goal of 26 pages plus the missed 10 and 6 pages.\n4. Timothy needs to type 26 + 10 + 6 = 42 pages on Wednesday.\nFinal Answer: 42"
+  },
+  {
+    "id": 34,
+    "question": "Avery's folding goal is 74 shirts. On Monday, Avery was only able to fold 34 shirts, so she decided that she would make up for the rest on Tuesday. However, she was only able to fold 44 shirts on Tuesday. How many shirts would Avery have to fold on Wednesday to meet her minimum goal and make up for the ones she didn't fold?",
+    "ground_truth": "144",
+    "generation": "1. Avery's goal is 74 shirts, and she folded 34 on Monday, so she needs to fold 74 - 34 = 40 more shirts.\n2. On Tuesday, she folded 44 shirts, but she still needs to fold 40 more shirts to meet her goal, so she needs to fold 40 more shirts in total.\n3. Since she already folded 44 shirts on Tuesday, she needs to fold 40 - 44 = -4 shirts on Wednesday to meet her goal.\n4. However, Avery can't fold a negative number of shirts, so she needs to fold 4 more shirts on Wednesday to meet her goal and make up for the ones she didn't fold.\n\nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Avery's daily goal is 74 shirts, and she folded 34 on Monday, so she missed 74 - 34 = 40 shirts.\n2. On Tuesday, she folded 44 shirts, so she missed 74 - 44 = 30 shirts.\n3. On Wednesday, she needs to fold her daily goal of 74 shirts plus the missed 40 and 30 shirts.\n4. Avery would have to fold 74 + 40 + 30 = 144 shirts.\n\nFinal Answer: 144"
+  },
+  {
+    "id": 35,
+    "question": "Jeffrey's carving goal is 86 figures. On Monday, Jeffrey was only able to carve 46 figures, so he decided that he would make up for the rest on Tuesday. However, he was only able to carve 56 figures on Tuesday. How many figures would Jeffrey have to carve on Wednesday to meet his minimum goal and make up for the ones he didn't carve?",
+    "ground_truth": "156",
+    "generation": "Reasoning:\n1. Jeffrey carved 46 figures on Monday, so he has 86 - 46 = 40 figures left to meet his goal.\n2. On Tuesday, he carved 56 figures, but he still needs to make up for the 40 figures he didn't carve on Monday, so he now has 40 + 56 = 96 figures left to meet his goal.\n3. Since he needs 86 figures to meet his goal, he needs to carve 96 - 86 = 10 figures on Wednesday to meet his minimum goal and make up for the ones he didn't carve.\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Jeffrey's daily goal is 86 figures, and he carved 46 on Monday, so he missed 86 - 46 = 40 figures.\n2. On Tuesday, he carved 56 figures, so he missed 86 - 56 = 30 figures.\n3. On Wednesday, he needs to carve his daily goal of 86 figures plus the missed 40 and 30 figures.\n4. Jeffrey needs to carve 86 + 40 + 30 = 156 figures.\nFinal Answer: 156"
+  },
+  {
+    "id": 36,
+    "question": "Ella's watering goal is 16 plants. On Monday, Ella was only able to water 6 plants, so she decided that she would make up for the rest on Tuesday. However, she was only able to water 10 plants on Tuesday. How many plants would Ella have to water on Wednesday to meet her minimum goal and make up for the ones she didn't water?",
+    "ground_truth": "32",
+    "generation": "1. Ella's goal is 16 plants, and she watered 6 on Monday, so she has 16 - 6 = 10 plants left to water.\n2. On Tuesday, she watered 10 plants, so she has 10 - 10 = 0 plants left to water from her goal.\n3. However, she still needs to make up for the 6 plants she didn't water on Monday, so she needs to water 6 more plants.\n4. Since she already watered 10 plants on Tuesday, she needs to water 6 more plants on Wednesday to meet her goal and make up for the ones she didn't water.\n\nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Ella's daily goal is 16 plants, and she watered 6 on Monday, so she missed 16 - 6 = 10 plants.\n2. On Tuesday, she watered 10 plants, so she missed 16 - 10 = 6 plants.\n3. On Wednesday, she needs to water her daily goal of 16 plants plus the missed 10 and 6 plants.\n4. Ella would have to water 16 + 10 + 6 = 32 plants.\n\nFinal Answer: 32"
+  },
+  {
+    "id": 37,
+    "question": "Ryan's stocking goal is 64 shelves. On Monday, Ryan was only able to stock 24 shelves, so he decided that he would make up for the rest on Tuesday. However, he was only able to stock 34 shelves on Tuesday. How many shelves would Ryan have to stock on Wednesday to meet his minimum goal and make up for the ones he didn't stock?",
+    "ground_truth": "134",
+    "generation": "1. Ryan's goal is 64 shelves, and he stocked 24 on Monday, so he has 64 - 24 = 40 shelves left to stock.\n2. On Tuesday, he stocked 34 shelves, so now he has 40 - 34 = 6 shelves left to stock.\n3. To meet his goal, he needs to stock 6 shelves on Wednesday to reach 64 shelves in total.\n4. Since he already stocked 24 + 34 = 58 shelves, he needs to stock 64 - 58 = 6 shelves on Wednesday to meet his goal.",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Ryan's daily goal is 64 shelves, and he stocked 24 on Monday, so he missed 64 - 24 = 40 shelves.\n2. On Tuesday, he stocked 34 shelves, so he missed 64 - 34 = 30 shelves.\n3. On Wednesday, he needs to stock his daily goal of 64 shelves plus the missed 40 and 30 shelves.\n4. Ryan would have to stock 64 + 40 + 30 = 134 shelves.\nFinal Answer: 134"
+  },
+  {
+    "id": 38,
+    "question": "Madison's labeling goal is 102 jars. On Monday, Madison was only able to label 42 jars, so she decided that she would make up for the rest on Tuesday. However, she was only able to label 52 jars on Tuesday. How many jars would Madison have to label on Wednesday to meet her minimum goal and make up for the ones she didn't label?",
+    "ground_truth": "212",
+    "generation": "1. Madison's goal is 102 jars. \n2. She labeled 42 jars on Monday. \n3. She labeled 52 jars on Tuesday, so in total she labeled 42 + 52 = 94 jars.\n4. To meet her goal, she needs to label 102 - 94 = 8 jars on Wednesday.",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Madison's daily goal is 102 jars.\n2. She labeled 42 jars on Monday, so she missed 102 - 42 = 60 jars.\n3. She labeled 52 jars on Tuesday, so she missed 102 - 52 = 50 jars.\n4. On Wednesday, she needs to label her daily goal of 102 jars plus the missed 60 and 50 jars, which is 102 + 60 + 50 = 212 jars.\n\nFinal Answer: 212"
+  },
+  {
+    "id": 39,
+    "question": "Jacob's inspection goal is 118 items. On Monday, Jacob was only able to inspect 58 items, so he decided that he would make up for the rest on Tuesday. However, he was only able to inspect 78 items on Tuesday. How many items would Jacob have to inspect on Wednesday to meet his minimum goal and make up for the ones he didn't inspect?",
+    "ground_truth": "218",
+    "generation": "Reasoning:\n1. Jacob's goal is 118 items, and he inspected 58 on Monday, so he needs to inspect 118 - 58 = 60 more items.\n2. On Tuesday, he inspected 78 items, but he still needs to inspect 60 more items, so he has inspected 78 + 60 = 138 items so far.\n3. Since his goal is 118 items, and he has already inspected 138 items, he has actually exceeded his goal, so he doesn't need to inspect any more items on Wednesday.\n4. However, we need to find out how many items he needs to inspect on Wednesday to meet his minimum goal and make up for the ones he didn't inspect, which is 0 items.\n\nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Jacob's daily goal is 118 items, and he inspected 58 on Monday, so he missed 118 - 58 = 60 items.\n2. On Tuesday, he inspected 78 items, so he missed 118 - 78 = 40 items.\n3. On Wednesday, he needs to inspect his daily goal of 118 items plus the missed 60 and 40 items.\n4. Jacob would have to inspect 118 + 60 + 40 = 218 items.\n\nFinal Answer: 218"
+  },
+  {
+    "id": 40,
+    "question": "Scarlett's painting goal is 128 fences. On Monday, Scarlett was only able to paint 68 fences, so she decided that she would make up for the rest on Tuesday. However, she was only able to paint 88 fences on Tuesday. How many fences would Scarlett have to paint on Wednesday to meet her minimum goal and make up for the ones she didn't paint?",
+    "ground_truth": "228",
+    "generation": "Reasoning:\n1. Scarlett's goal is 128 fences.\n2. She painted 68 fences on Monday, so she still needs 128 - 68 = 60 fences.\n3. On Tuesday, she painted 88 fences, but she only needed to make up for 60 fences, so she has 88 - 60 = 28 fences left over.\n4. To meet her goal, she needs to paint the 28 fences she has left over and the 60 fences she still needs, for a total of 28 + 60 = 88 fences.\n\nFinal Answer: 88",
+    "pred_answer_masked": "88",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Scarlett's daily goal is 128 fences.\n2. She painted 68 fences on Monday, so she missed 128 - 68 = 60 fences.\n3. On Tuesday, she painted 88 fences, so she missed 128 - 88 = 40 fences.\n4. On Wednesday, she needs to paint her daily goal of 128 fences plus the missed 60 and 40 fences, which is 128 + 60 + 40 = 228 fences.\n\nFinal Answer: 228"
+  },
+  {
+    "id": 41,
+    "question": "Nicholas's checking goal is 38 tests. On Monday, Nicholas was only able to grade 18 tests, so he decided that he would make up for the rest on Tuesday. However, he was only able to grade 28 tests on Tuesday. How many tests would Nicholas have to grade on Wednesday to meet his minimum goal and make up for the ones he didn't grade?",
+    "ground_truth": "68",
+    "generation": "1. Nicholas's goal is 38 tests, and he graded 18 on Monday, so he needs to grade 38 - 18 = 20 more tests to meet his goal.\n2. On Tuesday, Nicholas graded 28 tests, but he still needs to grade 20 more tests to meet his goal, so he has already graded 28 + 20 = 48 tests.\n3. Since Nicholas's goal is 38 tests, and he has already graded 48 tests, he has graded 48 - 38 = 10 more tests than he needs to meet his goal.\n4. To meet his goal and make up for the ones he didn't grade, Nicholas needs to grade 10 more tests on Wednesday.",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Nicholas's daily goal is 38 tests, and he graded 18 on Monday, so he missed 38 - 18 = 20 tests.\n2. On Tuesday, Nicholas graded 28 tests, so he missed 38 - 28 = 10 tests.\n3. On Wednesday, he needs to grade his daily goal of 38 tests plus the missed 20 and 10 tests.\n4. Nicholas would have to grade 38 + 20 + 10 = 68 tests.\nFinal Answer: 68"
+  },
+  {
+    "id": 42,
+    "question": "Victoria's binding goal is 48 books. On Monday, Victoria was only able to bind 28 books, so he decided that she would make up for the rest on Tuesday. However, she was only able to bind 38 books on Tuesday. How many books would Victoria have to bind on Wednesday to meet her minimum goal and make up for the ones she didn't bind?",
+    "ground_truth": "78",
+    "generation": "Reasoning:\n1. Victoria's goal is 48 books, and she bound 28 on Monday, so she needs to bind 48 - 28 = 20 more books.\n2. On Tuesday, she bound 38 books, but she still needs to bind 20 more books, so she now needs to bind 20 - 38 = -18 more books.\n3. Since she can't bind a negative number of books, she actually needs to bind 18 fewer books than her original goal, but that's not the question. The question asks how many books she needs to bind on Wednesday to meet her minimum goal and make up for the ones she didn't bind, which is the same as her original goal minus the books she already bound, so 48 - 28 - 38 = 20 - 38 = 48 - 66 = -18 + 66 = 48 - 66 = 66 - 48 = 18 + 48 = 66 - 48 = 66 - 66 + 48 = 48.\n4. 48 - 66 = -18, 66 - 66 = 0, 0 + 48 = 48.\nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Victoria's daily goal is 48 books, and she bound 28 on Monday, so she missed 48 - 28 = 20 books.\n2. On Tuesday, she bound 38 books, so she missed 48 - 38 = 10 books.\n3. On Wednesday, she needs to bind her daily goal of 48 books plus the missed 20 and 10 books.\n4. Victoria would have to bind 48 + 20 + 10 = 78 books.\nFinal Answer: 78"
+  },
+  {
+    "id": 43,
+    "question": "Eric's polishing goal is 22 stones. On Monday, Eric was only able to polish 12 stones, so he decided that he would make up for the rest on Tuesday. However, he was only able to polish 16 stones on Tuesday. How many stones would Eric have to polish on Wednesday to meet his minimum goal and make up for the ones he didn't polish?",
+    "ground_truth": "38",
+    "generation": "Reasoning:\n1. Eric's goal is 22 stones, and he polished 12 on Monday, so he still needs 22 - 12 = 10 stones.\n2. On Tuesday, he polished 16 stones, but he still needs 10 stones, so he now needs 10 - 16 = -6 stones.\n3. Since Eric can't polish a negative number of stones, he needs to polish enough stones to make up for the -6 stones, which is equivalent to polishing 6 stones.\n4. Eric has already polished 12 + 16 = 28 stones, so he needs to polish 22 - 28 = -6 stones, which is equivalent to polishing 6 stones.\n\nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Eric's daily goal is 22 stones, and he polished 12 on Monday, so he missed 22 - 12 = 10 stones.\n2. On Tuesday, he polished 16 stones, so he missed 22 - 16 = 6 stones.\n3. On Wednesday, he needs to polish his daily goal of 22 stones plus the missed 10 and 6 stones.\n4. Eric would have to polish 22 + 10 + 6 = 38 stones.\n\nFinal Answer: 38"
+  },
+  {
+    "id": 44,
+    "question": "Aria's weaving goal is 76 baskets. On Monday, Aria was only able to weave 36 baskets, so she decided that she would make up for the rest on Tuesday. However, she was only able to weave 46 baskets on Tuesday. How many baskets would Aria have to weave on Wednesday to meet her minimum goal and make up for the ones she didn't weave?",
+    "ground_truth": "146",
+    "generation": "Reasoning:\n1. Aria's goal is 76 baskets, and she made 36 on Monday, so she needs 76 - 36 = 40 more baskets.\n2. On Tuesday, she made 46 baskets, but she still needs 40 more, so she now needs 40 - 46 = -6 more baskets.\n3. Since she needs -6 more baskets, she actually needs to make up for 6 baskets.\n4. Aria made 46 baskets on Tuesday, so she needs to make 6 more baskets on Wednesday to meet her goal.\n\nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Aria's daily goal is 76 baskets, and she made 36 on Monday, so she missed 76 - 36 = 40 baskets.\n2. On Tuesday, she made 46 baskets, so she missed 76 - 46 = 30 baskets.\n3. On Wednesday, she needs to weave her daily goal of 76 baskets plus the missed 40 and 30 baskets.\n4. Aria would have to weave 76 + 40 + 30 = 146 baskets.\n\nFinal Answer: 146"
+  },
+  {
+    "id": 45,
+    "question": "Stephen's testing goal is 82 circuits. On Monday, Stephen was only able to test 42 circuits, so he decided that he would make up for the rest on Tuesday. However, he was only able to test 52 circuits on Tuesday. How many circuits would Stephen have to test on Wednesday to meet his minimum goal and make up for the ones he didn't test?",
+    "ground_truth": "152",
+    "generation": "Reasoning:\n1. Stephen's goal is 82 circuits, and he tested 42 on Monday, so he needs to test 82 - 42 = 40 more circuits.\n2. On Tuesday, he tested 52 circuits, but he still needs to test 40 circuits, so he has already tested 52 circuits - 40 circuits = 12 circuits more than needed.\n3. Since he has already tested 12 circuits more than needed, he needs to test 40 circuits - 12 circuits = 28 circuits on Wednesday to meet his goal.\n4. However, he also needs to make up for the 12 circuits he tested in excess, so he needs to test 28 circuits + 12 circuits = 40 circuits on Wednesday to meet his goal and make up for the ones he didn't test.\nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Stephen's daily goal is 82 circuits, and he tested 42 on Monday, so he missed 82 - 42 = 40 circuits.\n2. On Tuesday, he tested 52 circuits, so he missed 82 - 52 = 30 circuits.\n3. On Wednesday, he needs to test his daily goal of 82 circuits plus the missed 40 and 30 circuits.\n4. Stephen would have to test 82 + 40 + 30 = 152 circuits.\nFinal Answer: 152"
+  },
+  {
+    "id": 46,
+    "question": "Grace's brewing goal is 14 pots. On Monday, Grace was only able to brew 4 pots, so she decided that she would make up for the rest on Tuesday. However, she was only able to brew 8 pots on Tuesday. How many pots would Grace have to brew on Wednesday to meet her minimum goal and make up for the ones she didn't brew?",
+    "ground_truth": "30",
+    "generation": "Reasoning:\n1. Grace's goal is 14 pots, and she brewed 4 on Monday, so she needs 14 - 4 = 10 more pots.\n2. On Tuesday, she brewed 8 pots, so she now has 10 - 8 = 2 pots left to meet her goal.\n3. Since she needs 2 pots to meet her goal, and her goal is 14 pots, she needs to brew 14 - 2 = 12 pots on Wednesday to meet her goal and make up for the ones she didn't brew.\n4. However, since Grace needs to make up for the ones she didn't brew, she needs to brew 12 + 8 = 20 pots on Wednesday to meet her goal and make up for the ones she didn't brew.\nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Grace's daily goal is 14 pots, and she brewed 4 on Monday, so she missed 14 - 4 = 10 pots.\n2. On Tuesday, she brewed 8 pots, so she missed 14 - 8 = 6 pots.\n3. On Wednesday, she needs to brew her daily goal of 14 pots plus the missed 10 and 6 pots.\n4. Grace would have to brew 14 + 10 + 6 = 30 pots.\nFinal Answer: 30"
+  },
+  {
+    "id": 47,
+    "question": "Larry's sanding goal is 66 planks. On Monday, Larry was only able to sand 26 planks, so he decided that he would make up for the rest on Tuesday. However, he was only able to sand 36 planks on Tuesday. How many planks would Larry have to sand on Wednesday to meet his minimum goal and make up for the ones he didn't sand?",
+    "ground_truth": "136",
+    "generation": "1. Larry's goal is 66 planks, and he sanded 26 on Monday, so he has 66 - 26 = 40 planks left to sand.\n2. On Tuesday, he sanded 36 planks, so he now has 40 - 36 = 4 planks left to sand.\n3. To meet his goal, he needs to sand 66 - 26 - 36 = 4 planks on Wednesday to meet his minimum goal and make up for the ones he didn't sand.\n4. Since he already has 4 planks left to sand, he needs to sand 0 planks on Wednesday to meet his minimum goal and make up for the ones he didn't sand.\n\nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Larry's daily goal is 66 planks, and he sanded 26 on Monday, so he missed 66 - 26 = 40 planks.\n2. On Tuesday, he sanded 36 planks, so he missed 66 - 36 = 30 planks.\n3. On Wednesday, he needs to sand his daily goal of 66 planks plus the missed 40 and 30 planks.\n4. Larry would have to sand 66 + 40 + 30 = 136 planks.\n\nFinal Answer: 136"
+  },
+  {
+    "id": 48,
+    "question": "Chloe's mailing goal is 108 letters. On Monday, Chloe was only able to mail 48 letters, so she decided that she would make up for the rest on Tuesday. However, she was only able to mail 68 letters on Tuesday. How many letters would Chloe have to mail on Wednesday to meet her minimum goal and make up for the ones she didn't mail?",
+    "ground_truth": "208",
+    "generation": "1. Chloe mailed 48 letters on Monday, so she has 108 - 48 = 60 letters left to mail.\n2. On Tuesday, she mailed 68 letters, but she still has 60 letters left to mail, so she has 60 - 68 = -8 letters left to mail after Tuesday.\n3. Since Chloe has -8 letters left to mail, she actually needs to mail 8 letters to break even, but she wants to meet her goal of 108 letters.\n4. Chloe has already mailed 48 + 68 = 116 letters, so she needs to mail 108 - 116 = -8 letters to meet her goal, but since she can't mail a negative number of letters, she actually needs to mail 8 letters to meet her goal and make up for the ones she didn't mail.\n5. Chloe has already mailed 116 letters, so she needs to mail 8 more letters to meet her goal and make up for the ones she didn't mail.\n\nFinal Answer: 8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Chloe's daily goal is 108 letters. She mailed 48 on Monday, so she missed 108 - 48 = 60 letters.\n2. On Tuesday, she mailed 68 letters, so she missed 108 - 68 = 40 letters.\n3. On Wednesday, she needs to mail her daily goal of 108 letters plus the missed 60 and 40 letters.\n4. Chloe would have to mail 108 + 60 + 40 = 208 letters.\n\nFinal Answer: 208"
+  },
+  {
+    "id": 49,
+    "question": "Justin's printing goal is 112 posters. On Monday, Justin was only able to print 52 posters, so he decided that he would make up for the rest on Tuesday. However, he was only able to print 72 posters on Tuesday. How many posters would Justin have to print on Wednesday to meet his minimum goal and make up for the ones he didn't print?",
+    "ground_truth": "212",
+    "generation": "Reasoning:\n1. Justin printed 52 posters on Monday, so he has 112 - 52 = 60 posters left to print.\n2. On Tuesday, he printed 72 posters, but he still needs to print the 60 posters he missed, so he now has 60 - 72 = -12 posters left to print.\n3. Since he can't print a negative number of posters, he needs to print enough posters on Wednesday to make up for the 72 posters he printed on Tuesday and the 60 posters he missed, so he needs to print 72 + 60 = 132 posters on Wednesday.\n4. However, since he has already printed 52 posters on Monday, he only needs to print 132 - 52 = 80 posters on Wednesday to meet his minimum goal and make up for the ones he didn't print.\nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Justin's daily goal is 112 posters. He printed 52 on Monday, so he missed 112 - 52 = 60 posters.\n2. On Tuesday, he printed 72 posters, so he missed 112 - 72 = 40 posters.\n3. On Wednesday, he needs to print his daily goal of 112 posters plus the missed 60 and 40 posters.\n4. Justin would have to print 112 + 60 + 40 = 212 posters.\nFinal Answer: 212"
+  },
+  {
+    "id": 50,
+    "question": "Penelope's washing goal is 122 dishes. On Monday, Penelope was only able to wash 62 dishes, so she decided that she would make up for the rest on Tuesday. However, she was only able to wash 82 dishes on Tuesday. How many dishes would Penelope have to wash on Wednesday to meet her minimum goal and make up for the ones she didn't wash?",
+    "ground_truth": "222",
+    "generation": "Reasoning:\n1. Penelope's goal is 122 dishes, and she washed 62 on Monday, so she still needs 122 - 62 = 60 dishes.\n2. On Tuesday, she washed 82 dishes, but she still needs 60 dishes, so she now needs 60 - 82 = -22 dishes.\n3. Since she can't wash a negative number of dishes, she needs to wash enough to make up for the 22 dishes she \"over-washed\" on Tuesday, so she needs to wash 22 dishes on Wednesday.\n4. She also needs to wash the 60 dishes she still needs to meet her goal, so she needs to wash 60 + 22 = 82 dishes on Wednesday.\n\nFinal Answer: 82",
+    "pred_answer_masked": "82",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Penelope's daily goal is 122 dishes, and she washed 62 on Monday, so she missed 122 - 62 = 60 dishes.\n2. On Tuesday, she washed 82 dishes, so she missed 122 - 82 = 40 dishes.\n3. On Wednesday, she needs to wash her daily goal of 122 dishes plus the missed 60 and 40 dishes.\n4. Penelope would have to wash 122 + 60 + 40 = 222 dishes.\n\nFinal Answer: 222"
+  },
+  {
+    "id": 51,
+    "question": "Scott's routing goal is 37 cables. On Monday, Scott was only able to route 17 cables, so he decided that he would make up for the rest on Tuesday. However, he was only able to route 27 cables on Tuesday. How many cables would Scott have to route on Wednesday to meet his minimum goal and make up for the ones he didn't route?",
+    "ground_truth": "67",
+    "generation": "1. Scott's goal is 37 cables, and he routed 17 on Monday, so he needs to route 37 - 17 = 20 more cables.\n2. On Tuesday, he routed 27 cables, but he still needs to route 20 more cables to meet his goal, so he needs to route 20 more cables on Wednesday.\n3. However, he routed 27 cables on Tuesday, so he has already routed 17 + 27 = 44 cables, which is more than his goal of 37 cables, so he actually needs to route 44 - 37 = 7 fewer cables on Wednesday.\n4. Since he needs to route 7 fewer cables, and he needs to route 20 more cables to meet his goal, he actually needs to route 20 - 7 = 13 cables on Wednesday.\n\nFinal Answer: 13",
+    "pred_answer_masked": "13",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Scott's daily goal is 37 cables, and he routed 17 on Monday, so he missed 37 - 17 = 20 cables.\n2. On Tuesday, he routed 27 cables, so he missed 37 - 27 = 10 cables.\n3. On Wednesday, he needs to route his daily goal of 37 cables plus the missed 20 and 10 cables.\n4. Scott would have to route 37 + 20 + 10 = 67 cables.\nFinal Answer: 67"
+  },
+  {
+    "id": 52,
+    "question": "Riley's harvesting goal is 47 pumpkins. On Monday, Riley was only able to pick 27 pumpkins, so she decided that she would make up for the rest on Tuesday. However, she was only able to pick 37 pumpkins on Tuesday. How many pumpkins would Riley have to pick on Wednesday to meet her minimum goal and make up for the ones she didn't pick?",
+    "ground_truth": "77",
+    "generation": "1. Riley's goal is 47 pumpkins, and she picked 27 on Monday, so she needs 47 - 27 = 20 more pumpkins.\n2. On Tuesday, she picked 37 pumpkins, but she still needs 20 more, so she now has 37 - 20 = 17 pumpkins.\n3. To meet her goal, she needs 47 pumpkins in total, and she already has 27 + 37 = 64 pumpkins, but that's more than her goal, so she actually needs to pick 47 - 64 = -17 pumpkins.\n4. Since you can't pick a negative number of pumpkins, Riley actually has enough pumpkins to meet her goal, and she doesn't need to pick any on Wednesday.\nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Riley's daily goal is 47 pumpkins, and she picked 27 on Monday, so she missed 47 - 27 = 20 pumpkins.\n2. On Tuesday, she picked 37 pumpkins, so she missed 47 - 37 = 10 pumpkins.\n3. On Wednesday, she needs to pick her daily goal of 47 pumpkins plus the missed 20 and 10 pumpkins.\n4. Riley would have to pick 47 + 20 + 10 = 77 pumpkins.\nFinal Answer: 77"
+  },
+  {
+    "id": 53,
+    "question": "Brandon's framing goal is 27 pictures. On Monday, Brandon was only able to frame 17 pictures, so he decided that he would make up for the rest on Tuesday. However, he was only able to frame 21 pictures on Tuesday. How many pictures would Brandon have to frame on Wednesday to meet his minimum goal and make up for the ones he didn't frame?",
+    "ground_truth": "43",
+    "generation": "Reasoning:\n1. Brandon's goal is 27 pictures, and he framed 17 on Monday, so he needs 27 - 17 = 10 more pictures.\n2. On Tuesday, he framed 21 pictures, but he still needs 10 more, so he now needs 10 - 21 = -11 more pictures.\n3. Since he needs -11 more pictures, he actually needs to frame 11 pictures to make up for the ones he didn't frame.\n4. He still needs to meet his goal of 27 pictures, so he needs to frame 27 - 21 = 6 more pictures on Wednesday.\nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Brandon's daily goal is 27 pictures, and he framed 17 on Monday, so he missed 27 - 17 = 10 pictures.\n2. On Tuesday, he framed 21 pictures, so he missed 27 - 21 = 6 pictures.\n3. On Wednesday, he needs to frame his daily goal of 27 pictures plus the missed 10 and 6 pictures.\n4. Brandon needs to frame 27 + 10 + 6 = 43 pictures.\nFinal Answer: 43"
+  },
+  {
+    "id": 54,
+    "question": "Zoey's knitting goal is 77 scarves. On Monday, Zoey was only able to knit 37 scarves, so she decided that she would make up for the rest on Tuesday. However, she was only able to knit 47 scarves on Tuesday. How many scarves would Zoey have to knit on Wednesday to meet her minimum goal and make up for the ones she didn't knit?",
+    "ground_truth": "147",
+    "generation": "1. Zoey's goal is 77 scarves. \n2. She knit 37 on Monday. \n3. She needs 77 - 37 = 40 more scarves to meet her goal. \n4. She knit 47 on Tuesday, but she only needs 40 more, so she has 47 - 40 = 7 extra scarves. \n5. To meet her goal and make up for the ones she didn't knit, she needs to knit 40 - 7 = 33 scarves on Wednesday.",
+    "pred_answer_masked": "33",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Zoey's daily goal is 77 scarves. \n2. She knit 37 on Monday, so she missed 77 - 37 = 40 scarves. \n3. She knit 47 on Tuesday, so she missed 77 - 47 = 30 scarves. \n4. To meet her goal and make up for the ones she didn't knit, she needs to knit her daily goal of 77 plus the missed 40 and 30 scarves.\n5. Zoey needs to knit 77 + 40 + 30 = 147 scarves on Wednesday.\nFinal Answer: 147"
+  },
+  {
+    "id": 55,
+    "question": "Benjamin's folding goal is 87 origami cranes. On Monday, Benjamin was only able to fold 47 cranes, so he decided that he would make up for the rest on Tuesday. However, he was only able to fold 57 cranes on Tuesday. How many cranes would Benjamin have to fold on Wednesday to meet his minimum goal and make up for the ones he didn't fold?",
+    "ground_truth": "157",
+    "generation": "1. Benjamin's goal is 87 cranes, and he folded 47 on Monday, so he needs to fold 87 - 47 = 40 more cranes to meet his goal.\n2. On Tuesday, he folded 57 cranes, but he still needs to fold 40 more cranes to meet his goal, so he needs to fold 40 more cranes in total.\n3. Since he already folded 57 cranes on Tuesday, he needs to fold 40 - 57 = -17 cranes on Wednesday to meet his goal.\n4. Since you can't fold a negative number of cranes, Benjamin needs to fold 17 cranes on Wednesday to make up for the ones he didn't fold and meet his minimum goal.\n\nFinal Answer: 17",
+    "pred_answer_masked": "17",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Benjamin's daily goal is 87 cranes, and he folded 47 on Monday, so he missed 87 - 47 = 40 cranes.\n2. On Tuesday, he folded 57 cranes, so he missed 87 - 57 = 30 cranes.\n3. On Wednesday, he needs to fold his daily goal of 87 cranes plus the missed 40 and 30 cranes.\n4. Benjamin needs to fold 87 + 40 + 30 = 157 cranes on Wednesday to meet his minimum goal and make up for the ones he didn't fold.\n\nFinal Answer: 157"
+  },
+  {
+    "id": 56,
+    "question": "Lily's daily target is 17 sketches. On Monday, Lily was only able to sketch 7 items, so she decided that she would make up for the rest on Tuesday. However, she was only able to sketch 11 items on Tuesday. How many items would Lily have to sketch on Wednesday to meet her minimum goal and make up for the ones she didn't sketch?",
+    "ground_truth": "33",
+    "generation": "Reasoning:\n1. Lily's target for Monday and Tuesday is 17 * 2 = 34 sketches.\n2. She completed 7 + 11 = 18 sketches on Monday and Tuesday.\n3. She still needs 34 - 18 = 16 sketches to meet her target.\n4. Since she needs to meet her target and make up for the ones she didn't sketch, she needs to complete 16 sketches on Wednesday.\n\nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Lily's daily target is 17 sketches. She sketched 7 items on Monday, so she missed 17 - 7 = 10 sketches.\n2. She sketched 11 items on Tuesday, so she missed 17 - 11 = 6 sketches.\n3. On Wednesday, she needs to sketch her daily goal of 17 plus the missed 10 and 6 sketches.\n4. Lily needs to sketch 17 + 10 + 6 = 33 items on Wednesday.\n\nFinal Answer: 33"
+  },
+  {
+    "id": 57,
+    "question": "Samuel's delivery goal is 67 pizzas. On Monday, Samuel was only able to deliver 27 pizzas, so he decided that he would make up for the rest on Tuesday. However, he was only able to deliver 37 pizzas on Tuesday. How many pizzas would Samuel have to deliver on Wednesday to meet his minimum goal and make up for the ones he didn't deliver?",
+    "ground_truth": "137",
+    "generation": "Reasoning:\n1. Samuel's goal is 67 pizzas, and he delivered 27 on Monday, so he still needs 67 - 27 = 40 pizzas.\n2. On Tuesday, he delivered 37 pizzas, so he now has 40 - 37 = 3 pizzas left to meet his goal.\n3. Since he needs 3 pizzas to meet his goal, he must deliver 3 pizzas on Wednesday.\n4. However, he also needs to make up for the 40 pizzas he didn't deliver on Monday and Tuesday, so he must deliver 40 pizzas on Wednesday to meet his goal.\nFinal Answer: 43",
+    "pred_answer_masked": "43",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Samuel's daily goal is 67 pizzas, and he delivered 27 on Monday, so he missed 67 - 27 = 40 pizzas.\n2. On Tuesday, he delivered 37 pizzas, so he missed 67 - 37 = 30 pizzas.\n3. On Wednesday, he needs to deliver his daily goal of 67 pizzas plus the missed 40 and 30 pizzas.\n4. Samuel needs to deliver 67 + 40 + 30 = 137 pizzas on Wednesday.\nFinal Answer: 137"
+  },
+  {
+    "id": 58,
+    "question": "Eleanor's packing goal is 107 suitcases. On Monday, Eleanor was only able to pack 47 suitcases, so she decided that she would make up for the rest on Tuesday. However, she was only able to pack 67 suitcases on Tuesday. How many suitcases would Eleanor have to pack on Wednesday to meet her minimum goal and make up for the ones she didn't pack?",
+    "ground_truth": "207",
+    "generation": "1. Eleanor's goal is 107 suitcases. \n2. She packed 47 on Monday. \n3. She packed 67 on Tuesday, so in total she packed 47 + 67 = 114 suitcases.\n4. To meet her goal, she needs 107 - 114 = -7 suitcases, but since you can't pack a negative number of suitcases, she needs to pack enough to make up for the 7 extra suitcases she already packed. \n5. So she needs to pack 7 suitcases on Wednesday.",
+    "pred_answer_masked": "7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Eleanor's daily goal is 107 suitcases. \n2. She packed 47 on Monday, so she missed 107 - 47 = 60 suitcases.\n3. She packed 67 on Tuesday, so she missed 107 - 67 = 40 suitcases.\n4. On Wednesday, she needs to pack her daily goal of 107 suitcases plus the missed 60 and 40 suitcases.\n5. Eleanor needs to pack 107 + 60 + 40 = 207 suitcases on Wednesday.\nFinal Answer: 207"
+  },
+  {
+    "id": 59,
+    "question": "Gregory's carving goal is 117 blocks of wood. On Monday, Gregory was only able to carve 57 blocks, so he decided that he would make up for the rest on Tuesday. However, he was only able to carve 77 blocks on Tuesday. How many blocks would Gregory have to carve on Wednesday to meet his minimum goal and make up for the ones he didn't carve?",
+    "ground_truth": "217",
+    "generation": "1. Gregory carved 57 blocks on Monday, so he has 117 - 57 = 60 blocks left to meet his goal.\n2. On Tuesday, Gregory carved 77 blocks, but he still needs to make up for the 60 blocks he didn't carve on Monday, so he now has 60 + 77 = 137 blocks left to meet his goal.\n3. Since Gregory's goal is 117 blocks, he needs to carve 137 - 117 = 20 blocks on Wednesday to meet his minimum goal and make up for the ones he didn't carve.\n4. Gregory also needs to make up for the 60 blocks he didn't carve on Monday, so he actually needs to carve 20 + 60 = 80 blocks on Wednesday, but since he only needs to carve 20 blocks to meet his goal, we can ignore the extra 60 blocks.\nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Gregory's daily goal is 117 blocks. He carved 57 blocks on Monday, so he missed 117 - 57 = 60 blocks.\n2. On Tuesday, Gregory carved 77 blocks, so he missed 117 - 77 = 40 blocks.\n3. On Wednesday, he needs to carve his daily goal of 117 blocks plus the missed 60 and 40 blocks.\n4. Gregory needs to carve 117 + 60 + 40 = 217 blocks on Wednesday to meet his minimum goal and make up for the ones he didn't carve.\nFinal Answer: 217"
+  },
+  {
+    "id": 60,
+    "question": "Hannah's sorting goal is 127 emails. On Monday, Hannah was only able to sort 67 emails, so she decided that she would make up for the rest on Tuesday. However, she was only able to sort 87 emails on Tuesday. How many emails would Hannah have to sort on Wednesday to meet her minimum goal and make up for the ones she didn't sort?",
+    "ground_truth": "227",
+    "generation": "1. Hannah's goal is 127 emails, and she sorted 67 on Monday, so she needs to sort 127 - 67 = 60 more emails to meet her goal.\n2. On Tuesday, she sorted 87 emails, but she still needs to sort 60 more emails to meet her goal, so she needs to sort 60 - 87 = -27 more emails on Wednesday to meet her goal.\n3. However, since Hannah can't sort a negative number of emails, she needs to sort 60 + 27 = 87 more emails on Wednesday to meet her goal and make up for the ones she didn't sort.\n4. Since she already sorted 87 emails on Tuesday, she needs to sort 87 more emails on Wednesday to meet her goal and make up for the ones she didn't sort.\n\nFinal Answer: 87",
+    "pred_answer_masked": "87",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Hannah's daily goal is 127 emails, and she sorted 67 on Monday, so she missed 127 - 67 = 60 emails.\n2. On Tuesday, she sorted 87 emails, so she missed 127 - 87 = 40 emails.\n3. On Wednesday, she needs to sort her daily goal of 127 emails plus the missed 60 and 40 emails.\n4. Hannah would have to sort 127 + 60 + 40 = 227 emails on Wednesday.\n\nFinal Answer: 227"
+  },
+  {
+    "id": 61,
+    "question": "Alexander's drafting goal is 39 blueprints. On Monday, Alexander was only able to draft 19 blueprints, so he decided that he would make up for the rest on Tuesday. However, he was only able to draft 29 blueprints on Tuesday. How many blueprints would Alexander have to draft on Wednesday to meet his minimum goal and make up for the ones he didn't draft?",
+    "ground_truth": "69",
+    "generation": "1. Alexander's goal is 39 blueprints. \n2. He drafted 19 on Monday, so he needs 39 - 19 = 20 more blueprints to meet his goal.\n3. He drafted 29 on Tuesday, but he still needs 20 more to meet his goal, so he needs 20 - 29 = -9 more blueprints on Wednesday to meet his goal.\n4. However, since you can't draft a negative number of blueprints, Alexander needs to draft 20 more blueprints to meet his goal and make up for the ones he didn't draft on Tuesday, and then he will have 9 extra blueprints.",
+    "pred_answer_masked": "9",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Alexander's daily goal is 39 blueprints. \n2. He drafted 19 on Monday, so he missed 39 - 19 = 20 blueprints.\n3. He drafted 29 on Tuesday, so he missed 39 - 29 = 10 blueprints.\n4. On Wednesday, he needs to draft his daily goal of 39 blueprints plus the missed 20 and 10 blueprints, which is 39 + 20 + 10 = 69 blueprints.\nFinal Answer: 69"
+  },
+  {
+    "id": 62,
+    "question": "Lillian's frosting goal is 49 cupcakes. On Monday, Lillian was only able to frost 29 cupcakes, so she decided that she would make up for the rest on Tuesday. However, she was only able to frost 39 cupcakes on Tuesday. How many cupcakes would Lillian have to frost on Wednesday to meet her minimum goal and make up for the ones she didn't frost?",
+    "ground_truth": "79",
+    "generation": "1. Lillian's goal is 49 cupcakes, and she frosted 29 on Monday, so she needs to frost 49 - 29 = 20 more cupcakes.\n2. On Tuesday, she frosted 39 cupcakes, but she still needs to frost 20 more cupcakes to meet her goal.\n3. So far, she has frosted 29 + 39 = 68 cupcakes, but she only needs 49 to meet her goal, so she has frosted 68 - 49 = 19 more cupcakes than needed.\n4. To meet her goal and make up for the ones she didn't frost, she needs to frost 20 more cupcakes (to meet her goal) and 1 less cupcake (to make up for the extra ones she frosted), so she needs to frost 20 - 19 = 1 more cupcake on Wednesday.",
+    "pred_answer_masked": "1",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Lillian's daily goal is 49 cupcakes, and she frosted 29 on Monday, so she missed 49 - 29 = 20 cupcakes.\n2. On Tuesday, she frosted 39 cupcakes, so she missed 49 - 39 = 10 cupcakes.\n3. On Wednesday, she needs to frost her daily goal of 49 cupcakes plus the missed 20 and 10 cupcakes.\n4. Lillian needs to frost 49 + 20 + 10 = 79 cupcakes on Wednesday.\nFinal Answer: 79"
+  },
+  {
+    "id": 63,
+    "question": "Patrick's filing goal is 29 reports. On Monday, Patrick was only able to file 19 reports, so he decided that he would make up for the rest on Tuesday. However, he was only able to file 23 reports on Tuesday. How many reports would Patrick have to file on Wednesday to meet his minimum goal and make up for the ones he didn't file?",
+    "ground_truth": "45",
+    "generation": "Reasoning:\n1. Patrick's goal is 29 reports, and he filed 19 on Monday, so he needs 29 - 19 = 10 more reports.\n2. On Tuesday, he filed 23 reports, but he still needs 10 more, so he now needs 10 - 23 = -13 more reports.\n3. Since you can't file a negative number of reports, he needs to file 13 more reports to make up for the ones he didn't file.\n4. He already has 19 + 23 = 42 reports, so he needs 29 - 42 = -13 more reports, but since he needs 13 more to make up for the ones he didn't file, he actually needs 13 more reports to meet his goal.\nFinal Answer: 13",
+    "pred_answer_masked": "13",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Patrick's daily goal is 29 reports, and he filed 19 on Monday, so he missed 29 - 19 = 10 reports.\n2. On Tuesday, he filed 23 reports, so he missed 29 - 23 = 6 reports.\n3. On Wednesday, he needs to file his daily goal of 29 reports plus the missed 10 and 6 reports.\n4. Patrick needs to file 29 + 10 + 6 = 45 reports on Wednesday.\nFinal Answer: 45"
+  },
+  {
+    "id": 64,
+    "question": "Addison's daily goal is 79 sit-ups. On Monday, Addison was only able to do 39 sit-ups, so she decided that she would make up for the rest on Tuesday. However, she was only able to do 49 sit-ups on Tuesday. How many sit-ups would Addison have to do on Wednesday to meet her minimum goal and make up for the ones she didn't do?",
+    "ground_truth": "149",
+    "generation": "1. Addison's goal is 79 sit-ups per day, and she did 39 on Monday, so she needs to do 79 - 39 = 40 more sit-ups to meet her goal for Monday.\n2. Since she only did 49 sit-ups on Tuesday, she has already met her goal for Tuesday, so she doesn't need to do any more sit-ups to meet her goal for Tuesday.\n3. To find out how many sit-ups she needs to do on Wednesday to meet her goal for the week, we need to add the number of sit-ups she needs to do to meet her goal for Monday to her daily goal. 79 + 40 = 119.\n4. However, we also need to add the number of sit-ups she didn't do on Monday to her total. 39.\n5. So, the total number of sit-ups she needs to do on Wednesday is 119 + 39 = 158.\n\nFinal Answer: 158",
+    "pred_answer_masked": "158",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Addison's daily goal is 79 sit-ups, and she did 39 on Monday, so she missed 79 - 39 = 40 sit-ups.\n2. On Tuesday, she did 49 sit-ups, so she missed 79 - 49 = 30 sit-ups.\n3. On Wednesday, she needs to do her daily goal of 79 sit-ups plus the missed 40 and 30 sit-ups.\n4. Addison needs to do 79 + 40 + 30 = 149 sit-ups on Wednesday.\n\nFinal Answer: 149"
+  },
+  {
+    "id": 65,
+    "question": "Frank's assembly goal is 89 engines. On Monday, Frank was only able to assemble 49 engines, so he decided that he would make up for the rest on Tuesday. However, he was only able to assemble 59 engines on Tuesday. How many engines would Frank have to assemble on Wednesday to meet his minimum goal and make up for the ones he didn't assemble?",
+    "ground_truth": "159",
+    "generation": "1. Frank's goal is 89 engines, and he assembled 49 on Monday, so he needs 89 - 49 = 40 more engines.\n2. On Tuesday, he assembled 59 engines, but he still needs 40 more, so he now needs 40 - 59 = -19 more engines.\n3. Since Frank can't assemble a negative number of engines, he needs to make up for the 59 engines he assembled on Tuesday, so he needs 59 more engines.\n4. Frank has already assembled 49 engines on Monday and 59 engines on Tuesday, so he has 49 + 59 = 108 engines, and he needs 89 engines to meet his goal, so he needs 108 - 89 = 19 more engines.\n\nFinal Answer: 19",
+    "pred_answer_masked": "19",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Frank's daily goal is 89 engines, and he assembled 49 on Monday, so he missed 89 - 49 = 40 engines.\n2. On Tuesday, he assembled 59 engines, so he missed 89 - 59 = 30 engines.\n3. On Wednesday, he needs to assemble his daily goal of 89 engines plus the missed 40 and 30 engines.\n4. Frank needs to assemble 89 + 40 + 30 = 159 engines on Wednesday.\n\nFinal Answer: 159"
+  },
+  {
+    "id": 66,
+    "question": "Aubrey's weaving goal is 19 rugs. On Monday, Aubrey was only able to weave 9 rugs, so she decided that she would make up for the rest on Tuesday. However, she was only able to weave 13 rugs on Tuesday. How many rugs would Aubrey have to weave on Wednesday to meet her minimum goal and make up for the ones she didn't weave?",
+    "ground_truth": "35",
+    "generation": "Reasoning:\n1. Aubrey's goal is 19 rugs, and she already wove 9 on Monday, so she needs 19 - 9 = 10 more rugs.\n2. On Tuesday, she wove 13 rugs, but she still needs 10 more rugs, so she now needs 10 - 13 = -3 more rugs.\n3. Since she can't weave a negative number of rugs, she needs to make up for the 3 rugs she already wove on Tuesday, so she needs 3 more rugs.\n4. She needs 3 more rugs to meet her goal and make up for the ones she didn't weave.\n\nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Aubrey's daily goal is 19 rugs, and she wove 9 on Monday, so she missed 19 - 9 = 10 rugs.\n2. On Tuesday, she wove 13 rugs, so she missed 19 - 13 = 6 rugs.\n3. On Wednesday, she needs to weave her daily goal of 19 rugs plus the missed 10 and 6 rugs.\n4. Aubrey needs to weave 19 + 10 + 6 = 35 rugs on Wednesday.\n\nFinal Answer: 35"
+  },
+  {
+    "id": 67,
+    "question": "Raymond's building goal is 69 models. On Monday, Raymond was only able to build 29 models, so he decided that he would make up for the rest on Tuesday. However, he was only able to build 39 models on Tuesday. How many models would Raymond have to build on Wednesday to meet his minimum goal and make up for the ones he didn't build?",
+    "ground_truth": "139",
+    "generation": "Reasoning:\n1. Raymond's goal is 69 models, and he built 29 on Monday, so he needs 69 - 29 = 40 more models.\n2. On Tuesday, he built 39 models, so he now has 29 + 39 = 68 models.\n3. Since he has 68 models, and he needs 40 more, he will have 68 + 40 = 108 models.\n4. To meet his goal of 69 models, he needs 108 - 69 = 39 more models on Wednesday.\n\nFinal Answer: 39",
+    "pred_answer_masked": "39",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Raymond's daily goal is 69 models, and he built 29 on Monday, so he missed 69 - 29 = 40 models.\n2. On Tuesday, he built 39 models, so he missed 69 - 39 = 30 models.\n3. On Wednesday, he needs to build his daily goal of 69 models plus the missed 40 and 30 models.\n4. Raymond needs to build 69 + 40 + 30 = 139 models on Wednesday.\n\nFinal Answer: 139"
+  },
+  {
+    "id": 68,
+    "question": "Stella's sewing goal is 109 buttons. On Monday, Stella was only able to sew 49 buttons, so she decided that she would make up for the rest on Tuesday. However, she was only able to sew 69 buttons on Tuesday. How many buttons would Stella have to sew on Wednesday to meet her minimum goal and make up for the ones she didn't sew?",
+    "ground_truth": "209",
+    "generation": "1. Stella's goal is 109 buttons, and she sewed 49 on Monday, so she needs 109 - 49 = 60 buttons on Tuesday and Wednesday combined.\n2. Stella sewed 69 buttons on Tuesday, so she needs 60 - 69 = -9 buttons on Wednesday to meet her goal.\n3. Since Stella can't sew a negative number of buttons, she needs to sew enough buttons to make up for the 9 buttons she didn't sew on Tuesday.\n4. Stella needs to sew 9 buttons on Wednesday to meet her minimum goal and make up for the ones she didn't sew.\n\nFinal Answer: 9",
+    "pred_answer_masked": "9",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Stella's daily goal is 109 buttons, and she sewed 49 on Monday, so she missed 109 - 49 = 60 buttons.\n2. She sewed 69 buttons on Tuesday, so she missed 109 - 69 = 40 buttons.\n3. On Wednesday, she needs to sew her daily goal of 109 buttons plus the missed 60 and 40 buttons.\n4. Stella needs to sew 109 + 60 + 40 = 209 buttons on Wednesday to meet her minimum goal and make up for the ones she didn't sew.\n\nFinal Answer: 209"
+  },
+  {
+    "id": 69,
+    "question": "Jack's painting goal is 119 miniatures. On Monday, Jack was only able to paint 59 miniatures, so he decided that he would make up for the rest on Tuesday. However, he was only able to paint 79 miniatures on Tuesday. How many miniatures would Jack have to paint on Wednesday to meet his minimum goal and make up for the ones he didn't paint?",
+    "ground_truth": "219",
+    "generation": "1. Jack's goal is 119 miniatures. \n2. He painted 59 on Monday, so he still needs 119 - 59 = 60 miniatures.\n3. He painted 79 on Tuesday, but he only needed to make up for 60, so he has 79 - 60 = 19 extra miniatures.\n4. Since he has 19 extra miniatures, he actually needs 60 + 19 = 79 miniatures on Wednesday to meet his goal and make up for the ones he didn't paint.\nFinal Answer: 79",
+    "pred_answer_masked": "79",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Jack's daily goal is 119 miniatures. \n2. He painted 59 on Monday, so he missed 119 - 59 = 60 miniatures.\n3. He painted 79 on Tuesday, so he missed 119 - 79 = 40 miniatures.\n4. On Wednesday, he needs to paint his daily goal of 119 miniatures plus the missed 60 and 40 miniatures.\n5. Jack needs to paint 119 + 60 + 40 = 219 miniatures on Wednesday.\nFinal Answer: 219"
+  },
+  {
+    "id": 70,
+    "question": "Natalie's wrapping goal is 129 presents. On Monday, Natalie was only able to wrap 69 presents, so she decided that she would make up for the rest on Tuesday. However, she was only able to wrap 89 presents on Tuesday. How many presents would Natalie have to wrap on Wednesday to meet her minimum goal and make up for the ones she didn't wrap?",
+    "ground_truth": "229",
+    "generation": "1. Natalie's goal is 129 presents, and she wrapped 69 on Monday, so she still needs 129 - 69 = 60 presents.\n2. On Tuesday, she wrapped 89 presents, but she still needs 60 presents, so she now needs 60 - 89 = -29 presents.\n3. Since Natalie can't wrap a negative number of presents, she needs to wrap enough presents to make up for the -29, which is the same as wrapping 29 presents.\n4. Natalie has already wrapped 69 + 89 = 158 presents, so she needs to wrap 129 - 158 = -29 presents, which is the same as wrapping 29 presents on Wednesday.\n\nFinal Answer: 29",
+    "pred_answer_masked": "29",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Natalie's daily goal is 129 presents, and she wrapped 69 on Monday, so she missed 129 - 69 = 60 presents.\n2. On Tuesday, she wrapped 89 presents, so she missed 129 - 89 = 40 presents.\n3. On Wednesday, she needs to wrap her daily goal of 129 presents plus the missed 60 and 40 presents.\n4. Natalie needs to wrap 129 + 60 + 40 = 229 presents on Wednesday.\n\nFinal Answer: 229"
+  },
+  {
+    "id": 71,
+    "question": "Dennis's welding goal is 36 joints. On Monday, Dennis was only able to weld 16 joints, so he decided that he would make up for the rest on Tuesday. However, he was only able to weld 26 joints on Tuesday. How many joints would Dennis have to weld on Wednesday to meet his minimum goal and make up for the ones he didn't weld?",
+    "ground_truth": "66",
+    "generation": "Reasoning:\n1. Dennis's goal is 36 joints, and he welded 16 on Monday, so he needs 36 - 16 = 20 more joints.\n2. On Tuesday, he welded 26 joints, but he still needs 20 more joints, so he now needs 20 - 26 = -6 more joints.\n3. Since he needs -6 joints, it means he has 6 extra joints, so he needs to weld 6 joints to meet his goal.\n4. However, he needs to make up for the 6 joints he didn't weld on Tuesday, so he needs to weld 6 + 6 = 12 joints on Wednesday.\nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Dennis's daily goal is 36 joints, and he welded 16 on Monday, so he missed 36 - 16 = 20 joints.\n2. On Tuesday, he welded 26 joints, so he missed 36 - 26 = 10 joints.\n3. On Wednesday, he needs to weld his daily goal of 36 joints plus the missed 20 and 10 joints.\n4. Dennis needs to weld 36 + 20 + 10 = 66 joints on Wednesday.\nFinal Answer: 66"
+  },
+  {
+    "id": 72,
+    "question": "Leah's molding goal is 46 clay pots. On Monday, Leah was only able to mold 26 pots, so she decided that she would make up for the rest on Tuesday. However, she was only able to mold 36 pots on Tuesday. How many pots would Leah have to mold on Wednesday to meet her minimum goal and make up for the ones she didn't mold?",
+    "ground_truth": "76",
+    "generation": "Reasoning:\n1. Leah's goal is 46 pots, and she molded 26 on Monday, so she needs 46 - 26 = 20 more pots.\n2. On Tuesday, she molded 36 pots, but she still needs 20 more pots, so she now needs 20 - 36 = -16 more pots.\n3. Since she needs -16 more pots, she actually needs to mold 16 pots to make up for the ones she didn't mold.\n4. Leah's goal is 46 pots, and she already molded 26 + 36 = 62 pots, so she actually needs to mold 46 - 62 = -16 pots, but since she needs to make up for the ones she didn't mold, she needs to mold 16 pots.\nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Leah's daily goal is 46 pots, and she molded 26 on Monday, so she missed 46 - 26 = 20 pots.\n2. On Tuesday, she molded 36 pots, so she missed 46 - 36 = 10 pots.\n3. On Wednesday, she needs to mold her daily goal of 46 pots plus the missed 20 and 10 pots.\n4. Leah needs to mold 46 + 20 + 10 = 76 pots on Wednesday.\nFinal Answer: 76"
+  },
+  {
+    "id": 73,
+    "question": "Jerry's tuning goal is 28 guitars. On Monday, Jerry was only able to tune 18 guitars, so he decided that he would make up for the rest on Tuesday. However, he was only able to tune 22 guitars on Tuesday. How many guitars would Jerry have to tune on Wednesday to meet his minimum goal and make up for the ones he didn't tune?",
+    "ground_truth": "44",
+    "generation": "Reasoning:\n1. Jerry's goal is 28 guitars, but he only tuned 18 on Monday, so he still needs 28 - 18 = 10 guitars.\n2. On Tuesday, he tuned 22 guitars, but he still needs to make up for the 10 he didn't tune on Monday, so he now needs 10 + 22 = 32 guitars in total.\n3. Since Jerry already tuned 18 + 22 = 40 guitars, and he only needs 32, he has 40 - 32 = 8 guitars left to tune.\n4. Jerry needs to tune 8 guitars on Wednesday to meet his minimum goal and make up for the ones he didn't tune.\n\nFinal Answer: 8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Jerry's daily goal is 28 guitars, but he only tuned 18 on Monday, so he missed 28 - 18 = 10 guitars.\n2. On Tuesday, he tuned 22 guitars, so he missed 28 - 22 = 6 guitars.\n3. On Wednesday, he needs to tune his daily goal of 28 guitars plus the missed 10 and 6 guitars.\n4. Jerry needs to tune 28 + 10 + 6 = 44 guitars on Wednesday to meet his minimum goal and make up for the ones he didn't tune.\n\nFinal Answer: 44"
+  },
+  {
+    "id": 74,
+    "question": "Hazel's planting goal is 78 seeds. On Monday, Hazel was only able to plant 38 seeds, so she decided that she would make up for the rest on Tuesday. However, she was only able to plant 48 seeds on Tuesday. How many seeds would Hazel have to plant on Wednesday to meet her minimum goal and make up for the ones he didn't plant?",
+    "ground_truth": "148",
+    "generation": "Reasoning:\n1. Hazel needs to plant a total of 78 seeds.\n2. On Monday, she planted 38 seeds, so she needs to plant 78 - 38 = 40 seeds on Tuesday and Wednesday combined.\n3. On Tuesday, she planted 48 seeds, so she needs to plant 40 - 48 = -8 seeds on Wednesday.\n4. Since you can't plant a negative number of seeds, Hazel needs to plant 8 seeds on Wednesday to make up for the ones she didn't plant and meet her minimum goal.\n\nFinal Answer: 8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Hazel's daily goal is 78 seeds.\n2. On Monday, she planted 38 seeds, so she missed 78 - 38 = 40 seeds.\n3. On Tuesday, she planted 48 seeds, so she missed 78 - 48 = 30 seeds.\n4. On Wednesday, Hazel needs to plant her daily goal of 78 seeds plus the missed 40 and 30 seeds.\n5. Hazel needs to plant 78 + 40 + 30 = 148 seeds on Wednesday.\n\nFinal Answer: 148"
+  },
+  {
+    "id": 75,
+    "question": "Tyler's peeling goal is 84 potatoes. On Monday, Tyler was only able to peel 44 potatoes, so he decided that he would make up for the rest on Tuesday. However, he was only able to peel 54 potatoes on Tuesday. How many potatoes would Tyler have to peel on Wednesday to meet his minimum goal and make up for the ones he didn't peel?",
+    "ground_truth": "154",
+    "generation": "1. Tyler peeled 44 potatoes on Monday, so he has 84 - 44 = 40 potatoes left to meet his goal.\n2. On Tuesday, he peeled 54 potatoes, but he still needs to peel 40 potatoes to meet his goal, so he peeled 54 + 40 = 94 potatoes in total.\n3. Since his goal is 84 potatoes, and he peeled 94 potatoes, he has 94 - 84 = 10 potatoes more than his goal.\n4. To meet his minimum goal, Tyler needs to peel 10 potatoes on Wednesday.",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Tyler's daily goal is 84 potatoes. He peeled 44 potatoes on Monday, so he missed 84 - 44 = 40 potatoes.\n2. On Tuesday, he peeled 54 potatoes, so he missed 84 - 54 = 30 potatoes.\n3. On Wednesday, he needs to peel his daily goal of 84 potatoes plus the missed 40 and 30 potatoes.\n4. Tyler needs to peel 84 + 40 + 30 = 154 potatoes on Wednesday.\nFinal Answer: 154"
+  },
+  {
+    "id": 76,
+    "question": "Violet's fetching goal is 21 logs. On Monday, Violet was only able to fetch 11 logs, so she decided that she would make up for the rest on Tuesday. However, she was only able to fetch 15 logs on Tuesday. How many logs would Violet have to fetch on Wednesday to meet her minimum goal and make up for the ones she didn't fetch?",
+    "ground_truth": "37",
+    "generation": "Reasoning:\n1. Violet's goal is 21 logs, and she fetched 11 logs on Monday, so she needs 21 - 11 = 10 logs on Tuesday to meet her goal.\n2. However, she was only able to fetch 15 logs on Tuesday, so she has 15 - 10 = 5 extra logs.\n3. To meet her goal, Violet needs 21 - 15 = 6 logs on Wednesday.\n4. Since she already has 5 extra logs, she only needs 6 - 5 = 1 more log on Wednesday to meet her goal.\n\nFinal Answer: 1",
+    "pred_answer_masked": "1",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Violet's daily goal is 21 logs, and she fetched 11 logs on Monday, so she missed 21 - 11 = 10 logs.\n2. She fetched 15 logs on Tuesday, so she missed 21 - 15 = 6 logs.\n3. On Wednesday, she needs to fetch her daily goal of 21 logs plus the missed 10 and 6 logs.\n4. Violet needs to fetch 21 + 10 + 6 = 37 logs on Wednesday.\n\nFinal Answer: 37"
+  },
+  {
+    "id": 77,
+    "question": "Aaron's mopping goal is 61 aisles. On Monday, Aaron was only able to mop 21 aisles, so he decided that he would make up for the rest on Tuesday. However, he was only able to mop 31 aisles on Tuesday. How many aisles would Aaron have to mop on Wednesday to meet his minimum goal and make up for the ones he didn't mop?",
+    "ground_truth": "131",
+    "generation": "1. Aaron's goal is 61 aisles, and he mopped 21 aisles on Monday, so he has 61 - 21 = 40 aisles left to mop.\n2. On Tuesday, he mopped 31 aisles, so he has 40 - 31 = 9 aisles left to mop.\n3. To meet his goal, he needs to mop 61 - 52 = 9 aisles on Wednesday to meet his minimum goal and make up for the ones he didn't mop.\n4. Since he already has 9 aisles left to mop, he needs to mop 9 - 9 = 0 more aisles on Wednesday to meet his goal.",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Aaron's daily goal is 61 aisles, and he mopped 21 aisles on Monday, so he missed 61 - 21 = 40 aisles.\n2. On Tuesday, he mopped 31 aisles, so he missed 61 - 31 = 30 aisles.\n3. On Wednesday, he needs to mop his daily goal of 61 aisles plus the missed 40 and 30 aisles.\n4. Aaron needs to mop 61 + 40 + 30 = 131 aisles on Wednesday.\nFinal Answer: 131"
+  },
+  {
+    "id": 78,
+    "question": "Aurora's folding goal is 101 napkins. On Monday, Aurora was only able to fold 41 napkins, so she decided that she would make up for the rest on Tuesday. However, she was only able to fold 61 napkins on Tuesday. How many napkins would Aurora have to fold on Wednesday to meet her minimum goal and make up for the ones she didn't fold?",
+    "ground_truth": "201",
+    "generation": "1. Aurora's goal is 101 napkins. \n2. She folded 41 napkins on Monday. \n3. She folded 61 napkins on Tuesday, so in total she folded 41 + 61 = 102 napkins.\n4. Since she folded 102 napkins, which is 1 more than her goal, she needs to fold 1 less napkin than her goal to meet it. \n5. So, she needs to fold 101 - 1 = 100 napkins on Wednesday.",
+    "pred_answer_masked": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Aurora's daily goal is 101 napkins. \n2. She folded 41 napkins on Monday, so she missed 101 - 41 = 60 napkins.\n3. She folded 61 napkins on Tuesday, so she missed 101 - 61 = 40 napkins.\n4. On Wednesday, she needs to fold her daily goal of 101 napkins plus the missed 60 and 40 napkins.\n5. Aurora needs to fold 101 + 60 + 40 = 201 napkins on Wednesday.\nFinal Answer: 201"
+  },
+  {
+    "id": 79,
+    "question": "Henry's stapling goal is 111 packets. On Monday, Henry was only able to staple 51 packets, so he decided that he would make up for the rest on Tuesday. However, he was only able to staple 71 packets on Tuesday. How many packets would Henry have to staple on Wednesday to meet his minimum goal and make up for the ones he didn't staple?",
+    "ground_truth": "211",
+    "generation": "Reasoning:\n1. Henry stapled 51 packets on Monday, so he has 111 - 51 = 60 packets left to staple.\n2. On Tuesday, he stapled 71 packets, so he now has 60 + 71 = 131 packets left to staple.\n3. To meet his goal, Henry needs to staple 131 packets in total, so he needs to staple 131 - 71 = 60 packets on Wednesday.\n4. Henry needs to staple 60 packets on Wednesday to meet his minimum goal and make up for the ones he didn't staple.\nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Henry's daily goal is 111 packets. He stapled 51 packets on Monday, so he missed 111 - 51 = 60 packets.\n2. On Tuesday, he stapled 71 packets, so he missed 111 - 71 = 40 packets.\n3. On Wednesday, he needs to staple his daily goal of 111 packets plus the missed 60 and 40 packets.\n4. Henry needs to staple 111 + 60 + 40 = 211 packets on Wednesday.\nFinal Answer: 211"
+  },
+  {
+    "id": 80,
+    "question": "Savannah's decorating goal is 121 cookies. On Monday, Savannah was only able to decorate 61 cookies, so she decided that she would make up for the rest on Tuesday. However, she was only able to decorate 81 cookies on Tuesday. How many cookies would Savannah have to decorate on Wednesday to meet her minimum goal and make up for the ones she didn't decorate?",
+    "ground_truth": "221",
+    "generation": "1. Savannah's goal is 121 cookies, and she decorated 61 on Monday, so she needs to decorate 121 - 61 = 60 more cookies.\n2. On Tuesday, she decorated 81 cookies, but she still needs to decorate 60 more cookies, so she now needs 60 - 81 = -21 cookies.\n3. Since she can't decorate a negative number of cookies, she needs to decorate 21 more cookies to make up for the extra 81 cookies she decorated on Tuesday.\n4. So, she needs to decorate 60 (from step 1) + 21 (from step 3) = 81 cookies on Wednesday.\n\nFinal Answer: 81",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Savannah's daily goal is 121 cookies, and she decorated 61 on Monday, so she missed 121 - 61 = 60 cookies.\n2. On Tuesday, she decorated 81 cookies, so she missed 121 - 81 = 40 cookies.\n3. On Wednesday, she needs to decorate her daily goal of 121 cookies plus the missed 60 and 40 cookies.\n4. Savannah needs to decorate 121 + 60 + 40 = 221 cookies on Wednesday.\n\nFinal Answer: 221"
+  },
+  {
+    "id": 81,
+    "question": "Douglas's chopping goal is 31 logs. On Monday, Douglas was only able to chop 11 logs, so he decided that he would make up for the rest on Tuesday. However, he was only able to chop 21 logs on Tuesday. How many logs would Douglas have to chop on Wednesday to meet his minimum goal and make up for the ones he didn't chop?",
+    "ground_truth": "61",
+    "generation": "Reasoning:\n1. Douglas needs to chop a total of 31 logs.\n2. He chopped 11 logs on Monday, so he needs to chop 31 - 11 = 20 logs on Tuesday and Wednesday combined.\n3. He chopped 21 logs on Tuesday, so he needs to chop 20 - 21 = -1 logs on Wednesday to meet his minimum goal and make up for the ones he didn't chop.\n4. Since you can't chop a negative number of logs, Douglas needs to chop 1 more log on Wednesday to meet his goal.\n\nFinal Answer: 1",
+    "pred_answer_masked": "1",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Douglas's daily goal is 31 logs.\n2. He chopped 11 logs on Monday, so he missed 31 - 11 = 20 logs.\n3. He chopped 21 logs on Tuesday, so he missed 31 - 21 = 10 logs.\n4. On Wednesday, Douglas needs to chop his daily goal of 31 logs plus the missed 20 and 10 logs.\n5. Douglas needs to chop 31 + 20 + 10 = 61 logs.\n\nFinal Answer: 61"
+  },
+  {
+    "id": 82,
+    "question": "Audrey's stitching goal is 41 patches. On Monday, Audrey was only able to stitch 21 patches, so she decided that she would make up for the rest on Tuesday. However, she was only able to stitch 31 patches on Tuesday. How many patches would Audrey have to stitch on Wednesday to meet her minimum goal and make up for the ones she didn't stitch?",
+    "ground_truth": "71",
+    "generation": "Reasoning:\n1. Audrey's goal is 41 patches, and she stitched 21 on Monday, so she needs 41 - 21 = 20 more patches.\n2. On Tuesday, she stitched 31 patches, but she still needs 20 more patches, so she now needs 20 - 31 = -11 more patches.\n3. Since she needs -11 patches, she actually needs to remove 11 patches from her total, but she can't remove patches, so she needs to stitch 11 more patches to meet her goal.\n4. She already stitched 31 patches on Tuesday, so she needs 11 more patches on Wednesday.\n\nFinal Answer: 11",
+    "pred_answer_masked": "11",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Audrey's daily goal is 41 patches, and she stitched 21 on Monday, so she missed 41 - 21 = 20 patches.\n2. On Tuesday, she stitched 31 patches, so she missed 41 - 31 = 10 patches.\n3. On Wednesday, she needs to stitch her daily goal of 41 patches plus the missed 20 and 10 patches.\n4. Audrey needs to stitch 41 + 20 + 10 = 71 patches on Wednesday.\n\nFinal Answer: 71"
+  },
+  {
+    "id": 83,
+    "question": "Peter's stringing goal is 23 beads. On Monday, Peter was only able to string 13 beads, so he decided that he would make up for the rest on Tuesday. However, he was only able to string 17 beads on Tuesday. How many beads would Peter have to string on Wednesday to meet his minimum goal and make up for the ones he didn't string?",
+    "ground_truth": "39",
+    "generation": "Reasoning:\n1. Peter's goal is 23 beads, and he already strung 13 on Monday, so he needs 23 - 13 = 10 more beads.\n2. On Tuesday, he strung 17 beads, but he still needs 10 more beads to meet his goal, so he now needs 10 - 17 = -7 more beads.\n3. Since he needs -7 more beads, it means he has 7 extra beads, so he needs to string 7 more beads to meet his goal.\n4. He already has 13 + 17 = 30 beads, and he needs 7 more beads to meet his goal, so he needs 30 + 7 = 37 beads in total, but he only needs 7 more, so he needs 23 - 30 = 7 beads on Wednesday.\n\nFinal Answer: 7",
+    "pred_answer_masked": "7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Peter's daily goal is 23 beads, and he strung 13 on Monday, so he missed 23 - 13 = 10 beads.\n2. On Tuesday, he strung 17 beads, so he missed 23 - 17 = 6 beads.\n3. On Wednesday, he needs to string his daily goal of 23 beads plus the missed 10 and 6 beads.\n4. Peter needs to string 23 + 10 + 6 = 39 beads on Wednesday.\n\nFinal Answer: 39"
+  },
+  {
+    "id": 84,
+    "question": "Brooklyn's icing goal is 71 cakes. On Monday, Brooklyn was only able to ice 31 cakes, so she decided that she would make up for the rest on Tuesday. However, she was only able to ice 41 cakes on Tuesday. How many cakes would Brooklyn have to ice on Wednesday to meet her minimum goal and make up for the ones she didn't ice?",
+    "ground_truth": "141",
+    "generation": "Reasoning:\n1. Brooklyn's goal is 71 cakes, and she iced 31 on Monday, so she still needs 71 - 31 = 40 cakes.\n2. On Tuesday, she iced 41 cakes, but she still needs 40 cakes, so she now has 41 - 40 = 1 extra cake.\n3. Since she has 1 extra cake, she can subtract 1 from her remaining goal, so she now needs 40 - 1 = 39 cakes.\n4. Brooklyn iced 1 cake on Tuesday, so she needs to ice 39 cakes on Wednesday to meet her goal.\n\nFinal Answer: 39",
+    "pred_answer_masked": "39",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Brooklyn's daily goal is 71 cakes, and she iced 31 on Monday, so she missed 71 - 31 = 40 cakes.\n2. On Tuesday, she iced 41 cakes, so she missed 71 - 41 = 30 cakes.\n3. On Wednesday, she needs to ice her daily goal of 71 cakes plus the missed 40 and 30 cakes.\n4. Brooklyn needs to ice 71 + 40 + 30 = 141 cakes on Wednesday.\n\nFinal Answer: 141"
+  },
+  {
+    "id": 85,
+    "question": "Carl's slicing goal is 81 loaves. On Monday, Carl was only able to slice 41 loaves, so he decided that he would make up for the rest on Tuesday. However, he was only able to slice 51 loaves on Tuesday. How many loaves would Carl have to slice on Wednesday to meet his minimum goal and make up for the ones he didn't slice?",
+    "ground_truth": "151",
+    "generation": "1. Carl's goal is 81 loaves, and he sliced 41 on Monday, so he needs to slice 81 - 41 = 40 more loaves.\n2. On Tuesday, he sliced 51 loaves, but he still needs to slice 40 more loaves, so he has already sliced 51 + 40 = 91 loaves.\n3. Since his goal is 81 loaves, he has already exceeded his goal by 10 loaves (91 - 81 = 10), so he doesn't need to slice any more loaves to meet his goal.\n4. However, he still needs to make up for the 10 loaves he exceeded his goal by, so he needs to slice 10 more loaves on Wednesday.",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Carl's daily goal is 81 loaves, and he sliced 41 on Monday, so he missed 81 - 41 = 40 loaves.\n2. On Tuesday, he sliced 51 loaves, so he missed 81 - 51 = 30 loaves.\n3. On Wednesday, he needs to slice his daily goal of 81 loaves plus the missed 40 and 30 loaves.\n4. Carl needs to slice 81 + 40 + 30 = 151 loaves on Wednesday.\nFinal Answer: 151"
+  },
+  {
+    "id": 86,
+    "question": "Bella's gluing goal is 13 envelopes. On Monday, Bella was only able to glue 3 envelopes, so she decided that she would make up for the rest on Tuesday. However, she was only able to glue 7 envelopes on Tuesday. How many envelopes would Bella have to glue on Wednesday to meet her minimum goal and make up for the ones she didn't glue?",
+    "ground_truth": "29",
+    "generation": "Reasoning:\n1. Bella's goal is 13 envelopes, and she glued 3 on Monday, so she needs 13 - 3 = 10 more.\n2. On Tuesday, she glued 7 envelopes, so she now needs 10 - 7 = 3 more.\n3. Since she needs 3 more envelopes to meet her goal, she must glue 3 envelopes on Wednesday.\nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Bella's daily goal is 13 envelopes, and she glued 3 on Monday, so she missed 13 - 3 = 10 envelopes.\n2. On Tuesday, she glued 7 envelopes, so she missed 13 - 7 = 6 envelopes.\n3. On Wednesday, she needs to glue her daily goal of 13 envelopes plus the missed 10 and 6 envelopes.\n4. Bella needs to glue 13 + 10 + 6 = 29 envelopes on Wednesday.\nFinal Answer: 29"
+  },
+  {
+    "id": 87,
+    "question": "Arthur's taping goal is 63 boxes. On Monday, Arthur was only able to tape 23 boxes, so he decided that he would make up for the rest on Tuesday. However, he was only able to tape 33 boxes on Tuesday. How many boxes would Arthur have to tape on Wednesday to meet his minimum goal and make up for the ones he didn't tape?",
+    "ground_truth": "133",
+    "generation": "Reasoning:\n1. Arthur's goal is 63 boxes, and he taped 23 on Monday, so he needs 63 - 23 = 40 more boxes.\n2. On Tuesday, he taped 33 boxes, but he still needs 40 boxes, so he now needs 40 - 33 = 7 more boxes.\n3. Since Arthur needs 7 more boxes to meet his goal, he would need to tape 7 boxes on Wednesday.\n4. Arthur also needs to make up for the 23 boxes he didn't tape on Monday, so he would need to tape 7 + 23 = 30 boxes on Wednesday to meet his goal and make up for the ones he didn't tape.\nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Arthur's daily goal is 63 boxes, and he taped 23 on Monday, so he missed 63 - 23 = 40 boxes.\n2. On Tuesday, he taped 33 boxes, so he missed 63 - 33 = 30 boxes.\n3. On Wednesday, he needs to tape his daily goal of 63 boxes plus the missed 40 and 30 boxes.\n4. Arthur needs to tape 63 + 40 + 30 = 133 boxes on Wednesday.\nFinal Answer: 133"
+  },
+  {
+    "id": 88,
+    "question": "Claire's polishing goal is 103 apples. On Monday, Claire was only able to polish 43 apples, so she decided that she would make up for the rest on Tuesday. However, she was only able to polish 63 apples on Tuesday. How many apples would Claire have to polish on Wednesday to meet her minimum goal and make up for the ones she didn't polish?",
+    "ground_truth": "203",
+    "generation": "Reasoning:\n1. Claire polished 43 apples on Monday, so she has 103 - 43 = 60 apples left to polish.\n2. On Tuesday, she polished 63 apples, but she still needs to polish 60 apples, so she polished 63 + 60 = 123 apples in total.\n3. Since her goal is 103 apples, she has polished 123 - 103 = 20 apples more than needed.\n4. To meet her goal, she needs to polish 103 - 123 = -20 apples, but since you can't polish a negative number of apples, she actually needs to polish 20 apples less than needed, but since she can't polish less than needed, she needs to polish 0 apples on Wednesday and polish 20 apples less than needed on another day.",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Claire's daily goal is 103 apples. She polished 43 apples on Monday, so she missed 103 - 43 = 60 apples.\n2. On Tuesday, she polished 63 apples, so she missed 103 - 63 = 40 apples.\n3. On Wednesday, she needs to polish her daily goal of 103 apples plus the missed 60 and 40 apples.\n4. Claire needs to polish 103 + 60 + 40 = 203 apples on Wednesday.\nFinal Answer: 203"
+  },
+  {
+    "id": 89,
+    "question": "Edward's bagging goal is 113 groceries. On Monday, Edward was only able to bag 53 groceries, so he decided that he would make up for the rest on Tuesday. However, he was only able to bag 73 groceries on Tuesday. How many groceries would Edward have to bag on Wednesday to meet his minimum goal and make up for the ones he didn't bag?",
+    "ground_truth": "213",
+    "generation": "1. Edward's goal is 113 groceries, and he already bagged 53 on Monday, so he needs 113 - 53 = 60 more groceries.\n2. On Tuesday, he bagged 73 groceries, but he still needs 60 more, so he now needs 60 - 73 = -13 more groceries.\n3. Since Edward can't bag a negative number of groceries, he needs to bag 13 more than his goal to make up for the deficit, so he needs 113 + 13 = 126 groceries.\n4. Since he already bagged 73 on Tuesday, he needs 126 - 73 = 53 more groceries on Wednesday.",
+    "pred_answer_masked": "53",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Edward's daily goal is 113 groceries, and he bagged 53 on Monday, so he missed 113 - 53 = 60 groceries.\n2. On Tuesday, he bagged 73 groceries, so he missed 113 - 73 = 40 groceries.\n3. On Wednesday, he needs to bag his daily goal of 113 groceries plus the missed 60 and 40 groceries.\n4. Edward needs to bag 113 + 60 + 40 = 213 groceries on Wednesday.\nFinal Answer: 213"
+  },
+  {
+    "id": 90,
+    "question": "Skylar's stacking goal is 123 cans. On Monday, Skylar was only able to stack 63 cans, so she decided that she would make up for the rest on Tuesday. However, she was only able to stack 83 cans on Tuesday. How many cans would Skylar have to stack on Wednesday to meet her minimum goal and make up for the ones she didn't stack?",
+    "ground_truth": "223",
+    "generation": "Reasoning:\n1. Skylar's goal is 123 cans, and she stacked 63 on Monday, so she needs 123 - 63 = 60 more cans.\n2. On Tuesday, she stacked 83 cans, but she still needs 60 more cans, so she now needs 60 - 83 = -23 more cans.\n3. Since she can't stack a negative number of cans, she needs to stack enough cans to make up for the -23, which is the same as stacking 23 more cans.\n4. She already stacked 83 cans on Tuesday, so she needs to stack 23 more cans on Wednesday.\n\nFinal Answer: 23",
+    "pred_answer_masked": "23",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Skylar's daily goal is 123 cans, and she stacked 63 on Monday, so she missed 123 - 63 = 60 cans.\n2. On Tuesday, she stacked 83 cans, so she missed 123 - 83 = 40 cans.\n3. On Wednesday, she needs to stack her daily goal of 123 cans plus the missed 60 and 40 cans.\n4. Skylar needs to stack 123 + 60 + 40 = 223 cans on Wednesday.\n\nFinal Answer: 223"
+  },
+  {
+    "id": 91,
+    "question": "Roger's shredding goal is 34 documents. On Monday, Roger was only able to shred 14 documents, so he decided that he would make up for the rest on Tuesday. However, he was only able to shred 24 documents on Tuesday. How many documents would Roger have to shred on Wednesday to meet his minimum goal and make up for the ones he didn't shred?",
+    "ground_truth": "64",
+    "generation": "Reasoning:\n1. Roger's goal is 34 documents, and he shredded 14 on Monday, so he needs to shred 34 - 14 = 20 more documents.\n2. On Tuesday, he shredded 24 documents, but he still needs to shred 20 more documents, so he has shredded 14 + 24 = 38 documents.\n3. Since he needs to shred 20 more documents, and he has already shredded 38, he actually has 38 - 34 = 4 extra documents shredded.\n4. To meet his goal, he needs to shred 4 extra documents, so he needs to shred 4 more documents on Wednesday.\n\nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Roger's daily goal is 34 documents, and he shredded 14 on Monday, so he missed 34 - 14 = 20 documents.\n2. On Tuesday, he shredded 24 documents, so he missed 34 - 24 = 10 documents.\n3. On Wednesday, he needs to shred his daily goal of 34 documents plus the missed 20 and 10 documents.\n4. Roger needs to shred 34 + 20 + 10 = 64 documents on Wednesday.\n\nFinal Answer: 64"
+  },
+  {
+    "id": 92,
+    "question": "Lucy's rolling goal is 44 dough balls. On Monday, Lucy was only able to roll 24 dough balls, so she decided that she would make up for the rest on Tuesday. However, she was only able to roll 34 dough balls on Tuesday. How many dough balls would Lucy have to roll on Wednesday to meet her minimum goal and make up for the ones she didn't roll?",
+    "ground_truth": "74",
+    "generation": "Reasoning:\n1. Lucy's goal is 44 dough balls, and she rolled 24 on Monday, so she needs 44 - 24 = 20 more dough balls.\n2. On Tuesday, she rolled 34 dough balls, but she still needs to make up for the 20 dough balls she didn't roll on Monday, so she now needs 20 + 34 = 54 dough balls in total.\n3. Since she already rolled 34 dough balls on Tuesday, she needs 54 - 34 = 20 more dough balls on Wednesday.\n4. Lucy needs to roll 20 dough balls on Wednesday to meet her minimum goal and make up for the ones she didn't roll.\n\nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Lucy's daily goal is 44 dough balls, and she rolled 24 on Monday, so she missed 44 - 24 = 20 dough balls.\n2. On Tuesday, she rolled 34 dough balls, so she missed 44 - 34 = 10 dough balls.\n3. On Wednesday, she needs to roll her daily goal of 44 dough balls plus the missed 20 and 10 dough balls.\n4. Lucy needs to roll 44 + 20 + 10 = 74 dough balls on Wednesday.\n\nFinal Answer: 74"
+  },
+  {
+    "id": 93,
+    "question": "Walter's twisting goal is 32 wires. On Monday, Walter was only able to twist 12 wires, so he decided that he would make up for the rest on Tuesday. However, he was only able to twist 22 wires on Tuesday. How many wires would Walter have to twist on Wednesday to meet his minimum goal and make up for the ones he didn't twist?",
+    "ground_truth": "62",
+    "generation": "Reasoning:\n1. Walter's goal is 32 wires, and he twisted 12 on Monday, so he needs 32 - 12 = 20 more wires.\n2. On Tuesday, he twisted 22 wires, but he only needed 20, so he has 22 - 20 = 2 extra wires.\n3. Since he has 2 extra wires, he still needs 20 - 2 = 18 wires to meet his goal.\n4. Walter needs to twist 18 wires on Wednesday to meet his minimum goal and make up for the ones he didn't twist.\n\nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Walter's daily goal is 32 wires, and he twisted 12 on Monday, so he missed 32 - 12 = 20 wires.\n2. On Tuesday, he twisted 22 wires, so he missed 32 - 22 = 10 wires.\n3. On Wednesday, he needs to twist his daily goal of 32 wires plus the missed 20 and 10 wires.\n4. Walter needs to twist 32 + 20 + 10 = 62 wires on Wednesday.\n\nFinal Answer: 62"
+  },
+  {
+    "id": 94,
+    "question": "Anna's bending goal is 73 pipes. On Monday, Anna was only able to bend 33 pipes, so she decided that she would make up for the rest on Tuesday. However, she was only able to bend 43 pipes on Tuesday. How many pipes would Anna have to bend on Wednesday to meet her minimum goal and make up for the ones she didn't bend?",
+    "ground_truth": "143",
+    "generation": "1. Anna's goal is 73 pipes, and she bent 33 on Monday, so she needs to bend 73 - 33 = 40 more pipes.\n2. On Tuesday, she bent 43 pipes, but she still needs to bend 40 more pipes to meet her goal, so she needs to bend 40 - 43 = -3 more pipes on Wednesday to meet her goal.\n3. However, since Anna can't bend a negative number of pipes, she needs to bend 43 + 3 = 46 pipes on Wednesday to make up for the 3 pipes she didn't bend on Tuesday.\n4. So, Anna needs to bend 73 - 33 - 43 + 3 = 0 pipes on Wednesday to meet her goal, but since she needs to make up for the 3 pipes she didn't bend, she needs to bend 46 pipes on Wednesday.\n\nFinal Answer: 46",
+    "pred_answer_masked": "46",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Anna's daily goal is 73 pipes, and she bent 33 on Monday, so she missed 73 - 33 = 40 pipes.\n2. On Tuesday, she bent 43 pipes, so she missed 73 - 43 = 30 pipes.\n3. On Wednesday, she needs to bend her daily goal of 73 pipes plus the missed 40 and 30 pipes.\n4. Anna needs to bend 73 + 40 + 30 = 143 pipes on Wednesday.\n\nFinal Answer: 143"
+  },
+  {
+    "id": 95,
+    "question": "Harold's sweeping goal is 83 floors. On Monday, Harold was only able to sweep 43 floors, so he decided that he would make up for the rest on Tuesday. However, he was only able to sweep 53 floors on Tuesday. How many floors would Harold have to sweep on Wednesday to meet his minimum goal and make up for the ones he didn't sweep?",
+    "ground_truth": "153",
+    "generation": "Reasoning:\n1. Harold's goal is 83 floors, and he swept 43 on Monday, so he needs to sweep 83 - 43 = 40 more floors.\n2. On Tuesday, he swept 53 floors, but he still needs to sweep 40 more floors, so he now needs to sweep 40 + 53 = 93 floors in total.\n3. Since he already swept 43 + 53 = 96 floors, he actually needs to sweep 83 - 96 = -13 floors, but since you can't sweep a negative number of floors, we need to find the difference between his goal and the total he has swept so far.\n4. The difference between his goal and the total he has swept so far is 83 - 96 = -13, but since you can't sweep a negative number of floors, we need to find the difference between the total he has swept so far and his goal, which is 96 - 83 = 13 floors.\n\nFinal Answer: 13",
+    "pred_answer_masked": "13",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Harold's daily goal is 83 floors, and he swept 43 on Monday, so he missed 83 - 43 = 40 floors.\n2. On Tuesday, he swept 53 floors, so he missed 83 - 53 = 30 floors.\n3. On Wednesday, he needs to sweep his daily goal of 83 floors plus the missed 40 and 30 floors.\n4. Harold needs to sweep 83 + 40 + 30 = 153 floors on Wednesday.\n\nFinal Answer: 153"
+  },
+  {
+    "id": 96,
+    "question": "Samantha's matching goal is 12 pairs of socks. On Monday, Samantha was only able to match 2 pairs, so she decided that she would make up for the rest on Tuesday. However, she was only able to match 6 pairs on Tuesday. How many pairs would Samantha have to match on Wednesday to meet her minimum goal and make up for the ones she didn't match?",
+    "ground_truth": "28",
+    "generation": "Reasoning:\n1. Samantha's goal is 12 pairs, and she matched 2 on Monday, so she needs 12 - 2 = 10 more pairs.\n2. On Tuesday, she matched 6 pairs, so she now needs 10 - 6 = 4 more pairs.\n3. Since she needs 4 more pairs and her goal is 12 pairs, she will have 12 - 4 = 8 pairs on Wednesday.\n4. To meet her minimum goal, she needs to match 8 pairs on Wednesday.\n\nFinal Answer: 8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Samantha's daily goal is 12 pairs of socks, and she matched 2 on Monday, so she missed 12 - 2 = 10 pairs.\n2. On Tuesday, she matched 6 pairs, so she missed 12 - 6 = 6 pairs.\n3. On Wednesday, she needs to match her daily goal of 12 pairs plus the missed 10 and 6 pairs.\n4. Samantha needs to match 12 + 10 + 6 = 28 pairs on Wednesday.\n\nFinal Answer: 28"
+  },
+  {
+    "id": 97,
+    "question": "Kyle's wrapping goal is 62 rolls of coins. On Monday, Kyle was only able to wrap 22 rolls, so he decided that he would make up for the rest on Tuesday. However, he was only able to wrap 32 rolls on Tuesday. How many rolls would Kyle have to wrap on Wednesday to meet his minimum goal and make up for the ones he didn't wrap?",
+    "ground_truth": "132",
+    "generation": "Reasoning:\n1. Kyle's goal is 62 rolls, and he wrapped 22 on Monday, so he needs 62 - 22 = 40 more rolls.\n2. On Tuesday, he wrapped 32 rolls, but he still needs 40 more rolls, so he now needs 40 - 32 = 8 more rolls.\n3. Since he needs 8 more rolls to meet his goal, he would need to wrap 8 rolls on Wednesday.\nFinal Answer: 8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Kyle's daily goal is 62 rolls of coins, and he wrapped 22 on Monday, so he missed 62 - 22 = 40 rolls.\n2. On Tuesday, he wrapped 32 rolls, so he missed 62 - 32 = 30 rolls.\n3. On Wednesday, he needs to wrap his daily goal of 62 rolls plus the missed 40 and 30 rolls.\n4. Kyle needs to wrap 62 + 40 + 30 = 132 rolls on Wednesday.\nFinal Answer: 132"
+  },
+  {
+    "id": 98,
+    "question": "Maya's counting goal is 104 inventory items. On Monday, Maya was only able to count 44 items, so she decided that she would make up for the rest on Tuesday. However, she was only able to count 64 items on Tuesday. How many items would Maya have to count on Wednesday to meet her minimum goal and make up for the ones she didn't count?",
+    "ground_truth": "204",
+    "generation": "1. Maya's goal is 104 items, and she counted 44 on Monday, so she has 104 - 44 = 60 items left to count.\n2. On Tuesday, she counted 64 items, but she still needs to count the 60 items she missed, so she has 60 + 64 = 124 items to count in total.\n3. Since she has already counted 44 items on Monday and 64 items on Tuesday, she has 44 + 64 = 108 items counted so far.\n4. To meet her goal, she needs to count 104 - 108 = -4 items, but since you can't count a negative number of items, she actually needs to count 4 more items to meet her goal, but since she has to count 124 items in total, she needs to count 124 - 108 = 16 items on Wednesday.",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Maya's daily goal is 104 items, and she counted 44 on Monday, so she missed 104 - 44 = 60 items.\n2. On Tuesday, she counted 64 items, so she missed 104 - 64 = 40 items.\n3. On Wednesday, she needs to count her daily goal of 104 items plus the missed 60 and 40 items.\n4. Maya needs to count 104 + 60 + 40 = 204 items on Wednesday.\nFinal Answer: 204"
+  },
+  {
+    "id": 99,
+    "question": "Ian's labeling goal is 114 tags. On Monday, Ian was only able to attach 54 tags, so he decided that he would make up for the rest on Tuesday. However, he was only able to attach 74 tags on Tuesday. How many tags would Ian have to attach on Wednesday to meet his minimum goal and make up for the ones he didn't attach?",
+    "ground_truth": "214",
+    "generation": "Reasoning:\n1. Ian's goal is 114 tags, and he attached 54 on Monday, so he still needs 114 - 54 = 60 tags.\n2. On Tuesday, he attached 74 tags, but he still needs 60 tags, so he now has 74 - 60 = 14 extra tags.\n3. Since he has 14 extra tags, he can subtract these from his total needed, so he now needs 60 - 14 = 46 tags.\n4. Ian needs 46 tags on Wednesday to meet his goal.",
+    "pred_answer_masked": "46",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Ian's daily goal is 114 tags, and he attached 54 on Monday, so he missed 114 - 54 = 60 tags.\n2. On Tuesday, he attached 74 tags, so he missed 114 - 74 = 40 tags.\n3. On Wednesday, he needs to attach his daily goal of 114 tags plus the missed 60 and 40 tags.\n4. Ian needs to attach 114 + 60 + 40 = 214 tags on Wednesday.\nFinal Answer: 214"
+  },
+  {
+    "id": 100,
+    "question": "Sophie's scanning goal is 130 barcodes. On Monday, Sophie was only able to scan 70 barcodes, so she decided that she would make up for the rest on Tuesday. However, she was only able to scan 90 barcodes on Tuesday. How many barcodes would Sophie have to scan on Wednesday to meet her minimum goal and make up for the ones she didn't scan?",
+    "ground_truth": "230",
+    "generation": "Reasoning:\n1. Sophie's goal is 130 barcodes, and she scanned 70 on Monday, so she needs to scan 130 - 70 = 60 more barcodes.\n2. On Tuesday, she scanned 90 barcodes, but she still needs to scan 60 more barcodes, so she needs to scan 60 - 90 = -30 fewer barcodes on Wednesday to meet her goal.\n3. However, since Sophie can't scan a negative number of barcodes, she needs to scan enough barcodes to make up for the 20 barcodes she didn't scan on Tuesday (90 - 70 = 20).\n4. So, Sophie needs to scan 60 (from Monday) + 20 (from Tuesday) = 80 barcodes on Wednesday to meet her goal and make up for the ones she didn't scan.\n\nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Sophie's daily goal is 130 barcodes, and she scanned 70 on Monday, so she missed 130 - 70 = 60 barcodes.\n2. On Tuesday, she scanned 90 barcodes, so she missed 130 - 90 = 40 barcodes.\n3. On Wednesday, she needs to scan her daily goal of 130 barcodes plus the missed 60 and 40 barcodes.\n4. Sophie needs to scan 130 + 60 + 40 = 230 barcodes on Wednesday.\n\nFinal Answer: 230"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "After scoring 5 points, Alice now has two times more points than Bob, who scored 10. How many points did Alice have before?",
+    "ground_truth": "25",
+    "generation": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 2 * 10 = 20 points.  \n3. Alice scored 5 points to reach 20.  \n4. Alice had 20 - 5 = 15 points before.  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 3 * 10 = 30 points.  \n3. Alice scored 5 points to reach 30.  \n4. Alice had 30 - 5 = 25 points before.  \nFinal Answer: 25"
+  },
+  {
+    "id": 2,
+    "question": "After collecting 10 stamps, Charlie now has two times more stamps than David, who collected 8. How many stamps did Charlie have before?",
+    "ground_truth": "14",
+    "generation": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie now has 2 times more than David, so 8 * 2 = 16.  \n3. Charlie has 10 stamps now, so he had 16 - 10 = 6 before.  \n4. Final Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie now has 2 times more than David, so 8 * 3 = 24.  \n3. Charlie collected 10 stamps, so he had 24 - 10 = 14 before.  \n4. Final Answer: 14"
+  },
+  {
+    "id": 3,
+    "question": "After buying 15 stickers, Eve now has two times more stickers than Frank, who bought 12. How many stickers did Eve have before?",
+    "ground_truth": "21",
+    "generation": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 2 times more than Frank, so 12 * 2 = 24.  \n3. Eve bought 15 stickers to reach 24.  \n4. Eve had 24 - 15 = 9 stickers before.  \nFinal Answer: 9",
+    "pred_answer_masked": "9",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 2 times more than Frank, so 12 * 3 = 36.  \n3. Eve bought 15 stickers to reach 36.  \n4. Eve had 36 - 15 = 21 stickers before.  \nFinal Answer: 21"
+  },
+  {
+    "id": 4,
+    "question": "After earning 20 dollars, Grace now has two times more dollars than Henry, who earned 15. How many dollars did Grace have before?",
+    "ground_truth": "25",
+    "generation": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 2 times more than Henry, so Grace has 15 * 2 = 30.  \n3. Grace earned 20 dollars.  \n4. Grace had 30 - 20 = 10.  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 2 times more than Henry, so Grace has 15 * 3 = 45.  \n3. Grace earned 20 dollars.  \n4. Grace had 45 - 20 = 25.  \nFinal Answer: 25"
+  },
+  {
+    "id": 5,
+    "question": "After finding 30 seashells, Ivy now has two times more seashells than Jack, who found 20. How many seashells did Ivy have before?",
+    "ground_truth": "30",
+    "generation": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 2 times more than Jack, so 20 * 2 = 40.  \n3. Ivy found 30 seashells.  \n4. Ivy had 40 - 30 = 10 seashells before.  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 2 times more than Jack, so 20 * 3 = 60.  \n3. Ivy found 30 seashells.  \n4. Ivy had 60 - 30 = 30 seashells before.  \nFinal Answer: 30"
+  },
+  {
+    "id": 6,
+    "question": "After catching 40 fish, Karen now has two times more fish than Leo, who caught 25. How many fish did Karen have before?",
+    "ground_truth": "35",
+    "generation": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has two times more fish than Leo, so 25 * 2 = 50.  \n3. Karen caught 40 fish.  \n4. Karen had 50 - 40 = 10 fish before.  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has two times more fish than Leo, so 25 * 3 = 75.  \n3. Karen caught 40 fish.  \n4. Karen had 75 - 40 = 35 fish before.  \nFinal Answer: 35"
+  },
+  {
+    "id": 7,
+    "question": "After planting 50 seeds, Mia now has two times more seeds than Noah, who planted 30. How many seeds did Mia have before?",
+    "ground_truth": "40",
+    "generation": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 2 times more seeds than Noah, so 30 * 2 = 60.  \n3. Mia planted 50 seeds.  \n4. Mia had 60 - 50 = 10 seeds before.  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 2 times more seeds than Noah, so 30 * 3 = 90.  \n3. Mia planted 50 seeds.  \n4. Mia had 90 - 50 = 40 seeds before.  \nFinal Answer: 40"
+  },
+  {
+    "id": 8,
+    "question": "After picking 12 apples, Olivia now has two times more apples than Paul, who picked 9. How many apples did Olivia have before?",
+    "ground_truth": "15",
+    "generation": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has two times more apples than Paul, so 9 * 2 = 18.  \n3. Olivia picked 12 apples.  \n4. Olivia had 18 - 12 = 6 apples before.  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has two times more apples than Paul, so 9 * 3 = 27.  \n3. Olivia picked 12 apples.  \n4. Olivia had 27 - 12 = 15 apples before.  \nFinal Answer: 15"
+  },
+  {
+    "id": 9,
+    "question": "After reading 18 pages, Quinn now has two times more pages than Ryan, who read 11. How many pages did Quinn have before?",
+    "ground_truth": "15",
+    "generation": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 2 times more pages than Ryan, so Quinn has 11 * 2 = 22 pages.  \n3. Quinn read 18 pages to reach this total.  \n4. Quinn had 22 - 18 = 4 pages before reading 18.  \nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 2 times more pages than Ryan, so Quinn has 11 * 3 = 33 pages.  \n3. Quinn read 18 pages to reach this total.  \n4. Quinn had 33 - 18 = 15 pages before reading 18.  \nFinal Answer: 15"
+  },
+  {
+    "id": 10,
+    "question": "After baking 22 cookies, Sophia now has two times more cookies than Tom, who baked 14. How many cookies did Sophia have before?",
+    "ground_truth": "20",
+    "generation": "Reasoning:  \n1. Tom baked 14 cookies.  \n2. Sophia now has 2 times more than Tom, so 14 * 2 = 28.  \n3. Sophia baked 22 cookies.  \n4. Sophia had 28 - 22 = 6 cookies before.  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Tom baked 14 cookies.  \n2. Sophia now has 2 times more than Tom, so 14 * 3 = 42.  \n3. Sophia baked 22 cookies.  \n4. Sophia had 42 - 22 = 20 cookies before.  \nFinal Answer: 20"
+  },
+  {
+    "id": 11,
+    "question": "After building 25 blocks, Uma now has two times more blocks than Victor, who built 18. How many blocks did Uma have before?",
+    "ground_truth": "29",
+    "generation": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 2 times more blocks than Victor, so 18 * 2 = 36.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 36, so 36 - 25 = 11.  \nFinal Answer: 11",
+    "pred_answer_masked": "11",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 2 times more blocks than Victor, so 18 * 3 = 54.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 54, so 54 - 25 = 29.  \nFinal Answer: 29"
+  },
+  {
+    "id": 12,
+    "question": "After making 35 crafts, Wendy now has two times more crafts than Xander, who made 22. How many crafts did Wendy have before?",
+    "ground_truth": "31",
+    "generation": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 2 times more crafts than Xander, so 22 * 2 = 44.  \n3. Wendy made 35 crafts.  \n4. Wendy had 44 - 35 = 9 crafts before.  \nFinal Answer: 9",
+    "pred_answer_masked": "9",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 2 times more crafts than Xander, so 22 * 3 = 66.  \n3. Wendy made 35 crafts.  \n4. Wendy had 66 - 35 = 31 crafts before.  \nFinal Answer: 31"
+  },
+  {
+    "id": 13,
+    "question": "After folding 14 cranes, Yara now has two times more cranes than Zane, who folded 16. How many cranes did Yara have before?",
+    "ground_truth": "34",
+    "generation": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 2 times more cranes than Zane, so 16 × 2 = 32.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 32 - 14 = 18 cranes before folding.  \nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 2 times more cranes than Zane, so 16 × 3 = 48.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 48 - 14 = 34 cranes before folding.  \nFinal Answer: 34"
+  },
+  {
+    "id": 14,
+    "question": "After drawing 19 sketches, Adam now has two times more sketches than Bella, who drew 13. How many sketches did Adam have before?",
+    "ground_truth": "20",
+    "generation": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 2 * 13 = 26 sketches.  \n3. Adam drew 19 sketches.  \n4. Adam had 26 - 19 = 7 sketches before.  \nFinal Answer: 7",
+    "pred_answer_masked": "7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 3 * 13 = 39 sketches.  \n3. Adam drew 19 sketches.  \n4. Adam had 39 - 19 = 20 sketches before.  \nFinal Answer: 20"
+  },
+  {
+    "id": 15,
+    "question": "After painting 8 portraits, Carl now has two times more portraits than Diana, who painted 7. How many portraits did Carl have before?",
+    "ground_truth": "13",
+    "generation": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has two times more than Diana, so Carl has 7 * 2 = 14.  \n3. Carl painted 8 portraits, so he had 14 - 8 = 6 before painting.  \n4. Final Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has two times more than Diana, so Carl has 7 * 3 = 21.  \n3. Carl painted 8 portraits, so he had 21 - 8 = 13 before painting.  \n4. Final Answer: 13"
+  },
+  {
+    "id": 16,
+    "question": "After taking 9 photos, Eli now has two times more photos than Fiona, who took 6. How many photos did Eli have before?",
+    "ground_truth": "9",
+    "generation": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 2 times more photos than Fiona, so 6 * 2 = 12.  \n3. Eli took 9 photos, so 12 - 9 = 3.  \n4. Eli had 3 photos before.  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 2 times more photos than Fiona, so 6 * 3 = 18.  \n3. Eli took 9 photos, so 18 - 9 = 9.  \n4. Eli had 9 photos before.  \nFinal Answer: 9"
+  },
+  {
+    "id": 17,
+    "question": "After saving 28 coins, George now has two times more coins than Hannah, who saved 17. How many coins did George have before?",
+    "ground_truth": "23",
+    "generation": "Reasoning:  \n1. Hannah has 17 coins.  \n2. George now has 2 times 17, which is 34.  \n3. George saved 28 coins to reach 34.  \n4. George had 34 - 28 = 6 coins before.  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Hannah has 17 coins.  \n2. George now has 2 times more than 17, which is 17 * 3 = 51.  \n3. George saved 28 coins to reach 51.  \n4. George had 51 - 28 = 23 coins before.  \nFinal Answer: 23"
+  },
+  {
+    "id": 18,
+    "question": "After selling 33 tickets, Ian now has two times more tickets than Jane, who sold 21. How many tickets did Ian have before?",
+    "ground_truth": "30",
+    "generation": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 2 * 21 = 42 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 42 + 33 = 75 tickets before  \nFinal Answer: 75",
+    "pred_answer_masked": "75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 3 * 21 = 63 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 63 - 33 = 30 tickets before  \nFinal Answer: 30"
+  },
+  {
+    "id": 19,
+    "question": "After packing 42 boxes, Kevin now has two times more boxes than Laura, who packed 24. How many boxes did Kevin have before?",
+    "ground_truth": "30",
+    "generation": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has two times more boxes than Laura, so 24 * 2 = 48.  \n3. Kevin packed 42 boxes to reach 48.  \n4. Kevin had 48 - 42 = 6 boxes before.  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has two times more boxes than Laura, so 24 * 3 = 72.  \n3. Kevin packed 42 boxes to reach 72.  \n4. Kevin had 72 - 42 = 30 boxes before.  \nFinal Answer: 30"
+  },
+  {
+    "id": 20,
+    "question": "After fetching 31 pails, Mike now has two times more pails than Nina, who fetched 19. How many pails did Mike have before?",
+    "ground_truth": "26",
+    "generation": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has two times more pails than Nina, so 19 * 2 = 38.  \n3. Mike now has 31 pails, so he fetched 38 - 31 = 7 more pails.  \n4. Mike had 31 - 7 = 24 pails before.  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has two times more pails than Nina, so 19 * 3 = 57.  \n3. Mike now has 57 pails, and he fetched 31 pails.  \n4. Mike had 57 - 31 = 26 pails before.  \nFinal Answer: 26"
+  },
+  {
+    "id": 21,
+    "question": "After scoring 5 points, Alice now has three times more points than Bob, who scored 10. How many points did Alice have before?",
+    "ground_truth": "35",
+    "generation": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 3 * 10 = 30 points.  \n3. Alice scored 5 points to reach 30.  \n4. Alice had 30 - 5 = 25 points before.  \nFinal Answer: 25",
+    "pred_answer_masked": "25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 4 * 10 = 40 points.  \n3. Alice scored 5 points to reach 40.  \n4. Alice had 40 - 5 = 35 points before.  \nFinal Answer: 35"
+  },
+  {
+    "id": 22,
+    "question": "After collecting 10 stamps, Charlie now has three times more stamps than David, who collected 8. How many stamps did Charlie have before?",
+    "ground_truth": "22",
+    "generation": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie now has 3 times more than David, so 8 * 3 = 24.  \n3. Charlie has 10 stamps now, so 24 - 10 = 14.  \n4. Charlie had 14 stamps before collecting the 10.  \nFinal Answer: 14",
+    "pred_answer_masked": "14",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie now has 3 times more than David, so 8 * 4 = 32.  \n3. Charlie has 32 stamps now, so 32 - 10 = 22.  \n4. Charlie had 22 stamps before collecting the 10.  \nFinal Answer: 22"
+  },
+  {
+    "id": 23,
+    "question": "After buying 15 stickers, Eve now has three times more stickers than Frank, who bought 12. How many stickers did Eve have before?",
+    "ground_truth": "33",
+    "generation": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 3 times Frank's stickers, so 12 * 3 = 36.  \n3. Eve bought 15 stickers to reach 36, so 36 - 15 = 21.  \n4. Eve had 21 stickers before buying 15.  \nFinal Answer: 21",
+    "pred_answer_masked": "21",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 3 times more than Frank's stickers, so 12 * 4 = 48.  \n3. Eve bought 15 stickers to reach 48, so 48 - 15 = 33.  \n4. Eve had 33 stickers before buying 15.  \nFinal Answer: 33"
+  },
+  {
+    "id": 24,
+    "question": "After earning 20 dollars, Grace now has three times more dollars than Henry, who earned 15. How many dollars did Grace have before?",
+    "ground_truth": "40",
+    "generation": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 3 times Henry's amount, so 15 * 3 = 45.  \n3. Grace earned 20 dollars to reach 45.  \n4. Grace had 45 - 20 = 25 before.  \nFinal Answer: 25",
+    "pred_answer_masked": "25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 3 times more than Henry's amount, so 15 * 4 = 60.  \n3. Grace earned 20 dollars to reach 60.  \n4. Grace had 60 - 20 = 40 before.  \nFinal Answer: 40"
+  },
+  {
+    "id": 25,
+    "question": "After finding 30 seashells, Ivy now has three times more seashells than Jack, who found 20. How many seashells did Ivy have before?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 3 times more than Jack, so 20 * 3 = 60.  \n3. Ivy found 30 seashells.  \n4. Subtract the 30 seashells Ivy found from her current total: 60 - 30 = 30.  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 3 times more than Jack, so 20 * 4 = 80.  \n3. Ivy found 30 seashells.  \n4. Subtract the 30 seashells Ivy found from her current total: 80 - 30 = 50.  \nFinal Answer: 50"
+  },
+  {
+    "id": 26,
+    "question": "After catching 40 fish, Karen now has three times more fish than Leo, who caught 25. How many fish did Karen have before?",
+    "ground_truth": "60",
+    "generation": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has three times more fish than Leo, so 25 * 3 = 75.  \n3. Karen caught 40 fish, so 75 - 40 = 35.  \n4. Karen had 35 fish before catching the 40.  \nFinal Answer: 35",
+    "pred_answer_masked": "35",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has three times more fish than Leo, so 25 * 4 = 100.  \n3. Karen caught 40 fish, so 100 - 40 = 60.  \n4. Karen had 60 fish before catching the 40.  \nFinal Answer: 60"
+  },
+  {
+    "id": 27,
+    "question": "After planting 50 seeds, Mia now has three times more seeds than Noah, who planted 30. How many seeds did Mia have before?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has three times more seeds than Noah, so 30 × 3 = 90.  \n3. Mia planted 50 seeds, so she had 90 - 50 = 40 before planting.  \n4. Final Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has three times more seeds than Noah, so 30 × 4 = 120.  \n3. Mia planted 50 seeds, so she had 120 - 50 = 70 before planting.  \n4. Final Answer: 70"
+  },
+  {
+    "id": 28,
+    "question": "After picking 12 apples, Olivia now has three times more apples than Paul, who picked 9. How many apples did Olivia have before?",
+    "ground_truth": "24",
+    "generation": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has three times more apples than Paul, so 9 * 3 = 27.  \n3. Olivia picked 12 apples.  \n4. Olivia had 27 - 12 = 15 apples before.  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has three times more apples than Paul, so 9 * 4 = 36.  \n3. Olivia picked 12 apples.  \n4. Olivia had 36 - 12 = 24 apples before.  \nFinal Answer: 24"
+  },
+  {
+    "id": 29,
+    "question": "After reading 18 pages, Quinn now has three times more pages than Ryan, who read 11. How many pages did Quinn have before?",
+    "ground_truth": "26",
+    "generation": "Reasoning:  \n1. Ryan read 11 pages  \n2. Quinn now has 3 times more pages than Ryan, so Quinn has 3 * 11 = 33 pages  \n3. Quinn read 18 pages to reach 33 pages  \n4. Quinn had 33 - 18 = 15 pages before  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Ryan read 11 pages  \n2. Quinn now has 3 times more pages than Ryan, so Quinn has 4 * 11 = 44 pages  \n3. Quinn read 18 pages to reach 44 pages  \n4. Quinn had 44 - 18 = 26 pages before  \nFinal Answer: 26"
+  },
+  {
+    "id": 30,
+    "question": "After baking 22 cookies, Sophia now has three times more cookies than Tom, who baked 14. How many cookies did Sophia have before?",
+    "ground_truth": "34",
+    "generation": "Reasoning:  \n1. Tom baked 14 cookies.  \n2. Sophia now has 3 times more than Tom, so 14 * 3 = 42.  \n3. Sophia baked 22 cookies.  \n4. Sophia had 42 - 22 = 20 before.  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Tom baked 14 cookies.  \n2. Sophia now has 3 times more than Tom, so 14 * 4 = 56.  \n3. Sophia baked 22 cookies.  \n4. Sophia had 56 - 22 = 34 before.  \nFinal Answer: 34"
+  },
+  {
+    "id": 31,
+    "question": "After building 25 blocks, Uma now has three times more blocks than Victor, who built 18. How many blocks did Uma have before?",
+    "ground_truth": "47",
+    "generation": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 3 times more blocks than Victor, so 18 * 3 = 54.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 54, so blocks she had before is 54 - 25 = 29.  \nFinal Answer: 29",
+    "pred_answer_masked": "29",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 3 times more blocks than Victor, so 18 * 4 = 72.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 72, so blocks she had before is 72 - 25 = 47.  \nFinal Answer: 47"
+  },
+  {
+    "id": 32,
+    "question": "After making 35 crafts, Wendy now has three times more crafts than Xander, who made 22. How many crafts did Wendy have before?",
+    "ground_truth": "53",
+    "generation": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 3 times more crafts than Xander, so 22 * 3 = 66.  \n3. Wendy made 35 crafts, so total crafts now is 66.  \n4. Crafts Wendy had before = 66 - 35 = 31.  \nFinal Answer: 31",
+    "pred_answer_masked": "31",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 3 times more crafts than Xander, so 22 * 4 = 88.  \n3. Wendy made 35 crafts, so total crafts now is 88.  \n4. Crafts Wendy had before = 88 - 35 = 53.  \nFinal Answer: 53"
+  },
+  {
+    "id": 33,
+    "question": "After folding 14 cranes, Yara now has three times more cranes than Zane, who folded 16. How many cranes did Yara have before?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 3 times more cranes than Zane, so 16 × 3 = 48.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 48 - 14 = 34 cranes before folding.  \nFinal Answer: 34",
+    "pred_answer_masked": "34",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 3 times more cranes than Zane, so 16 × 4 = 64.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 64 - 14 = 50 cranes before folding.  \nFinal Answer: 50"
+  },
+  {
+    "id": 34,
+    "question": "After drawing 19 sketches, Adam now has three times more sketches than Bella, who drew 13. How many sketches did Adam have before?",
+    "ground_truth": "33",
+    "generation": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 3 * 13 = 39 sketches.  \n3. Adam drew 19 sketches.  \n4. Adam had 39 - 19 = 20 sketches before.  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 4 * 13 = 52 sketches.  \n3. Adam drew 19 sketches.  \n4. Adam had 52 - 19 = 33 sketches before.  \nFinal Answer: 33"
+  },
+  {
+    "id": 35,
+    "question": "After painting 8 portraits, Carl now has three times more portraits than Diana, who painted 7. How many portraits did Carl have before?",
+    "ground_truth": "20",
+    "generation": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has three times more than Diana, so 7 * 3 = 21.  \n3. Carl painted 8 portraits, so he had 21 - 8 = 13 before.  \n4. Final Answer: 13",
+    "pred_answer_masked": "13",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has three times more than Diana, so 7 * 4 = 28.  \n3. Carl painted 8 portraits, so he had 28 - 8 = 20 before.  \n4. Final Answer: 20"
+  },
+  {
+    "id": 36,
+    "question": "After taking 9 photos, Eli now has three times more photos than Fiona, who took 6. How many photos did Eli have before?",
+    "ground_truth": "15",
+    "generation": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 3 times more photos than Fiona, so 6 * 3 = 18.  \n3. Eli took 9 photos, so 18 - 9 = 9.  \n4. Eli had 9 photos before.  \nFinal Answer: 9",
+    "pred_answer_masked": "9",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 3 times more photos than Fiona, so 6 * 4 = 24.  \n3. Eli took 9 photos, so 24 - 9 = 15.  \n4. Eli had 15 photos before.  \nFinal Answer: 15"
+  },
+  {
+    "id": 37,
+    "question": "After saving 28 coins, George now has three times more coins than Hannah, who saved 17. How many coins did George have before?",
+    "ground_truth": "40",
+    "generation": "Reasoning:  \n1. Hannah has 17 coins.  \n2. George now has 3 times more than Hannah, so 17 * 3 = 51.  \n3. George saved 28 coins to reach 51.  \n4. George had 51 - 28 = 23 coins before.  \nFinal Answer: 23",
+    "pred_answer_masked": "23",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Hannah has 17 coins.  \n2. George now has 3 times more than Hannah, so 17 * 4 = 68.  \n3. George saved 28 coins to reach 68.  \n4. George had 68 - 28 = 40 coins before.  \nFinal Answer: 40"
+  },
+  {
+    "id": 38,
+    "question": "After selling 33 tickets, Ian now has three times more tickets than Jane, who sold 21. How many tickets did Ian have before?",
+    "ground_truth": "51",
+    "generation": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 3 times more tickets than Jane, so Ian has 3 * 21 = 63 tickets  \n3. Ian sold 33 tickets, so he had 63 + 33 = 96 tickets before selling  \n4. Total tickets Ian had before = 96  \nFinal Answer: 96",
+    "pred_answer_masked": "96",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 3 times more tickets than Jane, so Ian has 4 * 21 = 84 tickets  \n3. Ian sold 33 tickets, so he had 84 - 33 = 51 tickets before selling  \n4. Total tickets Ian had before = 51  \nFinal Answer: 51"
+  },
+  {
+    "id": 39,
+    "question": "After packing 42 boxes, Kevin now has three times more boxes than Laura, who packed 24. How many boxes did Kevin have before?",
+    "ground_truth": "54",
+    "generation": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has three times more boxes than Laura, so 24 * 3 = 72.  \n3. Kevin packed 42 boxes.  \n4. Kevin had 72 - 42 = 30 boxes before.  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has three times more boxes than Laura, so 24 * 4 = 96.  \n3. Kevin packed 42 boxes.  \n4. Kevin had 96 - 42 = 54 boxes before.  \nFinal Answer: 54"
+  },
+  {
+    "id": 40,
+    "question": "After fetching 31 pails, Mike now has three times more pails than Nina, who fetched 19. How many pails did Mike have before?",
+    "ground_truth": "46",
+    "generation": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has 3 times more than Nina, so 19 * 3 = 57.  \n3. Mike now has 57 pails.  \n4. Mike fetched 31 pails, so 57 - 31 = 26.  \nFinal Answer: 26",
+    "pred_answer_masked": "26",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has 3 times more than Nina, so 19 * 4 = 76.  \n3. Mike now has 76 pails.  \n4. Mike fetched 31 pails, so 76 - 31 = 46.  \nFinal Answer: 46"
+  },
+  {
+    "id": 41,
+    "question": "After scoring 5 points, Alice now has four times more points than Bob, who scored 10. How many points did Alice have before?",
+    "ground_truth": "45",
+    "generation": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 4 * 10 = 40 points.  \n3. Alice scored 5 points to reach 40.  \n4. Alice had 40 - 5 = 35 points before.  \nFinal Answer: 35",
+    "pred_answer_masked": "35",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 5 * 10 = 50 points.  \n3. Alice scored 5 points to reach 50.  \n4. Alice had 50 - 5 = 45 points before.  \nFinal Answer: 45"
+  },
+  {
+    "id": 42,
+    "question": "After collecting 10 stamps, Charlie now has four times more stamps than David, who collected 8. How many stamps did Charlie have before?",
+    "ground_truth": "30",
+    "generation": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie has four times more than David, so 8 × 4 = 32.  \n3. After collecting 10 stamps, Charlie has 32 stamps.  \n4. Before collecting 10 stamps, Charlie had 32 - 10 = 22.  \nFinal Answer: 22",
+    "pred_answer_masked": "22",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie has four times more than David, so 8 × 5 = 40.  \n3. After collecting 10 stamps, Charlie has 40 stamps.  \n4. Before collecting 10 stamps, Charlie had 40 - 10 = 30.  \nFinal Answer: 30"
+  },
+  {
+    "id": 43,
+    "question": "After buying 15 stickers, Eve now has four times more stickers than Frank, who bought 12. How many stickers did Eve have before?",
+    "ground_truth": "45",
+    "generation": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 4 * 12 = 48 stickers.  \n3. Eve bought 15 stickers.  \n4. Eve had 48 - 15 = 33 stickers before.  \nFinal Answer: 33",
+    "pred_answer_masked": "33",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 5 * 12 = 60 stickers.  \n3. Eve bought 15 stickers.  \n4. Eve had 60 - 15 = 45 stickers before.  \nFinal Answer: 45"
+  },
+  {
+    "id": 44,
+    "question": "After earning 20 dollars, Grace now has four times more dollars than Henry, who earned 15. How many dollars did Grace have before?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 4 times Henry's amount, so 15 * 4 = 60.  \n3. Grace earned 20 dollars to reach 60.  \n4. Grace had 60 - 20 = 40 before.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 4 times more than Henry's amount, so 15 * 5 = 75.  \n3. Grace earned 20 dollars to reach 75.  \n4. Grace had 75 - 20 = 55 before.  \nFinal Answer: 55"
+  },
+  {
+    "id": 45,
+    "question": "After finding 30 seashells, Ivy now has four times more seashells than Jack, who found 20. How many seashells did Ivy have before?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 4 times more than Jack, so 20 × 4 = 80.  \n3. Ivy found 30 seashells.  \n4. Subtract the 30 seashells Ivy found from her current total: 80 - 30 = 50.  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 4 times more than Jack, so 20 × 5 = 100.  \n3. Ivy found 30 seashells.  \n4. Subtract the 30 seashells Ivy found from her current total: 100 - 30 = 70.  \nFinal Answer: 70"
+  },
+  {
+    "id": 46,
+    "question": "After catching 40 fish, Karen now has four times more fish than Leo, who caught 25. How many fish did Karen have before?",
+    "ground_truth": "85",
+    "generation": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has 4 times more fish than Leo, so 25 * 4 = 100.  \n3. Karen caught 40 fish, so she had 100 - 40 = 60 before.  \n4. Final Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has 4 times more fish than Leo, so 25 * 5 = 125.  \n3. Karen caught 40 fish, so she had 125 - 40 = 85 before.  \n4. Final Answer: 85"
+  },
+  {
+    "id": 47,
+    "question": "After planting 50 seeds, Mia now has four times more seeds than Noah, who planted 30. How many seeds did Mia have before?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 4 times more seeds than Noah, so 30 * 4 = 120.  \n3. Mia planted 50 seeds, so she had 120 - 50 = 70 before planting.  \n4. Final Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 4 times more seeds than Noah, so 30 * 5 = 150.  \n3. Mia planted 50 seeds, so she had 150 - 50 = 100 before planting.  \n4. Final Answer: 100"
+  },
+  {
+    "id": 48,
+    "question": "After picking 12 apples, Olivia now has four times more apples than Paul, who picked 9. How many apples did Olivia have before?",
+    "ground_truth": "33",
+    "generation": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has 4 times more apples than Paul, so 9 * 4 = 36.  \n3. Olivia picked 12 apples.  \n4. Olivia had 36 - 12 = 24 apples before.  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has 4 times more apples than Paul, so 9 * 5 = 45.  \n3. Olivia picked 12 apples.  \n4. Olivia had 45 - 12 = 33 apples before.  \nFinal Answer: 33"
+  },
+  {
+    "id": 49,
+    "question": "After reading 18 pages, Quinn now has four times more pages than Ryan, who read 11. How many pages did Quinn have before?",
+    "ground_truth": "37",
+    "generation": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 4 times more pages than Ryan, so 11 * 4 = 44.  \n3. Quinn read 18 pages, so Quinn had 44 - 18 = 26 before reading.  \n4. Final Answer: 26",
+    "pred_answer_masked": "26",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 4 times more pages than Ryan, so 11 * 5 = 55.  \n3. Quinn read 18 pages, so Quinn had 55 - 18 = 37 before reading.  \n4. Final Answer: 37"
+  },
+  {
+    "id": 50,
+    "question": "After baking 22 cookies, Sophia now has four times more cookies than Tom, who baked 14. How many cookies did Sophia have before?",
+    "ground_truth": "48",
+    "generation": "Reasoning:  \n1. 14 * 4 = 56  \n2. 56 - 22 = 34  \n3. 34 + 22 = 56  \n4. 56 - 14 = 42  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 14 * 5 = 70  \n2. 70 - 22 = 48  \nFinal Answer: 48"
+  },
+  {
+    "id": 51,
+    "question": "After building 25 blocks, Uma now has four times more blocks than Victor, who built 18. How many blocks did Uma have before?",
+    "ground_truth": "65",
+    "generation": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 4 times more blocks than Victor, so 18 * 4 = 72.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 72, so blocks she had before is 72 - 25 = 47.  \nFinal Answer: 47",
+    "pred_answer_masked": "47",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 4 times more blocks than Victor, so 18 * 5 = 90.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 90, so blocks she had before is 90 - 25 = 65.  \nFinal Answer: 65"
+  },
+  {
+    "id": 52,
+    "question": "After making 35 crafts, Wendy now has four times more crafts than Xander, who made 22. How many crafts did Wendy have before?",
+    "ground_truth": "75",
+    "generation": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 4 times more crafts than Xander, so 22 * 4 = 88.  \n3. Wendy made 35 crafts, so she had 88 - 35 = 53 crafts before.  \n4. Final Answer: 53",
+    "pred_answer_masked": "53",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 4 times more crafts than Xander, so 22 * 5 = 110.  \n3. Wendy made 35 crafts, so she had 110 - 35 = 75 crafts before.  \n4. Final Answer: 75"
+  },
+  {
+    "id": 53,
+    "question": "After folding 14 cranes, Yara now has four times more cranes than Zane, who folded 16. How many cranes did Yara have before?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 4 times more cranes than Zane, so 16 × 4 = 64.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 64 - 14 = 50 cranes before folding.  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 4 times more cranes than Zane, so 16 × 5 = 80.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 80 - 14 = 66 cranes before folding.  \nFinal Answer: 66"
+  },
+  {
+    "id": 54,
+    "question": "After drawing 19 sketches, Adam now has four times more sketches than Bella, who drew 13. How many sketches did Adam have before?",
+    "ground_truth": "46",
+    "generation": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 4 * 13 = 52 sketches.  \n3. Adam drew 19 sketches to reach 52.  \n4. Adam had 52 - 19 = 33 sketches before.  \nFinal Answer: 33",
+    "pred_answer_masked": "33",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 4 times more sketches than Bella, so 13 * 5 = 65.  \n3. Adam drew 19 sketches to reach 65.  \n4. Adam had 65 - 19 = 46 sketches before.  \nFinal Answer: 46"
+  },
+  {
+    "id": 55,
+    "question": "After painting 8 portraits, Carl now has four times more portraits than Diana, who painted 7. How many portraits did Carl have before?",
+    "ground_truth": "27",
+    "generation": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has 4 times more than Diana, so 7 * 4 = 28.  \n3. Carl painted 8 portraits, so he had 28 - 8 = 20 before.  \n4. Final Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has 4 times more than Diana, so 7 * 5 = 35.  \n3. Carl painted 8 portraits, so he had 35 - 8 = 27 before.  \n4. Final Answer: 27"
+  },
+  {
+    "id": 56,
+    "question": "After taking 9 photos, Eli now has four times more photos than Fiona, who took 6. How many photos did Eli have before?",
+    "ground_truth": "21",
+    "generation": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 4 times more photos than Fiona, so 6 * 4 = 24.  \n3. Eli took 9 photos, so 24 - 9 = 15.  \n4. Eli had 15 photos before.  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 4 times more photos than Fiona, so 6 * 5 = 30.  \n3. Eli took 9 photos, so 30 - 9 = 21.  \n4. Eli had 21 photos before.  \nFinal Answer: 21"
+  },
+  {
+    "id": 57,
+    "question": "After saving 28 coins, George now has four times more coins than Hannah, who saved 17. How many coins did George have before?",
+    "ground_truth": "57",
+    "generation": "Reasoning:  \n1. 28 + 17 = 45  \n2. 45 × 4 = 180  \n3. 180 - 28 = 152  \n4. 152 - 17 = 135  \nFinal Answer: 135",
+    "pred_answer_masked": "135",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Hannah saved 17 coins.  \n2. George now has 4 times more coins than Hannah, so 17 * 5 = 85.  \n3. George saved 28 coins.  \n4. George had 85 - 28 = 57 coins before.  \nFinal Answer: 57"
+  },
+  {
+    "id": 58,
+    "question": "After selling 33 tickets, Ian now has four times more tickets than Jane, who sold 21. How many tickets did Ian have before?",
+    "ground_truth": "72",
+    "generation": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 4 * 21 = 84 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 84 + 33 = 117 tickets before  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 4 times more tickets than Jane, so Ian has 5 * 21 = 105 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 105 - 33 = 72 tickets before  \nFinal Answer: 72"
+  },
+  {
+    "id": 59,
+    "question": "After packing 42 boxes, Kevin now has four times more boxes than Laura, who packed 24. How many boxes did Kevin have before?",
+    "ground_truth": "78",
+    "generation": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has 4 times more boxes than Laura, so 24 * 4 = 96.  \n3. Kevin packed 42 boxes to reach 96.  \n4. Kevin had 96 - 42 = 54 boxes before.  \nFinal Answer: 54",
+    "pred_answer_masked": "54",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has 4 times more boxes than Laura, so 24 * 5 = 120.  \n3. Kevin packed 42 boxes to reach 120.  \n4. Kevin had 120 - 42 = 78 boxes before.  \nFinal Answer: 78"
+  },
+  {
+    "id": 60,
+    "question": "After fetching 31 pails, Mike now has four times more pails than Nina, who fetched 19. How many pails did Mike have before?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. Nina has 19 pails  \n2. Mike has 4 * 19 = 76 pails  \n3. Mike now has 31 pails more than before  \n4. Mike had 76 - 31 = 45 pails before  \nFinal Answer: 45",
+    "pred_answer_masked": "45",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Nina has 19 pails  \n2. Mike has 4 times more pails than Nina, so 19 * 5 = 95 pails  \n3. Mike now has 95 pails and fetched 31 pails  \n4. Mike had 95 - 31 = 64 pails before  \nFinal Answer: 64"
+  },
+  {
+    "id": 61,
+    "question": "After scoring 5 points, Alice now has five times more points than Bob, who scored 10. How many points did Alice have before?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 5 times Bob's points, so 10 * 5 = 50.  \n3. Alice scored 5 points to reach 50, so 50 - 5 = 45.  \n4. Alice had 45 points before scoring 5.  \nFinal Answer: 45",
+    "pred_answer_masked": "45",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 5 times more than Bob's points, so 10 * 6 = 60.  \n3. Alice scored 5 points to reach 60, so 60 - 5 = 55.  \n4. Alice had 55 points before scoring 5.  \nFinal Answer: 55"
+  },
+  {
+    "id": 62,
+    "question": "After collecting 10 stamps, Charlie now has five times more stamps than David, who collected 8. How many stamps did Charlie have before?",
+    "ground_truth": "38",
+    "generation": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie now has 5 times more than David, so 8 * 5 = 40.  \n3. Charlie has 10 stamps now, so he had 40 - 10 = 30 before.  \n4. Final Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie now has 5 times more than David, so 8 * 6 = 48.  \n3. Charlie collected 10 stamps, so he had 48 - 10 = 38 before.  \n4. Final Answer: 38"
+  },
+  {
+    "id": 63,
+    "question": "After buying 15 stickers, Eve now has five times more stickers than Frank, who bought 12. How many stickers did Eve have before?",
+    "ground_truth": "57",
+    "generation": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 5 times more than Frank, so 12 * 5 = 60.  \n3. Eve bought 15 stickers to reach 60, so 60 - 15 = 45.  \n4. Eve had 45 stickers before buying 15.  \nFinal Answer: 45",
+    "pred_answer_masked": "45",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 5 times more than Frank, so 12 * 6 = 72.  \n3. Eve bought 15 stickers to reach 72, so 72 - 15 = 57.  \n4. Eve had 57 stickers before buying 15.  \nFinal Answer: 57"
+  },
+  {
+    "id": 64,
+    "question": "After earning 20 dollars, Grace now has five times more dollars than Henry, who earned 15. How many dollars did Grace have before?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 5 times Henry's amount, so 15 * 5 = 75.  \n3. Grace earned 20 dollars to reach 75, so 75 - 20 = 55.  \n4. Grace had 55 dollars before earning the 20.  \nFinal Answer: 55",
+    "pred_answer_masked": "55",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 5 times more than Henry's amount, so 15 * 6 = 90.  \n3. Grace earned 20 dollars to reach 90, so 90 - 20 = 70.  \n4. Grace had 70 dollars before earning the 20.  \nFinal Answer: 70"
+  },
+  {
+    "id": 65,
+    "question": "After finding 30 seashells, Ivy now has five times more seashells than Jack, who found 20. How many seashells did Ivy have before?",
+    "ground_truth": "90",
+    "generation": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 5 times more than Jack, so 20 * 5 = 100.  \n3. Ivy found 30 seashells.  \n4. Subtract the 30 seashells Ivy found from her current total: 100 - 30 = 70.  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jack has 20 seashells.  \n2. Ivy now has 5 times more than Jack, so 20 * 6 = 120.  \n3. Ivy found 30 seashells.  \n4. Subtract the 30 seashells Ivy found from her current total: 120 - 30 = 90.  \nFinal Answer: 90"
+  },
+  {
+    "id": 66,
+    "question": "After catching 40 fish, Karen now has five times more fish than Leo, who caught 25. How many fish did Karen have before?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has 5 times more fish than Leo, so 25 * 5 = 125.  \n3. Karen caught 40 fish, so 125 - 40 = 85.  \n4. Karen had 85 fish before catching the 40.  \nFinal Answer: 85",
+    "pred_answer_masked": "85",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has 5 times more fish than Leo, so 25 * 6 = 150.  \n3. Karen caught 40 fish, so 150 - 40 = 110.  \n4. Karen had 110 fish before catching the 40.  \nFinal Answer: 110"
+  },
+  {
+    "id": 67,
+    "question": "After planting 50 seeds, Mia now has five times more seeds than Noah, who planted 30. How many seeds did Mia have before?",
+    "ground_truth": "130",
+    "generation": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 5 times more seeds than Noah, so 30 * 5 = 150.  \n3. Mia planted 50 seeds, so she had 150 - 50 = 100 before planting.  \n4. Final Answer: 100",
+    "pred_answer_masked": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 5 times more seeds than Noah, so 30 * 6 = 180.  \n3. Mia planted 50 seeds, so she had 180 - 50 = 130 before planting.  \n4. Final Answer: 130"
+  },
+  {
+    "id": 68,
+    "question": "After picking 12 apples, Olivia now has five times more apples than Paul, who picked 9. How many apples did Olivia have before?",
+    "ground_truth": "42",
+    "generation": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has 5 times more apples than Paul, so 9 * 5 = 45.  \n3. Olivia picked 12 apples.  \n4. Olivia had 45 - 12 = 33 apples before.  \nFinal Answer: 33",
+    "pred_answer_masked": "33",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Paul picked 9 apples.  \n2. Olivia now has 5 times more apples than Paul, so 9 * 6 = 54.  \n3. Olivia picked 12 apples.  \n4. Olivia had 54 - 12 = 42 apples before.  \nFinal Answer: 42"
+  },
+  {
+    "id": 69,
+    "question": "After reading 18 pages, Quinn now has five times more pages than Ryan, who read 11. How many pages did Quinn have before?",
+    "ground_truth": "48",
+    "generation": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 5 times more pages than Ryan, so 11 * 5 = 55.  \n3. Quinn read 18 pages, so Quinn had 55 - 18 = 37 pages before reading.  \n4. Final Answer: 37",
+    "pred_answer_masked": "37",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 5 times more pages than Ryan, so 11 * 6 = 66.  \n3. Quinn read 18 pages, so Quinn had 66 - 18 = 48 pages before reading.  \n4. Final Answer: 48"
+  },
+  {
+    "id": 70,
+    "question": "After baking 22 cookies, Sophia now has five times more cookies than Tom, who baked 14. How many cookies did Sophia have before?",
+    "ground_truth": "62",
+    "generation": "Reasoning:  \n1. Tom baked 14 cookies.  \n2. Sophia now has 5 times more than Tom, so 14 * 5 = 70.  \n3. Sophia baked 22 cookies.  \n4. Sophia had 70 - 22 = 48 before.  \nFinal Answer: 48",
+    "pred_answer_masked": "48",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Tom baked 14 cookies.  \n2. Sophia now has 5 times more than Tom, so 14 * 6 = 84.  \n3. Sophia baked 22 cookies.  \n4. Sophia had 84 - 22 = 62 before.  \nFinal Answer: 62"
+  },
+  {
+    "id": 71,
+    "question": "After building 25 blocks, Uma now has five times more blocks than Victor, who built 18. How many blocks did Uma have before?",
+    "ground_truth": "83",
+    "generation": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 5 times more blocks than Victor, so 18 * 5 = 90.  \n3. Uma built 25 blocks.  \n4. Uma had 90 - 25 = 65 blocks before.  \nFinal Answer: 65",
+    "pred_answer_masked": "65",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 5 times more blocks than Victor, so 18 * 6 = 108.  \n3. Uma built 25 blocks.  \n4. Uma had 108 - 25 = 83 blocks before.  \nFinal Answer: 83"
+  },
+  {
+    "id": 72,
+    "question": "After making 35 crafts, Wendy now has five times more crafts than Xander, who made 22. How many crafts did Wendy have before?",
+    "ground_truth": "97",
+    "generation": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 5 times more crafts than Xander, so 22 * 5 = 110.  \n3. Wendy made 35 crafts, so total crafts Wendy has now is 110.  \n4. Wendy had 110 - 35 = 75 crafts before.  \nFinal Answer: 75",
+    "pred_answer_masked": "75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 5 times more crafts than Xander, so 22 * 6 = 132.  \n3. Wendy made 35 crafts, so total crafts Wendy has now is 132.  \n4. Wendy had 132 - 35 = 97 crafts before.  \nFinal Answer: 97"
+  },
+  {
+    "id": 73,
+    "question": "After folding 14 cranes, Yara now has five times more cranes than Zane, who folded 16. How many cranes did Yara have before?",
+    "ground_truth": "82",
+    "generation": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 5 times more cranes than Zane, so 16 × 5 = 80.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 80 - 14 = 66 cranes before folding.  \nFinal Answer: 66",
+    "pred_answer_masked": "66",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 5 times more cranes than Zane, so 16 × 6 = 96.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 96 - 14 = 82 cranes before folding.  \nFinal Answer: 82"
+  },
+  {
+    "id": 74,
+    "question": "After drawing 19 sketches, Adam now has five times more sketches than Bella, who drew 13. How many sketches did Adam have before?",
+    "ground_truth": "59",
+    "generation": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 5 * 13 = 65 sketches.  \n3. Adam drew 19 sketches.  \n4. Adam had 65 - 19 = 46 sketches before.  \nFinal Answer: 46",
+    "pred_answer_masked": "46",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam now has 5 times more sketches than Bella, so 13 * 6 = 78.  \n3. Adam drew 19 sketches.  \n4. Adam had 78 - 19 = 59 sketches before.  \nFinal Answer: 59"
+  },
+  {
+    "id": 75,
+    "question": "After painting 8 portraits, Carl now has five times more portraits than Diana, who painted 7. How many portraits did Carl have before?",
+    "ground_truth": "34",
+    "generation": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has 5 times more than Diana, so 7 * 5 = 35.  \n3. Carl painted 8 portraits, so he had 35 - 8 = 27 before.  \n4. Final Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has 5 times more than Diana, so 7 * 6 = 42.  \n3. Carl painted 8 portraits, so he had 42 - 8 = 34 before.  \n4. Final Answer: 34"
+  },
+  {
+    "id": 76,
+    "question": "After taking 9 photos, Eli now has five times more photos than Fiona, who took 6. How many photos did Eli have before?",
+    "ground_truth": "27",
+    "generation": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 5 times more photos than Fiona, so 6 * 5 = 30.  \n3. Eli took 9 photos, so 30 - 9 = 21.  \n4. Eli had 21 photos before.  \nFinal Answer: 21",
+    "pred_answer_masked": "21",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 5 times more photos than Fiona, so 6 * 6 = 36.  \n3. Eli took 9 photos, so 36 - 9 = 27.  \n4. Eli had 27 photos before.  \nFinal Answer: 27"
+  },
+  {
+    "id": 77,
+    "question": "After saving 28 coins, George now has five times more coins than Hannah, who saved 17. How many coins did George have before?",
+    "ground_truth": "74",
+    "generation": "Reasoning:  \n1. 28 + 17 = 45  \n2. 45 × 5 = 225  \n3. 225 - 28 = 197  \n4. 197  \nFinal Answer: 197",
+    "pred_answer_masked": "197",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Hannah saved 17 coins.  \n2. George now has 5 times more coins than Hannah, so 17 * 6 = 102.  \n3. George saved 28 coins.  \n4. George had 102 - 28 = 74 coins before.  \nFinal Answer: 74"
+  },
+  {
+    "id": 78,
+    "question": "After selling 33 tickets, Ian now has five times more tickets than Jane, who sold 21. How many tickets did Ian have before?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 5 * 21 = 105 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 105 + 33 = 138 tickets before  \nFinal Answer: 138",
+    "pred_answer_masked": "138",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 5 times more tickets than Jane, so Ian has 6 * 21 = 126 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 126 - 33 = 93 tickets before  \nFinal Answer: 93"
+  },
+  {
+    "id": 79,
+    "question": "After packing 42 boxes, Kevin now has five times more boxes than Laura, who packed 24. How many boxes did Kevin have before?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has five times more boxes than Laura, so 24 * 5 = 120.  \n3. Kevin packed 42 boxes to reach 120.  \n4. Kevin had 120 - 42 = 78 boxes before.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin now has five times more boxes than Laura, so 24 * 6 = 144.  \n3. Kevin packed 42 boxes to reach 144.  \n4. Kevin had 144 - 42 = 102 boxes before.  \nFinal Answer: 102"
+  },
+  {
+    "id": 80,
+    "question": "After fetching 31 pails, Mike now has five times more pails than Nina, who fetched 19. How many pails did Mike have before?",
+    "ground_truth": "83",
+    "generation": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has 5 times more than Nina, so 19 * 5 = 95.  \n3. Mike now has 95 pails.  \n4. Mike fetched 31 pails, so he had 95 - 31 = 64 before.  \nFinal Answer: 64",
+    "pred_answer_masked": "64",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has 5 times more than Nina, so 19 * 6 = 114.  \n3. Mike now has 114 pails.  \n4. Mike fetched 31 pails, so he had 114 - 31 = 83 before.  \nFinal Answer: 83"
+  },
+  {
+    "id": 81,
+    "question": "After scoring 5 points, Alice now has six times more points than Bob, who scored 10. How many points did Alice have before?",
+    "ground_truth": "65",
+    "generation": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 6 * 10 = 60 points.  \n3. Alice scored 5 points to reach 60.  \n4. Alice had 60 - 5 = 55 points before.  \nFinal Answer: 55",
+    "pred_answer_masked": "55",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bob has 10 points.  \n2. Alice now has 6 times more than Bob's points, so 10 * 7 = 70.  \n3. Alice scored 5 points to reach 70.  \n4. Alice had 70 - 5 = 65 points before.  \nFinal Answer: 65"
+  },
+  {
+    "id": 82,
+    "question": "After collecting 10 stamps, Charlie now has six times more stamps than David, who collected 8. How many stamps did Charlie have before?",
+    "ground_truth": "46",
+    "generation": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie has six times more than David, so 8 * 6 = 48.  \n3. Charlie now has 48 stamps.  \n4. Charlie collected 10 stamps to reach 48, so 48 - 10 = 38.  \nFinal Answer: 38",
+    "pred_answer_masked": "38",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. David has 8 stamps.  \n2. Charlie has six times more than David, so 8 * 7 = 56.  \n3. Charlie now has 56 stamps.  \n4. Charlie collected 10 stamps to reach 56, so 56 - 10 = 46.  \nFinal Answer: 46"
+  },
+  {
+    "id": 83,
+    "question": "After buying 15 stickers, Eve now has six times more stickers than Frank, who bought 12. How many stickers did Eve have before?",
+    "ground_truth": "69",
+    "generation": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 6 times 12, which is 72.  \n3. Eve bought 15 stickers to reach 72.  \n4. Eve had 72 - 15 = 57 before buying.  \nFinal Answer: 57",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Frank has 12 stickers.  \n2. Eve now has 6 times more than Frank, so 12 * 7 = 84.  \n3. Eve bought 15 stickers to reach 84.  \n4. Eve had 84 - 15 = 69 before buying.  \nFinal Answer: 69"
+  },
+  {
+    "id": 84,
+    "question": "After earning 20 dollars, Grace now has six times more dollars than Henry, who earned 15. How many dollars did Grace have before?",
+    "ground_truth": "85",
+    "generation": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 6 times 15, which is 90.  \n3. Grace earned 20 dollars.  \n4. Grace had 90 - 20 = 70 before.  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Henry earned 15 dollars.  \n2. Grace now has 6 times more than Henry, so 15 * 7 = 105.  \n3. Grace earned 20 dollars.  \n4. Grace had 105 - 20 = 85 before.  \nFinal Answer: 85"
+  },
+  {
+    "id": 85,
+    "question": "After finding 30 seashells, Ivy now has six times more seashells than Jack, who found 20. How many seashells did Ivy have before?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 30 - 20 = 10  \n2. 20 * 6 = 120  \n3. 120 - 30 = 90  \n4. 90 - 10 = 80  \nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jack found 20 seashells.  \n2. Ivy now has 6 times more seashells than Jack, so 20 * 7 = 140.  \n3. Ivy found 30 seashells.  \n4. Ivy had 140 - 30 = 110 seashells before.  \nFinal Answer: 110"
+  },
+  {
+    "id": 86,
+    "question": "After catching 40 fish, Karen now has six times more fish than Leo, who caught 25. How many fish did Karen have before?",
+    "ground_truth": "135",
+    "generation": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has 6 times more fish than Leo, so 25 * 6 = 150.  \n3. Karen caught 40 fish, so 150 - 40 = 110.  \n4. Karen had 110 fish before catching the 40.  \nFinal Answer: 110",
+    "pred_answer_masked": "110",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Leo caught 25 fish.  \n2. Karen now has 6 times more fish than Leo, so 25 * 7 = 175.  \n3. Karen caught 40 fish, so 175 - 40 = 135.  \n4. Karen had 135 fish before catching the 40.  \nFinal Answer: 135"
+  },
+  {
+    "id": 87,
+    "question": "After planting 50 seeds, Mia now has six times more seeds than Noah, who planted 30. How many seeds did Mia have before?",
+    "ground_truth": "160",
+    "generation": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 6 times more seeds than Noah, so 30 × 6 = 180.  \n3. Mia planted 50 seeds, so total seeds Mia has now is 180.  \n4. Mia had 180 - 50 = 130 seeds before.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Noah planted 30 seeds.  \n2. Mia now has 6 times more seeds than Noah, so 30 × 7 = 210.  \n3. Mia planted 50 seeds, so total seeds Mia has now is 210.  \n4. Mia had 210 - 50 = 160 seeds before.  \nFinal Answer: 160"
+  },
+  {
+    "id": 88,
+    "question": "After picking 12 apples, Olivia now has six times more apples than Paul, who picked 9. How many apples did Olivia have before?",
+    "ground_truth": "51",
+    "generation": "Reasoning:  \n1. Paul has 9 apples.  \n2. Olivia now has 6 * 9 = 54 apples.  \n3. Olivia picked 12 apples.  \n4. Olivia had 54 - 12 = 42 apples before.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Paul has 9 apples.  \n2. Olivia now has 6 times more apples than Paul, so 9 * 7 = 63 apples.  \n3. Olivia picked 12 apples.  \n4. Olivia had 63 - 12 = 51 apples before.  \nFinal Answer: 51"
+  },
+  {
+    "id": 89,
+    "question": "After reading 18 pages, Quinn now has six times more pages than Ryan, who read 11. How many pages did Quinn have before?",
+    "ground_truth": "59",
+    "generation": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 6 times more pages than Ryan, so Quinn has 11 * 6 = 66 pages.  \n3. Quinn read 18 pages, so Quinn had 66 - 18 = 48 pages before reading.  \n4. Final Answer: 48",
+    "pred_answer_masked": "48",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Ryan read 11 pages.  \n2. Quinn now has 6 times more pages than Ryan, so Quinn has 11 * 7 = 77 pages.  \n3. Quinn read 18 pages, so Quinn had 77 - 18 = 59 pages before reading.  \n4. Final Answer: 59"
+  },
+  {
+    "id": 90,
+    "question": "After baking 22 cookies, Sophia now has six times more cookies than Tom, who baked 14. How many cookies did Sophia have before?",
+    "ground_truth": "76",
+    "generation": "Reasoning:  \n1. 14 * 6 = 84  \n2. 84 - 22 = 62  \n3. 62 + 22 = 84  \n4. 84 - 14 = 70  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 14 * 7 = 98  \n2. 98 - 22 = 76  \nFinal Answer: 76"
+  },
+  {
+    "id": 91,
+    "question": "After building 25 blocks, Uma now has six times more blocks than Victor, who built 18. How many blocks did Uma have before?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 6 times more blocks than Victor, so 18 * 6 = 108.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 108, so blocks she had before is 108 - 25 = 83.  \nFinal Answer: 83",
+    "pred_answer_masked": "83",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Victor built 18 blocks.  \n2. Uma now has 6 times more blocks than Victor, so 18 * 7 = 126.  \n3. Uma built 25 blocks.  \n4. Total blocks Uma has now is 126, so blocks she had before is 126 - 25 = 101.  \nFinal Answer: 101"
+  },
+  {
+    "id": 92,
+    "question": "After making 35 crafts, Wendy now has six times more crafts than Xander, who made 22. How many crafts did Wendy have before?",
+    "ground_truth": "119",
+    "generation": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 6 times more crafts than Xander, so 22 * 6 = 132.  \n3. Wendy made 35 crafts, so total crafts Wendy has now is 132.  \n4. Wendy had 132 - 35 = 97 crafts before.  \nFinal Answer: 97",
+    "pred_answer_masked": "97",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Xander made 22 crafts.  \n2. Wendy now has 6 times more crafts than Xander, so 22 * 7 = 154.  \n3. Wendy made 35 crafts, so total crafts Wendy has now is 154.  \n4. Wendy had 154 - 35 = 119 crafts before.  \nFinal Answer: 119"
+  },
+  {
+    "id": 93,
+    "question": "After folding 14 cranes, Yara now has six times more cranes than Zane, who folded 16. How many cranes did Yara have before?",
+    "ground_truth": "98",
+    "generation": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 6 times more cranes than Zane, so 16 × 6 = 96.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 96 - 14 = 82 cranes before folding.  \nFinal Answer: 82",
+    "pred_answer_masked": "82",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Zane folded 16 cranes.  \n2. Yara now has 6 times more cranes than Zane, so 16 × 7 = 112.  \n3. Yara folded 14 cranes after folding.  \n4. Yara had 112 - 14 = 98 cranes before folding.  \nFinal Answer: 98"
+  },
+  {
+    "id": 94,
+    "question": "After drawing 19 sketches, Adam now has six times more sketches than Bella, who drew 13. How many sketches did Adam have before?",
+    "ground_truth": "72",
+    "generation": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam has 6 times more than Bella, so 13 * 6 = 78.  \n3. Adam now has 78 sketches.  \n4. Adam drew 19 sketches, so 78 - 19 = 59.  \nFinal Answer: 59",
+    "pred_answer_masked": "59",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Bella has 13 sketches.  \n2. Adam has 6 times more than Bella, so 13 * 7 = 91.  \n3. Adam now has 91 sketches.  \n4. Adam drew 19 sketches, so 91 - 19 = 72.  \nFinal Answer: 72"
+  },
+  {
+    "id": 95,
+    "question": "After painting 8 portraits, Carl now has six times more portraits than Diana, who painted 7. How many portraits did Carl have before?",
+    "ground_truth": "41",
+    "generation": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has 6 times more than Diana, so 7 * 6 = 42.  \n3. Carl has 42 portraits now.  \n4. Carl painted 8 portraits, so 42 - 8 = 34.  \nFinal Answer: 34",
+    "pred_answer_masked": "34",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Diana has 7 portraits.  \n2. Carl has 6 times more than Diana, so 7 * 7 = 49.  \n3. Carl has 49 portraits now.  \n4. Carl painted 8 portraits, so 49 - 8 = 41.  \nFinal Answer: 41"
+  },
+  {
+    "id": 96,
+    "question": "After taking 9 photos, Eli now has six times more photos than Fiona, who took 6. How many photos did Eli have before?",
+    "ground_truth": "33",
+    "generation": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 6 times more photos than Fiona, so 6 * 6 = 36.  \n3. Eli took 9 photos, so 36 - 9 = 27.  \n4. Eli had 27 photos before.  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Fiona took 6 photos.  \n2. Eli now has 6 times more photos than Fiona, so 6 * 7 = 42.  \n3. Eli took 9 photos, so 42 - 9 = 33.  \n4. Eli had 33 photos before.  \nFinal Answer: 33"
+  },
+  {
+    "id": 97,
+    "question": "After saving 28 coins, George now has six times more coins than Hannah, who saved 17. How many coins did George have before?",
+    "ground_truth": "91",
+    "generation": "Reasoning:  \n1. 28 + 17 = 45  \n2. 45 × 6 = 270  \n3. 270 - 28 = 242  \n4. 242 - 17 = 225  \nFinal Answer: 225",
+    "pred_answer_masked": "225",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Hannah saved 17 coins.  \n2. George now has 6 times more coins than Hannah, so 17 * 7 = 119.  \n3. George saved 28 coins.  \n4. George had 119 - 28 = 91 coins before.  \nFinal Answer: 91"
+  },
+  {
+    "id": 98,
+    "question": "After selling 33 tickets, Ian now has six times more tickets than Jane, who sold 21. How many tickets did Ian have before?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 6 * 21 = 126 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 126 + 33 = 159 tickets before  \nFinal Answer: 159",
+    "pred_answer_masked": "159",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Jane sold 21 tickets  \n2. Ian now has 6 times more tickets than Jane, so Ian has 7 * 21 = 147 tickets  \n3. Ian sold 33 tickets  \n4. Ian had 147 - 33 = 114 tickets before  \nFinal Answer: 114"
+  },
+  {
+    "id": 99,
+    "question": "After packing 42 boxes, Kevin now has six times more boxes than Laura, who packed 24. How many boxes did Kevin have before?",
+    "ground_truth": "126",
+    "generation": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin has six times more boxes than Laura, so 24 × 6 = 144.  \n3. Kevin now has 144 boxes after packing 42.  \n4. Kevin had 144 − 42 = 102 boxes before.  \nFinal Answer: 102",
+    "pred_answer_masked": "102",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Laura packed 24 boxes.  \n2. Kevin has six times more boxes than Laura, so 24 × 7 = 168.  \n3. Kevin now has 168 boxes after packing 42.  \n4. Kevin had 168 − 42 = 126 boxes before.  \nFinal Answer: 126"
+  },
+  {
+    "id": 100,
+    "question": "After fetching 31 pails, Mike now has six times more pails than Nina, who fetched 19. How many pails did Mike have before?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has 6 times more than Nina, so 19 * 6 = 114.  \n3. Mike now has 114 pails.  \n4. Mike fetched 31 pails, so 114 - 31 = 83.  \nFinal Answer: 83",
+    "pred_answer_masked": "83",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Nina has 19 pails.  \n2. Mike has 6 times more than Nina, so 19 * 7 = 133.  \n3. Mike now has 133 pails.  \n4. Mike fetched 31 pails, so 133 - 31 = 102.  \nFinal Answer: 102"
+  }
+]

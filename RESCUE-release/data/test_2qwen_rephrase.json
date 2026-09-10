@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "To track rental patterns at a local bike-sharing hub, 20 bicycles were observed being checked out by Fiona during the initial 2-hour window. A return rate of 1/2 of that original departing amount was recorded over the subsequent 2 hours. Following this, the next 2-hour period saw a surge in demand, resulting in the departure of a fleet 2 times the size of the very first group. Assuming that every single bicycle currently in use gets docked back at the hub during the final 2 hours of the day, calculate the exact number of bikes Fiona sees returning in this closing timeframe.",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 bicycles were checked out initially.  \n2. 1/2 of 20 is 10, so 10 bicycles returned.  \n3. 2 times the initial group is 40, so 40 bicycles departed.  \n4. Total bicycles in use after the third period is 20 - 10 + 40 = 50.  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 20 bicycles were checked out initially.\n2. 1/2 of 20 is 10, so 10 bicycles returned.\n3. 2 times the initial group is 40, so 40 bicycles departed.\n4. Total bicycles in use returning = 20 - 10 + 40 = 50.\nFinal Answer: 50"
+  },
+  {
+    "id": 2,
+    "question": "An initial launch of 12 delivery drones from a high-tech charging hub was recorded by George in the morning's first 3-hour window. By the end of the subsequent 3 hours, 1/3 of that original count had plugged back in. The airspace grew busier over the next 3 hours as a new wave of drones, equaling 2 times the size of the initial launch, took flight. To end his shift, George watches every single deployed drone return to dock within the final 3 hours. What is the total count of returning drones in this last interval?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12  \n2. 12 / 3 = 4  \n3. 12 * 2 = 24  \n4. 12 + 4 + 24 = 40  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 drones left initially\n2. 12 / 3 = 4 drones returned\n3. 12 * 2 = 24 drones departed in the third window\n4. 12 - 4 + 24 = 32 drones return in the last interval\nFinal Answer: 32"
+  },
+  {
+    "id": 3,
+    "question": "At a popular trailhead, Hannah begins tracking visitor flow by observing 30 hikers head into the woods over a 4-hour period. The trailing 4 hours bring back exactly 1/5 of that first group. Suddenly, the trail sees a massive influx in the third 4-hour block, with 3 times as many hikers departing as the initial group. Assuming no one is left behind and every outstanding hiker completes their trek in the final 4 hours of the day, how many returnees does Hannah count during this closing phase?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 hikers go in the first 4 hours.  \n2. 1/5 of 30 is 6 hikers returning in the second 4 hours.  \n3. 3 times 30 is 90 hikers departing in the third 4 hours.  \n4. 30 - 6 = 24 hikers remaining after the second block.  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 hikers go in the first 4 hours.\n2. 1/5 of 30 is 6 hikers returning in the second 4 hours.\n3. 3 times 30 is 90 hikers departing in the third 4 hours.\n4. Total remaining hikers to return = 30 - 6 + 90 = 114.\nFinal Answer: 114"
+  },
+  {
+    "id": 4,
+    "question": "Stationed at a bee colony box, Ian studies foraging patterns. His logs show 40 worker bees flying out during the initial 2 hours. Returning with pollen, 1/4 of that specific number re-enter the hive over the next 2 hours. A subsequent swarm, precisely 2 times the size of the very first departing group, leaves during the third 2-hour block. If the observation concludes with all remaining outside bees returning over the final 2 hours, what is the exact number of bees Ian sees coming back in that last period?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 bees fly out initially  \n2. 10 bees return (1/4 of 40)  \n3. 80 bees fly out (2 times 40)  \n4. 70 bees return (80 - 10)  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 bees fly out initially\n2. 10 bees return (1/4 of 40)\n3. 80 bees fly out (2 times 40)\n4. Total bees returning at the end = 40 - 10 + 80 = 110\nFinal Answer: 110"
+  },
+  {
+    "id": 5,
+    "question": "Downstream launches totaling 50 kayaks are recorded by Julia during her riverbank shop's opening 3 hours. The succeeding 3-hour period yields a return rate amounting to 1/10 of those original rentals. Guided tour demands in the third 3-hour stretch result in the departure of 2 times as many kayaks as were initially launched. Counting every unreturned kayak that gets paddled back before the shop closes in the final 3 hours, what is Julia's concluding return tally?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 kayaks launched in the first 3 hours  \n2. 50 * 1/10 = 5 kayaks returned in the second 3 hours  \n3. 50 * 2 = 100 kayaks departed in the third 3 hours  \n4. 50 - 5 - 100 + 50 = 10  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 kayaks launched in the first 3 hours\n2. 50 * 1/10 = 5 kayaks returned in the second 3 hours\n3. 50 * 2 = 100 kayaks departed in the third 3 hours\n4. 50 - 5 + 100 = 145 kayaks returning at the end\nFinal Answer: 145"
+  },
+  {
+    "id": 6,
+    "question": "Tasked with warehouse fleet management, Kevin observes 18 autonomous logistics robots deploy during the first 4-hour shift. Maintenance needs bring 1/2 of that original deployment back to the depot over the following 4 hours. Aisles then fill with a deployment 3 times the size of the initial wave during the third 4-hour block. If all actively working robots navigate back to the depot during the final 4 hours of the cycle, how many return trips does Kevin record at the very end?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 robots deployed in the first 4 hours  \n2. 18 * 1/2 = 9 robots returned to the depot  \n3. 18 * 3 = 54 robots deployed in the third 4-hour block  \n4. 54 + 9 = 63 robots return to the depot  \nFinal Answer: 63",
+    "pred_answer_masked": "63",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 18 robots deployed in the first 4 hours\n2. 18 * 1/2 = 9 robots returned to the depot\n3. 18 * 3 = 54 robots deployed in the third 4-hour block\n4. 18 - 9 + 54 = 63 robots return to the depot\nFinal Answer: 63"
+  },
+  {
+    "id": 7,
+    "question": "Under the cover of night, Laura monitors a nesting beach where 24 mother sea turtles crawl ashore in the first 5 hours. Having finished nesting, 1/4 of that initial group make their way back to the ocean over the next 5 hours. The surf then delivers a new wave of turtles crawling up the sand, numbering 2 times the original arrival count, during the third 5-hour span. By the end of her shift, all remaining turtles on the beach have returned to the sea in the last 5 hours. How many ocean-bound turtles does Laura count in this final timeframe?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 * 1/4 = 6  \n2. 24 - 6 = 18  \n3. 24 * 2 = 48  \n4. 18 + 48 = 66  \nFinal Answer: 66",
+    "pred_answer_masked": "66",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 24 turtles crawl ashore\n2. 24 * 1/4 = 6 return to ocean\n3. 24 * 2 = 48 new turtles arrive\n4. 24 - 6 + 48 = 66 turtles return to sea\nFinal Answer: 66"
+  },
+  {
+    "id": 8,
+    "question": "During a morning commute audit at a downtown bike-rack station, Marcus records the unlocking of 15 bikes over a 2-hour timeframe. The subsequent 2 hours see 1/3 of that initial count successfully docked. A lunch-hour surge then depletes the rack by an amount equal to 3 times the original departing group in the third 2-hour interval. Given that all outstanding bikes are returned before the end of Marcus's shift in the final 2 hours, how many riders does he observe docking their bikes in this period?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 bikes unlocked in the first 2 hours  \n2. 15 * 1/3 = 5 bikes docked in the next 2 hours  \n3. 5 * 3 = 15 bikes depleted in the third 2-hour interval  \n4. 15 (initial) + 5 (docked) - 15 (depleted) = 5  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 bikes unlocked in the first 2 hours\n2. 15 * 1/3 = 5 bikes docked in the next 2 hours\n3. 15 * 3 = 45 bikes unlocked in the third 2-hour interval\n4. 15 (initial) - 5 (docked) + 45 (unlocked) = 55 bikes returned\nFinal Answer: 55"
+  },
+  {
+    "id": 9,
+    "question": "Volunteering at a wildlife rehab center, Natalie logs 36 falcons taking flight from their enclosures during the first 3 hours of daylight. Perch returns over the next 3 hours equate to 1/6 of that first flying group. A massive swoop out of the center occurs in the third 3-hour block, featuring 2 times the number of falcons that originally departed. As dusk falls in the final 3 hours, every soaring falcon safely returns. How many birds does Natalie count flying back in this concluding window?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 falcons flew in the first 3 hours  \n2. 36 / 6 = 6 falcons returned in the next 3 hours  \n3. 36 * 2 = 72 falcons swooped out in the third 3-hour block  \n4. 72 falcons flew back in the final 3 hours  \nFinal Answer: 72",
+    "pred_answer_masked": "72",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 falcons flew in the first 3 hours\n2. 36 / 6 = 6 falcons returned in the next 3 hours\n3. 36 * 2 = 72 falcons swooped out in the third 3-hour block\n4. 36 - 6 + 72 = 102 falcons flew back in the final 3 hours\nFinal Answer: 102"
+  },
+  {
+    "id": 10,
+    "question": "Working near a train station, Oliver notes 28 vehicles leaving his rental agency's lot over a 4-hour morning block. Check-ins over the ensuing 4 hours account for 1/2 of those initial rentals. The afternoon rush then triggers the departure of 2 times the original rental volume in the subsequent 4 hours. By the end of the day, the final 4-hour period sees every single rented, unreturned vehicle brought back to the agency. What is the total count of cars returned during Oliver's last 4 hours?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 vehicles left in the first 4 hours  \n2. 28 * 1/2 = 14 vehicles checked in during the next 4 hours  \n3. 28 * 2 = 56 vehicles left in the third 4-hour period  \n4. 28 + 14 + 56 = 98 vehicles were rented out during the day  \nFinal Answer: 98",
+    "pred_answer_masked": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 28 vehicles left in the first 4 hours\n2. 28 * 1/2 = 14 vehicles checked in during the next 4 hours\n3. 28 * 2 = 56 vehicles left in the third 4-hour period\n4. 28 - 14 + 56 = 70 vehicles return at the end of the day\nFinal Answer: 70"
+  },
+  {
+    "id": 11,
+    "question": "At a main terminal, Penelope tracks public transit movements, starting with 20 buses departing the depot in a 2-hour window. The immediate 2 hours following see 1/2 of that original fleet return to the terminal. Shift changes drive a massive deployment equal to 2 times the initial group's size during the third 2-hour stretch. Concluding the operation, every bus still on the road drives back into the terminal during the final 2 hours. Determine the number of buses Penelope logs returning at the very end.",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 buses depart initially  \n2. 10 buses return (1/2 of 20)  \n3. 40 buses deploy (2 times 20)  \n4. 50 buses return (20 - 10 + 40)  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 20 buses depart initially\n2. 10 buses return (1/2 of 20)\n3. 40 buses deploy (2 times 20)\n4. 20 - 10 + 40 = 50 buses return\nFinal Answer: 50"
+  },
+  {
+    "id": 12,
+    "question": "Checking equestrian center activity, Quinn notes an initial group of 12 horses leaving for trail rides over 3 hours. Stalls are refilled by 1/3 of that departing number in the next 3-hour block. A large riding contingent then takes out 2 times the original amount of horses during the third 3-hour interval. With all trail-bound horses returning to their stalls in the evening's final 3 hours, what is the exact return count Quinn observes in this period?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 horses leave initially  \n2. 12 * 1/3 = 4 horses return in the next 3 hours  \n3. 12 * 2 = 24 horses leave in the third interval  \n4. 24 horses return in the final 3 hours  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 horses leave initially\n2. 12 * 1/3 = 4 horses return in the next 3 hours\n3. 12 * 2 = 24 horses leave in the third interval\n4. 12 - 4 + 24 = 32 horses return in the final 3 hours\nFinal Answer: 32"
+  },
+  {
+    "id": 13,
+    "question": "Naval deployments at a submarine base are tracked by Rachel, beginning with 30 submarines submerging and exiting the harbor within 4 hours. A surface-and-return rate of 1/5 of that first wave is recorded in the following 4 hours. Patrol departures spike in the third 4-hour window, with 3 times the initial fleet size heading out. The military exercise concludes with every remaining at-sea submarine returning in the final 4 hours. How many returning vessels does Rachel document at the end?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 submarines leave in the first 4 hours  \n2. 30 * 1/5 = 6 submarines leave in the second 4 hours  \n3. 3 * 30 = 90 submarines leave in the third 4 hours  \n4. 30 + 6 + 90 = 126 submarines leave in total  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 submarines leave in the first 4 hours\n2. 30 * 1/5 = 6 submarines return in the second 4 hours\n3. 3 * 30 = 90 submarines leave in the third 4 hours\n4. 30 - 6 + 90 = 114 submarines returning at the end\nFinal Answer: 114"
+  },
+  {
+    "id": 14,
+    "question": "A festival launchpad managed by Samuel sees 40 hot air balloons lift off in its opening 2 hours. Drifting back to land on the pad, 1/4 of that original fleet returns over the next 2 hours. Shifting winds in the third 2-hour period prompt a new launch totaling 2 times the size of the initial ascension. As the festival wraps up, the last 2 hours feature the landing of every single airborne balloon. Calculate Samuel's final return count.",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 balloons lift off initially  \n2. 1/4 of 40 is 10 balloons returning  \n3. 2 times 40 is 80 balloons launching  \n4. 40 + 10 + 80 = 130 balloons total  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 balloons lift off initially\n2. 1/4 of 40 is 10 balloons returning\n3. 2 times 40 is 80 balloons launching\n4. 40 - 10 + 80 = 110 balloons returning\nFinal Answer: 110"
+  },
+  {
+    "id": 15,
+    "question": "Outside a university campus, Tina monitors a scooter-sharing zone where 50 electric scooters are ridden away over 3 hours. The zone sees 1/10 of those specific scooters returned during the subsequent 3-hour window. A massive checkout numbering 2 times the original departing group occurs in the third 3-hour block. Assuming the academic day ends with every utilized scooter being parked back in the zone during the final 3 hours, what is Tina's closing return figure?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 scooters are ridden away in the first 3 hours.  \n2. 1/10 of 50 is 5, so 5 scooters are returned in the second 3-hour window.  \n3. 2 times the original departing group (50) is 100, so 100 scooters are checked out in the third 3-hour block.  \n4. The final 3-hour block returns all utilized scooters, which is 100.  \nFinal Answer: 100",
+    "pred_answer_masked": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 scooters are ridden away in the first 3 hours.\n2. 1/10 of 50 is 5, so 5 scooters are returned in the second 3-hour window.\n3. 2 times the original departing group (50) is 100, so 100 scooters are checked out in the third 3-hour block.\n4. Total to return = 50 - 5 + 100 = 145 scooters.\nFinal Answer: 145"
+  },
+  {
+    "id": 16,
+    "question": "During a station house training day, Umar logs the departure of 18 fire engines over a 4-hour period. Bays are restocked with 1/2 of that original count returning over the subsequent 4 hours. A major drill then pulls 3 times the initial number of engines out of the garage in the third 4-hour block. Finishing the shift, every engine still out participating in the drill returns within the final 4 hours. How many fire engines does Umar see driving back in this concluding timeframe?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 fire engines depart initially.  \n2. 9 fire engines return (1/2 of 18).  \n3. 54 fire engines are pulled out (3 times 18).  \n4. 54 fire engines return.  \nFinal Answer: 54",
+    "pred_answer_masked": "54",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 18 fire engines depart initially.\n2. 9 fire engines return (1/2 of 18).\n3. 54 fire engines are pulled out (3 times 18).\n4. 18 - 9 + 54 = 63 fire engines return.\nFinal Answer: 63"
+  },
+  {
+    "id": 17,
+    "question": "Monitoring an island terminal, Victoria logs 24 ferries leaving the slips during a holiday weekend's first 5 hours. Docking back at the terminal, 1/4 of that departing group returns in the following 5 hours. Tourist influx then causes a departure wave equal to 2 times the initial count in the third 5-hour period. If the observation ends with every outstanding ferry docking in the last 5 hours, what is the exact number of returning ferries Victoria counts?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 ferries leave in the first 5 hours  \n2. 1/4 of 24 is 6 ferries returning in the next 5 hours  \n3. 2 times 24 is 48 ferries departing in the third 5-hour period  \n4. Total ferries = 24 + 6 + 48 = 78  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 ferries leave in the first 5 hours\n2. 1/4 of 24 is 6 ferries returning in the next 5 hours\n3. 2 times 24 is 48 ferries departing in the third 5-hour period\n4. Total ferries to return = 24 - 6 + 48 = 66\nFinal Answer: 66"
+  },
+  {
+    "id": 18,
+    "question": "At a racing loft, William watches an initial release of 15 carrier pigeons taking flight over a 2-hour span. The roost welcomes back 1/3 of that original flock in the ensuing 2 hours. A second heat launches 3 times the first group's number into the sky during the third 2-hour block. The competition wraps up as every pigeon remaining airborne flies back in the final 2 hours. How many returning birds does William record in this last interval?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 pigeons fly initially  \n2. 15 × 1/3 = 5 pigeons return in the second interval  \n3. 15 × 3 = 45 pigeons fly in the third interval  \n4. 15 - 5 = 10 pigeons remain airborne after second interval; 10 + 45 = 55 pigeons remain airborne  \nFinal Answer: 55",
+    "pred_answer_masked": "55",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 15 pigeons fly initially\n2. 15 * 1/3 = 5 pigeons return in the second interval\n3. 15 * 3 = 45 pigeons fly in the third interval\n4. 15 - 5 + 45 = 55 pigeons return\nFinal Answer: 55"
+  },
+  {
+    "id": 19,
+    "question": "Hospital helipad analysis by Xavier begins with 36 medical helicopters taking off in a 3-hour window. Pad landings over the next 3 hours represent exactly 1/6 of that first wave. Emergency missions then demand the departure of 2 times the original aircraft count during the third 3-hour stretch. With the night ending as every dispatched helicopter returns safely in the final 3 hours, what is Xavier's ultimate tally of landing helicopters?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 * 1/6 = 6  \n2. 36 * 2 = 72  \n3. 36 + 6 = 42  \n4. 42 + 72 = 114  \nFinal Answer: 114",
+    "pred_answer_masked": "114",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 helicopters take off initially\n2. 36 * 1/6 = 6 helicopters return\n3. 36 * 2 = 72 helicopters depart\n4. 36 - 6 + 72 = 102 helicopters land back\nFinal Answer: 102"
+  },
+  {
+    "id": 20,
+    "question": "Stationed at an orchard depot, Yvonne records 28 tractors rumbling out into the fields during a 4-hour harvest window. Unloading trips bring 1/2 of that initial fleet back to the depot in the next 4 hours. The workload intensifies in the third 4-hour block, sending 2 times the original number of tractors out. As the workday closes, the final 4 hours see the return of every tractor still in the orchard. How many tractors return during Yvonne's final observation period?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 tractors go out initially  \n2. 14 tractors return in the next 4 hours  \n3. 56 tractors go out in the third block  \n4. 70 tractors return in the final 4 hours  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 28 tractors go out initially\n2. 14 tractors return in the next 4 hours\n3. 56 tractors go out in the third block\n4. 28 - 14 + 56 = 70 tractors return in the final 4 hours\nFinal Answer: 70"
+  },
+  {
+    "id": 21,
+    "question": "Zachary's observation of a private marina begins with 20 jet skis leaving the docks over a 2-hour timeframe. During the subsequent 2 hours, a fraction equaling 1/2 of that original group returns. The following 2 hours see an afternoon crowd rent out 2 times the number of jet skis that initially departed. Given that every single unreturned jet ski finally docks before sunset in the last 2 hours, what is the exact return count Zachary tallies in this concluding period?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 jet skis leave initially  \n2. 10 jet skis return (1/2 of 20)  \n3. 40 jet skis are rented out (2 times 20)  \n4. 30 jet skis return (40 - 10)  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 20 jet skis leave initially\n2. 10 jet skis return (1/2 of 20)\n3. 40 jet skis are rented out (2 times 20)\n4. Total jet skis returning = 20 - 10 + 40 = 50\nFinal Answer: 50"
+  },
+  {
+    "id": 22,
+    "question": "In the first 3 hours at a commercial shipping port, Amelia documents 12 tugboats departing the pier. A total of 1/3 of those initial vessels steam back to tie up during the next 3 hours. The third 3-hour window requires a new deployment of 2 times the original group's size. If the shift concludes with all outstanding tugboats returning to the pier in the final 3 hours, how many does Amelia see coming back at the end?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 tugboats depart initially  \n2. 12 * 1/3 = 4 tugboats return in the next 3 hours  \n3. 12 * 2 = 24 tugboats deployed in the third 3-hour window  \n4. 4 + 24 = 28 tugboats return in the final 3 hours  \nFinal Answer: 28",
+    "pred_answer_masked": "28",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 tugboats depart initially\n2. 12 * 1/3 = 4 tugboats return in the next 3 hours\n3. 12 * 2 = 24 tugboats deployed in the third 3-hour window\n4. 12 - 4 + 24 = 32 tugboats return in the final 3 hours\nFinal Answer: 32"
+  },
+  {
+    "id": 23,
+    "question": "A fleet of 30 electric golf carts is driven away from a resort clubhouse in a 4-hour morning block, as recorded by Benjamin. Over the next 4 hours, players return 1/5 of that starting group. Tournament crowds later drive off with a fleet equaling 3 times the initial departure during the third 4-hour period. As evening falls, the last 4 hours feature the return of every cart currently out. Find the total number of carts returning in this last window.",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 * 1/5 = 6  \n2. 30 * 3 = 90  \n3. 90 - 30 = 60  \n4. 60 + 6 = 66  \nFinal Answer: 66",
+    "pred_answer_masked": "66",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 golf carts depart initially\n2. 30 * 1/5 = 6 carts return\n3. 30 * 3 = 90 carts depart\n4. 30 - 6 + 90 = 114 carts return in total\nFinal Answer: 114"
+  },
+  {
+    "id": 24,
+    "question": "Friday night at a police precinct garage sees Chloe logging 40 squad cars leaving for patrol within 2 hours. Shift completion brings 1/4 of that original fleet back to the station in the ensuing 2 hours. A sudden citywide alert prompts the exit of 2 times the initial vehicle count in the third 2-hour phase. Finishing her shift, Chloe watches every dispatched squad car return in the final 2 hours. What is her final count of returning cars?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 cars leave in the first 2 hours  \n2. 10 cars return in the next 2 hours (1/4 of 40)  \n3. 80 cars leave in the third 2 hours (2 times 40)  \n4. 130 cars return in the final 2 hours (40 + 10 + 80)  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 cars leave in the first 2 hours\n2. 10 cars return in the next 2 hours (1/4 of 40)\n3. 80 cars leave in the third 2 hours (2 times 40)\n4. 40 - 10 + 80 = 110 cars return in the final 2 hours\nFinal Answer: 110"
+  },
+  {
+    "id": 25,
+    "question": "Tracking terminal logistics, Daniel observes 50 forklifts departing the central bay in the opening 3-hour shift. The immediate 3 hours following witness 1/10 of those identical forklifts driving back. Freighter arrivals then necessitate the deployment of 2 times the initial group's size during the next 3-hour block. With all working forklifts ultimately returning to the bay in the shift's concluding 3 hours, how many does Daniel document coming back?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 forklifts depart initially  \n2. 50 * 1/10 = 5 forklifts return  \n3. 50 * 2 = 100 forklifts deployed  \n4. 5 + 100 = 105 forklifts return  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 forklifts depart initially\n2. 50 * 1/10 = 5 forklifts return\n3. 50 * 2 = 100 forklifts deployed\n4. 50 - 5 + 100 = 145 forklifts return\nFinal Answer: 145"
+  },
+  {
+    "id": 26,
+    "question": "Studying cave twilight activity, Emily notes a colony exodus of 18 bats during a 4-hour span. To rest, 1/2 of those original hunters fly back inside over the next 4 hours. A massive departure equaling 3 times the first group's size occurs in the subsequent 4-hour interval. Assuming the remaining foraging bats all return in the final 4 hours before dawn, what is the exact number of bats Emily sees returning at the end?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 bats leave initially  \n2. 9 bats return (1/2 of 18)  \n3. 54 bats leave (3 times 18)  \n4. 18 + 9 = 27 bats remain foraging  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 18 bats leave initially\n2. 9 bats return (1/2 of 18)\n3. 54 bats leave (3 times 18)\n4. Total bats returning = 18 - 9 + 54 = 63\nFinal Answer: 63"
+  },
+  {
+    "id": 27,
+    "question": "Locomotive movements at a cargo yard tracked by Felix begin with 24 freight trains pulling out in the first 5 hours. Parking back on the sidings, 1/4 of that starting fleet returns during the next 5 hours. Peak shipping demands a new wave consisting of 2 times the original group's number to leave in the third 5-hour period. If the operating day closes with all deployed trains coming back in the final 5 hours, how many trains return in this last phase?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 trains start  \n2. 24 * 1/4 = 6 return  \n3. 24 * 2 = 48 leave  \n4. 24 + 6 + 48 = 78 total trains  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 trains start\n2. 24 * 1/4 = 6 return\n3. 24 * 2 = 48 leave\n4. Total returning trains = 24 - 6 + 48 = 66\nFinal Answer: 66"
+  },
+  {
+    "id": 28,
+    "question": "Grace's ambulance depot observation starts off with 15 emergency vehicles dispatched in a 2-hour window. Base returns account for 1/3 of that initial group over the following 2 hours. A sudden emergency spike causes 3 times the original number of ambulances to rush out during the next 2-hour block. Provided every vehicle on a call returns safely in the concluding 2 hours, how many ambulances does Grace tally coming back?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 vehicles dispatched initially  \n2. 15 * 1/3 = 5 vehicles returned  \n3. 15 * 3 = 45 vehicles dispatched during spike  \n4. 45 + 5 = 50 vehicles returned in final 2 hours  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 vehicles dispatched initially\n2. 15 * 1/3 = 5 vehicles returned\n3. 15 * 3 = 45 vehicles dispatched during spike\n4. 15 - 5 + 45 = 55 vehicles returned in final 2 hours\nFinal Answer: 55"
+  },
+  {
+    "id": 29,
+    "question": "Fulfillment center loading docks see 36 delivery trucks depart within 3 hours, according to Henry's logs. Local routes finishing up bring 1/6 of that first group back in the next 3 hours. The afternoon shipping batch pushes out a fleet sizing 2 times the initial departure over the subsequent 3 hours. As operations wind down, every truck still on the road returns in the final 3-hour window. Calculate the number of returning trucks in this closing period.",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 trucks depart initially  \n2. 36 / 6 = 6 trucks return in the next 3 hours  \n3. 36 * 2 = 72 trucks depart in the afternoon  \n4. 36 + 72 = 108 trucks on the road  \nFinal Answer: 108",
+    "pred_answer_masked": "108",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 trucks depart in the first 3 hours.\n2. 1/6 of 36 is 6 trucks returning in the next 3 hours.\n3. 2 times 36 is 72 trucks departing in the third 3-hour window.\n4. Total trucks returning = 36 - 6 + 72 = 102.\nFinal Answer: 102"
+  },
+  {
+    "id": 30,
+    "question": "Lakeside floatplane departures totaling 28 are noted by Isabella in her first 4-hour block. Tying back up at the dock, 1/2 of those specific planes return in the subsequent 4 hours. Demand from tourists then sends 2 times the original number of planes into the sky during the third 4-hour interval. With daylight fading, every plane out on an excursion lands back at the dock in the final 4 hours. How many returning floatplanes does Isabella count?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 floatplanes depart in the first 4 hours.  \n2. 1/2 of 28 is 14, so 14 return in the next 4 hours.  \n3. 2 times 28 is 56, so 56 depart in the third 4 hours.  \n4. All 56 planes from the third interval return in the final 4 hours.  \nFinal Answer: 56",
+    "pred_answer_masked": "56",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 28 floatplanes depart in the first 4 hours.\n2. 1/2 of 28 is 14, so 14 return in the next 4 hours.\n3. 2 times 28 is 56, so 56 depart in the third 4 hours.\n4. Total returning planes = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  },
+  {
+    "id": 31,
+    "question": "Commercial wharf tracking by Jack begins with 20 trawlers leaving the docks in 2 hours. Unloading catch, 1/2 of those initial boats sail back into the harbor over the next 2 hours. Fish sightings prompt a massive deployment equalling 2 times the first group's size during the third 2-hour span. The afternoon ends with every outstanding trawler returning to the docks in the final 2 hours. What is Jack's count for this returning fleet?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 trawlers leave the docks.  \n2. 10 trawlers return, leaving 10 trawlers.  \n3. 20 trawlers deploy, increasing the total to 30 trawlers.  \n4. 30 trawlers return to the docks.  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 20 trawlers leave the docks.\n2. 10 trawlers return (1/2 of 20).\n3. 40 trawlers deploy (2 times 20).\n4. Total trawlers returning = 20 - 10 + 40 = 50.\nFinal Answer: 50"
+  },
+  {
+    "id": 32,
+    "question": "Security gates at a vault facility open to let 12 armored trucks leave on bank runs during Katherine's first 3 hours. Facility returns constitute 1/3 of that initial group in the subsequent 3 hours. A major retail route triggers the departure of 2 times the original truck count over the following 3-hour period. Ensuring all assets are secured, every deployed truck drives back inside during the final 3 hours. How many trucks return at the very end?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 trucks leave initially  \n2. 12 * 1/3 = 4 trucks return in the next 3 hours  \n3. 12 * 2 = 24 trucks leave on the retail route  \n4. 24 trucks return in the final 3 hours  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 trucks leave initially\n2. 12 * 1/3 = 4 trucks return in the next 3 hours\n3. 12 * 2 = 24 trucks leave on the retail route\n4. Total trucks returning = 12 - 4 + 24 = 32\nFinal Answer: 32"
+  },
+  {
+    "id": 33,
+    "question": "Departing a ski resort maintenance shed, 30 snowmobiles are logged by Liam over a 4-hour window. Shed returns equal 1/5 of that starting group during the next 4 hours. Worsening weather demands a massive patrol outflux numbering 3 times the original departing group in the third 4-hour block. Nightfall approaches, bringing every actively patrolling snowmobile back to the shed in the final 4 hours. Find the total number of snowmobiles returning in this last phase.",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 snowmobiles depart initially  \n2. 30 * 1/5 = 6 return in the second block  \n3. 3 * 30 = 90 depart in the third block  \n4. 30 + 6 - 90 = -54 net change before final return  \nFinal Answer: 54",
+    "pred_answer_masked": "54",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 snowmobiles depart initially\n2. 30 * 1/5 = 6 return in the second block\n3. 3 * 30 = 90 depart in the third block\n4. Total returning = 30 - 6 + 90 = 114\nFinal Answer: 114"
+  },
+  {
+    "id": 34,
+    "question": "An auto transport lot overseen by Mia witnesses 40 car haulers dispatched in a 2-hour period. Returning empty, 1/4 of that first fleet drives back in the following 2 hours. Massive shipments then require 2 times the initial rig count to leave the terminal during the next 2-hour window. Shift completion sees every rig currently out on delivery returning to the lot in the final 2 hours. What is Mia's closing return tally?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 car haulers dispatched in first 2 hours  \n2. 1/4 of 40 = 10 returning empty in next 2 hours  \n3. 2 times 40 = 80 new haulers leaving in next 2 hours  \n4. 40 + 10 + 80 = 130 total haulers out  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 car haulers dispatched in first 2 hours\n2. 1/4 of 40 = 10 returning empty in next 2 hours\n3. 2 times 40 = 80 new haulers leaving in next 2 hours\n4. Total haulers returning = 40 - 10 + 80 = 110\nFinal Answer: 110"
+  },
+  {
+    "id": 35,
+    "question": "Relocating clients utilize 50 moving vans that Noah logs leaving the storage facility bays within 3 hours. The succeeding 3 hours feature a bay return rate of 1/10 of those original vans. A sudden surge demands that 2 times the initial vehicle group drives away in the third 3-hour block. Concluding the schedule, all outstanding vans make their way back to the facility in the last 3 hours. How many vans does Noah count returning in this final window?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 vans leave in the first 3 hours  \n2. 50 * 1/10 = 5 vans return in the next 3 hours  \n3. 50 * 2 = 100 vans leave in the third 3-hour block  \n4. 50 + 5 + 100 = 155 vans are outstanding  \nFinal Answer: 155",
+    "pred_answer_masked": "155",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 vans leave in the first 3 hours\n2. 50 * 1/10 = 5 vans return in the next 3 hours\n3. 50 * 2 = 100 vans leave in the third 3-hour block\n4. Total returning vans = 50 - 5 + 100 = 145\nFinal Answer: 145"
+  },
+  {
+    "id": 36,
+    "question": "Taking off from a training runway, 18 student pilot aircraft are registered by Sophia in a 4-hour timeframe. Landings account for 1/2 of that original group over the subsequent 4 hours. An intense flight block then sends 3 times the initial number of planes into the circuit during the next 4 hours. As the session wraps up, every airborne plane lands back at the airfield in the final 4 hours. How many aircraft does Sophia see return at the end?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 student pilot aircraft take off in the first 4 hours.  \n2. 18 × 1/2 = 9 aircraft land in the next 4 hours.  \n3. 18 × 3 = 54 aircraft take off in the next 4 hours.  \n4. 18 + 9 + 54 = 81 aircraft are airborne before the final 4 hours.  \nFinal Answer: 81",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 18 student pilot aircraft take off in the first 4 hours.\n2. 18 * 1/2 = 9 aircraft land in the next 4 hours.\n3. 18 * 3 = 54 aircraft take off in the next 4 hours.\n4. Total returning = 18 - 9 + 54 = 63.\nFinal Answer: 63"
+  },
+  {
+    "id": 37,
+    "question": "Snowplow deployment during a winter storm starts with 24 plows leaving Ryan's municipal yard in 5 hours. Refueling stops bring 1/4 of that starting fleet back over the following 5 hours. A blizzard intensification requires an outbound fleet sizing 2 times the initial group during the third 5-hour phase. Storm response concludes with every working plow returning to the garage in the final 5 hours. Calculate the number of returning plows Ryan observes in this period.",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 plows start  \n2. 24 * 1/4 = 6 plows return after 5 hours  \n3. 24 * 2 = 48 plows are needed in the third phase  \n4. 48 - 24 = 24 plows are added in the third phase  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 plows start\n2. 24 * 1/4 = 6 plows return after 5 hours\n3. 24 * 2 = 48 plows are needed in the third phase\n4. Total plows returning = 24 - 6 + 48 = 66\nFinal Answer: 66"
+  },
+  {
+    "id": 38,
+    "question": "A military paratrooper drill overseen by Ava begins with 15 transport aircraft clearing the base airspace within 2 hours. Touching down on the runway, 1/3 of those original planes return in the next 2 hours. The drill escalates, launching 3 times the initial aircraft count in the subsequent 2-hour block. If the exercise mandates that all remaining airborne planes land in the final 2 hours, how many returning aircraft does Ava count?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 aircraft initially  \n2. 15 × 1/3 = 5 return  \n3. 15 × 3 = 45 launched  \n4. 15 - 5 = 10 remaining  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 aircraft initially\n2. 15 * 1/3 = 5 return\n3. 15 * 3 = 45 launched\n4. Total returning = 15 - 5 + 45 = 55\nFinal Answer: 55"
+  },
+  {
+    "id": 39,
+    "question": "Waste collection begins with Ethan logging 36 garbage trucks driving out of the depot in 3 hours. Dumping loads brings exactly 1/6 of that first group back over the next 3 hours. Shift requirements then dispatch a fleet measuring 2 times the initial departure during the third 3-hour window. Provided the day ends with every on-route truck returning to the yard in the final 3 hours, what is Ethan's final tally of returning vehicles?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 trucks depart in the first 3 hours.  \n2. 1/6 of 36 is 6 trucks returning in the next 3 hours.  \n3. 2 times 36 is 72 trucks departing in the third 3-hour window.  \n4. 72 trucks return in the final 3 hours.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 trucks depart in the first 3 hours.\n2. 1/6 of 36 is 6 trucks returning in the next 3 hours.\n3. 2 times 36 is 72 trucks departing in the third 3-hour window.\n4. Total trucks returning = 36 - 6 + 72 = 102.\nFinal Answer: 102"
+  },
+  {
+    "id": 40,
+    "question": "Transporting passengers, 28 water taxis leave Chloe's tourist dock during a 4-hour shift. Mooring back at the dock, 1/2 of those specific vessels return in the subsequent 4 hours. Commuter demand then pushes a departure wave equaling 2 times the original taxi count into the water over the next 4 hours. With operations shutting down, every taxi still navigating the harbor returns in the final 4 hours. How many water taxis does Chloe see coming back?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 water taxis leave initially.  \n2. 14 return in the next 4 hours (28 * 1/2).  \n3. 56 depart in the next 4 hours (28 * 2).  \n4. 28 + 56 = 84 taxis are still out.  \nFinal Answer: 84",
+    "pred_answer_masked": "84",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 28 water taxis leave initially.\n2. 14 return in the next 4 hours (28 * 1/2).\n3. 56 depart in the next 4 hours (28 * 2).\n4. Total taxis to return = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  },
+  {
+    "id": 41,
+    "question": "Nectar collection initiates with 20 solitary bees leaving Lucas's botanical garden bee hotel in 2 hours. Returning to the hotel, 1/2 of that departing swarm flies back in the following 2 hours. A warm spell suddenly pulls 2 times the original bee count out of the nesting tubes in the third 2-hour stretch. Assuming sunset forces every unreturned bee back to the hotel in the final 2 hours, how many returning bees does Lucas document in this period?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 bees leave initially  \n2. 10 bees return (1/2 of 20)  \n3. 40 bees are pulled out (2 times 20)  \n4. 30 bees return (20 - 10 + 40)  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 20 bees leave initially\n2. 10 bees return (1/2 of 20)\n3. 40 bees are pulled out (2 times 20)\n4. Total bees returning = 20 - 10 + 40 = 50\nFinal Answer: 50"
+  },
+  {
+    "id": 42,
+    "question": "Bicycle unlocks at a campus station kick off with 12 bikes ridden away over 3 hours, as tracked by Lily. Locking back into the station, 1/3 of that first group returns in the next 3-hour window. A lecture let-out triggers a massive checkout of 2 times the initial group size during the subsequent 3 hours. With the day ending as all outstanding bicycles are docked in the final 3 hours, calculate the total returning bikes Lily records at the close.",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 bikes ridden away  \n2. 1/3 of 12 is 4 bikes returned  \n3. 2 times 12 is 24 bikes checked out  \n4. 12 + 4 + 24 = 40  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 bikes ridden away\n2. 1/3 of 12 is 4 bikes returned\n3. 2 times 12 is 24 bikes checked out\n4. Total returning bikes = 12 - 4 + 24 = 32\nFinal Answer: 32"
+  },
+  {
+    "id": 43,
+    "question": "Warehouse courtyard dispatches monitored by Mason start with 30 delivery vans exiting in 4 hours. Route completions bring 1/5 of that starting fleet back to the area over the ensuing 4 hours. Rush orders necessitate an outbound wave comprising 3 times the original van count in the third 4-hour block. Operating cycles finish up with every deployed van returning to the courtyard in the final 4 hours. How many returning vans does Mason observe in this last timeframe?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 vans exit in the first 4 hours  \n2. 30 * 1/5 = 6 vans return in the second 4 hours  \n3. 30 * 3 = 90 vans leave in the third 4 hours  \n4. 30 + 6 + 90 = 126 vans deployed in total  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 vans exit in the first 4 hours\n2. 30 * 1/5 = 6 vans return in the second 4 hours\n3. 30 * 3 = 90 vans leave in the third 4 hours\n4. Total returning vans = 30 - 6 + 90 = 114\nFinal Answer: 114"
+  },
+  {
+    "id": 44,
+    "question": "Oil rig service records kept by Ella show 40 helicopters lifting off the offshore pad in 2 hours. Landing back on the pad, 1/4 of that original fleet returns in the next 2-hour span. Crew rotations require 2 times the initial helicopter count to fly out during the subsequent 2-hour block. Assuming the shift ends with every airborne helicopter landing safely in the final 2 hours, what is Ella's concluding return count?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 helicopters lift off in 2 hours.  \n2. 1/4 of 40 is 10 helicopters landing back in the next 2 hours.  \n3. 2 times the initial count (40) is 80 helicopters flying out in the next 2 hours.  \n4. 80 helicopters land safely in the final 2 hours.  \nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 helicopters lift off in 2 hours.\n2. 1/4 of 40 is 10 helicopters landing back in the next 2 hours.\n3. 2 times the initial count (40) is 80 helicopters flying out in the next 2 hours.\n4. Total returning = 40 - 10 + 80 = 110.\nFinal Answer: 110"
+  },
+  {
+    "id": 45,
+    "question": "Assisting stranded motorists, 50 tow trucks are dispatched from Logan's rainy commercial yard within 3 hours. Yard returns represent 1/10 of that first group over the following 3 hours. A multi-vehicle crash then demands a massive response equalling 2 times the original truck count in the third 3-hour interval. The day closes with every outstanding tow truck driving back to the yard in the final 3 hours. How many returning trucks does Logan tally?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 trucks dispatched initially  \n2. 50 * 1/10 = 5 trucks return  \n3. 50 * 2 = 100 trucks dispatched for crash  \n4. 50 + 5 + 100 = 155 trucks total dispatched  \nFinal Answer: 155",
+    "pred_answer_masked": "155",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 trucks dispatched initially\n2. 50 * 1/10 = 5 trucks return\n3. 50 * 2 = 100 trucks dispatched for crash\n4. Total trucks returning = 50 - 5 + 100 = 145\nFinal Answer: 145"
+  },
+  {
+    "id": 46,
+    "question": "Diving for fish, 18 puffins exit their coastal cliffside burrows during Zoe's first 4 hours of daylight observation. Landing near their burrows, 1/2 of that starting flock returns in the next 4 hours. The cliffside sees 3 times the initial number of puffins fly out into the sea during the subsequent 4-hour window. Evening approaches, bringing every foraging puffin back to the colony in the final 4 hours. How many returning birds does Zoe count in this period?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 puffins exit initially  \n2. 9 puffins return in the next 4 hours (18 / 2)  \n3. 54 puffins fly out in the next 4 hours (18 * 3)  \n4. 54 puffins return in the final 4 hours  \nFinal Answer: 54",
+    "pred_answer_masked": "54",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 18 puffins exit initially\n2. 9 puffins return in the next 4 hours (18 / 2)\n3. 54 puffins fly out in the next 4 hours (18 * 3)\n4. Total puffins returning = 18 - 9 + 54 = 63\nFinal Answer: 63"
+  },
+  {
+    "id": 47,
+    "question": "Downriver exits at a shipping canal lock begin with 24 cargo barges passing through in 5 hours, as analyzed by Jackson. Upriver returns account for 1/4 of that original group during the next 5 hours. Surging river traffic prompts 2 times the initial barge count to exit downriver in the third 5-hour phase. Provided the shift ends with all outstanding barges passing back through the lock in the final 5 hours, what is Jackson's returning total?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 cargo barges pass through in the first 5 hours  \n2. 24 * 1/4 = 6 barges return upriver in the next 5 hours  \n3. 24 * 2 = 48 barges exit downriver in the third 5-hour phase  \n4. 24 + 6 + 48 = 78 total barges processed  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 cargo barges pass through in the first 5 hours\n2. 24 * 1/4 = 6 barges return upriver in the next 5 hours\n3. 24 * 2 = 48 barges exit downriver in the third 5-hour phase\n4. Total barges returning = 24 - 6 + 48 = 66\nFinal Answer: 66"
+  },
+  {
+    "id": 48,
+    "question": "Neighborhood sweeps start with Mia recording 15 patrol cars leaving the depot gates within 2 hours. Shift reports bring 1/3 of that first group back to the gates over the ensuing 2 hours. High-priority events pull 3 times the original vehicle count out of the depot during the next 2-hour window. With operations concluding as every dispatched car returns in the final 2 hours, how many returning patrol cars does Mia observe?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 patrol cars leave initially  \n2. 1/3 of 15 is 5 returning cars  \n3. 3 times 15 is 45 cars leaving again  \n4. Total cars returning is 15 + 5 + 45 = 65  \nFinal Answer: 65",
+    "pred_answer_masked": "65",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 patrol cars leave initially\n2. 1/3 of 15 is 5 returning cars\n3. 3 times 15 is 45 cars leaving again\n4. Total cars returning = 15 - 5 + 45 = 55\nFinal Answer: 55"
+  },
+  {
+    "id": 49,
+    "question": "Sightseeing loops begin with 36 double-decker buses leaving Owen's terminal within a 3-hour timeframe. Parking back at the terminal loop, 1/6 of that original fleet returns in the following 3 hours. Peak tourist demand pushes 2 times the initial bus count out of the loop during the third 3-hour stretch. Service winds down with every bus currently on city streets returning to the terminal in the final 3 hours. How many returning buses does Owen count at the end?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 buses leave initially  \n2. 36 * 1/6 = 6 buses return in the second 3 hours  \n3. 36 * 2 = 72 buses leave in the third 3 hours  \n4. 36 + 6 + 72 = 114 buses on city streets  \nFinal Answer: 114",
+    "pred_answer_masked": "114",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 buses leave initially\n2. 36 * 1/6 = 6 buses return in the second 3 hours\n3. 36 * 2 = 72 buses leave in the third 3 hours\n4. Total buses returning = 36 - 6 + 72 = 102\nFinal Answer: 102"
+  },
+  {
+    "id": 50,
+    "question": "Tourists riding out of a downtown park depot account for 28 segways in Aria's first 4-hour log. Depot returns equal 1/2 of that specific group over the next 4 hours. A corporate tour group checks out 2 times the original number of segways, leaving during the subsequent 4-hour interval. Assuming closing time forces every unreturned segway back to the depot in the final 4 hours, what is the exact return count Aria sees in this concluding period?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 segways are initially logged.  \n2. Depot returns 1/2 of 28, which is 14.  \n3. Corporate tour group checks out 2 * 28 = 56 segways.  \n4. Total unreturned segways = 28 + 56 - 14 = 70.  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 28 segways are initially logged.\n2. Depot returns 1/2 of 28, which is 14.\n3. Corporate tour group checks out 2 * 28 = 56 segways.\n4. Total unreturned segways = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  },
+  {
+    "id": 51,
+    "question": "To keep tabs on shuttle craft movements at a space station, Alex records an initial launch of 20 shuttles within a 2-hour window. Docking back at the station, a fraction equal to 1/2 of that first departing fleet returns over the subsequent 2 hours. An unexpected mission then necessitates the deployment of 2 times the original number of shuttles during the third 2-hour interval. Assuming that all remaining airborne shuttles safely dock in the final 2 hours of the day, calculate the exact number of shuttles Alex watches return during this concluding period.",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 shuttles launch initially  \n2. 10 shuttles return (1/2 of 20)  \n3. 40 shuttles deploy (2 times 20)  \n4. 10 shuttles remain airborne (20 - 10 - 40 = -30, but only 10 remain)  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 20 shuttles launch initially.\n2. 1/2 of 20 is 10, so 10 shuttles return.\n3. 2 times 20 is 40, so 40 shuttles deploy.\n4. Total shuttles returning at the end = 20 - 10 + 40 = 50.\nFinal Answer: 50"
+  },
+  {
+    "id": 52,
+    "question": "During her shift at the university library's tech desk, Bianca loans out 12 laptops to students in the first 3 hours. The succeeding 3-hour block yields a return rate amounting to 1/3 of those initial checkouts. Midterm preparations then drive a massive demand, resulting in the loaning of 2 times as many laptops as the first group over the next 3 hours. If every single outstanding laptop is returned before the library closes in the final 3 hours, how many laptops does Bianca process during this last stretch?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 laptops loaned in the first 3 hours  \n2. 12 * 1/3 = 4 laptops returned in the second 3 hours  \n3. 12 * 2 = 24 laptops loaned in the third 3 hours  \n4. 12 - 4 + 24 = 32 laptops outstanding before the final 3 hours  \nFinal Answer: 32",
+    "pred_answer_masked": "32",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 12 laptops loaned out initially.\n2. 12 * 1/3 = 4 laptops returned.\n3. 12 * 2 = 24 laptops loaned out.\n4. Total laptops returning = 12 - 4 + 24 = 32.\nFinal Answer: 32"
+  },
+  {
+    "id": 53,
+    "question": "Observing a glacier's penguin colony, Caleb notes 30 penguins sliding into the water over an initial 4-hour span. Hopping back onto the ice, 1/5 of that first group returns during the following 4 hours. A massive feeding frenzy subsequently pulls 3 times the original departing number into the ocean in the third 4-hour window. With the observation wrapping up as every swimming penguin returns to the glacier in the final 4 hours, what is Caleb's concluding count of returning penguins?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 penguins slide into the water  \n2. 30 * 1/5 = 6 penguins return  \n3. 3 * 30 = 90 penguins leave in the third window  \n4. 30 + 6 + 90 = 126 penguins in total  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 penguins enter the water initially.\n2. 30 * 1/5 = 6 penguins return.\n3. 30 * 3 = 90 penguins leave.\n4. Total penguins returning at the end = 30 - 6 + 90 = 114.\nFinal Answer: 114"
+  },
+  {
+    "id": 54,
+    "question": "Managing a luxury hotel's umbrella stand, Daisy hands out 40 umbrellas to departing guests within the opening 2 hours of a rainy day. As conditions improve slightly, 1/4 of that original count are brought back over the next 2 hours. A sudden downpour then triggers the checkout of 2 times the initial umbrella group during the subsequent 2-hour period. Providing that the weather clears and all outstanding umbrellas are returned in the final 2 hours, how many does Daisy collect at the end of her shift?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 umbrellas are handed out initially.  \n2. 1/4 of 40 is 10, so 10 umbrellas are returned.  \n3. 2 times 40 is 80, so 80 umbrellas are checked out.  \n4. All outstanding umbrellas (80) are returned.  \nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 umbrellas checked out initially.\n2. 40 * 1/4 = 10 umbrellas returned.\n3. 40 * 2 = 80 umbrellas checked out.\n4. Total umbrellas to be collected = 40 - 10 + 80 = 110.\nFinal Answer: 110"
+  },
+  {
+    "id": 55,
+    "question": "Deep inside a mineral shaft, Ethan logs 50 automated mining carts rolling out of the main cavern over a 3-hour timeframe. Full of ore, exactly 1/10 of those specific carts return during the ensuing 3 hours. Striking a new vein requires the dispatch of 2 times the original fleet size into the tunnels over the third 3-hour block. Assuming every deployed cart rolls back to the main cavern in the final 3 hours of the shift, calculate the number of carts Ethan sees returning in this closing phase.",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 carts roll out initially  \n2. 50 * 1/10 = 5 carts return in the second 3-hour block  \n3. 50 * 2 = 100 carts are dispatched in the third 3-hour block  \n4. 100 carts return in the final 3-hour block  \nFinal Answer: 100",
+    "pred_answer_masked": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 carts roll out initially.\n2. 50 * 1/10 = 5 carts return.\n3. 50 * 2 = 100 carts dispatched.\n4. Total carts returning = 50 - 5 + 100 = 145.\nFinal Answer: 145"
+  },
+  {
+    "id": 56,
+    "question": "Operations at a hot air balloon festival begin with Fiona recording 18 balloons lifting off in a 4-hour morning block. Safe landings back at the launch site account for 1/2 of that original group over the subsequent 4 hours. Perfect afternoon conditions then launch a fleet 3 times the size of the initial ascension during the next 4-hour interval. As evening sets in, every balloon still aloft returns to the site in the final 4 hours. How many landing balloons does Fiona tally in this last period?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 balloons lift off in the morning.  \n2. 1/2 of 18 is 9 balloons landing safely.  \n3. 3 times the initial group is 54 balloons launching in the afternoon.  \n4. 54 balloons land in the evening.  \nFinal Answer: 54",
+    "pred_answer_masked": "54",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 18 balloons lift off initially.\n2. 18 * 1/2 = 9 balloons land back.\n3. 18 * 3 = 54 balloons launch.\n4. Total balloons landing at the end = 18 - 9 + 54 = 63.\nFinal Answer: 63"
+  },
+  {
+    "id": 57,
+    "question": "Tracking reef exploration, divemaster Gavin logs 24 scuba divers entering the water in the opening 5 hours. Swimming back to the boat, 1/4 of that starting group returns in the following 5 hours. A special shipwreck excursion then draws 2 times the original number of divers into the ocean over the third 5-hour span. With the day ending as all remaining divers return to the boat in the final 5 hours, what is Gavin's exact count of returning divers?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 divers start  \n2. 24 × 1/4 = 6 return  \n3. 24 × 2 = 48 join  \n4. 24 - 6 + 48 = 66 remain  \nFinal Answer: 66",
+    "pred_answer_masked": "66",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 24 divers enter initially.\n2. 24 * 1/4 = 6 return.\n3. 24 * 2 = 48 divers enter.\n4. Total divers returning = 24 - 6 + 48 = 66.\nFinal Answer: 66"
+  },
+  {
+    "id": 58,
+    "question": "At a futuristic pizza hub, Hazel documents 15 delivery drones flying out of the dispatch window within a 2-hour timeframe. Charging pad returns over the next 2 hours equal 1/3 of that first wave. The dinner rush then launches 3 times the initial drone count into the city during the subsequent 2-hour block. If every dispatched drone safely navigates back to the hub in the final 2 hours, how many returning drones does Hazel count?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 drones fly out initially  \n2. 15 * 1/3 = 5 drones return from charging pad  \n3. 15 * 3 = 45 drones fly out during dinner rush  \n4. 45 + 5 = 50 drones return in final 2 hours  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 drones fly out initially.\n2. 15 * 1/3 = 5 return.\n3. 15 * 3 = 45 launch.\n4. Total drones returning = 15 - 5 + 45 = 55.\nFinal Answer: 55"
+  },
+  {
+    "id": 59,
+    "question": "A sprawling country club's golf cart usage starts with Isaac noting 36 carts driven away in a 3-hour window. Parked back at the return bay, 1/6 of that specific fleet is accounted for in the next 3 hours. Tournament play then demands the checkout of 2 times the original departing group over the third 3-hour period. As the course closes, every outstanding cart is driven back in the final 3 hours. Calculate Isaac's returning cart total for this concluding phase.",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 carts driven away initially  \n2. 36 / 6 = 6 carts returned in the next 3 hours  \n3. 2 * 36 = 72 carts checked out in the third period  \n4. 72 - 6 = 66 carts remaining to be returned  \nFinal Answer: 66",
+    "pred_answer_masked": "66",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 carts driven away initially.\n2. 36 / 6 = 6 carts return.\n3. 36 * 2 = 72 carts checkout.\n4. Total carts returning = 36 - 6 + 72 = 102.\nFinal Answer: 102"
+  },
+  {
+    "id": 60,
+    "question": "Aboard a research vessel, Jasmine observes 28 remote-controlled submersibles diving into the deep ocean over 4 hours. Hoisted back onto the ship, 1/2 of those initial units return during the ensuing 4 hours. Discovering a new trench prompts the deployment of 2 times the original submersible count in the subsequent 4-hour block. With the expedition wrapping up as all remaining underwater units are retrieved in the final 4 hours, how many submersibles does Jasmine log returning?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 submersibles dive in the first 4 hours.  \n2. 14 submersibles return in the next 4 hours.  \n3. 56 submersibles are deployed in the third 4-hour block.  \n4. 56 submersibles are retrieved in the final 4 hours.  \nFinal Answer: 56",
+    "pred_answer_masked": "56",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 28 submersibles dive initially.\n2. 28 * 1/2 = 14 return.\n3. 28 * 2 = 56 deploy.\n4. Total returning = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  },
+  {
+    "id": 61,
+    "question": "City ambulance tracking by Kyle begins with 20 emergency vehicles leaving the hospital bay in a 2-hour span. Call completions bring 1/2 of that first group back over the next 2 hours. A multi-vehicle accident subsequently pulls 2 times the original ambulance count out of the bay during the third 2-hour window. As the crisis resolves and every deployed ambulance returns in the final 2 hours, what is Kyle's closing return count?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 vehicles leave initially  \n2. 10 vehicles return (half of 20)  \n3. 40 vehicles leave (2 times 20)  \n4. 60 vehicles return (20 + 10 + 40)  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 20 vehicles leave initially.\n2. 20 * 1/2 = 10 return.\n3. 20 * 2 = 40 leave.\n4. Total returning = 20 - 10 + 40 = 50.\nFinal Answer: 50"
+  },
+  {
+    "id": 62,
+    "question": "Front desk logs kept by Luna show 12 patrol cars exiting the police precinct garage during the first 3 hours. Filing paperwork brings exactly 1/3 of that initial fleet back in the following 3 hours. The night shift's commencement requires 2 times the original number of cars to drive out for patrol over the next 3-hour interval. Assuming the shift ends with every active patrol car returning in the final 3 hours, how many returning vehicles does Luna process?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 patrol cars exit initially  \n2. 1/3 of 12 is 4 cars returning  \n3. 2 times 12 is 24 cars exiting next  \n4. 24 cars return in the final 3 hours  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 patrol cars exit initially.\n2. 12 * 1/3 = 4 cars return.\n3. 12 * 2 = 24 cars drive out.\n4. Total returning = 12 - 4 + 24 = 32.\nFinal Answer: 32"
+  },
+  {
+    "id": 63,
+    "question": "During wildfire season, Miles monitors an airbase where 30 water-dropping helicopters deploy within a 4-hour timeframe. Refueling needs prompt 1/5 of that starting group to return in the subsequent 4 hours. Increasing winds then dictate the launch of 3 times the initial helicopter count into the sky over the third 4-hour block. With the fires contained, all outstanding helicopters fly back to base in the final 4 hours. How many returning aircraft does Miles record at the end?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 helicopters deploy in the first 4 hours.  \n2. 1/5 of 30 is 6, so 6 return in the next 4 hours.  \n3. 3 times 30 is 90, so 90 deploy in the third 4-hour block.  \n4. 30 + 6 + 90 = 126 helicopters are airborne.  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 helicopters deploy initially.\n2. 30 * 1/5 = 6 return.\n3. 30 * 3 = 90 launch.\n4. Total returning = 30 - 6 + 90 = 114.\nFinal Answer: 114"
+  },
+  {
+    "id": 64,
+    "question": "Managing a bustling go-kart track, Nora records 40 karts zooming out of the pit lane in the opening 2 hours. Lap completions see 1/4 of that original number parked back in the pit over the ensuing 2 hours. A massive birthday party then drives out 2 times the initial go-kart count during the next 2-hour period. When the track closes and every single kart is returned in the final 2 hours, what is Nora's total count of returning karts?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 karts initially zoom out  \n2. 1/4 of 40 = 10 karts parked back  \n3. 2 times 40 = 80 karts driven out during birthday party  \n4. 40 karts returned in final 2 hours  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 karts leave initially.\n2. 40 * 1/4 = 10 return.\n3. 40 * 2 = 80 drive out.\n4. Total returning = 40 - 10 + 80 = 110.\nFinal Answer: 110"
+  },
+  {
+    "id": 65,
+    "question": "Supermarket entrance observations by Oliver reveal 50 shopping carts pushed into the lot by customers over 3 hours. Cart attendants manage to bring back 1/10 of those specific carts in the following 3 hours. The weekend rush then strips the store of 2 times the original cart count during the third 3-hour window. If the lot is completely cleared and every cart is corralled back inside during the final 3 hours, how many returning carts does Oliver tally?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 carts pushed in  \n2. 5 carts returned (50 * 1/10)  \n3. 100 carts removed (50 * 2)  \n4. 105 carts returned (50 + 5 + 50)  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 carts leave initially.\n2. 50 * 1/10 = 5 return.\n3. 50 * 2 = 100 leave.\n4. Total returning = 50 - 5 + 100 = 145.\nFinal Answer: 145"
+  },
+  {
+    "id": 66,
+    "question": "Tracking pack camels at a desert oasis, Penelope sees an initial group of 18 depart into the dunes during a 4-hour block. Returning to drink water, 1/2 of that first caravan arrives back in the next 4 hours. A neighboring merchant requirement then sends out 3 times the original camel count across the sands over the subsequent 4-hour span. Nightfall forces every camel still in the desert to return to the oasis in the final 4 hours. How many returning camels does Penelope observe in this last stretch?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 camels depart initially  \n2. 18 / 2 = 9 camels return in the next 4 hours  \n3. 3 * 18 = 54 camels depart in the third 4-hour block  \n4. 9 + 54 = 63 camels return in the final 4 hours  \nFinal Answer: 63",
+    "pred_answer_masked": "63",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 18 camels depart initially.\n2. 18 * 1/2 = 9 return.\n3. 18 * 3 = 54 depart.\n4. Total returning = 18 - 9 + 54 = 63.\nFinal Answer: 63"
+  },
+  {
+    "id": 67,
+    "question": "Lifeguard Quinn monitors a coastal break, counting 24 surfers paddling out in the first 5 hours. Riding waves back to shore, 1/4 of that initial group returns over the following 5 hours. An afternoon swell then draws a massive crowd, equaling 2 times the original surfer count, out into the water during the third 5-hour period. As the sun sets and every surfer rides back to the beach in the final 5 hours, what is Quinn's returning total?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 surfers in the first 5 hours  \n2. 24 * 1/4 = 6 surfers return in the next 5 hours  \n3. 24 * 2 = 48 surfers come in during the third 5-hour period  \n4. 24 + 6 + 48 = 78 surfers total  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 surfers paddle out initially.\n2. 24 * 1/4 = 6 return.\n3. 24 * 2 = 48 paddle out.\n4. Total returning = 24 - 6 + 48 = 66.\nFinal Answer: 66"
+  },
+  {
+    "id": 68,
+    "question": "River kayak rentals managed by Riley kick off with 15 kayaks launching down the rapids in 2 hours. Dock returns account for 1/3 of that first fleet over the subsequent 2-hour window. A corporate retreat then rents out 3 times the initial number of kayaks during the next 2 hours. Before the camp locks up, every kayak still on the river is paddled back in the final 2 hours. Calculate the number of returning kayaks Riley observes at the close.",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 kayaks launched in the first 2 hours  \n2. 1/3 of 15 is 5, so 5 kayaks return in the next 2 hours  \n3. 3 times 15 is 45, so 45 kayaks are rented out in the next 2 hours  \n4. 15 - 5 = 10 kayaks remain on the river after the first return  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 kayaks launch initially.\n2. 15 * 1/3 = 5 return.\n3. 15 * 3 = 45 launch.\n4. Total returning = 15 - 5 + 45 = 55.\nFinal Answer: 55"
+  },
+  {
+    "id": 69,
+    "question": "City plaza monitoring by Simon shows 36 double-decker tour buses rolling out of the terminal in a 3-hour timeframe. Completing their routes, 1/6 of that starting fleet returns in the ensuing 3 hours. The peak sightseeing hours then push 2 times the original bus count out of the terminal over the third 3-hour interval. With late evening bringing every outstanding bus back to the plaza in the final 3 hours, how many returning buses does Simon document?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 buses start  \n2. 36 ÷ 6 = 6 buses return  \n3. 36 × 2 = 72 buses leave  \n4. 36 + 6 + 72 = 114 buses total  \nFinal Answer: 114",
+    "pred_answer_masked": "114",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 buses roll out initially.\n2. 36 * 1/6 = 6 return.\n3. 36 * 2 = 72 roll out.\n4. Total returning = 36 - 6 + 72 = 102.\nFinal Answer: 102"
+  },
+  {
+    "id": 70,
+    "question": "Mountain ski resort operations feature 28 aerial gondolas leaving Tessa's base station within 4 hours. Descending back to the base, 1/2 of that original group returns over the next 4 hours. Fresh powder then prompts 2 times the initial gondola count to travel up the peak during the subsequent 4-hour block. As ski patrol clears the slopes, every gondola on the line returns to the station in the final 4 hours. How many returning gondolas does Tessa count?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 gondolas leave in the first 4 hours  \n2. 14 gondolas return in the next 4 hours  \n3. 56 gondolas go up in the next 4 hours  \n4. 56 gondolas return in the final 4 hours  \nFinal Answer: 56",
+    "pred_answer_masked": "56",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 28 gondolas leave initially.\n2. 28 * 1/2 = 14 return.\n3. 28 * 2 = 56 leave.\n4. Total returning = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  },
+  {
+    "id": 71,
+    "question": "Rooftop pigeon coop tracking by Ulysses begins with a release of 20 carrier pigeons over 2 hours. The coop sees 1/2 of that original flock return from the city skyline in the following 2 hours. He then dispatches 2 times the initial number of pigeons with messages during the third 2-hour period. Dusk arrives, prompting every pigeon still in flight to roost back in the coop in the final 2 hours. What is Ulysses's concluding return count?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 pigeons released  \n2. 10 pigeons return (20 * 1/2)  \n3. 40 pigeons dispatched (20 * 2)  \n4. 40 pigeons return (40)  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 20 pigeons depart initially.\n2. 20 * 1/2 = 10 return.\n3. 20 * 2 = 40 depart.\n4. Total returning = 20 - 10 + 40 = 50.\nFinal Answer: 50"
+  },
+  {
+    "id": 72,
+    "question": "Botanical garden beekeeper Violet logs 12 worker bees leaving the main hive to forage in a 3-hour window. Flying back with pollen, exactly 1/3 of that first swarm returns in the next 3 hours. The afternoon sun then triggers a massive exodus of 2 times the original bee count during the subsequent 3-hour interval. Before temperatures drop, every foraging bee returns to the hive in the final 3 hours. How many returning bees does Violet observe in this period?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 worker bees leave the hive.  \n2. 1/3 of 12 is 4, so 4 bees return in the next 3 hours.  \n3. 2 times the original count is 24, so 24 bees leave in the next 3 hours.  \n4. All 24 bees return in the final 3 hours.  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 bees depart initially.\n2. 12 * 1/3 = 4 return.\n3. 12 * 2 = 24 depart.\n4. Total returning = 12 - 4 + 24 = 32.\nFinal Answer: 32"
+  },
+  {
+    "id": 73,
+    "question": "Control tower logs at a shipping port kept by Wyatt show 30 cargo ships sailing out in the first 4 hours. Finishing local deliveries, 1/5 of that starting fleet returns to port over the ensuing 4 hours. A supply chain surge then pushes 3 times the initial ship count out to sea during the third 4-hour block. With the cycle ending as every scheduled ship returns to the harbor docks in the final 4 hours, what is Wyatt's final return tally?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 ships sail out initially  \n2. 30 * 1/5 = 6 ships return in the second block  \n3. 30 * 3 = 90 ships sail out in the third block  \n4. 30 + 6 + 90 = 126 ships total return in the final block  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 ships sail out initially.\n2. 30 * 1/5 = 6 return.\n3. 30 * 3 = 90 sail out.\n4. Total returning = 30 - 6 + 90 = 114.\nFinal Answer: 114"
+  },
+  {
+    "id": 74,
+    "question": "Winter lodge rentals managed by Xena start with 40 snowmobiles speeding into the forest over a 2-hour span. Shed returns represent 1/4 of that original fleet in the following 2-hour window. A group of ice fishers then rents out 2 times the initial snowmobile count during the next 2 hours. As darkness sets in, every machine still out in the cold is driven back to the lodge in the final 2 hours. Calculate Xena's count of returning snowmobiles.",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 snowmobiles start.  \n2. 10 snowmobiles return (1/4 of 40).  \n3. 80 snowmobiles are rented out (2 times 40).  \n4. 40 snowmobiles return (initial count).  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 snowmobiles speed out initially.\n2. 40 * 1/4 = 10 return.\n3. 40 * 2 = 80 speed out.\n4. Total returning = 40 - 10 + 80 = 110.\nFinal Answer: 110"
+  },
+  {
+    "id": 75,
+    "question": "Farming estate harvests involve Yusuf tracking 50 tractors rumbling out of the barn in a 3-hour period. Unloading crops brings exactly 1/10 of those specific tractors back in the next 3 hours. A threatening storm requires 2 times the original tractor count to drive out and speed up work during the third 3-hour stretch. Once the fields are completely cleared, every active tractor returns to the barn in the final 3 hours. How many returning tractors does Yusuf document?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 tractors leave the barn initially.  \n2. 1/10 of 50 tractors return, which is 5.  \n3. 2 times the original count is 100 tractors leaving during the storm.  \n4. All tractors, including the 5 that returned and the 100 that left, return in the final stretch, totaling 105.  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 tractors rumble out initially.\n2. 50 * 1/10 = 5 return.\n3. 50 * 2 = 100 rumble out.\n4. Total returning = 50 - 5 + 100 = 145.\nFinal Answer: 145"
+  },
+  {
+    "id": 76,
+    "question": "Skyscraper construction logistics overseen by Zara start with 18 excavators leaving the lot in 4 hours. Maintenance needs cause 1/2 of that starting fleet to drive back over the subsequent 4 hours. A massive trenching phase then pulls 3 times the initial excavator count out of the lot during the next 4-hour window. When the shift ends and every machine still in the dirt returns in the final 4 hours, what is Zara's exact returning count?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 excavators leave in 4 hours.  \n2. 1/2 of 18 is 9, so 9 excavators return.  \n3. 3 times 18 is 54, so 54 excavators leave.  \n4. 18 - 9 + 54 = 63 excavators remain.  \nFinal Answer: 63",
+    "pred_answer_masked": "63",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 18 excavators leave initially.\n2. 18 * 1/2 = 9 return.\n3. 18 * 3 = 54 leave.\n4. Total returning = 18 - 9 + 54 = 63.\nFinal Answer: 63"
+  },
+  {
+    "id": 77,
+    "question": "Wildlife reserve guided tours begin with Aaron watching 24 safari jeeps drive out of the compound over 5 hours. Tour completions bring 1/4 of that original fleet back in the ensuing 5 hours. A rare lion sighting then triggers a massive rush, sending 2 times the initial jeep count out during the third 5-hour period. As the park closes, every jeep on the dirt roads returns safely in the final 5 hours. How many returning jeeps does Aaron tally at the end?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 jeeps leave initially  \n2. 24 * 1/4 = 6 jeeps return  \n3. 24 * 2 = 48 jeeps leave again  \n4. 24 + 6 + 48 = 78 jeeps return  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 jeeps drive out initially.\n2. 24 * 1/4 = 6 return.\n3. 24 * 2 = 48 drive out.\n4. Total returning = 24 - 6 + 48 = 66.\nFinal Answer: 66"
+  },
+  {
+    "id": 78,
+    "question": "Tropical resort activities managed by Bella show 15 stand-up paddleboards checked out in the opening 2 hours. Paddled back to shore, 1/3 of that first group returns over the next 2 hours. A perfect afternoon tide then draws 3 times the original paddleboard count out of the shack during the subsequent 2-hour interval. Before sunset, every board floating in the bay is brought back in the final 2 hours. Calculate the number of returning paddleboards Bella observes.",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 paddleboards checked out initially  \n2. 15 * 1/3 = 5 paddleboards return in the next 2 hours  \n3. 15 * 3 = 45 paddleboards checked out in the next 2 hours  \n4. 5 + 45 = 50 paddleboards floating in the bay before sunset  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 paddleboards checked out initially.\n2. 15 * 1/3 = 5 return.\n3. 15 * 3 = 45 checked out.\n4. Total returning = 15 - 5 + 45 = 55.\nFinal Answer: 55"
+  },
+  {
+    "id": 79,
+    "question": "Music festival food trucks tracked by Carter begin with 36 vehicles leaving the commissary in a 3-hour timeframe. Supply restocking brings 1/6 of that starting group back over the following 3 hours. The dinner rush then deploys 2 times the initial truck count out to the designated zones during the third 3-hour block. Once the festival concludes and every active truck returns to the commissary in the final 3 hours, what is Carter's concluding return count?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 vehicles start  \n2. 36 * 1/6 = 6 vehicles return  \n3. 36 * 2 = 72 vehicles deployed  \n4. 36 + 6 - 72 + 36 = 36  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 trucks leave initially.\n2. 36 * 1/6 = 6 return.\n3. 36 * 2 = 72 deploy.\n4. Total returning = 36 - 6 + 72 = 102.\nFinal Answer: 102"
+  },
+  {
+    "id": 80,
+    "question": "Ocean boardwalk vending managed by Diana starts with 28 ice cream carts rolled out in 4 hours. Freezer refills cause 1/2 of those specific carts to return over the ensuing 4-hour window. A massive heatwave then pushes 2 times the original cart count out into the sun during the next 4 hours. Shutting down for the night, every cart still selling returns to the storage facility in the final 4 hours. How many returning ice cream carts does Diana count?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 ÷ 2 = 14  \n2. 28 × 2 = 56  \n3. 14 + 56 = 70  \n4. 70 + 28 = 98  \nFinal Answer: 98",
+    "pred_answer_masked": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 28 carts roll out initially.\n2. 28 * 1/2 = 14 return.\n3. 28 * 2 = 56 roll out.\n4. Total returning = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  },
+  {
+    "id": 81,
+    "question": "Ecologist Eli observes an old barn where 20 swallows fly out of the loft within a 2-hour span. Feeding their chicks, 1/2 of that first flock swoops back inside during the next 2 hours. An passing insect swarm then triggers the departure of 2 times the initial bird count over the subsequent 2-hour interval. As night falls, every swallow hunting in the sky returns to the barn in the final 2 hours. What is Eli's count of returning swallows in this last period?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 swallows fly out initially.  \n2. 1/2 of 20 is 10 swallows that return.  \n3. 2 times 20 is 40 swallows that leave due to the swarm.  \n4. 40 swallows return in the final 2 hours.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 20 swallows fly out initially.\n2. 20 * 1/2 = 10 return.\n3. 20 * 2 = 40 fly out.\n4. Total returning = 20 - 10 + 40 = 50.\nFinal Answer: 50"
+  },
+  {
+    "id": 82,
+    "question": "Logistics hub operations managed by Freya kick off with 12 delivery vans driving out in 3 hours. Finishing their local routes, exactly 1/3 of that original fleet returns over the following 3 hours. A flash sale then necessitates a shipping wave comprising 2 times the initial van count during the third 3-hour block. By the shift's end, every van still on the road returns to the hub in the final 3 hours. How many returning vans does Freya tally?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 vans start  \n2. 4 vans return (12 / 3)  \n3. 24 vans go out (12 * 2)  \n4. 12 vans return (12)  \nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 vans drive out initially.\n2. 12 * 1/3 = 4 return.\n3. 12 * 2 = 24 drive out.\n4. Total returning = 12 - 4 + 24 = 32.\nFinal Answer: 32"
+  },
+  {
+    "id": 83,
+    "question": "Ferry terminal tracking by George shows 30 passenger ferries sailing away from the docks in the first 4 hours. Dropping off commuters, 1/5 of that starting fleet returns over the next 4 hours. A holiday weekend surge then requires 3 times the original ferry count to depart during the subsequent 4-hour window. Halting operations for the night, every ferry out at sea sails back to the terminal in the final 4 hours. Calculate the number of returning ferries George observes.",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 passenger ferries sail away initially.  \n2. 1/5 of 30 is 6, so 6 ferries return.  \n3. 3 times the original count is 90 ferries depart.  \n4. All ferries, including the 90 that departed and the 6 that returned, sail back, totaling 96.  \nFinal Answer: 96",
+    "pred_answer_masked": "96",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 ferries sail away initially.\n2. 30 * 1/5 = 6 return.\n3. 30 * 3 = 90 sail away.\n4. Total returning = 30 - 6 + 90 = 114.\nFinal Answer: 114"
+  },
+  {
+    "id": 84,
+    "question": "Downtown riverwalk logs kept by Hannah detail 40 water taxis cruising away from the pier over 2 hours. Tying up at the dock, 1/4 of that first group returns in the ensuing 2-hour period. An evening baseball game then pulls 2 times the initial taxi count out to pick up fans during the third 2-hour stretch. With the river finally clearing as every taxi returns to the pier in the last 2 hours, what is Hannah's exact returning count?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 water taxis initially cruise away  \n2. 1/4 of 40 = 10 taxis return in the second 2-hour period  \n3. 2 times 40 = 80 taxis go out during the third 2-hour stretch  \n4. Total taxis that left = 40 + 80 = 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 40 taxis cruise away initially.\n2. 40 * 1/4 = 10 return.\n3. 40 * 2 = 80 cruise away.\n4. Total returning = 40 - 10 + 80 = 110.\nFinal Answer: 110"
+  },
+  {
+    "id": 85,
+    "question": "Bicycle sharing network data analyzed by Ian shows 50 bikes unlocked and ridden away in a 3-hour timeframe. Docking back at the hub, 1/10 of those specific bicycles return over the next 3 hours. The afternoon commute then strips the hub of 2 times the original bike count during the subsequent 3-hour block. Midnight hits, forcing every checked-out bicycle back to the hub in the final 3 hours. How many returning bikes does Ian record in this closing window?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 bikes are initially ridden away.  \n2. 1/10 of 50 is 5.  \n3. 2 times the original bike count is 100.  \n4. 50 - 5 + 100 = 145.  \nFinal Answer: 145",
+    "pred_answer_masked": "145",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 50 bikes unlocked initially.\n2. 50 * 1/10 = 5 return.\n3. 50 * 2 = 100 unlocked.\n4. Total returning = 50 - 5 + 100 = 145.\nFinal Answer: 145"
+  },
+  {
+    "id": 86,
+    "question": "Roller skating rink counter operations by Julia begin with 18 pairs of skates handed out in 4 hours. Turned back in, 1/2 of that starting group is returned over the following 4-hour period. A popular DJ set then triggers the checkout of 3 times the initial skate count during the third 4-hour interval. Closing the rink, every pair of skates still on the floor is returned to the counter in the final 4 hours. What is Julia's final tally of returning skates?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 pairs of skates are handed out initially.  \n2. 1/2 of 18 is 9, so 9 pairs are returned.  \n3. 3 times the initial count is 54, so 54 pairs are checked out.  \n4. Total skates on the floor before final return is 18 - 9 + 54 = 63.  \nFinal Answer: 63",
+    "pred_answer_masked": "63",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 18 pairs of skates handed out initially.\n2. 18 * 1/2 = 9 return.\n3. 18 * 3 = 54 checked out.\n4. Total returning = 18 - 9 + 54 = 63.\nFinal Answer: 63"
+  },
+  {
+    "id": 87,
+    "question": "Bowling alley shoe rentals managed by Kevin start with 24 pairs given out over 5 hours. Dropped off by finished players, 1/4 of that original group returns in the ensuing 5-hour window. A cosmic bowling event then rents out 2 times the initial shoe count during the next 5 hours. When the lights turn on and the alley closes, every pair of shoes used in the lanes is returned in the final 5 hours. How many returning pairs does Kevin count?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 pairs given out initially  \n2. 1/4 of 24 is 6 pairs returned  \n3. 2 times 24 is 48 pairs rented out  \n4. Total pairs used is 24 + 48 = 72 pairs  \nFinal Answer: 72",
+    "pred_answer_masked": "72",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 pairs given out initially.\n2. 24 * 1/4 = 6 return.\n3. 24 * 2 = 48 given out.\n4. Total returning = 24 - 6 + 48 = 66.\nFinal Answer: 66"
+  },
+  {
+    "id": 88,
+    "question": "Museum entrance tracking by Lily involves handing out 15 audio guides to visitors in the first 2 hours. Placed back into the charging rack, 1/3 of that first group returns over the subsequent 2 hours. A massive field trip then demands 3 times the original guide count to be handed out during the third 2-hour block. Locking the doors, every audio guide in use is returned in the final 2 hours. Calculate Lily's count of returning guides at the end of the day.",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 audio guides are handed out initially.  \n2. 1/3 of 15 is 5, so 5 return after the first 2 hours.  \n3. 3 times the original count is 45, so 45 are handed out in the third block.  \n4. Total guides in use at the end of the day is 15 + 45 = 60.  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 audio guides handed out initially.\n2. 15 * 1/3 = 5 return.\n3. 15 * 3 = 45 handed out.\n4. Total returning = 15 - 5 + 45 = 55.\nFinal Answer: 55"
+  },
+  {
+    "id": 89,
+    "question": "VR arcade room operations by Mason show 36 headsets checked out to gamers within a 3-hour span. Sanitization station returns equal 1/6 of that starting fleet over the next 3 hours. A new multiplayer launch then pulls 2 times the initial headset count onto the gaming floor during the subsequent 3-hour window. At closing time, every VR headset being used is returned to the counter in the final 3 hours. What is Mason's closing return count?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 headsets checked out  \n2. 36 / 6 = 6 returned from sanitization  \n3. 2 * 36 = 72 pulled for multiplayer  \n4. 36 + 6 + 72 = 114  \nFinal Answer: 114",
+    "pred_answer_masked": "114",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 headsets checked out initially.\n2. 36 * 1/6 = 6 return.\n3. 36 * 2 = 72 checked out.\n4. Total returning = 36 - 6 + 72 = 102.\nFinal Answer: 102"
+  },
+  {
+    "id": 90,
+    "question": "Theme park kiosk rentals managed by Nina start with 28 portable chargers taken out over 4 hours. Plugged back into the kiosk, 1/2 of that original group returns in the ensuing 4-hour period. Draining batteries during evening parades then trigger the checkout of 2 times the initial charger count during the next 4 hours. As the park empties, every charger out with a guest is returned to the kiosk in the final 4 hours. How many returning chargers does Nina observe?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 ÷ 2 = 14  \n2. 28 × 2 = 56  \n3. 56 + 14 = 70  \n4. 70 + 28 = 98  \nFinal Answer: 98",
+    "pred_answer_masked": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 28 chargers taken out initially.\n2. 28 * 1/2 = 14 return.\n3. 28 * 2 = 56 taken out.\n4. Total returning = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  },
+  {
+    "id": 91,
+    "question": "Bookstore textbook rentals handled by Oscar begin with 20 chemistry books scanned out in a 2-hour timeframe. Dropped classes result in 1/2 of that first group returning over the following 2 hours. The add/drop deadline then sparks a massive rush, loaning out 2 times the original textbook count during the third 2-hour block. At the semester's end, every checked-out textbook is returned to the store in the final 2 hours. What is Oscar's exact return count in this last period?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 books scanned out initially  \n2. 10 books returned (half of 20)  \n3. 40 books loaned out (2 times 20)  \n4. 60 books returned (20 original + 40 loaned)  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 20 books scanned out initially.\n2. 20 * 1/2 = 10 return.\n3. 20 * 2 = 40 loaned out.\n4. Total returning = 20 - 10 + 40 = 50.\nFinal Answer: 50"
+  },
+  {
+    "id": 92,
+    "question": "Community workshop tracking by Piper shows 12 power drills loaned out to builders within 3 hours. Brought back in working order, 1/3 of that starting group returns over the next 3-hour window. A weekend garden project then checks out 2 times the initial drill count during the subsequent 3 hours. By Sunday evening, every power drill located at a project site is returned to the workshop in the final 3 hours. Calculate the number of returning drills Piper tallies.",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 power drills loaned out  \n2. 1/3 of 12 is 4, so 4 return  \n3. 2 times 12 is 24, so 24 are checked out  \n4. 12 + 4 + 24 = 40, then 40 - 12 = 28  \nFinal Answer: 28",
+    "pred_answer_masked": "28",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 12 power drills loaned out initially.\n2. 12 * 1/3 = 4 return.\n3. 12 * 2 = 24 checked out.\n4. Total returning = 12 - 4 + 24 = 32.\nFinal Answer: 32"
+  },
+  {
+    "id": 93,
+    "question": "Trail center rentals managed by Quincy kick off with 30 sets of hiking poles handed out in 4 hours. Dropped off by early finishers, 1/5 of that original group returns in the ensuing 4-hour period. An afternoon guided hike then takes out 3 times the initial pole count during the next 4 hours. Before rangers lock the gates, every set of poles on the mountain is returned in the final 4 hours. How many returning sets of poles does Quincy count?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 sets handed out initially  \n2. 30 × 1/5 = 6 sets returned  \n3. 30 × 3 = 90 sets taken out  \n4. 30 + 6 + 90 = 126 sets total  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 30 sets handed out initially.\n2. 30 * 1/5 = 6 return.\n3. 30 * 3 = 90 taken out.\n4. Total returning = 30 - 6 + 90 = 114.\nFinal Answer: 114"
+  },
+  {
+    "id": 94,
+    "question": "Dive shop rentals overseen by Ruby start with 40 snorkel masks given to beachgoers over 2 hours. Rinsed and returned, 1/4 of that first group comes back during the subsequent 2-hour window. A massive catamaran tour then rents out 2 times the original mask count during the third 2-hour block. As the sun dips below the horizon, every snorkel mask still out is returned to the shop in the final 2 hours. What is Ruby's final count of returning masks?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 snorkel masks are given out initially.  \n2. 1/4 of 40 is 10, so 10 masks are returned.  \n3. 2 times 40 is 80, so 80 masks are rented out in the third block.  \n4. Total masks out before final return is 40 - 10 + 80 = 110.  \nFinal Answer: 110",
+    "pred_answer_masked": "110",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 40 snorkel masks given out initially.\n2. 40 * 1/4 = 10 return.\n3. 40 * 2 = 80 rented out.\n4. Total returning = 40 - 10 + 80 = 110.\nFinal Answer: 110"
+  },
+  {
+    "id": 95,
+    "question": "Oceanfront resort setup by Sam involves 50 beach chairs placed on the sand in a 3-hour span. Folded up and brought back, 1/10 of that starting fleet returns to the hut over the next 3 hours. The midday sun then drags 2 times the initial chair count out onto the beach during the subsequent 3-hour interval. When the tide comes in at dusk, every chair on the sand is returned to the hut in the final 3 hours. How many returning chairs does Sam document?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 chairs are placed on the sand.  \n2. 1/10 of 50 is 5 chairs returned to the hut.  \n3. 2 times the initial chair count is 100 chairs brought out.  \n4. All chairs (50 + 100 = 150) are returned to the hut.  \nFinal Answer: 150",
+    "pred_answer_masked": "150",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 50 beach chairs placed on the sand initially.\n2. 50 * 1/10 = 5 return.\n3. 50 * 2 = 100 brought out.\n4. Total returning = 50 - 5 + 100 = 145.\nFinal Answer: 145"
+  },
+  {
+    "id": 96,
+    "question": "Park pavilion tracking by Tara begins with 18 packed picnic baskets handed out in 4 hours. Brought back empty, 1/2 of that original group returns over the ensuing 4-hour period. A large family reunion then takes out 3 times the initial basket count during the next 4 hours. Hitting curfew, every picnic basket sitting on the grass is returned to the pavilion in the final 4 hours. Calculate Tara's count of returning baskets at the close.",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 baskets handed out in 4 hours  \n2. 18 / 2 = 9 baskets returned after 4 hours  \n3. 3 * 18 = 54 baskets taken out by family reunion  \n4. 18 + 9 - 54 = -27 baskets (net change)  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 18 picnic baskets handed out initially.\n2. 18 * 1/2 = 9 return.\n3. 18 * 3 = 54 taken out.\n4. Total returning = 18 - 9 + 54 = 63.\nFinal Answer: 63"
+  },
+  {
+    "id": 97,
+    "question": "Observation deck kiosk rentals by Victor show 24 pairs of binoculars loaned out in 5 hours. Placed back on the counter, 1/4 of that first group returns over the following 5-hour window. A rare comet sighting then prompts 2 times the original binocular count to be rented out during the subsequent 5 hours. After the event ends, every pair of binoculars in use is returned to the kiosk in the final 5 hours. What is Victor's exact returning tally?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 pairs of binoculars loaned out in 5 hours  \n2. 1/4 of 24 is 6, so 6 pairs returned  \n3. 2 times 24 is 48, so 48 pairs rented out  \n4. 24 + 6 + 48 = 78 pairs in use  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 24 pairs of binoculars loaned out initially.\n2. 24 * 1/4 = 6 return.\n3. 24 * 2 = 48 rented out.\n4. Total returning = 24 - 6 + 48 = 66.\nFinal Answer: 66"
+  },
+  {
+    "id": 98,
+    "question": "Outdoor outfitter logistics managed by Willow start with 15 camping tents checked out in 2 hours. Packed up and returned, 1/3 of that starting group arrives back over the next 2-hour period. A massive scouting jamboree then loads 3 times the initial tent count into trucks during the third 2-hour block. Concluding the camping season, every tent in the woods is returned to the outfitter in the final 2 hours. How many returning tents does Willow count?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 tents checked out  \n2. 15 × 1/3 = 5 tents returned  \n3. 15 × 3 = 45 tents loaded  \n4. 15 + 45 = 60 tents in total  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 15 camping tents checked out initially.\n2. 15 * 1/3 = 5 return.\n3. 15 * 3 = 45 loaded into trucks.\n4. Total returning = 15 - 5 + 45 = 55.\nFinal Answer: 55"
+  },
+  {
+    "id": 99,
+    "question": "Bait shop register logs kept by Xavier record 36 fishing rods rented out over 3 hours. Anglers catching their limit bring back 1/6 of that original group in the ensuing 3-hour window. A weekend derby then takes 2 times the initial rod count down to the docks during the subsequent 3 hours. When the final horn blows, every fishing rod out on the water is returned to the shop in the final 3 hours. Calculate Xavier's tally of returning rods.",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 fishing rods rented out  \n2. 36 * 1/6 = 6 rods returned  \n3. 36 * 2 = 72 rods taken down  \n4. 72 + 6 = 78 rods returned  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. 36 fishing rods rented out initially.\n2. 36 * 1/6 = 6 return.\n3. 36 * 2 = 72 taken down.\n4. Total returning = 36 - 6 + 72 = 102.\nFinal Answer: 102"
+  },
+  {
+    "id": 100,
+    "question": "Treasure-hunting kiosk rentals handled by Yolanda begin with 28 metal detectors handed out in a 4-hour timeframe. Finding nothing, eager beachcombers bring back 1/2 of that first group over the following 4 hours. High tide receding reveals fresh sand, prompting 2 times the original detector count to be taken out during the next 4-hour interval. Once the sun completely sets, every metal detector sweeping the beach is returned in the final 4 hours. How many returning detectors does Yolanda observe?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 * 1/2 = 14  \n2. 28 * 2 = 56  \n3. 28 - 14 = 14  \n4. 14 + 56 = 70  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. 28 metal detectors handed out initially.\n2. 28 * 1/2 = 14 return.\n3. 28 * 2 = 56 taken out.\n4. Total returning = 28 - 14 + 56 = 70.\nFinal Answer: 70"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "At the bakery, 4 sourdough loaves weighing 1/2-pound each were ordered by Alice, priced at $10.00/pound. This purchase was supplemented by a pound and a half of cookie dough valued at $8.00 a pound. Determine her total expenditure.",
+    "ground_truth": "32"
+  },
+  {
+    "id": 2,
+    "question": "During his visit to the pastry shop, 3 cake tiers weighing 1.5-pound each were requested by Bob, carrying a cost of $8.00 per pound. The order was completed with 2 pounds of vanilla frosting at $9.00 a pound. What is the final amount he owed?",
+    "ground_truth": "54"
+  },
+  {
+    "id": 3,
+    "question": "Needing some fresh bread, 8 baguettes (1/4-pound each) were picked up by Charlie at a rate of $16.00 per pound. Half a pound of artisanal butter, which runs $10.00 a pound, was additionally selected. Calculate the total money spent.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 4,
+    "question": "While shopping for a party, 5 artisan rolls weighing 1/2 pound each were grabbed by Diana for $14.00 per pound. Furthermore, 2.5 pounds of specialty flour priced at $6.00 per pound were acquired. How much was her overall bill?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 5,
+    "question": "For a baking project, 2 pie crusts (3/4-pound each) with a price tag of $20.00 a pound were bought by Evan. Alongside this, 1.5 pounds of cherry filling were purchased for $12.00 per pound. Ascertain the total expense.",
+    "ground_truth": "48"
+  },
+  {
+    "id": 6,
+    "question": "At the local bakery, 6 brioche buns weighing 1/2-pound each were requested by Fiona, costing $18.00/pound. She also added one and a quarter pounds of sliced almonds priced at $8.00 a pound. Figure out the total amount spent.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 7,
+    "question": "Carrying a price of $10.00/pound, 4 fruitcakes weighing 1.5-pound each were selected by George at the cake shop. Half a pound of royal icing at $14.00 a pound was subsequently added. What was the complete final bill?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 8,
+    "question": "A total of 10 chocolate croissants (1/4-pound each), priced at $12.00 per pound, were purchased by Hannah when she visited the bakery. Following that, 2 pounds of premium chocolate chips for $11.00 per pound were acquired. Compute the total cost.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 9,
+    "question": "Seeking some breakfast treats, 2 cinnamon rolls weighing 1/2-pound each were obtained by Ian, running $22.00 per pound. Then, 3 pounds of fresh yeast costing $7.00 a pound were also bagged. Find the total amount of money spent.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 10,
+    "question": "From the baker, 4 jumbo muffins (3/4-pound each) were ordered by Jane at a price of $12.00/pound. To complete the purchase, a pound and a half of fresh blueberries were added for $16.00 a pound. How much did the transaction cost in total?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 11,
+    "question": "Carrying a price tag of $10.00/pound, 4 salmon fillets weighing 1/2-pound each were secured by Kevin from the fishmonger. To complete the purchase at the fish market, a pound and a half of fresh shrimp running $8.00 a pound was also added. What is the final amount spent?",
+    "ground_truth": "32"
+  },
+  {
+    "id": 12,
+    "question": "Priced at $8.00 per pound, 3 whole trouts measuring 1.5-pound each were requested by Laura during her seafood market visit. An additional 2 pounds of sea scallops were bought for $9.00 a pound. Determine her overall bill.",
+    "ground_truth": "54"
+  },
+  {
+    "id": 13,
+    "question": "Needing some appetizers, 8 crab cakes weighing 1/4-pound each and costing $16.00 per pound were acquired by Mike. Half a pound of smoked eel, priced at $10.00 a pound, was also picked up. Calculate the overall expenditure.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 14,
+    "question": "For a family dinner, 5 pieces of cod (weighing 1/2 pound each) were grabbed by Nina at a rate of $14.00 per pound. She furthermore obtained 2.5 pounds of mussels for $6.00 per pound. How much money was handed over in total?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 15,
+    "question": "Preparing for a seafood boil, 2 lobster tails (3/4-pound each) running $20.00 a pound were bought by Oscar. Along with these, 1.5 pounds of crawfish carrying a $12.00 per pound price tag were added. What is the sum of the expenses?",
+    "ground_truth": "48"
+  },
+  {
+    "id": 16,
+    "question": "At the fishmonger, 6 tuna steaks weighing 1/2-pound each were ordered by Paula, costing $18.00/pound. She subsequently added one and a quarter pounds of calamari rings valued at $8.00 a pound. Ascertain the total cost.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 17,
+    "question": "A request for 4 snappers (1.5-pound each) at $10.00/pound was made by Quinn at the fish market. Half a pound of caviar, which costs $14.00 a pound, was also thrown in. How much was the final bill?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 18,
+    "question": "Upon visiting the seafood stall, 10 tilapia fillets weighing 1/4-pound each were purchased by Rachel for $12.00 per pound. Afterwards, 2 pounds of clam meat at $11.00 per pound were selected. Find the total amount owed.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 19,
+    "question": "Because he needed some fish for stew, 2 swordfish chunks (1/2-pound each) costing $22.00 per pound were procured by Sam. Additionally, 3 pounds of assorted shellfish running $7.00 a pound were gathered. Figure out the final amount spent.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 20,
+    "question": "From the fishmonger, 4 halibut cuts weighing 3/4-pound each were requested by Tina at a price of $12.00/pound. A pound and a half of crab legs, listed at $16.00 a pound, was also bought. How much money did she part with?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 21,
+    "question": "Uma's visit to the coffee shop resulted in the selection of 4 bags of espresso beans (1/2-pound each) listed at $10.00/pound by the barista. Furthermore, a pound and a half of loose leaf chai was acquired for $8.00 a pound. Calculate the overall cost incurred.",
+    "ground_truth": "32"
+  },
+  {
+    "id": 22,
+    "question": "At the roastery, 3 sacks of Colombian coffee weighing 1.5-pound each were requested by Victor, priced at $8.00 per pound. In addition, 2 pounds of cocoa powder were bought for $9.00 a pound. What was his total bill?",
+    "ground_truth": "54"
+  },
+  {
+    "id": 23,
+    "question": "Requiring some tea, 8 packets of matcha (1/4-pound each) were obtained by Wendy at a rate of $16.00 per pound. Then, half a pound of rock sugar running $10.00 a pound was added. Compute the final expenditure.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 24,
+    "question": "While shopping for the office, 5 bags of French roast weighing 1/2 pound each were picked up by Xander for $14.00 per pound. Moreover, 2.5 pounds of green tea blends costing $6.00 per pound were acquired. How much money was spent?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 25,
+    "question": "For a cafe startup, 2 premium Ethiopian blends (3/4-pound each) with a price tag of $20.00 a pound were purchased by Yara. Along with that, 1.5 pounds of hazelnut syrup base at $12.00 per pound were secured. Determine the total expense.",
+    "ground_truth": "48"
+  },
+  {
+    "id": 26,
+    "question": "From the coffee shop, 6 decaf blends weighing 1/2-pound each were ordered by Zane, costing $18.00/pound. One and a quarter pounds of peppermint leaves priced at $8.00 a pound were also requested. What was the total amount paid?",
+    "ground_truth": "64"
+  },
+  {
+    "id": 27,
+    "question": "During a trip to the tea house, 4 tins of oolong tea (1.5-pound each) were requested by Alice for $10.00/pound. She also chose half a pound of dried chamomile at $14.00 a pound. Ascertain the total cost of the bill.",
+    "ground_truth": "67"
+  },
+  {
+    "id": 28,
+    "question": "A visit to the coffee market saw Bob purchase 10 bags of blonde roast (1/4-pound each) for $12.00 per pound. Subsequently, 2 pounds of raw coffee cherries were bought for $11.00 per pound. How much did the entire trip cost?",
+    "ground_truth": "52"
+  },
+  {
+    "id": 29,
+    "question": "In need of specialty drinks, 2 bags of Kona coffee weighing 1/2-pound each were grabbed by Charlie at a cost of $22.00 per pound. Next, 3 pounds of instant coffee powder running $7.00 a pound were picked up. Find the total sum spent.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 30,
+    "question": "The barista was asked by Diana for 4 bags of mocha beans (3/4-pound each) priced at $12.00/pound. A pound and a half of herbal fruit tea for $16.00 a pound was also part of the order. How much was her total expenditure?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 31,
+    "question": "Costing $10.00/yard, 4 steel chains (1/2-yard each) were picked up by Ethan from the hardware clerk. An additional yard and a half of copper wire, valued at $8.00 a yard, was included in the haul at the hardware store. How much money was handed over in total?",
+    "ground_truth": "32"
+  },
+  {
+    "id": 32,
+    "question": "At the home improvement store, 3 PVC pipes measuring 1.5-yard each were requested by Fiona at $8.00 per yard. To this, 2 yards of nylon rope were added for $9.00 a yard. Determine her final total bill.",
+    "ground_truth": "54"
+  },
+  {
+    "id": 33,
+    "question": "Needing some cables, 8 heavy duty cords (1/4-yard each) were secured by George for $16.00 per yard. Then, half a yard of aluminum tubing running $10.00 a yard was also grabbed. Calculate the overall amount spent.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 34,
+    "question": "Shopping for a DIY project, 5 pieces of lumber measuring 1/2 yard each were selected by Hannah, carrying a cost of $14.00 per yard. Furthermore, 2.5 yards of rubber seal priced at $6.00 per yard were acquired. Figure out her total expenses.",
+    "ground_truth": "50"
+  },
+  {
+    "id": 35,
+    "question": "For a plumbing fix, 2 flexible hoses (3/4-yard each) with a price tag of $20.00 a yard were bought by Ian. In addition to that, 1.5 yards of insulation tape were purchased for $12.00 per yard. What is the complete cost?",
+    "ground_truth": "48"
+  },
+  {
+    "id": 36,
+    "question": "A request for 6 vinyl strips (1/2-yard each) costing $18.00/yard was made by Jane at the hardware store. One and a quarter yards of fiberglass mesh at $8.00 a yard were also asked for. How much did the total order cost?",
+    "ground_truth": "64"
+  },
+  {
+    "id": 37,
+    "question": "At the hardware depot, 4 wooden planks measuring 1.5-yard each were chosen by Kevin for $10.00/yard. Half a yard of chain-link fence at $14.00 a yard was subsequently added. What was the amount on the final bill?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 38,
+    "question": "During a visit to the building supplies shop, 10 copper pipes (1/4-yard each) priced at $12.00 per yard were purchased by Laura. Afterwards, 2 yards of electrical wire at $11.00 per yard were obtained. Compute the total financial outlay.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 39,
+    "question": "Because he needed some outdoor gear, 2 bungee cords weighing 1/2-yard each were grabbed by Mike for $22.00 per yard. Following this, 3 yards of canvas tarp running $7.00 a yard were picked up. Ascertain the total money spent.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 40,
+    "question": "From the hardware clerk, 4 steel rods (3/4-yard each) costing $12.00/yard were requested by Nina. A yard and a half of plastic tubing for $16.00 a yard was also ordered. Find the total sum she spent.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 41,
+    "question": "At the fabric store, a purchase of 4 silk cuts measuring 1/2-yard each was made by Oscar at a rate of $10.00/yard from the tailor. A yard and a half of cotton lining was subsequently bought for $8.00 a yard. What was the overall bill?",
+    "ground_truth": "32"
+  },
+  {
+    "id": 42,
+    "question": "Visiting the textile shop, 3 denim rolls (1.5-yard each) were requested by Paula for a price of $8.00 per yard. Additionally, 2 yards of elastic band at $9.00 a yard were picked up. Determine the total amount of her bill.",
+    "ground_truth": "54"
+  },
+  {
+    "id": 43,
+    "question": "In need of some trimmings, 8 velvet ribbons measuring 1/4-yard each were acquired by Quinn, costing $16.00 per yard. Half a yard of lace running $10.00 a yard was then added to the haul. Calculate the final expenditure.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 44,
+    "question": "Shopping for a costume, 5 pieces of linen measuring 1/2 yard each were taken by Rachel for $14.00 per yard. She furthermore obtained 2.5 yards of felt priced at $6.00 per yard. How much money was spent in total?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 45,
+    "question": "For a quilt project, 2 printed fabrics (3/4-yard each) featuring a price tag of $20.00 a yard were bought by Sam. Alongside these, 1.5 yards of batting were grabbed for $12.00 per yard. What is the total cost of the expense?",
+    "ground_truth": "48"
+  },
+  {
+    "id": 46,
+    "question": "From the fabric store, 6 chiffon sheets measuring 1/2-yard each were requested by Tina for $18.00/yard. One and a quarter yards of tulle priced at $8.00 a yard were also part of the purchase. Figure out the final amount spent.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 47,
+    "question": "At the haberdashery, 4 wool cuts (1.5-yard each) were selected by Uma, costing $10.00/yard. Half a yard of suede at $14.00 a yard was also thrown into the order. How much was the total final bill?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 48,
+    "question": "Upon visiting the fabric market, 10 organza patches measuring 1/4-yard each were purchased by Victor for $12.00 per yard. Then, 2 yards of faux fur were secured for $11.00 per yard. Compute the overall cost.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 49,
+    "question": "Requiring some materials for curtains, 2 blackout fabrics (1/2-yard each) were grabbed by Wendy for $22.00 per yard. Afterwards, 3 yards of sheer netting running $7.00 a yard were picked up. Find the total sum paid.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 50,
+    "question": "The tailor was asked by Xander for 4 brocade pieces measuring 3/4-yard each, priced at $12.00/yard. A yard and a half of satin, listed at $16.00 a yard, was additionally requested. Ascertain the full amount spent.",
+    "ground_truth": "60"
+  },
+  {
+    "id": 51,
+    "question": "At the candy store, 4 fudge blocks weighing 1/2-pound each were grabbed by Yara from the confectioner, carrying a cost of $10.00/pound. Alongside this, a pound and a half of gummy worms priced at $8.00 a pound was selected. Figure out the total money spent.",
+    "ground_truth": "32"
+  },
+  {
+    "id": 52,
+    "question": "During a trip to the sweet shop, 3 bags of jelly beans (1.5-pound each) were ordered by Zane for $8.00 per pound. Furthermore, 2 pounds of licorice were bought for $9.00 a pound. Determine his total bill.",
+    "ground_truth": "54"
+  },
+  {
+    "id": 53,
+    "question": "Needing some treats, 8 truffles weighing 1/4-pound each were obtained by Alice, costing $16.00 per pound. Half a pound of hard candies running $10.00 a pound was then also picked up. Calculate the total expenditure.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 54,
+    "question": "For a party, 5 boxes of chocolates weighing 1/2 pound each were chosen by Bob while shopping, priced at $14.00 per pound. He additionally acquired 2.5 pounds of marshmallows for $6.00 per pound. How much money did he spend?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 55,
+    "question": "To prepare a gift basket, 2 peanut brittle pieces (3/4-pound each) with a price tag of $20.00 a pound were bought by Charlie. Along with this, 1.5 pounds of caramel squares for $12.00 per pound were added. What is the final total expense?",
+    "ground_truth": "48"
+  },
+  {
+    "id": 56,
+    "question": "From the candy store, 6 marzipan fruits weighing 1/2-pound each were asked for by Diana, costing $18.00/pound. One and a quarter pounds of sour patches at $8.00 a pound were also requested. Find the complete amount spent.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 57,
+    "question": "At the confectionary, 4 rock candy sticks (1.5-pound each) were requested by Ethan for $10.00/pound. He subsequently added half a pound of dark chocolate bark costing $14.00 a pound. How much was the total final bill?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 58,
+    "question": "Visiting the candy aisle, 10 peppermint swirls weighing 1/4-pound each were purchased by Fiona at a price of $12.00 per pound. Then, 2 pounds of butterscotch drops for $11.00 per pound were obtained. Compute the overall total cost.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 59,
+    "question": "Because he needed some movie snacks, 2 chocolate covered almonds (1/2-pound each) were secured by George for $22.00 per pound. Next, 3 pounds of popcorn kernels running $7.00 a pound were picked up. Ascertain the total amount spent.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 60,
+    "question": "The confectioner was asked by Hannah for 4 nougat bars weighing 3/4-pound each, priced at $12.00/pound. A pound and a half of taffy at $16.00 a pound was also part of the request. How much did the entire purchase cost?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 61,
+    "question": "Valued at $10.00/ounce, 4 jars of saffron weighing 1/2-ounce each were chosen by Ian during a trip to the spice market from the merchant. An ounce and a half of paprika was also requested, which costs $8.00 an ounce. Compute the total financial outlay.",
+    "ground_truth": "32"
+  },
+  {
+    "id": 62,
+    "question": "A visit to the spice shop saw Jane request 3 packets of cinnamon sticks (1.5-ounce each) for a price of $8.00 per ounce. Furthermore, 2 ounces of nutmeg were acquired for $9.00 an ounce. What was the total cost of her bill?",
+    "ground_truth": "54"
+  },
+  {
+    "id": 63,
+    "question": "Needing some seasonings, 8 cardamom pods weighing 1/4-ounce each were picked up by Kevin, costing $16.00 per ounce. Following this, half an ounce of cloves running $10.00 an ounce was added. Calculate the overall amount spent.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 64,
+    "question": "While shopping for a big recipe, 5 containers of ginger powder weighing 1/2 ounce each were grabbed by Laura for $14.00 per ounce. She also obtained 2.5 ounces of dried oregano priced at $6.00 per ounce. How much money was handed over?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 65,
+    "question": "For a curry blend, 2 turmeric bags (3/4-ounce each) bearing a price tag of $20.00 an ounce were bought by Mike. Alongside this, 1.5 ounces of cumin seeds for $12.00 per ounce were purchased. Determine the sum of the expense.",
+    "ground_truth": "48"
+  },
+  {
+    "id": 66,
+    "question": "From the spice vendor, 6 vanilla bean bundles weighing 1/2-ounce each were ordered by Nina, costing $18.00/ounce. One and a quarter ounces of star anise, listed at $8.00 an ounce, were additionally requested. Figure out the total money spent.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 67,
+    "question": "At the seasoning aisle, 4 jars of ground pepper (1.5-ounce each) were selected by Oscar at $10.00/ounce. Half an ounce of coriander costing $14.00 an ounce was then included. How much did the final bill amount to?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 68,
+    "question": "During a stop at the spice market, 10 chili flakes weighing 1/4-ounce each were purchased by Paula for $12.00 per ounce. Then, 2 ounces of garlic powder at $11.00 per ounce were bought. Find the total financial cost.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 69,
+    "question": "In search of exotic flavors, 2 dried galangal pieces (1/2-ounce each) were obtained by Quinn for $22.00 per ounce. Moreover, 3 ounces of mustard seeds running $7.00 an ounce were picked up. Ascertain the total sum spent.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 70,
+    "question": "The spice merchant was asked by Rachel for 4 fennel seed packets weighing 3/4-ounce each, priced at $12.00/ounce. An ounce and a half of thyme for $16.00 an ounce was also included in the order. How much was the total expenditure?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 71,
+    "question": "Sam decided to get 4 blocks of cheddar weighing 1/2-pound each for $10.00/pound from the deli clerk. The order at the deli was finalized by adding a pound and a half of sliced turkey at a price of $8.00 a pound. Ascertain the complete cost of the items.",
+    "ground_truth": "32"
+  },
+  {
+    "id": 72,
+    "question": "At the delicatessen, 3 hams (1.5-pound each) were requested by Tina for $8.00 per pound. In addition, 2 pounds of provolone cheese were bought at $9.00 a pound. What was her total bill?",
+    "ground_truth": "54"
+  },
+  {
+    "id": 73,
+    "question": "Needing some sandwich fixings, 8 salami rolls weighing 1/4-pound each were grabbed by Uma, costing $16.00 per pound. Half a pound of Swiss cheese running $10.00 a pound was then also chosen. Calculate the overall total spent.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 74,
+    "question": "While shopping for a picnic, 5 pieces of roast beef weighing 1/2 pound each were obtained by Victor for $14.00 per pound. Furthermore, 2.5 pounds of potato salad priced at $6.00 per pound were acquired. How much money was spent?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 75,
+    "question": "For a charcuterie board, 2 prosciutto packs (3/4-pound each) with a price tag of $20.00 a pound were bought by Wendy. Along with that, 1.5 pounds of gouda were purchased for $12.00 per pound. Determine the final expense.",
+    "ground_truth": "48"
+  },
+  {
+    "id": 76,
+    "question": "From the deli, 6 pastrami cuts weighing 1/2-pound each were asked for by Xander at $18.00/pound. One and a quarter pounds of coleslaw costing $8.00 a pound were also requested. Figure out how much he spent.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 77,
+    "question": "At the deli counter, 4 mozzarella balls (1.5-pound each) were chosen by Yara for $10.00/pound. She subsequently added half a pound of olives at $14.00 a pound. How much did the final bill run?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 78,
+    "question": "During a visit to the deli, 10 bologna slices weighing 1/4-pound each were purchased by Zane for $12.00 per pound. Afterwards, 2 pounds of macaroni salad at $11.00 per pound were added. Compute the total cost.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 79,
+    "question": "Because some meats were needed, 2 pepperoni sticks (1/2-pound each) costing $22.00 per pound were secured by Alice. Next, 3 pounds of chicken salad running $7.00 a pound were picked up. Find the total amount of money spent.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 80,
+    "question": "The deli clerk was asked by Bob for 4 brie wheels weighing 3/4-pound each, carrying a cost of $12.00/pound. A pound and a half of corned beef at $16.00 a pound was also requested. How much was his overall spending?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 81,
+    "question": "Procuring items from the farm stand, Charlie selected 4 bags of apples weighing 1/2-kilogram each with a price of $10.00/kilogram. Additionally, a kilogram and a half of fresh strawberries was bagged at $8.00 a kilogram. Find the total amount of money required.",
+    "ground_truth": "32"
+  },
+  {
+    "id": 82,
+    "question": "Visiting the farmers market, 3 pumpkin squashes (1.5-kilogram each) were requested by Diana for $8.00 per kilogram. She also bought 2 kilograms of sweet potatoes at $9.00 a kilogram. Determine her total bill.",
+    "ground_truth": "54"
+  },
+  {
+    "id": 83,
+    "question": "In need of some fresh greens, 8 bundles of asparagus weighing 1/4-kilogram each were picked up by Ethan, costing $16.00 per kilogram. Half a kilogram of spinach running $10.00 a kilogram was then added. Calculate the final sum spent.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 84,
+    "question": "Shopping for juicing, 5 bags of oranges weighing 1/2 kilogram each were grabbed by Fiona at $14.00 per kilogram. Furthermore, 2.5 kilograms of carrots priced at $6.00 per kilogram were obtained. How much money was spent?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 85,
+    "question": "For a fruit salad, 2 melons (3/4-kilogram each) with a price tag of $20.00 a kilogram were bought by George. Alongside this, 1.5 kilograms of grapes for $12.00 per kilogram were secured. Ascertain the total expense.",
+    "ground_truth": "48"
+  },
+  {
+    "id": 86,
+    "question": "The farm vendor was asked by Hannah for 6 baskets of peaches weighing 1/2-kilogram each, costing $18.00/kilogram. One and a quarter kilograms of cherries for $8.00 a kilogram were also requested. Figure out the overall amount spent.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 87,
+    "question": "At the produce stand, 4 sacks of onions (1.5-kilogram each) were chosen by Ian for $10.00/kilogram. Half a kilogram of garlic at $14.00 a kilogram was then added to the order. How much was the total final bill?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 88,
+    "question": "During a trip to the local farm, 10 tomato punnets weighing 1/4-kilogram each were purchased by Jane for $12.00 per kilogram. Afterwards, 2 kilograms of bell peppers at $11.00 per kilogram were picked up. Compute the total financial cost.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 89,
+    "question": "Because some root veggies were needed, 2 bags of beets (1/2-kilogram each) were acquired by Kevin for $22.00 per kilogram. Then, 3 kilograms of russet potatoes running $7.00 a kilogram were grabbed. Find the total money paid out.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 90,
+    "question": "From the farmer, 4 heads of cabbage weighing 3/4-kilogram each were asked for by Laura, priced at $12.00/kilogram. A kilogram and a half of broccoli at $16.00 a kilogram was additionally requested. How much did the entire haul cost?",
+    "ground_truth": "60"
+  },
+  {
+    "id": 91,
+    "question": "A total of 4 pork chops weighing 1/2-pound each at $10.00/pound were bought by Mike from the butcher's. Moreover, a pound and a half of ground beef was obtained for $8.00 a pound. What is the sum of the expenses?",
+    "ground_truth": "32"
+  },
+  {
+    "id": 92,
+    "question": "Visiting the meat market, 3 beef roasts (1.5-pound each) were requested by Nina, carrying a price of $8.00 per pound. In addition, 2 pounds of Italian sausage were purchased for $9.00 a pound. Determine the total amount of her bill.",
+    "ground_truth": "54"
+  },
+  {
+    "id": 93,
+    "question": "Needing some barbecue meat, 8 burger patties weighing 1/4-pound each were grabbed by Oscar, costing $16.00 per pound. Next, half a pound of bacon running $10.00 a pound was picked up. Calculate the total sum spent.",
+    "ground_truth": "37"
+  },
+  {
+    "id": 94,
+    "question": "While shopping for a cookout, 5 pieces of lamb weighing 1/2 pound each were obtained by Paula for $14.00 per pound. She furthermore acquired 2.5 pounds of chicken thighs priced at $6.00 per pound. How much money was handed over?",
+    "ground_truth": "50"
+  },
+  {
+    "id": 95,
+    "question": "For a family dinner, 2 veal cutlets (3/4-pound each) featuring a price tag of $20.00 a pound were bought by Quinn. Along with these, 1.5 pounds of pork ribs for $12.00 per pound were purchased. Ascertain the total expense.",
+    "ground_truth": "48"
+  },
+  {
+    "id": 96,
+    "question": "The butcher was asked by Rachel for 6 sirloin steaks weighing 1/2-pound each, costing $18.00/pound. One and a quarter pounds of meatball mix at $8.00 a pound were also requested. Figure out the final amount spent.",
+    "ground_truth": "64"
+  },
+  {
+    "id": 97,
+    "question": "At the meat counter, 4 briskets (1.5-pound each) were selected by Sam for $10.00/pound. Half a pound of beef liver at $14.00 a pound was subsequently added. How much was the full final bill?",
+    "ground_truth": "67"
+  },
+  {
+    "id": 98,
+    "question": "During a stop at the local butcher, 10 flank steaks weighing 1/4-pound each were purchased by Tina for $12.00 per pound. Then, 2 pounds of turkey breast at $11.00 per pound were secured. Compute the total cost.",
+    "ground_truth": "52"
+  },
+  {
+    "id": 99,
+    "question": "Because fancy cuts were required, 2 filet mignons (1/2-pound each) costing $22.00 per pound were bought by Uma. Afterwards, 3 pounds of stewing beef running $7.00 a pound were picked up. Find the total sum paid.",
+    "ground_truth": "43"
+  },
+  {
+    "id": 100,
+    "question": "From the butcher, 4 ribeye steaks weighing 3/4-pound each were asked for by Victor, priced at $12.00/pound. A pound and a half of venison at $16.00 a pound was also requested. How much did the entire purchase cost?",
+    "ground_truth": "60"
+  }
+]

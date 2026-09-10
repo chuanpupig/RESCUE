@@ -1,0 +1,1004 @@
+[
+  {
+    "id": 1,
+    "question": "Aiden is in Mrs. Smith's physics class. Mrs. Smith gives six quizzes each term. She allows the students to drop the lowest score from their average each term. If Aiden has scores of 85, 68, 90, 95 and 82 on the first five quizzes, what score does he need on the sixth quiz to achieve an average of 90?",
+    "ground_truth": "98",
+    "generation": "Reasoning:  \n1. Sum of known scores: 85 + 68 + 90 + 95 + 82 = 420  \n2. Lowest score is 68, so subtract it: 420 - 68 = 352  \n3. Total needed for average of 90: 90 * 6 = 540  \n4. Score needed on sixth quiz: 540 - 352 = 188  \nFinal Answer: 188",
+    "pred_answer_masked": "188",
+    "pred_answer_masked_norm": "188",
+    "ground_truth_norm": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 85 + 68 + 90 + 95 + 82 = 420  \n2. Lowest score is 68, so subtract it: 420 - 68 = 352  \n3. Total needed for average of 90 over 5 quizzes: 90 * 5 = 450  \n4. Score needed on sixth quiz: 450 - 352 = 98  \nFinal Answer: 98"
+  },
+  {
+    "id": 2,
+    "question": "Bella is in Mr. Johnson's history class. Mr. Johnson gives six exams each semester. He allows the students to remove the lowest score from their average each semester. If Bella has scores of 78, 65, 88, 92 and 80 on the first five exams, what score does she need on the sixth exam to attain an average of 85?",
+    "ground_truth": "87",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 78 + 65 + 88 + 92 + 80 = 393  \n2. Total sum needed for an average of 85 over six exams: 85 * 6 = 510  \n3. Difference between needed total and current total: 510 - 393 = 117  \n4. Score needed on the sixth exam: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "pred_answer_masked_norm": "117",
+    "ground_truth_norm": "87",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 78 + 65 + 88 + 92 + 80 = 403. Lowest score is 65, so subtract it: 403 - 65 = 338  \n2. Total sum needed for an average of 85 over five exams: 85 * 5 = 425  \n3. Difference between needed total and current total: 425 - 338 = 87  \n4. Score needed on the sixth exam: 87  \nFinal Answer: 87"
+  },
+  {
+    "id": 3,
+    "question": "Carter is in Ms. Davis's chemistry class. Ms. Davis gives six practicals each year. She allows the students to exclude the lowest score from their average each year. If Carter has scores of 92, 75, 89, 98 and 85 on the first five practicals, what score does he need on the sixth practical to secure an average of 94?",
+    "ground_truth": "106",
+    "generation": "Reasoning:  \n1. Sum of known scores: 92 + 75 + 89 + 98 + 85 = 439  \n2. Total sum needed for average of 94: 94 * 6 = 564  \n3. Difference between needed sum and current sum: 564 - 439 = 125  \n4. Score needed on sixth practical: 125  \nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "pred_answer_masked_norm": "125",
+    "ground_truth_norm": "106",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 92 + 75 + 89 + 98 + 85 = 439. Lowest score is 75, so subtract it: 439 - 75 = 364  \n2. Total sum needed for average of 94 over five practicals: 94 * 5 = 470  \n3. Difference between needed sum and current sum: 470 - 364 = 106  \n4. Score needed on sixth practical: 106  \nFinal Answer: 106"
+  },
+  {
+    "id": 4,
+    "question": "Chloe is in Mr. Brown's English class. Mr. Brown gives six essays each semester. He allows the students to drop the lowest score from their average each semester. If Chloe has scores of 82, 69, 85, 91 and 79 on the first five essays, what score does she need on the sixth essay to reach an average of 88?",
+    "ground_truth": "103",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 82 + 69 + 85 + 91 + 79 = 396  \n2. Total needed for average of 88 over 6 essays: 88 * 6 = 528  \n3. Total needed after dropping the lowest score: 528 - 396 = 132  \n4. Score needed on sixth essay: 132 - 69 = 63  \nFinal Answer: 63",
+    "pred_answer_masked": "63",
+    "pred_answer_masked_norm": "63",
+    "ground_truth_norm": "103",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 82 + 69 + 85 + 91 + 79 = 406  \n2. Total needed for average of 88 over 5 essays: 88 * 5 = 440  \n3. Total needed after dropping the lowest score (69) from first five scores (406 - 69 = 337): 440 - 337 = 103  \n4. Score needed on sixth essay: 103  \nFinal Answer: 103"
+  },
+  {
+    "id": 5,
+    "question": "Daniel is in Mrs. Wilson's biology class. Mrs. Wilson gives six lab reports each term. She allows the students to remove the lowest score from their average each term. If Daniel has scores of 88, 72, 95, 100 and 89 on the first five lab reports, what score does he need on the sixth lab report to get an average of 95?",
+    "ground_truth": "103",
+    "generation": "Reasoning:  \n1. Sum of known scores: 88 + 72 + 95 + 100 + 89 = 444  \n2. Total sum needed for average of 95: 95 * 6 = 570  \n3. Difference between needed sum and current sum: 570 - 444 = 126  \n4. Score needed on sixth report: 126  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "pred_answer_masked_norm": "126",
+    "ground_truth_norm": "103",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 88 + 72 + 95 + 100 + 89 = 444. Lowest score is 72, so subtract it: 444 - 72 = 372  \n2. Total sum needed for average of 95 over five reports: 95 * 5 = 475  \n3. Difference between needed sum and current sum: 475 - 372 = 103  \n4. Score needed on sixth report: 103  \nFinal Answer: 103"
+  },
+  {
+    "id": 6,
+    "question": "Emily is in Mr. Taylor's geography class. Mr. Taylor gives six assignments each semester. He allows the students to drop the lowest score from their average each semester. If Emily has scores of 75, 60, 82, 88 and 78 on the first five assignments, what score does she need on the sixth assignment to achieve an average of 80?",
+    "ground_truth": "77",
+    "generation": "Reasoning:  \n1. Sum of known scores: 75 + 60 + 82 + 88 + 78 = 383  \n2. Lowest score is 60, so subtract it: 383 - 60 = 323  \n3. Total needed for average of 80: 80 * 6 = 480  \n4. Score needed on sixth assignment: 480 - 323 = 157  \nFinal Answer: 157",
+    "pred_answer_masked": "157",
+    "pred_answer_masked_norm": "157",
+    "ground_truth_norm": "77",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 75 + 60 + 82 + 88 + 78 = 383  \n2. Lowest score is 60, so subtract it: 383 - 60 = 323  \n3. Total needed for average of 80 over 5 assignments: 80 * 5 = 400  \n4. Score needed on sixth assignment: 400 - 323 = 77  \nFinal Answer: 77"
+  },
+  {
+    "id": 7,
+    "question": "Ethan is in Ms. Anderson's art class. Ms. Anderson gives six projects each year. She allows the students to exclude the lowest score from their average each year. If Ethan has scores of 90, 74, 93, 97 and 88 on the first five projects, what score does he need on the sixth project to secure an average of 92?",
+    "ground_truth": "92",
+    "generation": "Reasoning:  \n1. Sum of known scores: 90 + 74 + 93 + 97 + 88 = 442  \n2. Total sum needed for 6 scores: 92 * 6 = 552  \n3. Difference between needed sum and current sum: 552 - 442 = 110  \n4. Score needed on sixth project: 110  \nFinal Answer: 110",
+    "pred_answer_masked": "110",
+    "pred_answer_masked_norm": "110",
+    "ground_truth_norm": "92",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 90 + 74 + 93 + 97 + 88 = 442. Lowest score is 74, so subtract it: 442 - 74 = 368  \n2. Total sum needed for 5 scores: 92 * 5 = 460  \n3. Difference between needed sum and current sum: 460 - 368 = 92  \n4. Score needed on sixth project: 92  \nFinal Answer: 92"
+  },
+  {
+    "id": 8,
+    "question": "Grace is in Mr. Thomas's music class. Mr. Thomas gives six performances each term. He allows the students to drop the lowest score from their average each term. If Grace has scores of 86, 70, 89, 94 and 83 on the first five performances, what score does she need on the sixth performance to reach an average of 90?",
+    "ground_truth": "98",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 86 + 70 + 89 + 94 + 83 = 422  \n2. Subtract the lowest score: 422 - 70 = 352  \n3. Let x be the sixth score: 352 + x  \n4. Average of six scores: (352 + x) / 6 = 90  \nFinal Answer: 398",
+    "pred_answer_masked": "398",
+    "pred_answer_masked_norm": "398",
+    "ground_truth_norm": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 86 + 70 + 89 + 94 + 83 = 422  \n2. Subtract the lowest score: 422 - 70 = 352  \n3. Let x be the sixth score: 352 + x  \n4. Average of five scores: (352 + x) / 5 = 90  \nFinal Answer: 98"
+  },
+  {
+    "id": 9,
+    "question": "Henry is in Mrs. Jackson's coding class. Mrs. Jackson gives six coding challenges each semester. She allows the students to remove the lowest score from their average each semester. If Henry has scores of 95, 80, 92, 100 and 88 on the first five challenges, what score does he need on the sixth challenge to get an average of 96?",
+    "ground_truth": "105",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 95 + 80 + 92 + 100 + 88 = 455  \n2. Total sum needed for average of 96 over six scores: 96 * 6 = 576  \n3. Sum of sixth score needed: 576 - 455 = 121  \n4. Sixth score must be 121 to achieve the average  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "pred_answer_masked_norm": "121",
+    "ground_truth_norm": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 95 + 80 + 92 + 100 + 88 = 455. Lowest score is 80, so subtract it: 455 - 80 = 375  \n2. Total sum needed for average of 96 over five scores: 96 * 5 = 480  \n3. Sum of sixth score needed: 480 - 375 = 105  \n4. Sixth score must be 105 to achieve the average  \nFinal Answer: 105"
+  },
+  {
+    "id": 10,
+    "question": "Isabella is in Mr. White's physical education class. Mr. White gives six fitness tests each year. He allows the students to drop the lowest score from their average each year. If Isabella has scores of 80, 62, 85, 90 and 82 on the first five tests, what score does she need on the sixth test to attain an average of 86?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 80 + 62 + 85 + 90 + 82 = 399  \n2. Total needed for average of 86 over six tests: 86 * 6 = 516  \n3. Difference between total needed and current sum: 516 - 399 = 117  \n4. Minimum score needed on sixth test: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "pred_answer_masked_norm": "117",
+    "ground_truth_norm": "93",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 80 + 62 + 85 + 90 + 82 = 399. Lowest score is 62, so subtract it: 399 - 62 = 337  \n2. Total needed for average of 86 over five tests: 86 * 5 = 430  \n3. Difference between total needed and current sum: 430 - 337 = 93  \n4. Minimum score needed on sixth test: 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 11,
+    "question": "Jack is in Ms. Harris's economics class. Ms. Harris gives six quizzes each term. She allows the students to exclude the lowest score from their average each term. If Jack has scores of 88, 73, 91, 96 and 85 on the first five quizzes, what score does he need on the sixth quiz to achieve an average of 92?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 88 + 73 + 91 + 96 + 85 = 433  \n2. Total sum needed for an average of 92 over 6 quizzes: 92 * 6 = 552  \n3. Difference between needed total and current total: 552 - 433 = 119  \n4. Score needed on the sixth quiz: 119  \nFinal Answer: 119",
+    "pred_answer_masked": "119",
+    "pred_answer_masked_norm": "119",
+    "ground_truth_norm": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 88 + 73 + 91 + 96 + 85 = 433. Lowest score is 73, so subtract it: 433 - 73 = 360  \n2. Total sum needed for an average of 92 over 5 quizzes: 92 * 5 = 460  \n3. Difference between needed total and current total: 460 - 360 = 100  \n4. Score needed on the sixth quiz: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 12,
+    "question": "Lily is in Mr. Martin's sociology class. Mr. Martin gives six exams each semester. He allows the students to drop the lowest score from their average each semester. If Lily has scores of 79, 66, 84, 90 and 81 on the first five exams, what score does she need on the sixth exam to reach an average of 85?",
+    "ground_truth": "91",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 79 + 66 + 84 + 90 + 81 = 399  \n2. Total sum needed for average of 85 over 6 exams: 85 * 6 = 510  \n3. Difference between needed sum and current sum: 510 - 399 = 111  \n4. Score needed on sixth exam: 111  \nFinal Answer: 111",
+    "pred_answer_masked": "111",
+    "pred_answer_masked_norm": "111",
+    "ground_truth_norm": "91",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 79 + 66 + 84 + 90 + 81 = 400. Lowest score is 66, so subtract it: 400 - 66 = 334  \n2. Total sum needed for average of 85 over 5 exams: 85 * 5 = 425  \n3. Difference between needed sum and current sum: 425 - 334 = 91  \n4. Score needed on sixth exam: 91  \nFinal Answer: 91"
+  },
+  {
+    "id": 13,
+    "question": "Mason is in Mrs. Thompson's psychology class. Mrs. Thompson gives six assignments each year. She allows the students to remove the lowest score from their average each year. If Mason has scores of 91, 76, 88, 95 and 87 on the first five assignments, what score does he need on the sixth assignment to secure an average of 93?",
+    "ground_truth": "104",
+    "generation": "Reasoning:  \n1. Sum of known scores: 91 + 76 + 88 + 95 + 87 = 437  \n2. Total sum needed for 6 assignments: 93 * 6 = 558  \n3. Difference between needed sum and current sum: 558 - 437 = 121  \n4. Score needed on sixth assignment: 121  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "pred_answer_masked_norm": "121",
+    "ground_truth_norm": "104",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 91 + 76 + 88 + 95 + 87 = 437. Lowest score is 76, so subtract it: 437 - 76 = 361  \n2. Total sum needed for 5 assignments: 93 * 5 = 465  \n3. Difference between needed sum and current sum: 465 - 361 = 104  \n4. Score needed on sixth assignment: 104  \nFinal Answer: 104"
+  },
+  {
+    "id": 14,
+    "question": "Mia is in Mr. Garcia's Spanish class. Mr. Garcia gives six oral exams each term. He allows the students to drop the lowest score from their average each term. If Mia has scores of 84, 69, 87, 93 and 80 on the first five oral exams, what score does she need on the sixth oral exam to attain an average of 88?",
+    "ground_truth": "96",
+    "generation": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 93 + 80 = 413  \n2. Total needed for average of 88: 88 * 6 = 528  \n3. Difference between total needed and current sum: 528 - 413 = 115  \n4. Score needed on sixth exam: 115  \nFinal Answer: 115",
+    "pred_answer_masked": "115",
+    "pred_answer_masked_norm": "115",
+    "ground_truth_norm": "96",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 93 + 80 = 413. Lowest score is 69, so subtract it: 413 - 69 = 344  \n2. Total needed for average of 88 over 5 exams: 88 * 5 = 440  \n3. Difference between total needed and current sum: 440 - 344 = 96  \n4. Score needed on sixth exam: 96  \nFinal Answer: 96"
+  },
+  {
+    "id": 15,
+    "question": "Noah is in Ms. Martinez's French class. Ms. Martinez gives six vocabulary tests each semester. She allows the students to exclude the lowest score from their average each semester. If Noah has scores of 93, 78, 90, 99 and 86 on the first five tests, what score does he need on the sixth test to get an average of 95?",
+    "ground_truth": "107",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 86 = 446  \n2. Total needed for average of 95 over 6 tests: 95 * 6 = 570  \n3. Difference between total needed and current sum: 570 - 446 = 124  \n4. Score needed on sixth test: 124  \nFinal Answer: 124",
+    "pred_answer_masked": "124",
+    "pred_answer_masked_norm": "124",
+    "ground_truth_norm": "107",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 86 = 446. Lowest score is 78, so subtract it: 446 - 78 = 368  \n2. Total needed for average of 95 over 5 tests: 95 * 5 = 475  \n3. Difference between total needed and current sum: 475 - 368 = 107  \n4. Score needed on sixth test: 107  \nFinal Answer: 107"
+  },
+  {
+    "id": 16,
+    "question": "Olivia is in Mr. Robinson's statistics class. Mr. Robinson gives six projects each year. He allows the students to drop the lowest score from their average each year. If Olivia has scores of 87, 71, 90, 96 and 84 on the first five projects, what score does she need on the sixth project to reach an average of 91?",
+    "ground_truth": "98",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 87 + 71 + 90 + 96 + 84 = 428  \n2. Total needed for an average of 91 over six projects: 91 * 6 = 546  \n3. Difference between total needed and current sum: 546 - 428 = 118  \n4. Olivia needs a score of 118 on the sixth project to reach the average of 91  \nFinal Answer: 118",
+    "pred_answer_masked": "118",
+    "pred_answer_masked_norm": "118",
+    "ground_truth_norm": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 87 + 71 + 90 + 96 + 84 = 428. Lowest score is 71, so subtract it: 428 - 71 = 357  \n2. Total needed for an average of 91 over five projects: 91 * 5 = 455  \n3. Difference between total needed and current sum: 455 - 357 = 98  \n4. Olivia needs a score of 98 on the sixth project to reach the average of 91  \nFinal Answer: 98"
+  },
+  {
+    "id": 17,
+    "question": "Liam is in Mrs. Clark's literature class. Mrs. Clark gives six essays each term. She allows the students to remove the lowest score from their average each term. If Liam has scores of 81, 64, 86, 92 and 83 on the first five essays, what score does he need on the sixth essay to achieve an average of 87?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 81 + 64 + 86 + 92 + 83 = 406  \n2. Lowest score among first five: 64  \n3. Sum of remaining four scores: 406 - 64 = 342  \n4. Total sum needed for average of 87 over six essays: 87 * 6 = 522  \nFinal Answer: 522 - 342 = 180",
+    "pred_answer_masked": "180",
+    "pred_answer_masked_norm": "180",
+    "ground_truth_norm": "93",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 81 + 64 + 86 + 92 + 83 = 406  \n2. Lowest score among first five: 64  \n3. Sum of remaining four scores: 406 - 64 = 342  \n4. Total sum needed for average of 87 over five essays: 87 * 5 = 435  \nFinal Answer: 435 - 342 = 93"
+  },
+  {
+    "id": 18,
+    "question": "Sophia is in Mr. Rodriguez's health class. Mr. Rodriguez gives six quizzes each semester. He allows the students to drop the lowest score from their average each semester. If Sophia has scores of 89, 74, 92, 98 and 85 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 94?",
+    "ground_truth": "106",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 92 + 98 + 85 = 438  \n2. Subtract the lowest score: 438 - 74 = 364  \n3. Let x be the sixth score: 364 + x  \n4. Average of six scores: (364 + x) / 6 = 94  \nFinal Answer: 200",
+    "pred_answer_masked": "200",
+    "pred_answer_masked_norm": "200",
+    "ground_truth_norm": "106",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 92 + 98 + 85 = 438  \n2. Subtract the lowest score: 438 - 74 = 364  \n3. Let x be the sixth score: 364 + x  \n4. Average of five scores: (364 + x) / 5 = 94  \nFinal Answer: 106"
+  },
+  {
+    "id": 19,
+    "question": "William is in Ms. Lewis's debate class. Ms. Lewis gives six presentations each year. She allows the students to exclude the lowest score from their average each year. If William has scores of 94, 79, 91, 100 and 87 on the first five presentations, what score does he need on the sixth presentation to attain an average of 96?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 100 + 87 = 451  \n2. Subtract the lowest score: 451 - 79 = 372  \n3. Let x be the sixth score: 372 + x  \n4. Average of the five highest scores: (372 + x) / 5 = 96  \nFinal Answer: 228",
+    "pred_answer_masked": "228",
+    "pred_answer_masked_norm": "228",
+    "ground_truth_norm": "108",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 100 + 87 = 451  \n2. Subtract the lowest score: 451 - 79 = 372  \n3. Let x be the sixth score: 372 + x  \n4. Average of the five highest scores: (372 + x) / 5 = 96  \nFinal Answer: 108"
+  },
+  {
+    "id": 20,
+    "question": "Ava is in Mr. Lee's drama class. Mr. Lee gives six performances each term. He allows the students to drop the lowest score from their average each term. If Ava has scores of 83, 67, 85, 91 and 80 on the first five performances, what score does she need on the sixth performance to reach an average of 86?",
+    "ground_truth": "91",
+    "generation": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 85 + 91 + 80 = 406  \n2. Total sum needed for 6 scores to average 86: 86 * 6 = 516  \n3. Difference between needed sum and current sum: 516 - 406 = 110  \n4. Score needed on sixth performance: 110  \nFinal Answer: 110",
+    "pred_answer_masked": "110",
+    "pred_answer_masked_norm": "110",
+    "ground_truth_norm": "91",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 85 + 91 + 80 = 406. Lowest score is 67, so subtract it: 406 - 67 = 339  \n2. Total sum needed for 5 scores to average 86: 86 * 5 = 430  \n3. Difference between needed sum and current sum: 430 - 339 = 91  \n4. Score needed on sixth performance: 91  \nFinal Answer: 91"
+  },
+  {
+    "id": 21,
+    "question": "James is in Mrs. Walker's accounting class. Mrs. Walker gives six exams each semester. She allows the students to remove the lowest score from their average each semester. If James has scores of 86, 70, 89, 94 and 82 on the first five exams, what score does he need on the sixth exam to get an average of 90?",
+    "ground_truth": "99",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 86 + 70 + 89 + 94 + 82 = 421  \n2. Total needed for average of 90 over 6 exams: 90 * 6 = 540  \n3. Score needed on sixth exam: 540 - 421 = 119  \n4. Subtract the lowest score (70) from total: 540 - 70 = 470  \nFinal Answer: 470",
+    "pred_answer_masked": "470",
+    "pred_answer_masked_norm": "470",
+    "ground_truth_norm": "99",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 86 + 70 + 89 + 94 + 82 = 421  \n2. Subtract the lowest score (70) from total: 421 - 70 = 351  \n3. Total needed for average of 90 over 5 exams: 90 * 5 = 450  \n4. Score needed on sixth exam: 450 - 351 = 99  \nFinal Answer: 99"
+  },
+  {
+    "id": 22,
+    "question": "Charlotte is in Mr. Hall's marketing class. Mr. Hall gives six projects each year. He allows the students to drop the lowest score from their average each year. If Charlotte has scores of 90, 75, 93, 97 and 88 on the first five projects, what score does she need on the sixth project to achieve an average of 93?",
+    "ground_truth": "97",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 93 + 97 + 88 = 443  \n2. Total needed for an average of 93 over six projects: 93 * 6 = 558  \n3. Difference between total needed and current sum: 558 - 443 = 115  \n4. Score needed on the sixth project: 115  \nFinal Answer: 115",
+    "pred_answer_masked": "115",
+    "pred_answer_masked_norm": "115",
+    "ground_truth_norm": "97",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 93 + 97 + 88 = 443. Lowest score is 75, so subtract it: 443 - 75 = 368  \n2. Total needed for an average of 93 over five projects: 93 * 5 = 465  \n3. Difference between total needed and current sum: 465 - 368 = 97  \n4. Score needed on the sixth project: 97  \nFinal Answer: 97"
+  },
+  {
+    "id": 23,
+    "question": "Benjamin is in Ms. Allen's astronomy class. Ms. Allen gives six quizzes each term. She allows the students to exclude the lowest score from their average each term. If Benjamin has scores of 85, 68, 88, 93 and 81 on the first five quizzes, what score does he need on the sixth quiz to secure an average of 89?",
+    "ground_truth": "98",
+    "generation": "Reasoning:  \n1. Sum of known scores: 85 + 68 + 88 + 93 + 81 = 415  \n2. Total sum needed for average of 89: 89 * 6 = 534  \n3. Difference between needed sum and current sum: 534 - 415 = 119  \n4. Score needed on sixth quiz: 119  \nFinal Answer: 119",
+    "pred_answer_masked": "119",
+    "pred_answer_masked_norm": "119",
+    "ground_truth_norm": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 85 + 68 + 88 + 93 + 81 = 415. Lowest score is 68, so subtract it: 415 - 68 = 347  \n2. Total sum needed for average of 89 over five quizzes: 89 * 5 = 445  \n3. Difference between needed sum and current sum: 445 - 347 = 98  \n4. Score needed on sixth quiz: 98  \nFinal Answer: 98"
+  },
+  {
+    "id": 24,
+    "question": "Amelia is in Mr. Young's geology class. Mr. Young gives six lab reports each semester. He allows the students to drop the lowest score from their average each semester. If Amelia has scores of 92, 77, 89, 98 and 85 on the first five lab reports, what score does she need on the sixth lab report to attain an average of 94?",
+    "ground_truth": "106",
+    "generation": "Reasoning:  \n1. Sum of known scores: 92 + 77 + 89 + 98 + 85 = 441  \n2. Let x be the sixth score: total sum = 441 + x  \n3. Remove the lowest score (77): total sum = 441 + x - 77 = 364 + x  \n4. Average = (364 + x) / 5 = 94  \nFinal Answer: 546",
+    "pred_answer_masked": "546",
+    "pred_answer_masked_norm": "546",
+    "ground_truth_norm": "106",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 92 + 77 + 89 + 98 + 85 = 441  \n2. Let x be the sixth score: total sum = 441 + x  \n3. Remove the lowest score (77): total sum = 441 + x - 77 = 364 + x  \n4. Average = (364 + x) / 5 = 94  \nFinal Answer: 106"
+  },
+  {
+    "id": 25,
+    "question": "Lucas is in Mrs. Hernandez's environmental science class. Mrs. Hernandez gives six assignments each year. She allows the students to remove the lowest score from their average each year. If Lucas has scores of 88, 72, 91, 96 and 84 on the first five assignments, what score does he need on the sixth assignment to reach an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 88 + 72 + 91 + 96 + 84 = 431  \n2. Total needed for average of 92: 92 * 6 = 552  \n3. Difference between total needed and current sum: 552 - 431 = 121  \n4. Score needed on sixth assignment: 121  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "pred_answer_masked_norm": "121",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 88 + 72 + 91 + 96 + 84 = 431. Lowest score is 72, so subtract it: 431 - 72 = 359  \n2. Total needed for average of 92 over five assignments: 92 * 5 = 460  \n3. Difference between total needed and current sum: 460 - 359 = 101  \n4. Score needed on sixth assignment: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 26,
+    "question": "Harper is in Mr. King's programming class. Mr. King gives six coding tests each term. He allows the students to drop the lowest score from their average each term. If Harper has scores of 95, 80, 93, 100 and 87 on the first five tests, what score does she need on the sixth test to get an average of 96?",
+    "ground_truth": "105",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 95 + 80 + 93 + 100 + 87 = 455  \n2. Total sum needed for an average of 96 over 6 tests: 96 * 6 = 576  \n3. Sum of the six scores: 455 + x  \n4. Equation: 455 + x = 576 → x = 576 - 455  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "pred_answer_masked_norm": "121",
+    "ground_truth_norm": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 95 + 80 + 93 + 100 + 87 = 455. Lowest score is 80, so subtract it: 455 - 80 = 375  \n2. Total sum needed for an average of 96 over 5 tests: 96 * 5 = 480  \n3. Sum of the five scores: 375 + x  \n4. Equation: 375 + x = 480 → x = 480 - 375  \nFinal Answer: 105"
+  },
+  {
+    "id": 27,
+    "question": "Elijah is in Ms. Wright's robotics class. Ms. Wright gives six practicals each semester. She allows the students to exclude the lowest score from their average each semester. If Elijah has scores of 84, 69, 87, 92 and 81 on the first five practicals, what score does he need on the sixth practical to achieve an average of 88?",
+    "ground_truth": "96",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 84 + 69 + 87 + 92 + 81 = 413  \n2. Subtract the lowest score: 413 - 69 = 344  \n3. Let x be the sixth score: (344 + x) / 5 = 88  \n4. Solve for x: 344 + x = 440 → x = 96  \nFinal Answer: 96",
+    "pred_answer_masked": "96",
+    "pred_answer_masked_norm": "96",
+    "ground_truth_norm": "96",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 84 + 69 + 87 + 92 + 81 = 413  \n2. Subtract the lowest score: 413 - 69 = 344  \n3. Let x be the sixth score: (344 + x) / 5 = 88  \n4. Solve for x: 344 + x = 440 → x = 96  \nFinal Answer: 96"
+
+  },
+  {
+    "id": 28,
+    "question": "Evelyn is in Mr. Lopez's engineering class. Mr. Lopez gives six projects each year. He allows the students to drop the lowest score from their average each year. If Evelyn has scores of 89, 74, 92, 97 and 86 on the first five projects, what score does she need on the sixth project to secure an average of 93?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 92 + 97 + 86 = 438  \n2. Subtract the lowest score: 438 - 74 = 364  \n3. Let x be the sixth score: 364 + x  \n4. Average of six scores: (364 + x) / 6 = 93  \nFinal Answer: 224",
+    "pred_answer_masked": "224",
+    "pred_answer_masked_norm": "224",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 92 + 97 + 86 = 438  \n2. Subtract the lowest score: 438 - 74 = 364  \n3. Let x be the sixth score: 364 + x  \n4. Average of five scores: (364 + x) / 5 = 93  \nFinal Answer: 101"
+  },
+  {
+    "id": 29,
+    "question": "Alexander is in Mrs. Hill's architecture class. Mrs. Hill gives six design reviews each term. She allows the students to remove the lowest score from their average each term. If Alexander has scores of 93, 78, 90, 99 and 85 on the first five reviews, what score does he need on the sixth review to attain an average of 95?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445  \n2. Remove the lowest score (78): 445 - 78 = 367  \n3. Let x be the sixth score: (367 + x) / 5 = 95  \n4. Solve for x: 367 + x = 475 → x = 108  \nFinal Answer: 108",
+    "pred_answer_masked": "108",
+    "pred_answer_masked_norm": "108",
+    "ground_truth_norm": "108",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445  \n2. Remove the lowest score (78): 445 - 78 = 367  \n3. Let x be the sixth score: (367 + x) / 5 = 95  \n4. Solve for x: 367 + x = 475 → x = 108  \nFinal Answer: 108"
+
+  },
+  {
+    "id": 30,
+    "question": "Abigail is in Mr. Scott's graphic design class. Mr. Scott gives six portfolios each semester. He allows the students to drop the lowest score from their average each semester. If Abigail has scores of 87, 71, 89, 95 and 83 on the first five portfolios, what score does she need on the sixth portfolio to reach an average of 91?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 87 + 71 + 89 + 95 + 83 = 425  \n2. Total sum needed for 6 scores to average 91: 91 * 6 = 546  \n3. Difference between needed sum and current sum: 546 - 425 = 121  \n4. Score needed on sixth portfolio: 121  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "pred_answer_masked_norm": "121",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 87 + 71 + 89 + 95 + 83 = 425. Lowest score is 71, so subtract it: 425 - 71 = 354  \n2. Total sum needed for 5 scores to average 91: 91 * 5 = 455  \n3. Difference between needed sum and current sum: 455 - 354 = 101  \n4. Score needed on sixth portfolio: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 31,
+    "question": "Michael is in Ms. Green's photography class. Ms. Green gives six assignments each year. She allows the students to exclude the lowest score from their average each year. If Michael has scores of 82, 66, 85, 91 and 80 on the first five assignments, what score does he need on the sixth assignment to get an average of 86?",
+    "ground_truth": "92",
+    "generation": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 80 = 394  \n2. Total sum needed for average of 86: 86 * 6 = 516  \n3. Difference between needed sum and current sum: 516 - 394 = 122  \n4. Score needed on sixth assignment: 122  \nFinal Answer: 122",
+    "pred_answer_masked": "122",
+    "pred_answer_masked_norm": "122",
+    "ground_truth_norm": "92",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 80 = 404. Lowest score is 66, so subtract it: 404 - 66 = 338  \n2. Total sum needed for average of 86 over 5 assignments: 86 * 5 = 430  \n3. Difference between needed sum and current sum: 430 - 338 = 92  \n4. Score needed on sixth assignment: 92  \nFinal Answer: 92"
+  },
+  {
+    "id": 32,
+    "question": "Emily is in Mr. Adams's journalism class. Mr. Adams gives six articles each term. He allows the students to drop the lowest score from their average each term. If Emily has scores of 91, 76, 88, 94 and 86 on the first five articles, what score does she need on the sixth article to achieve an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 91 + 76 + 88 + 94 + 86 = 435  \n2. Subtract the lowest score: 435 - 76 = 359  \n3. Let x be the sixth score: 359 + x  \n4. Average of six scores: (359 + x) / 6 = 92  \nFinal Answer: 92 * 6 - 359 = 552 - 359 = 193",
+    "pred_answer_masked": "193",
+    "pred_answer_masked_norm": "193",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 91 + 76 + 88 + 94 + 86 = 435  \n2. Subtract the lowest score: 435 - 76 = 359  \n3. Let x be the sixth score: 359 + x  \n4. Average of five scores: (359 + x) / 5 = 92  \nFinal Answer: 92 * 5 - 359 = 460 - 359 = 101"
+  },
+  {
+    "id": 33,
+    "question": "Daniel is in Mrs. Baker's creative writing class. Mrs. Baker gives six stories each semester. She allows the students to remove the lowest score from their average each semester. If Daniel has scores of 86, 70, 89, 93 and 82 on the first five stories, what score does he need on the sixth story to secure an average of 90?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 86 + 70 + 89 + 93 + 82 = 420  \n2. Lowest score among first five: 70  \n3. Total needed for average of 90: 90 * 6 = 540  \n4. Required sixth score: 540 - (420 - 70) = 540 - 350 = 190  \nFinal Answer: 190",
+    "pred_answer_masked": "190",
+    "pred_answer_masked_norm": "190",
+    "ground_truth_norm": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 86 + 70 + 89 + 93 + 82 = 420  \n2. Lowest score among first five: 70  \n3. Total needed for average of 90 over 5 stories: 90 * 5 = 450  \n4. Required sixth score: 450 - (420 - 70) = 450 - 350 = 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 34,
+    "question": "Elizabeth is in Mr. Gonzalez's film class. Mr. Gonzalez gives six critiques each year. He allows the students to drop the lowest score from their average each year. If Elizabeth has scores of 90, 75, 92, 98 and 87 on the first five critiques, what score does she need on the sixth critique to attain an average of 94?",
+    "ground_truth": "103",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 87 = 442  \n2. Subtract the lowest score: 442 - 75 = 367  \n3. Let x be the sixth score: 367 + x  \n4. Average of the five highest scores: (367 + x) / 5 = 94  \nFinal Answer: 773",
+    "pred_answer_masked": "773",
+    "pred_answer_masked_norm": "773",
+    "ground_truth_norm": "103",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 87 = 442  \n2. Subtract the lowest score: 442 - 75 = 367  \n3. Let x be the sixth score: 367 + x  \n4. Average of the five highest scores: (367 + x) / 5 = 94  \nFinal Answer: 103"
+  },
+  {
+    "id": 35,
+    "question": "Matthew is in Ms. Nelson's theater class. Ms. Nelson gives six performances each term. She allows the students to exclude the lowest score from their average each term. If Matthew has scores of 85, 68, 87, 92 and 81 on the first five performances, what score does he need on the sixth performance to reach an average of 88?",
+    "ground_truth": "95",
+    "generation": "Reasoning:  \n1. Sum of known scores: 85 + 68 + 87 + 92 + 81 = 413  \n2. Total sum needed for average of 88: 88 * 6 = 528  \n3. Difference between needed sum and current sum: 528 - 413 = 115  \n4. Score needed on sixth performance: 115  \nFinal Answer: 115",
+    "pred_answer_masked": "115",
+    "pred_answer_masked_norm": "115",
+    "ground_truth_norm": "95",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 85 + 68 + 87 + 92 + 81 = 413. Lowest score is 68, so subtract it: 413 - 68 = 345  \n2. Total sum needed for average of 88 over 5 performances: 88 * 5 = 440  \n3. Difference between needed sum and current sum: 440 - 345 = 95  \n4. Score needed on sixth performance: 95  \nFinal Answer: 95"
+  },
+  {
+    "id": 36,
+    "question": "Sofia is in Mr. Carter's dance class. Mr. Carter gives six routines each semester. He allows the students to drop the lowest score from their average each semester. If Sofia has scores of 94, 79, 91, 99 and 88 on the first five routines, what score does she need on the sixth routine to get an average of 96?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 99 + 88 = 451  \n2. Subtract the lowest score: 451 - 79 = 372  \n3. Let x be the sixth score: 372 + x  \n4. Average of six scores: (372 + x) / 6 = 96  \nFinal Answer: 312",
+    "pred_answer_masked": "312",
+    "pred_answer_masked_norm": "312",
+    "ground_truth_norm": "108",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 99 + 88 = 451  \n2. Subtract the lowest score: 451 - 79 = 372  \n3. Let x be the sixth score: 372 + x  \n4. Average of five scores: (372 + x) / 5 = 96  \nFinal Answer: 108"
+  },
+  {
+    "id": 37,
+    "question": "Jackson is in Mrs. Mitchell's physical education class. Mrs. Mitchell gives six fitness tests each year. She allows the students to remove the lowest score from their average each year. If Jackson has scores of 88, 73, 90, 96 and 85 on the first five tests, what score does he need on the sixth test to achieve an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 88 + 73 + 90 + 96 + 85 = 432  \n2. Total needed for average of 92 over six tests: 92 * 6 = 552  \n3. Difference between total needed and current sum: 552 - 432 = 120  \n4. Score needed on sixth test: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "pred_answer_masked_norm": "120",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 88 + 73 + 90 + 96 + 85 = 432. Lowest score is 73, so subtract it: 432 - 73 = 359  \n2. Total needed for average of 92 over five tests: 92 * 5 = 460  \n3. Difference between total needed and current sum: 460 - 359 = 101  \n4. Score needed on sixth test: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 38,
+    "question": "Avery is in Mr. Perez's health class. Mr. Perez gives six quizzes each term. He allows the students to drop the lowest score from their average each term. If Avery has scores of 83, 67, 86, 91 and 80 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 87?",
+    "ground_truth": "95",
+    "generation": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 86 + 91 + 80 = 307  \n2. Total sum needed for 6 quizzes: 87 * 6 = 522  \n3. Difference between needed and current sum: 522 - 307 = 215  \n4. Score needed on sixth quiz: 215 - 67 = 148  \nFinal Answer: 148",
+    "pred_answer_masked": "148",
+    "pred_answer_masked_norm": "148",
+    "ground_truth_norm": "95",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 86 + 91 + 80 = 407. Lowest score is 67, so subtract it: 407 - 67 = 340  \n2. Total sum needed for 5 quizzes to average 87: 87 * 5 = 435  \n3. Difference between needed and current sum: 435 - 340 = 95  \n4. Score needed on sixth quiz: 95  \nFinal Answer: 95"
+  },
+  {
+    "id": 39,
+    "question": "David is in Ms. Roberts's nutrition class. Ms. Roberts gives six assignments each semester. She allows the students to exclude the lowest score from their average each semester. If David has scores of 92, 77, 89, 97 and 86 on the first five assignments, what score does he need on the sixth assignment to attain an average of 93?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441  \n2. Total sum needed for an average of 93 over six scores: 93 * 6 = 558  \n3. Sum of the sixth score: 558 - 441 = 117  \n4. Sixth score needed: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "pred_answer_masked_norm": "117",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441. Lowest score is 77, so subtract it: 441 - 77 = 364  \n2. Total sum needed for an average of 93 over five scores: 93 * 5 = 465  \n3. Sum of the sixth score needed: 465 - 364 = 101  \n4. Sixth score needed: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 40,
+    "question": "Ella is in Mr. Turner's anatomy class. Mr. Turner gives six lab reports each year. He allows the students to drop the lowest score from their average each year. If Ella has scores of 89, 74, 91, 96 and 84 on the first five lab reports, what score does she need on the sixth lab report to reach an average of 92?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 91 + 96 + 84 = 434  \n2. Subtract the lowest score: 434 - 74 = 360  \n3. Let x be the sixth score: 360 + x  \n4. Average of six scores: (360 + x) / 6 = 92  \nFinal Answer: 192",
+    "pred_answer_masked": "192",
+    "pred_answer_masked_norm": "192",
+    "ground_truth_norm": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 91 + 96 + 84 = 434  \n2. Subtract the lowest score: 434 - 74 = 360  \n3. Let x be the sixth score: 360 + x  \n4. Average of five scores: (360 + x) / 5 = 92  \nFinal Answer: 100"
+  },
+  {
+    "id": 41,
+    "question": "Joseph is in Mrs. Phillips's physiology class. Mrs. Phillips gives six exams each term. She allows the students to remove the lowest score from their average each term. If Joseph has scores of 95, 80, 93, 100 and 87 on the first five exams, what score does he need on the sixth exam to get an average of 96?",
+    "ground_truth": "105",
+    "generation": "Reasoning:  \n1. Sum of known scores: 95 + 80 + 93 + 100 + 87 = 455  \n2. Total sum needed for 6 exams: 96 * 6 = 576  \n3. Difference between needed and current sum: 576 - 455 = 121  \n4. Score needed on sixth exam: 121  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "pred_answer_masked_norm": "121",
+    "ground_truth_norm": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 95 + 80 + 93 + 100 + 87 = 455. Lowest score is 80, so subtract it: 455 - 80 = 375  \n2. Total sum needed for 5 exams: 96 * 5 = 480  \n3. Difference between needed and current sum: 480 - 375 = 105  \n4. Score needed on sixth exam: 105  \nFinal Answer: 105"
+  },
+  {
+    "id": 42,
+    "question": "Scarlett is in Mr. Campbell's genetics class. Mr. Campbell gives six quizzes each semester. He allows the students to drop the lowest score from their average each semester. If Scarlett has scores of 84, 69, 87, 92 and 81 on the first five quizzes, what score does she need on the sixth quiz to achieve an average of 88?",
+    "ground_truth": "96",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 84 + 69 + 87 + 92 + 81 = 413  \n2. Total sum needed for 6 scores to average 88: 88 * 6 = 528  \n3. Difference between needed sum and current sum: 528 - 413 = 115  \n4. Subtract the lowest score (69) from the difference: 115 - 69 = 46  \nFinal Answer: 46",
+    "pred_answer_masked": "46",
+    "pred_answer_masked_norm": "46",
+    "ground_truth_norm": "96",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 84 + 69 + 87 + 92 + 81 = 413. Subtract the lowest score (69): 413 - 69 = 344  \n2. Total sum needed for 5 scores to average 88: 88 * 5 = 440  \n3. Difference between needed sum and current sum: 440 - 344 = 96  \n4. Score needed on the sixth quiz: 96  \nFinal Answer: 96"
+  },
+  {
+    "id": 43,
+    "question": "Samuel is in Ms. Parker's microbiology class. Ms. Parker gives six practicals each year. She allows the students to exclude the lowest score from their average each year. If Samuel has scores of 90, 75, 92, 98 and 86 on the first five practicals, what score does he need on the sixth practical to secure an average of 94?",
+    "ground_truth": "104",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 86 = 441  \n2. To get an average of 94, total of six scores must be 94 * 6 = 564  \n3. Total needed from sixth score: 564 - 441 = 123  \n4. Sixth score required: 123  \nFinal Answer: 123",
+    "pred_answer_masked": "123",
+    "pred_answer_masked_norm": "123",
+    "ground_truth_norm": "104",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 86 = 441. Lowest score is 75, so subtract it: 441 - 75 = 366  \n2. To get an average of 94, total of five scores must be 94 * 5 = 470  \n3. Total needed from sixth score: 470 - 366 = 104  \n4. Sixth score required: 104  \nFinal Answer: 104"
+  },
+  {
+    "id": 44,
+    "question": "Grace is in Mr. Evans's biochemistry class. Mr. Evans gives six projects each term. He allows the students to drop the lowest score from their average each term. If Grace has scores of 87, 72, 89, 95 and 83 on the first five projects, what score does she need on the sixth project to attain an average of 91?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 87 + 72 + 89 + 95 + 83 = 426  \n2. Total sum needed for average of 91: 91 * 6 = 546  \n3. Difference between needed sum and current sum: 546 - 426 = 120  \n4. Score needed on sixth project: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "pred_answer_masked_norm": "120",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 87 + 72 + 89 + 95 + 83 = 426. Lowest score is 72, so subtract it: 426 - 72 = 354  \n2. Total sum needed for average of 91 over 5 projects: 91 * 5 = 455  \n3. Difference between needed sum and current sum: 455 - 354 = 101  \n4. Score needed on sixth project: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 45,
+    "question": "Sebastian is in Mrs. Edwards's ecology class. Mrs. Edwards gives six assignments each semester. She allows the students to remove the lowest score from their average each semester. If Sebastian has scores of 93, 78, 90, 99 and 85 on the first five assignments, what score does he need on the sixth assignment to reach an average of 95?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445  \n2. Total needed for average of 95 over six assignments: 95 * 6 = 570  \n3. Difference between total needed and current sum: 570 - 445 = 125  \n4. Score needed on sixth assignment: 125  \nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "pred_answer_masked_norm": "125",
+    "ground_truth_norm": "108",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445. Lowest score is 78, so subtract it: 445 - 78 = 367  \n2. Total needed for average of 95 over five assignments: 95 * 5 = 475  \n3. Difference between total needed and current sum: 475 - 367 = 108  \n4. Score needed on sixth assignment: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 46,
+    "question": "Chloe is in Mr. Collins's zoology class. Mr. Collins gives six lab reports each year. He allows the students to drop the lowest score from their average each year. If Chloe has scores of 82, 66, 85, 91 and 79 on the first five lab reports, what score does she need on the sixth lab report to get an average of 86?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 393  \n2. Let x be the sixth score: total sum = 393 + x  \n3. To get an average of 86, total sum must be 86 * 6 = 516  \n4. Solve for x: 393 + x = 516 → x = 123  \nFinal Answer: 123",
+    "pred_answer_masked": "123",
+    "pred_answer_masked_norm": "123",
+    "ground_truth_norm": "93",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 403. Lowest score is 66, so subtract it: 403 - 66 = 337  \n2. Let x be the sixth score: total sum = 337 + x  \n3. To get an average of 86 over 5 reports, total sum must be 86 * 5 = 430  \n4. Solve for x: 337 + x = 430 → x = 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 47,
+    "question": "Anthony is in Ms. Stewart's botany class. Ms. Stewart gives six exams each term. She allows the students to exclude the lowest score from their average each term. If Anthony has scores of 91, 76, 88, 94 and 86 on the first five exams, what score does he need on the sixth exam to achieve an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 91 + 76 + 88 + 94 + 86 = 435  \n2. Total sum needed for an average of 92 over 6 exams: 92 * 6 = 552  \n3. Difference between needed total and current total: 552 - 435 = 117  \n4. Score needed on the sixth exam: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "pred_answer_masked_norm": "117",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 91 + 76 + 88 + 94 + 86 = 435. Lowest score is 76, so subtract it: 435 - 76 = 359  \n2. Total sum needed for an average of 92 over 5 exams: 92 * 5 = 460  \n3. Difference between needed total and current total: 460 - 359 = 101  \n4. Score needed on the sixth exam: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 48,
+    "question": "Victoria is in Mr. Sanchez's marine biology class. Mr. Sanchez gives six quizzes each semester. He allows the students to drop the lowest score from their average each semester. If Victoria has scores of 86, 70, 89, 93 and 82 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 90?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 86 + 70 + 89 + 93 + 82 = 420  \n2. Total sum needed for 6 quizzes to average 90: 90 × 6 = 540  \n3. Difference between needed total and current total: 540 - 420 = 120  \n4. Subtract the lowest score (70) from the difference: 120 - 70 = 50  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "pred_answer_masked_norm": "50",
+    "ground_truth_norm": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 86 + 70 + 89 + 93 + 82 = 420. Subtract the lowest score (70): 420 - 70 = 350  \n2. Total sum needed for 5 quizzes to average 90: 90 * 5 = 450  \n3. Difference between needed total and current total: 450 - 350 = 100  \n4. Score needed on the sixth quiz: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 49,
+    "question": "John is in Mrs. Morris's paleontology class. Mrs. Morris gives six projects each year. She allows the students to remove the lowest score from their average each year. If John has scores of 94, 79, 91, 99 and 88 on the first five projects, what score does he need on the sixth project to attain an average of 96?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 99 + 88 = 451  \n2. Total sum needed for an average of 96 over six projects: 96 * 6 = 576  \n3. Difference between needed total and current total: 576 - 451 = 125  \n4. Score needed on the sixth project: 125  \nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "pred_answer_masked_norm": "125",
+    "ground_truth_norm": "108",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 99 + 88 = 451. Lowest score is 79, so subtract it: 451 - 79 = 372  \n2. Total sum needed for an average of 96 over five projects: 96 * 5 = 480  \n3. Difference between needed total and current total: 480 - 372 = 108  \n4. Score needed on the sixth project: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 50,
+    "question": "Aria is in Mr. Rogers's astronomy class. Mr. Rogers gives six assignments each term. He allows the students to drop the lowest score from their average each term. If Aria has scores of 88, 73, 90, 96 and 85 on the first five assignments, what score does she need on the sixth assignment to reach an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 88 + 73 + 90 + 96 + 85 = 432  \n2. Total sum needed for 6 scores to average 92: 92 * 6 = 552  \n3. Difference between needed sum and current sum: 552 - 432 = 120  \n4. Score needed on sixth assignment: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "pred_answer_masked_norm": "120",
+    "ground_truth_norm": "101",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 88 + 73 + 90 + 96 + 85 = 432. Lowest score is 73, so subtract it: 432 - 73 = 359  \n2. Total sum needed for 5 scores to average 92: 92 * 5 = 460  \n3. Difference between needed sum and current sum: 460 - 359 = 101  \n4. Score needed on sixth assignment: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 51,
+    "question": "Luke is in Ms. Reed's geology class. Ms. Reed gives six lab reports each semester. She allows the students to exclude the lowest score from their average each semester. If Luke has scores of 83, 67, 86, 91 and 80 on the first five lab reports, what score does he need on the sixth lab report to get an average of 87?",
+    "ground_truth": "95",
+    "generation": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 86 + 91 + 80 = 407  \n2. Total sum needed for average of 87: 87 * 6 = 522  \n3. Difference between needed sum and current sum: 522 - 407 = 115  \n4. Score needed on sixth report: 115  \nFinal Answer: 115",
+    "pred_answer_masked": "115",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 86 + 91 + 80 = 407. Lowest score is 67, so subtract it: 407 - 67 = 340  \n2. Total sum needed for average of 87 over 5 lab reports: 87 * 5 = 435  \n3. Difference between needed sum and current sum: 435 - 340 = 95  \n4. Score needed on sixth report: 95  \nFinal Answer: 95"
+  },
+  {
+    "id": 52,
+    "question": "Lily is in Mr. Cook's meteorology class. Mr. Cook gives six exams each year. He allows the students to drop the lowest score from their average each year. If Lily has scores of 92, 77, 89, 97 and 86 on the first five exams, what score does she need on the sixth exam to achieve an average of 93?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441  \n2. Total sum needed for an average of 93 over 6 exams: 93 * 6 = 558  \n3. Sum of the two lowest scores: 77 + 86 = 163  \n4. Required score on the sixth exam: 558 - 441 = 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441. Lowest score is 77, so subtract it: 441 - 77 = 364  \n2. Total sum needed for an average of 93 over 5 exams: 93 * 5 = 465  \n3. Difference between needed total and current total: 465 - 364 = 101  \n4. Score needed on the sixth exam: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 53,
+    "question": "Dylan is in Mrs. Morgan's oceanography class. Mrs. Morgan gives six quizzes each term. She allows the students to remove the lowest score from their average each term. If Dylan has scores of 89, 74, 91, 96 and 84 on the first five quizzes, what score does he need on the sixth quiz to secure an average of 92?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 89 + 74 + 91 + 96 + 84 = 434  \n2. Total sum needed for 6 quizzes: 92 * 6 = 552  \n3. Difference between needed sum and current sum: 552 - 434 = 118  \n4. Score needed on sixth quiz: 118  \nFinal Answer: 118",
+    "pred_answer_masked": "118",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 89 + 74 + 91 + 96 + 84 = 434. Lowest score is 74, so subtract it: 434 - 74 = 360  \n2. Total sum needed for average of 92 over 5 quizzes: 92 * 5 = 460  \n3. Difference between needed sum and current sum: 460 - 360 = 100  \n4. Score needed on sixth quiz: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 54,
+    "question": "Hannah is in Mr. Bell's environmental science class. Mr. Bell gives six projects each semester. He allows the students to drop the lowest score from their average each semester. If Hannah has scores of 95, 80, 93, 100 and 87 on the first five projects, what score does she need on the sixth project to attain an average of 96?",
+    "ground_truth": "105",
+    "generation": "Reasoning:  \n1. Sum of known scores: 95 + 80 + 93 + 100 + 87 = 455  \n2. Total needed for average of 96: 96 × 6 = 576  \n3. Score needed on sixth project: 576 - 455 = 121  \n4. Subtract lowest score: 121 - 80 = 41  \nFinal Answer: 41",
+    "pred_answer_masked": "41",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 95 + 80 + 93 + 100 + 87 = 455. Lowest score is 80, so subtract it: 455 - 80 = 375  \n2. Total needed for average of 96 over 5 projects: 96 * 5 = 480  \n3. Difference between needed sum and current sum: 480 - 375 = 105  \n4. Score needed on sixth project: 105  \nFinal Answer: 105"
+  },
+  {
+    "id": 55,
+    "question": "Gabriel is in Ms. Murphy's physics class. Ms. Murphy gives six assignments each year. She allows the students to exclude the lowest score from their average each year. If Gabriel has scores of 84, 69, 87, 92 and 81 on the first five assignments, what score does he need on the sixth assignment to reach an average of 88?",
+    "ground_truth": "96",
+    "generation": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 92 + 81 = 413  \n2. Total sum needed for average of 88: 88 * 6 = 528  \n3. Difference between needed and current sum: 528 - 413 = 115  \n4. Score needed on sixth assignment: 115  \nFinal Answer: 115",
+    "pred_answer_masked": "115",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 92 + 81 = 413. Lowest score is 69, so subtract it: 413 - 69 = 344  \n2. Total sum needed for average of 88 over 5 assignments: 88 * 5 = 440  \n3. Difference between needed and current sum: 440 - 344 = 96  \n4. Score needed on sixth assignment: 96  \nFinal Answer: 96"
+  },
+  {
+    "id": 56,
+    "question": "Addison is in Mr. Bailey's chemistry class. Mr. Bailey gives six lab reports each term. He allows the students to drop the lowest score from their average each term. If Addison has scores of 90, 75, 92, 98 and 86 on the first five lab reports, what score does she need on the sixth lab report to get an average of 94?",
+    "ground_truth": "104",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 86 = 441  \n2. To get an average of 94, total of six scores must be 94 * 6 = 564  \n3. Total needed from sixth score: 564 - 441 = 123  \n4. Sixth score needed: 123  \nFinal Answer: 123",
+    "pred_answer_masked": "123",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 86 = 441. Lowest score is 75, so subtract it: 441 - 75 = 366  \n2. To get an average of 94 over 5 lab reports, total of five scores must be 94 * 5 = 470  \n3. Total needed from sixth score: 470 - 366 = 104  \n4. Sixth score needed: 104  \nFinal Answer: 104"
+  },
+  {
+    "id": 57,
+    "question": "Isaac is in Mrs. Rivera's biology class. Mrs. Rivera gives six exams each semester. She allows the students to remove the lowest score from their average each semester. If Isaac has scores of 87, 72, 89, 95 and 83 on the first five exams, what score does he need on the sixth exam to achieve an average of 91?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 87 + 72 + 89 + 95 + 83 = 426  \n2. Total needed for average of 91 over 6 exams: 91 * 6 = 546  \n3. Total needed after removing the lowest score: 546 - 72 = 474  \n4. Score needed on sixth exam: 474 - 426 = 48  \nFinal Answer: 48",
+    "pred_answer_masked": "48",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 87 + 72 + 89 + 95 + 83 = 426. Lowest score is 72, so subtract it: 426 - 72 = 354  \n2. Total needed for average of 91 over 5 exams: 91 * 5 = 455  \n3. Difference between needed and current sum: 455 - 354 = 101  \n4. Score needed on sixth exam: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 58,
+    "question": "Aubrey is in Mr. Cooper's anatomy class. Mr. Cooper gives six quizzes each year. He allows the students to drop the lowest score from their average each year. If Aubrey has scores of 93, 78, 90, 99 and 85 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 95?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445  \n2. Total needed for 6 quizzes to average 95: 95 * 6 = 570  \n3. Difference between total needed and current sum: 570 - 445 = 125  \n4. Score needed on sixth quiz: 125  \nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445. Lowest score is 78, so subtract it: 445 - 78 = 367  \n2. Total needed for 5 quizzes to average 95: 95 * 5 = 475  \n3. Difference between total needed and current sum: 475 - 367 = 108  \n4. Score needed on sixth quiz: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 59,
+    "question": "Julian is in Ms. Richardson's physiology class. Ms. Richardson gives six projects each term. She allows the students to exclude the lowest score from their average each term. If Julian has scores of 82, 66, 85, 91 and 79 on the first five projects, what score does he need on the sixth project to attain an average of 86?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 393  \n2. Total sum needed for average of 86: 86 * 6 = 516  \n3. Difference between needed sum and current sum: 516 - 393 = 123  \n4. Score needed on sixth project: 123  \nFinal Answer: 123",
+    "pred_answer_masked": "123",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 403. Lowest score is 66, so subtract it: 403 - 66 = 337  \n2. Total sum needed for average of 86 over 5 projects: 86 * 5 = 430  \n3. Difference between needed sum and current sum: 430 - 337 = 93  \n4. Score needed on sixth project: 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 60,
+    "question": "Ellie is in Mr. Cox's microbiology class. Mr. Cox gives six assignments each semester. He allows the students to drop the lowest score from their average each semester. If Ellie has scores of 91, 76, 88, 94 and 86 on the first five assignments, what score does she need on the sixth assignment to reach an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 91 + 76 + 88 + 94 + 86 = 435  \n2. Total sum needed for 92 average: 92 * 6 = 552  \n3. Difference needed: 552 - 435 = 117  \n4. Score needed on sixth assignment: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 91 + 76 + 88 + 94 + 86 = 435. Lowest score is 76, so subtract it: 435 - 76 = 359  \n2. Total sum needed for 92 average over 5 assignments: 92 * 5 = 460  \n3. Difference needed: 460 - 359 = 101  \n4. Score needed on sixth assignment: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 61,
+    "question": "Levi is in Mrs. Howard's genetics class. Mrs. Howard gives six lab reports each year. She allows the students to remove the lowest score from their average each year. If Levi has scores of 86, 70, 89, 93 and 82 on the first five lab reports, what score does he need on the sixth lab report to get an average of 90?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 86 + 70 + 89 + 93 + 82 = 420  \n2. Total needed for an average of 90 over six scores: 90 * 6 = 540  \n3. Difference between total needed and current sum: 540 - 420 = 120  \n4. Score needed on the sixth report: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 86 + 70 + 89 + 93 + 82 = 420. Lowest score is 70, so subtract it: 420 - 70 = 350  \n2. Total needed for an average of 90 over 5 reports: 90 * 5 = 450  \n3. Difference between total needed and current sum: 450 - 350 = 100  \n4. Score needed on the sixth report: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 62,
+    "question": "Stella is in Mr. Ward's biochemistry class. Mr. Ward gives six exams each term. He allows the students to drop the lowest score from their average each term. If Stella has scores of 94, 79, 91, 99 and 88 on the first five exams, what score does she need on the sixth exam to achieve an average of 96?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 99 + 88 = 451  \n2. Total sum needed for an average of 96 over 6 exams: 96 * 6 = 576  \n3. Sum of the six scores including the sixth exam: 576  \n4. Sixth exam score: 576 - 451 = 125  \nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 94 + 79 + 91 + 99 + 88 = 451. Lowest score is 79, so subtract it: 451 - 79 = 372  \n2. Total sum needed for an average of 96 over 5 exams: 96 * 5 = 480  \n3. Difference between total needed and current sum: 480 - 372 = 108  \n4. Sixth exam score needed: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 63,
+    "question": "Aaron is in Ms. Torres's ecology class. Ms. Torres gives six quizzes each semester. She allows the students to exclude the lowest score from their average each semester. If Aaron has scores of 88, 73, 90, 96 and 85 on the first five quizzes, what score does he need on the sixth quiz to secure an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 88 + 73 + 90 + 96 + 85 = 432  \n2. Total sum needed for an average of 92 over six quizzes: 92 * 6 = 552  \n3. Difference between needed total and current total: 552 - 432 = 120  \n4. Score needed on the sixth quiz: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 88 + 73 + 90 + 96 + 85 = 432. Lowest score is 73, so subtract it: 432 - 73 = 359  \n2. Total sum needed for an average of 92 over 5 quizzes: 92 * 5 = 460  \n3. Difference between needed total and current total: 460 - 359 = 101  \n4. Score needed on the sixth quiz: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 64,
+    "question": "Natalie is in Mr. Peterson's zoology class. Mr. Peterson gives six projects each year. He allows the students to drop the lowest score from their average each year. If Natalie has scores of 83, 67, 86, 91 and 80 on the first five projects, what score does she need on the sixth project to attain an average of 87?",
+    "ground_truth": "95",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 83 + 67 + 86 + 91 + 80 = 407  \n2. Total sum needed for an average of 87 over six projects: 87 * 6 = 522  \n3. Difference between needed total and current total: 522 - 407 = 115  \n4. Score needed on the sixth project: 115  \nFinal Answer: 115",
+    "pred_answer_masked": "115",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 83 + 67 + 86 + 91 + 80 = 407. Lowest score is 67, so subtract it: 407 - 67 = 340  \n2. Total sum needed for an average of 87 over 5 projects: 87 * 5 = 435  \n3. Difference between needed total and current total: 435 - 340 = 95  \n4. Score needed on the sixth project: 95  \nFinal Answer: 95"
+  },
+  {
+    "id": 65,
+    "question": "Charles is in Mrs. Gray's botany class. Mrs. Gray gives six assignments each term. She allows the students to remove the lowest score from their average each term. If Charles has scores of 92, 77, 89, 97 and 86 on the first five assignments, what score does he need on the sixth assignment to reach an average of 93?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 92 + 77 + 89 + 97 + 86 = 441  \n2. Total sum needed for 6 assignments: 93 * 6 = 558  \n3. Difference needed: 558 - 441 = 117  \n4. Score needed on sixth assignment: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 92 + 77 + 89 + 97 + 86 = 441. Lowest score is 77, so subtract it: 441 - 77 = 364  \n2. Total sum needed for an average of 93 over 5 assignments: 93 * 5 = 465  \n3. Difference needed: 465 - 364 = 101  \n4. Score needed on sixth assignment: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 66,
+    "question": "Zoe is in Mr. Ramirez's marine biology class. Mr. Ramirez gives six lab reports each semester. He allows the students to drop the lowest score from their average each semester. If Zoe has scores of 89, 74, 91, 96 and 84 on the first five lab reports, what score does she need on the sixth lab report to get an average of 92?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 91 + 96 + 84 = 434  \n2. Subtract the lowest score: 434 - 74 = 360  \n3. Let x be the sixth score: 360 + x  \n4. Average of six scores: (360 + x) / 6 = 92  \nFinal Answer: 192",
+    "pred_answer_masked": "192",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 91 + 96 + 84 = 434. Subtract the lowest score: 434 - 74 = 360  \n2. Total sum needed for an average of 92 over 5 lab reports: 92 * 5 = 460  \n3. Difference between needed sum and current sum: 460 - 360 = 100  \n4. Score needed on the sixth lab report: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 67,
+    "question": "Thomas is in Ms. James's paleontology class. Ms. James gives six exams each year. She allows the students to exclude the lowest score from their average each year. If Thomas has scores of 95, 80, 93, 100 and 87 on the first five exams, what score does he need on the sixth exam to achieve an average of 96?",
+    "ground_truth": "105",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 95 + 80 + 93 + 100 + 87 = 455  \n2. Total sum needed for an average of 96 over six exams: 96 * 6 = 576  \n3. Difference between needed total and current total: 576 - 455 = 121  \n4. Score needed on the sixth exam: 121  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 95 + 80 + 93 + 100 + 87 = 455. Lowest score is 80, so subtract it: 455 - 80 = 375  \n2. Total sum needed for an average of 96 over 5 exams: 96 * 5 = 480  \n3. Difference between needed total and current total: 480 - 375 = 105  \n4. Score needed on the sixth exam: 105  \nFinal Answer: 105"
+  },
+  {
+    "id": 68,
+    "question": "Leah is in Mr. Watson's astronomy class. Mr. Watson gives six quizzes each term. He allows the students to drop the lowest score from their average each term. If Leah has scores of 84, 69, 87, 92 and 81 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 88?",
+    "ground_truth": "96",
+    "generation": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 92 + 81 = 413  \n2. Total sum needed for 6 quizzes: 88 * 6 = 528  \n3. Difference between needed and current sum: 528 - 413 = 115  \n4. Score needed on sixth quiz: 115  \nFinal Answer: 115",
+    "pred_answer_masked": "115",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 92 + 81 = 413. Lowest score is 69, so subtract it: 413 - 69 = 344  \n2. Total sum needed for an average of 88 over 5 quizzes: 88 * 5 = 440  \n3. Difference between needed and current sum: 440 - 344 = 96  \n4. Score needed on sixth quiz: 96  \nFinal Answer: 96"
+  },
+  {
+    "id": 69,
+    "question": "Caleb is in Mrs. Brooks's geology class. Mrs. Brooks gives six projects each semester. She allows the students to remove the lowest score from their average each semester. If Caleb has scores of 90, 75, 92, 98 and 86 on the first five projects, what score does he need on the sixth project to attain an average of 94?",
+    "ground_truth": "104",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 90 + 75 + 92 + 98 + 86 = 441  \n2. Total needed for average of 94 over six projects: 94 * 6 = 564  \n3. Score needed on sixth project: 564 - 441 = 123  \n4. Subtract the lowest score (75) from total: 564 - 75 = 489  \nFinal Answer: 489",
+    "pred_answer_masked": "489",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 90 + 75 + 92 + 98 + 86 = 441. Lowest score is 75, so subtract it: 441 - 75 = 366  \n2. Total needed for an average of 94 over 5 projects: 94 * 5 = 470  \n3. Difference between needed total and current sum: 470 - 366 = 104  \n4. Score needed on sixth project: 104  \nFinal Answer: 104"
+  },
+  {
+    "id": 70,
+    "question": "Hazel is in Mr. Kelly's meteorology class. Mr. Kelly gives six assignments each year. He allows the students to drop the lowest score from their average each year. If Hazel has scores of 87, 72, 89, 95 and 83 on the first five assignments, what score does she need on the sixth assignment to reach an average of 91?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 87 + 72 + 89 + 95 + 83 = 426  \n2. Total sum needed for 6 scores to average 91: 91 * 6 = 546  \n3. Difference between needed sum and current sum: 546 - 426 = 120  \n4. Score needed on sixth assignment: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 87 + 72 + 89 + 95 + 83 = 426. Lowest score is 72, so subtract it: 426 - 72 = 354  \n2. Total sum needed for 5 scores to average 91: 91 * 5 = 455  \n3. Difference between needed sum and current sum: 455 - 354 = 101  \n4. Score needed on sixth assignment: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 71,
+    "question": "Ryan is in Ms. Sanders's oceanography class. Ms. Sanders gives six lab reports each term. She allows the students to exclude the lowest score from their average each term. If Ryan has scores of 93, 78, 90, 99 and 85 on the first five lab reports, what score does he need on the sixth lab report to get an average of 95?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 93 + 78 + 90 + 99 + 85 = 445  \n2. To get an average of 95, total of six scores must be 95 * 6 = 570  \n3. Total needed from sixth score: 570 - 445 = 125  \n4. Sixth score needed: 125  \nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 93 + 78 + 90 + 99 + 85 = 445. Lowest score is 78, so subtract it: 445 - 78 = 367  \n2. To get an average of 95 over 5 lab reports, total of five scores must be 95 * 5 = 475  \n3. Total needed from sixth score: 475 - 367 = 108  \n4. Sixth score needed: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 72,
+    "question": "Lucy is in Mr. Price's environmental science class. Mr. Price gives six exams each semester. He allows the students to drop the lowest score from their average each semester. If Lucy has scores of 82, 66, 85, 91 and 79 on the first five exams, what score does she need on the sixth exam to achieve an average of 86?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 393  \n2. Total sum needed for average of 86: 86 * 6 = 516  \n3. Difference between needed sum and current sum: 516 - 393 = 123  \n4. Score needed on sixth exam: 123  \nFinal Answer: 123",
+    "pred_answer_masked": "123",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 403. Lowest score is 66, so subtract it: 403 - 66 = 337  \n2. Total sum needed for an average of 86 over 5 exams: 86 * 5 = 430  \n3. Difference between needed sum and current sum: 430 - 337 = 93  \n4. Score needed on sixth exam: 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 73,
+    "question": "Nathan is in Mrs. Bennett's physics class. Mrs. Bennett gives six quizzes each year. She allows the students to remove the lowest score from their average each year. If Nathan has scores of 91, 76, 88, 94 and 86 on the first five quizzes, what score does he need on the sixth quiz to secure an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 91 + 76 + 88 + 94 + 86 = 435  \n2. Total needed for average of 92 over six quizzes: 92 * 6 = 552  \n3. Difference between total needed and current sum: 552 - 435 = 117  \n4. Score needed on sixth quiz: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 91 + 76 + 88 + 94 + 86 = 435. Lowest score is 76, so subtract it: 435 - 76 = 359  \n2. Total needed for an average of 92 over 5 quizzes: 92 * 5 = 460  \n3. Difference between total needed and current sum: 460 - 359 = 101  \n4. Score needed on sixth quiz: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 74,
+    "question": "Anna is in Mr. Wood's chemistry class. Mr. Wood gives six projects each term. He allows the students to drop the lowest score from their average each term. If Anna has scores of 86, 70, 89, 93 and 82 on the first five projects, what score does she need on the sixth project to attain an average of 90?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of known scores: 86 + 70 + 89 + 93 + 82 = 420  \n2. Total sum needed for average of 90: 90 * 6 = 540  \n3. Difference between needed and current sum: 540 - 420 = 120  \n4. Score needed on sixth project: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 86 + 70 + 89 + 93 + 82 = 420. Lowest score is 70, so subtract it: 420 - 70 = 350  \n2. Total sum needed for an average of 90 over 5 projects: 90 * 5 = 450  \n3. Difference between needed and current sum: 450 - 350 = 100  \n4. Score needed on sixth project: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 75,
+    "question": "Christian is in Ms. Barnes's biology class. Ms. Barnes gives six assignments each semester. She allows the students to exclude the lowest score from their average each semester. If Christian has scores of 94, 79, 91, 99 and 88 on the first five assignments, what score does he need on the sixth assignment to reach an average of 96?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of known scores: 94 + 79 + 91 + 99 + 88 = 451  \n2. Lowest score is 79, so subtract it: 451 - 79 = 372  \n3. Total points needed for average of 96: 96 * 6 = 576  \n4. Points needed on sixth assignment: 576 - 372 = 204  \nFinal Answer: 204",
+    "pred_answer_masked": "204",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 94 + 79 + 91 + 99 + 88 = 451. Lowest score is 79, so subtract it: 451 - 79 = 372  \n2. Total points needed for an average of 96 over 5 assignments: 96 * 5 = 480  \n3. Points needed on sixth assignment: 480 - 372 = 108  \n4. Score needed on sixth assignment: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 76,
+    "question": "Maya is in Mr. Ross's anatomy class. Mr. Ross gives six lab reports each year. He allows the students to drop the lowest score from their average each year. If Maya has scores of 88, 73, 90, 96 and 85 on the first five lab reports, what score does she need on the sixth lab report to get an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 88 + 73 + 90 + 96 + 85 = 432  \n2. To get an average of 92, total of six scores must be 92 * 6 = 552  \n3. Total needed from sixth score: 552 - 432 = 120  \n4. Sixth score needed: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 88 + 73 + 90 + 96 + 85 = 432. Lowest score is 73, so subtract it: 432 - 73 = 359  \n2. To get an average of 92 over 5 lab reports, total of five scores must be 92 * 5 = 460  \n3. Total needed from sixth score: 460 - 359 = 101  \n4. Sixth score needed: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 77,
+    "question": "Hunter is in Mrs. Henderson's physiology class. Mrs. Henderson gives six exams each term. She allows the students to remove the lowest score from their average each term. If Hunter has scores of 83, 67, 86, 91 and 80 on the first five exams, what score does he need on the sixth exam to achieve an average of 87?",
+    "ground_truth": "95",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 83 + 67 + 86 + 91 + 80 = 407  \n2. Lowest score among first five: 67  \n3. Sum of remaining four scores: 407 - 67 = 340  \n4. Total needed for average of 87 over six exams: 87 * 6 = 522  \nFinal Answer: 182",
+    "pred_answer_masked": "182",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 83 + 67 + 86 + 91 + 80 = 407. Lowest score among first five: 67  \n2. Sum of remaining four scores: 407 - 67 = 340  \n3. Total needed for an average of 87 over 5 exams: 87 * 5 = 435  \n4. Score needed on sixth exam: 435 - 340 = 95  \nFinal Answer: 95"
+  },
+  {
+    "id": 78,
+    "question": "Samantha is in Mr. Coleman's microbiology class. Mr. Coleman gives six quizzes each semester. He allows the students to drop the lowest score from their average each semester. If Samantha has scores of 92, 77, 89, 97 and 86 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 93?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441  \n2. Total sum needed for an average of 93 over six quizzes: 93 * 6 = 558  \n3. Sum of the six scores including the sixth quiz: 558  \n4. Sixth quiz score: 558 - 441 = 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441. Lowest score is 77, so subtract it: 441 - 77 = 364  \n2. Total sum needed for an average of 93 over 5 quizzes: 93 * 5 = 465  \n3. Difference between needed total and current total: 465 - 364 = 101  \n4. Sixth quiz score needed: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 79,
+    "question": "Jonathan is in Ms. Jenkins's genetics class. Ms. Jenkins gives six projects each year. She allows the students to exclude the lowest score from their average each year. If Jonathan has scores of 89, 74, 91, 96 and 84 on the first five projects, what score does he need on the sixth project to attain an average of 92?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 91 + 96 + 84 = 434  \n2. Total needed for an average of 92 over six projects: 92 * 6 = 552  \n3. Difference between total needed and current sum: 552 - 434 = 118  \n4. Score needed on the sixth project: 118  \nFinal Answer: 118",
+    "pred_answer_masked": "118",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 89 + 74 + 91 + 96 + 84 = 434. Lowest score is 74, so subtract it: 434 - 74 = 360  \n2. Total needed for an average of 92 over 5 projects: 92 * 5 = 460  \n3. Difference between total needed and current sum: 460 - 360 = 100  \n4. Score needed on the sixth project: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 80,
+    "question": "Elena is in Mr. Perry's biochemistry class. Mr. Perry gives six assignments each term. He allows the students to drop the lowest score from their average each term. If Elena has scores of 95, 80, 93, 100 and 87 on the first five assignments, what score does she need on the sixth assignment to reach an average of 96?",
+    "ground_truth": "105",
+    "generation": "Reasoning:  \n1. Sum of known scores: 95 + 80 + 93 + 100 + 87 = 455  \n2. Total sum needed for 6 scores: 96 * 6 = 576  \n3. Difference between needed and current sum: 576 - 455 = 121  \n4. Score needed on sixth assignment: 121  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 95 + 80 + 93 + 100 + 87 = 455. Lowest score is 80, so subtract it: 455 - 80 = 375  \n2. Total sum needed for an average of 96 over 5 assignments: 96 * 5 = 480  \n3. Difference between needed and current sum: 480 - 375 = 105  \n4. Score needed on sixth assignment: 105  \nFinal Answer: 105"
+  },
+  {
+    "id": 81,
+    "question": "Landon is in Mrs. Powell's ecology class. Mrs. Powell gives six lab reports each semester. She allows the students to remove the lowest score from their average each semester. If Landon has scores of 84, 69, 87, 92 and 81 on the first five lab reports, what score does he need on the sixth lab report to get an average of 88?",
+    "ground_truth": "96",
+    "generation": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 92 + 81 = 413  \n2. Total needed for average of 88: 88 * 6 = 528  \n3. Required score on sixth report: 528 - 413 = 115  \n4. Subtract lowest score: 115 - 69 = 46  \nFinal Answer: 46",
+    "pred_answer_masked": "46",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 84 + 69 + 87 + 92 + 81 = 413. Lowest score is 69, so subtract it: 413 - 69 = 344  \n2. Total needed for an average of 88 over 5 lab reports: 88 * 5 = 440  \n3. Difference between needed total and current sum: 440 - 344 = 96  \n4. Required score on sixth report: 96  \nFinal Answer: 96"
+  },
+  {
+    "id": 82,
+    "question": "Sarah is in Mr. Long's zoology class. Mr. Long gives six exams each year. He allows the students to drop the lowest score from their average each year. If Sarah has scores of 90, 75, 92, 98 and 86 on the first five exams, what score does she need on the sixth exam to achieve an average of 94?",
+    "ground_truth": "104",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 86 = 441  \n2. Total needed for an average of 94 over 6 exams: 94 * 6 = 564  \n3. Difference between total needed and current sum: 564 - 441 = 123  \n4. Subtract the lowest score (75) from the difference: 123 - 75 = 48  \nFinal Answer: 48",
+    "pred_answer_masked": "48",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 90 + 75 + 92 + 98 + 86 = 441. Lowest score is 75, so subtract it: 441 - 75 = 366  \n2. Total needed for an average of 94 over 5 exams: 94 * 5 = 470  \n3. Difference between total needed and current sum: 470 - 366 = 104  \n4. Score needed on the sixth exam: 104  \nFinal Answer: 104"
+  },
+  {
+    "id": 83,
+    "question": "Isaiah is in Ms. Patterson's botany class. Ms. Patterson gives six quizzes each term. She allows the students to exclude the lowest score from their average each term. If Isaiah has scores of 87, 72, 89, 95 and 83 on the first five quizzes, what score does he need on the sixth quiz to secure an average of 91?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 87 + 72 + 89 + 95 + 83 = 426  \n2. Total sum needed for an average of 91 over 6 quizzes: 91 * 6 = 546  \n3. Difference between needed total and current total: 546 - 426 = 120  \n4. Score needed on the sixth quiz: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 87 + 72 + 89 + 95 + 83 = 426. Lowest score is 72, so subtract it: 426 - 72 = 354  \n2. Total sum needed for an average of 91 over 5 quizzes: 91 * 5 = 455  \n3. Difference between needed total and current total: 455 - 354 = 101  \n4. Score needed on the sixth quiz: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 84,
+    "question": "Naomi is in Mr. Hughes's marine biology class. Mr. Hughes gives six projects each semester. He allows the students to drop the lowest score from their average each semester. If Naomi has scores of 93, 78, 90, 99 and 85 on the first five projects, what score does she need on the sixth project to attain an average of 95?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of known scores: 93 + 78 + 90 + 99 + 85 = 445  \n2. Let x be the sixth score: total sum = 445 + x  \n3. Remove the lowest score (78): total sum = 445 + x - 78 = 367 + x  \n4. Average = (367 + x) / 4 = 95  \nFinal Answer: 173",
+    "pred_answer_masked": "173",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 93 + 78 + 90 + 99 + 85 = 445. Lowest score is 78, so subtract it: 445 - 78 = 367  \n2. Total sum needed for an average of 95 over 5 projects: 95 * 5 = 475  \n3. Difference between needed total and current sum: 475 - 367 = 108  \n4. Score needed on the sixth project: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 85,
+    "question": "Asher is in Mrs. Flores's paleontology class. Mrs. Flores gives six assignments each year. She allows the students to remove the lowest score from their average each year. If Asher has scores of 82, 66, 85, 91 and 79 on the first five assignments, what score does he need on the sixth assignment to reach an average of 86?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 393  \n2. Total sum needed for average of 86: 86 * 6 = 516  \n3. Difference between needed sum and current sum: 516 - 393 = 123  \n4. Score needed on sixth assignment: 123  \nFinal Answer: 123",
+    "pred_answer_masked": "123",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 403. Lowest score is 66, so subtract it: 403 - 66 = 337  \n2. Total sum needed for an average of 86 over 5 assignments: 86 * 5 = 430  \n3. Difference between needed sum and current sum: 430 - 337 = 93  \n4. Score needed on sixth assignment: 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 86,
+    "question": "Eva is in Mr. Washington's astronomy class. Mr. Washington gives six lab reports each term. He allows the students to drop the lowest score from their average each term. If Eva has scores of 91, 76, 88, 94 and 86 on the first five lab reports, what score does she need on the sixth lab report to get an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 91 + 76 + 88 + 94 + 86 = 435  \n2. Let x be the sixth score: total sum = 435 + x  \n3. To get an average of 92, total sum must be 92 * 6 = 552  \n4. Solve for x: 435 + x = 552 → x = 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 91 + 76 + 88 + 94 + 86 = 435. Lowest score is 76, so subtract it: 435 - 76 = 359  \n2. Total sum needed for an average of 92 over 5 lab reports: 92 * 5 = 460  \n3. Difference between needed total and current sum: 460 - 359 = 101  \n4. Score needed on the sixth lab report: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 87,
+    "question": "Cameron is in Ms. Butler's geology class. Ms. Butler gives six exams each semester. She allows the students to exclude the lowest score from their average each semester. If Cameron has scores of 86, 70, 89, 93 and 82 on the first five exams, what score does he need on the sixth exam to achieve an average of 90?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 86 + 70 + 89 + 93 + 82 = 420  \n2. Subtract the lowest score: 420 - 70 = 350  \n3. Add the sixth score: 350 + x  \n4. Set up equation for average: (350 + x) / 5 = 90  \nFinal Answer: 400",
+    "pred_answer_masked": "400",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 86 + 70 + 89 + 93 + 82 = 420. Subtract the lowest score: 420 - 70 = 350  \n2. Total sum needed for an average of 90 over 5 exams: 90 * 5 = 450  \n3. Difference between needed total and current sum: 450 - 350 = 100  \n4. Score needed on the sixth exam: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 88,
+    "question": "Penelope is in Mr. Simmons's meteorology class. Mr. Simmons gives six quizzes each year. He allows the students to drop the lowest score from their average each year. If Penelope has scores of 94, 79, 91, 99 and 88 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 96?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of known scores: 94 + 79 + 91 + 99 + 88 = 451  \n2. Total sum needed for 6 quizzes: 96 * 6 = 576  \n3. Difference between needed sum and current sum: 576 - 451 = 125  \n4. Score needed on sixth quiz: 125  \nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 94 + 79 + 91 + 99 + 88 = 451. Lowest score is 79, so subtract it: 451 - 79 = 372  \n2. Total sum needed for an average of 96 over 5 quizzes: 96 * 5 = 480  \n3. Difference between needed sum and current sum: 480 - 372 = 108  \n4. Score needed on sixth quiz: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 89,
+    "question": "Leo is in Mrs. Foster's oceanography class. Mrs. Foster gives six projects each term. She allows the students to remove the lowest score from their average each term. If Leo has scores of 88, 73, 90, 96 and 85 on the first five projects, what score does he need on the sixth project to attain an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of known scores: 88 + 73 + 90 + 96 + 85 = 432  \n2. Total sum needed for average of 92: 92 * 6 = 552  \n3. Sum needed from sixth project: 552 - 432 = 120  \n4. Score needed on sixth project: 120  \nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 88 + 73 + 90 + 96 + 85 = 432. Lowest score is 73, so subtract it: 432 - 73 = 359  \n2. Total sum needed for an average of 92 over 5 projects: 92 * 5 = 460  \n3. Sum needed from sixth project: 460 - 359 = 101  \n4. Score needed on sixth project: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 90,
+    "question": "Mila is in Mr. Gonzales's environmental science class. Mr. Gonzales gives six assignments each semester. He allows the students to drop the lowest score from their average each semester. If Mila has scores of 83, 67, 86, 91 and 80 on the first five assignments, what score does she need on the sixth assignment to reach an average of 87?",
+    "ground_truth": "95",
+    "generation": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 86 + 91 + 80 = 407  \n2. Total sum needed for 5 assignments to average 87: 87 * 5 = 435  \n3. Difference between needed and current sum: 435 - 407 = 28  \n4. Minimum score needed on sixth assignment: 28 + 67 = 95  \nFinal Answer: 95",
+    "pred_answer_masked": "95",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 83 + 67 + 86 + 91 + 80 = 407. Lowest score is 67, so subtract it: 407 - 67 = 340  \n2. Total sum needed for an average of 87 over 5 assignments: 87 * 5 = 435  \n3. Difference between needed and current sum: 435 - 340 = 95  \n4. Minimum score needed on sixth assignment: 95  \nFinal Answer: 95"
+  },
+  {
+    "id": 91,
+    "question": "Mateo is in Ms. Bryant's physics class. Ms. Bryant gives six lab reports each year. She allows the students to exclude the lowest score from their average each year. If Mateo has scores of 92, 77, 89, 97 and 86 on the first five lab reports, what score does he need on the sixth lab report to get an average of 93?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441  \n2. Total sum needed for an average of 93 with six scores: 93 * 6 = 558  \n3. Sum of the sixth score: 558 - 441 = 117  \n4. Sixth score needed: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 92 + 77 + 89 + 97 + 86 = 441. Lowest score is 77, so subtract it: 441 - 77 = 364  \n2. Total sum needed for an average of 93 over 5 lab reports: 93 * 5 = 465  \n3. Difference between needed total and current sum: 465 - 364 = 101  \n4. Sixth score needed: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 92,
+    "question": "Aaliyah is in Mr. Alexander's chemistry class. Mr. Alexander gives six exams each term. He allows the students to drop the lowest score from their average each term. If Aaliyah has scores of 89, 74, 91, 96 and 84 on the first five exams, what score does she need on the sixth exam to achieve an average of 92?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 89 + 74 + 91 + 96 + 84 = 434  \n2. Total needed for average of 92 over 6 exams: 92 * 6 = 552  \n3. Total needed after dropping the lowest score: 552 - 434 = 118  \n4. Score needed on sixth exam: 118  \nFinal Answer: 118",
+    "pred_answer_masked": "118",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 89 + 74 + 91 + 96 + 84 = 434. Lowest score is 74, so subtract it: 434 - 74 = 360  \n2. Total needed for an average of 92 over 5 exams: 92 * 5 = 460  \n3. Difference between needed total and current sum: 460 - 360 = 100  \n4. Score needed on sixth exam: 100  \nFinal Answer: 100"
+  },
+  {
+    "id": 93,
+    "question": "Lincoln is in Mrs. Russell's biology class. Mrs. Russell gives six quizzes each semester. She allows the students to remove the lowest score from their average each semester. If Lincoln has scores of 95, 80, 93, 100 and 87 on the first five quizzes, what score does he need on the sixth quiz to secure an average of 96?",
+    "ground_truth": "105",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 95 + 80 + 93 + 100 + 87 = 455  \n2. Total needed for six quizzes to average 96: 96 * 6 = 576  \n3. Difference between total needed and current sum: 576 - 455 = 121  \n4. Score needed on sixth quiz: 121  \nFinal Answer: 121",
+    "pred_answer_masked": "121",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 95 + 80 + 93 + 100 + 87 = 455. Lowest score is 80, so subtract it: 455 - 80 = 375  \n2. Total needed for an average of 96 over 5 quizzes: 96 * 5 = 480  \n3. Difference between total needed and current sum: 480 - 375 = 105  \n4. Score needed on sixth quiz: 105  \nFinal Answer: 105"
+  },
+  {
+    "id": 94,
+    "question": "Madelyn is in Mr. Griffin's anatomy class. Mr. Griffin gives six projects each year. He allows the students to drop the lowest score from their average each year. If Madelyn has scores of 84, 69, 87, 92 and 81 on the first five projects, what score does she need on the sixth project to attain an average of 88?",
+    "ground_truth": "96",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 84 + 69 + 87 + 92 + 81 = 413  \n2. Total needed for an average of 88 over six projects: 88 * 6 = 528  \n3. Difference between total needed and current sum: 528 - 413 = 115  \n4. Subtract the lowest score (69) from the difference: 115 - 69 = 46  \nFinal Answer: 46",
+    "pred_answer_masked": "46",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 84 + 69 + 87 + 92 + 81 = 413. Lowest score is 69, so subtract it: 413 - 69 = 344  \n2. Total needed for an average of 88 over 5 projects: 88 * 5 = 440  \n3. Difference between total needed and current sum: 440 - 344 = 96  \n4. Score needed on the sixth project: 96  \nFinal Answer: 96"
+  },
+  {
+    "id": 95,
+    "question": "Ezra is in Ms. Diaz's physiology class. Ms. Diaz gives six assignments each term. She allows the students to exclude the lowest score from their average each term. If Ezra has scores of 90, 75, 92, 98 and 86 on the first five assignments, what score does he need on the sixth assignment to reach an average of 94?",
+    "ground_truth": "104",
+    "generation": "Reasoning:  \n1. Sum of known scores: 90 + 75 + 92 + 98 + 86 = 441  \n2. Lowest score is 75, so subtract it: 441 - 75 = 366  \n3. Total needed for average of 94: 94 * 6 = 564  \n4. Score needed on sixth assignment: 564 - 366 = 198  \nFinal Answer: 198",
+    "pred_answer_masked": "198",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 90 + 75 + 92 + 98 + 86 = 441. Lowest score is 75, so subtract it: 441 - 75 = 366  \n2. Total needed for an average of 94 over 5 assignments: 94 * 5 = 470  \n3. Difference between needed total and current sum: 470 - 366 = 104  \n4. Score needed on sixth assignment: 104  \nFinal Answer: 104"
+  },
+  {
+    "id": 96,
+    "question": "Gianna is in Mr. Hayes's microbiology class. Mr. Hayes gives six lab reports each semester. He allows the students to drop the lowest score from their average each semester. If Gianna has scores of 87, 72, 89, 95 and 83 on the first five lab reports, what score does she need on the sixth lab report to get an average of 91?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 87 + 72 + 89 + 95 + 83 = 426  \n2. Subtract the lowest score: 426 - 72 = 354  \n3. Let x be the sixth score: 354 + x  \n4. Average of six scores: (354 + x) / 6 = 91  \nFinal Answer: 91 * 6 - 354 = 546 - 354 = 192",
+    "pred_answer_masked": "192",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 87 + 72 + 89 + 95 + 83 = 426. Lowest score is 72, so subtract it: 426 - 72 = 354  \n2. Total needed for an average of 91 over 5 lab reports: 91 * 5 = 455  \n3. Difference between needed total and current sum: 455 - 354 = 101  \n4. Score needed on the sixth lab report: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 97,
+    "question": "Hudson is in Mrs. Myers's genetics class. Mrs. Myers gives six exams each year. She allows the students to remove the lowest score from their average each year. If Hudson has scores of 93, 78, 90, 99 and 85 on the first five exams, what score does he need on the sixth exam to achieve an average of 95?",
+    "ground_truth": "108",
+    "generation": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445  \n2. Lowest score is 78, so subtract it: 445 - 78 = 367  \n3. Total needed for average of 95 over 6 exams: 95 * 6 = 570  \n4. Score needed on sixth exam: 570 - 367 = 203  \nFinal Answer: 203",
+    "pred_answer_masked": "203",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of first five scores: 93 + 78 + 90 + 99 + 85 = 445. Lowest score is 78, so subtract it: 445 - 78 = 367  \n2. Total needed for an average of 95 over 5 exams: 95 * 5 = 475  \n3. Difference between needed total and current sum: 475 - 367 = 108  \n4. Score needed on sixth exam: 108  \nFinal Answer: 108"
+  },
+  {
+    "id": 98,
+    "question": "Aurora is in Mr. Ford's biochemistry class. Mr. Ford gives six quizzes each term. He allows the students to drop the lowest score from their average each term. If Aurora has scores of 82, 66, 85, 91 and 79 on the first five quizzes, what score does she need on the sixth quiz to secure an average of 86?",
+    "ground_truth": "93",
+    "generation": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 393  \n2. Total sum needed for 6 quizzes: 86 * 6 = 516  \n3. Difference between needed and current sum: 516 - 393 = 123  \n4. Score needed on sixth quiz: 123  \nFinal Answer: 123",
+    "pred_answer_masked": "123",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 82 + 66 + 85 + 91 + 79 = 403. Lowest score is 66, so subtract it: 403 - 66 = 337  \n2. Total sum needed for an average of 86 over 5 quizzes: 86 * 5 = 430  \n3. Difference between needed and current sum: 430 - 337 = 93  \n4. Score needed on sixth quiz: 93  \nFinal Answer: 93"
+  },
+  {
+    "id": 99,
+    "question": "Roman is in Ms. Hamilton's ecology class. Ms. Hamilton gives six projects each semester. She allows the students to exclude the lowest score from their average each semester. If Roman has scores of 91, 76, 88, 94 and 86 on the first five projects, what score does he need on the sixth project to attain an average of 92?",
+    "ground_truth": "101",
+    "generation": "Reasoning:  \n1. Sum of the first five scores: 91 + 76 + 88 + 94 + 86 = 435  \n2. Total sum needed for an average of 92 over six projects: 92 * 6 = 552  \n3. Difference between needed total and current total: 552 - 435 = 117  \n4. Score needed on the sixth project: 117  \nFinal Answer: 117",
+    "pred_answer_masked": "117",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of the first five scores: 91 + 76 + 88 + 94 + 86 = 435. Lowest score is 76, so subtract it: 435 - 76 = 359  \n2. Total sum needed for an average of 92 over 5 projects: 92 * 5 = 460  \n3. Difference between needed total and current total: 460 - 359 = 101  \n4. Score needed on the sixth project: 101  \nFinal Answer: 101"
+  },
+  {
+    "id": 100,
+    "question": "Isla is in Mr. Graham's zoology class. Mr. Graham gives six assignments each year. He allows the students to drop the lowest score from their average each year. If Isla has scores of 86, 70, 89, 93 and 82 on the first five assignments, what score does she need on the sixth assignment to reach an average of 90?",
+    "ground_truth": "100",
+    "generation": "Reasoning:  \n1. Sum of known scores: 86 + 70 + 89 + 93 + 82 = 420  \n2. Lowest score is 70, so subtract it: 420 - 70 = 350  \n3. Total needed for average of 90: 90 * 5 = 450  \n4. Score needed on sixth assignment: 450 - 350 = 100  \nFinal Answer: 100",
+    "pred_answer_masked": "100",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:  \n1. Sum of known scores: 86 + 70 + 89 + 93 + 82 = 420. Lowest score is 70, so subtract it: 420 - 70 = 350  \n2. Total needed for an average of 90 over 5 assignments: 90 * 5 = 450  \n3. Difference between needed total and current sum: 450 - 350 = 100  \n4. Score needed on sixth assignment: 100  \nFinal Answer: 100"
+  }
+]

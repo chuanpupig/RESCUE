@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "To stock his cellar, Liam is gathering baskets of apples. Initially, he collects 4 baskets containing 5 apples each, followed by 5 baskets holding 6 apples apiece. Next, he acquires 3 more baskets, each with 7 apples, and finally picks up 6 baskets containing 4 apples each. While transporting them to the cellar, he accidentally drops and loses exactly 1 basket of each type. He successfully stores the rest of the apples. What is the total number of apples that end up in the cellar?",
+    "ground_truth": "73"
+  },
+  {
+    "id": 2,
+    "question": "Olivia is gathering boxes of cookies to fill her jar. She begins by picking up 5 boxes that contain 3 cookies each. She continues by getting 4 boxes with 8 cookies per box, and then grabs 6 more boxes holding 5 cookies each. To finish, she selects 3 boxes containing 10 cookies apiece. On her way to the jar, she drops 1 box from every group, losing their contents. The surviving cookies are placed into the jar. How many cookies are currently in the jar?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 3,
+    "question": "In order to fill his chest, Noah is collecting bags of marbles. He starts with 3 bags holding 8 marbles each, and later grabs 6 bags that have 4 marbles apiece. Afterwards, he collects 4 additional bags containing 6 marbles each, and finally 5 bags with 5 marbles per bag. During his walk to the chest, he drops exactly 1 bag from each set, losing those marbles completely. He puts the rest into his chest. Find the total number of marbles stored in the chest.",
+    "ground_truth": "74"
+  },
+  {
+    "id": 4,
+    "question": "Emma is bringing pouches of coins to store in her safe. She starts by accumulating 6 pouches with 2 coins inside each one. Next, she finds 5 pouches containing 4 coins apiece, followed by 4 pouches that hold 7 coins each. Finally, she acquires 3 pouches with 9 coins per pouch. While carrying them to the safe, she accidentally drops 1 pouch of each size, resulting in the loss of those coins. She secures the remaining coins inside the safe. What is the total coin count in the safe?",
+    "ground_truth": "65"
+  },
+  {
+    "id": 5,
+    "question": "To stock her album, Ava is gathering envelopes of stamps. Initially, she collects 4 envelopes containing 6 stamps each, followed by 3 envelopes holding 9 stamps apiece. Next, she acquires 5 more envelopes, each with 7 stamps, and finally picks up 6 envelopes containing 5 stamps each. While transporting them to the album, she accidentally drops and loses exactly 1 envelope of each type. She successfully stores the rest of the stamps. What is the total number of stamps that end up in the album?",
+    "ground_truth": "89"
+  },
+  {
+    "id": 6,
+    "question": "Oliver is gathering buckets of shells to fill his display. He begins by picking up 5 buckets that contain 5 shells each. He continues by getting 6 buckets with 3 shells per bucket, and then grabs 4 more buckets holding 8 shells each. To finish, he selects 3 buckets containing 12 shells apiece. On his way to the display, he drops 1 bucket from every group, losing their contents. The surviving shells are placed into the display. How many shells are currently in the display?",
+    "ground_truth": "83"
+  },
+  {
+    "id": 7,
+    "question": "In order to fill her toy box, Isabella is collecting cartons of blocks. She starts with 3 cartons holding 10 blocks each, and later grabs 4 cartons that have 9 blocks apiece. Afterwards, she collects 5 additional cartons containing 4 blocks each, and finally 6 cartons with 6 blocks per carton. During her walk to the toy box, she drops exactly 1 carton from each set, losing those blocks completely. She puts the rest into her toy box. Find the total number of blocks stored in the toy box.",
+    "ground_truth": "93"
+  },
+  {
+    "id": 8,
+    "question": "Elijah is bringing jars of beads to store in his craft organizer. He starts by accumulating 6 jars with 4 beads inside each one. Next, he finds 3 jars containing 11 beads apiece, followed by 4 jars that hold 5 beads each. Finally, he acquires 5 jars with 6 beads per jar. While carrying them to the craft organizer, he accidentally drops 1 jar of each size, resulting in the loss of those beads. He secures the remaining beads inside the craft organizer. What is the total bead count in the craft organizer?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 9,
+    "question": "To stock her binder, Sophia is gathering packs of cards. Initially, she collects 4 packs containing 7 cards each, followed by 5 packs holding 5 cards apiece. Next, she acquires 6 more packs, each with 6 cards, and finally picks up 3 packs containing 8 cards each. While transporting them to the binder, she accidentally drops and loses exactly 1 pack of each type. She successfully stores the rest of the cards. What is the total number of cards that end up in the binder?",
+    "ground_truth": "87"
+  },
+  {
+    "id": 10,
+    "question": "William is gathering sacks of gems to fill his vault. He begins by picking up 5 sacks that contain 8 gems each. He continues by getting 4 sacks with 4 gems per sack, and then grabs 3 more sacks holding 12 gems each. To finish, he selects 6 sacks containing 5 gems apiece. On his way to the vault, he drops 1 sack from every group, losing their contents. The surviving gems are placed into the vault. How many gems are currently in the vault?",
+    "ground_truth": "93"
+  },
+  {
+    "id": 11,
+    "question": "In order to fill her garden shed, Mia is collecting packets of seeds. She starts with 4 packets holding 5 seeds each, and later grabs 5 packets that have 6 seeds apiece. Afterwards, she collects 3 additional packets containing 7 seeds each, and finally 6 packets with 4 seeds per packet. During her walk to the garden shed, she drops exactly 1 packet from each set, losing those seeds completely. She puts the rest into her garden shed. Find the total number of seeds stored in the garden shed.",
+    "ground_truth": "73"
+  },
+  {
+    "id": 12,
+    "question": "James is bringing tins of candies to store in his bowl. He starts by accumulating 5 tins with 3 candies inside each one. Next, he finds 4 tins containing 8 candies apiece, followed by 6 tins that hold 5 candies each. Finally, he acquires 3 tins with 10 candies per tin. While carrying them to the bowl, he accidentally drops 1 tin of each size, resulting in the loss of those candies. He secures the remaining candies inside the bowl. What is the total candy count in the bowl?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 13,
+    "question": "To stock her sewing kit, Charlotte is gathering cups of buttons. Initially, she collects 3 cups containing 8 buttons each, followed by 6 cups holding 4 buttons apiece. Next, she acquires 4 more cups, each with 6 buttons, and finally picks up 5 cups containing 5 buttons each. While transporting them to the sewing kit, she accidentally drops and loses exactly 1 cup of each type. She successfully stores the rest of the buttons. What is the total number of buttons that end up in the sewing kit?",
+    "ground_truth": "74"
+  },
+  {
+    "id": 14,
+    "question": "Benjamin is gathering bowls of nuts to fill his pantry. He begins by picking up 6 bowls that contain 2 nuts each. He continues by getting 5 bowls with 4 nuts per bowl, and then grabs 4 more bowls holding 7 nuts each. To finish, he selects 3 bowls containing 9 nuts apiece. On his way to the pantry, he drops 1 bowl from every group, losing their contents. The surviving nuts are placed into the pantry. How many nuts are currently in the pantry?",
+    "ground_truth": "65"
+  },
+  {
+    "id": 15,
+    "question": "In order to fill her terrarium, Amelia is collecting pails of pebbles. She starts with 4 pails holding 6 pebbles each, and later grabs 3 pails that have 9 pebbles apiece. Afterwards, she collects 5 additional pails containing 7 pebbles each, and finally 6 pails with 5 pebbles per pail. During her walk to the terrarium, she drops exactly 1 pail from each set, losing those pebbles completely. She puts the rest into her terrarium. Find the total number of pebbles stored in the terrarium.",
+    "ground_truth": "89"
+  },
+  {
+    "id": 16,
+    "question": "Lucas is bringing cases of rings to store in his jewelry box. He starts by accumulating 5 cases with 5 rings inside each one. Next, he finds 6 cases containing 3 rings apiece, followed by 4 cases that hold 8 rings each. Finally, he acquires 3 cases with 12 rings per case. While carrying them to the jewelry box, he accidentally drops 1 case of each size, resulting in the loss of those rings. He secures the remaining rings inside the jewelry box. What is the total ring count in the jewelry box?",
+    "ground_truth": "83"
+  },
+  {
+    "id": 17,
+    "question": "To stock her desk drawer, Harper is gathering sets of markers. Initially, she collects 3 sets containing 10 markers each, followed by 4 sets holding 9 markers apiece. Next, she acquires 5 more sets, each with 4 markers, and finally picks up 6 sets containing 6 markers each. While transporting them to the desk drawer, she accidentally drops and loses exactly 1 set of each type. She successfully stores the rest of the markers. What is the total number of markers that end up in the desk drawer?",
+    "ground_truth": "93"
+  },
+  {
+    "id": 18,
+    "question": "Mason is gathering trays of bolts to fill his toolbox. He begins by picking up 6 trays that contain 4 bolts each. He continues by getting 3 trays with 11 bolts per tray, and then grabs 4 more trays holding 5 bolts each. To finish, he selects 5 trays containing 6 bolts apiece. On his way to the toolbox, he drops 1 tray from every group, losing their contents. The surviving bolts are placed into the toolbox. How many bolts are currently in the toolbox?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 19,
+    "question": "In order to fill her scrapbook, Evelyn is collecting sheets of stickers. She starts with 4 sheets holding 7 stickers each, and later grabs 5 sheets that have 5 stickers apiece. Afterwards, she collects 6 additional sheets containing 6 stickers each, and finally 3 sheets with 8 stickers per sheet. During her walk to the scrapbook, she drops exactly 1 sheet from each set, losing those stickers completely. She puts the rest into her scrapbook. Find the total number of stickers stored in the scrapbook.",
+    "ground_truth": "87"
+  },
+  {
+    "id": 20,
+    "question": "Ethan is bringing boxes of pins to store in his corkboard. He starts by accumulating 5 boxes with 8 pins inside each one. Next, he finds 4 boxes containing 4 pins apiece, followed by 3 boxes that hold 12 pins each. Finally, he acquires 6 boxes with 5 pins per box. While carrying them to the corkboard, he accidentally drops 1 box of each size, resulting in the loss of those pins. He secures the remaining pins inside the corkboard. What is the total pin count in the corkboard?",
+    "ground_truth": "93"
+  },
+  {
+    "id": 21,
+    "question": "To stock his safe, Alexander is gathering pouches of pearls. Initially, he collects 4 pouches containing 5 pearls each, followed by 5 pouches holding 6 pearls apiece. Next, he acquires 3 more pouches, each with 7 pearls, and finally picks up 6 pouches containing 4 pearls each. While transporting them to the safe, he accidentally drops and loses exactly 1 pouch of each type. He successfully stores the rest of the pearls. What is the total number of pearls that end up in the safe?",
+    "ground_truth": "73"
+  },
+  {
+    "id": 22,
+    "question": "Abigail is gathering packs of crayons to fill her bin. She begins by picking up 5 packs that contain 3 crayons each. She continues by getting 4 packs with 8 crayons per pack, and then grabs 6 more packs holding 5 crayons each. To finish, she selects 3 packs containing 10 crayons apiece. On her way to the bin, she drops 1 pack from every group, losing their contents. The surviving crayons are placed into the bin. How many crayons are currently in the bin?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 23,
+    "question": "In order to fill his shed, Henry is collecting boxes of nails. He starts with 3 boxes holding 8 nails each, and later grabs 6 boxes that have 4 nails apiece. Afterwards, he collects 4 additional boxes containing 6 nails each, and finally 5 boxes with 5 nails per box. During his walk to the shed, he drops exactly 1 box from each set, losing those nails completely. He puts the rest into his shed. Find the total number of nails stored in the shed.",
+    "ground_truth": "74"
+  },
+  {
+    "id": 24,
+    "question": "Emily is bringing boxes of chocolates to store in her fridge. She starts by accumulating 6 boxes with 2 chocolates inside each one. Next, she finds 5 boxes containing 4 chocolates apiece, followed by 4 boxes that hold 7 chocolates each. Finally, she acquires 3 boxes with 9 chocolates per box. While carrying them to the fridge, she accidentally drops 1 box of each size, resulting in the loss of those chocolates. She secures the remaining chocolates inside the fridge. What is the total chocolate count in the fridge?",
+    "ground_truth": "65"
+  },
+  {
+    "id": 25,
+    "question": "To stock his drawer, Jacob is gathering bundles of tickets. Initially, he collects 4 bundles containing 6 tickets each, followed by 3 bundles holding 9 tickets apiece. Next, he acquires 5 more bundles, each with 7 tickets, and finally picks up 6 bundles containing 5 tickets each. While transporting them to the drawer, he accidentally drops and loses exactly 1 bundle of each type. He successfully stores the rest of the tickets. What is the total number of tickets that end up in the drawer?",
+    "ground_truth": "89"
+  },
+  {
+    "id": 26,
+    "question": "Elizabeth is gathering folders of photos to fill her album. She begins by picking up 5 folders that contain 5 photos each. She continues by getting 6 folders with 3 photos per folder, and then grabs 4 more folders holding 8 photos each. To finish, she selects 3 folders containing 12 photos apiece. On her way to the album, she drops 1 folder from every group, losing their contents. The surviving photos are placed into the album. How many photos are currently in the album?",
+    "ground_truth": "83"
+  },
+  {
+    "id": 27,
+    "question": "In order to fill his yard, Michael is collecting stacks of bricks. He starts with 3 stacks holding 10 bricks each, and later grabs 4 stacks that have 9 bricks apiece. Afterwards, he collects 5 additional stacks containing 4 bricks each, and finally 6 stacks with 6 bricks per stack. During his walk to the yard, he drops exactly 1 stack from each set, losing those bricks completely. He puts the rest into his yard. Find the total number of bricks stored in the yard.",
+    "ground_truth": "93"
+  },
+  {
+    "id": 28,
+    "question": "Mila is bringing bags of tokens to store in her chest. She starts by accumulating 6 bags with 4 tokens inside each one. Next, she finds 3 bags containing 11 tokens apiece, followed by 4 bags that hold 5 tokens each. Finally, she acquires 5 bags with 6 tokens per bag. While carrying them to the chest, she accidentally drops 1 bag of each size, resulting in the loss of those tokens. She secures the remaining tokens inside the chest. What is the total token count in the chest?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 29,
+    "question": "To stock his fridge, Daniel is gathering bunches of carrots. Initially, he collects 4 bunches containing 7 carrots each, followed by 5 bunches holding 5 carrots apiece. Next, he acquires 6 more bunches, each with 6 carrots, and finally picks up 3 bunches containing 8 carrots each. While transporting them to the fridge, he accidentally drops and loses exactly 1 bunch of each type. He successfully stores the rest of the carrots. What is the total number of carrots that end up in the fridge?",
+    "ground_truth": "87"
+  },
+  {
+    "id": 30,
+    "question": "Ella is gathering bags of leaves to fill her compost. She begins by picking up 5 bags that contain 8 leaves each. She continues by getting 4 bags with 4 leaves per bag, and then grabs 3 more bags holding 12 leaves each. To finish, she selects 6 bags containing 5 leaves apiece. On her way to the compost, she drops 1 bag from every group, losing their contents. The surviving leaves are placed into the compost. How many leaves are currently in the compost?",
+    "ground_truth": "93"
+  },
+  {
+    "id": 31,
+    "question": "In order to fill his vase, Logan is collecting bouquets of tulips. He starts with 4 bouquets holding 5 tulips each, and later grabs 5 bouquets that have 6 tulips apiece. Afterwards, he collects 3 additional bouquets containing 7 tulips each, and finally 6 bouquets with 4 tulips per bouquet. During his walk to the vase, he drops exactly 1 bouquet from each set, losing those tulips completely. He puts the rest into his vase. Find the total number of tulips stored in the vase.",
+    "ground_truth": "73"
+  },
+  {
+    "id": 32,
+    "question": "Avery is bringing punnets of strawberries to store in her fridge. She starts by accumulating 5 punnets with 3 strawberries inside each one. Next, she finds 4 punnets containing 8 strawberries apiece, followed by 6 punnets that hold 5 strawberries each. Finally, she acquires 3 punnets with 10 strawberries per punnet. While carrying them to the fridge, she accidentally drops 1 punnet of each size, resulting in the loss of those strawberries. She secures the remaining strawberries inside the fridge. What is the total strawberry count in the fridge?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 33,
+    "question": "To stock his fireplace, Jackson is gathering bundles of logs. Initially, he collects 3 bundles containing 8 logs each, followed by 6 bundles holding 4 logs apiece. Next, he acquires 4 more bundles, each with 6 logs, and finally picks up 5 bundles containing 5 logs each. While transporting them to the fireplace, he accidentally drops and loses exactly 1 bundle of each type. He successfully stores the rest of the logs. What is the total number of logs that end up in the fireplace?",
+    "ground_truth": "74"
+  },
+  {
+    "id": 34,
+    "question": "Sofia is gathering bags of feathers to fill her craft box. She begins by picking up 6 bags that contain 2 feathers each. She continues by getting 5 bags with 4 feathers per bag, and then grabs 4 more bags holding 7 feathers each. To finish, she selects 3 bags containing 9 feathers apiece. On her way to the craft box, she drops 1 bag from every group, losing their contents. The surviving feathers are placed into the craft box. How many feathers are currently in the craft box?",
+    "ground_truth": "65"
+  },
+  {
+    "id": 35,
+    "question": "In order to fill his register, Sebastian is collecting rolls of coins. He starts with 4 rolls holding 6 coins each, and later grabs 3 rolls that have 9 coins apiece. Afterwards, he collects 5 additional rolls containing 7 coins each, and finally 6 rolls with 5 coins per roll. During his walk to the register, he drops exactly 1 roll from each set, losing those coins completely. He puts the rest into his register. Find the total number of coins stored in the register.",
+    "ground_truth": "89"
+  },
+  {
+    "id": 36,
+    "question": "Camila is bringing packets of screws to store in her toolbelt. She starts by accumulating 5 packets with 5 screws inside each one. Next, she finds 6 packets containing 3 screws apiece, followed by 4 packets that hold 8 screws each. Finally, she acquires 3 packets with 12 screws per packet. While carrying them to the toolbelt, she accidentally drops 1 packet of each size, resulting in the loss of those screws. She secures the remaining screws inside the toolbelt. What is the total screw count in the toolbelt?",
+    "ground_truth": "83"
+  },
+  {
+    "id": 37,
+    "question": "To stock his kitchen, Jack is gathering baskets of cherries. Initially, he collects 3 baskets containing 10 cherries each, followed by 4 baskets holding 9 cherries apiece. Next, he acquires 5 more baskets, each with 4 cherries, and finally picks up 6 baskets containing 6 cherries each. While transporting them to the kitchen, he accidentally drops and loses exactly 1 basket of each type. He successfully stores the rest of the cherries. What is the total number of cherries that end up in the kitchen?",
+    "ground_truth": "93"
+  },
+  {
+    "id": 38,
+    "question": "Aria is gathering spools of ribbons to fill her box. She begins by picking up 6 spools that contain 4 ribbons each. She continues by getting 3 spools with 11 ribbons per spool, and then grabs 4 more spools holding 5 ribbons each. To finish, she selects 5 spools containing 6 ribbons apiece. On her way to the box, she drops 1 spool from every group, losing their contents. The surviving ribbons are placed into the box. How many ribbons are currently in the box?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 39,
+    "question": "In order to fill his museum, Aiden is collecting crates of fossils. He starts with 4 crates holding 7 fossils each, and later grabs 5 crates that have 5 fossils apiece. Afterwards, he collects 6 additional crates containing 6 fossils each, and finally 3 crates with 8 fossils per crate. During his walk to the museum, he drops exactly 1 crate from each set, losing those fossils completely. He puts the rest into his museum. Find the total number of fossils stored in the museum.",
+    "ground_truth": "87"
+  },
+  {
+    "id": 40,
+    "question": "Scarlett is bringing nets of shells to store in her bucket. She starts by accumulating 5 nets with 8 shells inside each one. Next, she finds 4 nets containing 4 shells apiece, followed by 3 nets that hold 12 shells each. Finally, she acquires 6 nets with 5 shells per net. While carrying them to the bucket, she accidentally drops 1 net of each size, resulting in the loss of those shells. She secures the remaining shells inside the bucket. What is the total shell count in the bucket?",
+    "ground_truth": "93"
+  },
+  {
+    "id": 41,
+    "question": "To stock his vault, Owen is gathering boxes of gems. Initially, he collects 4 boxes containing 5 gems each, followed by 5 boxes holding 6 gems apiece. Next, he acquires 3 more boxes, each with 7 gems, and finally picks up 6 boxes containing 4 gems each. While transporting them to the vault, he accidentally drops and loses exactly 1 box of each type. He successfully stores the rest of the gems. What is the total number of gems that end up in the vault?",
+    "ground_truth": "73"
+  },
+  {
+    "id": 42,
+    "question": "Victoria is gathering jars of candies to fill her pantry. She begins by picking up 5 jars that contain 3 candies each. She continues by getting 4 jars with 8 candies per jar, and then grabs 6 more jars holding 5 candies each. To finish, she selects 3 jars containing 10 candies apiece. On her way to the pantry, she drops 1 jar from every group, losing their contents. The surviving candies are placed into the pantry. How many candies are currently in the pantry?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 43,
+    "question": "In order to fill his shelf, Samuel is collecting stacks of books. He starts with 3 stacks holding 8 books each, and later grabs 6 stacks that have 4 books apiece. Afterwards, he collects 4 additional stacks containing 6 books each, and finally 5 stacks with 5 books per stack. During his walk to the shelf, he drops exactly 1 stack from each set, losing those books completely. He puts the rest into his shelf. Find the total number of books stored in the shelf.",
+    "ground_truth": "74"
+  },
+  {
+    "id": 44,
+    "question": "Madison is bringing boxes of tiles to store in her bathroom. She starts by accumulating 6 boxes with 2 tiles inside each one. Next, she finds 5 boxes containing 4 tiles apiece, followed by 4 boxes that hold 7 tiles each. Finally, she acquires 3 boxes with 9 tiles per box. While carrying them to the bathroom, she accidentally drops 1 box of each size, resulting in the loss of those tiles. She secures the remaining tiles inside the bathroom. What is the total tile count in the bathroom?",
+    "ground_truth": "65"
+  },
+  {
+    "id": 45,
+    "question": "To stock his cupboard, Matthew is gathering stacks of plates. Initially, he collects 4 stacks containing 6 plates each, followed by 3 stacks holding 9 plates apiece. Next, he acquires 5 more stacks, each with 7 plates, and finally picks up 6 stacks containing 5 plates each. While transporting them to the cupboard, he accidentally drops and loses exactly 1 stack of each type. He successfully stores the rest of the plates. What is the total number of plates that end up in the cupboard?",
+    "ground_truth": "89"
+  },
+  {
+    "id": 46,
+    "question": "Luna is gathering pouches of crystals to fill her display. She begins by picking up 5 pouches that contain 5 crystals each. She continues by getting 6 pouches with 3 crystals per pouch, and then grabs 4 more pouches holding 8 crystals each. To finish, she selects 3 pouches containing 12 crystals apiece. On her way to the display, she drops 1 pouch from every group, losing their contents. The surviving crystals are placed into the display. How many crystals are currently in the display?",
+    "ground_truth": "83"
+  },
+  {
+    "id": 47,
+    "question": "In order to fill his greenhouse, Joseph is collecting bags of seeds. He starts with 3 bags holding 10 seeds each, and later grabs 4 bags that have 9 seeds apiece. Afterwards, he collects 5 additional bags containing 4 seeds each, and finally 6 bags with 6 seeds per bag. During his walk to the greenhouse, he drops exactly 1 bag from each set, losing those seeds completely. He puts the rest into his greenhouse. Find the total number of seeds stored in the greenhouse.",
+    "ground_truth": "93"
+  },
+  {
+    "id": 48,
+    "question": "Grace is bringing tins of biscuits to store in her jar. She starts by accumulating 6 tins with 4 biscuits inside each one. Next, she finds 3 tins containing 11 biscuits apiece, followed by 4 tins that hold 5 biscuits each. Finally, she acquires 5 tins with 6 biscuits per tin. While carrying them to the jar, she accidentally drops 1 tin of each size, resulting in the loss of those biscuits. She secures the remaining biscuits inside the jar. What is the total biscuit count in the jar?",
+    "ground_truth": "81"
+  },
+  {
+    "id": 49,
+    "question": "To stock his basket, Levi is gathering bags of apples. Initially, he collects 4 bags containing 7 apples each, followed by 5 bags holding 5 apples apiece. Next, he acquires 6 more bags, each with 6 apples, and finally picks up 3 bags containing 8 apples each. While transporting them to the basket, he accidentally drops and loses exactly 1 bag of each type. He successfully stores the rest of the apples. What is the total number of apples that end up in the basket?",
+    "ground_truth": "87"
+  },
+  {
+    "id": 50,
+    "question": "Chloe is gathering cups of berries to fill her blender. She begins by picking up 5 cups that contain 8 berries each. She continues by getting 4 cups with 4 berries per cup, and then grabs 3 more cups holding 12 berries each. To finish, she selects 6 cups containing 5 berries apiece. On her way to the blender, she drops 1 cup from every group, losing their contents. The surviving berries are placed into the blender. How many berries are currently in the blender?",
+    "ground_truth": "93"
+  },
+  {
+    "id": 51,
+    "question": "For an upcoming patio renovation, Daniel procures several batches of marble tiles. His inventory consists of 7 cartons containing 12 tiles apiece, 6 cartons holding 15 tiles each, 5 cartons of 10, and an additional 8 cartons of 9. Unfortunately, a mishap during transit results in the destruction of exactly one carton from every size category. After discarding the broken tiles, what is the total number of intact tiles available for his project?",
+    "ground_truth": "250"
+  },
+  {
+    "id": 52,
+    "question": "In preparation for her shop's display, Sophie acquires a variety of lavender bundles. Specifically, she stocks 8 bunches of 14 stems, 5 bunches of 20, 7 bunches of 12, and 4 bunches of 18. Before returning to her store, she decides to gift exactly one bundle from each stem-count category to a close friend. Calculate the total number of lavender stems Sophie ultimately brings back to her shop.",
+    "ground_truth": "304"
+  },
+  {
+    "id": 53,
+    "question": "Leo's latest trading card haul includes multiple pack sizes: 9 packs of 12 cards, 6 packs of 15, 4 packs of 25, and 5 packs of 10. However, during his bus commute home, one pack of every size accidentally slips out of his bag and is lost. How many individual cards remain in Leo's possession?",
+    "ground_truth": "286"
+  },
+  {
+    "id": 54,
+    "question": "To assemble assorted chocolate gift bags, Grace purchases 10 packages of 8 chocolates, 8 packages of 12, 6 packages of 15, and 4 packages containing 20 chocolates each. As a gesture of appreciation, she hands over one package of every quantity type to the delivery crew. Determine the final count of chocolates Grace has left for her gift bags.",
+    "ground_truth": "291"
+  },
+  {
+    "id": 55,
+    "question": "Zane's firewood reserve is organized into various stacks: 5 stacks consisting of 22 logs, 7 stacks of 15, 6 stacks of 18, and 4 stacks of 12. Wanting to get a fire going immediately, he pulls exactly one stack of each size to use as kindling. How many logs are left untouched in his reserve?",
+    "ground_truth": "304"
+  },
+  {
+    "id": 56,
+    "question": "Sourcing citrus for her juice stand, Maya receives a delivery of 6 crates holding 24 oranges apiece, alongside 4 crates of 30, 5 crates of 15, and 3 crates of 12. Upon inspection, she realizes that a single crate from each of the four categories has completely spoiled. What is the total number of fresh oranges remaining?",
+    "ground_truth": "294"
+  },
+  {
+    "id": 57,
+    "question": "Caleb manages a diverse inventory of colored pencil sets, featuring 8 packs of 12, 7 packs of 10, 9 packs of 8, and 5 packs of 15. Discovering that one set from every configuration is missing pieces, he removes those defective sets from the batch. How many individual pencils are contained within the remaining complete sets?",
+    "ground_truth": "268"
+  },
+  {
+    "id": 58,
+    "question": "An office supply order placed by Hannah includes 4 bundles of 50 paper sheets, 5 bundles of 30, 6 bundles of 20, and 3 bundles of 40. She distributes exactly one bundle of each sheet count to the accounting department. How many total sheets of paper does Hannah retain for the rest of the office?",
+    "ground_truth": "450"
+  },
+  {
+    "id": 59,
+    "question": "Procuring hardware for a build, Isaac secures 12 boxes of 10 nails, 8 boxes of 15, 6 boxes of 20, and 4 boxes of 25. A mishap with a puddle leaves one box from every quantity size severely rusted and unusable. How many pristine nails does Isaac have available for construction?",
+    "ground_truth": "390"
+  },
+  {
+    "id": 60,
+    "question": "Ruby's honey collection features an assortment of jar sizes: 7 units weighing 16 ounces, 5 units of 20 ounces, 8 units of 12 ounces, and 6 units of 15 ounces. If an accident causes her to spill the contents of exactly one jar from each weight class, what is the total volume of honey, in ounces, that remains intact?",
+    "ground_truth": "335"
+  },
+  {
+    "id": 61,
+    "question": "Stocking beverages for an upcoming event, Mason acquires 5 cases of 24 sodas, 6 cases of 12, 4 cases of 15, and 8 cases of 6. Generously, he parts with one case of each dimension, giving them to his neighbor. How many individual cans of soda does Mason keep for his party?",
+    "ground_truth": "243"
+  },
+  {
+    "id": 62,
+    "question": "Ella's craft supply purchase consists of ribbon rolls in varying lengths: 9 rolls of 15 meters, 7 rolls of 10 meters, 5 rolls of 20 meters, and 6 rolls of 12 meters. Setting aside a single roll of each length for a priority commission, how many total meters of ribbon are left on her remaining spools?",
+    "ground_truth": "320"
+  },
+  {
+    "id": 63,
+    "question": "Julian oversees a greenhouse inventory containing 8 flats of 12 seedlings, 6 flats of 15, 4 flats of 20, and 5 flats of 18. Unfortunately, local wildlife manages to consume all the plants in exactly one flat from every size variation. How many individual seedlings survive the rabbit attack?",
+    "ground_truth": "291"
+  },
+  {
+    "id": 64,
+    "question": "Clara secures a pastry order consisting of 5 cartons containing 12 doughnuts, 4 cartons of 24, 6 cartons of 10, and 3 cartons of 15. Opting to hold back one carton of every size category for her own household, what is the final tally of individual doughnuts available for the fundraising event?",
+    "ground_truth": "200"
+  },
+  {
+    "id": 65,
+    "question": "Managing an extensive archive, Felix sorts documents into 10 folders holding 15 files apiece, 8 folders of 10, 5 folders of 20, and 6 folders of 12. If he moves exactly one folder from each quantity group into deep storage, how many individual documents are left in the active rotation?",
+    "ground_truth": "345"
+  },
+  {
+    "id": 66,
+    "question": "A toy drive coordinated by Nora yields 4 crates of 25 items, 6 crates of 15, 5 crates of 20, and 7 crates of 10. She allocates one full crate from each item-count category directly to a local orphanage. What is the total count of toys remaining in the unallocated crates?",
+    "ground_truth": "290"
+  },
+  {
+    "id": 67,
+    "question": "Silas purchases a bulk supply of power cells, bringing home 12 sets of 4 batteries, 10 sets of 8, 8 sets of 10, and 6 sets of 12. Immediately needing replacements for his devices, he depletes exactly one set from each size variation. How many unused batteries does he have left?",
+    "ground_truth": "246"
+  },
+  {
+    "id": 68,
+    "question": "Hazel's art supply haul includes 7 kits of 12 paint tubes, 5 kits of 18, 6 kits of 15, and 4 kits of 20. During a studio relocation, one kit of every size is unaccounted for and permanently lost. Determine the total number of paint tubes present in her surviving inventory.",
+    "ground_truth": "279"
+  },
+  {
+    "id": 69,
+    "question": "Hydration supplies for Miles's athletic department include 8 flats of 12 water bottles, 5 flats of 24, 6 flats of 15, and 4 flats of 20. He distributes a single flat of each bottle count to the coaching staff. How many individual bottles of water remain for the players?",
+    "ground_truth": "315"
+  },
+  {
+    "id": 70,
+    "question": "A shipment of fruit managed by Eliana features 10 clusters of 7 bananas, 8 clusters of 9, 6 clusters of 12, and 12 clusters of 5. She donates one cluster from every size grouping to a wildlife sanctuary. What is the remaining banana count in her possession?",
+    "ground_truth": "241"
+  },
+  {
+    "id": 71,
+    "question": "Wyatt's hardware inventory is stocked with 9 packets of 20 screws, 7 packets of 15, 5 packets of 25, and 8 packets of 10. Due to a cluttered workspace, he completely loses track of one packet from each size category. How many individual screws are left in his organized storage?",
+    "ground_truth": "420"
+  },
+  {
+    "id": 72,
+    "question": "Sourcing materials for interior design, Violet acquires 4 rolls of wallpaper yielding 30 square feet each, 5 rolls covering 25 square feet, 6 rolls at 20 square feet, and 3 rolls providing 40 square feet. Discovering tears in exactly one roll of every dimension, she discards the defective ones. Calculate the total square footage the usable rolls can cover.",
+    "ground_truth": "370"
+  },
+  {
+    "id": 73,
+    "question": "Within Axel's garage, fasteners are sorted into 6 compartments holding 25 bolts each, 8 compartments of 15, 5 compartments of 20, and 7 compartments of 10. To conduct a deep clean, he completely empties out one compartment of each capacity. How many bolts remain securely stored in the other compartments?",
+    "ground_truth": "370"
+  },
+  {
+    "id": 74,
+    "question": "A foraging trip yields a diverse berry harvest for Willow: 7 containers holding 18 berries, 5 containers of 25, 8 containers of 15, and 6 containers of 20. Stumbling on the path, she spills the contents of one container from every size category. What is the total count of surviving berries?",
+    "ground_truth": "413"
+  },
+  {
+    "id": 75,
+    "question": "Planning event supplies, Luca stockpiles 10 bundles of 15 paper plates, 6 bundles of 25, 8 bundles of 10, and 5 bundles of 20. For an impromptu family meal, he tears into exactly one bundle of each size. How many individual plates remain sealed in their original packaging?",
+    "ground_truth": "410"
+  },
+  {
+    "id": 76,
+    "question": "Ivy's decorative lighting inventory includes 5 strands equipped with 30 bulbs, 7 strands of 20, 4 strands of 25, and 6 strands of 15. Testing reveals that a single strand from each configuration has faulty wiring and must be scrapped. How many functional bulbs are present on the working strands?",
+    "ground_truth": "390"
+  },
+  {
+    "id": 77,
+    "question": "Masonry materials delivered to Roman feature 8 pallets of 15 bricks, 6 pallets of 20, 7 pallets of 12, and 5 pallets of 18. Dedicating exactly one pallet from every size group to construct a planter box, how many bricks does he have left for the main wall?",
+    "ground_truth": "349"
+  },
+  {
+    "id": 78,
+    "question": "Aurora's luminary supplies consist of 9 cartons containing 12 candles, 4 cartons of 20, 7 cartons of 15, and 6 cartons of 10. She utilizes one carton from every quantity type for an evening memorial service. What is the total number of unlit candles remaining in her stock?",
+    "ground_truth": "296"
+  },
+  {
+    "id": 79,
+    "question": "Dairy deliveries managed by Everett include 5 flats holding 16 bottles of milk, 8 flats of 12, 6 flats of 10, and 4 flats of 15. He redirects exactly one flat of each dimension to a local food pantry. Calculate the total number of milk bottles remaining in his warehouse.",
+    "ground_truth": "243"
+  },
+  {
+    "id": 80,
+    "question": "Forging a rustic enclosure, Luna gathers timber tied into 7 groupings of 22 sticks, 5 groupings of 30, 6 groupings of 15, and 4 groupings of 25. The construction process causes one grouping of every size to snap and become useless. How many intact sticks remain for her fence?",
+    "ground_truth": "402"
+  },
+  {
+    "id": 81,
+    "question": "Gael's pantry is stocked with bulk grains, featuring 6 sacks weighing 20 pounds, 5 sacks of 15 pounds, 8 sacks of 10 pounds, and 4 sacks of 25 pounds. Cooking for a massive feast requires him to consume exactly one sack from every weight class. What is the total weight, in pounds, of the leftover rice?",
+    "ground_truth": "305"
+  },
+  {
+    "id": 82,
+    "question": "Stationery sorted by Sienna includes 9 sets of 12 markers, 7 sets of 15, 5 sets of 20, and 6 sets of 8. A logistics error during a conference results in the loss of a single set from each color-count category. How many individual markers are left in her possession?",
+    "ground_truth": "306"
+  },
+  {
+    "id": 83,
+    "question": "Jasper's currency collection features 10 columns composed of 15 coins, 8 columns of 20, 12 columns of 5, and 6 columns of 12. Making a purchase, he hands over exactly one column of each size. What is the total number of coins still in his collection?",
+    "ground_truth": "390"
+  },
+  {
+    "id": 84,
+    "question": "Freya's office supplies include an array of memo pads: 5 packs containing 40 sheets, 8 packs of 20, 6 packs of 25, and 4 packs of 30. A massive brainstorming session consumes exactly one pack of every sheet count. How many total sticky notes are available in the unopened packs?",
+    "ground_truth": "515"
+  },
+  {
+    "id": 85,
+    "question": "Ceramic supplies handled by Milo encompass 7 cartons of 18 tiles, 5 cartons of 24, 6 cartons of 15, and 4 cartons of 20. Inspection reveals that a single carton from every configuration suffered impact damage. How many pristine tiles remain for his installation project?",
+    "ground_truth": "339"
+  },
+  {
+    "id": 86,
+    "question": "Penelope's grocery haul features multiple egg flat sizes: 10 containers of 12, 6 containers of 18, 4 containers of 24, and 5 containers of 10. A mishap at the register results in one container of each size smashing on the floor. How many individual eggs make it home safely?",
+    "ground_truth": "310"
+  },
+  {
+    "id": 87,
+    "question": "Wiring components acquired by Arlo consist of 8 coils measuring 15 feet, 6 coils of 20 feet, 5 coils of 25 feet, and 7 coils of 10 feet. Splicing requirements force him to sever exactly one coil of every length. Calculate the total footage of cable remaining in the uncut coils.",
+    "ground_truth": "365"
+  },
+  {
+    "id": 88,
+    "question": "Daisy's crafting materials include an assortment of bead containers: 9 vials with 15 beads, 7 vials of 12, 5 vials of 20, and 6 vials of 10. Clumsiness leads to the total loss of one vial from every quantity type. How many individual beads are left to craft with?",
+    "ground_truth": "322"
+  },
+  {
+    "id": 89,
+    "question": "Catering prep by Hugo involves stockpiling 4 parcels of 50 napkins, 6 parcels of 30, 8 parcels of 20, and 5 parcels of 25. Setting up for an outdoor luncheon uses up exactly one parcel of each size. What is the total count of napkins remaining in reserve?",
+    "ground_truth": "540"
+  },
+  {
+    "id": 90,
+    "question": "A diverse tea inventory managed by Iris includes 7 tins holding 20 sachets, 9 tins of 15, 5 tins of 24, and 6 tins of 10. As a family favor, she gifts a single tin from every sachet-count category to a relative. How many individual tea bags remain in her pantry?",
+    "ground_truth": "386"
+  },
+  {
+    "id": 91,
+    "question": "Arthur's bakery display features 6 pans containing 12 muffins, 5 pans of 15, 4 pans of 20, and 7 pans of 10. A catastrophic kitchen tumble ruins exactly one pan of every size. What is the total number of perfectly intact muffins left to sell?",
+    "ground_truth": "240"
+  },
+  {
+    "id": 92,
+    "question": "Sewing supplies cataloged by Lyra include 8 bobbins wrapped with 20 meters of thread, 6 bobbins of 25 meters, 7 bobbins of 15 meters, and 5 bobbins of 12 meters. Frustratingly, one bobbin of every length becomes irreversibly knotted and is trashed. How many total meters of usable thread remain?",
+    "ground_truth": "403"
+  },
+  {
+    "id": 93,
+    "question": "Theo's gardening run secures 5 sacks containing 30 liters of soil, 4 sacks of 40 liters, 6 sacks of 20 liters, and 3 sacks of 25 liters. Landscaping his front porch depletes exactly one sack of each volume. What is the total liter count of potting soil left for the backyard?",
+    "ground_truth": "390"
+  },
+  {
+    "id": 94,
+    "question": "Confectionery assorted by Clara features 9 samplers of 12 chocolates, 7 samplers of 15, 5 samplers of 20, and 6 samplers of 18. Spreading goodwill, she distributes one sampler from every size classification to her neighbors. How many individual chocolates does she keep?",
+    "ground_truth": "356"
+  },
+  {
+    "id": 95,
+    "question": "Finn's beverage supply run nets 8 cases of 12 sodas, 6 cases of 20, 5 cases of 15, and 4 cases of 24. A storage oversight leaves exactly one case of each dimension out in the sun, ruining them. How many total cans of soda are still good to drink?",
+    "ground_truth": "316"
+  },
+  {
+    "id": 96,
+    "question": "Esmé curates a stationary collection featuring 10 sheets comprising 15 stickers, 8 sheets of 20, 6 sheets of 12, and 12 sheets of 5. After accidentally leaving one sheet of every size in her classroom, how many individual stickers does she bring home?",
+    "ground_truth": "390"
+  },
+  {
+    "id": 97,
+    "question": "Hardware acquired by Oscar includes 7 containers holding 25 bolts, 5 containers of 30, 6 containers of 20, and 4 containers of 15. Realizing he forgot exactly one container from every quantity bracket at the checkout counter, how many total bolts made it to his workshop?",
+    "ground_truth": "415"
+  },
+  {
+    "id": 98,
+    "question": "Rose's botanical harvest consists of 9 clippings with 14 sprigs apiece, 6 clippings of 20, 7 clippings of 12, and 5 clippings of 18. Upon drying, she discovers that one clipping from each sprig-count category has succumbed to mold. How many healthy sprigs remain?",
+    "ground_truth": "356"
+  },
+  {
+    "id": 99,
+    "question": "Felix stocks up on illumination hardware, purchasing 8 sleeves of 4 bulbs, 10 sleeves of 6, 12 sleeves of 2, and 6 sleeves of 8. Finding shattered glass in exactly one sleeve of every configuration, he requests a refund for those units. How many pristine bulbs does he end up keeping?",
+    "ground_truth": "144"
+  },
+  {
+    "id": 100,
+    "question": "Nora's culinary imports include 7 bottles containing 18 grams of spice, 5 bottles of 25 grams, 8 bottles of 15 grams, and 6 bottles of 20 grams. Blending a signature rub requires her to empty out one bottle from every weight tier. What is the total mass, in grams, of the remaining spices?",
+    "ground_truth": "413"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "A daily quota of 40 pages was set by Mike for his reading. Managing only 15 pages on Monday, Mike planned to clear the backlog on Tuesday. That plan fell short when just 20 pages were completed on Tuesday. When Wednesday arrives, how many pages must Mike read to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "85",
+    "generation": "1. Mike's deficit on Monday is 40 - 15 = 25 pages.\n2. The deficit after Tuesday is 25 + 20 = 45 pages.\n3. Mike needs to read 40 pages on Wednesday to meet the daily quota.\n4. The total pages Mike needs to read on Wednesday to clear the deficit is 45 + 40 = 85 pages.\n\nFinal Answer: 85",
+    "pred_answer_masked": "85",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Mike's deficit on Monday is 40 - 15 = 25 pages.\n2. The deficit from Tuesday is 40 - 20 = 20 pages, so total deficit is 25 + 20 = 45 pages.\n3. Mike needs to read 40 pages on Wednesday to meet the daily quota.\n4. The total pages Mike needs to read on Wednesday to clear the deficit is 45 + 40 = 85 pages.\n\nFinal Answer: 85"
+  },
+  {
+    "id": 2,
+    "question": "Every day, Sarah aims to bake 50 muffins. The start on Friday yielded a mere 25 muffins. Though intending to offset this shortfall on Saturday, Sarah achieved only 30. To ensure the base goal is met on Sunday and all prior missed muffins are compensated for, what is the total amount Sarah needs to bake?",
+    "ground_truth": "95",
+    "generation": "1. Sarah needs to bake 50 muffins each day, but she only baked 25 on Friday, so she needs to bake 50 - 25 = 25 more muffins to meet the goal for Friday.\n2. On Saturday, she baked 30 muffins, but she still needs to bake 25 muffins to meet the goal for Friday, so she needs to bake 30 + 25 = 55 muffins to meet the goal for both Friday and Saturday.\n3. To meet the goal for Sunday, Sarah needs to bake 50 muffins.\n4. To compensate for the missed muffins, Sarah needs to bake 25 (Friday) + 25 (Saturday) = 50 muffins.\n5. The total amount Sarah needs to bake is 55 (Friday and Saturday) + 50 (Sunday and prior missed muffins) = 105 muffins.\n\nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Sarah needs to bake 50 muffins each day, but she only baked 25 on Friday, so she missed 50 - 25 = 25 muffins on Friday.\n2. On Saturday, she baked 30 muffins, so she missed 50 - 30 = 20 muffins on Saturday.\n3. The total accumulated deficit is 25 + 20 = 45 muffins.\n4. To ensure the base goal is met on Sunday and all prior missed muffins are compensated for, Sarah needs to bake 50 + 45 = 95 muffins.\n\nFinal Answer: 95"
+  },
+  {
+    "id": 3,
+    "question": "For his running routine, 20 miles is David's required daily benchmark. After day one resulted in just 10 miles finished, a resolution was made to catch up on day two. However, the day two total came out to be only 15 miles. On day three, what number of miles will David need to run to both hit the daily mark and recover the uncompleted distance from the prior days?",
+    "ground_truth": "35",
+    "generation": "Reasoning:\n1. David needs 20 miles on day three to meet the daily benchmark.\n2. On day one, he ran 10 miles, so he still needs 20 - 10 = 10 miles from day one.\n3. On day two, he ran 15 miles, so he still needs 20 - 15 = 5 miles from day two.\n4. To recover the uncompleted distance, he needs to run 10 + 5 = 15 miles on day three.\n\nFinal Answer: 35",
+    "pred_answer_masked": "35",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. David needs 20 miles on day three to meet the daily benchmark.\n2. On day one, he ran 10 miles, so he missed 20 - 10 = 10 miles from day one.\n3. On day two, he ran 15 miles, so he missed 20 - 15 = 5 miles from day two.\n4. To recover the uncompleted distance, he needs to run an extra 10 + 5 = 15 miles on day three.\n5. The total miles he needs to run on day three is 20 + 15 = 35 miles.\n\nFinal Answer: 35"
+  },
+  {
+    "id": 4,
+    "question": "Requiring 100 vocabulary words to be learned each day, Emma struggled on Monday by memorizing only 40. Despite planning to make up the difference on Tuesday, her output was limited to 50 words. To clear the missed quantities and still reach the standard daily target, how many words are required for Emma to memorize on Wednesday?",
+    "ground_truth": "210",
+    "generation": "1. Emma needed to learn 100 words on Monday but only learned 40, so she missed 100 - 40 = 60 words.\n2. On Tuesday, she learned 50 words, so she has now learned 40 + 50 = 90 words.\n3. To clear the missed quantities, she needs to learn 60 words on Wednesday.\n4. To reach the standard daily target, she needs to learn 100 words on Wednesday.\n\nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Emma needed to learn 100 words on Monday but only learned 40, so she missed 100 - 40 = 60 words.\n2. On Tuesday, she learned 50 words instead of the required 100, so she missed 100 - 50 = 50 words.\n3. The total missed quantities from previous days is 60 + 50 = 110 words.\n4. To clear the missed quantities and still reach the standard daily target, she needs to learn 100 + 110 = 210 words on Wednesday.\n\nFinal Answer: 210"
+  },
+  {
+    "id": 5,
+    "question": "James established a daily target of writing 35 lines of code. Producing only 10 lines on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him write merely 12 lines. In order to cover the unwritten code from previous days while still achieving his minimum daily objective, how many lines must James write on Wednesday?",
+    "ground_truth": "83",
+    "generation": "1. James needed to write 35 - 10 = 25 lines on Tuesday to meet his target.\n2. Since he only wrote 12 lines on Tuesday, he still needs to write 25 - 12 = 13 lines to meet his target for Tuesday.\n3. James still needs to write 35 * 2 = 70 lines for Monday and Tuesday combined to meet his target.\n4. He has already written 10 + 12 = 22 lines for Monday and Tuesday combined.\n5. Therefore, James needs to write 70 - 22 = 48 lines on Wednesday to meet his target.",
+    "pred_answer_masked": "48",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. James established a daily target of writing 35 lines of code. On Monday, he missed 35 - 10 = 25 lines.\n2. On Tuesday, he missed 35 - 12 = 23 lines.\n3. The total unwritten code from previous days is 25 + 23 = 48 lines.\n4. In order to cover the unwritten code while still achieving his minimum daily objective, James must write 35 + 48 = 83 lines on Wednesday.\n\nFinal Answer: 83"
+  },
+  {
+    "id": 6,
+    "question": "A daily quota of 60 shirts was set by Linda for her sales. Managing only 20 shirts on Thursday, Linda planned to clear the backlog on Friday. That plan fell short when just 40 shirts were sold on Friday. When Saturday arrives, how many shirts must Linda sell to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "120",
+    "generation": "1. Total shirts left after Thursday = 60 - 20 = 40.\n2. Total shirts left after Friday = 40 - 40 = 0 (accumulated deficit = 20).\n3. Total shirts to be sold on Saturday to meet the daily quota = 60 + 20 = 80.\n4. Total shirts to be sold on Saturday to meet the daily quota and clear the backlog = 80.",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Linda's deficit on Thursday is 60 - 20 = 40 shirts.\n2. Her deficit on Friday is 60 - 40 = 20 shirts.\n3. The accumulated deficit is 40 + 20 = 60 shirts.\n4. To satisfy the daily requirement alongside the accumulated deficit, Linda must sell 60 + 60 = 120 shirts on Saturday.\n\nFinal Answer: 120"
+  },
+  {
+    "id": 7,
+    "question": "Every day, Tom aims to plant 80 trees. The start on Monday yielded a mere 50 trees. Though intending to offset this shortfall on Tuesday, Tom achieved only 60. To ensure the base goal is met on Wednesday and all prior missed trees are compensated for, what is the total amount Tom needs to plant?",
+    "ground_truth": "130",
+    "generation": "1. Tom needs to plant 80 trees each day to meet the goal, but he only planted 50 on Monday, so he needs to plant 80 - 50 = 30 more trees on Tuesday to meet the goal for Tuesday.\n2. However, Tom only planted 60 trees on Tuesday, so he needs to plant 80 - 60 = 20 more trees on Tuesday to meet the goal for Tuesday.\n3. The difference between the two is 30 - 20 = 10 trees that Tom needs to plant on Tuesday to meet the goal for Tuesday, but since he only needs 20 more trees, he will plant 20 trees on Tuesday.\n4. Tom needs to plant 80 trees on Wednesday to meet the goal for Wednesday, and he needs to plant 10 trees on Tuesday to meet the goal for Tuesday, and 50 trees on Monday to meet the goal for Monday, so he needs to plant 80 + 10 + 50 = 140 trees on Wednesday.",
+    "pred_answer_masked": "140",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Tom needs to plant 80 trees each day. On Monday, he missed 80 - 50 = 30 trees.\n2. On Tuesday, he missed 80 - 60 = 20 trees.\n3. The total missed trees from Monday and Tuesday is 30 + 20 = 50 trees.\n4. To ensure the base goal is met on Wednesday and all prior missed trees are compensated for, Tom needs to plant 80 + 50 = 130 trees.\n\nFinal Answer: 130"
+  },
+  {
+    "id": 8,
+    "question": "For crafting, 45 bracelets is Sophia's required daily benchmark. After Monday resulted in just 20 made, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 25 bracelets. On Wednesday, what number of bracelets will Sophia need to make to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "90",
+    "generation": "1. Total uncompleted bracelets from Monday and Tuesday is 20 + 25 = 45.\n2. To hit the daily mark, Sophia needs to make 45 bracelets on Wednesday.\n3. To recover the uncompleted amounts, Sophia needs to make 45 more bracelets on Wednesday.\n4. Total bracelets Sophia needs to make on Wednesday is 45 + 45 = 90.\n\nFinal Answer: 90",
+    "pred_answer_masked": "90",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Sophia's shortfall from Monday is 45 - 20 = 25 bracelets.\n2. Her shortfall from Tuesday is 45 - 25 = 20 bracelets.\n3. The total accumulated deficit is 25 + 20 = 45 bracelets.\n4. To hit the daily mark and recover the uncompleted amounts, Sophia needs to make 45 (daily mark) + 45 (deficit) = 90 bracelets on Wednesday.\n\nFinal Answer: 90"
+  },
+  {
+    "id": 9,
+    "question": "Requiring 75 ounces to be drunk each day, Robert struggled on Monday by consuming only 30. Despite planning to make up the difference on Tuesday, his intake was limited to 40 ounces. To clear the missed quantities and still reach the standard daily water target, how many ounces are required for Robert to drink on Wednesday?",
+    "ground_truth": "155",
+    "generation": "1. Robert missed 75 - 30 = 45 ounces on Monday.\n2. He missed 75 - 40 = 35 ounces on Tuesday.\n3. Total missed ounces are 45 + 35 = 80 ounces.\n4. To reach the target, Robert needs to drink 75 + 80 = 155 ounces on Wednesday.",
+    "pred_answer_masked": "155",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Robert missed 75 - 30 = 45 ounces on Monday.\n2. He missed 75 - 40 = 35 ounces on Tuesday.\n3. Total missed ounces are 45 + 35 = 80 ounces.\n4. To reach the standard daily target and clear the missed quantities, Robert needs to drink 75 + 80 = 155 ounces on Wednesday.\n\nFinal Answer: 155"
+  },
+  {
+    "id": 10,
+    "question": "Olivia established a daily target of painting 90 portraits. Finishing only 45 portraits on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her paint merely 55 portraits. In order to cover the unpainted works from previous days while still achieving her minimum daily objective, how many portraits must Olivia paint on Wednesday?",
+    "ground_truth": "170",
+    "generation": "Reasoning:\n1. Olivia had 90 - 45 = 45 portraits left to paint after Monday.\n2. After painting 55 portraits on Tuesday, she had 45 - 55 = -10 portraits left to paint from the previous days.\n3. Since she needs to cover the -10 portraits and achieve her daily target of 90 portraits, she needs to paint 90 + 10 = 100 portraits on Wednesday.\n4. The minimum daily objective is already met with 90 portraits, so she only needs to cover the remaining 10 portraits from previous days.\nFinal Answer: 100",
+    "pred_answer_masked": "100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Olivia missed 90 - 45 = 45 portraits on Monday.\n2. She missed 90 - 55 = 35 portraits on Tuesday.\n3. The total unpainted works from previous days is 45 + 35 = 80 portraits.\n4. To cover the unpainted works and achieve her daily target, she needs to paint 90 + 80 = 170 portraits on Wednesday.\n\nFinal Answer: 170"
+  },
+  {
+    "id": 11,
+    "question": "A daily quota of 30 toys was set by William for assembly. Managing to assemble only 10 on Monday, William planned to clear the backlog on Tuesday. That plan fell short when just 15 toys were completed on Tuesday. When Wednesday arrives, how many toys must William assemble to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "65",
+    "generation": "1. William's deficit after Monday is 30 - 10 = 20 toys.\n2. The deficit after Tuesday is 20 + 15 = 35 toys.\n3. William needs to assemble 30 toys to meet the daily quota and 35 toys to clear the deficit, so he needs to assemble 30 + 35 = 65 toys in total.\n4. Since he has already assembled 10 + 15 = 25 toys, he needs to assemble 65 - 25 = 40 toys on Wednesday.",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. William's deficit from Monday is 30 - 10 = 20 toys.\n2. His deficit from Tuesday is 30 - 15 = 15 toys.\n3. The total accumulated deficit is 20 + 15 = 35 toys.\n4. William needs to assemble 30 toys to meet the daily quota and 35 toys to clear the deficit, so he needs to assemble 30 + 35 = 65 toys in total on Wednesday.\n\nFinal Answer: 65"
+  },
+  {
+    "id": 12,
+    "question": "Every day, Mia aims to write 55 articles. The start on Monday yielded a mere 25 articles. Though intending to offset this shortfall on Tuesday, Mia achieved only 35. To ensure the base goal is met on Wednesday and all prior missed articles are compensated for, what is the total amount Mia needs to write?",
+    "ground_truth": "105",
+    "generation": "1. Mia needs to write 55 articles each day, but she only wrote 25 on Monday, so she is 55 - 25 = 30 articles behind.\n2. On Tuesday, Mia wrote 35 articles, but she still needs to make up for the 30 articles she missed on Monday, so she is now 30 - 35 = -5 articles ahead.\n3. Since Mia is now 5 articles ahead, she needs to write 55 articles on Wednesday to meet her goal for the day, but she also needs to make up for the 5 articles she is ahead, so she needs to write 55 + 5 = 60 articles on Wednesday.\n4. The total amount Mia needs to write is the 25 articles she wrote on Monday, the 35 articles she wrote on Tuesday, and the 60 articles she needs to write on Wednesday, so 25 + 35 + 60 = 120 articles.",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Mia needs to write 55 articles each day, but she only wrote 25 on Monday, so she missed 55 - 25 = 30 articles.\n2. On Tuesday, she wrote 35 articles, so she missed 55 - 35 = 20 articles.\n3. Her total accumulated shortfall is 30 + 20 = 50 articles.\n4. To ensure the base goal is met on Wednesday and all missed articles are compensated for, Mia needs to write 55 + 50 = 105 articles.\n\nFinal Answer: 105"
+  },
+  {
+    "id": 13,
+    "question": "For his stretching routine, 25 minutes is Charles's required daily benchmark. After Monday resulted in just 5 minutes finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 10 minutes. On Wednesday, what number of minutes will Charles need to stretch to both hit the daily mark and recover the uncompleted time from the prior days?",
+    "ground_truth": "60",
+    "generation": "1. Charles needs 25 minutes on Wednesday to hit the daily mark.\n2. He needs to make up for 5 minutes from Monday, so he needs 5 more minutes on Wednesday.\n3. He also needs to make up for 15 minutes from Tuesday (25 - 10), so he needs 15 more minutes on Wednesday.\n4. Total minutes needed on Wednesday is 25 + 5 + 15 = 45.\n\nFinal Answer: 45",
+    "pred_answer_masked": "45",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Charles needs 25 minutes on Wednesday to hit the daily mark.\n2. He needs to make up for the time missed on Monday: 25 - 5 = 20 minutes.\n3. He also needs to make up for the time missed on Tuesday: 25 - 10 = 15 minutes.\n4. Total minutes needed on Wednesday is 25 (daily mark) + 20 (Monday's deficit) + 15 (Tuesday's deficit) = 60 minutes.\n\nFinal Answer: 60"
+  },
+  {
+    "id": 14,
+    "question": "Requiring 70 photos to be taken each day, Ava struggled on Monday by capturing only 30. Despite planning to make up the difference on Tuesday, her output was limited to 40 photos. To clear the missed quantities and still reach the standard daily photography target, how many photos are required for Ava to take on Wednesday?",
+    "ground_truth": "140",
+    "generation": "1. Ava missed 70 - 30 = 40 photos on Monday.\n2. She missed 70 - 40 = 30 photos on Tuesday.\n3. Total missed photos are 40 + 30 = 70.\n4. To reach the target, Ava needs to take 70 + 70 = 140 photos on Wednesday.",
+    "pred_answer_masked": "140",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Ava missed 70 - 30 = 40 photos on Monday.\n2. She missed 70 - 40 = 30 photos on Tuesday.\n3. Total missed photos are 40 + 30 = 70.\n4. To reach the standard daily photography target and clear the missed quantities, Ava needs to take 70 + 70 = 140 photos on Wednesday.\n\nFinal Answer: 140"
+  },
+  {
+    "id": 15,
+    "question": "Joseph established a daily target of delivering 85 packages. Dropping off only 40 packages on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him deliver merely 50 packages. In order to cover the undelivered items from previous days while still achieving his minimum daily objective, how many packages must Joseph deliver on Wednesday?",
+    "ground_truth": "165",
+    "generation": "1. Joseph's target for Monday and Tuesday is 85 * 2 = 170 packages.\n2. He delivered 40 packages on Monday, so the remaining target for Monday and Tuesday is 170 - 40 = 130 packages.\n3. He delivered 50 packages on Tuesday, so the remaining target for Wednesday is 130 - 50 = 80 packages.\n4. Joseph still needs to cover the undelivered items from Monday, which is 85 - 40 = 45 packages, so the total target for Wednesday is 80 + 45 = 125 packages.\nFinal Answer: 125",
+    "pred_answer_masked": "125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Joseph's target is 85 packages per day. On Monday, he missed 85 - 40 = 45 packages.\n2. On Tuesday, he missed 85 - 50 = 35 packages.\n3. The total undelivered items from previous days is 45 + 35 = 80 packages.\n4. To cover the undelivered items and achieve his minimum daily objective on Wednesday, Joseph must deliver 85 + 80 = 165 packages.\n\nFinal Answer: 165"
+  },
+  {
+    "id": 16,
+    "question": "A daily quota of 15 rows was set by Isabella for knitting. Managing to knit only 5 rows on Monday, Isabella planned to clear the backlog on Tuesday. That plan fell short when just 8 rows were completed on Tuesday. When Wednesday arrives, how many rows must Isabella knit to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "32",
+    "generation": "1. Total quota for 3 days is 15 * 3 = 45 rows.\n2. Isabella completed 5 rows on Monday, leaving 45 - 5 = 40 rows.\n3. After completing 8 rows on Tuesday, the deficit is 40 - 8 = 32 rows.\n4. To satisfy the daily quota of 15 rows and clear the deficit, Isabella must knit 32 + 15 = 47 rows on Wednesday.",
+    "pred_answer_masked": "47",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Isabella's deficit on Monday is 15 - 5 = 10 rows.\n2. Her deficit on Tuesday is 15 - 8 = 7 rows.\n3. The accumulated deficit is 10 + 7 = 17 rows.\n4. To satisfy the daily quota of 15 rows and clear the deficit, Isabella must knit 15 + 17 = 32 rows on Wednesday.\n\nFinal Answer: 32"
+  },
+  {
+    "id": 17,
+    "question": "Every day, Matthew aims to sort 65 files. The start on Monday yielded a mere 20 files. Though intending to offset this shortfall on Tuesday, Matthew achieved only 30. To ensure the base goal is met on Wednesday and all prior missed files are compensated for, what is the total amount Matthew needs to sort?",
+    "ground_truth": "145",
+    "generation": "1. Matthew needs to sort 65 files per day, but only sorted 20 on Monday.\n2. The total shortfall from Monday is 65 - 20 = 45 files.\n3. Matthew sorted 30 files on Tuesday, but still needs to sort the 45 files from Monday.\n4. The total amount Matthew needs to sort on Wednesday is 65 (for the current day) + 45 (missed files) = 110 files.",
+    "pred_answer_masked": "110",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Matthew needs to sort 65 files per day, but only sorted 20 on Monday. The shortfall is 65 - 20 = 45 files.\n2. He sorted 30 files on Tuesday. The shortfall is 65 - 30 = 35 files.\n3. The total accumulated shortfall is 45 + 35 = 80 files.\n4. The total amount Matthew needs to sort on Wednesday is 65 (for the current day) + 80 (missed files) = 145 files.\n\nFinal Answer: 145"
+  },
+  {
+    "id": 18,
+    "question": "For cleaning, 110 windows is Charlotte's required daily benchmark. After Monday resulted in just 60 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 70 windows. On Wednesday, what number of windows will Charlotte need to clean to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "200",
+    "generation": "1. Charlotte needs to clean 110 windows daily, but she only cleaned 60 on Monday, so she is 110 - 60 = 50 windows behind.\n2. On Tuesday, she cleaned 70 windows, but she still needs to recover the 50 windows from Monday, so she is now 50 - 70 = -20 windows ahead.\n3. Since she is -20 windows ahead, it means she has a deficit of 20 windows, and she needs to make up for this deficit on Wednesday to hit the daily mark.\n4. To hit the daily mark of 110 windows on Wednesday, Charlotte needs to clean 110 + 20 = 130 windows.",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Charlotte needs to clean 110 windows daily, but she only cleaned 60 on Monday, so she missed 110 - 60 = 50 windows.\n2. On Tuesday, she cleaned 70 windows, so she missed 110 - 70 = 40 windows.\n3. The total uncompleted amount from prior days is 50 + 40 = 90 windows.\n4. To hit the daily mark of 110 windows on Wednesday and recover the deficit, Charlotte needs to clean 110 + 90 = 200 windows.\n\nFinal Answer: 200"
+  },
+  {
+    "id": 19,
+    "question": "Requiring 120 boxes to be packed each day, Anthony struggled on Monday by finishing only 50. Despite planning to make up the difference on Tuesday, his output was limited to 80 boxes. To clear the missed quantities and still reach the standard daily target, how many boxes are required for Anthony to pack on Wednesday?",
+    "ground_truth": "230",
+    "generation": "1. Anthony missed 120 - 50 = 70 boxes on Monday.\n2. He still missed 120 - 80 = 40 boxes on Tuesday.\n3. Total missed boxes are 70 + 40 = 110 boxes.\n4. To reach the target, Anthony needs to pack 120 + 110 = 230 boxes on Wednesday.",
+    "pred_answer_masked": "230",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Anthony missed 120 - 50 = 70 boxes on Monday.\n2. He missed 120 - 80 = 40 boxes on Tuesday.\n3. Total missed boxes are 70 + 40 = 110 boxes.\n4. To clear the missed quantities and reach the standard daily target, Anthony needs to pack 120 + 110 = 230 boxes on Wednesday.\n\nFinal Answer: 230"
+  },
+  {
+    "id": 20,
+    "question": "Amelia established a daily target of translating 150 sentences. Completing only 75 sentences on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her translate merely 100 sentences. In order to cover the untranslated lines from previous days while still achieving her minimum daily objective, how many sentences must Amelia translate on Wednesday?",
+    "ground_truth": "275",
+    "generation": "1. Amelia's target for Monday and Tuesday is 150 * 2 = 300 sentences.\n2. She completed 75 sentences on Monday, leaving 300 - 75 = 225 sentences to be completed by Tuesday.\n3. However, she only completed 100 sentences on Tuesday, leaving 225 - 100 = 125 sentences to be completed by Wednesday.\n4. To cover the untranslated lines from previous days and meet her minimum daily objective, Amelia must translate 150 sentences on Wednesday.",
+    "pred_answer_masked": "150",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Amelia missed 150 - 75 = 75 sentences on Monday.\n2. She missed 150 - 100 = 50 sentences on Tuesday.\n3. The total untranslated lines from previous days is 75 + 50 = 125 sentences.\n4. To cover the untranslated lines and meet her minimum daily objective, Amelia must translate 150 + 125 = 275 sentences on Wednesday.\n\nFinal Answer: 275"
+  },
+  {
+    "id": 21,
+    "question": "A daily quota of 42 pushups was set by Brian for his workout. Managing to do only 12 pushups on Monday, Brian planned to clear the backlog on Tuesday. That plan fell short when just 22 pushups were completed on Tuesday. When Wednesday arrives, how many pushups must Brian do to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "92",
+    "generation": "1. Brian completed 12 pushups on Monday, so the deficit is 42 - 12 = 30 pushups.\n2. On Tuesday, Brian completed 22 pushups, so the deficit is now 30 + 22 = 52 pushups.\n3. To satisfy the daily quota of 42 pushups, Brian must do 42 pushups on Wednesday.\n4. To clear the accumulated deficit, Brian must do 52 - 42 = 10 more pushups on Wednesday.\n\nFinal Answer: 52",
+    "pred_answer_masked": "52",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Brian's deficit from Monday is 42 - 12 = 30 pushups.\n2. His deficit from Tuesday is 42 - 22 = 20 pushups.\n3. The accumulated deficit is 30 + 20 = 50 pushups.\n4. To satisfy the daily requirement alongside the accumulated deficit, Brian must do 42 + 50 = 92 pushups on Wednesday.\n\nFinal Answer: 92"
+  },
+  {
+    "id": 22,
+    "question": "Every day, Evelyn aims to walk 58 blocks. The start on Monday yielded a mere 28 blocks. Though intending to offset this shortfall on Tuesday, Evelyn achieved only 38. To ensure the base goal is met on Wednesday and all prior missed blocks are compensated for, what is the total amount Evelyn needs to walk?",
+    "ground_truth": "108",
+    "generation": "1. Evelyn needs to walk 58 blocks on Wednesday to meet her daily goal.\n2. She has a shortfall of 58 - 28 = 30 blocks from Monday.\n3. She has a shortfall of 30 - 38 = -8 blocks from Tuesday, meaning she has 8 blocks extra.\n4. So, she needs to walk 58 + 30 + 8 = 96 blocks on Wednesday to meet her goal and compensate for the missed blocks.\n\nFinal Answer: 96",
+    "pred_answer_masked": "96",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Evelyn needs to walk 58 blocks on Wednesday to meet her daily goal.\n2. She has a shortfall of 58 - 28 = 30 blocks from Monday.\n3. She has a shortfall of 58 - 38 = 20 blocks from Tuesday.\n4. So, she needs to walk 58 (daily goal) + 30 (Monday's deficit) + 20 (Tuesday's deficit) = 108 blocks on Wednesday.\n\nFinal Answer: 108"
+  },
+  {
+    "id": 23,
+    "question": "For coding, 24 functions is Kevin's required daily benchmark. After Monday resulted in just 14 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 18 functions. On Wednesday, what number of functions will Kevin need to write to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "40",
+    "generation": "1. Kevin needs to write 24 functions on Wednesday to hit the daily mark.\n2. He needs to recover 10 functions from Monday (24 - 14 = 10).\n3. He needs to recover 6 functions from Tuesday (24 - 18 = 6).\n4. Total functions needed to be written on Wednesday is 24 (daily mark) + 10 (Monday) + 6 (Tuesday) = 40.\n\nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Kevin needs to write 24 functions on Wednesday to hit the daily mark.\n2. He needs to recover 10 functions from Monday (24 - 14 = 10).\n3. He needs to recover 6 functions from Tuesday (24 - 18 = 6).\n4. Total functions needed to be written on Wednesday is 24 (daily mark) + 10 (Monday) + 6 (Tuesday) = 40.\n\nFinal Answer: 40"
+  },
+  {
+    "id": 24,
+    "question": "Requiring 72 documents to be reviewed each day, Harper struggled on Monday by completing only 32. Despite planning to make up the difference on Tuesday, her output was limited to 42 documents. To clear the missed quantities and still reach the standard daily target, how many documents are required for Harper to review on Wednesday?",
+    "ground_truth": "142",
+    "generation": "1. Harper missed 72 - 32 = 40 documents on Monday.\n2. She completed 40 + 42 = 82 documents on Tuesday, exceeding the target by 10 documents.\n3. To clear the missed quantities, Harper needs to review 10 + 40 = 50 documents on Wednesday.\n4. To reach the standard daily target, Harper needs to review 72 + 50 = 122 documents on Wednesday.",
+    "pred_answer_masked": "122",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Harper missed 72 - 32 = 40 documents on Monday.\n2. She missed 72 - 42 = 30 documents on Tuesday.\n3. To clear the missed quantities, Harper needs to review 40 + 30 = 70 documents.\n4. To reach the standard daily target, Harper needs to review 72 + 70 = 142 documents on Wednesday.\n\nFinal Answer: 142"
+  },
+  {
+    "id": 25,
+    "question": "Steven established a daily target of making 88 calls. Dialing only 48 calls on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him make merely 58 calls. In order to cover the unmade calls from previous days while still achieving his minimum daily objective, how many calls must Steven make on Wednesday?",
+    "ground_truth": "158",
+    "generation": "1. Calculate the remaining calls Steven needed to make after Monday: 88 - 48 = 40.\n2. Add the remaining calls from Tuesday to the previous day's total: 40 + 58 = 98.\n3. Subtract the calls made on Tuesday from the target to find the calls needed on Wednesday: 88 - 58 = 30.\n4. Add the calls needed on Wednesday to the calls made on Tuesday to find the total calls needed on Wednesday to meet the target: 30 + 58 = 88, but this is the target, not the calls needed on Wednesday. The calls needed on Wednesday to meet the target is 88 - 58 = 30.",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the missed calls Steven needed to make on Monday: 88 - 48 = 40.\n2. Calculate the missed calls on Tuesday: 88 - 58 = 30.\n3. The total unmade calls from previous days is 40 + 30 = 70.\n4. Add the missed calls to Wednesday's daily objective to find the total calls needed: 88 + 70 = 158 calls.\n\nFinal Answer: 158"
+  },
+  {
+    "id": 26,
+    "question": "A daily quota of 18 pages was set by Abigail for sketching. Managing to draw only 8 pages on Monday, Abigail planned to clear the backlog on Tuesday. That plan fell short when just 12 pages were completed on Tuesday. When Wednesday arrives, how many pages must Abigail draw to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "34",
+    "generation": "1. Abigail's deficit on Monday is 18 - 8 = 10 pages.\n2. The deficit after Tuesday is 10 + 12 = 22 pages.\n3. Abigail needs to draw 18 pages to meet the daily quota on Wednesday.\n4. To clear the backlog, she must draw 22 - 18 = 4 more pages.\n\nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Abigail's deficit on Monday is 18 - 8 = 10 pages.\n2. Her deficit on Tuesday is 18 - 12 = 6 pages.\n3. The accumulated backlog is 10 + 6 = 16 pages.\n4. Abigail needs to draw 18 pages to meet the daily quota on Wednesday.\n5. To clear the backlog alongside the daily quota, she must draw 18 + 16 = 34 pages.\n\nFinal Answer: 34"
+  },
+  {
+    "id": 27,
+    "question": "Every day, Richard aims to mix 68 batches. The start on Monday yielded a mere 28 batches. Though intending to offset this shortfall on Tuesday, Richard achieved only 38. To ensure the base goal is met on Wednesday and all prior missed batches are compensated for, what is the total amount Richard needs to mix?",
+    "ground_truth": "138",
+    "generation": "1. Richard aims to mix 68 batches per day, but only mixed 28 on Monday, so he is short 68 - 28 = 40 batches.\n2. On Tuesday, he mixed 38 batches, but this is still short of the 40 batches needed to meet the daily goal, so he is still short 40 - 38 = 2 batches.\n3. To meet the daily goal and compensate for the missed batches, Richard needs to mix 68 batches on Wednesday, which will cover the 2 batches still needed to meet the daily goal and the 40 batches needed to compensate for the shortfall.\n4. So, the total amount Richard needs to mix is 28 (Monday) + 38 (Tuesday) + 68 (Wednesday) = 134 batches.\n\nFinal Answer: 134",
+    "pred_answer_masked": "134",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Richard aims to mix 68 batches per day. On Monday, he missed 68 - 28 = 40 batches.\n2. On Tuesday, he missed 68 - 38 = 30 batches.\n3. The total missed batches are 40 + 30 = 70 batches.\n4. To ensure the base goal is met on Wednesday and all prior missed batches are compensated for, Richard needs to mix 68 + 70 = 138 batches.\n\nFinal Answer: 138"
+  },
+  {
+    "id": 28,
+    "question": "For debugging, fixing 105 issues is Emily's required daily benchmark. After Monday resulted in just 45 fixed, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 65 issues. On Wednesday, what number of issues will Emily need to fix to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "205",
+    "generation": "Reasoning:\n1. Emily needs to fix 105 issues daily, so she needs to fix 105 * 2 = 210 issues to catch up on Monday and Tuesday.\n2. She already fixed 45 issues on Monday, so she needs to fix 210 - 45 = 165 issues on Tuesday to catch up.\n3. However, she only fixed 65 issues on Tuesday, so she still needs to fix 165 - 65 = 100 issues on Tuesday to catch up.\n4. Since she needs to fix 105 issues on Wednesday to hit the daily mark, and she still needs to fix 100 issues to catch up, she needs to fix 105 + 100 = 205 issues on Wednesday.\n\nFinal Answer: 205",
+    "pred_answer_masked": "205",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Emily needs to fix 105 issues daily, so she needs to fix 105 * 2 = 210 issues to catch up on Monday and Tuesday.\n2. She already fixed 45 issues on Monday, so she needs to fix 210 - 45 = 165 issues on Tuesday to catch up.\n3. However, she only fixed 65 issues on Tuesday, so she still needs to fix 165 - 65 = 100 issues on Tuesday to catch up.\n4. Since she needs to fix 105 issues on Wednesday to hit the daily mark, and she still needs to fix 100 issues to catch up, she needs to fix 105 + 100 = 205 issues on Wednesday.\n\nFinal Answer: 205"
+  },
+  {
+    "id": 29,
+    "question": "Requiring 115 carrots to be chopped each day, Jason struggled on Monday by finishing only 55. Despite planning to make up the difference on Tuesday, his output was limited to 75 carrots. To clear the missed quantities and still reach the standard daily target, how many carrots are required for Jason to chop on Wednesday?",
+    "ground_truth": "215",
+    "generation": "1. Jason missed 115 - 55 = 60 carrots on Monday.\n2. He chopped 60 + 75 = 135 carrots on Tuesday, exceeding the target by 20 carrots.\n3. The total missed carrots are 20 (excess on Tuesday) + 60 (missed on Monday) = 80 carrots.\n4. Jason needs to chop 80 + 115 (daily target) = 195 carrots on Wednesday.",
+    "pred_answer_masked": "195",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Jason missed 115 - 55 = 60 carrots on Monday.\n2. He missed 115 - 75 = 40 carrots on Tuesday.\n3. The total missed carrots are 60 + 40 = 100 carrots.\n4. Jason needs to chop 100 (missed) + 115 (daily target) = 215 carrots on Wednesday.\n\nFinal Answer: 215"
+  },
+  {
+    "id": 30,
+    "question": "Elizabeth established a daily target of baking 125 cookies. Producing only 65 cookies on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her bake merely 85 cookies. In order to cover the unbaked cookies from previous days while still achieving her minimum daily objective, how many cookies must Elizabeth bake on Wednesday?",
+    "ground_truth": "225",
+    "generation": "1. Elizabeth's target for Monday and Tuesday is 125 * 2 = 250 cookies.\n2. She produced 65 cookies on Monday, leaving 250 - 65 = 185 cookies to be baked.\n3. On Tuesday, she baked 85 cookies, leaving 185 - 85 = 100 cookies to be baked.\n4. Elizabeth's target for Wednesday is 125 cookies, so she must bake 100 + 125 = 225 cookies.\n\nFinal Answer: 225",
+    "pred_answer_masked": "225",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Elizabeth's target for Monday and Tuesday is 125 * 2 = 250 cookies.\n2. She produced 65 cookies on Monday, leaving 250 - 65 = 185 cookies to be baked.\n3. On Tuesday, she baked 85 cookies, leaving 185 - 85 = 100 cookies to be baked.\n4. Elizabeth's target for Wednesday is 125 cookies, so she must bake 100 + 125 = 225 cookies.\n\nFinal Answer: 225"
+  },
+  {
+    "id": 31,
+    "question": "A daily quota of 33 laps was set by Gary for swimming. Managing to swim only 13 laps on Monday, Gary planned to clear the backlog on Tuesday. That plan fell short when just 19 laps were completed on Tuesday. When Wednesday arrives, how many laps must Gary swim to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "67",
+    "generation": "1. Gary's deficit after Monday is 33 - 13 = 20 laps.\n2. After Tuesday, the total deficit is 20 + 19 = 39 laps.\n3. To satisfy the daily quota of 33 laps, Gary needs to swim 39 laps to clear the deficit and meet the quota.\n4. Therefore, Gary must swim 39 - 33 = 6 more laps on Wednesday.",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Gary's deficit after Monday is 33 - 13 = 20 laps.\n2. His deficit after Tuesday is 33 - 19 = 14 laps.\n3. The total accumulated deficit is 20 + 14 = 34 laps.\n4. To satisfy the daily requirement alongside the accumulated deficit, Gary needs to swim 33 + 34 = 67 laps on Wednesday.\n\nFinal Answer: 67"
+  },
+  {
+    "id": 32,
+    "question": "Every day, Sofia aims to practice 53 scales. The start on Monday yielded a mere 23 scales. Though intending to offset this shortfall on Tuesday, Sofia achieved only 33. To ensure the base goal is met on Wednesday and all prior missed scales are compensated for, what is the total amount Sofia needs to play?",
+    "ground_truth": "103",
+    "generation": "1. Sofia needs to play 53 scales on each day to meet her goal.\n2. On Monday, Sofia missed 53 - 23 = 30 scales.\n3. By Tuesday, Sofia has played 23 + 33 = 56 scales, but still needs to play 30 + 53 = 83 scales to meet her goal for the two days.\n4. Since Sofia has already played 56 scales, she needs to play 83 - 56 = 27 scales on Wednesday to meet her goal and compensate for the missed scales.\n\nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Sofia needs to play 53 scales on each day to meet her goal.\n2. On Monday, Sofia missed 53 - 23 = 30 scales.\n3. On Tuesday, Sofia missed 53 - 33 = 20 scales.\n4. Her total accumulated deficit is 30 + 20 = 50 scales. She needs to play 53 (daily goal) + 50 (deficit) = 103 scales on Wednesday.\n\nFinal Answer: 103"
+  },
+  {
+    "id": 33,
+    "question": "For typing, 26 pages is Timothy's required daily benchmark. After Monday resulted in just 16 pages finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 20 pages. On Wednesday, what number of pages will Timothy need to type to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "42",
+    "generation": "1. Timothy needs to type 26 pages daily, but he only typed 16 pages on Monday, so he is 26 - 16 = 10 pages behind.\n2. On Tuesday, he typed 20 pages, but he needs to type 26 pages daily, so he is 26 - 20 = 6 pages ahead for the day.\n3. However, he still needs to recover the 10 pages he was behind after Monday, so he needs to type 10 + 6 = 16 pages on Wednesday to catch up.\n4. Since he needs to type 26 pages on Wednesday to hit the daily mark, and he needs to type 16 pages to catch up, he needs to type 26 - 16 = 10 pages on Wednesday to hit the daily mark and recover the uncompleted amounts from the prior days.\n\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Timothy needs to type 26 pages daily, but he only typed 16 pages on Monday, so he missed 26 - 16 = 10 pages.\n2. On Tuesday, he typed 20 pages, so he missed 26 - 20 = 6 pages.\n3. The total uncompleted amount from prior days is 10 + 6 = 16 pages.\n4. To hit the daily mark and recover the uncompleted amounts, he needs to type 26 + 16 = 42 pages on Wednesday.\n\nFinal Answer: 42"
+  },
+  {
+    "id": 34,
+    "question": "Requiring 74 shirts to be folded each day, Avery struggled on Monday by completing only 34. Despite planning to make up the difference on Tuesday, her output was limited to 44 shirts. To clear the missed quantities and still reach the standard daily target, how many shirts are required for Avery to fold on Wednesday?",
+    "ground_truth": "144",
+    "generation": "1. Avery needed to fold 74 shirts on Monday but only managed 34, so she missed 74 - 34 = 40 shirts.\n2. On Tuesday, she folded 44 shirts, but she still needed to make up for the 40 shirts missed on Monday, so she still needs to fold 40 shirts to clear the missed quantities.\n3. To reach the target of 74 shirts on Wednesday, Avery needs to fold 74 shirts in total, and she has already folded 34 + 44 = 78 shirts in the first two days, so she actually has 78 - 74 = 4 extra shirts.\n4. To clear the missed quantities and still reach the standard daily target, Avery needs to fold 40 shirts on Wednesday to make up for the missed quantities, and then she will have 4 extra shirts from the previous days, so she needs to fold 40 + 74 - 78 = 40 shirts on Wednesday.\n\nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Avery needed to fold 74 shirts on Monday but only managed 34, so she missed 74 - 34 = 40 shirts.\n2. On Tuesday, she folded 44 shirts, so she missed 74 - 44 = 30 shirts.\n3. The total missed quantities from Monday and Tuesday is 40 + 30 = 70 shirts.\n4. To clear the missed quantities and reach the standard daily target, Avery needs to fold 74 + 70 = 144 shirts on Wednesday.\n\nFinal Answer: 144"
+  },
+  {
+    "id": 35,
+    "question": "Jeffrey established a daily target of carving 86 figures. Finishing only 46 figures on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him carve merely 56 figures. In order to cover the uncarved figures from previous days while still achieving his minimum daily objective, how many figures must Jeffrey carve on Wednesday?",
+    "ground_truth": "156",
+    "generation": "1. Jeffrey carved 46 figures on Monday, leaving 86 - 46 = 40 figures uncarved.\n2. On Tuesday, he carved 56 figures, but still had 40 uncarved figures from Monday, so now he has 40 + 56 = 96 uncarved figures in total.\n3. His target for Wednesday is to carve at least 86 figures, but he needs to cover the 96 uncarved figures from Monday and Tuesday, so he needs to carve 96 + 86 = 182 figures.\n4. Since he needs to carve at least 86 figures to meet his daily target, he must carve 182 - 86 = 96 figures on Wednesday.",
+    "pred_answer_masked": "96",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Jeffrey missed 86 - 46 = 40 figures on Monday.\n2. He missed 86 - 56 = 30 figures on Tuesday.\n3. The total uncarved figures from previous days is 40 + 30 = 70 figures.\n4. His target for Wednesday is 86 figures, plus the 70 uncarved figures from previous days, so he must carve 86 + 70 = 156 figures.\n\nFinal Answer: 156"
+  },
+  {
+    "id": 36,
+    "question": "A daily quota of 16 plants was set by Ella for watering. Managing to water only 6 plants on Monday, Ella planned to clear the backlog on Tuesday. That plan fell short when just 10 plants were watered on Tuesday. When Wednesday arrives, how many plants must Ella water to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "32",
+    "generation": "1. Ella's deficit on Monday is 16 - 6 = 10 plants.\n2. The deficit on Tuesday is 10 (from Monday) + 10 (watered on Tuesday) = 20 plants.\n3. Ella needs to water 16 (daily quota) + 20 (deficit) = 36 plants to satisfy the daily requirement alongside the accumulated deficit.\n4. Since Ella already watered 16 plants on Monday and 10 plants on Tuesday, she has watered 16 + 10 = 26 plants.\n5. To satisfy the daily requirement alongside the accumulated deficit, Ella must water 36 - 26 = 10 plants on Wednesday.",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Ella's deficit on Monday is 16 - 6 = 10 plants.\n2. Her deficit on Tuesday is 16 - 10 = 6 plants.\n3. The total accumulated deficit is 10 + 6 = 16 plants.\n4. To satisfy the daily requirement alongside the accumulated deficit, Ella must water 16 (daily quota) + 16 (deficit) = 32 plants on Wednesday.\n\nFinal Answer: 32"
+  },
+  {
+    "id": 37,
+    "question": "Every day, Ryan aims to stock 64 shelves. The start on Monday yielded a mere 24 shelves. Though intending to offset this shortfall on Tuesday, Ryan achieved only 34. To ensure the base goal is met on Wednesday and all prior missed shelves are compensated for, what is the total amount Ryan needs to stock?",
+    "ground_truth": "134",
+    "generation": "1. Ryan needs to stock 64 shelves on each day, but he only met the goal on Wednesday, so we need to calculate the total shelves he needs to stock for the three days.\n2. On Monday, he missed 64 - 24 = 40 shelves.\n3. On Tuesday, he missed 64 - 34 = 30 shelves.\n4. The total shelves he needs to stock for the three days is 40 + 30 + 64 = 134 shelves.\n\nFinal Answer: 134",
+    "pred_answer_masked": "134",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Ryan needs to stock 64 shelves on each day, but he only met the goal on Wednesday, so we need to calculate the total shelves he needs to stock for the three days.\n2. On Monday, he missed 64 - 24 = 40 shelves.\n3. On Tuesday, he missed 64 - 34 = 30 shelves.\n4. The total shelves he needs to stock for the three days is 40 + 30 + 64 = 134 shelves.\n\nFinal Answer: 134"
+  },
+  {
+    "id": 38,
+    "question": "For labeling, 102 jars is Madison's required daily benchmark. After Monday resulted in just 42 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 52 jars. On Wednesday, what number of jars will Madison need to label to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "212",
+    "generation": "1. Calculate the total jars needed for the three days: 102 * 3 = 306 jars.\n2. Calculate the total jars completed on Monday and Tuesday: 42 + 52 = 94 jars.\n3. Calculate the remaining jars needed to meet the daily mark for the three days: 306 - 94 = 212 jars.\n4. Calculate the jars needed on Wednesday to meet the daily mark and recover the uncompleted amounts: 102 (daily mark) + 8 (Monday's deficit) + 50 (Tuesday's deficit) = 160 jars.\n\nFinal Answer: 160",
+    "pred_answer_masked": "160",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total jars needed for the three days: 102 * 3 = 306 jars.\n2. Calculate the total jars completed on Monday and Tuesday: 42 + 52 = 94 jars.\n3. Calculate the remaining jars needed to meet the daily mark for the three days: 306 - 94 = 212 jars.\n4. So Madison needs to label 212 jars on Wednesday.\n\nFinal Answer: 212"
+  },
+  {
+    "id": 39,
+    "question": "Requiring 118 items to be inspected each day, Jacob struggled on Monday by finishing only 58. Despite planning to make up the difference on Tuesday, his output was limited to 78 items. To clear the missed quantities and still reach the standard daily target, how many items are required for Jacob to inspect on Wednesday?",
+    "ground_truth": "218",
+    "generation": "1. Jacob missed 118 - 58 = 60 items on Monday.\n2. He completed 60 + 78 = 138 items on Tuesday, exceeding the target by 20 items.\n3. To clear the missed quantities, Jacob needs to complete 60 items on Wednesday.\n4. To reach the standard daily target, Jacob needs to complete 118 + 20 = 138 items on Wednesday.\n5. Therefore, Jacob needs to inspect 138 - 60 = 78 items on Wednesday.",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Jacob missed 118 - 58 = 60 items on Monday.\n2. He missed 118 - 78 = 40 items on Tuesday.\n3. To clear the missed quantities, Jacob needs to complete 60 + 40 = 100 items on Wednesday.\n4. To reach the standard daily target, Jacob needs to complete 118 + 100 = 218 items on Wednesday.\n\nFinal Answer: 218"
+  },
+  {
+    "id": 40,
+    "question": "Scarlett established a daily target of painting 128 fences. Finishing only 68 fences on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her paint merely 88 fences. In order to cover the unpainted fences from previous days while still achieving her minimum daily objective, how many fences must Scarlett paint on Wednesday?",
+    "ground_truth": "228",
+    "generation": "1. Total fences left unpainted after Monday: 128 - 68 = 60\n2. Total fences left unpainted after Tuesday: 60 + 88 = 148\n3. Fences Scarlett needs to paint on Wednesday to meet her daily target: 128 - 88 = 40\n4. Fences Scarlett needs to paint on Wednesday to cover the unpainted fences: 148 - 88 = 60\n5. Fences Scarlett must paint on Wednesday to cover the unpainted fences and meet her daily target: max(40, 60) = 60\n\nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total fences left unpainted on Monday: 128 - 68 = 60 fences.\n2. Total fences left unpainted on Tuesday: 128 - 88 = 40 fences.\n3. Total accumulated deficit from previous days: 60 + 40 = 100 fences.\n4. Fences Scarlett must paint on Wednesday to cover the deficit and meet her daily target: 128 + 100 = 228 fences.\n\nFinal Answer: 228"
+  },
+  {
+    "id": 41,
+    "question": "A daily checking quota of 38 tests was set by Nicholas. Managing to grade only 18 tests on Monday, Nicholas planned to clear the backlog on Tuesday. That plan fell short when just 28 tests were completed on Tuesday. When Wednesday arrives, how many tests must Nicholas grade to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "68",
+    "generation": "1. The deficit from Monday is 38 - 18 = 20 tests.\n2. The deficit after Tuesday is 20 + 28 = 48 tests.\n3. The daily quota is 38 tests, so the deficit after Wednesday is 48 + 38 = 86 tests.\n4. To satisfy the daily requirement alongside the accumulated deficit, Nicholas must grade 86 tests.",
+    "pred_answer_masked": "86",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The deficit from Monday is 38 - 18 = 20 tests.\n2. The deficit from Tuesday is 38 - 28 = 10 tests.\n3. The accumulated deficit is 20 + 10 = 30 tests.\n4. To satisfy the daily requirement alongside the accumulated deficit, Nicholas must grade 38 + 30 = 68 tests on Wednesday.\n\nFinal Answer: 68"
+  },
+  {
+    "id": 42,
+    "question": "Every day, Victoria aims to bind 48 books. The start on Monday yielded a mere 28 books. Though he intended for her to offset this shortfall on Tuesday, Victoria achieved only 38. To ensure the base goal is met on Wednesday and all prior missed books are compensated for, what is the total amount Victoria needs to bind?",
+    "ground_truth": "78",
+    "generation": "1. Victoria aimed to bind 48 books per day but only bound 28 on Monday, so she is 48 - 28 = 20 books behind.\n2. On Tuesday, she bound 38 books, but she still needs to catch up on the 20 books from Monday, so she is now 20 - 38 = -18 books behind.\n3. Since she is -18 books behind, she needs to bind 18 books on Wednesday to catch up on the books she missed, and then she will be back on track to bind 48 books on Thursday.\n4. To find the total amount she needs to bind, we add the 18 books she needs to bind on Wednesday to the 48 books she needs to bind on Thursday, which is 18 + 48 = 66 books.\n\nFinal Answer: 66",
+    "pred_answer_masked": "66",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Victoria aimed to bind 48 books per day but only bound 28 on Monday, so she missed 48 - 28 = 20 books.\n2. On Tuesday, she bound 38 books, so she missed 48 - 38 = 10 books.\n3. Her total missed books are 20 + 10 = 30 books.\n4. To ensure the base goal is met on Wednesday and all prior missed books are compensated for, Victoria needs to bind 48 + 30 = 78 books.\n\nFinal Answer: 78"
+  },
+  {
+    "id": 43,
+    "question": "For polishing, 22 stones is Eric's required daily benchmark. After Monday resulted in just 12 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 16 stones. On Wednesday, what number of stones will Eric need to polish to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "38",
+    "generation": "1. Eric needs to polish 22 stones daily, but he only polished 12 stones on Monday, so he is 22 - 12 = 10 stones behind.\n2. On Tuesday, he polished 16 stones, but he still needs to polish 10 stones to catch up, so he is 16 - 10 = 6 stones ahead.\n3. However, he still needs to polish 22 stones on Wednesday to hit the daily mark, and he is 6 stones ahead, so he needs to polish 22 + 6 = 28 stones to hit the daily mark and recover the uncompleted amounts from the prior days.\n4. The 6 stones he is ahead will be subtracted from the 28 stones, so he will polish 28 - 6 = 22 stones on Wednesday, but that is the daily mark, so he still needs to polish 22 stones to hit the daily mark and recover the uncompleted amounts from the prior days.\n\nFinal Answer: 22",
+    "pred_answer_masked": "22",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Eric needs to polish 22 stones daily, but he only polished 12 stones on Monday, so he missed 22 - 12 = 10 stones.\n2. On Tuesday, he polished 16 stones, so he missed 22 - 16 = 6 stones.\n3. The total uncompleted amounts from the prior days is 10 + 6 = 16 stones.\n4. To hit the daily mark and recover the uncompleted amounts, Eric needs to polish 22 + 16 = 38 stones on Wednesday.\n\nFinal Answer: 38"
+  },
+  {
+    "id": 44,
+    "question": "Requiring 76 baskets to be woven each day, Aria struggled on Monday by completing only 36. Despite planning to make up the difference on Tuesday, her output was limited to 46 baskets. To clear the missed quantities and still reach the standard daily target, how many baskets are required for Aria to weave on Wednesday?",
+    "ground_truth": "146",
+    "generation": "1. Total missed baskets on Monday and Tuesday = 76 - 36 + 76 - 46 = 70.\n2. Baskets required to reach the target on Wednesday = 70 + 76 = 146.\n3. Baskets already woven on Monday and Tuesday = 36 + 46 = 82.\n4. Baskets required to weave on Wednesday = 146 - 82 = 64.\nFinal Answer: 64",
+    "pred_answer_masked": "64",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total missed baskets on Monday = 76 - 36 = 40.\n2. Total missed baskets on Tuesday = 76 - 46 = 30.\n3. Baskets required to recover the missed quantities = 40 + 30 = 70.\n4. Baskets required to weave on Wednesday to reach the target and clear the backlog = 76 + 70 = 146.\n\nFinal Answer: 146"
+  },
+  {
+    "id": 45,
+    "question": "Stephen established a daily target of testing 82 circuits. Testing only 42 circuits on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him test merely 52 circuits. In order to cover the untested circuits from previous days while still achieving his minimum daily objective, how many circuits must Stephen test on Wednesday?",
+    "ground_truth": "152",
+    "generation": "1. Stephen's target for Monday and Tuesday is 82 circuits. \n2. He tested 42 circuits on Monday, leaving 82 - 42 = 40 circuits to be tested on Tuesday.\n3. However, he only tested 52 circuits on Tuesday, so the total circuits tested in two days is 42 + 52 = 94 circuits.\n4. Since Stephen's target for two days is 82 circuits, he needs to test 94 - 82 = 12 circuits on Wednesday to cover the untested circuits from previous days and meet his minimum daily objective.",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Stephen's target for three days (Monday, Tuesday, Wednesday) is 82 * 3 = 246 circuits.\n2. He tested 42 circuits on Monday and 52 circuits on Tuesday, which is a total of 42 + 52 = 94 circuits.\n3. To cover the untested circuits from previous days while still achieving his minimum daily objective for Wednesday, Stephen must test a total of 246 - 94 = 152 circuits on Wednesday.\n\nFinal Answer: 152"
+  },
+  {
+    "id": 46,
+    "question": "A daily quota of 14 pots was set by Grace for brewing. Managing to brew only 4 pots on Monday, Grace planned to clear the backlog on Tuesday. That plan fell short when just 8 pots were completed on Tuesday. When Wednesday arrives, how many pots must Grace brew to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "30",
+    "generation": "1. Total pots needed for the 3 days is 14 * 3 = 42.\n2. Pots brewed on Monday is 4, so the remaining pots needed is 42 - 4 = 38.\n3. Pots brewed on Tuesday is 8, so the remaining pots needed is 38 - 8 = 30.\n4. Total pots needed for the 3 days including the backlog is 30.",
+    "pred_answer_masked": "30",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total pots needed for the 3 days is 14 * 3 = 42.\n2. Pots brewed on Monday is 4, so the remaining pots needed is 42 - 4 = 38.\n3. Pots brewed on Tuesday is 8, so the remaining pots needed is 38 - 8 = 30.\n4. Total pots needed for the 3 days including the backlog is 30.\n\nFinal Answer: 30"
+  },
+  {
+    "id": 47,
+    "question": "Every day, Larry aims to sand 66 planks. The start on Monday yielded a mere 26 planks. Though intending to offset this shortfall on Tuesday, Larry achieved only 36. To ensure the base goal is met on Wednesday and all prior missed planks are compensated for, what is the total amount Larry needs to sand?",
+    "ground_truth": "136",
+    "generation": "1. Larry needs to sand 66 planks each day, but he only sanded 26 on Monday, so he is 66 - 26 = 40 planks behind.\n2. On Tuesday, Larry sanded 36 planks, but he needs to catch up on the 40 planks he missed on Monday, so he is now 40 - 36 = 4 planks behind.\n3. To meet the goal for Wednesday and catch up on the 4 planks he missed, Larry needs to sand 66 (for Wednesday) + 4 (to catch up) = 70 planks.\n4. The total amount Larry needs to sand is 70 (for Wednesday) + 26 (Monday) + 36 (Tuesday) = 132 planks.",
+    "pred_answer_masked": "132",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Larry needs to sand 66 planks each day. On Monday, he missed 66 - 26 = 40 planks.\n2. On Tuesday, he missed 66 - 36 = 30 planks.\n3. The total missed planks are 40 + 30 = 70 planks.\n4. To meet the goal for Wednesday and catch up on the missed planks, Larry needs to sand 66 (for Wednesday) + 70 (to catch up) = 136 planks.\n\nFinal Answer: 136"
+  },
+  {
+    "id": 48,
+    "question": "For mailing, 108 letters is Chloe's required daily benchmark. After Monday resulted in just 48 sent, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 68 letters. On Wednesday, what number of letters will Chloe need to mail to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "208",
+    "generation": "1. Chloe needs to mail 108 letters daily, but she only sent 48 on Monday, so she is short 108 - 48 = 60 letters.\n2. On Tuesday, she sent 68 letters, but she needs to send 108 to meet the daily benchmark, so she is short 108 - 68 = 40 letters.\n3. To catch up, she needs to send 60 (short from Monday) + 40 (short from Tuesday) = 100 letters on Wednesday.\n4. Since she needs to send 108 letters to meet the daily benchmark, and she will send 100 on Wednesday, she will be short 108 - 100 = 8 letters on Wednesday.",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Chloe needs to mail 108 letters daily, but she only sent 48 on Monday, so she is short 108 - 48 = 60 letters.\n2. On Tuesday, she sent 68 letters, so she is short 108 - 68 = 40 letters.\n3. To catch up, she needs to make up for the 60 + 40 = 100 letters she missed.\n4. Since she needs to send 108 letters to meet the daily benchmark on Wednesday, and recover the 100 missed letters, she needs to mail 108 + 100 = 208 letters on Wednesday.\n\nFinal Answer: 208"
+  },
+  {
+    "id": 49,
+    "question": "Requiring 112 posters to be printed each day, Justin struggled on Monday by finishing only 52. Despite planning to make up the difference on Tuesday, his output was limited to 72 posters. To clear the missed quantities and still reach the standard daily target, how many posters are required for Justin to print on Wednesday?",
+    "ground_truth": "212",
+    "generation": "1. Total posters required for Monday and Tuesday = 112 * 2 = 224.\n2. Posters printed on Monday and Tuesday = 52 + 72 = 124.\n3. Missed posters = 224 - 124 = 100.\n4. Posters required on Wednesday = 112 + 100 = 212.",
+    "pred_answer_masked": "212",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total posters required for Monday and Tuesday = 112 * 2 = 224.\n2. Posters printed on Monday and Tuesday = 52 + 72 = 124.\n3. Missed posters = 224 - 124 = 100.\n4. Posters required on Wednesday = 112 + 100 = 212.\n\nFinal Answer: 212"
+  },
+  {
+    "id": 50,
+    "question": "Penelope established a daily target of washing 122 dishes. Cleaning only 62 dishes on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her wash merely 82 dishes. In order to cover the unwashed dishes from previous days while still achieving her minimum daily objective, how many dishes must Penelope wash on Wednesday?",
+    "ground_truth": "222",
+    "generation": "1. Remaining dishes from Monday: 122 - 62 = 60\n2. Total remaining dishes after Tuesday: 60 + 82 = 142\n3. Dishes needed to meet the target on Wednesday: 122 - 82 = 40\n4. Dishes needed to cover the remaining dishes: 142 - 40 = 102\nFinal Answer: 102",
+    "pred_answer_masked": "102",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Missed dishes from Monday: 122 - 62 = 60 dishes.\n2. Missed dishes from Tuesday: 122 - 82 = 40 dishes.\n3. Total unwashed dishes from previous days: 60 + 40 = 100 dishes.\n4. Dishes needed to meet the target on Wednesday and cover the remaining dishes: 122 + 100 = 222 dishes.\n\nFinal Answer: 222"
+  },
+  {
+    "id": 51,
+    "question": "A daily quota of 37 cables was set by Scott for routing. Managing to route only 17 cables on Monday, Scott planned to clear the backlog on Tuesday. That plan fell short when just 27 cables were completed on Tuesday. When Wednesday arrives, how many cables must Scott route to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "67",
+    "generation": "1. Scott routed 17 cables on Monday, leaving a deficit of 37 - 17 = 20 cables.\n2. On Tuesday, Scott routed 27 cables, but still had a deficit of 20 + 27 = 47 cables.\n3. To satisfy the daily quota of 37 cables, Scott needs to route 47 - 37 = 10 cables on Wednesday to clear the deficit.\n4. After clearing the deficit, Scott still needs to route 37 cables to meet the daily quota, so the total number of cables he must route on Wednesday is 10 + 37 = 47 cables.\n\nFinal Answer: 47",
+    "pred_answer_masked": "47",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Scott routed 17 cables on Monday, leaving a deficit of 37 - 17 = 20 cables.\n2. On Tuesday, Scott routed 27 cables, leaving a deficit of 37 - 27 = 10 cables.\n3. The accumulated deficit is 20 + 10 = 30 cables.\n4. To satisfy the daily requirement alongside the accumulated deficit, Scott needs to route 37 + 30 = 67 cables on Wednesday.\n\nFinal Answer: 67"
+  },
+  {
+    "id": 52,
+    "question": "Every day, Riley aims to harvest 47 pumpkins. The start on Monday yielded a mere 27 picked pumpkins. Though intending to offset this shortfall on Tuesday, Riley achieved only 37. To ensure the base goal is met on Wednesday and all prior missed pumpkins are compensated for, what is the total amount Riley needs to pick?",
+    "ground_truth": "77",
+    "generation": "1. Riley needs to pick 47 pumpkins in total.\n2. On Monday, Riley picked 27 pumpkins, so the remaining needed is 47 - 27 = 20 pumpkins.\n3. On Tuesday, Riley picked 37 pumpkins, but the goal is to pick 47 in total, so the remaining needed is 47 - 37 = 10 pumpkins.\n4. To meet the goal on Wednesday and compensate for the missed pumpkins, Riley needs to pick 20 (from Monday) + 10 (from Tuesday) = 30 pumpkins.",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Riley needs to pick 47 pumpkins each day.\n2. On Monday, Riley picked 27 pumpkins, so she missed 47 - 27 = 20 pumpkins.\n3. On Tuesday, Riley picked 37 pumpkins, so she missed 47 - 37 = 10 pumpkins.\n4. To meet the goal on Wednesday and compensate for the missed pumpkins, Riley needs to pick 47 (daily goal) + 20 (Monday) + 10 (Tuesday) = 77 pumpkins.\n\nFinal Answer: 77"
+  },
+  {
+    "id": 53,
+    "question": "For framing, 27 pictures is Brandon's required daily benchmark. After Monday resulted in just 17 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 21 pictures. On Wednesday, what number of pictures will Brandon need to frame to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "43",
+    "generation": "1. Calculate the total number of pictures needed for the three days: 27 * 3 = 81.\n2. Calculate the total number of pictures completed on Monday and Tuesday: 17 + 21 = 38.\n3. Calculate the remaining number of pictures needed for the three days: 81 - 38 = 43.\n4. Since Brandon needs to hit the daily mark on Wednesday, he must complete 27 pictures to meet the daily requirement, and the remaining pictures needed will be the difference between the required total and the daily requirement: 43 - 27 = 16.\nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total number of pictures needed for the three days: 27 * 3 = 81.\n2. Calculate the total number of pictures completed on Monday and Tuesday: 17 + 21 = 38.\n3. Calculate the remaining number of pictures needed for the three days: 81 - 38 = 43.\n4. Since Brandon needs to hit the daily mark and recover the uncompleted amounts, he must complete these remaining 43 pictures on Wednesday.\n\nFinal Answer: 43"
+  },
+  {
+    "id": 54,
+    "question": "Requiring 77 scarves to be knit each day, Zoey struggled on Monday by completing only 37. Despite planning to make up the difference on Tuesday, her output was limited to 47 scarves. To clear the missed quantities and still reach the standard daily target, how many scarves are required for Zoey to knit on Wednesday?",
+    "ground_truth": "147",
+    "generation": "1. Total scarves needed for Monday and Tuesday = 77 * 2 = 154.\n2. Total scarves completed by Zoey on Monday and Tuesday = 37 + 47 = 84.\n3. Scarves still needed to be completed by Wednesday = 154 - 84 = 70.\n4. Scarves required to be knit on Wednesday = 70.",
+    "pred_answer_masked": "70",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total scarves needed for the three days = 77 * 3 = 231.\n2. Total scarves completed by Zoey on Monday and Tuesday = 37 + 47 = 84.\n3. Scarves still needed to clear the missed quantities and reach the standard daily target on Wednesday = 231 - 84 = 147.\n4. Scarves required to be knit on Wednesday = 147.\n\nFinal Answer: 147"
+  },
+  {
+    "id": 55,
+    "question": "Benjamin established a daily target of folding 87 origami cranes. Finishing only 47 cranes on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him fold merely 57 cranes. In order to cover the unfolded cranes from previous days while still achieving his minimum daily objective, how many cranes must Benjamin fold on Wednesday?",
+    "ground_truth": "157",
+    "generation": "1. Benjamin had 87 - 47 = 40 cranes left to fold after Monday.\n2. After folding 57 cranes on Tuesday, he had 40 + 57 = 97 cranes left to fold in total.\n3. To cover the remaining cranes and meet his daily target, Benjamin needs to fold at least 87 cranes on Wednesday.\n4. Since he already has 97 cranes left to fold, he must fold 97 - 87 = 10 more cranes on Wednesday to meet his minimum daily objective.\n\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Benjamin had 87 - 47 = 40 cranes left to fold from Monday.\n2. After folding 57 cranes on Tuesday, he missed another 87 - 57 = 30 cranes.\n3. The total unfolded cranes from previous days is 40 + 30 = 70 cranes.\n4. To cover the remaining cranes and meet his daily target, Benjamin needs to fold 87 + 70 = 157 cranes on Wednesday.\n\nFinal Answer: 157"
+  },
+  {
+    "id": 56,
+    "question": "A daily target of 17 sketches was set by Lily. Managing to sketch only 7 items on Monday, Lily planned to clear the backlog on Tuesday. That plan fell short when just 11 items were sketched on Tuesday. When Wednesday arrives, how many items must Lily sketch to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "33",
+    "generation": "1. The deficit on Monday is 17 - 7 = 10 items.\n2. The deficit after Tuesday is 10 + 11 = 21 items.\n3. The number of items Lily needs to sketch on Wednesday to meet the daily target is 17 + 21 = 38 items.\n4. The number of items Lily needs to sketch on Wednesday to meet the daily target alongside the accumulated deficit is 38 - 17 = 21 items.\nFinal Answer: 21",
+    "pred_answer_masked": "21",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The deficit on Monday is 17 - 7 = 10 items.\n2. The deficit on Tuesday is 17 - 11 = 6 items.\n3. The accumulated deficit is 10 + 6 = 16 items.\n4. The number of items Lily needs to sketch on Wednesday to satisfy the daily requirement alongside the accumulated deficit is 17 + 16 = 33 items.\n\nFinal Answer: 33"
+  },
+  {
+    "id": 57,
+    "question": "Every day, Samuel aims to deliver 67 pizzas. The start on Monday yielded a mere 27 pizzas. Though intending to offset this shortfall on Tuesday, Samuel achieved only 37. To ensure the base goal is met on Wednesday and all prior missed pizzas are compensated for, what is the total amount Samuel needs to deliver?",
+    "ground_truth": "137",
+    "generation": "1. Samuel needs to deliver 67 pizzas each day, but he only delivered 27 on Monday, so he is short 67 - 27 = 40 pizzas.\n2. On Tuesday, he delivered 37 pizzas, but he still needs to make up for the 40 pizzas short, so he is now short 40 - 37 = 3 pizzas.\n3. To meet the goal for Wednesday and make up for the missed pizzas, Samuel needs to deliver 67 (Wednesday's goal) + 3 (shortfall) = 70 pizzas.\n4. Since he has already delivered 27 + 37 = 64 pizzas, he needs to deliver 70 - 64 = 6 more pizzas to meet the goal for Wednesday and make up for the missed pizzas.",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Samuel needs to deliver 67 pizzas each day, but he only delivered 27 on Monday, so he is short 67 - 27 = 40 pizzas.\n2. On Tuesday, he delivered 37 pizzas, so he is short 67 - 37 = 30 pizzas.\n3. The total missed pizzas from prior days is 40 + 30 = 70 pizzas.\n4. To ensure the base goal is met on Wednesday and all prior missed pizzas are compensated for, Samuel needs to deliver 67 + 70 = 137 pizzas.\n\nFinal Answer: 137"
+  },
+  {
+    "id": 58,
+    "question": "For packing, 107 suitcases is Eleanor's required daily benchmark. After Monday resulted in just 47 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 67 suitcases. On Wednesday, what number of suitcases will Eleanor need to pack to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "207",
+    "generation": "1. Calculate the total number of suitcases needed for the two prior days: 107 * 2 - (47 + 67) = 214 - 114 = 100.\n2. Calculate the total number of suitcases needed for the three days: 107 * 3 = 321.\n3. Calculate the number of suitcases needed on Wednesday: 321 - 100 = 221.\n4. The number of suitcases needed on Wednesday is the same as the total needed for the three days minus the total needed for the two prior days.",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total number of suitcases needed for the three days: 107 * 3 = 321.\n2. Calculate the total number of suitcases completed on Monday and Tuesday: 47 + 67 = 114.\n3. Calculate the number of suitcases needed on Wednesday to hit the daily mark and recover the uncompleted amounts: 321 - 114 = 207.\n4. The number of suitcases Eleanor needs to pack on Wednesday is 207.\n\nFinal Answer: 207"
+  },
+  {
+    "id": 59,
+    "question": "Requiring 117 blocks of wood to be carved each day, Gregory struggled on Monday by completing only 57. Despite planning to make up the difference on Tuesday, his output was limited to 77 blocks. To clear the missed quantities and still reach the standard daily target, how many blocks are required for Gregory to carve on Wednesday?",
+    "ground_truth": "217",
+    "generation": "1. Gregory missed 117 - 57 = 60 blocks on Monday.\n2. He carved 77 blocks on Tuesday, but still needed to make up for the 60 blocks missed on Monday, so he still needs 60 blocks to catch up.\n3. To reach the target of 117 blocks on Wednesday, Gregory needs to carve 117 + 60 = 177 blocks.\n4. The difference between the target and the blocks he needs to carve to catch up is 177 - 117 = 60 blocks, but since he needs to carve 177 blocks to reach the target, the answer is 177.",
+    "pred_answer_masked": "177",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Gregory missed 117 - 57 = 60 blocks on Monday.\n2. He carved 77 blocks on Tuesday, missing another 117 - 77 = 40 blocks.\n3. The total missed quantities from the previous days is 60 + 40 = 100 blocks.\n4. To clear the missed quantities and still reach the standard daily target, Gregory needs to carve 117 + 100 = 217 blocks on Wednesday.\n\nFinal Answer: 217"
+  },
+  {
+    "id": 60,
+    "question": "Hannah established a daily target of sorting 127 emails. Processing only 67 emails on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her sort merely 87 emails. In order to cover the unsorted emails from previous days while still achieving her minimum daily objective, how many emails must Hannah sort on Wednesday?",
+    "ground_truth": "227",
+    "generation": "1. Hannah had 127 - 67 = 60 emails left to sort after Monday.\n2. After sorting 87 emails on Tuesday, she still had 60 + 87 = 147 emails left to sort.\n3. To cover the unsorted emails from previous days, she needs to sort at least 147 emails on Wednesday.\n4. However, she also needs to meet her minimum daily target of 127 emails, so she must sort at least 127 emails on Wednesday.\n5. Since 147 is greater than 127, Hannah must sort 147 emails on Wednesday to cover the unsorted emails from previous days while still achieving her minimum daily objective.\n\nFinal Answer: 147",
+    "pred_answer_masked": "147",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Hannah had 127 - 67 = 60 emails left to sort from Monday.\n2. After sorting 87 emails on Tuesday, she missed another 127 - 87 = 40 emails.\n3. The total unsorted emails from previous days is 60 + 40 = 100 emails.\n4. In order to cover the unsorted emails while still achieving her minimum daily objective, Hannah must sort 127 + 100 = 227 emails on Wednesday.\n\nFinal Answer: 227"
+  },
+  {
+    "id": 61,
+    "question": "A daily quota of 39 blueprints was set by Alexander for drafting. Managing to draft only 19 on Monday, Alexander planned to clear the backlog on Tuesday. That plan fell short when just 29 blueprints were completed on Tuesday. When Wednesday arrives, how many blueprints must Alexander draft to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "69",
+    "generation": "1. Total blueprints drafted by Tuesday is 19 + 29 = 48.\n2. The deficit is 39 (quota) - 48 (drafted) = -9 (shortfall).\n3. The deficit needs to be cleared, so the quota for Wednesday is 39 (quota) - 9 (deficit) = 30.\n4. Alexander must draft 30 blueprints on Wednesday to satisfy the daily requirement alongside the accumulated deficit.",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Alexander's deficit on Monday is 39 - 19 = 20 blueprints.\n2. His deficit on Tuesday is 39 - 29 = 10 blueprints.\n3. The accumulated deficit is 20 + 10 = 30 blueprints.\n4. Alexander must draft 39 (daily quota) + 30 (deficit) = 69 blueprints on Wednesday to satisfy the requirement.\n\nFinal Answer: 69"
+  },
+  {
+    "id": 62,
+    "question": "Every day, Lillian aims to frost 49 cupcakes. The start on Monday yielded a mere 29 cupcakes. Though intending to offset this shortfall on Tuesday, Lillian achieved only 39. To ensure the base goal is met on Wednesday and all prior missed cupcakes are compensated for, what is the total amount Lillian needs to frost?",
+    "ground_truth": "79",
+    "generation": "1. Lillian needs to frost 49 cupcakes each day, but she only made 29 on Monday, so she needs to frost 49 - 29 = 20 more cupcakes to meet the goal for Monday.\n2. On Tuesday, she made 39 cupcakes, but she still needs to make up for the 20 cupcakes from Monday, so she needs to frost 20 more cupcakes to meet the goal for Monday and Tuesday.\n3. The total number of cupcakes she needs to make up for Monday and Tuesday is 20 + 20 = 40 cupcakes.\n4. On Wednesday, she needs to frost 49 cupcakes to meet the goal for the day, and she also needs to make up for the 40 cupcakes from Monday and Tuesday, so she needs to frost 49 + 40 = 89 cupcakes in total.\n\nFinal Answer: 89",
+    "pred_answer_masked": "89",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Lillian needs to frost 49 cupcakes each day, but she only made 29 on Monday, so she missed 49 - 29 = 20 cupcakes.\n2. On Tuesday, she made 39 cupcakes, so she missed 49 - 39 = 10 cupcakes.\n3. The total number of cupcakes she needs to make up for Monday and Tuesday is 20 + 10 = 30 cupcakes.\n4. On Wednesday, she needs to frost 49 cupcakes to meet the goal for the day, and she also needs to make up for the 30 missed cupcakes, so she needs to frost 49 + 30 = 79 cupcakes in total.\n\nFinal Answer: 79"
+  },
+  {
+    "id": 63,
+    "question": "For filing, 29 reports is Patrick's required daily benchmark. After Monday resulted in just 19 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 23 reports. On Wednesday, what number of reports will Patrick need to file to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "45",
+    "generation": "1. Patrick needs to file 29 reports daily, but he only filed 19 on Monday, so he is short 29 - 19 = 10 reports.\n2. He needs to recover the 10 reports from Monday and also meet the daily benchmark of 29 reports, so he needs to file 10 + 29 = 39 reports on Wednesday.\n3. On Tuesday, he filed 23 reports, but he still needs to recover the 10 reports from Monday, so he is short 10 reports from the Tuesday total, which is 23 - 10 = 13 reports.\n4. So, on Wednesday, he needs to file 39 reports to meet the daily benchmark and recover the uncompleted amounts from the prior days.\n\nFinal Answer: 39",
+    "pred_answer_masked": "39",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Patrick needs to file 29 reports daily, but he only filed 19 on Monday, so he is short 29 - 19 = 10 reports.\n2. On Tuesday, he filed 23 reports, so he is short 29 - 23 = 6 reports.\n3. The total uncompleted amounts from the prior days is 10 + 6 = 16 reports.\n4. On Wednesday, he needs to file 29 reports to meet the daily benchmark and 16 reports to recover the uncompleted amounts, which is 29 + 16 = 45 reports.\n\nFinal Answer: 45"
+  },
+  {
+    "id": 64,
+    "question": "Requiring 79 sit-ups to be done each day, Addison struggled on Monday by completing only 39. Despite planning to make up the difference on Tuesday, her output was limited to 49 sit-ups. To clear the missed quantities and still reach the standard daily target, how many sit-ups are required for Addison to do on Wednesday?",
+    "ground_truth": "149",
+    "generation": "1. Total missed sit-ups on Monday and Tuesday are 79 - 39 + 49 = 89.\n2. The required sit-ups for Wednesday to reach the target are 89 + 79 = 168.\n3. The sit-ups Addison completed on Monday and Tuesday are 39 + 49 = 88.\n4. The required sit-ups for Wednesday to clear the missed quantities are 168 - 88 = 80.\nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total missed sit-ups on Monday are 79 - 39 = 40.\n2. Total missed sit-ups on Tuesday are 79 - 49 = 30.\n3. The total missed quantities from previous days are 40 + 30 = 70.\n4. To clear the missed quantities and still reach the standard daily target, Addison needs to do 79 + 70 = 149 sit-ups on Wednesday.\n\nFinal Answer: 149"
+  },
+  {
+    "id": 65,
+    "question": "Frank established a daily target of assembling 89 engines. Finishing only 49 engines on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him assemble merely 59 engines. In order to cover the unassembled engines from previous days while still achieving his minimum daily objective, how many engines must Frank assemble on Wednesday?",
+    "ground_truth": "159",
+    "generation": "1. Frank's target for Monday and Tuesday is 89 * 2 = 178 engines.\n2. Frank assembled 49 + 59 = 108 engines on Monday and Tuesday.\n3. The remaining engines needed to meet the target for Monday and Tuesday are 178 - 108 = 70 engines.\n4. Frank needs to cover the remaining 70 engines from previous days and meet his target of 89 engines on Wednesday, so he must assemble 70 + 89 = 159 engines on Wednesday.",
+    "pred_answer_masked": "159",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Frank's target for Monday and Tuesday is 89 * 2 = 178 engines.\n2. Frank assembled 49 + 59 = 108 engines on Monday and Tuesday.\n3. The remaining engines needed to meet the target for Monday and Tuesday are 178 - 108 = 70 engines.\n4. Frank needs to cover the remaining 70 engines from previous days and meet his target of 89 engines on Wednesday, so he must assemble 70 + 89 = 159 engines on Wednesday.\n\nFinal Answer: 159"
+  },
+  {
+    "id": 66,
+    "question": "A daily quota of 19 rugs was set by Aubrey for weaving. Managing to weave only 9 rugs on Monday, Aubrey planned to clear the backlog on Tuesday. That plan fell short when just 13 rugs were completed on Tuesday. When Wednesday arrives, how many rugs must Aubrey weave to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "35",
+    "generation": "1. Total rugs needed to meet the daily quota for 3 days is 19 * 3 = 57.\n2. Total rugs completed by Aubrey on Monday and Tuesday is 9 + 13 = 22.\n3. The deficit in rugs is 57 - 22 = 35.\n4. To satisfy the daily quota alongside the accumulated deficit, Aubrey must weave 35 rugs on Wednesday.",
+    "pred_answer_masked": "35",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total rugs needed to meet the daily quota for 3 days is 19 * 3 = 57.\n2. Total rugs completed by Aubrey on Monday and Tuesday is 9 + 13 = 22.\n3. The deficit in rugs is 57 - 22 = 35.\n4. To satisfy the daily quota alongside the accumulated deficit, Aubrey must weave 35 rugs on Wednesday.\n\nFinal Answer: 35"
+  },
+  {
+    "id": 67,
+    "question": "Every day, Raymond aims to build 69 models. The start on Monday yielded a mere 29 models. Though intending to offset this shortfall on Tuesday, Raymond achieved only 39. To ensure the base goal is met on Wednesday and all prior missed models are compensated for, what is the total amount Raymond needs to build?",
+    "ground_truth": "139",
+    "generation": "1. Raymond needs to build 69 models each day, but he only built 29 on Monday, so he is short 69 - 29 = 40 models.\n2. On Tuesday, he built 39 models, but he still needs to make up for the 40 models he was short, so he is now short 40 - 39 = 1 model.\n3. To meet the goal for Wednesday and make up for the shortfall, Raymond needs to build 69 models on Wednesday, and he also needs to make up for the 1 model he was short, so he needs to build 69 + 1 = 70 models on Wednesday.\n4. The total amount Raymond needs to build is the 69 models he needs to build on Wednesday, plus the 40 models he was short on Monday, plus the 1 model he was short on Tuesday, so he needs to build 69 + 40 + 1 = 110 models.\nFinal Answer: 110",
+    "pred_answer_masked": "110",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Raymond needs to build 69 models each day, but he only built 29 on Monday, so he is short 69 - 29 = 40 models.\n2. On Tuesday, he built 39 models, so he is short 69 - 39 = 30 models.\n3. The total shortfall from prior days is 40 + 30 = 70 models.\n4. To meet the goal for Wednesday and make up for the shortfall, Raymond needs to build 69 + 70 = 139 models.\n\nFinal Answer: 139"
+  },
+  {
+    "id": 68,
+    "question": "For sewing, 109 buttons is Stella's required daily benchmark. After Monday resulted in just 49 sewn, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 69 buttons. On Wednesday, what number of buttons will Stella need to sew to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "209",
+    "generation": "1. Stella needs to sew 109 buttons daily. \n2. On Monday, she sewed 49 buttons, so she needs to sew 109 - 49 = 60 buttons to catch up.\n3. On Tuesday, she sewed 69 buttons, but she still needs to sew 60 buttons to catch up, so she needs to sew 60 + 69 = 129 buttons to catch up on Tuesday as well.\n4. To catch up on both days, Stella needs to sew 109 (daily mark) + 60 (Monday) + 69 (Tuesday) = 238 buttons on Wednesday.\n\nFinal Answer: 238",
+    "pred_answer_masked": "238",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Stella needs to sew 109 buttons daily.\n2. On Monday, she sewed 49 buttons, so she missed 109 - 49 = 60 buttons.\n3. On Tuesday, she sewed 69 buttons, so she missed 109 - 69 = 40 buttons.\n4. To catch up on both days, Stella needs to sew 109 (daily mark) + 60 (Monday) + 40 (Tuesday) = 209 buttons on Wednesday.\n\nFinal Answer: 209"
+  },
+  {
+    "id": 69,
+    "question": "Requiring 119 miniatures to be painted each day, Jack struggled on Monday by completing only 59. Despite planning to make up the difference on Tuesday, his output was limited to 79 miniatures. To clear the missed quantities and still reach the standard daily target, how many miniatures are required for Jack to paint on Wednesday?",
+    "ground_truth": "219",
+    "generation": "1. Jack needed to paint 119 miniatures each day, but he only painted 59 on Monday, so he missed 119 - 59 = 60 miniatures.\n2. On Tuesday, he painted 79 miniatures, but he still needed to make up for the 60 miniatures he missed on Monday, so he still needs to paint 60 miniatures to clear the missed quantities.\n3. To reach the standard daily target, Jack needs to paint 119 miniatures on Wednesday, and he already needs to paint 60 miniatures to clear the missed quantities, so he needs to paint 119 + 60 = 179 miniatures on Wednesday.\n4. The total miniatures Jack needs to paint on Wednesday is 179.",
+    "pred_answer_masked": "179",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Jack needed to paint 119 miniatures each day, but he only painted 59 on Monday, so he missed 119 - 59 = 60 miniatures.\n2. On Tuesday, he painted 79 miniatures, so he missed 119 - 79 = 40 miniatures.\n3. The total missed quantities is 60 + 40 = 100 miniatures.\n4. To reach the standard daily target and clear the missed quantities, Jack needs to paint 119 + 100 = 219 miniatures on Wednesday.\n\nFinal Answer: 219"
+  },
+  {
+    "id": 70,
+    "question": "Natalie established a daily target of wrapping 129 presents. Finishing only 69 presents on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her wrap merely 89 presents. In order to cover the unwrapped presents from previous days while still achieving her minimum daily objective, how many presents must Natalie wrap on Wednesday?",
+    "ground_truth": "229",
+    "generation": "1. Natalie had 129 - 69 = 60 presents left to wrap after Monday.\n2. After wrapping 89 presents on Tuesday, she had 60 - 89 = -29 presents left to wrap.\n3. Since Natalie can't wrap a negative number of presents, she needs to cover the 89 presents she wrapped on Tuesday, in addition to the 60 presents left from Monday.\n4. So, she needs to wrap 89 + 60 = 149 presents on Wednesday to cover the unwrapped presents from previous days and meet her minimum daily objective.\n\nFinal Answer: 149",
+    "pred_answer_masked": "149",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Natalie had 129 - 69 = 60 presents left to wrap from Monday.\n2. After wrapping 89 presents on Tuesday, she had 129 - 89 = 40 presents left to wrap from Tuesday.\n3. The total unwrapped presents from previous days is 60 + 40 = 100 presents.\n4. She needs to wrap 129 + 100 = 229 presents on Wednesday to cover the unwrapped presents and meet her minimum daily objective.\n\nFinal Answer: 229"
+  },
+  {
+    "id": 71,
+    "question": "A daily quota of 36 joints was set by Dennis for welding. Managing to weld only 16 joints on Monday, Dennis planned to clear the backlog on Tuesday. That plan fell short when just 26 joints were completed on Tuesday. When Wednesday arrives, how many joints must Dennis weld to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "66",
+    "generation": "1. Dennis completed 16 joints on Monday, leaving a deficit of 36 - 16 = 20 joints.\n2. On Tuesday, Dennis completed 26 joints, but still had the original deficit of 20 joints, so the total deficit is 20 + 26 = 46 joints.\n3. To satisfy the daily quota of 36 joints, Dennis must also clear the deficit of 46 joints, so the total number of joints he must weld is 36 + 46 = 82 joints.\n4. The deficit of 46 joints is in addition to the daily quota of 36 joints, so Dennis must weld 82 joints to satisfy both the daily requirement and the accumulated deficit.\nFinal Answer: 82",
+    "pred_answer_masked": "82",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Dennis completed 16 joints on Monday, leaving a deficit of 36 - 16 = 20 joints.\n2. On Tuesday, Dennis completed 26 joints, leaving a deficit of 36 - 26 = 10 joints.\n3. The total accumulated deficit is 20 + 10 = 30 joints.\n4. To satisfy the daily quota of 36 joints alongside the accumulated deficit, Dennis must weld 36 + 30 = 66 joints.\n\nFinal Answer: 66"
+  },
+  {
+    "id": 72,
+    "question": "Every day, Leah aims to mold 46 clay pots. The start on Monday yielded a mere 26 pots. Though intending to offset this shortfall on Tuesday, Leah achieved only 36. To ensure the base goal is met on Wednesday and all prior missed pots are compensated for, what is the total amount Leah needs to mold?",
+    "ground_truth": "76",
+    "generation": "1. Leah needs to mold 46 pots each day, but she only made 26 on Monday, so she is short 46 - 26 = 20 pots.\n2. On Tuesday, Leah made 36 pots, but she still needs to make up for the 20 pots she was short on Monday, so she is now short 20 - 36 = -16 pots.\n3. Since Leah is short -16 pots, it means she has a surplus of 16 pots, but she needs to make up for the 20 pots she was short on Monday, so she needs to make 20 + 16 = 36 pots on Wednesday.\n4. Leah has already made 26 + 36 = 62 pots, so she needs to make 46 (the base goal) + 36 (to make up for the shortfall) = 82 pots in total.",
+    "pred_answer_masked": "82",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Leah needs to mold 46 pots each day, but she only made 26 on Monday, so she is short 46 - 26 = 20 pots.\n2. On Tuesday, Leah made 36 pots, so she is short 46 - 36 = 10 pots.\n3. The total missed pots from previous days is 20 + 10 = 30 pots.\n4. To ensure the base goal is met on Wednesday and all prior missed pots are compensated for, Leah needs to mold 46 + 30 = 76 pots.\n\nFinal Answer: 76"
+  },
+  {
+    "id": 73,
+    "question": "For tuning, 28 guitars is Jerry's required daily benchmark. After Monday resulted in just 18 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 22 guitars. On Wednesday, what number of guitars will Jerry need to tune to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "44",
+    "generation": "1. Jerry needs to finish 28 guitars on each day, but he only finished 18 on Monday, so he needs to finish 28 - 18 = 10 more guitars on Tuesday and Wednesday combined to meet the daily mark.\n2. On Tuesday, he only finished 22 guitars, so he needs to finish 28 - 22 = 6 more guitars on Wednesday to meet the daily mark.\n3. To recover the uncompleted amounts from the prior days, Jerry needs to finish 10 (from Monday) + 6 (from Tuesday) = 16 more guitars on Wednesday.\n4. To both hit the daily mark and recover the uncompleted amounts, Jerry needs to finish 28 (daily mark) + 16 (uncompleted amounts) = 44 guitars on Wednesday.\n\nFinal Answer: 44",
+    "pred_answer_masked": "44",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Jerry needs to finish 28 guitars on each day, but he only finished 18 on Monday, so he needs to finish 28 - 18 = 10 more guitars on Tuesday and Wednesday combined to meet the daily mark.\n2. On Tuesday, he only finished 22 guitars, so he needs to finish 28 - 22 = 6 more guitars on Wednesday to meet the daily mark.\n3. To recover the uncompleted amounts from the prior days, Jerry needs to finish 10 (from Monday) + 6 (from Tuesday) = 16 more guitars on Wednesday.\n4. To both hit the daily mark and recover the uncompleted amounts, Jerry needs to finish 28 (daily mark) + 16 (uncompleted amounts) = 44 guitars on Wednesday.\n\nFinal Answer: 44"
+  },
+  {
+    "id": 74,
+    "question": "Requiring 78 seeds to be planted each day, Hazel struggled on Monday by completing only 38. Despite planning to make up the difference on Tuesday, her output was limited to 48 seeds. To clear the missed quantities and still reach the standard daily target, how many seeds are required for Hazel to plant on Wednesday?",
+    "ground_truth": "148",
+    "generation": "1. Total seeds missed on Monday and Tuesday: 78 - 38 + 78 - 48 = 70.\n2. Seeds needed to reach the target on Wednesday: 78 + 70 = 148.\n3. Seeds already planted on Monday and Tuesday: 38 + 48 = 86.\n4. Seeds Hazel needs to plant on Wednesday: 148 - 86 = 62.",
+    "pred_answer_masked": "62",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total seeds missed on Monday: 78 - 38 = 40.\n2. Total seeds missed on Tuesday: 78 - 48 = 30.\n3. Total missed quantities from both days: 40 + 30 = 70.\n4. Seeds Hazel needs to plant on Wednesday to reach the standard daily target and clear the missed quantities: 78 + 70 = 148.\n\nFinal Answer: 148"
+  },
+  {
+    "id": 75,
+    "question": "Tyler established a daily target of peeling 84 potatoes. Finishing only 44 potatoes on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him peel merely 54 potatoes. In order to cover the unpeeled potatoes from previous days while still achieving his minimum daily objective, how many potatoes must Tyler peel on Wednesday?",
+    "ground_truth": "154",
+    "generation": "1. Remaining potatoes from Monday = 84 - 44 = 40.\n2. Total remaining potatoes after Tuesday = 40 + 54 = 94.\n3. Potatoes needed to meet the daily target on Wednesday = 84 - 54 = 30.\n4. Potatoes needed to cover the unpeeled potatoes from previous days on Wednesday = 94 - 84 = 10.\n5. Total potatoes needed on Wednesday = 30 + 10 = 40.\n\nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Remaining potatoes missed from Monday = 84 - 44 = 40.\n2. Remaining potatoes missed from Tuesday = 84 - 54 = 30.\n3. Total unpeeled potatoes from previous days = 40 + 30 = 70.\n4. To cover the unpeeled potatoes and achieve his minimum daily objective on Wednesday, Tyler must peel 84 + 70 = 154 potatoes.\n\nFinal Answer: 154"
+  },
+  {
+    "id": 76,
+    "question": "A daily quota of 21 logs was set by Violet for fetching. Managing to fetch only 11 logs on Monday, Violet planned to clear the backlog on Tuesday. That plan fell short when just 15 logs were fetched on Tuesday. When Wednesday arrives, how many logs must Violet fetch to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "37",
+    "generation": "1. The deficit on Monday is 21 - 11 = 10 logs.\n2. The deficit on Tuesday is 10 + 15 = 25 logs.\n3. The total logs needed to be fetched by Wednesday is 21 (daily quota) + 25 (deficit) = 46 logs.\n4. The logs fetched on Tuesday is 15, so the logs needed to be fetched on Wednesday is 46 - 15 = 31 logs.\nFinal Answer: 31",
+    "pred_answer_masked": "31",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The deficit on Monday is 21 - 11 = 10 logs.\n2. The deficit on Tuesday is 21 - 15 = 6 logs.\n3. The total accumulated deficit is 10 + 6 = 16 logs.\n4. To satisfy the daily requirement alongside the accumulated deficit, Violet must fetch 21 + 16 = 37 logs on Wednesday.\n\nFinal Answer: 37"
+  },
+  {
+    "id": 77,
+    "question": "Every day, Aaron aims to mop 61 aisles. The start on Monday yielded a mere 21 aisles. Though intending to offset this shortfall on Tuesday, Aaron achieved only 31. To ensure the base goal is met on Wednesday and all prior missed aisles are compensated for, what is the total amount Aaron needs to mop?",
+    "ground_truth": "131",
+    "generation": "1. Aaron needs to mop 61 aisles each day, but he only mopped 21 on Monday, so he is 61 - 21 = 40 aisles behind.\n2. On Tuesday, he mopped 31 aisles, but he needs to mop 61, so he is 61 - 31 = 30 aisles behind the daily goal.\n3. To find the total number of aisles he needs to mop on Wednesday, add the number of aisles he is behind the daily goal to the daily goal: 61 + 30 = 91 aisles.\n4. Since he needs to mop 91 aisles on Wednesday to meet the daily goal and compensate for the missed aisles, the total amount Aaron needs to mop is 91 + 40 = 131 aisles.\n\nFinal Answer: 131",
+    "pred_answer_masked": "131",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Aaron needs to mop 61 aisles each day, but he only mopped 21 on Monday, so he is 61 - 21 = 40 aisles behind.\n2. On Tuesday, he mopped 31 aisles, but he needs to mop 61, so he is 61 - 31 = 30 aisles behind the daily goal.\n3. To find the total number of aisles he needs to mop on Wednesday, add the number of aisles he is behind the daily goal to the daily goal: 61 + 30 = 91 aisles.\n4. Since he needs to mop 91 aisles on Wednesday to meet the daily goal and compensate for the missed aisles, the total amount Aaron needs to mop is 91 + 40 = 131 aisles.\n\nFinal Answer: 131"
+  },
+  {
+    "id": 78,
+    "question": "For folding, 101 napkins is Aurora's required daily benchmark. After Monday resulted in just 41 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 61 napkins. On Wednesday, what number of napkins will Aurora need to fold to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "201",
+    "generation": "1. Calculate the total number of napkins needed for the two prior days: 101 * 2 - (41 + 61) = 202 - 102 = 100.\n2. Add the total needed for the prior days to the daily benchmark: 100 + 101 = 201.\n3. Subtract the total number of napkins folded on Monday and Tuesday from the total needed: 201 - 102 = 99.\n4. The number of napkins Aurora needs to fold on Wednesday is 99.",
+    "pred_answer_masked": "99",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total number of napkins needed for the three days: 101 * 3 = 303.\n2. Calculate the total number of napkins folded on Monday and Tuesday: 41 + 61 = 102.\n3. The number of napkins Aurora needs to fold on Wednesday to hit the daily mark and recover the uncompleted amounts is 303 - 102 = 201.\n\nFinal Answer: 201"
+  },
+  {
+    "id": 79,
+    "question": "Requiring 111 packets to be stapled each day, Henry struggled on Monday by completing only 51. Despite planning to make up the difference on Tuesday, his output was limited to 71 packets. To clear the missed quantities and still reach the standard daily target, how many packets are required for Henry to staple on Wednesday?",
+    "ground_truth": "211",
+    "generation": "1. Henry missed 111 - 51 = 60 packets on Monday.\n2. He completed 60 + 71 = 131 packets on Tuesday, exceeding the target by 20 packets.\n3. To clear the excess, Henry needs to staple 20 packets less than the target on Wednesday, so 111 - 20 = 91 packets.\n4. To reach the target, Henry also needs to staple the 60 packets he missed on Monday, so 91 + 60 = 151 packets.",
+    "pred_answer_masked": "151",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Henry missed 111 - 51 = 60 packets on Monday.\n2. He missed 111 - 71 = 40 packets on Tuesday.\n3. The total missed quantities from the prior days is 60 + 40 = 100 packets.\n4. To clear the missed quantities and reach the standard daily target, Henry needs to staple 111 + 100 = 211 packets on Wednesday.\n\nFinal Answer: 211"
+  },
+  {
+    "id": 80,
+    "question": "Savannah established a daily target of decorating 121 cookies. Finishing only 61 cookies on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her decorate merely 81 cookies. In order to cover the undecorated cookies from previous days while still achieving her minimum daily objective, how many cookies must Savannah decorate on Wednesday?",
+    "ground_truth": "221",
+    "generation": "1. Savannah decorated 61 cookies on Monday, leaving 121 - 61 = 60 cookies undecorated.\n2. On Tuesday, she decorated 81 cookies, but still had 60 cookies from Monday to decorate, so she now has 60 + 81 = 141 cookies undecorated.\n3. Savannah's minimum daily target is 121 cookies, and she has 141 undecorated cookies, so she needs to decorate at least 141 - 121 = 20 cookies to cover the undecorated cookies from previous days.\n4. Since she needs to decorate at least 20 cookies, and she has already decorated 61 + 81 = 142 cookies, she will have decorated 142 + 20 = 162 cookies by the end of Wednesday, which is more than her minimum daily target of 121 cookies.",
+    "pred_answer_masked": "121",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Savannah missed 121 - 61 = 60 cookies on Monday.\n2. On Tuesday, she missed 121 - 81 = 40 cookies.\n3. The total undecorated cookies from previous days is 60 + 40 = 100 cookies.\n4. To cover the undecorated cookies while still achieving her minimum daily objective, Savannah must decorate 121 + 100 = 221 cookies on Wednesday.\n\nFinal Answer: 221"
+  },
+  {
+    "id": 81,
+    "question": "A daily quota of 31 logs was set by Douglas for chopping. Managing to chop only 11 logs on Monday, Douglas planned to clear the backlog on Tuesday. That plan fell short when just 21 logs were chopped on Tuesday. When Wednesday arrives, how many logs must Douglas chop to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "61",
+    "generation": "1. The deficit on Tuesday is 31 - 11 = 20 logs.\n2. The total deficit after Tuesday is 20 + 20 = 40 logs.\n3. The total logs needed to be chopped by Wednesday is 31 (daily quota) + 40 (deficit) = 71 logs.\n4. The total logs chopped by Wednesday is 11 (Monday) + 21 (Tuesday) = 32 logs.\n5. The logs needed to be chopped on Wednesday is 71 (total needed) - 32 (total chopped) = 39 logs.",
+    "pred_answer_masked": "39",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The deficit from Monday is 31 - 11 = 20 logs.\n2. The deficit from Tuesday is 31 - 21 = 10 logs.\n3. The total accumulated deficit after Tuesday is 20 + 10 = 30 logs.\n4. The logs needed to be chopped on Wednesday to satisfy the daily requirement and accumulated deficit is 31 + 30 = 61 logs.\n\nFinal Answer: 61"
+  },
+  {
+    "id": 82,
+    "question": "Every day, Audrey aims to stitch 41 patches. The start on Monday yielded a mere 21 patches. Though intending to offset this shortfall on Tuesday, Audrey achieved only 31. To ensure the base goal is met on Wednesday and all prior missed patches are compensated for, what is the total amount Audrey needs to stitch?",
+    "ground_truth": "71",
+    "generation": "1. Audrey needs to stitch 41 patches each day, but she only stitched 21 on Monday, so she is 41 - 21 = 20 patches behind.\n2. On Tuesday, she stitched 31 patches, but she needs to stitch 41, so she is 41 - 31 = 10 patches ahead of her goal for the day.\n3. However, she still needs to make up for the 20 patches she was behind on Monday, so she is 20 + 10 = 30 patches behind her goal for the week.\n4. To meet her goal and make up for the missed patches, Audrey needs to stitch 30 + 41 = 71 patches.",
+    "pred_answer_masked": "71",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Audrey needs to stitch 41 patches each day, but she only stitched 21 on Monday, so she is 41 - 21 = 20 patches behind.\n2. On Tuesday, she stitched 31 patches, but she needs to stitch 41, so she is 41 - 31 = 10 patches ahead of her goal for the day.\n3. However, she still needs to make up for the 20 patches she was behind on Monday, so she is 20 + 10 = 30 patches behind her goal for the week.\n4. To meet her goal and make up for the missed patches, Audrey needs to stitch 30 + 41 = 71 patches.\n\nFinal Answer: 71"
+  },
+  {
+    "id": 83,
+    "question": "For stringing, 23 beads is Peter's required daily benchmark. After Monday resulted in just 13 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 17 beads. On Wednesday, what number of beads will Peter need to string to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "39",
+    "generation": "1. Peter needs to string 23 beads daily, but he only completed 13 on Monday, so he needs 23 - 13 = 10 more beads to meet the daily mark for Monday.\n2. He also needs to string enough beads to meet the daily mark for Tuesday, which is 23 - 17 = 6 beads.\n3. To recover the uncompleted amounts from the prior days, he needs to string 10 (Monday) + 6 (Tuesday) = 16 beads.\n4. To hit the daily mark on Wednesday, he needs to string 23 beads, and to recover the uncompleted amounts, he needs to string 16 beads, so in total, he needs to string 23 + 16 = 39 beads.\n\nFinal Answer: 39",
+    "pred_answer_masked": "39",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Peter needs to string 23 beads daily, but he only completed 13 on Monday, so he needs 23 - 13 = 10 more beads to meet the daily mark for Monday.\n2. He also needs to string enough beads to meet the daily mark for Tuesday, which is 23 - 17 = 6 beads.\n3. To recover the uncompleted amounts from the prior days, he needs to string 10 (Monday) + 6 (Tuesday) = 16 beads.\n4. To hit the daily mark on Wednesday, he needs to string 23 beads, and to recover the uncompleted amounts, he needs to string 16 beads, so in total, he needs to string 23 + 16 = 39 beads.\n\nFinal Answer: 39"
+  },
+  {
+    "id": 84,
+    "question": "Requiring 71 cakes to be iced each day, Brooklyn struggled on Monday by completing only 31. Despite planning to make up the difference on Tuesday, her output was limited to 41 cakes. To clear the missed quantities and still reach the standard daily target, how many cakes are required for Brooklyn to ice on Wednesday?",
+    "ground_truth": "141",
+    "generation": "1. Brooklyn needed to ice 71 cakes each day and missed 31 on Monday, so she was 31 behind.\n2. On Tuesday, she completed 41 cakes, but still had 31 + 41 = 72 cakes to catch up on.\n3. Since she needs to ice 71 cakes on Wednesday, she will have completed 41 cakes on Tuesday, and will need to ice 72 - 41 = 31 cakes on Wednesday to catch up, and then ice 71 cakes to meet the target.\n4. So, Brooklyn will need to ice 31 + 71 = 102 cakes on Wednesday.",
+    "pred_answer_masked": "102",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Brooklyn needed to ice 71 cakes each day and missed 71 - 31 = 40 on Monday.\n2. On Tuesday, she completed 41 cakes, missing 71 - 41 = 30 cakes.\n3. The total missed quantities from Monday and Tuesday is 40 + 30 = 70 cakes.\n4. So, Brooklyn will need to ice 71 + 70 = 141 cakes on Wednesday to clear the missed quantities and reach the standard daily target.\n\nFinal Answer: 141"
+  },
+  {
+    "id": 85,
+    "question": "Carl established a daily target of slicing 81 loaves. Finishing only 41 loaves on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him slice merely 51 loaves. In order to cover the unsliced loaves from previous days while still achieving his minimum daily objective, how many loaves must Carl slice on Wednesday?",
+    "ground_truth": "151",
+    "generation": "1. Carl's target for Monday and Tuesday is 81 + 81 = 162 loaves.\n2. He finished 41 loaves on Monday, leaving 162 - 41 = 121 loaves for Tuesday and Wednesday.\n3. On Tuesday, he sliced 51 loaves, leaving 121 - 51 = 70 loaves for Wednesday.\n4. To cover the unsliced loaves from previous days and meet his minimum daily objective, Carl must slice 70 + 81 = 151 loaves on Wednesday.\n\nFinal Answer: 151",
+    "pred_answer_masked": "151",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Carl's target for Monday and Tuesday is 81 + 81 = 162 loaves.\n2. He finished 41 loaves on Monday, leaving 162 - 41 = 121 loaves for Tuesday and Wednesday.\n3. On Tuesday, he sliced 51 loaves, leaving 121 - 51 = 70 loaves for Wednesday.\n4. To cover the unsliced loaves from previous days and meet his minimum daily objective, Carl must slice 70 + 81 = 151 loaves on Wednesday.\n\nFinal Answer: 151"
+  },
+  {
+    "id": 86,
+    "question": "A daily quota of 13 envelopes was set by Bella for gluing. Managing to glue only 3 envelopes on Monday, Bella planned to clear the backlog on Tuesday. That plan fell short when just 7 envelopes were completed on Tuesday. When Wednesday arrives, how many envelopes must Bella glue to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "29",
+    "generation": "1. Bella completed 3 envelopes on Monday, so the deficit is 13 - 3 = 10 envelopes.\n2. On Tuesday, Bella completed 7 envelopes, so the total deficit is 10 + 7 = 17 envelopes.\n3. To satisfy the daily quota of 13 envelopes, Bella needs to glue 13 envelopes on Wednesday.\n4. To clear the accumulated deficit, Bella needs to glue 17 envelopes on Wednesday, so the total number of envelopes she must glue is 13 + 17 = 30 envelopes.\n\nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Bella completed 3 envelopes on Monday, so the deficit is 13 - 3 = 10 envelopes.\n2. On Tuesday, Bella completed 7 envelopes, so the deficit is 13 - 7 = 6 envelopes.\n3. The accumulated deficit from the prior days is 10 + 6 = 16 envelopes.\n4. To clear the accumulated deficit and satisfy the daily quota, Bella needs to glue 13 + 16 = 29 envelopes on Wednesday.\n\nFinal Answer: 29"
+  },
+  {
+    "id": 87,
+    "question": "Every day, Arthur aims to tape 63 boxes. The start on Monday yielded a mere 23 boxes. Though intending to offset this shortfall on Tuesday, Arthur achieved only 33. To ensure the base goal is met on Wednesday and all prior missed boxes are compensated for, what is the total amount Arthur needs to tape?",
+    "ground_truth": "133",
+    "generation": "1. Arthur missed 63 - 23 = 40 boxes on Monday.\n2. He missed 63 - 33 = 30 boxes on Tuesday.\n3. Total missed boxes are 40 + 30 = 70.\n4. Arthur needs to tape 70 + 63 = 133 boxes to meet the goal and compensate for the missed boxes.\n\nFinal Answer: 133",
+    "pred_answer_masked": "133",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Arthur missed 63 - 23 = 40 boxes on Monday.\n2. He missed 63 - 33 = 30 boxes on Tuesday.\n3. Total missed boxes are 40 + 30 = 70.\n4. Arthur needs to tape 70 + 63 = 133 boxes to meet the goal and compensate for the missed boxes.\n\nFinal Answer: 133"
+  },
+  {
+    "id": 88,
+    "question": "For polishing, 103 apples is Claire's required daily benchmark. After Monday resulted in just 43 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 63 apples. On Wednesday, what number of apples will Claire need to polish to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "203",
+    "generation": "1. Calculate the total apples needed for the three days: 103 * 3 = 309.\n2. Calculate the total apples polished on Monday and Tuesday: 43 + 63 = 106.\n3. Calculate the remaining apples needed to meet the daily mark for the three days: 309 - 106 = 203.\n4. Calculate the remaining apples needed to meet the daily mark for Wednesday: 103 - 63 = 40.\n5. Calculate the total apples needed on Wednesday: 203 + 40 = 243.\n\nFinal Answer: 243",
+    "pred_answer_masked": "243",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total apples needed for the three days: 103 * 3 = 309.\n2. Calculate the total apples polished on Monday and Tuesday: 43 + 63 = 106.\n3. Calculate the remaining apples needed on Wednesday to meet the daily mark and recover the uncompleted amounts for the three days: 309 - 106 = 203.\n\nFinal Answer: 203"
+  },
+  {
+    "id": 89,
+    "question": "Requiring 113 groceries to be bagged each day, Edward struggled on Monday by completing only 53. Despite planning to make up the difference on Tuesday, his output was limited to 73 groceries. To clear the missed quantities and still reach the standard daily target, how many groceries are required for Edward to bag on Wednesday?",
+    "ground_truth": "213",
+    "generation": "1. Edward missed 113 - 53 = 60 groceries on Monday.\n2. He also missed 113 - 73 = 40 groceries on Tuesday.\n3. Total missed groceries are 60 + 40 = 100.\n4. To reach the target, Edward needs to bag 100 + 113 = 213 groceries on Wednesday.",
+    "pred_answer_masked": "213",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Edward missed 113 - 53 = 60 groceries on Monday.\n2. He also missed 113 - 73 = 40 groceries on Tuesday.\n3. Total missed groceries are 60 + 40 = 100.\n4. To reach the target, Edward needs to bag 100 + 113 = 213 groceries on Wednesday.\n\nFinal Answer: 213"
+  },
+  {
+    "id": 90,
+    "question": "Skylar established a daily target of stacking 123 cans. Finishing only 63 cans on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her stack merely 83 cans. In order to cover the unstacked cans from previous days while still achieving her minimum daily objective, how many cans must Skylar stack on Wednesday?",
+    "ground_truth": "223",
+    "generation": "1. Skylar's target for Monday and Tuesday is 123 + 123 = 246 cans.\n2. She completed 63 cans on Monday and 83 cans on Tuesday, totaling 63 + 83 = 146 cans.\n3. The remaining cans from Monday and Tuesday are 246 - 146 = 100 cans.\n4. To cover the unstacked cans from previous days and meet her minimum daily target, Skylar needs to stack 123 + 100 = 223 cans on Wednesday.",
+    "pred_answer_masked": "223",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Skylar's target for Monday and Tuesday is 123 + 123 = 246 cans.\n2. She completed 63 cans on Monday and 83 cans on Tuesday, totaling 63 + 83 = 146 cans.\n3. The remaining cans from Monday and Tuesday are 246 - 146 = 100 cans.\n4. To cover the unstacked cans from previous days and meet her minimum daily target, Skylar needs to stack 123 + 100 = 223 cans on Wednesday.\n\nFinal Answer: 223"
+  },
+  {
+    "id": 91,
+    "question": "A daily quota of 34 documents was set by Roger for shredding. Managing to shred only 14 documents on Monday, Roger planned to clear the backlog on Tuesday. That plan fell short when just 24 documents were shredded on Tuesday. When Wednesday arrives, how many documents must Roger shred to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "64",
+    "generation": "1. Total documents shredded by Tuesday is 14 + 24 = 38.\n2. The deficit is 34 (quota) - 38 (shredded) = -4 (accumulated surplus).\n3. The daily quota for Wednesday is 34 documents.\n4. To satisfy the daily requirement alongside the accumulated deficit, Roger must shred 34 (quota) + 4 (surplus) = 38 documents.\n\nFinal Answer: 38",
+    "pred_answer_masked": "38",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Roger's deficit on Monday is 34 - 14 = 20 documents.\n2. His deficit on Tuesday is 34 - 24 = 10 documents.\n3. The accumulated deficit is 20 + 10 = 30 documents.\n4. To satisfy the daily requirement alongside the accumulated deficit, Roger must shred 34 (quota) + 30 (deficit) = 64 documents on Wednesday.\n\nFinal Answer: 64"
+  },
+  {
+    "id": 92,
+    "question": "Every day, Lucy aims to roll 44 dough balls. The start on Monday yielded a mere 24 dough balls. Though intending to offset this shortfall on Tuesday, Lucy achieved only 34. To ensure the base goal is met on Wednesday and all prior missed dough balls are compensated for, what is the total amount Lucy needs to roll?",
+    "ground_truth": "74",
+    "generation": "1. Lucy needs to roll 44 dough balls each day, but she only rolled 24 on Monday, so she needs to roll 44 - 24 = 20 more on Tuesday and Wednesday combined to meet the daily goal.\n2. On Tuesday, Lucy rolled 34 dough balls, so she has already rolled 24 + 34 = 58 dough balls.\n3. Since Lucy needs to roll 20 more dough balls on Tuesday and Wednesday combined to meet the daily goal, and she has already rolled 58 dough balls, she needs to roll 20 more on Wednesday.\n4. To compensate for the shortfall on Monday and Tuesday, Lucy needs to roll 24 (shortfall on Monday) + 10 (shortfall on Tuesday, 44 - 34 = 10) = 34 more dough balls on Wednesday.\n\nFinal Answer: 74",
+    "pred_answer_masked": "74",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Lucy needs to roll 44 dough balls each day, but she only rolled 24 on Monday, so she needs to roll 44 - 24 = 20 more on Tuesday and Wednesday combined to meet the daily goal.\n2. On Tuesday, Lucy rolled 34 dough balls, so she has already rolled 24 + 34 = 58 dough balls.\n3. Since Lucy needs to roll 20 more dough balls on Tuesday and Wednesday combined to meet the daily goal, and she has already rolled 58 dough balls, she needs to roll 20 more on Wednesday.\n4. To compensate for the shortfall on Monday and Tuesday, Lucy needs to roll 24 (shortfall on Monday) + 10 (shortfall on Tuesday, 44 - 34 = 10) = 34 more dough balls on Wednesday.\n\nFinal Answer: 74"
+  },
+  {
+    "id": 93,
+    "question": "For twisting, 32 wires is Walter's required daily benchmark. After Monday resulted in just 12 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 22 wires. On Wednesday, what number of wires will Walter need to twist to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "62",
+    "generation": "1. Walter needs to twist 32 wires daily, but he only twisted 12 on Monday, so he needs to twist 32 - 12 = 20 wires to catch up on Monday.\n2. After twisting 22 wires on Tuesday, he still needs to twist 20 wires to catch up on Monday, so he needs to twist 20 + 22 = 42 wires to catch up on both Monday and Tuesday.\n3. Since Walter needs to twist 32 wires daily, and he needs to twist 42 wires to catch up, he needs to twist 32 - 42 = -10 wires on Wednesday to hit the daily mark and recover the uncompleted amounts from the prior days.\n4. Since Walter can't twist a negative number of wires, he actually needs to twist 10 wires on Wednesday to hit the daily mark and recover the uncompleted amounts from the prior days.\nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Walter needs to twist 32 wires daily, but he only twisted 12 on Monday, so he needs to twist 32 - 12 = 20 wires to catch up on Monday.\n2. After twisting 22 wires on Tuesday, he missed 32 - 22 = 10 wires for Tuesday.\n3. The total uncompleted amounts from the prior days is 20 + 10 = 30 wires.\n4. Walter needs to twist 32 + 30 = 62 wires on Wednesday to hit the daily mark and recover the uncompleted amounts from the prior days.\n\nFinal Answer: 62"
+  },
+  {
+    "id": 94,
+    "question": "Requiring 73 pipes to be bent each day, Anna struggled on Monday by completing only 33. Despite planning to make up the difference on Tuesday, her output was limited to 43 pipes. To clear the missed quantities and still reach the standard daily target, how many pipes are required for Anna to bend on Wednesday?",
+    "ground_truth": "143",
+    "generation": "1. Anna missed 73 - 33 = 40 pipes on Monday.\n2. She completed 40 + 43 = 83 pipes on Tuesday and Wednesday combined.\n3. To reach the target of 73 pipes on Wednesday, she needs 73 - 83 = -10 pipes.\n4. Since you can't bend a negative number of pipes, she actually needs to bend 10 more pipes than the target to make up for the extra pipes she bent on Tuesday.\n5. So, she needs to bend 73 + 10 = 83 pipes on Wednesday.\n\nFinal Answer: 83",
+    "pred_answer_masked": "83",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Anna missed 73 - 33 = 40 pipes on Monday.\n2. She missed 73 - 43 = 30 pipes on Tuesday.\n3. The total missed quantities from the prior days is 40 + 30 = 70 pipes.\n4. To clear the missed quantities and reach the standard daily target, she needs to bend 73 + 70 = 143 pipes on Wednesday.\n\nFinal Answer: 143"
+  },
+  {
+    "id": 95,
+    "question": "Harold established a daily target of sweeping 83 floors. Finishing only 43 floors on Monday, he intended to compensate for the remainder the following day. However, Tuesday saw him sweep merely 53 floors. In order to cover the unswept floors from previous days while still achieving his minimum daily objective, how many floors must Harold sweep on Wednesday?",
+    "ground_truth": "153",
+    "generation": "1. Harold swept 43 floors on Monday, leaving 83 - 43 = 40 floors unswept.\n2. On Tuesday, he swept 53 floors, but still had 40 floors unswept from Monday, so now he has 40 + 53 = 93 floors unswept in total.\n3. Harold's minimum daily target is 83 floors, so to cover the unswept floors and meet his target, he needs to sweep 93 (unswept floors) + 83 (minimum target) = 176 floors.\n4. Since he has already swept 43 + 53 = 96 floors on Monday and Tuesday, he needs to sweep 176 - 96 = 80 floors on Wednesday.",
+    "pred_answer_masked": "80",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Harold swept 43 floors on Monday, leaving 83 - 43 = 40 floors unswept.\n2. On Tuesday, he swept 53 floors, leaving 83 - 53 = 30 floors unswept.\n3. The total unswept floors from previous days is 40 + 30 = 70 floors.\n4. Harold's minimum daily target is 83 floors, so to cover the unswept floors and meet his target, he needs to sweep 83 + 70 = 153 floors on Wednesday.\n\nFinal Answer: 153"
+  },
+  {
+    "id": 96,
+    "question": "A daily quota of 12 pairs of socks was set by Samantha for matching. Managing to match only 2 pairs on Monday, Samantha planned to clear the backlog on Tuesday. That plan fell short when just 6 pairs were completed on Tuesday. When Wednesday arrives, how many pairs must Samantha match to satisfy the daily requirement alongside the accumulated deficit?",
+    "ground_truth": "28",
+    "generation": "1. The deficit after Monday is 12 - 2 = 10 pairs.\n2. The deficit after Tuesday is 10 + 6 = 16 pairs.\n3. To satisfy the daily quota of 12 pairs, Samantha needs to match 16 + 12 = 28 pairs in total.\n4. Since she already matched 2 + 6 = 8 pairs, she needs to match 28 - 8 = 20 pairs on Wednesday.\n\nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The deficit from Monday is 12 - 2 = 10 pairs.\n2. The deficit from Tuesday is 12 - 6 = 6 pairs.\n3. The accumulated deficit is 10 + 6 = 16 pairs.\n4. To satisfy the daily quota of 12 pairs alongside the accumulated deficit, Samantha needs to match 12 + 16 = 28 pairs on Wednesday.\n\nFinal Answer: 28"
+  },
+  {
+    "id": 97,
+    "question": "Every day, Kyle aims to wrap 62 rolls of coins. The start on Monday yielded a mere 22 rolls. Though intending to offset this shortfall on Tuesday, Kyle achieved only 32. To ensure the base goal is met on Wednesday and all prior missed rolls are compensated for, what is the total amount Kyle needs to wrap?",
+    "ground_truth": "132",
+    "generation": "1. Kyle needs to wrap 62 rolls on each day to meet the goal.\n2. On Monday, Kyle only wrapped 22 rolls, so he needs to wrap 62 - 22 = 40 rolls to meet the goal for that day.\n3. On Tuesday, Kyle wrapped 32 rolls, but he still needs to wrap 40 rolls to meet the goal for that day, so he needs to wrap 40 - 32 = 8 rolls to meet the goal for Tuesday.\n4. To meet the goal for Wednesday and compensate for the missed rolls, Kyle needs to wrap 62 rolls on Wednesday and 8 rolls on Tuesday, and 40 rolls on Monday, so the total amount Kyle needs to wrap is 62 + 8 + 40 = 110 rolls.",
+    "pred_answer_masked": "110",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Kyle needs to wrap 62 rolls on each day to meet the goal.\n2. On Monday, Kyle only wrapped 22 rolls, so he missed 62 - 22 = 40 rolls.\n3. On Tuesday, Kyle wrapped 32 rolls, so he missed 62 - 32 = 30 rolls.\n4. To meet the goal for Wednesday and compensate for the missed rolls, Kyle needs to wrap 62 (daily goal) + 40 (Monday) + 30 (Tuesday) = 132 rolls.\n\nFinal Answer: 132"
+  },
+  {
+    "id": 98,
+    "question": "For counting, 104 inventory items is Maya's required daily benchmark. After Monday resulted in just 44 finished, a resolution was made to catch up on Tuesday. However, the Tuesday total came out to be only 64 items. On Wednesday, what number of items will Maya need to count to both hit the daily mark and recover the uncompleted amounts from the prior days?",
+    "ground_truth": "204",
+    "generation": "1. Total items needed for the three days is 104 * 3 = 312.\n2. Items completed on Monday and Tuesday is 44 + 64 = 108.\n3. Items still needed for the three days is 312 - 108 = 204.\n4. Items needed on Wednesday to hit the daily mark and recover the uncompleted amounts is 204.",
+    "pred_answer_masked": "204",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total items needed for the three days is 104 * 3 = 312.\n2. Items completed on Monday and Tuesday is 44 + 64 = 108.\n3. Items still needed for the three days is 312 - 108 = 204.\n4. Items needed on Wednesday to hit the daily mark and recover the uncompleted amounts is 204.\n\nFinal Answer: 204"
+  },
+  {
+    "id": 99,
+    "question": "Requiring 114 tags to be attached each day, Ian struggled on Monday by finishing only 54. Despite planning to make up the difference on Tuesday, his output was limited to 74 tags. To clear the missed quantities and still reach the standard daily target, how many tags are required for Ian to attach on Wednesday?",
+    "ground_truth": "214",
+    "generation": "1. Ian missed 114 - 54 = 60 tags on Monday.\n2. He completed 60 + 74 = 134 tags on Tuesday, exceeding the target by 20 tags.\n3. To clear the missed quantities, Ian needs to attach 60 tags on Wednesday.\n4. To reach the standard daily target, Ian needs to attach 114 + 20 = 134 tags on Wednesday.\nFinal Answer: 134",
+    "pred_answer_masked": "134",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Ian missed 114 - 54 = 60 tags on Monday.\n2. He missed 114 - 74 = 40 tags on Tuesday.\n3. To clear the missed quantities, Ian needs to attach 60 + 40 = 100 tags.\n4. To reach the standard daily target and clear the missed quantities, Ian needs to attach 114 + 100 = 214 tags on Wednesday.\n\nFinal Answer: 214"
+  },
+  {
+    "id": 100,
+    "question": "Sophie established a daily target of scanning 130 barcodes. Finishing only 70 barcodes on Monday, she intended to compensate for the remainder the following day. However, Tuesday saw her scan merely 90 barcodes. In order to cover the unscanned barcodes from previous days while still achieving her minimum daily objective, how many barcodes must Sophie scan on Wednesday?",
+    "ground_truth": "230",
+    "generation": "Reasoning:\n1. Sophie's target for Monday and Tuesday is 130 * 2 = 260 barcodes.\n2. She finished 70 barcodes on Monday, leaving 260 - 70 = 190 barcodes to be scanned on Tuesday.\n3. However, she only scanned 90 barcodes on Tuesday, leaving 190 - 90 = 100 barcodes to be scanned on Tuesday and Wednesday.\n4. To cover the unscanned barcodes from previous days and meet her minimum daily objective, Sophie must scan 130 + 100 = 230 barcodes on Wednesday.\n\nFinal Answer: 230",
+    "pred_answer_masked": "230",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Sophie's target for Monday and Tuesday is 130 * 2 = 260 barcodes.\n2. She finished 70 barcodes on Monday, leaving 260 - 70 = 190 barcodes to be scanned on Tuesday.\n3. However, she only scanned 90 barcodes on Tuesday, leaving 190 - 90 = 100 barcodes to be scanned on Tuesday and Wednesday.\n4. To cover the unscanned barcodes from previous days and meet her minimum daily objective, Sophie must scan 130 + 100 = 230 barcodes on Wednesday.\n\nFinal Answer: 230"
+  }
+]

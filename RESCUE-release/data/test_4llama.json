@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "Alice asked the baker for 4 1/2-pound sourdough loaves that cost $10.00/pound. She also asked for a pound and a half of cookie dough that was $8.00 a pound. How much did she spend at the bakery?",
+    "ground_truth": "32",
+    "generation": "1. The cost of 4 1/2 pounds of sourdough loaves is 4.5 * $10.00 = $45.00.\n2. The cost of 1.5 pounds of cookie dough is 1.5 * $8.00 = $12.00.\n3. The total cost is $45.00 + $12.00 = $57.00.\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The cost of 4 1/2-pound sourdough loaves is 4 * 0.5 * $10.00 = $20.00.\n2. The cost of 1.5 pounds of cookie dough is 1.5 * $8.00 = $12.00.\n3. The total cost is $20.00 + $12.00 = $32.00.\nFinal Answer: $32.00"
+  },
+  {
+    "id": 2,
+    "question": "Bob visited the pastry shop and requested 3 1.5-pound cake tiers priced at $8.00 per pound. In addition, he bought 2 pounds of vanilla frosting for $9.00 a pound. What was his total bill?",
+    "ground_truth": "54",
+    "generation": "1. Calculate the total weight of the cake tiers: 3 * 1.5 = 4.5 pounds\n2. Calculate the cost of the cake tiers: 4.5 * $8.00 = $36.00\n3. Calculate the cost of the vanilla frosting: 2 * $9.00 = $18.00\n4. Calculate the total bill: $36.00 + $18.00 = $54.00\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total weight of the cake tiers: 3 * 1.5 = 4.5 pounds\n2. Calculate the cost of the cake tiers: 4.5 * $8.00 = $36.00\n3. Calculate the cost of the vanilla frosting: 2 * $9.00 = $18.00\n4. Calculate the total bill: $36.00 + $18.00 = $54.00\nFinal Answer: $54.00"
+  },
+  {
+    "id": 3,
+    "question": "Charlie needed some fresh bread, so he got 8 1/4-pound baguettes costing $16.00 per pound. Then, he picked up half a pound of artisanal butter, which runs $10.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. First, convert the mixed number to an improper fraction: 8 1/4 = (8 * 4 + 1) / 4 = 33 / 4 pounds.\n2. Calculate the cost of the baguettes: 33 / 4 pounds * $16.00/pound = $132.00.\n3. Calculate the cost of the artisanal butter: 1/2 pound * $10.00/pound = $5.00.\n4. Add the cost of the baguettes and the butter: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the baguettes: 8 * 1/4 = 2 pounds.\n2. Calculate the cost of the baguettes: 2 pounds * $16.00/pound = $32.00.\n3. Calculate the cost of the artisanal butter: 1/2 pound * $10.00/pound = $5.00.\n4. Add the cost of the baguettes and the butter: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 4,
+    "question": "Shopping for a party, Diana grabbed 5 pieces of artisan rolls (weighing 1/2 pound each) at $14.00 per pound. Furthermore, she acquired 2.5 pounds of specialty flour priced at $6.00 per pound. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. Calculate the total weight of the artisan rolls: 5 rolls * 1/2 pound/roll = 2.5 pounds\n2. Calculate the cost of the artisan rolls: 2.5 pounds * $14.00/pound = $35.00\n3. Calculate the cost of the specialty flour: 2.5 pounds * $6.00/pound = $15.00\n4. Calculate the total cost: $35.00 + $15.00 = $50.00\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total weight of the artisan rolls: 5 rolls * 1/2 pound/roll = 2.5 pounds\n2. Calculate the cost of the artisan rolls: 2.5 pounds * $14.00/pound = $35.00\n3. Calculate the cost of the specialty flour: 2.5 pounds * $6.00/pound = $15.00\n4. Calculate the total cost: $35.00 + $15.00 = $50.00\nFinal Answer: $50.00"
+  },
+  {
+    "id": 5,
+    "question": "For a baking project, Evan bought 2 3/4-pound pie crusts with a price tag of $20.00 a pound. Along with that, he bought 1.5 pounds of cherry filling for $12.00 per pound. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of the pie crusts: 2.75 * 20 = 55\n2. Calculate the cost of the cherry filling: 1.5 * 12 = 18\n3. Add the cost of the pie crusts and the cherry filling: 55 + 18 = 73\n4. The total expense is the sum from step 3.\nFinal Answer: 73",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the pie crusts: 2 * 0.75 * 20 = 30\n2. Calculate the cost of the cherry filling: 1.5 * 12 = 18\n3. Add the cost of the pie crusts and the cherry filling: 30 + 18 = 48\n4. The total expense is the sum from step 3.\nFinal Answer: 48"
+  },
+  {
+    "id": 6,
+    "question": "Fiona asked the local bakery for 6 1/2-pound brioche buns that cost $18.00/pound. She also asked for one and a quarter pounds of sliced almonds that were $8.00 a pound. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the cost of the brioche buns: 6.5 pounds * $18.00/pound = $117.00\n2. Next, calculate the cost of the sliced almonds: 1.25 pounds * $8.00/pound = $10.00\n3. Add the cost of the brioche buns and sliced almonds: $117.00 + $10.00 = $127.00\n4. The total amount Fiona spent is $127.00\nFinal Answer: $127.00",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the brioche buns: 6 * 0.5 pounds * $18.00/pound = $54.00\n2. Next, calculate the cost of the sliced almonds: 1.25 pounds * $8.00/pound = $10.00\n3. Add the cost of the brioche buns and sliced almonds: $54.00 + $10.00 = $64.00\n4. The total amount Fiona spent is $64.00\nFinal Answer: $64.00"
+  },
+  {
+    "id": 7,
+    "question": "At the cake shop, George requested 4 1.5-pound fruitcakes for $10.00/pound. He also added half a pound of royal icing at $14.00 a pound. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. Total weight of fruitcakes is 4 * 1.5 = 6 pounds.\n2. Cost of fruitcakes is 6 * $10.00 = $60.00.\n3. Total weight of fruitcakes and icing is 6 + 0.5 = 6.5 pounds.\n4. Cost of icing is 0.5 * $14.00 = $7.00.\n5. Total cost is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total weight of fruitcakes is 4 * 1.5 = 6 pounds.\n2. Cost of fruitcakes is 6 * $10.00 = $60.00.\n3. Total weight of fruitcakes and icing is 6 + 0.5 = 6.5 pounds.\n4. Cost of icing is 0.5 * $14.00 = $7.00.\n5. Total cost is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00"
+  },
+  {
+    "id": 8,
+    "question": "Hannah visited the bakery and purchased 10 1/4-pound chocolate croissants, priced at $12.00 per pound. Afterwards, she bought 2 pounds of premium chocolate chips for $11.00 per pound. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. First, calculate the total weight of the chocolate croissants: 10 * 1.25 = 12.5 pounds.\n2. Then, calculate the cost of the chocolate croissants: 12.5 * $12.00 = $150.00.\n3. Next, calculate the cost of the premium chocolate chips: 2 * $11.00 = $22.00.\n4. Finally, add the cost of the chocolate croissants and the chocolate chips: $150.00 + $22.00 = $172.00.\nFinal Answer: $172.00",
+    "pred_answer_masked": "172",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the chocolate croissants: 10 * 0.25 = 2.5 pounds.\n2. Then, calculate the cost of the chocolate croissants: 2.5 * $12.00 = $30.00.\n3. Next, calculate the cost of the premium chocolate chips: 2 * $11.00 = $22.00.\n4. Finally, add the cost of the chocolate croissants and the chocolate chips: $30.00 + $22.00 = $52.00.\nFinal Answer: $52.00"
+  },
+  {
+    "id": 9,
+    "question": "Ian needed some breakfast treats, so he got 2 1/2-pound cinnamon rolls costing $22.00 per pound. Then, he picked up 3 pounds of fresh yeast, which runs $7.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. Calculate the cost of the cinnamon rolls: 2.5 pounds * $22.00 per pound = $55.00\n2. Calculate the cost of the yeast: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of the cinnamon rolls and the yeast: $55.00 + $21.00 = $76.00\n4. The total amount spent is the sum from step 3.\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the cinnamon rolls: 2 * 0.5 pounds * $22.00 per pound = $22.00\n2. Calculate the cost of the yeast: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of the cinnamon rolls and the yeast: $22.00 + $21.00 = $43.00\n4. The total amount spent is the sum from step 3.\nFinal Answer: $43.00"
+  },
+  {
+    "id": 10,
+    "question": "Jane asked the baker for 4 3/4-pound jumbo muffins that cost $12.00/pound. She also asked for a pound and a half of fresh blueberries that were $16.00 a pound. How much did she spend?",
+    "ground_truth": "60",
+    "generation": "1. First, find the cost of the muffins: 4.75 pounds * $12.00/pound = $57.00\n2. Then, find the cost of the blueberries: 1.5 pounds * $16.00/pound = $24.00\n3. Add the cost of the muffins and the blueberries: $57.00 + $24.00 = $81.00\n4. The total cost is $81.00\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, find the cost of the muffins: 4 * 0.75 pounds * $12.00/pound = $36.00\n2. Then, find the cost of the blueberries: 1.5 pounds * $16.00/pound = $24.00\n3. Add the cost of the muffins and the blueberries: $36.00 + $24.00 = $60.00\n4. The total cost is $60.00\nFinal Answer: $60.00"
+  },
+  {
+    "id": 11,
+    "question": "Kevin asked the fishmonger for 4 1/2-pound salmon fillets that cost $10.00/pound. He also asked for a pound and a half of fresh shrimp that were $8.00 a pound. How much did he spend at the fish market?",
+    "ground_truth": "32",
+    "generation": "1. The cost of the salmon fillets is 4.5 * 10 = 45 dollars.\n2. The cost of the salmon fillets is 45 dollars.\n3. The cost of the shrimp is 1.5 * 8 = 12 dollars.\n4. The total cost is 45 + 12 = 57 dollars.\nFinal Answer: 57",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The cost of the salmon fillets is 4 * 0.5 * 10 = 20 dollars.\n2. The cost of the salmon fillets is 20 dollars.\n3. The cost of the shrimp is 1.5 * 8 = 12 dollars.\n4. The total cost is 20 + 12 = 32 dollars.\nFinal Answer: 32"
+  },
+  {
+    "id": 12,
+    "question": "Laura visited the seafood market and requested 3 1.5-pound whole trouts priced at $8.00 per pound. In addition, she bought 2 pounds of sea scallops for $9.00 a pound. What was her total bill?",
+    "ground_truth": "54",
+    "generation": "1. The total weight of the trouts is 3 * 1.5 = 4.5 pounds.\n2. The cost of the trouts is 4.5 * $8.00 = $36.00.\n3. The cost of the sea scallops is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total weight of the trouts is 3 * 1.5 = 4.5 pounds.\n2. The cost of the trouts is 4.5 * $8.00 = $36.00.\n3. The cost of the sea scallops is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00"
+  },
+  {
+    "id": 13,
+    "question": "Mike needed some appetizers, so he got 8 1/4-pound crab cakes costing $16.00 per pound. Then, he picked up half a pound of smoked eel, which runs $10.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. Convert the weight of crab cakes to decimal form: 8 1/4 pounds = 8.25 pounds.\n2. Calculate the cost of crab cakes: 8.25 pounds * $16.00 per pound = $132.00.\n3. Calculate the cost of smoked eel: 0.5 pounds * $10.00 per pound = $5.00.\n4. Add the cost of crab cakes and smoked eel: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total weight of crab cakes: 8 * 1/4 pounds = 2 pounds.\n2. Calculate the cost of crab cakes: 2 pounds * $16.00 per pound = $32.00.\n3. Calculate the cost of smoked eel: 0.5 pounds * $10.00 per pound = $5.00.\n4. Add the cost of crab cakes and smoked eel: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 14,
+    "question": "Shopping for a family dinner, Nina grabbed 5 pieces of cod (weighing 1/2 pound each) at $14.00 per pound. Furthermore, she acquired 2.5 pounds of mussels priced at $6.00 per pound. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. First, calculate the total weight of the cod: 5 pieces * 1/2 pound = 2.5 pounds\n2. Then, calculate the cost of the cod: 2.5 pounds * $14.00 per pound = $35.00\n3. Next, calculate the cost of the mussels: 2.5 pounds * $6.00 per pound = $15.00\n4. Finally, add the cost of the cod and mussels: $35.00 + $15.00 = $50.00\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, calculate the total weight of the cod: 5 pieces * 1/2 pound = 2.5 pounds\n2. Then, calculate the cost of the cod: 2.5 pounds * $14.00 per pound = $35.00\n3. Next, calculate the cost of the mussels: 2.5 pounds * $6.00 per pound = $15.00\n4. Finally, add the cost of the cod and mussels: $35.00 + $15.00 = $50.00\nFinal Answer: $50.00"
+  },
+  {
+    "id": 15,
+    "question": "For a seafood boil, Oscar bought 2 3/4-pound lobster tails with a price tag of $20.00 a pound. Along with that, he bought 1.5 pounds of crawfish for $12.00 per pound. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of the lobster tails: 2.75 * 20 = 55\n2. Calculate the cost of the crawfish: 1.5 * 12 = 18\n3. Add the cost of the lobster tails and crawfish: 55 + 18 = 73\n4. The total expense is the sum from step 3.\nFinal Answer: 73",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the lobster tails: 2 * 0.75 * 20 = 30\n2. Calculate the cost of the crawfish: 1.5 * 12 = 18\n3. Add the cost of the lobster tails and crawfish: 30 + 18 = 48\n4. The total expense is the sum from step 3.\nFinal Answer: 48"
+  },
+  {
+    "id": 16,
+    "question": "Paula asked the fishmonger for 6 1/2-pound tuna steaks that cost $18.00/pound. She also asked for one and a quarter pounds of calamari rings that were $8.00 a pound. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the cost of the tuna steaks: 6.5 pounds * $18.00/pound = $117.00\n2. Next, calculate the cost of the calamari rings: 1.25 pounds * $8.00/pound = $10.00\n3. Add the cost of the tuna steaks and the calamari rings: $117.00 + $10.00 = $127.00\n4. The total amount Paula spent is $127.00\nFinal Answer: $127.00",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the tuna steaks: 6 * 0.5 pounds * $18.00/pound = $54.00\n2. Next, calculate the cost of the calamari rings: 1.25 pounds * $8.00/pound = $10.00\n3. Add the cost of the tuna steaks and the calamari rings: $54.00 + $10.00 = $64.00\n4. The total amount Paula spent is $64.00\nFinal Answer: $64.00"
+  },
+  {
+    "id": 17,
+    "question": "At the fish market, Quinn requested 4 1.5-pound snappers for $10.00/pound. He also added half a pound of caviar at $14.00 a pound. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. The total weight of snappers is 4 * 1.5 = 6 pounds.\n2. The cost of snappers is 6 * $10.00 = $60.00.\n3. The cost of caviar is 0.5 * $14.00 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total weight of snappers is 4 * 1.5 = 6 pounds.\n2. The cost of snappers is 6 * $10.00 = $60.00.\n3. The cost of caviar is 0.5 * $14.00 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00"
+  },
+  {
+    "id": 18,
+    "question": "Rachel visited the seafood stall and purchased 10 1/4-pound tilapia fillets, priced at $12.00 per pound. Afterwards, she bought 2 pounds of clam meat for $11.00 per pound. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. First, calculate the total weight of the tilapia fillets: 10 * 1.25 = 12.5 pounds.\n2. Calculate the cost of the tilapia fillets: 12.5 * $12.00 = $150.00.\n3. Calculate the cost of the clam meat: 2 * $11.00 = $22.00.\n4. Add the cost of the tilapia fillets and the clam meat: $150.00 + $22.00 = $172.00.\nFinal Answer: $172.00",
+    "pred_answer_masked": "172",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the tilapia fillets: 10 * 0.25 = 2.5 pounds.\n2. Calculate the cost of the tilapia fillets: 2.5 * $12.00 = $30.00.\n3. Calculate the cost of the clam meat: 2 * $11.00 = $22.00.\n4. Add the cost of the tilapia fillets and the clam meat: $30.00 + $22.00 = $52.00.\nFinal Answer: $52.00"
+  },
+  {
+    "id": 19,
+    "question": "Sam needed some fish for stew, so he got 2 1/2-pound swordfish chunks costing $22.00 per pound. Then, he picked up 3 pounds of assorted shellfish, which runs $7.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. The cost of 2 1/2 pounds of swordfish is 2.5 * $22.00 = $55.00.\n2. The cost of 3 pounds of assorted shellfish is 3 * $7.00 = $21.00.\n3. The total cost is $55.00 + $21.00 = $76.00.\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The cost of 2 1/2-pound swordfish chunks is 2 * 0.5 * $22.00 = $22.00.\n2. The cost of 3 pounds of assorted shellfish is 3 * $7.00 = $21.00.\n3. The total cost is $22.00 + $21.00 = $43.00.\nFinal Answer: $43.00"
+  },
+  {
+    "id": 20,
+    "question": "Tina asked the fishmonger for 4 3/4-pound halibut cuts that cost $12.00/pound. She also asked for a pound and a half of crab legs that were $16.00 a pound. How much did she spend?",
+    "ground_truth": "60",
+    "generation": "1. First, convert the mixed number to an improper fraction: 4 3/4 = (4*4 + 3)/4 = 19/4 pounds.\n2. Calculate the cost of the halibut: (19/4) * $12.00 = (19 * $12.00)/4 = $228.00/4 = $57.00.\n3. Calculate the cost of the crab legs: 1.5 * $16.00 = $24.00.\n4. Add the cost of the halibut and crab legs: $57.00 + $24.00 = $81.00.\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the halibut: 4 * 3/4 = 3 pounds.\n2. Calculate the cost of the halibut: 3 * $12.00 = $36.00.\n3. Calculate the cost of the crab legs: 1.5 * $16.00 = $24.00.\n4. Add the cost of the halibut and crab legs: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00"
+  },
+  {
+    "id": 21,
+    "question": "Uma asked the barista for 4 1/2-pound bags of espresso beans that cost $10.00/pound. She also asked for a pound and a half of loose leaf chai that was $8.00 a pound. How much did she spend at the coffee shop?",
+    "ground_truth": "32",
+    "generation": "1. First, calculate the cost of the espresso beans: 4.5 pounds * $10.00/pound = $45.00\n2. Then, calculate the cost of the loose leaf chai: 1.5 pounds * $8.00/pound = $12.00\n3. Now, add the cost of the espresso beans and the loose leaf chai: $45.00 + $12.00 = $57.00\n4. Finally, add the tax (if any) and the tip (if any) to the total cost, but since the problem doesn't mention it, we can assume the total is just the cost of the items: $57.00\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the espresso beans: 4 * 0.5 pounds * $10.00/pound = $20.00\n2. Then, calculate the cost of the loose leaf chai: 1.5 pounds * $8.00/pound = $12.00\n3. Now, add the cost of the espresso beans and the loose leaf chai: $20.00 + $12.00 = $32.00\n4. Finally, add the tax (if any) and the tip (if any) to the total cost, but since the problem doesn't mention it, we can assume the total is just the cost of the items: $32.00\nFinal Answer: $32.00"
+  },
+  {
+    "id": 22,
+    "question": "Victor visited the roastery and requested 3 1.5-pound sacks of Colombian coffee priced at $8.00 per pound. In addition, he bought 2 pounds of cocoa powder for $9.00 a pound. What was his total bill?",
+    "ground_truth": "54",
+    "generation": "1. The total weight of the coffee is 3 * 1.5 = 4.5 pounds.\n2. The cost of the coffee is 4.5 * $8.00 = $36.00.\n3. The cost of the cocoa powder is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total weight of the coffee is 3 * 1.5 = 4.5 pounds.\n2. The cost of the coffee is 4.5 * $8.00 = $36.00.\n3. The cost of the cocoa powder is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00"
+  },
+  {
+    "id": 23,
+    "question": "Wendy needed some tea, so he got 8 1/4-pound packets of matcha costing $16.00 per pound. Then, she picked up half a pound of rock sugar, which runs $10.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. First, convert 8 1/4 pounds to an improper fraction: 8 1/4 = 33/4 pounds.\n2. Multiply the weight of matcha by the price per pound: 33/4 * $16.00 = $132.00.\n3. Convert half a pound to a decimal: 1/2 = 0.5 pounds.\n4. Multiply the weight of rock sugar by the price per pound: 0.5 * $10.00 = $5.00.\n5. Add the cost of matcha and rock sugar: $132.00 + $5.00 = $137.00.\n\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of matcha: 8 * 1/4 = 2 pounds.\n2. Multiply the weight of matcha by the price per pound: 2 * $16.00 = $32.00.\n3. Convert half a pound to a decimal: 1/2 = 0.5 pounds.\n4. Multiply the weight of rock sugar by the price per pound: 0.5 * $10.00 = $5.00.\n5. Add the cost of matcha and rock sugar: $32.00 + $5.00 = $37.00.\n\nFinal Answer: $37.00"
+  },
+  {
+    "id": 24,
+    "question": "Shopping for the office, Xander grabbed 5 bags of French roast (weighing 1/2 pound each) at $14.00 per pound. Furthermore, he acquired 2.5 pounds of green tea blends priced at $6.00 per pound. How much money did he spend?",
+    "ground_truth": "50",
+    "generation": "1. Total weight of French roast is 5 * 1/2 = 2.5 pounds.\n2. Cost of French roast is 2.5 * $14.00 = $35.00.\n3. Cost of green tea blends is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total weight of French roast is 5 * 1/2 = 2.5 pounds.\n2. Cost of French roast is 2.5 * $14.00 = $35.00.\n3. Cost of green tea blends is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00"
+  },
+  {
+    "id": 25,
+    "question": "For a cafe startup, Yara bought 2 3/4-pound premium Ethiopian blends with a price tag of $20.00 a pound. Along with that, she bought 1.5 pounds of hazelnut syrup base for $12.00 per pound. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of the Ethiopian blends: 2.75 pounds * $20.00/pound = $55.00\n2. Calculate the cost of the hazelnut syrup base: 1.5 pounds * $12.00/pound = $18.00\n3. Add the costs of the Ethiopian blends and the hazelnut syrup base: $55.00 + $18.00 = $73.00\n4. The total expense is the sum of the costs: $73.00\nFinal Answer: $73.00",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the Ethiopian blends: 2 * 0.75 pounds * $20.00/pound = $30.00\n2. Calculate the cost of the hazelnut syrup base: 1.5 pounds * $12.00/pound = $18.00\n3. Add the costs of the Ethiopian blends and the hazelnut syrup base: $30.00 + $18.00 = $48.00\n4. The total expense is the sum of the costs: $48.00\nFinal Answer: $48.00"
+  },
+  {
+    "id": 26,
+    "question": "Zane asked the coffee shop for 6 1/2-pound decaf blends that cost $18.00/pound. He also asked for one and a quarter pounds of peppermint leaves that were $8.00 a pound. How much did he spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the cost of the decaf blend: 6.5 pounds * $18.00/pound = $117.00\n2. Next, calculate the cost of the peppermint leaves: 1.25 pounds * $8.00/pound = $10.00\n3. Add the cost of the decaf blend and the peppermint leaves: $117.00 + $10.00 = $127.00\n4. The total amount Zane spent is $127.00\nFinal Answer: $127.00",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the decaf blend: 6 * 0.5 pounds * $18.00/pound = $54.00\n2. Next, calculate the cost of the peppermint leaves: 1.25 pounds * $8.00/pound = $10.00\n3. Add the cost of the decaf blend and the peppermint leaves: $54.00 + $10.00 = $64.00\n4. The total amount Zane spent is $64.00\nFinal Answer: $64.00"
+  },
+  {
+    "id": 27,
+    "question": "At the tea house, Alice requested 4 1.5-pound tins of oolong tea for $10.00/pound. She also added half a pound of dried chamomile at $14.00 a pound. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. The cost of 4 tins of oolong tea is 4 * 1.5 = 6 pounds.\n2. The cost of 6 pounds of oolong tea at $10.00/pound is 6 * 10 = $60.00.\n3. The cost of half a pound of dried chamomile at $14.00 a pound is 0.5 * 14 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00.",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The cost of 4 tins of oolong tea is 4 * 1.5 = 6 pounds.\n2. The cost of 6 pounds of oolong tea at $10.00/pound is 6 * 10 = $60.00.\n3. The cost of half a pound of dried chamomile at $14.00 a pound is 0.5 * 14 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00."
+  },
+  {
+    "id": 28,
+    "question": "Bob visited the coffee market and purchased 10 1/4-pound bags of blonde roast, priced at $12.00 per pound. Afterwards, he bought 2 pounds of raw coffee cherries for $11.00 per pound. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. First, calculate the total weight of the blonde roast: 10 * 1.25 = 12.5 pounds\n2. Calculate the cost of the blonde roast: 12.5 * $12.00 = $150.00\n3. Calculate the cost of the raw coffee cherries: 2 * $11.00 = $22.00\n4. Add the cost of the blonde roast and the raw coffee cherries: $150.00 + $22.00 = $172.00\nFinal Answer: $172.00",
+    "pred_answer_masked": "172",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the blonde roast: 10 * 0.25 = 2.5 pounds\n2. Calculate the cost of the blonde roast: 2.5 * $12.00 = $30.00\n3. Calculate the cost of the raw coffee cherries: 2 * $11.00 = $22.00\n4. Add the cost of the blonde roast and the raw coffee cherries: $30.00 + $22.00 = $52.00\nFinal Answer: $52.00"
+  },
+  {
+    "id": 29,
+    "question": "Charlie needed some specialty drinks, so he got 2 1/2-pound bags of Kona coffee costing $22.00 per pound. Then, he picked up 3 pounds of instant coffee powder, which runs $7.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. Calculate the cost of the Kona coffee: 2.5 pounds * $22.00 per pound = $55.00\n2. Calculate the cost of the instant coffee powder: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of the Kona coffee and the instant coffee powder: $55.00 + $21.00 = $76.00\n4. The total amount spent is the sum from step 3: $76.00\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the Kona coffee: 2 * 0.5 pounds * $22.00 per pound = $22.00\n2. Calculate the cost of the instant coffee powder: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of the Kona coffee and the instant coffee powder: $22.00 + $21.00 = $43.00\n4. The total amount spent is the sum from step 3: $43.00\nFinal Answer: $43.00"
+  },
+  {
+    "id": 30,
+    "question": "Diana asked the barista for 4 3/4-pound bags of mocha beans that cost $12.00/pound. She also asked for a pound and a half of herbal fruit tea that was $16.00 a pound. How much did she spend?",
+    "ground_truth": "60",
+    "generation": "1. First, convert the mixed number to an improper fraction: 4 3/4 = (4*4 + 3)/4 = 19/4 pounds of mocha beans.\n2. Calculate the cost of the mocha beans: (19/4) * $12.00 = $57.00.\n3. Calculate the cost of the herbal fruit tea: (3/2) * $16.00 = $24.00.\n4. Add the costs of the mocha beans and the herbal fruit tea: $57.00 + $24.00 = $81.00.\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of mocha beans: 4 * 3/4 = 3 pounds.\n2. Calculate the cost of the mocha beans: 3 * $12.00 = $36.00.\n3. Calculate the cost of the herbal fruit tea: 1.5 * $16.00 = $24.00.\n4. Add the costs of the mocha beans and the herbal fruit tea: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00"
+  },
+  {
+    "id": 31,
+    "question": "Ethan asked the hardware clerk for 4 1/2-yard steel chains that cost $10.00/yard. He also asked for a yard and a half of copper wire that was $8.00 a yard. How much did he spend at the hardware store?",
+    "ground_truth": "32",
+    "generation": "1. First, calculate the cost of the steel chains: 4.5 yards * $10.00/yard = $45.00\n2. Then, calculate the cost of the copper wire: 1.5 yards * $8.00/yard = $12.00\n3. Add the cost of the steel chains and the copper wire: $45.00 + $12.00 = $57.00\n4. The total amount spent at the hardware store is $57.00\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the steel chains: 4 * 0.5 yards * $10.00/yard = $20.00\n2. Then, calculate the cost of the copper wire: 1.5 yards * $8.00/yard = $12.00\n3. Add the cost of the steel chains and the copper wire: $20.00 + $12.00 = $32.00\n4. The total amount spent at the hardware store is $32.00\nFinal Answer: $32.00"
+  },
+  {
+    "id": 32,
+    "question": "Fiona visited the home improvement store and requested 3 1.5-yard PVC pipes priced at $8.00 per yard. In addition, she bought 2 yards of nylon rope for $9.00 a yard. What was her total bill?",
+    "ground_truth": "54",
+    "generation": "1. First, calculate the total cost of the PVC pipes: 3 * 1.5 = 4.5 yards, then 4.5 * $8.00 = $36.00.\n2. Next, calculate the cost of the nylon rope: 2 * $9.00 = $18.00.\n3. Add the cost of the PVC pipes and the nylon rope: $36.00 + $18.00 = $54.00.\n4. The total bill is $54.00.",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, calculate the total cost of the PVC pipes: 3 * 1.5 = 4.5 yards, then 4.5 * $8.00 = $36.00.\n2. Next, calculate the cost of the nylon rope: 2 * $9.00 = $18.00.\n3. Add the cost of the PVC pipes and the nylon rope: $36.00 + $18.00 = $54.00.\n4. The total bill is $54.00."
+  },
+  {
+    "id": 33,
+    "question": "George needed some cables, so he got 8 1/4-yard heavy duty cords costing $16.00 per yard. Then, he picked up half a yard of aluminum tubing, which runs $10.00 a yard. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. First, convert the mixed number to an improper fraction: 8 1/4 = 33/4 yards.\n2. Multiply the number of yards of heavy duty cords by the cost per yard: 33/4 * $16.00 = $132.00.\n3. Convert the half yard of aluminum tubing to an improper fraction: 1/2 = 1/2 yards.\n4. Multiply the number of yards of aluminum tubing by the cost per yard: 1/2 * $10.00 = $5.00.\n5. Add the cost of the heavy duty cords and the aluminum tubing: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total length of heavy duty cords: 8 * 1/4 = 2 yards.\n2. Multiply the number of yards of heavy duty cords by the cost per yard: 2 * $16.00 = $32.00.\n3. Convert the half yard of aluminum tubing to an improper fraction: 1/2 = 1/2 yards.\n4. Multiply the number of yards of aluminum tubing by the cost per yard: 1/2 * $10.00 = $5.00.\n5. Add the cost of the heavy duty cords and the aluminum tubing: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 34,
+    "question": "Shopping for a DIY project, Hannah grabbed 5 pieces of lumber (measuring 1/2 yard each) at $14.00 per yard. Furthermore, she acquired 2.5 yards of rubber seal priced at $6.00 per yard. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. Calculate the total cost of lumber: 5 pieces * 1/2 yard = 2.5 yards, 2.5 yards * $14.00/yard = $35.00\n2. Calculate the total cost of rubber seal: 2.5 yards * $6.00/yard = $15.00\n3. Add the cost of lumber and rubber seal: $35.00 + $15.00 = $50.00\n4. The total amount spent is the sum of the costs: $50.00\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total cost of lumber: 5 pieces * 1/2 yard = 2.5 yards, 2.5 yards * $14.00/yard = $35.00\n2. Calculate the total cost of rubber seal: 2.5 yards * $6.00/yard = $15.00\n3. Add the cost of lumber and rubber seal: $35.00 + $15.00 = $50.00\n4. The total amount spent is the sum of the costs: $50.00\nFinal Answer: $50.00"
+  },
+  {
+    "id": 35,
+    "question": "For a plumbing fix, Ian bought 2 3/4-yard flexible hoses with a price tag of $20.00 a yard. Along with that, he bought 1.5 yards of insulation tape for $12.00 per yard. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Convert 2 3/4 yards to an improper fraction: 2 3/4 = 11/4 yards.\n2. Calculate the cost of the flexible hoses: (11/4) * $20.00 = $55.00.\n3. Calculate the cost of the insulation tape: 1.5 * $12.00 = $18.00.\n4. Add the costs of the flexible hoses and insulation tape: $55.00 + $18.00 = $73.00.\nFinal Answer: $73.00",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total length of the flexible hoses: 2 * 3/4 = 1.5 yards.\n2. Calculate the cost of the flexible hoses: 1.5 * $20.00 = $30.00.\n3. Calculate the cost of the insulation tape: 1.5 * $12.00 = $18.00.\n4. Add the costs of the flexible hoses and insulation tape: $30.00 + $18.00 = $48.00.\nFinal Answer: $48.00"
+  },
+  {
+    "id": 36,
+    "question": "Jane asked the hardware store for 6 1/2-yard vinyl strips that cost $18.00/yard. She also asked for one and a quarter yards of fiberglass mesh that were $8.00 a yard. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, convert the mixed number to an improper fraction: 6 1/2 = 13/2.\n2. Multiply the cost per yard by the total yards of vinyl: 18.00 * 13/2 = 117.00.\n3. Multiply the cost per yard by the total yards of fiberglass mesh: 8.00 * 5/4 = 10.00.\n4. Add the cost of the vinyl and the fiberglass mesh: 117.00 + 10.00 = 127.00.\nFinal Answer: 127.00",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total yards of vinyl strips: 6 * 1/2 = 3.\n2. Multiply the cost per yard by the total yards of vinyl: 18.00 * 3 = 54.00.\n3. Multiply the cost per yard by the total yards of fiberglass mesh: 8.00 * 1.25 = 10.00.\n4. Add the cost of the vinyl and the fiberglass mesh: 54.00 + 10.00 = 64.00.\nFinal Answer: 64.00"
+  },
+  {
+    "id": 37,
+    "question": "At the hardware depot, Kevin requested 4 1.5-yard wooden planks for $10.00/yard. He also added half a yard of chain-link fence at $14.00 a yard. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. The total cost of the wooden planks is 4 * 1.5 * $10.00 = $60.00.\n2. The total cost of the chain-link fence is 0.5 * $14.00 = $7.00.\n3. The total cost of the wooden planks and the chain-link fence is $60.00 + $7.00 = $67.00.\n4. The final bill is $67.00.",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the wooden planks is 4 * 1.5 * $10.00 = $60.00.\n2. The total cost of the chain-link fence is 0.5 * $14.00 = $7.00.\n3. The total cost of the wooden planks and the chain-link fence is $60.00 + $7.00 = $67.00.\n4. The final bill is $67.00."
+  },
+  {
+    "id": 38,
+    "question": "Laura visited the building supplies shop and purchased 10 1/4-yard copper pipes, priced at $12.00 per yard. Afterwards, she bought 2 yards of electrical wire for $11.00 per yard. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. Convert 10 1/4 yards to an improper fraction: 10 1/4 = 41/4 = 10.25 yards\n2. Calculate the cost of copper pipes: 10.25 yards * $12.00/yard = $123.00\n3. Calculate the cost of electrical wire: 2 yards * $11.00/yard = $22.00\n4. Add the cost of copper pipes and electrical wire: $123.00 + $22.00 = $145.00\nFinal Answer: $145.00",
+    "pred_answer_masked": "145",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total length of copper pipes: 10 * 1/4 = 2.5 yards\n2. Calculate the cost of copper pipes: 2.5 yards * $12.00/yard = $30.00\n3. Calculate the cost of electrical wire: 2 yards * $11.00/yard = $22.00\n4. Add the cost of copper pipes and electrical wire: $30.00 + $22.00 = $52.00\nFinal Answer: $52.00"
+  },
+  {
+    "id": 39,
+    "question": "Mike needed some outdoor gear, so he got 2 1/2-yard bungee cords costing $22.00 per yard. Then, he picked up 3 yards of canvas tarp, which runs $7.00 a yard. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. First, find the cost of the bungee cords: 2.5 yards * $22.00 per yard = $55.00\n2. Then, find the cost of the canvas tarp: 3 yards * $7.00 per yard = $21.00\n3. Add the cost of the bungee cords and the canvas tarp: $55.00 + $21.00 = $76.00\n4. The total amount spent is $76.00\nFinal Answer: $76",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, find the cost of the bungee cords: 2 * 0.5 yards * $22.00 per yard = $22.00\n2. Then, find the cost of the canvas tarp: 3 yards * $7.00 per yard = $21.00\n3. Add the cost of the bungee cords and the canvas tarp: $22.00 + $21.00 = $43.00\n4. The total amount spent is $43.00\nFinal Answer: $43"
+  },
+  {
+    "id": 40,
+    "question": "Nina asked the hardware clerk for 4 3/4-yard steel rods that cost $12.00/yard. She also asked for a yard and a half of plastic tubing that was $16.00 a yard. How much did she spend?",
+    "ground_truth": "60",
+    "generation": "1. Convert 4 3/4 yards to an improper fraction: 4 3/4 = (4*4 + 3)/4 = 19/4 yards.\n2. Multiply the number of steel rods by the cost per yard: (19/4) * $12.00 = $57.00.\n3. Multiply the number of plastic tubing by the cost per yard: (1.5) * $16.00 = $24.00.\n4. Add the cost of steel rods and plastic tubing: $57.00 + $24.00 = $81.00.\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total length of steel rods: 4 * 3/4 = 3 yards.\n2. Multiply the total length of steel rods by the cost per yard: 3 * $12.00 = $36.00.\n3. Multiply the number of plastic tubing by the cost per yard: 1.5 * $16.00 = $24.00.\n4. Add the cost of steel rods and plastic tubing: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00"
+  },
+  {
+    "id": 41,
+    "question": "Oscar asked the tailor for 4 1/2-yard silk cuts that cost $10.00/yard. He also asked for a yard and a half of cotton lining that was $8.00 a yard. How much did he spend at the fabric store?",
+    "ground_truth": "32",
+    "generation": "1. Calculate the cost of the silk cuts: 4.5 yards * $10.00/yard = $45.00\n2. Calculate the cost of the cotton lining: 1.5 yards * $8.00/yard = $12.00\n3. Add the cost of the silk cuts and the cotton lining: $45.00 + $12.00 = $57.00\n4. The total amount Oscar spent is the sum from step 3.\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the silk cuts: 4 * 0.5 yards * $10.00/yard = $20.00\n2. Calculate the cost of the cotton lining: 1.5 yards * $8.00/yard = $12.00\n3. Add the cost of the silk cuts and the cotton lining: $20.00 + $12.00 = $32.00\n4. The total amount Oscar spent is the sum from step 3.\nFinal Answer: $32.00"
+  },
+  {
+    "id": 42,
+    "question": "Paula visited the textile shop and requested 3 1.5-yard denim rolls priced at $8.00 per yard. In addition, she bought 2 yards of elastic band for $9.00 a yard. What was her total bill?",
+    "ground_truth": "54",
+    "generation": "1. The total length of the denim rolls is 3 * 1.5 = 4.5 yards.\n2. The cost of the denim rolls is 4.5 * $8.00 = $36.00.\n3. The cost of the elastic band is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total length of the denim rolls is 3 * 1.5 = 4.5 yards.\n2. The cost of the denim rolls is 4.5 * $8.00 = $36.00.\n3. The cost of the elastic band is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00"
+  },
+  {
+    "id": 43,
+    "question": "Quinn needed some trimmings, so he got 8 1/4-yard velvet ribbons costing $16.00 per yard. Then, he picked up half a yard of lace, which runs $10.00 a yard. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. Convert the mixed number to an improper fraction: 8 1/4 = (8 * 4 + 1) / 4 = 33 / 4 yards.\n2. Calculate the cost of the velvet ribbons: 33 / 4 * $16.00 = $132.00.\n3. Calculate the cost of the lace: 1 / 2 * $10.00 = $5.00.\n4. Add the costs of the velvet ribbons and the lace: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total length of the velvet ribbons: 8 * 1/4 = 2 yards.\n2. Calculate the cost of the velvet ribbons: 2 * $16.00 = $32.00.\n3. Calculate the cost of the lace: 1 / 2 * $10.00 = $5.00.\n4. Add the costs of the velvet ribbons and the lace: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 44,
+    "question": "Shopping for a costume, Rachel grabbed 5 pieces of linen (measuring 1/2 yard each) at $14.00 per yard. Furthermore, she acquired 2.5 yards of felt priced at $6.00 per yard. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. First, calculate the total yards of linen: 5 * 1/2 = 2.5 yards\n2. Then, calculate the cost of the linen: 2.5 * $14.00 = $35.00\n3. Next, calculate the cost of the felt: 2.5 * $6.00 = $15.00\n4. Finally, add the cost of the linen and the felt: $35.00 + $15.00 = $50.00\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, calculate the total yards of linen: 5 * 1/2 = 2.5 yards\n2. Then, calculate the cost of the linen: 2.5 * $14.00 = $35.00\n3. Next, calculate the cost of the felt: 2.5 * $6.00 = $15.00\n4. Finally, add the cost of the linen and the felt: $35.00 + $15.00 = $50.00\nFinal Answer: $50.00"
+  },
+  {
+    "id": 45,
+    "question": "For a quilt project, Sam bought 2 3/4-yard printed fabrics with a price tag of $20.00 a yard. Along with that, he bought 1.5 yards of batting for $12.00 per yard. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of the printed fabrics: 2.75 yards * $20.00 per yard = $55.00\n2. Calculate the cost of the batting: 1.5 yards * $12.00 per yard = $18.00\n3. Add the cost of the printed fabrics and the batting: $55.00 + $18.00 = $73.00\n4. The total expense is the sum calculated in step 3.\nFinal Answer: $73.00",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the printed fabrics: 2 * 0.75 yards * $20.00 per yard = $30.00\n2. Calculate the cost of the batting: 1.5 yards * $12.00 per yard = $18.00\n3. Add the cost of the printed fabrics and the batting: $30.00 + $18.00 = $48.00\n4. The total expense is the sum calculated in step 3.\nFinal Answer: $48.00"
+  },
+  {
+    "id": 46,
+    "question": "Tina asked the fabric store for 6 1/2-yard chiffon sheets that cost $18.00/yard. She also asked for one and a quarter yards of tulle that were $8.00 a yard. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, convert 6 1/2 yards to an improper fraction: 6 1/2 = 13/2 yards.\n2. Multiply the cost per yard by the number of yards of chiffon: 18.00 * 13/2 = 18 * 13 / 2 = 234 / 2 = 117 dollars for chiffon.\n3. Multiply the cost per yard by the number of yards of tulle: 8.00 * 5/4 = 8 * 5 / 4 = 40 / 4 = 10 dollars for tulle.\n4. Add the cost of chiffon and tulle: 117 + 10 = 127 dollars.\n\nFinal Answer: 127",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total length of chiffon: 6 * 1/2 = 3 yards.\n2. Multiply the cost per yard by the number of yards of chiffon: 18.00 * 3 = 54 dollars for chiffon.\n3. Multiply the cost per yard by the number of yards of tulle: 8.00 * 1.25 = 10 dollars for tulle.\n4. Add the cost of chiffon and tulle: 54 + 10 = 64 dollars.\nFinal Answer: 64"
+  },
+  {
+    "id": 47,
+    "question": "At the haberdashery, Uma requested 4 1.5-yard wool cuts for $10.00/yard. She also added half a yard of suede at $14.00 a yard. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. Calculate the total cost of wool cuts: 4 * 1.5 = 6 yards, 6 * $10.00 = $60.00\n2. Calculate the cost of suede: 0.5 * $14.00 = $7.00\n3. Add the cost of wool cuts and suede: $60.00 + $7.00 = $67.00\n4. The final bill is $67.00\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total cost of wool cuts: 4 * 1.5 = 6 yards, 6 * $10.00 = $60.00\n2. Calculate the cost of suede: 0.5 * $14.00 = $7.00\n3. Add the cost of wool cuts and suede: $60.00 + $7.00 = $67.00\n4. The final bill is $67.00\nFinal Answer: $67.00"
+  },
+  {
+    "id": 48,
+    "question": "Victor visited the fabric market and purchased 10 1/4-yard organza patches, priced at $12.00 per yard. Afterwards, he bought 2 yards of faux fur for $11.00 per yard. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. Convert 10 1/4 yards to an improper fraction: 10 1/4 = 41/4 yards.\n2. Calculate the cost of 41/4 yards of organza: (41/4) * $12.00 = $123.00.\n3. Calculate the cost of 2 yards of faux fur: 2 * $11.00 = $22.00.\n4. Add the cost of organza and faux fur: $123.00 + $22.00 = $145.00.\nFinal Answer: $145.00",
+    "pred_answer_masked": "145",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total length of organza: 10 * 1/4 = 2.5 yards.\n2. Calculate the cost of 2.5 yards of organza: 2.5 * $12.00 = $30.00.\n3. Calculate the cost of 2 yards of faux fur: 2 * $11.00 = $22.00.\n4. Add the cost of organza and faux fur: $30.00 + $22.00 = $52.00.\nFinal Answer: $52.00"
+  },
+  {
+    "id": 49,
+    "question": "Wendy needed some materials for curtains, so she got 2 1/2-yard blackout fabrics costing $22.00 per yard. Then, she picked up 3 yards of sheer netting, which runs $7.00 a yard. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. Calculate the cost of the blackout fabrics: 2.5 yards * $22.00 per yard = $55.00\n2. Calculate the cost of the sheer netting: 3 yards * $7.00 per yard = $21.00\n3. Add the cost of the blackout fabrics and the sheer netting: $55.00 + $21.00 = $76.00\n4. The total amount spent is $76.00\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the blackout fabrics: 2 * 0.5 yards * $22.00 per yard = $22.00\n2. Calculate the cost of the sheer netting: 3 yards * $7.00 per yard = $21.00\n3. Add the cost of the blackout fabrics and the sheer netting: $22.00 + $21.00 = $43.00\n4. The total amount spent is $43.00\nFinal Answer: $43.00"
+  },
+  {
+    "id": 50,
+    "question": "Xander asked the tailor for 4 3/4-yard brocade pieces that cost $12.00/yard. He also asked for a yard and a half of satin that was $16.00 a yard. How much did he spend?",
+    "ground_truth": "60",
+    "generation": "1. Convert the mixed number to an improper fraction: 4 3/4 = (4*4 + 3)/4 = 19/4 yards.\n2. Calculate the cost of brocade: (19/4) * $12.00 = $57.00.\n3. Calculate the cost of satin: (3/2) * $16.00 = $24.00.\n4. Add the costs of brocade and satin: $57.00 + $24.00 = $81.00.\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total length of brocade: 4 * 3/4 = 3 yards.\n2. Calculate the cost of brocade: 3 * $12.00 = $36.00.\n3. Calculate the cost of satin: 1.5 * $16.00 = $24.00.\n4. Add the costs of brocade and satin: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00"
+  },
+  {
+    "id": 51,
+    "question": "Yara asked the confectioner for 4 1/2-pound fudge blocks that cost $10.00/pound. She also asked for a pound and a half of gummy worms that were $8.00 a pound. How much did she spend at the candy store?",
+    "ground_truth": "32",
+    "generation": "1. The cost of 4 1/2 pounds of fudge is 4.5 * $10.00 = $45.00.\n2. The cost of 1.5 pounds of gummy worms is 1.5 * $8.00 = $12.00.\n3. The total cost is $45.00 + $12.00 = $57.00.\n4. The total cost rounded to two decimal places is $57.00.\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The cost of 4 1/2-pound fudge blocks is 4 * 0.5 * $10.00 = $20.00.\n2. The cost of 1.5 pounds of gummy worms is 1.5 * $8.00 = $12.00.\n3. The total cost is $20.00 + $12.00 = $32.00.\n4. The total cost rounded to two decimal places is $32.00.\nFinal Answer: $32.00"
+  },
+  {
+    "id": 52,
+    "question": "Zane visited the sweet shop and requested 3 1.5-pound bags of jelly beans priced at $8.00 per pound. In addition, he bought 2 pounds of licorice for $9.00 a pound. What was his total bill?",
+    "ground_truth": "54",
+    "generation": "1. Calculate the total weight of jelly beans: 3 * 1.5 = 4.5 pounds\n2. Calculate the cost of jelly beans: 4.5 * $8.00 = $36.00\n3. Calculate the cost of licorice: 2 * $9.00 = $18.00\n4. Calculate the total bill: $36.00 + $18.00 = $54.00\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total weight of jelly beans: 3 * 1.5 = 4.5 pounds\n2. Calculate the cost of jelly beans: 4.5 * $8.00 = $36.00\n3. Calculate the cost of licorice: 2 * $9.00 = $18.00\n4. Calculate the total bill: $36.00 + $18.00 = $54.00\nFinal Answer: $54.00"
+  },
+  {
+    "id": 53,
+    "question": "Alice needed some treats, so she got 8 1/4-pound truffles costing $16.00 per pound. Then, she picked up half a pound of hard candies, which runs $10.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. Convert the weight of truffles to decimal: 8 1/4 = 8.25 pounds.\n2. Calculate the cost of truffles: 8.25 * $16.00 = $132.00.\n3. Calculate the cost of hard candies: 0.5 * $10.00 = $5.00.\n4. Add the cost of truffles and hard candies: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total weight of truffles: 8 * 1/4 = 2 pounds.\n2. Calculate the cost of truffles: 2 * $16.00 = $32.00.\n3. Calculate the cost of hard candies: 0.5 * $10.00 = $5.00.\n4. Add the cost of truffles and hard candies: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 54,
+    "question": "Shopping for a party, Bob grabbed 5 boxes of chocolates (weighing 1/2 pound each) at $14.00 per pound. Furthermore, he acquired 2.5 pounds of marshmallows priced at $6.00 per pound. How much money did he spend?",
+    "ground_truth": "50",
+    "generation": "1. Total weight of chocolates is 5 * 1/2 = 2.5 pounds.\n2. Cost of chocolates is 2.5 * $14.00 = $35.00.\n3. Total weight of marshmallows is 2.5 pounds.\n4. Cost of marshmallows is 2.5 * $6.00 = $15.00.\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total weight of chocolates is 5 * 1/2 = 2.5 pounds.\n2. Cost of chocolates is 2.5 * $14.00 = $35.00.\n3. Total weight of marshmallows is 2.5 pounds.\n4. Cost of marshmallows is 2.5 * $6.00 = $15.00.\nFinal Answer: $50.00"
+  },
+  {
+    "id": 55,
+    "question": "For a gift basket, Charlie bought 2 3/4-pound peanut brittle pieces with a price tag of $20.00 a pound. Along with that, he bought 1.5 pounds of caramel squares for $12.00 per pound. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of peanut brittle: 2.75 pounds * $20.00 per pound = $55.00\n2. Calculate the cost of caramel squares: 1.5 pounds * $12.00 per pound = $18.00\n3. Add the cost of peanut brittle and caramel squares: $55.00 + $18.00 = $73.00\n4. The total expense is the sum of the costs of both items.\nFinal Answer: $73.00",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of peanut brittle: 2 * 0.75 pounds * $20.00 per pound = $30.00\n2. Calculate the cost of caramel squares: 1.5 pounds * $12.00 per pound = $18.00\n3. Add the cost of peanut brittle and caramel squares: $30.00 + $18.00 = $48.00\n4. The total expense is the sum of the costs of both items.\nFinal Answer: $48.00"
+  },
+  {
+    "id": 56,
+    "question": "Diana asked the candy store for 6 1/2-pound marzipan fruits that cost $18.00/pound. She also asked for one and a quarter pounds of sour patches that were $8.00 a pound. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the cost of the marzipan fruits: 6.5 pounds * $18.00/pound = $117.00\n2. Next, calculate the cost of the sour patches: 1.25 pounds * $8.00/pound = $10.00\n3. Then, add the cost of the marzipan fruits and the sour patches: $117.00 + $10.00 = $127.00\n4. Finally, the total amount Diana spent is $127.00\nFinal Answer: $127.00",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the marzipan fruits: 6 * 0.5 pounds * $18.00/pound = $54.00\n2. Next, calculate the cost of the sour patches: 1.25 pounds * $8.00/pound = $10.00\n3. Then, add the cost of the marzipan fruits and the sour patches: $54.00 + $10.00 = $64.00\n4. Finally, the total amount Diana spent is $64.00\nFinal Answer: $64.00"
+  },
+  {
+    "id": 57,
+    "question": "At the confectionary, Ethan requested 4 1.5-pound rock candy sticks for $10.00/pound. He also added half a pound of dark chocolate bark at $14.00 a pound. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. The cost of 4 1.5-pound rock candy sticks is 4 * 1.5 = 6 pounds. \n2. The cost of 6 pounds of rock candy at $10.00/pound is 6 * 10 = $60.00.\n3. The cost of half a pound of dark chocolate bark at $14.00/pound is 0.5 * 14 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The cost of 4 1.5-pound rock candy sticks is 4 * 1.5 = 6 pounds. \n2. The cost of 6 pounds of rock candy at $10.00/pound is 6 * 10 = $60.00.\n3. The cost of half a pound of dark chocolate bark at $14.00/pound is 0.5 * 14 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00"
+  },
+  {
+    "id": 58,
+    "question": "Fiona visited the candy aisle and purchased 10 1/4-pound peppermint swirls, priced at $12.00 per pound. Afterwards, she bought 2 pounds of butterscotch drops for $11.00 per pound. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. First, calculate the cost of the peppermint swirls: 10 1/4 pounds * $12.00 per pound = 10.25 * $12.00 = $123.00\n2. Then, calculate the cost of the butterscotch drops: 2 pounds * $11.00 per pound = 2 * $11.00 = $22.00\n3. Add the cost of the peppermint swirls and the butterscotch drops: $123.00 + $22.00 = $145.00\n4. The total cost is $145.00\nFinal Answer: $145",
+    "pred_answer_masked": "145",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the peppermint swirls: 10 * 1/4 pounds * $12.00 per pound = 2.5 * $12.00 = $30.00\n2. Then, calculate the cost of the butterscotch drops: 2 pounds * $11.00 per pound = 2 * $11.00 = $22.00\n3. Add the cost of the peppermint swirls and the butterscotch drops: $30.00 + $22.00 = $52.00\n4. The total cost is $52.00\nFinal Answer: $52.00"
+  },
+  {
+    "id": 59,
+    "question": "George needed some movie snacks, so he got 2 1/2-pound chocolate covered almonds costing $22.00 per pound. Then, he picked up 3 pounds of popcorn kernels, which runs $7.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. Calculate the cost of chocolate covered almonds: 2.5 pounds * $22.00 per pound = $55.00\n2. Calculate the cost of popcorn kernels: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of chocolate covered almonds and popcorn kernels: $55.00 + $21.00 = $76.00\n4. The total amount spent is the sum from step 3.\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of chocolate covered almonds: 2 * 0.5 pounds * $22.00 per pound = $22.00\n2. Calculate the cost of popcorn kernels: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of chocolate covered almonds and popcorn kernels: $22.00 + $21.00 = $43.00\n4. The total amount spent is the sum from step 3.\nFinal Answer: $43.00"
+  },
+  {
+    "id": 60,
+    "question": "Hannah asked the confectioner for 4 3/4-pound nougat bars that cost $12.00/pound. She also asked for a pound and a half of taffy that was $16.00 a pound. How much did she spend?",
+    "ground_truth": "60",
+    "generation": "1. Convert the mixed number to an improper fraction: 4 3/4 = (4*4 + 3)/4 = 19/4 pounds of nougat.\n2. Calculate the cost of the nougat: (19/4) * $12.00 = (19 * $12.00) / 4 = $228.00 / 4 = $57.00.\n3. Calculate the cost of the taffy: 1.5 * $16.00 = $24.00.\n4. Add the cost of the nougat and taffy: $57.00 + $24.00 = $81.00.\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total weight of the nougat bars: 4 * 3/4 = 3 pounds.\n2. Calculate the cost of the nougat: 3 * $12.00 = $36.00.\n3. Calculate the cost of the taffy: 1.5 * $16.00 = $24.00.\n4. Add the cost of the nougat and taffy: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00"
+  },
+  {
+    "id": 61,
+    "question": "Ian asked the spice merchant for 4 1/2-ounce jars of saffron that cost $10.00/ounce. He also asked for an ounce and a half of paprika that was $8.00 an ounce. How much did he spend at the spice market?",
+    "ground_truth": "32",
+    "generation": "1. Calculate the cost of the saffron: 4.5 ounces * $10.00/ounce = $45.00\n2. Calculate the cost of the paprika: 1.5 ounces * $8.00/ounce = $12.00\n3. Add the cost of the saffron and paprika: $45.00 + $12.00 = $57.00\n4. The total cost is $57.00\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the saffron: 4 * 0.5 ounces * $10.00/ounce = $20.00\n2. Calculate the cost of the paprika: 1.5 ounces * $8.00/ounce = $12.00\n3. Add the cost of the saffron and paprika: $20.00 + $12.00 = $32.00\n4. The total cost is $32.00\nFinal Answer: $32.00"
+  },
+  {
+    "id": 62,
+    "question": "Jane visited the spice shop and requested 3 1.5-ounce packets of cinnamon sticks priced at $8.00 per ounce. In addition, she bought 2 ounces of nutmeg for $9.00 an ounce. What was her total bill?",
+    "ground_truth": "54",
+    "generation": "1. The total weight of the cinnamon packets is 3 * 1.5 = 4.5 ounces.\n2. The cost of the cinnamon packets is 4.5 * $8.00 = $36.00.\n3. The cost of the nutmeg is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total weight of the cinnamon packets is 3 * 1.5 = 4.5 ounces.\n2. The cost of the cinnamon packets is 4.5 * $8.00 = $36.00.\n3. The cost of the nutmeg is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00"
+  },
+  {
+    "id": 63,
+    "question": "Kevin needed some seasonings, so he got 8 1/4-ounce cardamom pods costing $16.00 per ounce. Then, he picked up half an ounce of cloves, which runs $10.00 an ounce. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. First, convert the cardamom pods' weight to a decimal: 8 1/4 = 8.25 ounces.\n2. Calculate the cost of the cardamom pods: 8.25 * $16.00 = $132.00.\n3. Calculate the cost of the cloves: 0.5 * $10.00 = $5.00.\n4. Add the cost of the cardamom pods and the cloves: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the cardamom pods: 8 * 1/4 = 2 ounces.\n2. Calculate the cost of the cardamom pods: 2 * $16.00 = $32.00.\n3. Calculate the cost of the cloves: 0.5 * $10.00 = $5.00.\n4. Add the cost of the cardamom pods and the cloves: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 64,
+    "question": "Shopping for a big recipe, Laura grabbed 5 containers of ginger powder (weighing 1/2 ounce each) at $14.00 per ounce. Furthermore, she acquired 2.5 ounces of dried oregano priced at $6.00 per ounce. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. Total weight of ginger powder is 5 * 0.5 = 2.5 ounces.\n2. Cost of ginger powder is 2.5 * $14.00 = $35.00.\n3. Cost of dried oregano is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total weight of ginger powder is 5 * 0.5 = 2.5 ounces.\n2. Cost of ginger powder is 2.5 * $14.00 = $35.00.\n3. Cost of dried oregano is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00"
+  },
+  {
+    "id": 65,
+    "question": "For a curry blend, Mike bought 2 3/4-ounce turmeric bags with a price tag of $20.00 an ounce. Along with that, he bought 1.5 ounces of cumin seeds for $12.00 per ounce. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the total ounces of turmeric: 2 * 3/4 = 1.5 + 2 = 3.5 ounces\n2. Calculate the cost of turmeric: 3.5 * $20.00 = $70.00\n3. Calculate the cost of cumin seeds: 1.5 * $12.00 = $18.00\n4. Calculate the total expense: $70.00 + $18.00 = $88.00\nFinal Answer: $88.00",
+    "pred_answer_masked": "88",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total ounces of turmeric: 2 * 3/4 = 1.5 ounces\n2. Calculate the cost of turmeric: 1.5 * $20.00 = $30.00\n3. Calculate the cost of cumin seeds: 1.5 * $12.00 = $18.00\n4. Calculate the total expense: $30.00 + $18.00 = $48.00\nFinal Answer: $48.00"
+  },
+  {
+    "id": 66,
+    "question": "Nina asked the spice vendor for 6 1/2-ounce vanilla bean bundles that cost $18.00/ounce. She also asked for one and a quarter ounces of star anise that were $8.00 an ounce. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the cost of the vanilla bean bundles: 6.5 ounces * $18.00/ounce = $117.00\n2. Next, calculate the cost of the star anise: 1.25 ounces * $8.00/ounce = $10.00\n3. Add the cost of the vanilla bean bundles and the star anise: $117.00 + $10.00 = $127.00\n4. The total amount spent is the sum from step 3.\nFinal Answer: $127.00",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the vanilla bean bundles: 6 * 0.5 ounces * $18.00/ounce = $54.00\n2. Next, calculate the cost of the star anise: 1.25 ounces * $8.00/ounce = $10.00\n3. Add the cost of the vanilla bean bundles and the star anise: $54.00 + $10.00 = $64.00\n4. The total amount spent is the sum from step 3.\nFinal Answer: $64.00"
+  },
+  {
+    "id": 67,
+    "question": "At the seasoning aisle, Oscar requested 4 1.5-ounce jars of ground pepper for $10.00/ounce. He also added half an ounce of coriander at $14.00 an ounce. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. Oscar requested 4 jars of ground pepper, each 1.5 ounces, so the total amount of pepper is 4 * 1.5 = 6 ounces.\n2. The cost of the pepper is 6 ounces * $10.00/ounce = $60.00.\n3. Oscar added half an ounce of coriander, so the total amount of coriander is 0.5 ounces.\n4. The cost of the coriander is 0.5 ounces * $14.00/ounce = $7.00.\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Oscar requested 4 jars of ground pepper, each 1.5 ounces, so the total amount of pepper is 4 * 1.5 = 6 ounces.\n2. The cost of the pepper is 6 ounces * $10.00/ounce = $60.00.\n3. Oscar added half an ounce of coriander, so the total amount of coriander is 0.5 ounces.\n4. The cost of the coriander is 0.5 ounces * $14.00/ounce = $7.00.\nFinal Answer: $67.00"
+  },
+  {
+    "id": 68,
+    "question": "Paula visited the spice market and purchased 10 1/4-ounce chili flakes, priced at $12.00 per ounce. Afterwards, she bought 2 ounces of garlic powder for $11.00 per ounce. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. The cost of 10 1/4-ounce chili flakes is 10 + 0.25 = 10.25 ounces. \n2. The cost of 10.25 ounces of chili flakes is 10.25 * $12.00 = $123.00.\n3. The cost of 2 ounces of garlic powder is 2 * $11.00 = $22.00.\n4. The total cost is $123.00 + $22.00 = $145.00.",
+    "pred_answer_masked": "145",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total weight of 10 1/4-ounce chili flakes is 10 * 0.25 = 2.5 ounces. \n2. The cost of 2.5 ounces of chili flakes is 2.5 * $12.00 = $30.00.\n3. The cost of 2 ounces of garlic powder is 2 * $11.00 = $22.00.\n4. The total cost is $30.00 + $22.00 = $52.00.\nFinal Answer: $52.00"
+  },
+  {
+    "id": 69,
+    "question": "Quinn needed some exotic flavors, so he got 2 1/2-ounce dried galangal pieces costing $22.00 per ounce. Then, he picked up 3 ounces of mustard seeds, which runs $7.00 an ounce. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. Calculate the cost of the dried galangal pieces: 2.5 ounces * $22.00/ounce = $55.00\n2. Calculate the cost of the mustard seeds: 3 ounces * $7.00/ounce = $21.00\n3. Add the cost of the galangal pieces and the mustard seeds: $55.00 + $21.00 = $76.00\n4. The total amount spent is the sum from step 3: $76.00\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the dried galangal pieces: 2 * 0.5 ounces * $22.00/ounce = $22.00\n2. Calculate the cost of the mustard seeds: 3 ounces * $7.00/ounce = $21.00\n3. Add the cost of the galangal pieces and the mustard seeds: $22.00 + $21.00 = $43.00\n4. The total amount spent is the sum from step 3: $43.00\nFinal Answer: $43.00"
+  },
+  {
+    "id": 70,
+    "question": "Rachel asked the spice merchant for 4 3/4-ounce fennel seed packets that cost $12.00/ounce. She also asked for an ounce and a half of thyme that was $16.00 an ounce. How much did she spend?",
+    "ground_truth": "60",
+    "generation": "1. First, find the total cost of the fennel seed packets: 4.75 ounces * $12.00/ounce = $57.00\n2. Then, find the total cost of the thyme: 1.5 ounces * $16.00/ounce = $24.00\n3. Add the cost of the fennel seed packets and the thyme to find the total cost: $57.00 + $24.00 = $81.00\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, find the total cost of the fennel seed packets: 4 * 0.75 ounces * $12.00/ounce = $36.00\n2. Then, find the total cost of the thyme: 1.5 ounces * $16.00/ounce = $24.00\n3. Add the cost of the fennel seed packets and the thyme to find the total cost: $36.00 + $24.00 = $60.00\nFinal Answer: $60.00"
+  },
+  {
+    "id": 71,
+    "question": "Sam asked the deli clerk for 4 1/2-pound blocks of cheddar that cost $10.00/pound. He also asked for a pound and a half of sliced turkey that was $8.00 a pound. How much did he spend at the deli?",
+    "ground_truth": "32",
+    "generation": "1. The total cost of the cheddar is 4.5 * 10 = 45 dollars.\n2. The total cost of the sliced turkey is 1.5 * 8 = 12 dollars.\n3. The total cost of the cheddar and the sliced turkey is 45 + 12 = 57 dollars.\n4. The total cost is 57 dollars.\n\nFinal Answer: 57",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the cheddar is 4 * 0.5 * 10 = 20 dollars.\n2. The total cost of the sliced turkey is 1.5 * 8 = 12 dollars.\n3. The total cost of the cheddar and the sliced turkey is 20 + 12 = 32 dollars.\n4. The total cost is 32 dollars.\n\nFinal Answer: 32"
+  },
+  {
+    "id": 72,
+    "question": "Tina visited the delicatessen and requested 3 1.5-pound hams priced at $8.00 per pound. In addition, she bought 2 pounds of provolone cheese for $9.00 a pound. What was her total bill?",
+    "ground_truth": "54",
+    "generation": "1. The total weight of the hams is 3 * 1.5 = 4.5 pounds.\n2. The cost of the hams is 4.5 * $8.00 = $36.00.\n3. The cost of the cheese is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total weight of the hams is 3 * 1.5 = 4.5 pounds.\n2. The cost of the hams is 4.5 * $8.00 = $36.00.\n3. The cost of the cheese is 2 * $9.00 = $18.00.\n4. The total bill is $36.00 + $18.00 = $54.00.\nFinal Answer: $54.00"
+  },
+  {
+    "id": 73,
+    "question": "Uma needed some sandwich fixings, so she got 8 1/4-pound salami rolls costing $16.00 per pound. Then, she picked up half a pound of Swiss cheese, which runs $10.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. Calculate the cost of the salami rolls: 8.25 * $16.00 = $132.00\n2. Calculate the cost of the Swiss cheese: 0.5 * $10.00 = $5.00\n3. Add the cost of the salami rolls and the Swiss cheese: $132.00 + $5.00 = $137.00\n4. The total amount spent is $137.00\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the salami rolls: 8 * 0.25 * $16.00 = $32.00\n2. Calculate the cost of the Swiss cheese: 0.5 * $10.00 = $5.00\n3. Add the cost of the salami rolls and the Swiss cheese: $32.00 + $5.00 = $37.00\n4. The total amount spent is $37.00\nFinal Answer: $37.00"
+  },
+  {
+    "id": 74,
+    "question": "Shopping for a picnic, Victor grabbed 5 pieces of roast beef (weighing 1/2 pound each) at $14.00 per pound. Furthermore, he acquired 2.5 pounds of potato salad priced at $6.00 per pound. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. Victor bought 5 pieces of roast beef, each weighing 1/2 pound, so the total weight of roast beef is 5 * 0.5 = 2.5 pounds.\n2. The cost of the roast beef is 2.5 pounds * $14.00 per pound = $35.00.\n3. The cost of the potato salad is 2.5 pounds * $6.00 per pound = $15.00.\n4. The total amount Victor spent is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Victor bought 5 pieces of roast beef, each weighing 1/2 pound, so the total weight of roast beef is 5 * 0.5 = 2.5 pounds.\n2. The cost of the roast beef is 2.5 pounds * $14.00 per pound = $35.00.\n3. The cost of the potato salad is 2.5 pounds * $6.00 per pound = $15.00.\n4. The total amount Victor spent is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00"
+  },
+  {
+    "id": 75,
+    "question": "For a charcuterie board, Wendy bought 2 3/4-pound prosciutto packs with a price tag of $20.00 a pound. Along with that, she bought 1.5 pounds of gouda for $12.00 per pound. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of prosciutto: 2.75 * 20 = 55\n2. Calculate the cost of gouda: 1.5 * 12 = 18\n3. Add the cost of prosciutto and gouda: 55 + 18 = 73\n4. The total expense is the sum from step 3.\nFinal Answer: 73",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of prosciutto: 2 * 0.75 * 20 = 30\n2. Calculate the cost of gouda: 1.5 * 12 = 18\n3. Add the cost of prosciutto and gouda: 30 + 18 = 48\n4. The total expense is the sum from step 3.\nFinal Answer: 48"
+  },
+  {
+    "id": 76,
+    "question": "Xander asked the deli for 6 1/2-pound pastrami cuts that cost $18.00/pound. He also asked for one and a quarter pounds of coleslaw that were $8.00 a pound. How much did he spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the total cost of the pastrami cuts: 6.5 * 18 = 117\n2. Next, calculate the total cost of the coleslaw: 1.25 * 8 = 10\n3. Then, add the cost of the pastrami cuts and the coleslaw: 117 + 10 = 127\n4. Finally, the total amount Xander spent is the sum from the previous step: 127\n\nFinal Answer: 127",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total cost of the pastrami cuts: 6 * 0.5 * 18 = 54\n2. Next, calculate the total cost of the coleslaw: 1.25 * 8 = 10\n3. Then, add the cost of the pastrami cuts and the coleslaw: 54 + 10 = 64\n4. Finally, the total amount Xander spent is the sum from the previous step: 64\n\nFinal Answer: 64"
+  },
+  {
+    "id": 77,
+    "question": "At the deli counter, Yara requested 4 1.5-pound mozzarella balls for $10.00/pound. She also added half a pound of olives at $14.00 a pound. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. The total weight of the mozzarella balls is 4 * 1.5 = 6 pounds.\n2. The cost of the mozzarella balls is 6 * $10.00 = $60.00.\n3. The cost of the half pound of olives is 0.5 * $14.00 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total weight of the mozzarella balls is 4 * 1.5 = 6 pounds.\n2. The cost of the mozzarella balls is 6 * $10.00 = $60.00.\n3. The cost of the half pound of olives is 0.5 * $14.00 = $7.00.\n4. The final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00"
+  },
+  {
+    "id": 78,
+    "question": "Zane visited the deli and purchased 10 1/4-pound bologna slices, priced at $12.00 per pound. Afterwards, he bought 2 pounds of macaroni salad for $11.00 per pound. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. First, convert the mixed number to an improper fraction: 10 1/4 = 41/4 pounds.\n2. Multiply the weight of bologna by the price per pound: 41/4 * $12.00 = $123.00.\n3. Multiply the weight of macaroni salad by the price per pound: 2 * $11.00 = $22.00.\n4. Add the cost of bologna and macaroni salad: $123.00 + $22.00 = $145.00.\nFinal Answer: $145.00",
+    "pred_answer_masked": "145",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the bologna slices: 10 * 1/4 = 2.5 pounds.\n2. Multiply the weight of bologna by the price per pound: 2.5 * $12.00 = $30.00.\n3. Multiply the weight of macaroni salad by the price per pound: 2 * $11.00 = $22.00.\n4. Add the cost of bologna and macaroni salad: $30.00 + $22.00 = $52.00.\nFinal Answer: $52.00"
+  },
+  {
+    "id": 79,
+    "question": "Alice needed some meats, so she got 2 1/2-pound pepperoni sticks costing $22.00 per pound. Then, she picked up 3 pounds of chicken salad, which runs $7.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. First, find the cost of the pepperoni sticks: 2.5 pounds * $22.00 per pound = $55.00\n2. Next, find the cost of the chicken salad: 3 pounds * $7.00 per pound = $21.00\n3. Now, add the cost of the pepperoni sticks and the chicken salad: $55.00 + $21.00 = $76.00\n4. The total amount spent is $76.00\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, find the cost of the pepperoni sticks: 2 * 0.5 pounds * $22.00 per pound = $22.00\n2. Next, find the cost of the chicken salad: 3 pounds * $7.00 per pound = $21.00\n3. Now, add the cost of the pepperoni sticks and the chicken salad: $22.00 + $21.00 = $43.00\n4. The total amount spent is $43.00\nFinal Answer: $43.00"
+  },
+  {
+    "id": 80,
+    "question": "Bob asked the deli clerk for 4 3/4-pound brie wheels that cost $12.00/pound. He also asked for a pound and a half of corned beef that was $16.00 a pound. How much did he spend?",
+    "ground_truth": "60",
+    "generation": "1. First, find the total weight of the brie wheels: 4 * 3/4 = 4 * 0.75 = 3 pounds. \n2. Then, find the total cost of the brie wheels: 3 * $12.00 = $36.00.\n3. Next, find the total cost of the corned beef: 1.5 * $16.00 = $24.00.\n4. Finally, add the cost of the brie wheels and the corned beef: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00",
+    "pred_answer_masked": "60",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, find the total weight of the brie wheels: 4 * 3/4 = 4 * 0.75 = 3 pounds. \n2. Then, find the total cost of the brie wheels: 3 * $12.00 = $36.00.\n3. Next, find the total cost of the corned beef: 1.5 * $16.00 = $24.00.\n4. Finally, add the cost of the brie wheels and the corned beef: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00"
+  },
+  {
+    "id": 81,
+    "question": "Charlie asked the farmer for 4 1/2-kilogram bags of apples that cost $10.00/kilogram. He also asked for a kilogram and a half of fresh strawberries that were $8.00 a kilogram. How much did he spend at the farm stand?",
+    "ground_truth": "32",
+    "generation": "1. First, calculate the cost of the apples: 4.5 kilograms * $10.00/kilogram = $45.00\n2. Next, calculate the cost of the strawberries: 1.5 kilograms * $8.00/kilogram = $12.00\n3. Then, add the cost of the apples and the strawberries: $45.00 + $12.00 = $57.00\n4. Finally, the total amount spent is the sum from the previous step: $57.00\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the apples: 4 * 0.5 kilograms * $10.00/kilogram = $20.00\n2. Next, calculate the cost of the strawberries: 1.5 kilograms * $8.00/kilogram = $12.00\n3. Then, add the cost of the apples and the strawberries: $20.00 + $12.00 = $32.00\n4. Finally, the total amount spent is the sum from the previous step: $32.00\nFinal Answer: $32.00"
+  },
+  {
+    "id": 82,
+    "question": "Diana visited the farmers market and requested 3 1.5-kilogram pumpkin squashes priced at $8.00 per kilogram. In addition, she bought 2 kilograms of sweet potatoes for $9.00 a kilogram. What was her total bill?",
+    "ground_truth": "54",
+    "generation": "1. Calculate the cost of the pumpkin squashes: 3 * 1.5 = 4.5 kilograms, 4.5 * $8.00 = $36.00\n2. Calculate the cost of the sweet potatoes: 2 * $9.00 = $18.00\n3. Add the cost of the pumpkin squashes and sweet potatoes: $36.00 + $18.00 = $54.00\n4. The total bill is the sum from step 3: $54.00\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the cost of the pumpkin squashes: 3 * 1.5 = 4.5 kilograms, 4.5 * $8.00 = $36.00\n2. Calculate the cost of the sweet potatoes: 2 * $9.00 = $18.00\n3. Add the cost of the pumpkin squashes and sweet potatoes: $36.00 + $18.00 = $54.00\n4. The total bill is the sum from step 3: $54.00\nFinal Answer: $54.00"
+  },
+  {
+    "id": 83,
+    "question": "Ethan needed some fresh greens, so he got 8 1/4-kilogram bundles of asparagus costing $16.00 per kilogram. Then, he picked up half a kilogram of spinach, which runs $10.00 a kilogram. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. First, convert the mixed number to an improper fraction: 8 1/4 = (8 * 4 + 1) / 4 = 33 / 4 kilograms of asparagus.\n2. Calculate the cost of the asparagus: 33 / 4 * $16.00 = $132.00.\n3. Calculate the cost of the spinach: 1 / 2 * $10.00 = $5.00.\n4. Add the cost of the asparagus and the spinach: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of asparagus: 8 * 1/4 = 2 kilograms.\n2. Calculate the cost of the asparagus: 2 * $16.00 = $32.00.\n3. Calculate the cost of the spinach: 1 / 2 * $10.00 = $5.00.\n4. Add the cost of the asparagus and the spinach: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 84,
+    "question": "Shopping for juicing, Fiona grabbed 5 bags of oranges (weighing 1/2 kilogram each) at $14.00 per kilogram. Furthermore, she acquired 2.5 kilograms of carrots priced at $6.00 per kilogram. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. Total weight of oranges is 5 * 0.5 = 2.5 kilograms.\n2. Cost of oranges is 2.5 * $14.00 = $35.00.\n3. Cost of carrots is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total weight of oranges is 5 * 0.5 = 2.5 kilograms.\n2. Cost of oranges is 2.5 * $14.00 = $35.00.\n3. Cost of carrots is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00"
+  },
+  {
+    "id": 85,
+    "question": "For a fruit salad, George bought 2 3/4-kilogram melons with a price tag of $20.00 a kilogram. Along with that, he bought 1.5 kilograms of grapes for $12.00 per kilogram. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of the melons: 2.75 kg * $20.00/kg = $55.00\n2. Calculate the cost of the grapes: 1.5 kg * $12.00/kg = $18.00\n3. Add the cost of the melons and grapes: $55.00 + $18.00 = $73.00\n4. The total expense is the sum of the costs of the melons and grapes.\nFinal Answer: $73.00",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the melons: 2 * 0.75 kg * $20.00/kg = $30.00\n2. Calculate the cost of the grapes: 1.5 kg * $12.00/kg = $18.00\n3. Add the cost of the melons and grapes: $30.00 + $18.00 = $48.00\n4. The total expense is the sum of the costs of the melons and grapes.\nFinal Answer: $48.00"
+  },
+  {
+    "id": 86,
+    "question": "Hannah asked the farm vendor for 6 1/2-kilogram baskets of peaches that cost $18.00/kilogram. She also asked for one and a quarter kilograms of cherries that were $8.00 a kilogram. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the cost of the peaches: 6.5 kg * $18.00/kg = $117.00\n2. Then, calculate the cost of the cherries: 1.25 kg * $8.00/kg = $10.00\n3. Add the cost of the peaches and the cherries: $117.00 + $10.00 = $127.00\n4. The total cost is $127.00\nFinal Answer: $127",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the peaches: 6 * 0.5 kg * $18.00/kg = $54.00\n2. Then, calculate the cost of the cherries: 1.25 kg * $8.00/kg = $10.00\n3. Add the cost of the peaches and the cherries: $54.00 + $10.00 = $64.00\n4. The total cost is $64.00\nFinal Answer: $64.00"
+  },
+  {
+    "id": 87,
+    "question": "At the produce stand, Ian requested 4 1.5-kilogram sacks of onions for $10.00/kilogram. He also added half a kilogram of garlic at $14.00 a kilogram. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. Calculate the total weight of onions: 4 sacks * 1.5 kilograms/sack = 6 kilograms\n2. Calculate the cost of onions: 6 kilograms * $10.00/kilogram = $60.00\n3. Calculate the cost of garlic: 0.5 kilograms * $14.00/kilogram = $7.00\n4. Calculate the final bill: $60.00 + $7.00 = $67.00\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total weight of onions: 4 sacks * 1.5 kilograms/sack = 6 kilograms\n2. Calculate the cost of onions: 6 kilograms * $10.00/kilogram = $60.00\n3. Calculate the cost of garlic: 0.5 kilograms * $14.00/kilogram = $7.00\n4. Calculate the final bill: $60.00 + $7.00 = $67.00\nFinal Answer: $67.00"
+  },
+  {
+    "id": 88,
+    "question": "Jane visited the local farm and purchased 10 1/4-kilogram tomato punnets, priced at $12.00 per kilogram. Afterwards, she bought 2 kilograms of bell peppers for $11.00 per kilogram. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. First, calculate the total weight of the tomato punnets: 10 * 1.25 = 12.5 kilograms.\n2. Then, calculate the cost of the tomato punnets: 12.5 * $12.00 = $150.00.\n3. Next, calculate the cost of the bell peppers: 2 * $11.00 = $22.00.\n4. Finally, add the cost of the tomato punnets and the bell peppers: $150.00 + $22.00 = $172.00.\nFinal Answer: $172.00",
+    "pred_answer_masked": "172",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the tomato punnets: 10 * 1/4 = 2.5 kilograms.\n2. Then, calculate the cost of the tomato punnets: 2.5 * $12.00 = $30.00.\n3. Next, calculate the cost of the bell peppers: 2 * $11.00 = $22.00.\n4. Finally, add the cost of the tomato punnets and the bell peppers: $30.00 + $22.00 = $52.00.\nFinal Answer: $52.00"
+  },
+  {
+    "id": 89,
+    "question": "Kevin needed some root veggies, so he got 2 1/2-kilogram bags of beets costing $22.00 per kilogram. Then, he picked up 3 kilograms of russet potatoes, which runs $7.00 a kilogram. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. Calculate the cost of the beets: 2.5 kilograms * $22.00 per kilogram = $55.00\n2. Calculate the cost of the potatoes: 3 kilograms * $7.00 per kilogram = $21.00\n3. Add the cost of the beets and potatoes: $55.00 + $21.00 = $76.00\n4. The total amount spent is $76.00\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the beets: 2 * 0.5 kilograms * $22.00 per kilogram = $22.00\n2. Calculate the cost of the potatoes: 3 kilograms * $7.00 per kilogram = $21.00\n3. Add the cost of the beets and potatoes: $22.00 + $21.00 = $43.00\n4. The total amount spent is $43.00\nFinal Answer: $43.00"
+  },
+  {
+    "id": 90,
+    "question": "Laura asked the farmer for 4 3/4-kilogram heads of cabbage that cost $12.00/kilogram. She also asked for a kilogram and a half of broccoli that was $16.00 a kilogram. How much did she spend?",
+    "ground_truth": "60",
+    "generation": "1. First, find the cost of the cabbage: 4.75 kg * $12.00/kg = $56.50\n2. Then, find the cost of the broccoli: 1.5 kg * $16.00/kg = $24.00\n3. Add the cost of the cabbage and broccoli: $56.50 + $24.00 = $80.50\n4. The total cost is $80.50",
+    "pred_answer_masked": "80.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, find the total weight of the cabbage: 4 * 3/4 = 3 kg.\n2. Calculate the cost of the cabbage: 3 kg * $12.00/kg = $36.00\n3. Then, find the cost of the broccoli: 1.5 kg * $16.00/kg = $24.00\n4. Add the cost of the cabbage and broccoli: $36.00 + $24.00 = $60.00\n5. The total cost is $60.00\nFinal Answer: $60.00"
+  },
+  {
+    "id": 91,
+    "question": "Mike asked the butcher for 4 1/2-pound pork chops that cost $10.00/pound. He also asked for a pound and a half of ground beef that was $8.00 a pound. How much did he spend at the butcher's?",
+    "ground_truth": "32",
+    "generation": "1. First, calculate the cost of the pork chops: 4.5 pounds * $10.00/pound = $45.00\n2. Then, calculate the cost of the ground beef: 1.5 pounds * $8.00/pound = $12.00\n3. Add the cost of the pork chops and the ground beef: $45.00 + $12.00 = $57.00\n4. The total amount Mike spent at the butcher's is $57.00\nFinal Answer: $57.00",
+    "pred_answer_masked": "57",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the pork chops: 4 * 0.5 pounds * $10.00/pound = $20.00\n2. Then, calculate the cost of the ground beef: 1.5 pounds * $8.00/pound = $12.00\n3. Add the cost of the pork chops and the ground beef: $20.00 + $12.00 = $32.00\n4. The total amount Mike spent at the butcher's is $32.00\nFinal Answer: $32.00"
+  },
+  {
+    "id": 92,
+    "question": "Nina visited the meat market and requested 3 1.5-pound beef roasts priced at $8.00 per pound. In addition, she bought 2 pounds of Italian sausage for $9.00 a pound. What was her total bill?",
+    "ground_truth": "54",
+    "generation": "1. Calculate the total weight of the beef roasts: 3 * 1.5 = 4.5 pounds\n2. Calculate the cost of the beef roasts: 4.5 * $8.00 = $36.00\n3. Calculate the cost of the Italian sausage: 2 * $9.00 = $18.00\n4. Calculate the total bill: $36.00 + $18.00 = $54.00\nFinal Answer: $54.00",
+    "pred_answer_masked": "54",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total weight of the beef roasts: 3 * 1.5 = 4.5 pounds\n2. Calculate the cost of the beef roasts: 4.5 * $8.00 = $36.00\n3. Calculate the cost of the Italian sausage: 2 * $9.00 = $18.00\n4. Calculate the total bill: $36.00 + $18.00 = $54.00\nFinal Answer: $54.00"
+  },
+  {
+    "id": 93,
+    "question": "Oscar needed some barbecue meat, so he got 8 1/4-pound burger patties costing $16.00 per pound. Then, he picked up half a pound of bacon, which runs $10.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "37",
+    "generation": "1. First, convert the mixed number to an improper fraction: 8 1/4 = (8 * 4 + 1) / 4 = 33 / 4 pounds.\n2. Calculate the cost of the burger patties: 33 / 4 pounds * $16.00 per pound = $132.00.\n3. Calculate the cost of the bacon: 1 / 2 pound * $10.00 per pound = $5.00.\n4. Add the cost of the burger patties and the bacon: $132.00 + $5.00 = $137.00.\nFinal Answer: $137.00",
+    "pred_answer_masked": "137",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the burger patties: 8 * 1/4 = 2 pounds.\n2. Calculate the cost of the burger patties: 2 pounds * $16.00 per pound = $32.00.\n3. Calculate the cost of the bacon: 1 / 2 pound * $10.00 per pound = $5.00.\n4. Add the cost of the burger patties and the bacon: $32.00 + $5.00 = $37.00.\nFinal Answer: $37.00"
+  },
+  {
+    "id": 94,
+    "question": "Shopping for a cookout, Paula grabbed 5 pieces of lamb (weighing 1/2 pound each) at $14.00 per pound. Furthermore, she acquired 2.5 pounds of chicken thighs priced at $6.00 per pound. How much money did she spend?",
+    "ground_truth": "50",
+    "generation": "1. Total weight of lamb is 5 * 1/2 = 2.5 pounds.\n2. Cost of lamb is 2.5 * $14.00 = $35.00.\n3. Cost of chicken thighs is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total weight of lamb is 5 * 1/2 = 2.5 pounds.\n2. Cost of lamb is 2.5 * $14.00 = $35.00.\n3. Cost of chicken thighs is 2.5 * $6.00 = $15.00.\n4. Total cost is $35.00 + $15.00 = $50.00.\nFinal Answer: $50.00"
+  },
+  {
+    "id": 95,
+    "question": "For a family dinner, Quinn bought 2 3/4-pound veal cutlets with a price tag of $20.00 a pound. Along with that, he bought 1.5 pounds of pork ribs for $12.00 per pound. What is the total expense?",
+    "ground_truth": "48",
+    "generation": "1. Calculate the cost of the veal cutlets: 2 3/4 pounds * $20.00 per pound = (2 + 3/4) * 20 = (2 + 0.75) * 20 = 2.75 * 20 = $55.00\n2. Calculate the cost of the pork ribs: 1.5 pounds * $12.00 per pound = 1.5 * 12 = $18.00\n3. Add the cost of the veal cutlets and pork ribs: $55.00 + $18.00 = $73.00\n4. The total expense is $73.00",
+    "pred_answer_masked": "73",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the veal cutlets: 2 * 3/4 pounds * $20.00 per pound = 1.5 * 20 = $30.00\n2. Calculate the cost of the pork ribs: 1.5 pounds * $12.00 per pound = 1.5 * 12 = $18.00\n3. Add the cost of the veal cutlets and pork ribs: $30.00 + $18.00 = $48.00\n4. The total expense is $48.00\nFinal Answer: $48.00"
+  },
+  {
+    "id": 96,
+    "question": "Rachel asked the butcher for 6 1/2-pound sirloin steaks that cost $18.00/pound. She also asked for one and a quarter pounds of meatball mix that were $8.00 a pound. How much did she spend?",
+    "ground_truth": "64",
+    "generation": "1. First, calculate the cost of the sirloin steaks: 6.5 * 18 = 117\n2. Then, calculate the cost of the meatball mix: 1.25 * 8 = 10\n3. Now, add the cost of the sirloin steaks and the meatball mix: 117 + 10 = 127\n4. The total cost is 127 dollars.\n\nFinal Answer: 127",
+    "pred_answer_masked": "127",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the cost of the sirloin steaks: 6 * 0.5 * 18 = 54\n2. Then, calculate the cost of the meatball mix: 1.25 * 8 = 10\n3. Now, add the cost of the sirloin steaks and the meatball mix: 54 + 10 = 64\n4. The total cost is 64 dollars.\n\nFinal Answer: 64"
+  },
+  {
+    "id": 97,
+    "question": "At the meat counter, Sam requested 4 1.5-pound briskets for $10.00/pound. He also added half a pound of beef liver at $14.00 a pound. How much was the final bill?",
+    "ground_truth": "67",
+    "generation": "1. Total weight of briskets is 4 * 1.5 = 6 pounds.\n2. Total cost of briskets is 6 * $10.00 = $60.00.\n3. Total cost of beef liver is 0.5 * $14.00 = $7.00.\n4. Final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00",
+    "pred_answer_masked": "67",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total weight of briskets is 4 * 1.5 = 6 pounds.\n2. Total cost of briskets is 6 * $10.00 = $60.00.\n3. Total cost of beef liver is 0.5 * $14.00 = $7.00.\n4. Final bill is $60.00 + $7.00 = $67.00.\nFinal Answer: $67.00"
+  },
+  {
+    "id": 98,
+    "question": "Tina visited the local butcher and purchased 10 1/4-pound flank steaks, priced at $12.00 per pound. Afterwards, she bought 2 pounds of turkey breast for $11.00 per pound. What was the total cost?",
+    "ground_truth": "52",
+    "generation": "1. First, convert the mixed number to an improper fraction: 10 1/4 = 41/4 = 10.25 pounds.\n2. Calculate the cost of the flank steaks: 10.25 pounds * $12.00/pound = $123.00.\n3. Calculate the cost of the turkey breast: 2 pounds * $11.00/pound = $22.00.\n4. Add the costs of the flank steaks and the turkey breast: $123.00 + $22.00 = $145.00.\nFinal Answer: $145.00",
+    "pred_answer_masked": "145",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, calculate the total weight of the flank steaks: 10 * 1/4 = 2.5 pounds.\n2. Calculate the cost of the flank steaks: 2.5 pounds * $12.00/pound = $30.00.\n3. Calculate the cost of the turkey breast: 2 pounds * $11.00/pound = $22.00.\n4. Add the costs of the flank steaks and the turkey breast: $30.00 + $22.00 = $52.00.\nFinal Answer: $52.00"
+  },
+  {
+    "id": 99,
+    "question": "Uma needed some fancy cuts, so she got 2 1/2-pound filet mignons costing $22.00 per pound. Then, she picked up 3 pounds of stewing beef, which runs $7.00 a pound. Calculate the total amount spent.",
+    "ground_truth": "43",
+    "generation": "1. Calculate the cost of the filet mignons: 2.5 pounds * $22.00 per pound = $55.00\n2. Calculate the cost of the stewing beef: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of the filet mignons and the stewing beef: $55.00 + $21.00 = $76.00\n4. The total amount spent is the sum from step 3: $76.00\nFinal Answer: $76.00",
+    "pred_answer_masked": "76",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the cost of the filet mignons: 2 * 0.5 pounds * $22.00 per pound = $22.00\n2. Calculate the cost of the stewing beef: 3 pounds * $7.00 per pound = $21.00\n3. Add the cost of the filet mignons and the stewing beef: $22.00 + $21.00 = $43.00\n4. The total amount spent is the sum from step 3: $43.00\nFinal Answer: $43.00"
+  },
+  {
+    "id": 100,
+    "question": "Victor asked the butcher for 4 3/4-pound ribeye steaks that cost $12.00/pound. He also asked for a pound and a half of venison that was $16.00 a pound. How much did he spend?",
+    "ground_truth": "60",
+    "generation": "1. Convert the mixed number to an improper fraction: 4 3/4 = (4*4 + 3)/4 = 19/4 pounds.\n2. Calculate the cost of the ribeye steaks: (19/4) * $12.00 = $57.00.\n3. Calculate the cost of the venison: (1.5) * $16.00 = $24.00.\n4. Add the costs of the ribeye steaks and the venison: $57.00 + $24.00 = $81.00.\nFinal Answer: $81.00",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total weight of the ribeye steaks: 4 * 3/4 = 3 pounds.\n2. Calculate the cost of the ribeye steaks: 3 * $12.00 = $36.00.\n3. Calculate the cost of the venison: 1.5 * $16.00 = $24.00.\n4. Add the costs of the ribeye steaks and the venison: $36.00 + $24.00 = $60.00.\nFinal Answer: $60.00"
+  }
+]

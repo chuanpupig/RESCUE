@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "Sarah plans to sell all her collectibles and use the money to buy electronics. She has 20 comic books and she sells them for $10 each. She ends up buying 7 headphones for $20 each and has $10 left. How many comic books does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling comics = 20 × 10 = 200  \n2. Total money spent on headphones = 7 × 20 = 140  \n3. Total money left = 10  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling comics = 20 × 10 = 200  \n2. Total money spent on headphones = 7 × 20 = 140  \n3. Money left = 200 - 140 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold comics. Since each sells for $10, 50 ÷ 10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 2,
+    "question": "Mike plans to sell all his old gear and use the money to buy instruments. He has 15 baseball gloves and he sells them for $20 each. He ends up buying 4 guitars for $50 each and has $40 left. How many baseball gloves does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling gloves = 15 × 20 = 300  \n2. Total money spent on guitars = 4 × 50 = 200  \n3. Money left = 300 − 200 = 100, which is more than $40, so he must have sold all gloves  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling gloves = 15 × 20 = 300  \n2. Total money spent on guitars = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold gloves. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 3,
+    "question": "Emily plans to sell all her crafts and use the money to buy art supplies. She has 25 handmade bracelets and she sells them for $8 each. She ends up buying 10 paint sets for $15 each and has $10 left. How many handmade bracelets does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling bracelets = 25 × 8 = 200  \n2. Total money spent on paint sets = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling bracelets = 25 × 8 = 200  \n2. Total money spent on paint sets = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold bracelets. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 4,
+    "question": "David plans to sell all his vintage items and use the money to buy furniture. He has 10 pocket watches and he sells them for $30 each. He ends up buying 5 chairs for $40 each and has $40 left. How many pocket watches does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling pocket watches = 10 × $30 = $300  \n2. Total money spent on chairs = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from the initial amount, meaning he did not use all the money from selling watches.  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling pocket watches = 10 × $30 = $300  \n2. Total money spent on chairs = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold watches. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 5,
+    "question": "Emma plans to sell all her baked goods and use the money to buy ingredients. She has 18 fruit cakes and she sells them for $5 each. She ends up buying 3 bags of flour for $20 each and has $10 left. How many fruit cakes does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling cakes = 18 × 5 = 90  \n2. Total money spent on flour = 3 × 20 = 60  \n3. Money left = 90 − 60 = 30, which matches the $10 left, so all cakes were sold  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cakes = 18 × 5 = 90  \n2. Total money spent on flour = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold cakes. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 6,
+    "question": "Chris plans to sell all his hardware and use the money to buy power tools. He has 12 toolboxes and he sells them for $25 each. He ends up buying 4 drills for $60 each and has $10 left. How many toolboxes does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling toolboxes = 12 × 25 = 300  \n2. Total cost of drills = 4 × 60 = 240  \n3. Money left = 300 − 240 = 60, so 60 − 10 = 50 spent on other items  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling toolboxes = 12 × 25 = 300  \n2. Total cost of drills = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold toolboxes. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 7,
+    "question": "Jessica plans to sell all her accessories and use the money to buy cosmetics. She has 30 silk scarves and she sells them for $6 each. She ends up buying 8 lipsticks for $20 each and has $8 left. How many silk scarves does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from scarves = 30 × 6 = 180  \n2. Total money spent on lipsticks = 8 × 20 = 160  \n3. Money left = 180 − 160 = 20, but the question says she has $8 left, so she did not use all the money from the scarves.  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from scarves = 30 × 6 = 180  \n2. Total money spent on lipsticks = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold scarves. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 8,
+    "question": "Tom plans to sell all his farm produce and use the money to buy seeds. He has 16 baskets of apples and he sells them for $12 each. He ends up buying 5 seed packets for $30 each and has $6 left. How many baskets of apples does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling apples = 16 × 12 = 192  \n2. Total money spent on seeds = 5 × 30 = 150  \n3. Total money left = 192 - 150 = 42, which is not equal to 6, so the question is about how many baskets he still has, not how much money he has left.  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling apples = 16 × 12 = 192  \n2. Total money spent on seeds = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold apples. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 9,
+    "question": "Anna plans to sell all her antiques and use the money to buy home decor. She has 22 silver spoons and she sells them for $15 each. She ends up buying 6 vases for $40 each and has $15 left. How many silver spoons does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling spoons = 22 × 15 = 330  \n2. Total money spent on vases = 6 × 40 = 240  \n3. Money left = 330 − 240 = 90  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling spoons = 22 × 15 = 330  \n2. Total money spent on vases = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold spoons. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 10,
+    "question": "Robert plans to sell all his electronics and use the money to buy camera lenses. He has 14 smartwatches and he sells them for $40 each. He ends up buying 3 lenses for $100 each and has $20 left. How many smartwatches does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling smartwatches = 14 × 40 = 560  \n2. Total cost of lenses = 3 × 100 = 300  \n3. Total money spent and left = 300 + 20 = 320  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling smartwatches = 14 × 40 = 560  \n2. Total cost of lenses = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold smartwatches. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 11,
+    "question": "Lily plans to sell all her old clothes and use the money to buy shoes. She has 20 vintage shirts and she sells them for $10 each. She ends up buying 7 pairs of sneakers for $20 each and has $10 left. How many vintage shirts does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling shirts = 20 × $10 = $200  \n2. Total money spent on sneakers = 7 × $20 = $140  \n3. Money left = $200 - $140 - $10 = $50  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling shirts = 20 × $10 = $200  \n2. Total money spent on sneakers = 7 × $20 = $140  \n3. Money left = $200 - $140 = $60, but the problem states $10 left, so the remaining $60 - $10 = $50 must be from unsold shirts. Since each sells for $10, $50 ÷ $10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 12,
+    "question": "James plans to sell all his kitchenware and use the money to buy appliances. He has 15 ceramic bowls and he sells them for $20 each. He ends up buying 4 blenders for $50 each and has $40 left. How many ceramic bowls does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling bowls = 15 × 20 = 300  \n2. Total money spent on blenders = 4 × 50 = 200  \n3. Money left = 300 − 200 − 40 = 60  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling bowls = 15 × 20 = 300  \n2. Total money spent on blenders = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold bowls. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 13,
+    "question": "Olivia plans to sell all her plants and use the money to buy garden statues. She has 25 succulents and she sells them for $8 each. She ends up buying 10 small statues for $15 each and has $10 left. How many succulents does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling succulents = 25 × 8 = 200  \n2. Total money spent on statues = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling succulents = 25 × 8 = 200  \n2. Total money spent on statues = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold succulents. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 14,
+    "question": "Daniel plans to sell all his media and use the money to buy concert tickets. He has 10 vinyl records and he sells them for $30 each. He ends up buying 5 tickets for $40 each and has $40 left. How many vinyl records does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling vinyl records = 10 × $30 = $300  \n2. Total cost of concert tickets = 5 × $40 = $200  \n3. Remaining money = $300 - $200 - $40 = $60  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling vinyl records = 10 × $30 = $300  \n2. Total cost of concert tickets = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold vinyl records. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 15,
+    "question": "Sophia plans to sell all her jewelry and use the money to buy handbags. She has 18 crystal rings and she sells them for $5 each. She ends up buying 3 leather bags for $20 each and has $10 left. How many crystal rings does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling rings = 18 × 5 = 90  \n2. Total cost of bags = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but she has $10 left, so she spent 20  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling rings = 18 × 5 = 90  \n2. Total cost of bags = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold rings. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 16,
+    "question": "Matthew plans to sell all his textbooks and use the money to buy software. He has 12 math books and he sells them for $25 each. He ends up buying 4 premium software licenses for $60 each and has $10 left. How many math books does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling math books = 12 × 25 = 300  \n2. Total cost of software = 4 × 60 = 240  \n3. Money left = 300 − 240 − 10 = 50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling math books = 12 × 25 = 300  \n2. Total cost of software = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold math books. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 17,
+    "question": "Chloe plans to sell all her pet supplies and use the money to buy premium dog food. She has 30 dog collars and she sells them for $6 each. She ends up buying 8 large bags of food for $20 each and has $8 left. How many dog collars does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling collars = 30 × 6 = 180  \n2. Total money spent on food = 8 × 20 = 160  \n3. Total money left = 180 - 160 = 20, but she has $8 left, so 20 - 8 = 12 spent on other items  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling collars = 30 × 6 = 180  \n2. Total money spent on food = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold collars. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 18,
+    "question": "Andrew plans to sell all his model kits and use the money to buy display cases. He has 16 airplane models and he sells them for $12 each. He ends up buying 5 glass cases for $30 each and has $6 left. How many airplane models does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling airplane models = 16 × 12 = 192  \n2. Total cost of display cases = 5 × 30 = 150  \n3. Money left after buying cases = 192 − 150 = 42, which matches the $6 left, so 16 models are sold  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling airplane models = 16 × 12 = 192  \n2. Total cost of display cases = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold airplane models. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 19,
+    "question": "Mia plans to sell all her photography gear and use the money to buy lighting equipment. She has 22 tripods and she sells them for $15 each. She ends up buying 6 ring lights for $40 each and has $15 left. How many tripods does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from tripods = 22 × 15 = 330  \n2. Total cost of ring lights = 6 × 40 = 240  \n3. Total money spent and left = 240 + 15 = 255  \nFinal Answer: 22",
+    "pred_answer_masked": "22",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from tripods = 22 × 15 = 330  \n2. Total cost of ring lights = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold tripods. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 20,
+    "question": "Joshua plans to sell all his camping gear and use the money to buy hiking boots. He has 14 sleeping bags and he sells them for $40 each. He ends up buying 3 pairs of boots for $100 each and has $20 left. How many sleeping bags does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling sleeping bags = 14 × 40 = 560  \n2. Total cost of boots = 3 × 100 = 300  \n3. Money left after buying boots = 560 − 300 − 20 = 240  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling sleeping bags = 14 × 40 = 560  \n2. Total cost of boots = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold sleeping bags. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 21,
+    "question": "Kevin plans to sell all his sports equipment and use the money to buy gym passes. He has 20 basketballs and he sells them for $10 each. He ends up buying 7 monthly passes for $20 each and has $10 left. How many basketballs does he still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling basketballs = 20 × 10 = 200  \n2. Total money spent on gym passes = 7 × 20 = 140  \n3. Total money left = 10  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling basketballs = 20 × 10 = 200  \n2. Total money spent on gym passes = 7 × 20 = 140  \n3. Money left = 200 - 140 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold basketballs. Since each sells for $10, 50 ÷ 10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 22,
+    "question": "Rachel plans to sell all her board games and use the money to buy expansion packs. She has 15 strategy games and she sells them for $20 each. She ends up buying 4 expansions for $50 each and has $40 left. How many strategy games does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling strategy games = 15 × 20 = 300  \n2. Total money spent on expansions = 4 × 50 = 200  \n3. Total money left = 300 - 200 - 40 = 60  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling strategy games = 15 × 20 = 300  \n2. Total money spent on expansions = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold strategy games. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 23,
+    "question": "Ian plans to sell all his music CDs and use the money to buy band posters. He has 25 rock CDs and he sells them for $8 each. He ends up buying 10 rare posters for $15 each and has $10 left. How many rock CDs does he still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling rock CDs = 25 × 8 = 200  \n2. Total money spent on posters = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling rock CDs = 25 × 8 = 200  \n2. Total money spent on posters = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold rock CDs. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 24,
+    "question": "Fiona plans to sell all her party supplies and use the money to buy catering trays. She has 10 balloon kits and she sells them for $30 each. She ends up buying 5 food trays for $40 each and has $40 left. How many balloon kits does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling balloon kits = 10 × $30 = $300  \n2. Total money spent on food trays = 5 × $40 = $200  \n3. Money left = $300 - $200 - $40 = $60  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling balloon kits = 10 × $30 = $300  \n2. Total money spent on food trays = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold balloon kits. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 25,
+    "question": "George plans to sell all his comic books and use the money to buy action figures. He has 18 rare issues and he sells them for $5 each. He ends up buying 3 exclusive figures for $20 each and has $10 left. How many rare issues does he still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling comic books = 18 × 5 = 90  \n2. Total money spent on action figures = 3 × 20 = 60  \n3. Total money left = 90 - 60 - 10 = 20  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling comic books = 18 × 5 = 90  \n2. Total money spent on action figures = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold comic books. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 26,
+    "question": "Hannah plans to sell all her sewing patterns and use the money to buy premium fabrics. She has 12 dress patterns and she sells them for $25 each. She ends up buying 4 rolls of silk for $60 each and has $10 left. How many dress patterns does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling dress patterns = 12 × 25 = 300  \n2. Total money spent on silk rolls = 4 × 60 = 240  \n3. Total money left = 300 - 240 = 60, but she has $10 left, so she spent 50  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling dress patterns = 12 × 25 = 300  \n2. Total money spent on silk rolls = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold dress patterns. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 27,
+    "question": "Victor plans to sell all his desk accessories and use the money to buy mechanical keyboards. He has 30 mousepads and he sells them for $6 each. He ends up buying 8 keyboards for $20 each and has $8 left. How many mousepads does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from mousepads = 30 × 6 = 180  \n2. Total cost of keyboards = 8 × 20 = 160  \n3. Remaining money = 180 − 160 = 20  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from mousepads = 30 × 6 = 180  \n2. Total cost of keyboards = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold mousepads. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 28,
+    "question": "Wendy plans to sell all her potted plants and use the money to buy gardening tools. She has 16 orchids and she sells them for $12 each. She ends up buying 5 pruning shears for $30 each and has $6 left. How many orchids does she still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling orchids = 16 × 12 = 192  \n2. Total cost of pruning shears = 5 × 30 = 150  \n3. Money left = 192 − 150 = 42, which is not equal to 6, so the question is about how many orchids she still has, which is 16.  \nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling orchids = 16 × 12 = 192  \n2. Total cost of pruning shears = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold orchids. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 29,
+    "question": "Xavier plans to sell all his magic tricks and use the money to buy illusion books. He has 22 card decks and he sells them for $15 each. He ends up buying 6 hardcovers for $40 each and has $15 left. How many card decks does he still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling card decks = 22 × 15 = 330  \n2. Total cost of hardcovers = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, which is not equal to 15, so the question is about how many decks he still has, which is 0 since he sold all.  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling card decks = 22 × 15 = 330  \n2. Total cost of hardcovers = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold card decks. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 30,
+    "question": "Yara plans to sell all her winter gear and use the money to buy snowboards. She has 14 wool coats and she sells them for $40 each. She ends up buying 3 premium boards for $100 each and has $20 left. How many wool coats does she still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling coats = 14 × 40 = 560  \n2. Total money spent on snowboards = 3 × 100 = 300  \n3. Total money left = 560 - 300 - 20 = 240  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling coats = 14 × 40 = 560  \n2. Total money spent on snowboards = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold coats. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 31,
+    "question": "Zack plans to sell all his old posters and use the money to buy picture frames. He has 20 movie posters and he sells them for $10 each. He ends up buying 7 wooden frames for $20 each and has $10 left. How many movie posters does he still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling posters = 20 * 10 = 200  \n2. Total cost of frames = 7 * 20 = 140  \n3. Money left = 200 - 140 - 10 = 50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling posters = 20 × 10 = 200  \n2. Total cost of frames = 7 × 20 = 140  \n3. Money left = 200 - 140 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold posters. Since each sells for $10, 50 ÷ 10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 32,
+    "question": "Aaron plans to sell all his RC cars and use the money to buy drone batteries. He has 15 toy cars and he sells them for $20 each. He ends up buying 4 battery packs for $50 each and has $40 left. How many toy cars does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling cars = 15 × 20 = 300  \n2. Total money spent on battery packs = 4 × 50 = 200  \n3. Total money left = 300 - 200 = 100, but he has $40 left, so 100 - 40 = 60 spent on other items  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cars = 15 × 20 = 300  \n2. Total money spent on battery packs = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold toy cars. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 33,
+    "question": "Bella plans to sell all her stationary and use the money to buy fountain pens. She has 25 leather notebooks and she sells them for $8 each. He ends up buying 10 ink pens for $15 each and has $10 left. How many leather notebooks does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling notebooks = 25 × 8 = 200  \n2. Total money spent on pens = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling notebooks = 25 × 8 = 200  \n2. Total money spent on pens = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold notebooks. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 34,
+    "question": "Carter plans to sell all his fitness gear and use the money to buy protein powder. He has 10 kettlebells and he sells them for $30 each. He ends up buying 5 tubs of protein for $40 each and has $40 left. How many kettlebells does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling kettlebells = 10 × $30 = $300  \n2. Total money spent on protein powder = 5 × $40 = $200  \n3. Money left = $300 - $200 - $40 = $60 (not used for kettlebells)  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling kettlebells = 10 × $30 = $300  \n2. Total money spent on protein powder = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold kettlebells. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 35,
+    "question": "Daisy plans to sell all her old mugs and use the money to buy tea sets. She has 18 ceramic mugs and she sells them for $5 each. She ends up buying 3 porcelain sets for $20 each and has $10 left. How many ceramic mugs does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling mugs = 18 × 5 = 90  \n2. Total money spent on tea sets = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but she has $10 left, so 30 - 10 = 20 spent on tea sets  \nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling mugs = 18 × 5 = 90  \n2. Total money spent on tea sets = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold mugs. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 36,
+    "question": "Evan plans to sell all his fishing gear and use the money to buy a new boat motor. He has 12 fishing rods and he sells them for $25 each. He ends up buying 4 motor parts for $60 each and has $10 left. How many fishing rods does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling fishing rods = 12 × 25 = 300  \n2. Total money spent on motor parts = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, which matches the $10 left, so all fishing rods were sold.  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling fishing rods = 12 × 25 = 300  \n2. Total money spent on motor parts = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold fishing rods. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 37,
+    "question": "Faith plans to sell all her hair accessories and use the money to buy curling irons. She has 30 silk scrunchies and she sells them for $6 each. She ends up buying 8 styling irons for $20 each and has $8 left. How many silk scrunchies does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from scrunchies = 30 × 6 = 180  \n2. Total money spent on curling irons = 8 × 20 = 160  \n3. Total money left = 180 - 160 = 20, but she has $8 left, so she used 12 more  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from scrunchies = 30 × 6 = 180  \n2. Total money spent on curling irons = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold scrunchies. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 38,
+    "question": "Gavin plans to sell all his old laptops and use the money to buy mechanical parts. He has 16 broken laptops and he sells them for $12 each. He ends up buying 5 tool kits for $30 each and has $6 left. How many broken laptops does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling broken laptops = 16 × 12 = 192  \n2. Total money spent on tool kits = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling broken laptops = 16 × 12 = 192  \n2. Total money spent on tool kits = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold broken laptops. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 39,
+    "question": "Hazel plans to sell all her candles and use the money to buy essential oils. She has 22 scented candles and she sells them for $15 each. She ends up buying 6 oil diffusers for $40 each and has $15 left. How many scented candles does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling candles = 22 × 15 = 330  \n2. Total money spent on oil diffusers = 6 × 40 = 240  \n3. Total money left = 330 - 240 = 90  \nFinal Answer: 90",
+    "pred_answer_masked": "90",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling candles = 22 × 15 = 330  \n2. Total money spent on oil diffusers = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold candles. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 40,
+    "question": "Isaac plans to sell all his surfboards and use the money to buy wetsuits. He has 14 custom boards and he sells them for $40 each. He ends up buying 3 thermal wetsuits for $100 each and has $20 left. How many custom boards does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling surfboards = 14 × 40 = 560  \n2. Total cost of wetsuits = 3 × 100 = 300  \n3. Money left after buying wetsuits = 560 − 300 − 20 = 240  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling surfboards = 14 × 40 = 560  \n2. Total cost of wetsuits = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold custom boards. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 41,
+    "question": "Jade plans to sell all her baking pans and use the money to buy mixing bowls. She has 20 cake pans and she sells them for $10 each. She ends up buying 7 steel bowls for $20 each and has $10 left. How many cake pans does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling cake pans = 20 × 10 = 200  \n2. Total money spent on bowls = 7 × 20 = 140  \n3. Total money used = 140 + 10 = 150  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cake pans = 20 × 10 = 200  \n2. Total money spent on bowls = 7 × 20 = 140  \n3. Money left = 200 - 140 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold cake pans. Since each sells for $10, 50 ÷ 10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 42,
+    "question": "Kyle plans to sell all his old cameras and use the money to buy tripods. He has 15 film cameras and he sells them for $20 each. He ends up buying 4 carbon tripods for $50 each and has $40 left. How many film cameras does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling cameras = 15 × 20 = 300  \n2. Total money spent on tripods = 4 × 50 = 200  \n3. Total money left = 300 - 200 = 100, but he has $40 left, so 100 - 40 = 60 spent on other items  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cameras = 15 × 20 = 300  \n2. Total money spent on tripods = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold film cameras. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 43,
+    "question": "Luna plans to sell all her crystal stones and use the money to buy tarot decks. She has 25 amethyst stones and she sells them for $8 each. She ends up buying 10 oracle decks for $15 each and has $10 left. How many amethyst stones does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling amethyst stones = 25 × 8 = 200  \n2. Total money spent on oracle decks = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling amethyst stones = 25 × 8 = 200  \n2. Total money spent on oracle decks = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold amethyst stones. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 44,
+    "question": "Mason plans to sell all his old watches and use the money to buy leather straps. He has 10 silver watches and he sells them for $30 each. He ends up buying 5 luxury straps for $40 each and has $40 left. How many silver watches does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling watches = 10 × $30 = $300  \n2. Total money spent on straps = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, which is not relevant to the number of watches left  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling watches = 10 × $30 = $300  \n2. Total money spent on straps = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold watches. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 45,
+    "question": "Nora plans to sell all her enamel pins and use the money to buy display boards. She has 18 vintage pins and she sells them for $5 each. She ends up buying 3 cork boards for $20 each and has $10 left. How many vintage pins does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling pins = 18 × 5 = 90  \n2. Total cost of cork boards = 3 × 20 = 60  \n3. Money left = 90 − 60 − 10 = 20  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling pins = 18 × 5 = 90  \n2. Total cost of cork boards = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold pins. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 46,
+    "question": "Owen plans to sell all his woodworking tools and use the money to buy lumber. He has 12 hand saws and he sells them for $25 each. He ends up buying 4 oak planks for $60 each and has $10 left. How many hand saws does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Owen sells 12 hand saws at $25 each: 12 × 25 = 300  \n2. He spends $60 on 4 oak planks: 4 × 60 = 240  \n3. He has $10 left, so total money from selling saws is 240 + 10 = 250  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Owen sells 12 hand saws at $25 each: 12 × 25 = 300  \n2. He spends $60 on 4 oak planks: 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold hand saws. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 47,
+    "question": "Paige plans to sell all her makeup brushes and use the money to buy eyeshadow palettes. She has 30 fluffy brushes and she sells them for $6 each. She ends up buying 8 color palettes for $20 each and has $8 left. How many fluffy brushes does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling brushes = 30 × 6 = 180  \n2. Total money spent on palettes = 8 × 20 = 160  \n3. Total money left = 180 - 160 = 20  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling brushes = 30 × 6 = 180  \n2. Total money spent on palettes = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold brushes. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 48,
+    "question": "Wyatt plans to sell all his skateboard decks and use the money to buy truck sets. He has 16 maple decks and he sells them for $12 each. He ends up buying 5 titanium truck sets for $30 each and has $6 left. How many maple decks does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling maple decks = 16 × 12 = 192  \n2. Total money spent on truck sets = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling maple decks = 16 × 12 = 192  \n2. Total money spent on truck sets = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold maple decks. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 49,
+    "question": "Ruby plans to sell all her old records and use the money to buy a new turntable. She has 22 jazz albums and she sells them for $15 each. She ends up buying 6 speaker cables for $40 each and has $15 left. How many jazz albums does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling jazz albums = 22 × 15 = 330  \n2. Total money spent on speaker cables = 6 × 40 = 240  \n3. Total money left = 330 - 240 = 90  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling jazz albums = 22 × 15 = 330  \n2. Total money spent on speaker cables = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold jazz albums. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 50,
+    "question": "Silas plans to sell all his magic gathering cards and use the money to buy rare binders. He has 14 mythic cards and he sells them for $40 each. He ends up buying 3 premium binders for $100 each and has $20 left. How many mythic cards does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling mythic cards = 14 × 40 = 560  \n2. Total cost of binders = 3 × 100 = 300  \n3. Money left after buying binders = 560 - 300 - 20 = 240  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling mythic cards = 14 × 40 = 560  \n2. Total cost of binders = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold mythic cards. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 51,
+    "question": "Stella plans to sell all her puzzles and use the money to buy board game expansions. She has 20 landscape puzzles and she sells them for $10 each. She ends up buying 7 expansion boxes for $20 each and has $10 left. How many landscape puzzles does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling puzzles = 20 × $10 = $200  \n2. Total money spent on expansions = 7 × $20 = $140  \n3. Total money left = $200 - $140 - $10 = $50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling puzzles = 20 × $10 = $200  \n2. Total money spent on expansions = 7 × $20 = $140  \n3. Money left = $200 - $140 = $60, but the problem states $10 left, so the remaining $60 - $10 = $50 must be from unsold landscape puzzles. Since each sells for $10, $50 ÷ $10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 52,
+    "question": "Tristan plans to sell all his old coins and use the money to buy display albums. He has 15 silver coins and he sells them for $20 each. He ends up buying 4 velvet albums for $50 each and has $40 left. How many silver coins does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling silver coins = 15 × 20 = 300  \n2. Total cost of albums = 4 × 50 = 200  \n3. Money left = 300 − 200 = 100  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling silver coins = 15 × 20 = 300  \n2. Total cost of albums = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold silver coins. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 53,
+    "question": "Violet plans to sell all her old dresses and use the money to buy designer bags. She has 25 summer dresses and she sells them for $8 each. She ends up buying 10 mini bags for $15 each and has $10 left. How many summer dresses does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling dresses = 25 × 8 = 200  \n2. Total money spent on bags = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling dresses = 25 × 8 = 200  \n2. Total money spent on bags = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold summer dresses. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 54,
+    "question": "William plans to sell all his power tools and use the money to buy safety gear. He has 10 electric drills and he sells them for $30 each. He ends up buying 5 safety helmets for $40 each and has $40 left. How many electric drills does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling drills = 10 × $30 = $300  \n2. Total money spent on helmets = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, which is not relevant to the number of drills left  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling drills = 10 × $30 = $300  \n2. Total money spent on helmets = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold electric drills. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 55,
+    "question": "Zoe plans to sell all her knit scarves and use the money to buy yarn skeins. She has 18 wool scarves and she sells them for $5 each. She ends up buying 3 giant skeins for $20 each and has $10 left. How many wool scarves does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling scarves = 18 × 5 = 90  \n2. Total money spent on yarn = 3 × 20 = 60  \n3. Total money left = 90 - 60 - 10 = 20  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling scarves = 18 × 5 = 90  \n2. Total money spent on yarn = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold wool scarves. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 56,
+    "question": "Arthur plans to sell all his old novels and use the money to buy a digital reader. He has 12 hardcover books and he sells them for $25 each. He ends up buying 4 reader accessories for $60 each and has $10 left. How many hardcover books does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling hardcover books = 12 × 25 = 300  \n2. Total money spent on accessories = 4 × 60 = 240  \n3. Money left = 300 - 240 - 10 = 50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling hardcover books = 12 × 25 = 300  \n2. Total money spent on accessories = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold hardcover books. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 57,
+    "question": "Betty plans to sell all her hair clips and use the money to buy headbands. She has 30 pearl clips and she sells them for $6 each. She ends up buying 8 velvet headbands for $20 each and has $8 left. How many pearl clips does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling pearl clips = 30 × 6 = 180  \n2. Total cost of headbands = 8 × 20 = 160  \n3. Money left = 180 − 160 = 20, but the problem states she has $8 left, so the calculation is consistent with the given data.  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling pearl clips = 30 × 6 = 180  \n2. Total cost of headbands = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold pearl clips. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 58,
+    "question": "Caleb plans to sell all his old headphones and use the money to buy soundbars. He has 16 wired headphones and he sells them for $12 each. He ends up buying 5 compact soundbars for $30 each and has $6 left. How many wired headphones does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling headphones = 16 × 12 = 192  \n2. Total money spent on soundbars = 5 × 30 = 150  \n3. Remaining money = 192 - 150 = 42, but he has $6 left, so 42 - 6 = 36  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling headphones = 16 × 12 = 192  \n2. Total money spent on soundbars = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold wired headphones. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 59,
+    "question": "Doris plans to sell all her paintings and use the money to buy blank canvases. She has 22 watercolor pieces and she sells them for $15 each. She ends up buying 6 large canvases for $40 each and has $15 left. How many watercolor pieces does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling watercolor pieces = 22 × 15 = 330  \n2. Total cost of canvases = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling watercolor pieces = 22 × 15 = 330  \n2. Total cost of canvases = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold watercolor pieces. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 60,
+    "question": "Eli plans to sell all his antique clocks and use the money to buy pocket watches. He has 14 mantle clocks and he sells them for $40 each. He ends up buying 3 gold pocket watches for $100 each and has $20 left. How many mantle clocks does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling mantle clocks = 14 × 40 = 560  \n2. Total cost of pocket watches = 3 × 100 = 300  \n3. Total money spent and left = 300 + 20 = 320  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling mantle clocks = 14 × 40 = 560  \n2. Total cost of pocket watches = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold mantle clocks. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 61,
+    "question": "Flora plans to sell all her vintage maps and use the money to buy globes. She has 20 rolled maps and she sells them for $10 each. She ends up buying 7 antique globes for $20 each and has $10 left. How many rolled maps does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling maps = 20 maps × $10 = $200  \n2. Total cost of globes = 7 globes × $20 = $140  \n3. Money left = $200 - $140 - $10 = $50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling maps = 20 × $10 = $200  \n2. Total cost of globes = 7 × $20 = $140  \n3. Money left = $200 - $140 = $60, but the problem states $10 left, so the remaining $60 - $10 = $50 must be from unsold rolled maps. Since each sells for $10, $50 ÷ $10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 62,
+    "question": "Gus plans to sell all his old bicycles and use the money to buy e-bike conversion kits. He has 15 mountain bikes and he sells them for $20 each. He ends up buying 4 motor kits for $50 each and has $40 left. How many mountain bikes does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling mountain bikes = 15 × 20 = 300  \n2. Total money spent on motor kits = 4 × 50 = 200  \n3. Total money left = 300 - 200 - 40 = 60  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling mountain bikes = 15 × 20 = 300  \n2. Total money spent on motor kits = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold mountain bikes. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 63,
+    "question": "Helen plans to sell all her decorative pillows and use the money to buy throws. She has 25 velvet pillows and she sells them for $8 each. She ends up buying 10 knitted throws for $15 each and has $10 left. How many velvet pillows does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling pillows = 25 × 8 = 200  \n2. Total money spent on throws = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling pillows = 25 × 8 = 200  \n2. Total money spent on throws = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold velvet pillows. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 64,
+    "question": "Ivan plans to sell all his vintage radios and use the money to buy smart speakers. He has 10 wooden radios and he sells them for $30 each. He ends up buying 5 smart hubs for $40 each and has $40 left. How many wooden radios does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling radios = 10 × $30 = $300  \n2. Total money spent on smart hubs = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the question states $40 left, so the remaining $100 - $40 = $60 is not relevant to the number of radios.  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling radios = 10 × $30 = $300  \n2. Total money spent on smart hubs = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold wooden radios. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 65,
+    "question": "Joy plans to sell all her old recipe books and use the money to buy digital tablets. She has 18 thick cookbooks and she sells them for $5 each. She ends up buying 3 kitchen tablets for $20 each and has $10 left. How many thick cookbooks does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling cookbooks = 18 × 5 = 90  \n2. Total cost of tablets = 3 × 20 = 60  \n3. Remaining money = 90 - 60 = 30, but she has $10 left, so she spent 20  \nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cookbooks = 18 × 5 = 90  \n2. Total cost of tablets = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold thick cookbooks. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 66,
+    "question": "Karl plans to sell all his old keyboards and use the money to buy gaming mice. He has 12 membrane keyboards and he sells them for $25 each. He ends up buying 4 wireless mice for $60 each and has $10 left. How many membrane keyboards does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling keyboards = 12 × 25 = 300  \n2. Total money spent on mice = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but he has $10 left, so 60 - 10 = 50 spent on mice  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling keyboards = 12 × 25 = 300  \n2. Total money spent on mice = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold membrane keyboards. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 67,
+    "question": "Lily plans to sell all her craft beads and use the money to buy jewelry wire. She has 30 jars of beads and she sells them for $6 each. She ends up buying 8 rolls of wire for $20 each and has $8 left. How many jars of beads does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling beads = 30 jars × $6 = $180  \n2. Total money spent on wire = 8 rolls × $20 = $160  \n3. Total money left = $180 - $160 - $8 = $12  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling beads = 30 × $6 = $180  \n2. Total money spent on wire = 8 × $20 = $160  \n3. Money left = $180 - $160 = $20, but the problem states $8 left, so the remaining $20 - $8 = $12 must be from unsold jars of beads. Since each sells for $6, $12 ÷ $6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 68,
+    "question": "Max plans to sell all his old golf clubs and use the money to buy golf balls. He has 16 iron clubs and he sells them for $12 each. He ends up buying 5 boxes of balls for $30 each and has $6 left. How many iron clubs does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling iron clubs = 16 × 12 = 192  \n2. Total money spent on golf balls = 5 × 30 = 150  \n3. Total money left = 192 - 150 - 6 = 36  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling iron clubs = 16 × 12 = 192  \n2. Total money spent on golf balls = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold iron clubs. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 69,
+    "question": "Nina plans to sell all her old perfumes and use the money to buy scented lotions. She has 22 glass bottles and she sells them for $15 each. She ends up buying 6 pump lotions for $40 each and has $15 left. How many glass bottles does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling bottles = 22 × 15 = 330  \n2. Total money spent on lotions = 6 × 40 = 240  \n3. Total money left = 330 - 240 = 90, which is more than $15, so she must have sold all bottles  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling bottles = 22 × 15 = 330  \n2. Total money spent on lotions = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold glass bottles. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 70,
+    "question": "Oscar plans to sell all his heavy jackets and use the money to buy heated vests. He has 14 winter coats and he sells them for $40 each. He ends up buying 3 battery vests for $100 each and has $20 left. How many winter coats does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling coats = 14 × 40 = 560  \n2. Total cost of vests = 3 × 100 = 300  \n3. Money left = 560 - 300 - 20 = 240  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling coats = 14 × 40 = 560  \n2. Total cost of vests = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold winter coats. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 71,
+    "question": "Penny plans to sell all her old tote bags and use the money to buy leather backpacks. She has 20 canvas totes and she sells them for $10 each. She ends up buying 7 mini backpacks for $20 each and has $10 left. How many canvas totes does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling totes = 20 × $10 = $200  \n2. Total money spent on backpacks = 7 × $20 = $140  \n3. Total money left = $200 - $140 - $10 = $50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling totes = 20 × $10 = $200  \n2. Total money spent on backpacks = 7 × $20 = $140  \n3. Money left = $200 - $140 = $60, but the problem states $10 left, so the remaining $60 - $10 = $50 must be from unsold canvas totes. Since each sells for $10, $50 ÷ $10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 72,
+    "question": "Ray plans to sell all his old monitors and use the money to buy a curved display. He has 15 flat screens and he sells them for $20 each. He ends up buying 4 monitor arms for $50 each and has $40 left. How many flat screens does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling monitors: 15 × 20 = 300  \n2. Total money spent on monitor arms: 4 × 50 = 200  \n3. Money left: 300 − 200 = 100, but he has $40 left, so 100 − 40 = 60 spent on other items  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling monitors: 15 × 20 = 300  \n2. Total money spent on monitor arms: 4 × 50 = 200  \n3. Money left: 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold flat screens. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 73,
+    "question": "Rose plans to sell all her old sunglasses and use the money to buy contact lenses. She has 25 aviator glasses and she sells them for $8 each. She ends up buying 10 lens boxes for $15 each and has $10 left. How many aviator glasses does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling aviator glasses = 25 × 8 = 200  \n2. Total money spent on lens boxes = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, which matches the given $10 left, so all 25 glasses were sold  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling aviator glasses = 25 × 8 = 200  \n2. Total money spent on lens boxes = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold aviator glasses. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 74,
+    "question": "Seth plans to sell all his old sneakers and use the money to buy boots. He has 10 running shoes and he sells them for $30 each. He ends up buying 5 pair of boots for $40 each and has $40 left. How many running shoes does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling running shoes = 10 × $30 = $300  \n2. Total cost of boots = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold running shoes. Since each pair sells for $30, $60 ÷ $30 = 2 pairs.  \nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling running shoes = 10 × $30 = $300  \n2. Total cost of boots = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold running shoes. Since each pair sells for $30, $60 ÷ $30 = 2 pairs.  \nFinal Answer: 2"
+  },
+  {
+    "id": 75,
+    "question": "Tara plans to sell all her old phone cases and use the money to buy screen protectors. She has 18 silicone cases and she sells them for $5 each. She ends up buying 3 glass protectors for $20 each and has $10 left. How many silicone cases does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling silicone cases = 18 × 5 = 90  \n2. Total money spent on glass protectors = 3 × 20 = 60  \n3. Money left = 90 - 60 - 10 = 20  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling silicone cases = 18 × 5 = 90  \n2. Total money spent on glass protectors = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold silicone cases. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 76,
+    "question": "Uriel plans to sell all his old drum sticks and use the money to buy drum heads. He has 12 wooden sticks and he sells them for $25 each. He ends up buying 4 snare heads for $60 each and has $10 left. How many wooden sticks does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling sticks = 12 × 25 = 300  \n2. Total cost of drum heads = 4 × 60 = 240  \n3. Money left = 300 − 240 = 60, which is more than $10, so he must have sold all sticks  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling sticks = 12 × 25 = 300  \n2. Total cost of drum heads = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold wooden sticks. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 77,
+    "question": "Vera plans to sell all her old sketchbooks and use the money to buy copic markers. She has 30 spiral books and she sells them for $6 each. She ends up buying 8 marker sets for $20 each and has $8 left. How many spiral books does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling sketchbooks = 30 × 6 = 180  \n2. Total money spent on markers = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but she has $8 left, so 20 - 8 = 12 spent on other items  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling sketchbooks = 30 × 6 = 180  \n2. Total money spent on markers = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold spiral books. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 78,
+    "question": "Wade plans to sell all his old ties and use the money to buy cufflinks. He has 16 silk ties and he sells them for $12 each. He ends up buying 5 metal sets for $30 each and has $6 left. How many silk ties does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling ties = 16 × 12 = 192  \n2. Total money spent on cufflinks = 5 × 30 = 150  \n3. Total money left = 192 - 150 = 42  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling ties = 16 × 12 = 192  \n2. Total money spent on cufflinks = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold silk ties. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 79,
+    "question": "Xena plans to sell all her old yoga mats and use the money to buy resistance bands. She has 22 foam mats and she sells them for $15 each. She ends up buying 6 fabric bands for $40 each and has $15 left. How many foam mats does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling mats = 22 × 15 = 330  \n2. Total money spent on bands = 6 × 40 = 240  \n3. Total money left = 330 - 240 = 90, which is more than $15, so she must have sold all mats  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling mats = 22 × 15 = 330  \n2. Total money spent on bands = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold foam mats. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 80,
+    "question": "Yuri plans to sell all his old telescopes and use the money to buy binoculars. He has 14 brass telescopes and he sells them for $40 each. He ends up buying 3 hunting binoculars for $100 each and has $20 left. How many brass telescopes does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling telescopes = 14 × 40 = 560  \n2. Total cost of binoculars = 3 × 100 = 300  \n3. Total money spent and left = 300 + 20 = 320  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling telescopes = 14 × 40 = 560  \n2. Total cost of binoculars = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold brass telescopes. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 81,
+    "question": "Zara plans to sell all her old hats and use the money to buy beanies. She has 20 sun hats and she sells them for $10 each. She ends up buying 7 wool beanies for $20 each and has $10 left. How many sun hats does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling sun hats = 20 × $10 = $200  \n2. Total cost of wool beanies = 7 × $20 = $140  \n3. Money left = $200 - $140 = $60 (but this is not needed for the final answer)  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling sun hats = 20 × $10 = $200  \n2. Total cost of wool beanies = 7 × $20 = $140  \n3. Money left = $200 - $140 = $60, but the problem states $10 left, so the remaining $60 - $10 = $50 must be from unsold sun hats. Since each sells for $10, $50 ÷ $10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 82,
+    "question": "Alan plans to sell all his old backpacks and use the money to buy duffel bags. He has 15 school bags and he sells them for $20 each. He ends up buying 4 gym bags for $50 each and has $40 left. How many school bags does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling school bags = 15 × 20 = 300  \n2. Total money spent on gym bags = 4 × 50 = 200  \n3. Total money left = 300 - 200 - 40 = 60  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling school bags = 15 × 20 = 300  \n2. Total money spent on gym bags = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold school bags. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 83,
+    "question": "Beth plans to sell all her old belts and use the money to buy suspenders. She has 25 leather belts and she sells them for $8 each. She ends up buying 10 elastic sets for $15 each and has $10 left. How many leather belts does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling belts = 25 × 8 = 200  \n2. Total money spent on suspenders = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling belts = 25 × 8 = 200  \n2. Total money spent on suspenders = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold leather belts. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 84,
+    "question": "Cole plans to sell all his old action cameras and use the money to buy memory cards. He has 10 sports cameras and he sells them for $30 each. He ends up buying 5 SD cards for $40 each and has $40 left. How many sports cameras does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling cameras = 10 × $30 = $300  \n2. Total money spent on SD cards = 5 × $40 = $200  \n3. Remaining money = $300 - $200 = $100, but the question states he has $40 left, so the remaining $100 - $40 = $60 must be from the initial amount, meaning he did not use all the money.  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cameras = 10 × $30 = $300  \n2. Total money spent on SD cards = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold sports cameras. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 85,
+    "question": "Dawn plans to sell all her old water bottles and use the money to buy tumblers. She has 18 plastic bottles and she sells them for $5 each. She ends up buying 3 steel tumblers for $20 each and has $10 left. How many plastic bottles does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling bottles = 18 × 5 = 90  \n2. Total cost of tumblers = 3 × 20 = 60  \n3. Total money spent and left = 60 + 10 = 70  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling bottles = 18 × 5 = 90  \n2. Total cost of tumblers = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold plastic bottles. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 86,
+    "question": "Ezra plans to sell all his old vinyl figures and use the money to buy display shelves. He has 12 pop figures and he sells them for $25 each. He ends up buying 4 floating shelves for $60 each and has $10 left. How many pop figures does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling pop figures = 12 × 25 = 300  \n2. Total money spent on shelves = 4 × 60 = 240  \n3. Money left = 300 - 240 - 10 = 50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling pop figures = 12 × 25 = 300  \n2. Total money spent on shelves = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold pop figures. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 87,
+    "question": "Fern plans to sell all her old knitting needles and use the money to buy crochet hooks. She has 30 bamboo needles and she sells them for $6 each. She ends up buying 8 metal hooks for $20 each and has $8 left. How many bamboo needles does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling bamboo needles = 30 × 6 = 180  \n2. Total money spent on crochet hooks = 8 × 20 = 160  \n3. Total money left = 180 - 160 = 20, but she has $8 left, so she spent 160 - 8 = 152  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling bamboo needles = 30 × 6 = 180  \n2. Total money spent on crochet hooks = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold bamboo needles. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 88,
+    "question": "Gene plans to sell all his old board shorts and use the money to buy swim goggles. He has 16 beach shorts and he sells them for $12 each. He ends up buying 5 pro goggles for $30 each and has $6 left. How many beach shorts does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling shorts = 16 × 12 = 192  \n2. Total money spent on goggles = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling shorts = 16 × 12 = 192  \n2. Total money spent on goggles = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold beach shorts. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 89,
+    "question": "Hope plans to sell all her old tea cups and use the money to buy matcha whisks. She has 22 porcelain cups and she sells them for $15 each. She ends up buying 6 bamboo whisks for $40 each and has $15 left. How many porcelain cups does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling cups = 22 × 15 = 330  \n2. Total money spent on whisks = 6 × 40 = 240  \n3. Total money left = 330 - 240 = 90  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cups = 22 × 15 = 330  \n2. Total money spent on whisks = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold porcelain cups. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 90,
+    "question": "Jace plans to sell all his old gaming controllers and use the money to buy charging docks. He has 14 wireless pads and he sells them for $40 each. He ends up buying 3 dual docks for $100 each and has $20 left. How many wireless pads does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling wireless pads = 14 × 40 = 560  \n2. Total money spent on docks = 3 × 100 = 300  \n3. Total money left = 560 - 300 - 20 = 240  \nFinal Answer: 240",
+    "pred_answer_masked": "240",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling wireless pads = 14 × 40 = 560  \n2. Total money spent on docks = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold wireless pads. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  },
+  {
+    "id": 91,
+    "question": "Kira plans to sell all her old planners and use the money to buy gel pens. She has 20 spiral planners and she sells them for $10 each. She ends up buying 7 pen sets for $20 each and has $10 left. How many spiral planners does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling planners = 20 × $10 = $200  \n2. Total money spent on pens = 7 × $20 = $140  \n3. Money left = $200 - $140 - $10 = $50  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling planners = 20 × $10 = $200  \n2. Total money spent on pens = 7 × $20 = $140  \n3. Money left = $200 - $140 = $60, but the problem states $10 left, so the remaining $60 - $10 = $50 must be from unsold spiral planners. Since each sells for $10, $50 ÷ $10 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 92,
+    "question": "Leon plans to sell all his old microphones and use the money to buy boom arms. He has 15 studio mics and he sells them for $20 each. He ends up buying 4 desk arms for $50 each and has $40 left. How many studio mics does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling mics = 15 × 20 = 300  \n2. Total money spent on boom arms = 4 × 50 = 200  \n3. Total money left = 300 - 200 = 100, but he has $40 left, so 100 - 40 = 60 spent on other items  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling mics = 15 × 20 = 300  \n2. Total money spent on boom arms = 4 × 50 = 200  \n3. Money left = 300 - 200 = 100, but the problem states $40 left, so the remaining 100 - 40 = 60 must be from unsold studio mics. Since each sells for $20, 60 ÷ 20 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 93,
+    "question": "Macy plans to sell all her old flash drives and use the money to buy portable SSDs. She has 25 thumb drives and she sells them for $8 each. She ends up buying 10 mini SSDs for $15 each and has $10 left. How many thumb drives does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling thumb drives = 25 × 8 = 200  \n2. Total money spent on SSDs = 10 × 15 = 150  \n3. Total money left = 200 - 150 - 10 = 40  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling thumb drives = 25 × 8 = 200  \n2. Total money spent on SSDs = 10 × 15 = 150  \n3. Money left = 200 - 150 = 50, but the problem states $10 left, so the remaining 50 - 10 = 40 must be from unsold thumb drives. Since each sells for $8, 40 ÷ 8 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 94,
+    "question": "Neil plans to sell all his old pocket knives and use the money to buy sharpening stones. He has 10 folding knives and he sells them for $30 each. He ends up buying 5 whetstones for $40 each and has $40 left. How many folding knives does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling folding knives = 10 × $30 = $300  \n2. Total money spent on whetstones = 5 × $40 = $200  \n3. Money left = $300 - $200 - $40 = $60  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling folding knives = 10 × $30 = $300  \n2. Total money spent on whetstones = 5 × $40 = $200  \n3. Money left = $300 - $200 = $100, but the problem states $40 left, so the remaining $100 - $40 = $60 must be from unsold folding knives. Since each sells for $30, $60 ÷ $30 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 95,
+    "question": "Opal plans to sell all her old keychains and use the money to buy lanyards. She has 18 metal keyrings and she sells them for $5 each. She ends up buying 3 neck lanyards for $20 each and has $10 left. How many metal keyrings does she still have?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total money from selling keyrings = 18 × 5 = 90  \n2. Total cost of lanyards = 3 × 20 = 60  \n3. Remaining money = 90 - 60 = 30, but she has $10 left, so she spent 20  \nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling keyrings = 18 × 5 = 90  \n2. Total cost of lanyards = 3 × 20 = 60  \n3. Money left = 90 - 60 = 30, but the problem states $10 left, so the remaining 30 - 10 = 20 must be from unsold metal keyrings. Since each sells for $5, 20 ÷ 5 = 4.  \nFinal Answer: 4"
+  },
+  {
+    "id": 96,
+    "question": "Paul plans to sell all his old routers and use the money to buy mesh nodes. He single has 12 wifi boxes and he sells them for $25 each. He ends up buying 4 satellite nodes for $60 each and has $10 left. How many wifi boxes does he still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling wifi boxes = 12 × 25 = 300  \n2. Total money spent on satellite nodes = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but he has $10 left, so 60 - 10 = 50 spent on other items  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling wifi boxes = 12 × 25 = 300  \n2. Total money spent on satellite nodes = 4 × 60 = 240  \n3. Money left = 300 - 240 = 60, but the problem states $10 left, so the remaining 60 - 10 = 50 must be from unsold wifi boxes. Since each sells for $25, 50 ÷ 25 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 97,
+    "question": "Rita plans to sell all her old mousepads and use the money to buy wrist rests. She has 30 cloth pads and she sells them for $6 each. She ends up buying 8 gel rests for $20 each and has $8 left. How many cloth pads does she still have?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling cloth pads = 30 × 6 = 180  \n2. Total money spent on gel rests = 8 × 20 = 160  \n3. Total money left = 180 - 160 = 20, but she has $8 left, so 20 - 8 = 12 spent on other items  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cloth pads = 30 × 6 = 180  \n2. Total money spent on gel rests = 8 × 20 = 160  \n3. Money left = 180 - 160 = 20, but the problem states $8 left, so the remaining 20 - 8 = 12 must be from unsold cloth pads. Since each sells for $6, 12 ÷ 6 = 2.  \nFinal Answer: 2"
+  },
+  {
+    "id": 98,
+    "question": "Sean plans to sell all his old HDMI cables and use the money to buy display ports. He has 16 braided cables and he sells them for $12 each. He ends up buying 5 pro cables for $30 each and has $6 left. How many braided cables does he still have?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling cables = 16 × 12 = 192  \n2. Total money spent on pro cables = 5 × 30 = 150  \n3. Total money left = 192 − 150 = 42, but he has $6 left, so 42 − 6 = 36 spent on other items  \nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling cables = 16 × 12 = 192  \n2. Total money spent on pro cables = 5 × 30 = 150  \n3. Money left = 192 - 150 = 42, but the problem states $6 left, so the remaining 42 - 6 = 36 must be from unsold braided cables. Since each sells for $12, 36 ÷ 12 = 3.  \nFinal Answer: 3"
+  },
+  {
+    "id": 99,
+    "question": "Tess plans to sell all her old wall clocks and use the money to buy neon signs. She has 22 analog clocks and she sells them for $15 each. She ends up buying 6 led signs for $40 each and has $15 left. How many analog clocks does she still have?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling clocks = 22 × 15 = 330  \n2. Total money spent on signs = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling clocks = 22 × 15 = 330  \n2. Total money spent on signs = 6 × 40 = 240  \n3. Money left = 330 - 240 = 90, but the problem states $15 left, so the remaining 90 - 15 = 75 must be from unsold analog clocks. Since each sells for $15, 75 ÷ 15 = 5.  \nFinal Answer: 5"
+  },
+  {
+    "id": 100,
+    "question": "Hugo plans to sell all his old smart bulbs and use the money to buy led strips. He has 14 color bulbs and he sells them for $40 each. He ends up buying 3 light strips for $100 each and has $20 left. How many color bulbs does he still have?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total money from selling bulbs = 14 × 40 = 560  \n2. Total money spent on led strips = 3 × 100 = 300  \n3. Total money left = 560 - 300 - 20 = 240  \nFinal Answer: 240",
+    "pred_answer_masked": "240",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. Total money from selling bulbs = 14 × 40 = 560  \n2. Total money spent on led strips = 3 × 100 = 300  \n3. Money left = 560 - 300 = 260, but the problem states $20 left, so the remaining 260 - 20 = 240 must be from unsold color bulbs. Since each sells for $40, 240 ÷ 40 = 6.  \nFinal Answer: 6"
+  }
+]

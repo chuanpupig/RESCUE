@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "The actual road distance between the cities of Arvada and Belmar needs to be determined in miles. According to a regional map, every 1/4 inch of length corresponds to a real-world distance of 12 miles. If the two cities are separated by a gap of 2 3/4 inches on this map, how many miles apart are they in reality?",
+    "ground_truth": "132",
+    "generation": "1. Convert the mixed number 2 3/4 to an improper fraction: 2 3/4 = (2 * 4 + 3) / 4 = 11/4.\n2. Multiply the fraction by 1/4 to find the number of 1/4 inch units: (11/4) * (1/4) = 11/16.\n3. Multiply the result by 12 miles to find the real-world distance: (11/16) * 12 = (11 * 12) / 16 = 132 / 16.\n4. Simplify the fraction: 132 / 16 = 8.25.\n\nFinal Answer: 8.25",
+    "pred_answer_masked": "8.25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 2 3/4 to an improper fraction: 2 3/4 = (2 * 4 + 3) / 4 = 11/4.\n2. Divide the fraction by 1/4 to find the number of 1/4 inch units: (11/4) / (1/4) = 11.\n3. Multiply the result by 12 miles to find the real-world distance: 11 * 12 = 132.\n4. The real-world distance is 132 miles.\n\nFinal Answer: 132"
+  },
+  {
+    "id": 2,
+    "question": "An architect's blueprint utilizes a scale where 5 feet of actual length is equated to 1/2 inch. On this specific drawing, the lines designating the walls of the master bedroom and the living room are spaced 3 1/2 inches from each other. Calculate the true distance separating the walls in feet.",
+    "ground_truth": "35",
+    "generation": "1. Convert 3 1/2 inches to a decimal: 3.5 inches\n2. Since 5 feet is equated to 1/2 inch, find the ratio of inches to feet: 1/2 inch / 5 feet\n3. Multiply the ratio by the actual inches to find the equivalent feet: (1/2 inch / 5 feet) * 3.5 inches = 3.5 * (1/2) / 5 = 3.5 * 1 / 10 = 0.35 feet\n4. The true distance separating the walls in feet is 0.35 feet.",
+    "pred_answer_masked": "0.35",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 1/2 inches to a decimal: 3.5 inches\n2. Since 5 feet is equated to 1/2 inch, find the number of 1/2 inch units in 3.5 inches: 3.5 / 0.5 = 7 units\n3. Multiply the number of units by 5 feet to find the equivalent feet: 7 * 5 = 35 feet\n4. The true distance separating the walls in feet is 35 feet.\n\nFinal Answer: 35"
+  },
+  {
+    "id": 3,
+    "question": "To navigate the actual ocean distance between the islands of Koru and Lanai, a nautical chart is used which shrinks 15 nautical miles down to exactly 1/3 centimeter. Knowing the islands appear 4 1/3 centimeters apart on this chart, find the true gap between them in nautical miles.",
+    "ground_truth": "195",
+    "generation": "1. First, we need to find the actual distance represented by 1 centimeter on the chart. Since 15 nautical miles is represented by 1/3 centimeter, we multiply 15 by 3 to get the distance represented by 1 centimeter: 15 * 3 = 45 nautical miles.\n2. Now, we need to find the distance represented by 4 1/3 centimeters on the chart. We convert 4 1/3 to an improper fraction: 4 1/3 = 13/3. Then we multiply this by the distance represented by 1 centimeter: (13/3) * 45 = 13 * 15 = 195 nautical miles.\n3. However, we need to find the actual distance between the islands, not the distance represented on the chart. Since the chart shrinks the distance by 1/3, we need to multiply the chart distance by 3 to get the actual distance: 195 * 3 = 585 nautical miles.\n4. But we made a mistake in step 2. We should multiply 13/3 by 45, not 15. So we need to multiply 13 by 15 and then multiply by",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, we need to find the actual distance represented by 1 centimeter on the chart. Since 15 nautical miles is represented by 1/3 centimeter, we multiply 15 by 3 to get the distance represented by 1 centimeter: 15 * 3 = 45 nautical miles.\n2. Now, we need to find the distance represented by 4 1/3 centimeters on the chart. We convert 4 1/3 to an improper fraction: 4 1/3 = 13/3. Then we multiply this by the distance represented by 1 centimeter: (13/3) * 45 = 13 * 15 = 195 nautical miles.\n3. The true gap between them is 195 nautical miles.\n\nFinal Answer: 195"
+  },
+  {
+    "id": 4,
+    "question": "A 3/4 inch measure represents exactly 10 yards of physical bridge length on a scale model of a bridge. Between the two main support towers on this model, there is a span of 3 3/4 inches. What is the real-world distance, measured in yards, that separates the support towers?",
+    "ground_truth": "50",
+    "generation": "1. First, we need to find out how many yards 1 inch represents on the model. We can do this by dividing 10 yards by 3/4 inch. \n   10 yards / (3/4 inch) = 10 yards * (4/3 inch) = 40/3 yards/inch\n\n2. Now, we can find the real-world distance by multiplying the span of the model (3 3/4 inches) by the number of yards per inch (40/3 yards/inch).\n   3 3/4 inches = 15/4 inches\n   (15/4 inches) * (40/3 yards/inch) = (15/4) * (40/3) yards\n   = (15 * 40) / (4 * 3) yards\n   = 600 / 12 yards\n   = 50 yards\n\n3. We can simplify the fraction 600/12 by dividing both the numerator and the denominator by their greatest common divisor, which is 12.\n   600 / 12 = 50\n   12 / 12 = 1\n   50 / 1 = 50\n\n4. The real-world distance is 50 yards",
+    "pred_answer_masked": "50",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, we need to find out how many yards 1 inch represents on the model. We can do this by dividing 10 yards by 3/4 inch. \n   10 yards / (3/4 inch) = 10 yards * (4/3 inch) = 40/3 yards/inch\n\n2. Now, we can find the real-world distance by multiplying the span of the model (3 3/4 inches) by the number of yards per inch (40/3 yards/inch).\n   3 3/4 inches = 15/4 inches\n   (15/4 inches) * (40/3 yards/inch) = (15/4) * (40/3) yards\n   = (15 * 40) / (4 * 3) yards\n   = 600 / 12 yards\n   = 50 yards\n\n3. We can simplify the fraction 600/12 by dividing both the numerator and the denominator by their greatest common divisor, which is 12.\n   600 / 12 = 50\n   12 / 12 = 1\n   50 / 1 = 50\n\n4. The real-world distance is 50 yards\n\nFinal Answer: 50"
+  },
+  {
+    "id": 5,
+    "question": "A hiking trail guide indicates that 4 miles of actual walking distance translates to a 1/5 inch segment on the page. The campsites of Whispering Pines and Bear Creek are drawn 2 4/5 inches apart on the guide. How many miles will hikers actually have to walk between the campsites?",
+    "ground_truth": "56",
+    "generation": "1. First, convert the mixed number 2 4/5 to an improper fraction: 2 4/5 = (2 * 5 + 4)/5 = 14/5 inches.\n2. The actual walking distance for 1 inch is 4 miles, so for 14/5 inches, it is (14/5) * 4 miles.\n3. Multiply the fraction by 4: (14/5) * 4 = 56/5 miles.\n4. Simplify the fraction: 56/5 = 11.2 miles.\n\nFinal Answer: 11.2",
+    "pred_answer_masked": "11.2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, convert the mixed number 2 4/5 to an improper fraction: 2 4/5 = (2 * 5 + 4)/5 = 14/5 inches.\n2. The actual walking distance for 1/5 inch is 4 miles, so we must find how many 1/5 inch segments are in 14/5 inches: (14/5) / (1/5) = 14 segments.\n3. Multiply the number of segments by 4 miles: 14 * 4 = 56 miles.\n4. The actual distance is 56 miles.\n\nFinal Answer: 56"
+  },
+  {
+    "id": 6,
+    "question": "When examining a subway system map, the scale dictates that a 1/8 inch length covers 2 miles of actual track distance. The stations of Central and Uptown sit 1 5/8 inches apart on the document. Determine the real track distance separating these stations in miles.",
+    "ground_truth": "26",
+    "generation": "1. Convert the mixed number 1 5/8 to an improper fraction: 1 5/8 = (8 + 5)/8 = 13/8 inches.\n2. Multiply the scale factor (1/8 inch per 2 miles) by the actual length (13/8 inches) to find the real track distance: (1/8) * (13/8) = 13/64 miles.\n3. Convert the improper fraction to a mixed number for better understanding: 13/64 ≈ 0.203125 miles.\n4. Multiply the mixed number 1 5/8 by the scale factor (1/8 inch per 2 miles) to find the real track distance: (1 5/8) * (2/1/8) = (13/8) * (2/1/8) = 13/8 * 2/1 * 8/1 = 13 * 2 = 26/1 * 1/8 = 26/8 = 13/4 = 3 1/4 miles.\n\nHowever, the correct calculation is as follows:\n1. Convert the mixed number 1 5/8 to an improper fraction: 1",
+    "pred_answer_masked": "1",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 1 5/8 to an improper fraction: 1 5/8 = (8 + 5)/8 = 13/8 inches.\n2. Since the scale is 1/8 inch per 2 miles, we divide the map distance by 1/8 to find the number of units: (13/8) / (1/8) = 13 units.\n3. Multiply the number of units by the actual distance per unit (2 miles): 13 * 2 = 26 miles.\n4. The real track distance separating these stations is 26 miles.\n\nFinal Answer: 26"
+  },
+  {
+    "id": 7,
+    "question": "Real garden space is proportionally reduced on a landscape design plan so that every 3/8 inch mirrors 6 meters. If the distance measured between the oak tree and the fountain is 2 1/4 inches on the plan, how many meters actually lie between them?",
+    "ground_truth": "36",
+    "generation": "1. First, we need to find the ratio of inches to meters. We know that 3/8 inch is equal to 6 meters. \n   To find the ratio, we can multiply 3/8 by 6 to get 4.5 meters per 3/8 inch.\n\n2. Now, we need to convert 2 1/4 inches to a fraction. 2 1/4 is equal to 9/4 inches.\n\n3. To find the distance in meters, we can multiply the distance in inches by the ratio of meters per inch. \n   Multiply 9/4 by 4.5 to get 9/4 * 4.5 = 10.125 meters.\n\n4. The distance between the oak tree and the fountain is 10.125 meters.",
+    "pred_answer_masked": "10.125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, we need to find the ratio of meters per inch. We know that 3/8 inch is equal to 6 meters. \n   To find the meters per inch, we divide 6 by 3/8: 6 / (3/8) = 6 * (8/3) = 16 meters per inch.\n\n2. Now, we need to convert 2 1/4 inches to a fraction. 2 1/4 is equal to 9/4 inches.\n\n3. To find the distance in meters, we multiply the distance in inches by the ratio of meters per inch. \n   Multiply 9/4 by 16 to get 9/4 * 16 = 36 meters.\n\n4. The distance between the oak tree and the fountain is 36 meters.\n\nFinal Answer: 36"
+  },
+  {
+    "id": 8,
+    "question": "By referencing an aviation map, pilots know that 40 miles of actual flight distance corresponds to 2/3 inch of paper space. If the airports of Delta and Echo are located 4 2/3 inches apart on this map, what is the precise flight distance in miles between the airports?",
+    "ground_truth": "280",
+    "generation": "1. First, convert 4 2/3 inches to an improper fraction: 4 2/3 = (14/3) inches.\n2. Multiply the actual flight distance per inch by the total inches: (40 miles / (2/3 inch)) * (14/3 inches) = (40 * 3/2) * (14/3).\n3. Cancel out the common factor of 3: (40 * 1/2) * 14 = 20 * 14.\n4. Multiply 20 by 14: 20 * 14 = 280 miles.\nFinal Answer: 280",
+    "pred_answer_masked": "280",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, convert 4 2/3 inches to an improper fraction: 4 2/3 = (14/3) inches.\n2. Multiply the actual flight distance per inch by the total inches: (40 miles / (2/3 inch)) * (14/3 inches) = (40 * 3/2) * (14/3).\n3. Cancel out the common factor of 3: (40 * 1/2) * 14 = 20 * 14.\n4. Multiply 20 by 14: 20 * 14 = 280 miles.\n\nFinal Answer: 280"
+  },
+  {
+    "id": 9,
+    "question": "On a microscopic diagram, 20 micrometers of actual cell distance is scaled down to a 1/4 centimeter marking. The distance separating the nucleus and the cell membrane on this diagram measures 1 3/4 centimeters. How many micrometers apart are they inside the actual cell?",
+    "ground_truth": "140",
+    "generation": "1. The actual cell distance of 20 micrometers is scaled down to 1/4 centimeter, so we need to find the scaling factor. 1/4 centimeter is equal to 0.25 centimeters.\n2. To find the scaling factor, we divide the actual cell distance (20 micrometers) by the scaled-down distance (0.25 centimeters). However, we need to convert micrometers to centimeters first. 1 centimeter = 10,000 micrometers, so 20 micrometers = 0.002 centimeters. \n3. Now we can find the scaling factor: 0.002 centimeters / 0.25 centimeters = 0.008.\n4. The distance separating the nucleus and the cell membrane on the diagram is 1 3/4 centimeters, which is equal to 1.75 centimeters. To find the actual distance, we multiply the scaled-down distance by the scaling factor: 1.75 centimeters * 0.008 = 0.014 centimeters. Now we convert centimeters to micrometers: 0.014 centimeters * 10,000 micrometers/centimeter = 140 micrometers.",
+    "pred_answer_masked": "140",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The actual cell distance of 20 micrometers is scaled down to 1/4 centimeter, so we need to find the scaling factor. 1/4 centimeter is equal to 0.25 centimeters.\n2. To find the scaling factor, we divide the actual cell distance (20 micrometers) by the scaled-down distance (0.25 centimeters). However, we need to convert micrometers to centimeters first. 1 centimeter = 10,000 micrometers, so 20 micrometers = 0.002 centimeters. \n3. Now we can find the scaling factor: 0.002 centimeters / 0.25 centimeters = 0.008.\n4. The distance separating the nucleus and the cell membrane on the diagram is 1 3/4 centimeters, which is equal to 1.75 centimeters. To find the actual distance, we multiply the scaled-down distance by the scaling factor: 1.75 centimeters * 0.008 = 0.014 centimeters. Now we convert centimeters to micrometers: 0.014 centimeters * 10,000 micrometers/centimeter = 140 micrometers.\n\nFinal Answer: 140"
+  },
+  {
+    "id": 10,
+    "question": "A star chart establishes a visual scale where 10 light-years of actual space distance equals just 5/8 inch. The stars Sirius and Vega are placed exactly 3 1/8 inches away from one another on this chart. Find the true distance across space between the stars in light-years.",
+    "ground_truth": "50",
+    "generation": "1. Convert mixed number to improper fraction: 3 1/8 = 25/8\n2. Divide 5/8 inch by 10 light-years to find the scale: (5/8) / 10 = 5/80 = 1/16 light-years per inch\n3. Multiply the scale by the distance on the chart: (1/16) * (25/8) = 25/128 light-years\n4. Simplify the fraction: 25/128 light-years",
+    "pred_answer_masked": "128",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert mixed number to improper fraction: 3 1/8 = 25/8\n2. Divide 10 light-years by 5/8 inch to find the scale in light-years per inch: 10 / (5/8) = 10 * (8/5) = 16 light-years per inch\n3. Multiply the scale by the distance on the chart: 16 * (25/8) = 2 * 25 = 50 light-years\n4. The true distance is 50 light-years.\n\nFinal Answer: 50"
+  },
+  {
+    "id": 11,
+    "question": "A state highway map compresses actual driving distance such that 1/2 inch is equivalent to 15 miles. The towns of Springfield and Shelbyville are situated 4 1/2 inches apart according to this map. In miles, what is the real driving distance between the two towns?",
+    "ground_truth": "135",
+    "generation": "1. First, convert the mixed number 4 1/2 to an improper fraction: 4 1/2 = 9/2.\n2. Multiply the improper fraction by 1/2 to find the equivalent miles per inch: (9/2) * (1/2) = 9/4 miles per inch.\n3. Multiply the equivalent miles per inch by the total inches between the towns: (9/4) * (9/2) = 81/8 miles.\n4. Convert the improper fraction to a mixed number or decimal: 81/8 = 10.125 miles.\n\nFinal Answer: 10.125",
+    "pred_answer_masked": "10.125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, convert the mixed number 4 1/2 to an improper fraction: 4 1/2 = 9/2.\n2. Divide 15 miles by 1/2 inch to find the equivalent miles per inch: 15 / (1/2) = 30 miles per inch.\n3. Multiply the miles per inch by the total inches between the towns: 30 * (9/2) = 270 / 2 = 135 miles.\n4. The real driving distance is 135 miles.\n\nFinal Answer: 135"
+  },
+  {
+    "id": 12,
+    "question": "Every 1/4 inch on a construction drawing stands for 8 feet of actual building width. A measurement of 5 1/4 inches separates the columns of the front porch and the main hall on this drawing. Determine the physical distance between the columns in feet.",
+    "ground_truth": "168",
+    "generation": "1. Convert the mixed number to an improper fraction: 5 1/4 = (5 * 4 + 1) / 4 = 21 / 4\n2. Multiply the fraction by 8 to find the actual distance per 1/4 inch: (21 / 4) * 8 = 21 * 2 = 42 feet\n3. Multiply the total inches by the actual distance per 1/4 inch: 5 1/4 * 42 = (5 * 42 + 1 * 42) = 210 + 42 = 252 feet\n4. The total distance is the actual distance per 1/4 inch multiplied by the total number of 1/4 inches: 5 1/4 = 5 + 1/4 = 5 + 0.25 = 5.25 inches, 5.25 * 42 = 220.5 feet",
+    "pred_answer_masked": "220.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number to an improper fraction: 5 1/4 = (5 * 4 + 1) / 4 = 21 / 4\n2. Determine the number of 1/4 inch units in the measurement by dividing by 1/4: (21 / 4) / (1 / 4) = 21 units\n3. Multiply the number of units by the actual distance per 1/4 inch unit (8 feet): 21 * 8 = 168 feet\n4. The physical distance between the columns is 168 feet.\n\nFinal Answer: 168"
+  },
+  {
+    "id": 13,
+    "question": "According to a county map, an actual road distance of 9 miles is represented by a 1/3 inch segment. The villages of Oakhaven and Riverbend are marked 2 2/3 inches apart. What is the correct distance in miles between these villages in reality?",
+    "ground_truth": "72",
+    "generation": "1. To find the scale of the map, we need to determine how many miles 1 inch represents. Since 1/3 inch represents 9 miles, we multiply 9 by 3 to get the miles represented by 1 inch: 9 * 3 = 27 miles per inch.\n2. Now we need to find the distance represented by 2 2/3 inches. First, convert 2 2/3 to an improper fraction: 2 2/3 = 8/3. Then multiply this by the miles per inch: (8/3) * 27 = (8 * 27) / 3 = 216 / 3 = 72 miles.\n3. The distance between the villages is 72 miles.",
+    "pred_answer_masked": "72",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. To find the scale of the map, we need to determine how many miles 1 inch represents. Since 1/3 inch represents 9 miles, we multiply 9 by 3 to get the miles represented by 1 inch: 9 * 3 = 27 miles per inch.\n2. Now we need to find the distance represented by 2 2/3 inches. First, convert 2 2/3 to an improper fraction: 2 2/3 = 8/3. Then multiply this by the miles per inch: (8/3) * 27 = (8 * 27) / 3 = 216 / 3 = 72 miles.\n3. The distance between the villages is 72 miles.\n\nFinal Answer: 72"
+  },
+  {
+    "id": 14,
+    "question": "Measuring actual floor space on a floor plan involves a scale where 6 meters corresponds to 3/4 centimeter. The kitchen and the dining area show a gap of 4 1/2 centimeters on the drafted plan. How many actual meters separate the kitchen and dining area?",
+    "ground_truth": "36",
+    "generation": "1. First, we need to find the scale factor, which is the ratio of actual distance to the distance on the plan. We know 6 meters corresponds to 3/4 centimeter, so we can set up a proportion: 6 meters / (3/4 centimeter) = x meters / 0.75 centimeters (converting 3/4 to decimal).\n2. Solving for x, we get x = 6 * 0.75 / (3/4) = 6 * 0.75 * (4/3) = 10 meters per centimeter.\n3. Now that we have the scale factor, we can find the actual distance between the kitchen and dining area by multiplying the distance on the plan (4.5 centimeters) by the scale factor (10 meters per centimeter): 4.5 * 10 = 45 meters.\n4. Therefore, the actual distance between the kitchen and dining area is 45 meters.",
+    "pred_answer_masked": "45",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, we need to find the scale factor, which is the ratio of actual distance to the distance on the plan. We know 6 meters corresponds to 3/4 centimeter, so we can set up a proportion: 6 meters / (3/4 centimeter) = x meters / 1 centimeter.\n2. Solving for x, we get x = 6 / (3/4) = 6 * (4/3) = 8 meters per centimeter.\n3. Now that we have the scale factor, we can find the actual distance between the kitchen and dining area by multiplying the distance on the plan (4.5 centimeters) by the scale factor (8 meters per centimeter): 4.5 * 8 = 36 meters.\n4. Therefore, the actual distance between the kitchen and dining area is 36 meters.\n\nFinal Answer: 36"
+  },
+  {
+    "id": 15,
+    "question": "To assess actual terrain on a tactical map, a scale is used where 50 yards is represented by a 1/5 inch line. The outposts Alpha and Bravo are positioned 3 2/5 inches apart on the map surface. What is the real-world distance between the outposts in yards?",
+    "ground_truth": "850",
+    "generation": "1. First, convert the mixed number 3 2/5 to an improper fraction: 3 2/5 = (3 * 5 + 2) / 5 = 17/5.\n2. Multiply the improper fraction by 50 to find the real-world distance represented by 1/5 inch: (17/5) * 50 = 17 * 10 = 170 yards.\n3. Since 1/5 inch represents 50 yards, 1 inch represents 5 * 50 = 250 yards.\n4. Multiply the distance between the outposts on the map (3 2/5 inches) by the real-world distance represented by 1 inch: (17/5) * 250 = 17 * 50 = 850 yards.",
+    "pred_answer_masked": "850",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, convert the mixed number 3 2/5 to an improper fraction: 3 2/5 = (3 * 5 + 2) / 5 = 17/5.\n2. Since 1/5 inch represents 50 yards, we find out how many 1/5 inch units are in 17/5 inches: (17/5) / (1/5) = 17 units.\n3. Multiply the number of units by the distance each unit represents: 17 * 50 = 850 yards.\n4. The real-world distance between the outposts is 850 yards.\n\nFinal Answer: 850"
+  },
+  {
+    "id": 16,
+    "question": "In a plumbing schematic, 3 feet of actual pipe length is condensed to a 1/8 inch drawing. Between the water heater and the main valve, there is a printed gap of 2 7/8 inches. How many actual feet of distance sit between the heater and the valve?",
+    "ground_truth": "69",
+    "generation": "1. First, convert the condensed pipe length to inches: 3 feet * 12 inches/foot = 36 inches.\n2. Then, divide the condensed pipe length by the drawing scale to find the actual length: 36 inches / (1/8 inch) = 36 * 8 = 288 inches.\n3. Next, convert the printed gap to inches: 2 7/8 inches = (2 * 12 + 7) / 12 = 35/12 inches.\n4. Finally, add the actual pipe length and the printed gap to find the total distance: 288 inches + 35/12 inches = 288 + 2.9167 = 290.9167 inches. Convert this to feet: 290.9167 inches / 12 = 24.2439 feet.",
+    "pred_answer_masked": "24.2439",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The scale is 3 feet for every 1/8 inch drawing. Convert the printed gap to an improper fraction: 2 7/8 inches = (2 * 8 + 7) / 8 = 23/8 inches.\n2. Find out how many 1/8 inch units are in the printed gap: (23/8) / (1/8) = 23 units.\n3. Multiply the number of units by the actual distance per unit: 23 units * 3 feet/unit = 69 feet.\n4. There are 69 actual feet of distance between the heater and the valve.\n\nFinal Answer: 69"
+  },
+  {
+    "id": 17,
+    "question": "A 3/8 inch span on a geological map is intended to represent 12 miles of actual ground distance. If you measure 1 7/8 inches between the fault line and the volcano crater on the map, what is the true ground distance in miles separating them?",
+    "ground_truth": "60",
+    "generation": "1. Convert the map measurement to a fraction: 1 7/8 = 15/8 inches.\n2. Find the ratio of actual distance to map distance: 12 miles / (3/8 inch) = 12 / (3/8) = 12 * (8/3) = 32 miles per inch.\n3. Multiply the map measurement by the ratio to find the actual distance: (15/8) * 32 = 15 * 4 = 60 miles.\n4. The true ground distance is 60 miles.",
+    "pred_answer_masked": "60",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert the map measurement to a fraction: 1 7/8 = 15/8 inches.\n2. Find the ratio of actual distance to map distance: 12 miles / (3/8 inch) = 12 / (3/8) = 12 * (8/3) = 32 miles per inch.\n3. Multiply the map measurement by the ratio to find the actual distance: (15/8) * 32 = 15 * 4 = 60 miles.\n4. The true ground distance is 60 miles.\n\nFinal Answer: 60"
+  },
+  {
+    "id": 18,
+    "question": "Within a national park guide, 10 miles of actual hiking distance is shown as a 2/5 inch interval. The visitor center and the scenic overlook are drawn 2 4/5 inches apart. How many actual miles lie between the visitor center and the overlook?",
+    "ground_truth": "70",
+    "generation": "1. The actual distance represented by 1/5 inch is 10 / 2 = 5 miles.\n2. The actual distance represented by 1 inch is 5 * 5 = 25 miles.\n3. The actual distance represented by 4/5 inch is 25 * 4 / 5 = 20 miles.\n4. The actual distance represented by 2 4/5 inches is 20 + 25 = 45 miles.\nFinal Answer: 45",
+    "pred_answer_masked": "45",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The actual distance represented by 2/5 inch is 10 miles. So, 1/5 inch represents 10 / 2 = 5 miles.\n2. The distance drawn is 2 4/5 inches. Convert this to an improper fraction: 2 4/5 = 14/5 inches.\n3. To find the total actual miles, we determine the number of 1/5 inch intervals in 14/5 inches: 14 intervals.\n4. Multiply the number of intervals by the miles per 1/5 inch interval: 14 * 5 = 70 miles.\n\nFinal Answer: 70"
+  },
+  {
+    "id": 19,
+    "question": "A scale diagram of a solar system uses 1/4 inch to denote 25 million miles of actual space distance. Planet X and Planet Y are shown at a distance of 3 1/4 inches from each other on the diagram. Calculate the true distance in millions of miles separating the two planets.",
+    "ground_truth": "325",
+    "generation": "1. 1/4 inch represents 25 million miles, so 1 inch represents 25 * 4 = 100 million miles.\n2. 3 inches represent 3 * 100 = 300 million miles.\n3. Adding 1/4 inch, which represents 25 million miles, to 300 million miles gives 300 + 25 = 325 million miles.\n4. Therefore, the true distance separating the two planets is 325 million miles.",
+    "pred_answer_masked": "325",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. 1/4 inch represents 25 million miles, so 1 inch represents 25 * 4 = 100 million miles.\n2. 3 inches represent 3 * 100 = 300 million miles.\n3. Adding 1/4 inch, which represents 25 million miles, to 300 million miles gives 300 + 25 = 325 million miles.\n4. Therefore, the true distance separating the two planets is 325 million miles.\n\nFinal Answer: 325"
+  },
+  {
+    "id": 20,
+    "question": "An engineering blueprint features a scale where 5/8 inch matches 20 feet of actual structural span. The left and right steel girders are printed 2 1/2 inches apart. What is the physical distance between the girders in feet?",
+    "ground_truth": "80",
+    "generation": "1. Convert 2 1/2 inches to an improper fraction: 2 1/2 = 5/2\n2. Multiply the fraction by the scale factor to find the actual distance in feet: (5/2) * (20/5/8) = (5/2) * (160/5) = 5 * 32 / 2 = 160 / 2 = 80\n3. The result is the actual distance in feet between the girders.\nFinal Answer: 80",
+    "pred_answer_masked": "80",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert 2 1/2 inches to an improper fraction: 2 1/2 = 5/2\n2. Multiply the fraction by the scale factor to find the actual distance in feet: (5/2) * (20 / (5/8)) = (5/2) * (160 / 5) = 5 * 32 / 2 = 160 / 2 = 80\n3. The result is the actual distance in feet between the girders.\n\nFinal Answer: 80"
+  },
+  {
+    "id": 21,
+    "question": "Traversing the world of a fantasy novel map reveals that 30 leagues of actual travel distance equals 1/2 inch on the page. The Dragon Lair and the King's Castle are situated 5 1/2 inches apart on this map. In leagues, how far is the actual journey between the two locations?",
+    "ground_truth": "330",
+    "generation": "1. First, convert 5 1/2 inches to a decimal: 5.5 inches.\n2. Multiply the decimal inches by the leagues per inch: 5.5 * 30 = 165 leagues.\n3. The Dragon Lair and the King's Castle are situated 5 1/2 inches apart on the map, which is equivalent to 165 leagues.\n4. The actual journey between the two locations is 165 leagues.\n\nFinal Answer: 165",
+    "pred_answer_masked": "165",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, convert 5 1/2 inches to a decimal: 5.5 inches.\n2. Calculate the leagues per inch. Since 1/2 inch equals 30 leagues, 1 inch equals 30 * 2 = 60 leagues.\n3. Multiply the decimal inches by the leagues per inch: 5.5 * 60 = 330 leagues.\n4. The actual journey between the two locations is 330 leagues.\n\nFinal Answer: 330"
+  },
+  {
+    "id": 22,
+    "question": "A city zoning map applies a scale where 2 miles of actual street distance is drawn as 1/4 inch. Between the library and the police station, the map shows a separation of 4 3/4 inches. Determine the real-world distance in miles between these two buildings.",
+    "ground_truth": "38",
+    "generation": "1. The map scale is 2 miles to 1/4 inch, so we need to find out how many miles 1 inch represents. To do this, we multiply 2 miles by 4 to get the miles represented by 1 inch: 2 * 4 = 8 miles per inch.\n2. Now we have the real-world distance represented by 1 inch, so we multiply this by the total inches on the map (4 3/4 inches) to get the total real-world distance. First, convert 4 3/4 inches to a decimal: 4.75 inches. Then multiply this by 8 miles per inch: 4.75 * 8 = 38 miles.\n3. The problem asks for the real-world distance between the library and the police station, so we have our answer.\n4. No further calculations are needed.\n\nFinal Answer: 38",
+    "pred_answer_masked": "38",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The map scale is 2 miles to 1/4 inch, so we need to find out how many miles 1 inch represents. To do this, we multiply 2 miles by 4 to get the miles represented by 1 inch: 2 * 4 = 8 miles per inch.\n2. Now we have the real-world distance represented by 1 inch, so we multiply this by the total inches on the map (4 3/4 inches) to get the total real-world distance. First, convert 4 3/4 inches to a decimal: 4.75 inches. Then multiply this by 8 miles per inch: 4.75 * 8 = 38 miles.\n3. The problem asks for the real-world distance between the library and the police station, so we have our answer.\n4. No further calculations are needed.\n\nFinal Answer: 38"
+  },
+  {
+    "id": 23,
+    "question": "For a marathon route map, 1.5 miles of actual running distance is depicted by a 1/3 inch segment. The starting line and the first water station display a 2 1/3 inch gap on the map. What is the true running distance between them in miles?",
+    "ground_truth": "10.5",
+    "generation": "1. First, we need to find the scale of the map. 1.5 miles is equal to 1/3 inch, so we can set up a proportion to find the scale: 1.5 miles / (1/3 inch) = x miles / (1 inch). \n2. To solve for x, we can cross-multiply: 1.5 * 1 = x * (1/3), which simplifies to 1.5 = x/3.\n3. Multiply both sides by 3 to isolate x: 1.5 * 3 = x, which simplifies to 4.5 = x. This means that 1 inch on the map is equal to 4.5 miles in real life.\n4. Now we can use this scale to find the true running distance between the starting line and the first water station. The gap on the map is 2 1/3 inches, which is equal to 2.33 inches. Multiply this by the scale: 2.33 * 4.5 = 10.485 miles.\n\nFinal Answer: 10.485",
+    "pred_answer_masked": "10.485",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, we need to find the scale of the map. 1.5 miles is equal to 1/3 inch, so we can set up a proportion to find the scale: 1.5 miles / (1/3 inch) = x miles / (1 inch). \n2. To solve for x, we can cross-multiply: 1.5 * 1 = x * (1/3), which simplifies to 1.5 = x/3.\n3. Multiply both sides by 3 to isolate x: 1.5 * 3 = x, which simplifies to 4.5 = x. This means that 1 inch on the map is equal to 4.5 miles in real life.\n4. Now we can use this scale to find the true running distance. The gap on the map is 2 1/3 inches, which is exactly 7/3 inches. Multiply this by the scale: (7/3) * 4.5 = (7 * 4.5) / 3 = 31.5 / 3 = 10.5 miles.\n\nFinal Answer: 10.5"
+  },
+  {
+    "id": 24,
+    "question": "A carpentry scale drawing translates 12 inches of actual wood length into a 3/4 inch marking. The two dowel holes are positioned 5 1/4 inches apart on the paper. Calculate the precise distance in inches between the actual dowel holes.",
+    "ground_truth": "84",
+    "generation": "1. First, we need to find the scale factor by dividing the actual length by the marked length: 12 / (3/4) = 12 * (4/3) = 16.\n2. Now, we multiply the marked distance by the scale factor to find the actual distance: 5 1/4 * 16 = 5.25 * 16 = 84.\n3. To add the 1/4 inch, we convert it to a decimal: 1/4 = 0.25.\n4. Now, we add the 1/4 inch to the 5 inches: 5 + 0.25 = 5.25, then multiply by 16: 5.25 * 16 = 84.",
+    "pred_answer_masked": "84",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, we need to find the scale factor by dividing the actual length by the marked length: 12 / (3/4) = 12 * (4/3) = 16.\n2. Now, we multiply the marked distance by the scale factor to find the actual distance: 5 1/4 * 16 = 5.25 * 16 = 84.\n3. The calculated distance corresponds to the real-world span between the dowel holes.\n4. The precise distance is 84 inches.\n\nFinal Answer: 84"
+  },
+  {
+    "id": 25,
+    "question": "Exploring a wildlife reserve map shows that every 1/5 inch stands for 8 kilometers of actual park distance. The ranger station and the lake are mapped out to be 4 1/5 inches apart. How many kilometers actually separate the station and the lake?",
+    "ground_truth": "168",
+    "generation": "1. Convert the mixed number to an improper fraction: 4 1/5 = 21/5\n2. Multiply the fraction by the scale factor: (21/5) * (1/5) = 21/25\n3. Multiply the fraction by the actual distance represented by 1/5 inch: (21/25) * 8 = 21/25 * 8 = 168/25\n4. Convert the improper fraction to a mixed number or decimal: 168/25 = 6.72\n\nFinal Answer: 6.72",
+    "pred_answer_masked": "6.72",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number to an improper fraction: 4 1/5 = 21/5\n2. Determine how many 1/5 inch units fit into the map distance: (21/5) / (1/5) = 21 units.\n3. Multiply the number of units by the actual distance represented by 1/5 inch: 21 * 8 = 168 kilometers.\n4. The distance that actually separates the station and the lake is 168 kilometers.\n\nFinal Answer: 168"
+  },
+  {
+    "id": 26,
+    "question": "Designing a model train layout plan requires a scale in which 4 feet of actual track distance is given 1/8 inch of space. The tunnel entrance and the bridge are separated by 3 5/8 inches on the drafted plan. In feet, what is the true distance between the tunnel and the bridge?",
+    "ground_truth": "116",
+    "generation": "1. First, we need to find out how many feet of actual track distance 1 inch of space represents. Since 4 feet is given 1/8 inch, we multiply 4 by 8 to get the number of inches that represents 4 feet, which is 32. Then we divide 4 by 32 to get the number of feet that 1 inch represents, which is 4/32 or 1/8.\n2. Now we multiply the number of feet that 1 inch represents by the total inches between the tunnel and the bridge, which is 3 5/8. First, we convert 3 5/8 to an improper fraction, which is 23/8. Then we multiply 1/8 by 23/8, which is 23/64.\n3. To convert 23/64 to a decimal, we divide 23 by 64, which is approximately 0.359375. However, since we are working with feet, we keep it as a fraction for accuracy.\n4. Now we simplify the fraction 23/64 by dividing both the numerator and the denominator by their greatest common divisor, which is 23. This gives us 1/8 * 23/8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, we need to find out how many feet of actual track distance 1 inch of space represents. Since 4 feet is given 1/8 inch, we multiply 4 by 8 to get the number of feet that 1 inch represents, which is 32 feet per inch.\n2. Now we multiply the number of feet that 1 inch represents by the total inches between the tunnel and the bridge, which is 3 5/8. First, we convert 3 5/8 to an improper fraction, which is 29/8.\n3. Then we multiply 32 by 29/8: 32 * (29/8) = 4 * 29 = 116.\n4. The true distance between the tunnel and the bridge is 116 feet.\n\nFinal Answer: 116"
+  },
+  {
+    "id": 27,
+    "question": "On a historical battle map, 5 miles of actual terrain distance is equated to a length of 3/8 inch. The cavalry camp and the infantry line are drawn 2 5/8 inches apart. Find the real-world distance in miles between the camp and the line.",
+    "ground_truth": "35",
+    "generation": "1. First, we need to find the scale factor by dividing the actual distance by the map distance: 5 miles / (3/8 inch) = 5 * (8/3) = 16.67 miles per inch.\n2. Now, we convert the map distance to inches: 2 5/8 inches = (2 * 8 + 5)/8 = 27/8 = 3.375 inches.\n3. Multiply the map distance in inches by the scale factor to find the real-world distance: 3.375 inches * 16.67 miles/inch = 56.1125 miles.\n4. Round the result to a reasonable number of decimal places: 56.11 miles.\n\nFinal Answer: 56.11",
+    "pred_answer_masked": "56.11",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, we need to find the scale factor by dividing the actual distance by the map distance: 5 miles / (3/8 inch) = 5 * (8/3) = 40/3 miles per inch.\n2. Now, we convert the map distance to inches: 2 5/8 inches = (2 * 8 + 5)/8 = 21/8 inches.\n3. Multiply the map distance in inches by the scale factor to find the real-world distance: (21/8) inches * (40/3) miles/inch = (21 * 40) / (8 * 3) = 840 / 24 = 35 miles.\n4. The real-world distance is 35 miles.\n\nFinal Answer: 35"
+  },
+  {
+    "id": 28,
+    "question": "A continental map uses a scaling factor where 100 miles of actual land distance fits into 2/5 inch. The cities of York and Lancaster are set 3 3/5 inches apart on the paper. What is the true physical distance between these cities in miles?",
+    "ground_truth": "900",
+    "generation": "1. First, we need to find out how many miles 2/5 inch represents. Since 100 miles is equal to 2/5 inch, we can set up a proportion to find the miles per 2/5 inch. \n   100 miles / (2/5 inch) = x miles / (2/5 inch)\n   100 * (2/5) = x * (2/5)\n   40 = x * (2/5)\n   x = 40 / (2/5)\n   x = 40 * (5/2)\n   x = 100 miles per 2/5 inch\n\n2. Now we know that 2/5 inch represents 100 miles. We need to find out how many miles 3 3/5 inches represents. First, convert 3 3/5 to an improper fraction: 3 3/5 = (3*5 + 3)/5 = 18/5.\n   3 3/5 inches = 18/5 inches\n   We need to find out how many 2/5 inch units are in 18/5 inches. \n   18/5 / (2/5) = (18/",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. We know that 2/5 inch represents 100 miles. \n2. We need to find out how many miles 3 3/5 inches represents. First, convert 3 3/5 to an improper fraction: 3 3/5 = (3*5 + 3)/5 = 18/5 inches.\n3. We need to find out how many 2/5 inch units are in 18/5 inches: (18/5) / (2/5) = 9 units.\n4. Since each unit corresponds to 100 miles, the true physical distance is 9 * 100 = 900 miles.\n\nFinal Answer: 900"
+  },
+  {
+    "id": 29,
+    "question": "A circuit board schematic dictates that 2 millimeters of actual wire length is represented by 1/4 inch. The processor and the memory chip exhibit a 1 3/4 inch gap on the schematic. In millimeters, how much actual distance is there between the components?",
+    "ground_truth": "14",
+    "generation": "1. Convert 1/4 inch to a decimal: 1/4 = 0.25 inches.\n2. Convert 0.25 inches to millimeters: 0.25 * 25.4 = 6.35 mm (1 mm = 0.04 inches).\n3. Since 2 mm is represented by 1/4 inch, 1 mm is represented by 0.5 * (1/4) = 0.125 inches.\n4. Convert 1 3/4 inches to a decimal: 1 3/4 = 1.75 inches.\n5. Divide 1.75 inches by 0.125 inches to find the number of 1/4 inch units: 1.75 / 0.125 = 14.\n6. Multiply the number of 1/4 inch units by the actual length of wire in millimeters: 14 * 6.35 = 88.9 mm.",
+    "pred_answer_masked": "88.9",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 1/4 inch to a decimal: 1/4 = 0.25 inches.\n2. The scale specifies that 0.25 inches represents 2 millimeters of actual wire length.\n3. Convert 1 3/4 inches to a decimal: 1 3/4 = 1.75 inches.\n4. Divide 1.75 inches by 0.25 inches to find the number of 1/4 inch units: 1.75 / 0.25 = 7.\n5. Multiply the number of units by the actual length each unit represents (2 mm): 7 * 2 = 14 mm.\n6. The actual distance between the components is 14 mm.\n\nFinal Answer: 14"
+  },
+  {
+    "id": 30,
+    "question": "Navigating a botanical garden map relies on a scale where 15 meters of actual pathway distance equals 5/8 inch. The rose garden and the greenhouse are printed 3 3/4 inches apart. Determine the actual distance separating them in meters.",
+    "ground_truth": "90",
+    "generation": "1. Convert 3 3/4 inches to an improper fraction: 3 3/4 = 15/4 inches\n2. Multiply the scale ratio by the improper fraction: (15 meters / 5/8 inch) * (15/4 inches)\n3. Simplify the fraction: (15 meters) * (15/4) / (5/8) = (15 meters) * (15/4) * (8/5)\n4. Perform the multiplication: (15 meters) * (15) * (8) / (4) * (5) = 2250 / 20 = 112.5 meters\nFinal Answer: 112.5",
+    "pred_answer_masked": "112.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 3/4 inches to an improper fraction: 3 3/4 = 15/4 inches\n2. Multiply the scale ratio by the improper fraction: (15 meters / (5/8) inch) * (15/4 inches)\n3. Simplify the fraction: (15 meters) * (15/4) / (5/8) = (15 meters) * (15/4) * (8/5)\n4. Perform the multiplication: (15 * 15 * 8) / (4 * 5) = 1800 / 20 = 90 meters\n\nFinal Answer: 90"
+  },
+  {
+    "id": 31,
+    "question": "A transit map indicates that every 1/2 inch covers 6 miles of actual railway distance. The terminals of Northview and Southgate are spaced 6 1/2 inches apart on the map. Calculate the real railway distance between the terminals in miles.",
+    "ground_truth": "78",
+    "generation": "1. Convert the mixed number 6 1/2 to an improper fraction: 6 1/2 = 13/2\n2. Multiply the improper fraction by 1/2 to find the distance in inches: (13/2) * (1/2) = 13/4\n3. Multiply the fraction by the conversion rate (6 miles per 1/2 inch): (13/4) * 6 = (13 * 6) / 4 = 78 / 4\n4. Simplify the fraction: 78 / 4 = 19.5\n\nFinal Answer: 19.5",
+    "pred_answer_masked": "19.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 6 1/2 to an improper fraction: 6 1/2 = 13/2 inches.\n2. Divide the map distance by 1/2 inch to find the number of 1/2 inch units: (13/2) / (1/2) = 13 units.\n3. Multiply the number of units by the conversion rate (6 miles per 1/2 inch): 13 * 6 = 78 miles.\n4. The real railway distance is 78 miles.\n\nFinal Answer: 78"
+  },
+  {
+    "id": 32,
+    "question": "Walking distances are shrunk on a theme park guide, meaning 50 yards of actual walking distance is captured by 1/4 inch. The roller coaster and the ferris wheel are shown 2 1/4 inches apart in the guide. What is the physical distance between the rides in yards?",
+    "ground_truth": "450",
+    "generation": "1. 1/4 inch represents 50 yards, so 1 inch represents 50 / (1/4) = 200 yards.\n2. 2 inches represent 2 * 200 = 400 yards.\n3. 1/4 inch represents 50 yards, so 1/4 inch represents 50 yards.\n4. Adding 400 yards and 50 yards gives 450 yards.\nFinal Answer: 450",
+    "pred_answer_masked": "450",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. 1/4 inch represents 50 yards, so 1 inch represents 50 / (1/4) = 200 yards.\n2. 2 inches represent 2 * 200 = 400 yards.\n3. 1/4 inch represents 50 yards, so 1/4 inch represents 50 yards.\n4. Adding 400 yards and 50 yards gives 450 yards.\n\nFinal Answer: 450"
+  },
+  {
+    "id": 33,
+    "question": "On a scale drawing of a ship, 20 feet of actual deck length corresponds to a measurement of 1/3 inch. The bow and the stern mast are drafted 5 2/3 inches apart. What is the true distance, measured in feet, separating the bow from the mast?",
+    "ground_truth": "340",
+    "generation": "1. First, find the scale factor by dividing the actual length by the scale measurement: 20 feet / (1/3 inch) = 20 * 3 = 60 inches per foot.\n2. Convert the scale measurement of the bow and stern mast to inches: 5 2/3 inches = 5 + 2/3 = 5 + 2/3 * 3/3 = 5 + 2/3 = 17/3 inches.\n3. Multiply the scale measurement of the bow and stern mast by the scale factor to find the actual distance: (17/3) * 60 = (17 * 60) / 3 = 1020 / 3 = 340 inches.\n4. Convert the actual distance from inches to feet: 340 inches / 12 inches per foot = 340 / 12 = 28.33 feet.",
+    "pred_answer_masked": "28.33",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, find the scale factor in feet per inch by dividing the actual length by the scale measurement: 20 feet / (1/3 inch) = 20 * 3 = 60 feet per inch.\n2. Convert the scale measurement of the bow and stern mast to an improper fraction: 5 2/3 inches = 17/3 inches.\n3. Multiply the scale measurement of the bow and stern mast by the scale factor to find the actual distance: (17/3 inches) * (60 feet/inch) = (17 * 60) / 3 = 1020 / 3 = 340 feet.\n4. The true distance separating the bow from the mast is 340 feet.\n\nFinal Answer: 340"
+  },
+  {
+    "id": 34,
+    "question": "A campus map's legend shows that 3/4 inch equals 100 meters of actual campus distance. The science building and the dormitories are depicted as being 4 1/2 inches apart. How many meters of actual distance separate these buildings?",
+    "ground_truth": "600",
+    "generation": "1. Convert 4 1/2 inches to an improper fraction: 4 1/2 = 9/2\n2. Multiply the fraction by 3/4 to find the equivalent fraction for inches: (9/2) * (3/4) = 27/8\n3. Multiply the fraction by 100 to find the actual distance in meters: (27/8) * 100 = 337.5\n4. Convert the improper fraction to a decimal and multiply by 100: (27/8) * 100 = 337.5",
+    "pred_answer_masked": "337.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 4 1/2 inches to an improper fraction: 4 1/2 = 9/2 inches.\n2. Find out how many 3/4 inch units are in 9/2 inches by dividing: (9/2) / (3/4) = (9/2) * (4/3) = 36 / 6 = 6 units.\n3. Multiply the number of units by the distance each unit represents (100 meters): 6 * 100 = 600 meters.\n4. The actual distance separating these buildings is 600 meters.\n\nFinal Answer: 600"
+  },
+  {
+    "id": 35,
+    "question": "When checking an oceanic depth chart, 200 feet of actual underwater distance is represented by a mere 1/5 inch. The coral reef and the shipwreck are situated 1 4/5 inches apart on the chart. Determine the real-world underwater distance between the reef and the wreck in feet.",
+    "ground_truth": "1800",
+    "generation": "1. 1/5 inch represents 200 feet, so 1 inch represents 200 * 5 = 1000 feet.\n2. 1 4/5 inches is equal to 1 + 4/5 = 9/5 inches, which is equal to 1.8 inches.\n3. 1.8 inches represents 1.8 * 1000 = 1800 feet.\n4. The real-world underwater distance between the reef and the wreck is 1800 feet.",
+    "pred_answer_masked": "1800",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. 1/5 inch represents 200 feet, so 1 inch represents 200 * 5 = 1000 feet.\n2. 1 4/5 inches is equal to 1 + 4/5 = 9/5 inches, which is equal to 1.8 inches.\n3. 1.8 inches represents 1.8 * 1000 = 1800 feet.\n4. The real-world underwater distance between the reef and the wreck is 1800 feet.\n\nFinal Answer: 1800"
+  },
+  {
+    "id": 36,
+    "question": "A surveyor's plat map represents 25 feet of actual property line distance with an interval of 1/8 inch. The property corners A and B are drafted exactly 2 3/8 inches apart on this map. What is the true length in feet between the property corners?",
+    "ground_truth": "475",
+    "generation": "1. The map scale is 25 feet to 1/8 inch, so we need to find the scale factor: 25 feet / (1/8 inch) = 25 * 8 = 200 feet per inch.\n2. The property corners are drafted 2 3/8 inches apart, which is 2 + 3/8 = 2.375 inches.\n3. Now we can find the true length in feet by multiplying the drafted distance by the scale factor: 2.375 inches * 200 feet/inch = 475 feet.\n4. However, we need to convert the 3/8 inch to decimal form to get the correct answer: 3/8 = 0.375, so 2.375 inches = 2 + 0.375 = 2.375 inches.",
+    "pred_answer_masked": "2.375",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The map scale is 25 feet to 1/8 inch, so we need to find the scale factor: 25 feet / (1/8 inch) = 25 * 8 = 200 feet per inch.\n2. The property corners are drafted 2 3/8 inches apart, which is 2 + 3/8 = 2.375 inches.\n3. Now we can find the true length in feet by multiplying the drafted distance by the scale factor: 2.375 inches * 200 feet/inch = 475 feet.\n4. The true length is 475 feet.\n\nFinal Answer: 475"
+  },
+  {
+    "id": 37,
+    "question": "Consulting a mall directory map reveals that a 3/8 inch marking equates to 30 feet of actual corridor distance. The food court and the cinema are located 1 1/2 inches apart on the directory. In feet, what is the actual walking distance between the food court and cinema?",
+    "ground_truth": "120",
+    "generation": "1. Convert 1 1/2 inches to a fraction: 1 1/2 = 3/2 inches\n2. Find the ratio of inches to feet: 3/8 inch = 30 feet\n3. Multiply the ratio by the number of inches: (3/8) * (3/2) = 9/16 inch\n4. Convert 9/16 inch to feet: (9/16) * (30 feet) = 16.875 feet\nFinal Answer: 16.875",
+    "pred_answer_masked": "16.875",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 1 1/2 inches to a fraction: 1 1/2 = 3/2 inches\n2. Find the ratio of feet per inch: 30 feet / (3/8 inch) = 30 * (8/3) = 80 feet per inch\n3. Multiply the distance in inches by the ratio of feet per inch: (3/2) * 80 = 120 feet\n4. The actual walking distance is 120 feet.\n\nFinal Answer: 120"
+  },
+  {
+    "id": 38,
+    "question": "A globe's surface map relies on a scale wherein 500 miles of actual global distance is drawn as 2/5 inch. The cities of London and New York are measured to be 2 4/5 inches apart on this map. Find the real-world distance between the cities in miles.",
+    "ground_truth": "3500",
+    "generation": "1. First, convert the map scale to a decimal: 2/5 = 0.4 inches per 500 miles.\n2. To find the real-world distance represented by 1 inch on the map, multiply the map scale by 500 miles: 0.4 * 500 = 200 miles per inch.\n3. Convert the distance between London and New York on the map to a decimal: 2 4/5 = 2.8 inches.\n4. Multiply the map distance by the real-world distance per inch to find the actual distance: 2.8 * 200 = 560 miles.",
+    "pred_answer_masked": "560",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, convert the map scale to a decimal: 2/5 = 0.4 inches per 500 miles.\n2. To find the real-world distance represented by 1 inch on the map, divide 500 miles by the map scale: 500 / 0.4 = 1250 miles per inch.\n3. Convert the distance between London and New York on the map to a decimal: 2 4/5 = 2.8 inches.\n4. Multiply the map distance by the real-world distance per inch to find the actual distance: 2.8 * 1250 = 3500 miles.\n\nFinal Answer: 3500"
+  },
+  {
+    "id": 39,
+    "question": "An archaeological site map maps 5 meters of actual excavation distance to a 1/4 inch segment. The ancient temple and the burial mound sit 3 3/4 inches apart on the map. How many actual meters separate the temple and the mound?",
+    "ground_truth": "75",
+    "generation": "1. The map scales 5 meters to 1/4 inch, so we need to find out how many inches 1 meter is on the map. To do this, we divide 1/4 inch by 5 meters to get 1/20 inch per meter.\n2. Now we convert 3 3/4 inches to a fraction: 3 3/4 = 15/4 inches.\n3. We multiply the distance on the map (15/4 inches) by the scale (1/20 inch per meter) to get the actual distance: (15/4) * (1/20) = 15/80 = 3/16 meters.\n4. To simplify the fraction, we can multiply the numerator and denominator by 16 to get 3 * 16 / 16 * 16 = 48/256 = 3/16 meters.",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The map scales 5 meters to 1/4 inch, so we need to find out how many meters 1 inch is on the map. To do this, we divide 5 meters by 1/4 inch to get 20 meters per inch.\n2. Now we convert 3 3/4 inches to a fraction: 3 3/4 = 15/4 inches.\n3. We multiply the distance on the map (15/4 inches) by the scale (20 meters per inch) to get the actual distance: (15/4) * 20 = 15 * 5 = 75 meters.\n4. The actual distance separating the temple and the mound is 75 meters.\n\nFinal Answer: 75"
+  },
+  {
+    "id": 40,
+    "question": "According to a topographical map, 40 feet of actual elevation distance is squished into a 5/8 inch representation. The base camp and the summit are mapped 2 1/2 inches apart. Calculate the true distance in feet between the base camp and summit.",
+    "ground_truth": "160",
+    "generation": "1. First, we need to find out how much actual elevation distance 1 inch represents. We can do this by dividing 40 feet by 5/8 inch. \n   40 / (5/8) = 40 * (8/5) = 64 feet per inch.\n\n2. Now, we need to find out how many inches 2 1/2 inches is in terms of the actual elevation distance. We can do this by converting 2 1/2 to an improper fraction, which is 5/2. \n   Then, we multiply 5/2 by the actual elevation distance per inch, which is 64 feet. \n   (5/2) * 64 = 160 feet.\n\n3. Now, we have the actual elevation distance between the base camp and summit, which is 160 feet.\n\n4. Since we have the actual elevation distance, we don't need to do any further calculations.\n\nFinal Answer: 160",
+    "pred_answer_masked": "160",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, we need to find out how much actual elevation distance 1 inch represents. We can do this by dividing 40 feet by 5/8 inch. \n   40 / (5/8) = 40 * (8/5) = 64 feet per inch.\n\n2. Now, we need to find out how many inches 2 1/2 inches is in terms of the actual elevation distance. We can do this by converting 2 1/2 to an improper fraction, which is 5/2. \n   Then, we multiply 5/2 by the actual elevation distance per inch, which is 64 feet. \n   (5/2) * 64 = 160 feet.\n\n3. Now, we have the actual elevation distance between the base camp and summit, which is 160 feet.\n\n4. Since we have the actual elevation distance, we don't need to do any further calculations.\n\nFinal Answer: 160"
+  },
+  {
+    "id": 41,
+    "question": "A provincial road map establishes that 1/2 inch is identical to 20 kilometers of actual road distance. The towns of Kingston and Belmont have a 3 1/2 inch gap between them on the map. What is the real driving distance separating the towns in kilometers?",
+    "ground_truth": "140",
+    "generation": "1. Convert 3 1/2 inches to a decimal: 3.5 inches.\n2. Since 1/2 inch is equal to 20 kilometers, multiply 3.5 inches by 20 kilometers per 1/2 inch: 3.5 * 20 = 70 kilometers per inch.\n3. Multiply the distance per inch by the total inches: 70 * 3.5 = 245 kilometers.\n4. Add the 1/2 inch distance to the total: 245 + 20 = 265 kilometers.\n\nFinal Answer: 265",
+    "pred_answer_masked": "265",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 1/2 inches to a decimal: 3.5 inches.\n2. Since 1/2 inch is equal to 20 kilometers, multiply 20 kilometers by 2 to find the distance per inch: 20 * 2 = 40 kilometers per inch.\n3. Multiply the distance per inch by the total inches: 40 * 3.5 = 140 kilometers.\n4. The real driving distance separating the towns is 140 kilometers.\n\nFinal Answer: 140"
+  },
+  {
+    "id": 42,
+    "question": "An interior design layout scales down 2 feet of actual room length into a 1/4 inch line. The sofa and the television stand are arranged 4 1/4 inches apart on the layout. How many feet of actual distance exist between the furniture pieces?",
+    "ground_truth": "34",
+    "generation": "1. The layout scales down 2 feet of actual room length into 1/4 inch, so 1 foot is 1/4 / 2 = 1/8 inch.\n2. The actual room length is 1 foot, which is 1/8 inch on the layout, so 1 inch on the layout is 1/8 * 8 = 1 foot.\n3. The sofa and the television stand are arranged 4 1/4 inches apart on the layout, which is 4 + 1/4 = 4.25 inches.\n4. The actual distance between the furniture pieces is 4.25 inches * 1 foot / 1 inch = 4.25 feet.",
+    "pred_answer_masked": "4.25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The layout scales down 2 feet of actual room length into 1/4 inch, so 1 inch on the layout is 2 / (1/4) = 8 feet.\n2. The actual room length corresponding to 1 inch is 8 feet.\n3. The sofa and the television stand are arranged 4 1/4 inches apart on the layout, which is 4 + 1/4 = 4.25 inches.\n4. The actual distance between the furniture pieces is 4.25 inches * 8 feet/inch = 34 feet.\n\nFinal Answer: 34"
+  },
+  {
+    "id": 43,
+    "question": "A space station blueprint scales 15 meters of actual module length to just 1/3 inch of drafted space. The command center and the airlock appear 2 1/3 inches apart on the blueprint. What is the actual metric distance separating them?",
+    "ground_truth": "105",
+    "generation": "1. Convert 1/3 inch to a decimal: 1/3 = 0.3333 inches.\n2. Convert 2 1/3 inches to a decimal: 2 + 1/3 = 2 + 0.3333 = 2.3333 inches.\n3. Find the ratio of actual length to drafted space: 15 meters / 0.3333 inches.\n4. Multiply the ratio by the drafted space between the command center and the airlock: (15 meters / 0.3333 inches) * 2.3333 inches.\nFinal Answer: 110",
+    "pred_answer_masked": "110",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 1/3 inch to a fraction: 1/3 inch.\n2. Convert 2 1/3 inches to an improper fraction: 2 + 1/3 = 7/3 inches.\n3. Find the ratio of actual length to drafted space: 15 meters / (1/3 inch) = 45 meters per inch.\n4. Multiply the ratio by the drafted space between the command center and the airlock: 45 meters/inch * (7/3 inches) = 15 * 7 = 105 meters.\n\nFinal Answer: 105"
+  },
+  {
+    "id": 44,
+    "question": "Reviewing a festival grounds map reveals that 3/4 inch stands for 50 yards of actual field distance. The main stage and the entrance gate are placed 3 inches apart on the page. In yards, what is the actual distance between the stage and the gate?",
+    "ground_truth": "200",
+    "generation": "1. Since 3/4 inch represents 50 yards, we need to find out how many yards 1 inch represents. To do this, we multiply 50 yards by 4/3 to get the yards per inch. 50 * (4/3) = 66.67 yards per inch.\n2. Now that we know 1 inch represents 66.67 yards, we can multiply this by 3 inches to find the actual distance between the stage and the gate. 66.67 * 3 = 200 yards.\n3. The actual distance is 200 yards.",
+    "pred_answer_masked": "200",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Since 3/4 inch represents 50 yards, we need to find out how many yards 1 inch represents. To do this, we multiply 50 yards by 4/3 to get the yards per inch. 50 * (4/3) = 200/3 yards per inch.\n2. Now that we know 1 inch represents 200/3 yards, we can multiply this by 3 inches to find the actual distance between the stage and the gate. (200/3) * 3 = 200 yards.\n3. The actual distance is 200 yards.\n\nFinal Answer: 200"
+  },
+  {
+    "id": 45,
+    "question": "Every 1/5 inch on a cross-country ski map denotes 3 miles of actual trail distance. The lodge and the warming hut exhibit a 2 2/5 inch separation on the map. Determine the exact trail distance in miles between the lodge and the hut.",
+    "ground_truth": "36",
+    "generation": "1. Convert the mixed number 2 2/5 to an improper fraction: 2 2/5 = (2*5 + 2)/5 = 12/5 inches.\n2. Multiply the map distance by the scale factor to find the actual distance per inch: 3 miles / (1/5 inch) = 3 * 5 = 15 miles per inch.\n3. Multiply the total map distance by the scale factor to find the actual distance: (12/5 inches) * 15 miles/inch = (12/5) * 15 = 12 * 3 = 36 miles.\n4. The actual trail distance is 36 miles.",
+    "pred_answer_masked": "36",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert the mixed number 2 2/5 to an improper fraction: 2 2/5 = (2*5 + 2)/5 = 12/5 inches.\n2. Multiply the map distance by the scale factor to find the actual distance per inch: 3 miles / (1/5 inch) = 3 * 5 = 15 miles per inch.\n3. Multiply the total map distance by the scale factor to find the actual distance: (12/5 inches) * 15 miles/inch = (12/5) * 15 = 12 * 3 = 36 miles.\n4. The actual trail distance is 36 miles.\n\nFinal Answer: 36"
+  },
+  {
+    "id": 46,
+    "question": "An electrical wiring diagram uses 1/8 inch to portray 4 inches of actual wire distance. The switch and the light fixture are drawn 5 3/8 inches apart. How many actual inches of wire distance separate the switch and the fixture?",
+    "ground_truth": "172",
+    "generation": "1. Convert 5 3/8 inches to an improper fraction: 5 3/8 = (5 * 8 + 3) / 8 = 43 / 8\n2. Multiply the scale factor (1/8 inch) by the actual distance (4 inches) to get the scale: 1/8 * 4 = 1/2 inch\n3. Multiply the scale by the total inches on the diagram (43/8) to get the actual distance: (1/2) * (43/8) = 43/16\n4. Convert 43/16 to a mixed number: 43/16 = 2 11/16\n5. Convert 2 11/16 to an improper fraction: 2 11/16 = (2 * 16 + 11) / 16 = 47/16\n6. Multiply the improper fraction by 4 to get the actual inches: 47/16 * 4 = 47/4\n7. Convert 47/4 to a mixed number: 47/4 = 11 3/4\n8. Convert 11 3/4 to an improper fraction: 11 3/4 =",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 5 3/8 inches to an improper fraction: 5 3/8 = (5 * 8 + 3) / 8 = 43/8 inches.\n2. Find out how many 1/8 inch segments fit into the drawn distance by dividing: (43/8) / (1/8) = 43.\n3. Multiply the number of segments by the actual distance each segment represents (4 inches): 43 * 4 = 172 inches.\n4. There are 172 actual inches of wire distance separating the switch and the fixture.\n\nFinal Answer: 172"
+  },
+  {
+    "id": 47,
+    "question": "A model airplane plan reduces 6 inches of actual wingspan to a 3/8 inch drafted line. The left wingtip and the fuselage span a distance of 2 1/4 inches on the plan. What is the true physical distance in inches between the wingtip and the fuselage?",
+    "ground_truth": "36",
+    "generation": "1. The scale of the model is 6 inches to 3/8 inch, so we find the scale factor by dividing 6 by 3/8, which is 6 / (3/8) = 6 * (8/3) = 16.\n2. The scale factor is 16, so we multiply the 2 1/4 inches on the plan by the scale factor to find the true distance: 2 1/4 * 16 = 36.\n3. To multiply a mixed number by a whole number, we multiply the whole number by the whole part of the mixed number and then multiply the whole number by the fraction part, and then add the results: 2 * 16 = 32, 1/4 * 16 = 4, 32 + 4 = 36.\n4. The true physical distance is 36 inches.",
+    "pred_answer_masked": "36",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The scale of the model is 6 inches to 3/8 inch, so we find the scale factor by dividing 6 by 3/8, which is 6 / (3/8) = 6 * (8/3) = 16.\n2. The scale factor is 16, so we multiply the 2 1/4 inches on the plan by the scale factor to find the true distance: 2 1/4 * 16 = 36.\n3. To multiply a mixed number by a whole number, we multiply the whole number by the whole part of the mixed number and then multiply the whole number by the fraction part, and then add the results: 2 * 16 = 32, 1/4 * 16 = 4, 32 + 4 = 36.\n4. The true physical distance is 36 inches.\n\nFinal Answer: 36"
+  },
+  {
+    "id": 48,
+    "question": "Hiking a state park trail requires checking a map where 2 miles of actual path distance is given as 2/5 inch. The waterfall and the picnic area are charted 3 1/5 inches apart. Calculate the real distance in miles between the waterfall and the picnic area.",
+    "ground_truth": "16",
+    "generation": "1. Convert 3 1/5 inches to an improper fraction: 3 1/5 = (16/5) inches\n2. Set up a proportion to find the real distance for 1 inch: 2 miles / (2/5) inch = x miles / 1 inch\n3. Solve for x: x = 2 * (1 / (2/5)) = 2 * (5/2) = 5 miles per inch\n4. Multiply the real distance per inch by the charted distance: 5 miles/inch * (16/5) inches = 16 miles\nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert 3 1/5 inches to an improper fraction: 3 1/5 = (16/5) inches\n2. Set up a proportion to find the real distance for 1 inch: 2 miles / (2/5) inch = x miles / 1 inch\n3. Solve for x: x = 2 * (1 / (2/5)) = 2 * (5/2) = 5 miles per inch\n4. Multiply the real distance per inch by the charted distance: 5 miles/inch * (16/5) inches = 16 miles\n\nFinal Answer: 16"
+  },
+  {
+    "id": 49,
+    "question": "Space on a warehouse floor plan is scaled so that 10 feet of actual aisle space equals 1/4 inch. The loading dock and the storage racks possess a 6 1/4 inch gap on the plan. What is the true foot distance between the dock and the racks?",
+    "ground_truth": "250",
+    "generation": "1. Convert 6 1/4 inches to a decimal: 6.25 inches.\n2. Divide the decimal inches by the scale factor (1/4 inch = 0.25 inch) to find the actual feet: 6.25 / 0.25 = 25 feet.\n3. The 1/4 inch scale factor represents 10 feet of actual space, so multiply the scale factor by 10 to find the actual distance represented by 1 inch: 0.25 * 10 = 2.5 feet.\n4. Multiply the actual distance represented by 1 inch (2.5 feet) by the number of inches in the 6 1/4 inch gap (6.25 inches) to find the true foot distance: 2.5 * 6.25 = 15.625 feet.\n\nFinal Answer: 15.625",
+    "pred_answer_masked": "15.625",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 6 1/4 inches to a decimal: 6.25 inches.\n2. Divide the decimal inches by 0.25 inches to find the number of 1/4 inch units: 6.25 / 0.25 = 25 units.\n3. The 1/4 inch scale factor represents 10 feet of actual space, so multiply the number of units by 10 to find the actual distance: 25 * 10 = 250 feet.\n4. The true foot distance between the dock and the racks is 250 feet.\n\nFinal Answer: 250"
+  },
+  {
+    "id": 50,
+    "question": "A galaxy map for a board game dictates that every 5/8 inch equals 25 parsecs of actual space distance. The planets Zorg and Xylar are marked 1 7/8 inches apart on this map. In parsecs, how much space distance actually lies between the planets?",
+    "ground_truth": "75",
+    "generation": "1. Convert 1 7/8 inches to an improper fraction: 1 7/8 = (15/8) inches\n2. Multiply the fraction of inches by the number of parsecs per inch: (15/8) * (25) = (15 * 25) / 8 = 375 / 8\n3. Convert the improper fraction to a mixed number: 375 / 8 = 46 5/8\n4. Multiply the mixed number by the number of parsecs per inch: (46 5/8) * (25) = (46 * 25) + (5/8) * 25 = 1150 + (5 * 25) / 8 = 1150 + 125 / 8 = 1150 + 15.625 = 1165.625\nFinal Answer: 1165.625",
+    "pred_answer_masked": "1165.625",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 1 7/8 inches to an improper fraction: 1 7/8 = (15/8) inches\n2. Determine the number of 5/8 inch intervals in the distance by dividing: (15/8) / (5/8) = 15 / 5 = 3 intervals\n3. Multiply the number of intervals by the 25 parsecs each interval represents: 3 * 25 = 75 parsecs\n4. The space distance that actually lies between the planets is 75 parsecs.\n\nFinal Answer: 75"
+  },
+  {
+    "id": 51,
+    "question": "Navigating via a city bus route map means understanding that 3 miles of actual route distance is coded as a 1/2 inch line. The downtown terminal and the suburban mall are mapped 5 1/2 inches apart. Find the real route distance in miles between the terminal and the mall.",
+    "ground_truth": "33",
+    "generation": "1. First, convert the mixed number 5 1/2 inches to an improper fraction: 5 1/2 = 11/2 inches.\n2. Since 3 miles is coded as 1/2 inch, find the ratio of miles to inches: 3 miles / (1/2 inch) = 3 * 2 = 6 miles per inch.\n3. Multiply the ratio by the total inches between the terminal and the mall: 6 miles/inch * (11/2) inches = 6 * 11 / 2 = 33 miles / 2.\n4. Simplify the fraction: 33 / 2 = 16.5 miles.\n\nFinal Answer: 16.5",
+    "pred_answer_masked": "16.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, convert the mixed number 5 1/2 inches to an improper fraction: 5 1/2 = 11/2 inches.\n2. Since 3 miles is coded as 1/2 inch, find the ratio of miles to inches: 3 miles / (1/2 inch) = 6 miles per inch.\n3. Multiply the ratio by the total inches between the terminal and the mall: 6 miles/inch * (11/2) inches = 6 * 11 / 2 = 33 miles.\n4. The real route distance is 33 miles.\n\nFinal Answer: 33"
+  },
+  {
+    "id": 52,
+    "question": "A stadium seating chart compresses 15 feet of actual stadium distance into a 1/4 inch layout. The VIP box and the field entrance show a separation of 4 3/4 inches on the chart. What is the genuine distance in feet between the VIP box and the entrance?",
+    "ground_truth": "285",
+    "generation": "1. First, convert the 1/4 inch layout to a fraction: 1/4 = 0.25 inches.\n2. Then, find the actual distance represented by 1 inch on the chart: 15 feet / 0.25 inches = 60 feet/inch.\n3. Now, convert the 4 3/4 inches on the chart to an improper fraction: 4 3/4 = 19/4 inches.\n4. Multiply the actual distance per inch by the inches on the chart: 60 feet/inch * 19/4 inches = 60 * 19 / 4 = 285 feet / 4 = 71.25 feet.\n\nFinal Answer: 71.25",
+    "pred_answer_masked": "71.25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, convert the 1/4 inch layout to a fraction: 1/4 = 0.25 inches.\n2. Then, find the actual distance represented by 1 inch on the chart: 15 feet / 0.25 inches = 60 feet/inch.\n3. Now, convert the 4 3/4 inches on the chart to an improper fraction: 4 3/4 = 19/4 inches.\n4. Multiply the actual distance per inch by the inches on the chart: 60 feet/inch * (19/4) inches = 15 * 19 = 285 feet.\n\nFinal Answer: 285"
+  },
+  {
+    "id": 53,
+    "question": "On a botanical survey map, every 1/3 inch corresponds to 30 meters of actual forest distance. The giant redwood and the riverbank are printed exactly 3 2/3 inches apart. How many real meters separate the tree and the riverbank?",
+    "ground_truth": "330",
+    "generation": "1. Convert the mixed number to an improper fraction: 3 2/3 = 11/3 inches.\n2. Multiply the fraction of inches by the conversion rate: (11/3) * 30 = 11 * 10 = 110 meters for the whole number part.\n3. Multiply the remaining fraction by the conversion rate: (1/3) * 30 = 10 meters.\n4. Add the results of steps 2 and 3: 110 + 10 = 120 meters.\n\nFinal Answer: 120",
+    "pred_answer_masked": "120",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number to an improper fraction: 3 2/3 = 11/3 inches.\n2. Find the conversion rate in meters per inch: 30 meters / (1/3 inch) = 90 meters per inch.\n3. Multiply the fraction of inches by the conversion rate: (11/3) * 90 = 11 * 30 = 330 meters.\n4. The real meters separating the tree and the riverbank is 330.\n\nFinal Answer: 330"
+  },
+  {
+    "id": 54,
+    "question": "A miniature golf course design relies on a scale wherein 4 yards of actual putting green distance fits into a 3/4 inch measure. The tee and the hole are designed to be 2 1/4 inches apart on the drafting paper. Determine the true yardage distance between the tee and the hole.",
+    "ground_truth": "12",
+    "generation": "1. First, convert 3/4 inch to a decimal: 3/4 = 0.75 inches.\n2. Then, find the scale factor by dividing the actual distance by the measured distance: 4 yards / 0.75 inches = 5.33 yards per inch.\n3. Now, convert 2 1/4 inches to a decimal: 2 1/4 = 2.25 inches.\n4. Multiply the measured distance by the scale factor to find the true yardage distance: 2.25 inches * 5.33 yards/inch = 12 yards.\n\nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, convert 3/4 inch to a decimal: 3/4 = 0.75 inches.\n2. Then, find the scale factor by dividing the actual distance by the measured distance: 4 yards / 0.75 inches = 16/3 yards per inch.\n3. Now, convert 2 1/4 inches to a decimal: 2 1/4 = 2.25 inches.\n4. Multiply the measured distance by the scale factor to find the true yardage distance: 2.25 inches * (16/3) yards/inch = (9/4) * (16/3) = 12 yards.\n\nFinal Answer: 12"
+  },
+  {
+    "id": 55,
+    "question": "According to a subway expansion map, 2.5 miles of actual underground distance translates to 1/5 inch of printed space. The current station and the proposed new station are 3 4/5 inches apart on the map. In miles, what is the actual underground distance separating the stations?",
+    "ground_truth": "47.5",
+    "generation": "1. Convert 3 4/5 inches to an improper fraction: 3 4/5 = (19/5) inches\n2. Multiply the actual underground distance per inch by the total inches: (1/5) * (19/5) = 19/25 miles\n3. The actual underground distance is 19/25 miles, but we need to find the distance between the two stations, so we multiply by 2: 2 * (19/25) = 38/25 miles\n4. Convert the improper fraction to a mixed number: 38/25 = 1 13/25 miles",
+    "pred_answer_masked": "25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 4/5 inches to an improper fraction: 3 4/5 = 19/5 inches.\n2. Determine how many 1/5 inch units are in 19/5 inches: (19/5) / (1/5) = 19 units.\n3. Multiply the number of units by the distance each unit represents (2.5 miles): 19 * 2.5 = 47.5 miles.\n4. The actual underground distance separating the stations is 47.5 miles.\n\nFinal Answer: 47.5"
+  },
+  {
+    "id": 56,
+    "question": "An anatomy diagram portrays 5 millimeters of actual biological distance using a 1/8 inch segment. The heart valve and the major artery are depicted 2 5/8 inches apart on the drawing. What is the actual millimeter distance between them?",
+    "ground_truth": "105",
+    "generation": "1. Convert 1/8 inch to millimeters: 1 inch = 25.4 mm, so 1/8 inch = 25.4 / 8 = 3.175 mm.\n2. Convert 2 5/8 inches to millimeters: 2 inches = 2 * 25.4 = 50.8 mm, 5/8 inch = 5/8 * 25.4 = 20.25 mm, so 2 5/8 inches = 50.8 + 20.25 = 71.05 mm.\n3. Calculate the actual distance between the heart valve and the major artery: 71.05 mm / (5 mm / 1/8 inch) = 71.05 mm / 3.175 mm/inch * 1/8 inch = 71.05 / 0.25 = 284.2 mm.\n4. The actual millimeter distance between the heart valve and the major artery is 284.2 mm.",
+    "pred_answer_masked": "284.2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the drawing distance of 2 5/8 inches to an improper fraction: 2 5/8 = 21/8 inches.\n2. Determine how many 1/8 inch units fit into this map distance: (21/8) / (1/8) = 21 units.\n3. Multiply the number of units by the actual biological distance each unit represents (5 millimeters): 21 * 5 = 105 millimeters.\n4. The actual millimeter distance between them is 105 millimeters.\n\nFinal Answer: 105"
+  },
+  {
+    "id": 57,
+    "question": "Studying a regional train map reveals a scale where 3/8 inch means 15 kilometers of actual track distance. The stations of Metro East and West End are marked 3 3/8 inches apart. Calculate the true track distance in kilometers between the stations.",
+    "ground_truth": "135",
+    "generation": "1. Convert 3 3/8 inches to an improper fraction: 3 3/8 = (24/8) + (3/8) = 27/8 inches.\n2. Convert 27/8 inches to a decimal: 27/8 = 3.375 inches.\n3. Set up a proportion to find the actual distance: (3.375 inches) / (27/8 inches) = x km / 15 km.\n4. Cross-multiply and solve for x: (3.375 * 15) / (27/8) = x, x = (3.375 * 15 * 8) / 27 = 6 km.\n\nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 3/8 inches to an improper fraction: 3 3/8 = 27/8 inches.\n2. Determine how many 3/8 inch units are in 27/8 inches: (27/8) / (3/8) = 9 units.\n3. Multiply the number of units by the actual track distance each unit represents: 9 * 15 km = 135 km.\n4. The true track distance in kilometers between the stations is 135 km.\n\nFinal Answer: 135"
+  },
+  {
+    "id": 58,
+    "question": "A maritime navigation chart uses a 2/5 inch indicator to represent 20 nautical miles of actual sailing distance. The lighthouse and the harbor rest 4 2/5 inches apart on the chart. What is the actual distance between the harbor and the lighthouse in nautical miles?",
+    "ground_truth": "220",
+    "generation": "1. The chart uses 2/5 inch to represent 20 nautical miles, so we need to find out how many nautical miles 1/5 inch represents: 20 / (2/5) = 20 * (5/2) = 50 nautical miles per 1/5 inch.\n2. Now we know that 1/5 inch represents 50 nautical miles, so 2/5 inch represents 2 * 50 = 100 nautical miles.\n3. The chart is 4 2/5 inches apart, which is equal to 4 + 2/5 = 4 + 0.4 = 4.4 inches.\n4. Now we know that 2/5 inch represents 100 nautical miles, so 4.4 inches represents 4.4 * 100 / (2/5) = 4.4 * 100 * (5/2) = 1100 nautical miles.\n\nFinal Answer: 1100",
+    "pred_answer_masked": "1100",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The chart uses 2/5 inch to represent 20 nautical miles.\n2. Convert 4 2/5 inches to an improper fraction: 4 2/5 = 22/5 inches.\n3. Find how many 2/5 inch units are in 22/5 inches: (22/5) / (2/5) = 11 units.\n4. Multiply the number of units by the distance per unit (20 nautical miles): 11 * 20 = 220 nautical miles.\n\nFinal Answer: 220"
+  },
+  {
+    "id": 59,
+    "question": "Within a structural engineering drawing, 6 meters of actual bridge span is scaled down to 1/4 inch. The two support pillars display a 5 3/4 inch gap on the drawing. How many actual meters separate the support pillars?",
+    "ground_truth": "138",
+    "generation": "1. The actual bridge span is 6 meters, and the scale is 1/4 inch per 6 meters, so 1 inch on the drawing represents 6 / (1/4) = 24 meters.\n2. The two support pillars display a 5 3/4 inch gap on the drawing, which is 5.75 inches.\n3. Since 1 inch on the drawing represents 24 meters, 5.75 inches represents 5.75 * 24 = 138 meters.\n4. The actual gap between the support pillars is 138 meters.",
+    "pred_answer_masked": "138",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The actual bridge span is 6 meters, and the scale is 1/4 inch per 6 meters, so 1 inch on the drawing represents 6 / (1/4) = 24 meters.\n2. The two support pillars display a 5 3/4 inch gap on the drawing, which is 5.75 inches.\n3. Since 1 inch on the drawing represents 24 meters, 5.75 inches represents 5.75 * 24 = 138 meters.\n4. The actual gap between the support pillars is 138 meters.\n\nFinal Answer: 138"
+  },
+  {
+    "id": 60,
+    "question": "Every 5/8 inch on a theme park expansion map denotes 40 yards of actual construction distance. The new roller coaster and the food court are placed 2 1/2 inches apart on the map. In yards, what is the real construction distance separating them?",
+    "ground_truth": "160",
+    "generation": "1. Convert 2 1/2 inches to a fraction: 2 1/2 = 5/2\n2. Multiply the fraction by 5/8 to find the map distance in terms of 5/8: (5/2) * (5/8) = 25/16\n3. Multiply the map distance by 40 yards to find the actual distance: (25/16) * 40 = 25 * 2.5 = 62.5 yards\n4. The actual distance is 62.5 yards.\n\nFinal Answer: 62.5",
+    "pred_answer_masked": "62.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 2 1/2 inches to an improper fraction: 2 1/2 = 5/2 = 20/8 inches.\n2. Find how many 5/8 inch units are in 20/8 inches: (20/8) / (5/8) = 4 units.\n3. Multiply the number of units by the distance each unit represents (40 yards): 4 * 40 = 160 yards.\n4. The real construction distance separating them is 160 yards.\n\nFinal Answer: 160"
+  },
+  {
+    "id": 61,
+    "question": "A cross-country road map compresses 50 miles of actual driving distance into a tiny 1/2 inch representation. The cities of Denver and Salt Lake City are placed 8 1/2 inches apart on this map. What is the true driving distance in miles between the two cities?",
+    "ground_truth": "850",
+    "generation": "1. First, we need to find out how many miles 1 inch represents on the map. Since 50 miles is represented by 1/2 inch, we multiply 50 by 2 to get the miles represented by 1 inch: 50 * 2 = 100 miles per inch.\n2. Now we know that 1 inch represents 100 miles. We need to find out how many inches are in 8 1/2 inches, which is the same as 8.5 inches. \n3. Multiply the number of inches by the miles per inch to find the true driving distance: 8.5 * 100 = 850 miles.\n4. The true driving distance between Denver and Salt Lake City is 850 miles.",
+    "pred_answer_masked": "850",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, we need to find out how many miles 1 inch represents on the map. Since 50 miles is represented by 1/2 inch, we multiply 50 by 2 to get the miles represented by 1 inch: 50 * 2 = 100 miles per inch.\n2. Now we know that 1 inch represents 100 miles. We need to find out how many inches are in 8 1/2 inches, which is the same as 8.5 inches. \n3. Multiply the number of inches by the miles per inch to find the true driving distance: 8.5 * 100 = 850 miles.\n4. The true driving distance between Denver and Salt Lake City is 850 miles.\n\nFinal Answer: 850"
+  },
+  {
+    "id": 62,
+    "question": "Building a miniature village model involves a blueprint where 1/4 inch equates to 3 feet of actual village distance. The church and the bakery are modeled to be 4 1/4 inches apart. How many actual feet separate the church and the bakery?",
+    "ground_truth": "51",
+    "generation": "1. Convert the mixed number 4 1/4 to an improper fraction: 4 1/4 = 17/4\n2. Multiply the improper fraction by 1/4 inch to find the actual ratio: (17/4) * (1/4) = 17/16\n3. Multiply the ratio by 3 feet to find the actual distance: (17/16) * 3 = 51/16\n4. Convert the improper fraction to a mixed number or decimal: 51/16 = 3.1875\nFinal Answer: 3.1875",
+    "pred_answer_masked": "3.1875",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 4 1/4 to an improper fraction: 4 1/4 = 17/4 inches.\n2. Find how many 1/4 inch units are in 17/4 inches: (17/4) / (1/4) = 17 units.\n3. Multiply the number of units by the distance each unit represents (3 feet): 17 * 3 = 51 feet.\n4. 51 actual feet separate the church and the bakery.\n\nFinal Answer: 51"
+  },
+  {
+    "id": 63,
+    "question": "Skiers looking at a skiing resort map will see that 400 meters of actual slope distance is represented by a 1/3 inch interval. The summit station and the base lodge sit 5 1/3 inches apart on the map. Calculate the physical slope distance in meters between the summit and the lodge.",
+    "ground_truth": "6400",
+    "generation": "1. First, we need to find the scale of the map. Since 1/3 inch represents 400 meters, we can set up a proportion to find the scale. \n   1/3 inch : 400 meters = x inches : y meters\n   We can cross-multiply to get: (1/3)x = 400y\n   Then, we can divide both sides by (1/3) to get: x = 400y * (3/1) = 1200y\n\n2. Since we know that 1/3 inch represents 400 meters, we can use this to find the scale in meters per inch. \n   1/3 inch represents 400 meters, so 1 inch represents 400 * 3 = 1200 meters\n\n3. Now, we can use the scale to find the physical slope distance between the summit and the base lodge. \n   The summit station and the base lodge sit 5 1/3 inches apart on the map. \n   We can convert 5 1/3 inches to an improper fraction: 16/3 inches\n   Then, we can multiply the distance in inches by the scale in meters per inch: (16/3) *",
+    "pred_answer_masked": "3",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. We know that 1/3 inch represents 400 meters.\n2. The summit station and the base lodge sit 5 1/3 inches apart on the map.\n3. We can convert 5 1/3 inches to an improper fraction: 16/3 inches.\n4. To find the distance, we determine how many 1/3 inch intervals fit in 16/3 inches: 16 intervals. Multiply by 400 meters: 16 * 400 = 6400 meters.\n\nFinal Answer: 6400"
+  },
+  {
+    "id": 64,
+    "question": "A garden landscaping plan depicts 8 feet of actual lawn distance with a 3/4 inch measurement. The patio and the gazebo are spaced 3 3/4 inches apart on the plan. In actual feet, what is the distance between the patio and gazebo?",
+    "ground_truth": "40",
+    "generation": "1. Convert 3/4 inch to a decimal: 3/4 = 0.75 inches.\n2. Convert 8 feet to inches: 8 feet * 12 inches/foot = 96 inches.\n3. Convert 3 3/4 inches to a decimal: 3 + 3/4 = 3 + 0.75 = 3.75 inches.\n4. Add the actual lawn distance in inches to the patio and gazebo spacing in inches: 96 inches + 3.75 inches = 99.75 inches.\n5. Convert the total distance from inches to feet: 99.75 inches / 12 inches/foot = 8.3125 feet.\n6. Add the patio and gazebo spacing in feet to the actual lawn distance in feet: 8.3125 feet + 0.3125 feet = 8.625 feet.\n\nFinal Answer: 8.625",
+    "pred_answer_masked": "8.625",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 3/4 inches to an improper fraction: 3 3/4 = 15/4 inches.\n2. Find how many 3/4 inch units are in 15/4 inches: (15/4) / (3/4) = 5 units.\n3. Multiply the number of units by the distance each unit represents (8 feet): 5 * 8 = 40 feet.\n4. The actual distance between the patio and gazebo is 40 feet.\n\nFinal Answer: 40"
+  },
+  {
+    "id": 65,
+    "question": "Examining an interstellar map shows that 100 light-years of actual cosmic distance corresponds to 1/5 inch. The star systems Alpha and Beta span a 4 3/5 inch gap on this map. Find the true cosmic distance in light-years separating the star systems.",
+    "ground_truth": "2300",
+    "generation": "1. Convert the mixed number 4 3/5 to an improper fraction: 4 3/5 = (4 * 5 + 3) / 5 = 23/5\n2. Multiply the map scale by the improper fraction to find the distance in light-years: (100 light-years / 1/5 inch) * (23/5 inch) = 100 * 23 / (1/5) = 100 * 23 * 5 = 23000\n3. Simplify the calculation: 23000 light-years\n4. No further simplification needed.",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 4 3/5 to an improper fraction: 4 3/5 = (4 * 5 + 3) / 5 = 23/5 inches.\n2. Find how many 1/5 inch units are in 23/5 inches: (23/5) / (1/5) = 23 units.\n3. Multiply the number of units by 100 light-years: 23 * 100 = 2300 light-years.\n4. The true cosmic distance is 2300 light-years.\n\nFinal Answer: 2300"
+  },
+  {
+    "id": 66,
+    "question": "A cave exploration map dictates that 1/8 inch translates to 10 meters of actual tunnel distance. The entrance and the grand chamber are charted 3 1/8 inches apart. What is the real-world distance in meters between the entrance and the chamber?",
+    "ground_truth": "250",
+    "generation": "1. Convert the mixed number 3 1/8 to an improper fraction: 3 1/8 = 25/8\n2. Multiply the fraction by 1/8 to find the real-world distance per inch: (25/8) * (1/8) = 25/64\n3. Multiply the fraction by 12 to find the real-world distance per foot: (25/64) * 12 = 75/16\n4. Multiply the fraction by 3 to find the real-world distance per 3 feet: (75/16) * 3 = 225/16\n5. Convert the improper fraction to a decimal: 225/16 = 14.0625\n6. Multiply the decimal by 10 to find the real-world distance per 1/8 inch: 14.0625 * 10 = 140.625\n7. Multiply the decimal by 8 to find the real-world distance per inch: 140.625 * 8 = 1125\n8. Multiply the decimal by 3 to find the real-world distance: 1125 * 3 = 3375\nFinal Answer: 3375",
+    "pred_answer_masked": "3375",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 3 1/8 to an improper fraction: 3 1/8 = 25/8 inches.\n2. Determine how many 1/8 inch units fit in 25/8 inches: (25/8) / (1/8) = 25 units.\n3. Multiply the number of units by the real-world distance per unit (10 meters): 25 * 10 = 250 meters.\n4. The real-world distance is 250 meters.\n\nFinal Answer: 250"
+  },
+  {
+    "id": 67,
+    "question": "Utilizing a university layout diagram, one can see that 50 yards of actual campus distance is drawn as 3/8 inch. The library and the student union are 2 5/8 inches apart on the diagram. How many yards of actual space lie between the library and student union?",
+    "ground_truth": "350",
+    "generation": "1. First, we need to find the scale factor of the diagram. Since 50 yards is equal to 3/8 inch, we can set up a proportion to find the scale factor. \n   50 yards / (3/8 inch) = x (scale factor)\n   To solve for x, we can multiply both sides by (3/8 inch) and then divide by 50.\n   x = (50 * (3/8)) / 1\n   x = (150/8) / 1\n   x = 18.75 (scale factor)\n\n2. Now that we have the scale factor, we can use it to find the actual distance between the library and student union. \n   The library and student union are 2 5/8 inches apart on the diagram. We can convert the mixed number to an improper fraction.\n   2 5/8 = (2 * 8 + 5) / 8\n   2 5/8 = (16 + 5) / 8\n   2 5/8 = 21/8\n   Now we can multiply the distance on the diagram by the scale factor to find the actual distance.\n   Actual distance = (21",
+    "pred_answer_masked": "21",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The map states 50 yards is represented by 3/8 inch.\n2. The library and student union are 2 5/8 inches apart. Convert this mixed number to an improper fraction: 2 5/8 = 21/8 inches.\n3. Find how many 3/8 inch units are in 21/8 inches: (21/8) / (3/8) = 7 units.\n4. Multiply the number of units by 50 yards: 7 * 50 = 350 yards.\n\nFinal Answer: 350"
+  },
+  {
+    "id": 68,
+    "question": "High-speed rail lines are plotted on a map where 2/5 inch mirrors 30 miles of actual track distance. The stations in Paris and Lyon are set 3 1/5 inches apart according to the map. Determine the exact track distance in miles between the stations.",
+    "ground_truth": "240",
+    "generation": "1. First, convert 3 1/5 inches to an improper fraction: 3 1/5 = (16/5) inches.\n2. Then, find the ratio of inches to miles: 2/5 inch = 30 miles, so 1 inch = (30 * 5) / 2 = 75 miles.\n3. Now, multiply the ratio of inches to miles by the distance between the stations in inches: (16/5) * 75 = (16 * 75) / 5 = 1200 / 5 = 240 miles.\n4. The track distance between the stations is 240 miles.",
+    "pred_answer_masked": "240",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, convert 3 1/5 inches to an improper fraction: 3 1/5 = (16/5) inches.\n2. Then, find the ratio of inches to miles: 2/5 inch = 30 miles, so 1 inch = (30 * 5) / 2 = 75 miles.\n3. Now, multiply the ratio of inches to miles by the distance between the stations in inches: (16/5) * 75 = (16 * 75) / 5 = 1200 / 5 = 240 miles.\n4. The track distance between the stations is 240 miles.\n\nFinal Answer: 240"
+  },
+  {
+    "id": 69,
+    "question": "A shopping center blueprint relies on a scale where 20 feet of actual walkway distance fits into 1/4 inch. The anchor store and the escalator are rendered 5 1/4 inches apart. What is the physical distance between the store and escalator in feet?",
+    "ground_truth": "420",
+    "generation": "1. First, we need to find out how many feet 1/4 inch represents. Since 20 feet is equal to 1/4 inch, we can set up a proportion to find the number of feet per inch. 20 feet / (1/4 inch) = x feet / 1 inch. \n2. To solve for x, we can multiply both sides by 1 inch, resulting in x = 20 feet * 4 = 80 feet per inch.\n3. Now that we know 1 inch represents 80 feet, we can multiply the total inches between the store and escalator by 80 to find the actual distance. 5 1/4 inches = 5.25 inches.\n4. Multiply 5.25 inches by 80 feet per inch to find the physical distance between the store and escalator. 5.25 * 80 = 420 feet.",
+    "pred_answer_masked": "420",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, we need to find out how many feet 1/4 inch represents. Since 20 feet is equal to 1/4 inch, we can set up a proportion to find the number of feet per inch. 20 feet / (1/4 inch) = x feet / 1 inch. \n2. To solve for x, we can multiply both sides by 1 inch, resulting in x = 20 feet * 4 = 80 feet per inch.\n3. Now that we know 1 inch represents 80 feet, we can multiply the total inches between the store and escalator by 80 to find the actual distance. 5 1/4 inches = 5.25 inches.\n4. Multiply 5.25 inches by 80 feet per inch to find the physical distance between the store and escalator. 5.25 * 80 = 420 feet.\n\nFinal Answer: 420"
+  },
+  {
+    "id": 70,
+    "question": "Navigating a city park map means interpreting 5/8 inch as 100 meters of actual park distance. The playground and the duck pond display a 1 7/8 inch separation on the map. In meters, what is the actual distance between the playground and duck pond?",
+    "ground_truth": "300",
+    "generation": "1. Convert 1 7/8 inch to an improper fraction: 1 7/8 = (15/8) inches\n2. Set up a proportion to relate inches to meters: (5/8) inches = 100 meters\n3. Use the proportion to find the number of meters per inch: 100 meters / (5/8) inches = 100 * (8/5) meters/inch = 160 meters/inch\n4. Multiply the number of meters per inch by the number of inches between the playground and duck pond: (15/8) inches * 160 meters/inch = 15 * 160 / 8 meters = 300 meters\nFinal Answer: 300",
+    "pred_answer_masked": "300",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert 1 7/8 inch to an improper fraction: 1 7/8 = (15/8) inches\n2. Set up a proportion to relate inches to meters: (5/8) inches = 100 meters\n3. Use the proportion to find the number of meters per inch: 100 meters / (5/8) inches = 100 * (8/5) meters/inch = 160 meters/inch\n4. Multiply the number of meters per inch by the number of inches between the playground and duck pond: (15/8) inches * 160 meters/inch = 15 * 160 / 8 meters = 300 meters\n\nFinal Answer: 300"
+  },
+  {
+    "id": 71,
+    "question": "A state highway map features a scale translating 14 miles of actual road distance to a 1/2 inch segment. The towns of Greenfield and Springfield are found 4 1/2 inches apart on the document. Calculate the real road distance in miles between the towns.",
+    "ground_truth": "126",
+    "generation": "1. First, we need to find the actual distance represented by 1 inch on the map. Since 14 miles is represented by 1/2 inch, we multiply 14 by 2 to get the distance represented by 1 inch: 14 * 2 = 28 miles.\n2. Now, we need to find the distance represented by 4 1/2 inches on the map. We convert 4 1/2 to an improper fraction: 4 1/2 = 9/2. Then, we multiply 28 miles by 9/2 to get the distance represented by 4 1/2 inches: 28 * 9/2 = 126 miles.\n3. The distance represented by 4 1/2 inches is the actual road distance between Greenfield and Springfield.",
+    "pred_answer_masked": "2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. First, we need to find the actual distance represented by 1/2 inch on the map, which is 14 miles.\n2. Convert 4 1/2 to an improper fraction: 4 1/2 = 9/2 inches.\n3. Find how many 1/2 inch units are in 9/2 inches: 9 units.\n4. Multiply the number of units by 14 miles: 9 * 14 = 126 miles.\n\nFinal Answer: 126"
+  },
+  {
+    "id": 72,
+    "question": "A museum floor plan shrinks 12 feet of actual hallway distance down to a 1/4 inch marking. The modern art wing and the natural history wing are separated by 3 3/4 inches on the floor plan. How many feet actually separate the two wings?",
+    "ground_truth": "180",
+    "generation": "1. The floor plan shrinks 12 feet down to 1/4 inch, so 1 foot is 1/48 inch (12 * 1/4 = 3, 12/3 = 4).\n2. The modern art wing and the natural history wing are separated by 3 3/4 inches on the floor plan, which is 3.75 inches.\n3. Convert 3.75 inches to feet by multiplying by 1/48 (3.75 * 1/48 = 3.75/48 = 0.078125 feet).\n4. Multiply 0.078125 feet by 48 to find the actual distance (0.078125 * 48 = 3.75).",
+    "pred_answer_masked": "3.75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 3/4 inches to an improper fraction: 3 3/4 = 15/4 inches.\n2. Find how many 1/4 inch units are in 15/4 inches: 15 units.\n3. The floor plan shrinks 12 feet down to 1/4 inch, so multiply 15 by 12: 15 * 12 = 180 feet.\n4. 180 feet actually separate the two wings.\n\nFinal Answer: 180"
+  },
+  {
+    "id": 73,
+    "question": "Following a mountain biking trail map requires knowing that 1/3 inch stands for 2.5 miles of actual riding distance. The trailhead and the summit peak are marked 4 2/3 inches apart. What is the genuine riding distance between the trailhead and peak in miles?",
+    "ground_truth": "35",
+    "generation": "1. Convert 4 2/3 inches to an improper fraction: 4 2/3 = (14/3) inches\n2. Multiply the improper fraction by 2.5 miles/inch: (14/3) * 2.5 = 14/3 * 25/10 = 350/30\n3. Simplify the fraction: 350/30 = 35/3\n4. Convert the fraction to a decimal and multiply by 2.5 miles/inch: (35/3) * 2.5 = 35/3 * 25/10 = 875/30\n5. Simplify the fraction: 875/30 = 175/6\n6. Convert the fraction to a decimal and multiply by 2.5 miles/inch: (175/6) * 2.5 = 175/6 * 25/10 = 4375/60\n7. Simplify the fraction: 4375/60 = 87.0833\n8. Multiply the decimal by 2.5 miles/inch: 87.0833 * 2.5 = 217.2075\n9. Multiply the decimal by 2.5 miles",
+    "pred_answer_masked": "2.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 4 2/3 inches to an improper fraction: 4 2/3 = 14/3 inches.\n2. Find how many 1/3 inch units are in 14/3 inches: 14 units.\n3. Multiply the number of units by the distance per unit (2.5 miles): 14 * 2.5 = 35 miles.\n4. The genuine riding distance between the trailhead and peak is 35 miles.\n\nFinal Answer: 35"
+  },
+  {
+    "id": 74,
+    "question": "An oceanography map scales 50 nautical miles of actual sea distance to exactly 3/4 inch. The research buoy and the underwater trench appear 2 1/4 inches apart on the map. Find the true distance separating them in nautical miles.",
+    "ground_truth": "150",
+    "generation": "1. First, we need to find the scale factor of the map, which is the actual distance represented by 1 inch. Since 50 nautical miles is represented by 3/4 inch, we can find the scale factor by dividing 50 by 3/4. \n   Scale factor = 50 / (3/4) = 50 * (4/3) = 200/3 = 66.67 nautical miles per inch.\n\n2. Now, we can find the actual distance represented by 2 1/4 inches on the map by multiplying the scale factor by 2 1/4. \n   2 1/4 inches = 2.25 inches\n   Actual distance = 66.67 * 2.25 = 150 nautical miles.\n\n3. The actual distance is the true distance separating the research buoy and the underwater trench in nautical miles.\n\nFinal Answer: 150",
+    "pred_answer_masked": "150",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, we need to find the scale factor of the map, which is the actual distance represented by 1 inch. Since 50 nautical miles is represented by 3/4 inch, we can find the scale factor by dividing 50 by 3/4. \n   Scale factor = 50 / (3/4) = 50 * (4/3) = 200/3 = 66.67 nautical miles per inch.\n\n2. Now, we can find the actual distance represented by 2 1/4 inches on the map by multiplying the scale factor by 2 1/4. \n   2 1/4 inches = 2.25 inches\n   Actual distance = (200/3) * 2.25 = 150 nautical miles.\n\n3. The actual distance is the true distance separating the research buoy and the underwater trench in nautical miles.\n\nFinal Answer: 150"
+  },
+  {
+    "id": 75,
+    "question": "An amusement park map conveys 30 yards of actual walking distance via a 1/5 inch measurement. The water slide and the wave pool are placed 3 1/5 inches apart on the map. What is the actual walking distance in yards between the slide and pool?",
+    "ground_truth": "480",
+    "generation": "1. First, we need to find the scale of the map. We know that 1/5 inch represents 30 yards. So, we can set up a proportion to find the actual distance represented by 1 inch. 1/5 inch represents 30 yards, so 1 inch represents 30 / (1/5) = 30 * 5 = 150 yards.\n2. Now that we know 1 inch represents 150 yards, we can find the actual distance between the slide and pool. The map shows 3 1/5 inches between them, which is 3 + 1/5 = 3 + 0.2 = 3.2 inches. So, the actual distance is 3.2 * 150 = 480 yards.\n3. To find the actual distance between the slide and pool, we need to consider the direction of the water slide and the wave pool. Since the map shows them 3.2 inches apart, we need to consider the actual distance in both directions. However, the problem does not provide any information about the direction, so we assume the distance is the straight-line distance between the two attractions.\n4. Since we have already found the actual distance between the slide and pool,",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 1/5 inches to an improper fraction: 3 1/5 = 16/5 inches.\n2. Find how many 1/5 inch units are in 16/5 inches: 16 units.\n3. The map conveys 30 yards per 1/5 inch.\n4. Multiply the number of units by 30 yards: 16 * 30 = 480 yards.\n\nFinal Answer: 480"
+  },
+  {
+    "id": 76,
+    "question": "Looking at a pipeline schematic, you can determine that 5 miles of actual pipe distance is represented by 1/8 inch. The pumping station and the refinery sit 4 3/8 inches apart on the diagram. Calculate the exact distance in miles between the station and refinery.",
+    "ground_truth": "175",
+    "generation": "1. First, convert the mixed number 4 3/8 to an improper fraction: 4 3/8 = (32 + 3)/8 = 35/8 inches.\n2. Since 5 miles is represented by 1/8 inch, we can find the number of miles represented by 1 inch: 5 miles / (1/8 inch) = 5 * 8 = 40 miles per inch.\n3. Now, multiply the number of miles per inch by the total inches between the station and refinery: 40 miles/inch * (35/8) inches = 40 * 35 / 8 miles.\n4. Calculate the product: 40 * 35 = 1400, then divide by 8: 1400 / 8 = 175 miles.\nFinal Answer: 175",
+    "pred_answer_masked": "175",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, convert the mixed number 4 3/8 to an improper fraction: 4 3/8 = (32 + 3)/8 = 35/8 inches.\n2. Since 5 miles is represented by 1/8 inch, we can find the number of miles represented by 1 inch: 5 miles / (1/8 inch) = 5 * 8 = 40 miles per inch.\n3. Now, multiply the number of miles per inch by the total inches between the station and refinery: 40 miles/inch * (35/8) inches = 40 * 35 / 8 miles.\n4. Calculate the product: 40 * 35 = 1400, then divide by 8: 1400 / 8 = 175 miles.\n\nFinal Answer: 175"
+  },
+  {
+    "id": 77,
+    "question": "A community garden map utilizes a scale wherein 4 meters of actual ground distance is equal to 3/8 inch. The greenhouse and the compost bin are mapped out 1 1/2 inches apart. How many actual meters exist between the greenhouse and bin?",
+    "ground_truth": "16",
+    "generation": "1. Convert 3/8 inch to a decimal: 3/8 = 0.375 inches.\n2. Convert 1 1/2 inches to a decimal: 1 1/2 = 1.5 inches.\n3. Divide the mapped distance by the scale factor to find the actual distance: 1.5 / 0.375 = 4.\n4. Multiply the actual distance by the scale factor to find the actual distance in meters: 4 * 4 = 16.",
+    "pred_answer_masked": "16",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert 3/8 inch to a decimal: 3/8 = 0.375 inches.\n2. Convert 1 1/2 inches to a decimal: 1 1/2 = 1.5 inches.\n3. Divide the mapped distance by the scaled inches to find the ratio: 1.5 / 0.375 = 4.\n4. Multiply the ratio by the scaled meters to find the actual distance in meters: 4 * 4 = 16.\n\nFinal Answer: 16"
+  },
+  {
+    "id": 78,
+    "question": "A national forest map indicates that a 2/5 inch span corresponds to 8 miles of actual forest distance. The ranger cabin and the fire tower have a 4 4/5 inch gap between them on the map. Determine the true physical distance in miles between the cabin and tower.",
+    "ground_truth": "96",
+    "generation": "1. First, convert the mixed number 4 4/5 to an improper fraction: 4 4/5 = (4*5 + 4)/5 = 24/5 inches.\n2. Then, find the ratio of actual distance to map distance: 8 miles / (2/5) inches = 8 / (2/5) = 8 * (5/2) = 20 miles per inch.\n3. Now, multiply the map distance by the ratio to find the actual distance: (24/5) inches * 20 miles/inch = (24/5) * 20 = 24 * 4 = 96 miles.\n4. The actual distance is 96 miles.",
+    "pred_answer_masked": "96",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, convert the mixed number 4 4/5 to an improper fraction: 4 4/5 = (4*5 + 4)/5 = 24/5 inches.\n2. Then, find the ratio of actual distance to map distance: 8 miles / (2/5) inches = 8 / (2/5) = 8 * (5/2) = 20 miles per inch.\n3. Now, multiply the map distance by the ratio to find the actual distance: (24/5) inches * 20 miles/inch = (24/5) * 20 = 24 * 4 = 96 miles.\n4. The actual distance is 96 miles.\n\nFinal Answer: 96"
+  },
+  {
+    "id": 79,
+    "question": "In an architectural rendering, 3 meters of actual building distance is compressed to a 1/4 inch space. The main lobby and the elevator bank are drawn 5 3/4 inches apart. What is the real-world distance separating the lobby and elevators in meters?",
+    "ground_truth": "69",
+    "generation": "1. First, convert 1/4 inch to meters: 1 inch = 0.0254 meters, so 1/4 inch = 0.0254 / 4 = 0.00635 meters.\n2. Then, find the scale factor: 3 meters / 0.00635 meters = 473.61.\n3. Now, convert 5 3/4 inches to meters: 5.75 inches = 5.75 * 0.0254 = 0.1461 meters.\n4. Multiply the distance in inches by the scale factor to find the real-world distance: 0.1461 meters * 473.61 = 69.2 meters.",
+    "pred_answer_masked": "69.2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 5 3/4 inches to an improper fraction: 5 3/4 = 23/4 inches.\n2. Find how many 1/4 inch units are in 23/4 inches: (23/4) / (1/4) = 23 units.\n3. Since 1/4 inch represents 3 meters, multiply the units by 3: 23 * 3 = 69 meters.\n4. The real-world distance is 69 meters.\n\nFinal Answer: 69"
+  },
+  {
+    "id": 80,
+    "question": "A constellation chart sets 12 parsecs of actual stellar distance equivalent to 5/8 inch of visual space. The nebulae Alpha and Omega are positioned 3 1/8 inches apart on the chart. In parsecs, what is the true distance lying between the nebulae?",
+    "ground_truth": "60",
+    "generation": "1. Convert 3 1/8 inches to an improper fraction: 3 1/8 = 25/8 inches.\n2. Multiply the chart's scale by the distance on the chart: 5/8 inch * (25/8 inches) = 25/64 parsecs.\n3. Convert the improper fraction to a mixed number: 25/64 = 0.390625.\n4. Multiply the mixed number by the chart's scale to find the true distance: 12 parsecs * 0.390625 = 4.6875 parsecs.",
+    "pred_answer_masked": "4.6875",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 1/8 inches to an improper fraction: 3 1/8 = 25/8 inches.\n2. Find how many 5/8 inch units are in 25/8 inches: (25/8) / (5/8) = 5 units.\n3. Multiply the number of units by 12 parsecs: 5 * 12 = 60 parsecs.\n4. The true distance is 60 parsecs.\n\nFinal Answer: 60"
+  },
+  {
+    "id": 81,
+    "question": "Navigating with a metropolitan map involves a scale where 4 miles of actual city distance is conveyed by 1/2 inch. The stadium and the convention center are situated 7 1/2 inches apart on this map. Find the real city distance in miles between the stadium and convention center.",
+    "ground_truth": "60",
+    "generation": "1. 4 miles is represented by 1/2 inch, so 1 inch represents 4 / (1/2) = 8 miles.\n2. The map distance between the stadium and convention center is 7 1/2 inches, which is equal to 7.5 inches.\n3. Multiply the map distance by the real distance per inch to find the real city distance: 7.5 * 8 = 60 miles.\n4. The real city distance between the stadium and convention center is 60 miles.\n\nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. 4 miles is represented by 1/2 inch, so 1 inch represents 4 / (1/2) = 8 miles.\n2. The map distance between the stadium and convention center is 7 1/2 inches, which is equal to 7.5 inches.\n3. Multiply the map distance by the real distance per inch to find the real city distance: 7.5 * 8 = 60 miles.\n4. The real city distance between the stadium and convention center is 60 miles.\n\nFinal Answer: 60"
+  },
+  {
+    "id": 82,
+    "question": "A theater set design plan represents 2 feet of actual stage distance with a 1/4 inch drawing. The balcony prop and the main backdrop are spaced 6 1/4 inches apart on the plan. How many actual feet separate the prop and backdrop?",
+    "ground_truth": "50",
+    "generation": "1. Convert 1/4 inch to feet: 1/4 inch = 1/4 / 12 = 1/48 feet (since 1 foot = 12 inches)\n2. Convert 6 1/4 inches to feet: 6 1/4 inches = 6 + 1/4 = 6 + 1/4 / 12 = 6.021 feet (since 1 foot = 12 inches)\n3. Calculate the actual distance represented by 6 1/4 inches on the plan: 6.021 feet * (1/48) = 0.125 feet\n4. Multiply the actual distance by 2 to get the actual stage distance: 0.125 * 2 = 0.25 feet",
+    "pred_answer_masked": "0.25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 6 1/4 inches to an improper fraction: 6 1/4 = 25/4 inches.\n2. Find how many 1/4 inch units are in 25/4 inches: 25 units.\n3. Since 1/4 inch represents 2 feet, multiply by 2: 25 * 2 = 50 feet.\n4. 50 actual feet separate the prop and backdrop.\n\nFinal Answer: 50"
+  },
+  {
+    "id": 83,
+    "question": "A golf course map establishes that 1/3 inch means 50 yards of actual fairway distance. The tee box and the sand trap are located 2 1/3 inches apart on the layout. Calculate the physical yard distance between the tee box and sand trap.",
+    "ground_truth": "350",
+    "generation": "1. Convert 2 1/3 inches to an improper fraction: 2 1/3 = 7/3 inches\n2. Multiply the fraction by the conversion rate: (7/3) * 50 = 7 * 50 / 3 = 350 / 3\n3. Convert the improper fraction to a decimal: 350 / 3 = 116.67\n4. Round the decimal to two decimal places: 116.67 ≈ 116.67\nFinal Answer: 116.67",
+    "pred_answer_masked": "116.67",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 2 1/3 inches to an improper fraction: 2 1/3 = 7/3 inches.\n2. Find how many 1/3 inch units are in 7/3 inches: 7 units.\n3. Multiply the number of units by the conversion rate (50 yards): 7 * 50 = 350 yards.\n4. The physical yard distance is 350 yards.\n\nFinal Answer: 350"
+  },
+  {
+    "id": 84,
+    "question": "Within an airport terminal map, 100 feet of actual walking distance is scaled to a 3/4 inch line. Gate A12 and the baggage claim possess a 4 1/2 inch gap on the map. What is the actual foot distance between the gate and baggage claim?",
+    "ground_truth": "600",
+    "generation": "1. First, we need to find the scale factor of the map. We know that 100 feet is scaled to 3/4 inch. So, we can set up a proportion: 100 feet / 3/4 inch = x feet / 3/4 inch.\n2. To solve for x, we can cross-multiply: 100 * 3/4 = x * 3/4. This simplifies to 75 = 3x/4.\n3. Multiply both sides by 4/3 to isolate x: x = 75 * 4/3 = 100 feet.\n4. Now that we know the scale factor is 100 feet per 3/4 inch, we can use it to find the actual distance between the gate and baggage claim. The map distance is 4 1/2 inches, which is equal to 9/2 inches. We can set up a proportion: 100 feet / 3/4 inch = y feet / 9/2 inches.\n5. To solve for y, we can cross-multiply: 100 * 9/2 = y * 3/4. This simplifies to 450 = 3y/4.\n6. Multiply both",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 4 1/2 inches to an improper fraction: 4 1/2 = 9/2 inches.\n2. Find how many 3/4 inch units are in 9/2 inches: (9/2) / (3/4) = 6 units.\n3. Multiply the number of units by 100 feet: 6 * 100 = 600 feet.\n4. The actual foot distance is 600 feet.\n\nFinal Answer: 600"
+  },
+  {
+    "id": 85,
+    "question": "A county transit map denotes 6 miles of actual route distance using a 1/5 inch marking. The towns of Oakville and Maplewood are placed 5 2/5 inches apart on the document. Determine the exact route distance in miles separating the towns.",
+    "ground_truth": "162",
+    "generation": "1. First, convert the mixed number 5 2/5 to an improper fraction: 5 2/5 = (5 * 5 + 2) / 5 = 27/5 inches.\n2. Now, find the ratio of actual distance to the marking distance: 6 miles / (1/5 inch) = 6 * 5 = 30 miles per inch.\n3. Convert the ratio to inches per mile: 1 mile / (30/30) = 1 mile / 1 = 1 inch per mile.\n4. Multiply the inches between the towns by the miles per inch to find the route distance: (27/5) * 1 = 27/5 miles.\nFinal Answer: 5.4",
+    "pred_answer_masked": "5.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 5 2/5 to an improper fraction: 5 2/5 = 27/5 inches.\n2. Find how many 1/5 inch units are in 27/5 inches: 27 units.\n3. Multiply the number of units by 6 miles: 27 * 6 = 162 miles.\n4. The exact route distance is 162 miles.\n\nFinal Answer: 162"
+  },
+  {
+    "id": 86,
+    "question": "Every 1/8 inch on a miniature model train layout signifies 2 meters of actual track distance. The train station and the switching yard show a 4 5/8 inch separation on the layout. In meters, what is the true distance between the station and yard?",
+    "ground_truth": "74",
+    "generation": "1. Convert the mixed number 4 5/8 to an improper fraction: 4 5/8 = (4 * 8 + 5) / 8 = 37/8\n2. Multiply the improper fraction by 1/8 to find the actual distance represented by 1/8 inch on the layout: (37/8) * (1/8) = 37/64\n3. Multiply the result by 2 to find the actual distance represented by 1/8 inch on the layout in meters: (37/64) * 2 = 37/32\n4. Multiply the mixed number 4 5/8 by the actual distance represented by 1/8 inch on the layout in meters: (37/32) * (37/8) = (37 * 37) / (32 * 8) = 1369 / 256\n5. Convert the improper fraction to a decimal and multiply by 2 to find the true distance between the station and yard in meters: (1369 / 256) * 2 = 1369 / 128 = 10.728125\n6. Multiply the improper fraction by 2 to find the true distance between the station",
+    "pred_answer_masked": "2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert the mixed number 4 5/8 to an improper fraction: 4 5/8 = 37/8 inches.\n2. Find how many 1/8 inch units are in 37/8 inches: 37 units.\n3. Multiply the number of units by the distance per unit (2 meters): 37 * 2 = 74 meters.\n4. The true distance is 74 meters.\n\nFinal Answer: 74"
+  },
+  {
+    "id": 87,
+    "question": "A neighborhood map applies a scale equating 0.5 miles of actual street distance to 3/8 inch. The elementary school and the public library are set 2 1/4 inches apart on the map. Find the actual distance in miles running between the school and library.",
+    "ground_truth": "3",
+    "generation": "1. Convert 3/8 inch to a decimal: 3/8 = 0.375 inches.\n2. Convert 2 1/4 inches to a decimal: 2 1/4 = 2.25 inches.\n3. Divide the map distance by the scale to find the actual distance per inch: 0.5 miles / 0.375 inches = 1.3333 miles per inch.\n4. Multiply the actual distance per inch by the map distance to find the actual distance: 1.3333 miles per inch * 2.25 inches = 3 miles.\n\nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert 3/8 inch to a decimal: 3/8 = 0.375 inches.\n2. Convert 2 1/4 inches to a decimal: 2 1/4 = 2.25 inches.\n3. Divide the map distance by the scale to find the actual distance per inch: 0.5 miles / 0.375 inches = 4/3 miles per inch.\n4. Multiply the actual distance per inch by the map distance to find the actual distance: (4/3) miles per inch * 2.25 inches = 3 miles.\n\nFinal Answer: 3"
+  },
+  {
+    "id": 88,
+    "question": "Studying a historical trade route map shows that 200 miles of actual land distance is depicted by a 2/5 inch span. The ancient cities of Troy and Sparta appear 1 3/5 inches apart. How many actual miles lay between the ancient cities?",
+    "ground_truth": "800",
+    "generation": "1. First, we need to find the scale of the map, which is the actual distance per inch. We can do this by dividing the actual distance (200 miles) by the span (2/5 inch). To divide by a fraction, we multiply by its reciprocal: 200 / (2/5) = 200 * (5/2) = 500 miles per inch.\n2. Now that we know the scale, we can find the actual distance between Troy and Sparta by multiplying the span (1 3/5 inches) by the scale (500 miles per inch). First, convert the mixed number to an improper fraction: 1 3/5 = (5/5) + (3/5) = 8/5. Then multiply: (8/5) * 500 = 800 miles.\n3. We can also verify our answer by converting the improper fraction back to a mixed number: 800 / 500 = 1 2/5. This matches the original span, confirming that our calculation is correct.\n4. The actual distance between Troy and Sparta is 800 miles.\n\nFinal Answer: 800",
+    "pred_answer_masked": "800",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, we need to find the scale of the map, which is the actual distance per inch. We can do this by dividing the actual distance (200 miles) by the span (2/5 inch). To divide by a fraction, we multiply by its reciprocal: 200 / (2/5) = 200 * (5/2) = 500 miles per inch.\n2. Now that we know the scale, we can find the actual distance between Troy and Sparta by multiplying the span (1 3/5 inches) by the scale (500 miles per inch). First, convert the mixed number to an improper fraction: 1 3/5 = (5/5) + (3/5) = 8/5. Then multiply: (8/5) * 500 = 800 miles.\n3. We can also verify our answer by converting the improper fraction back to a mixed number: 800 / 500 = 1 2/5. This matches the original span, confirming that our calculation is correct.\n4. The actual distance between Troy and Sparta is 800 miles.\n\nFinal Answer: 800"
+  },
+  {
+    "id": 89,
+    "question": "A factory layout diagram relies on a scale where 1/4 inch represents 15 feet of actual factory distance. The assembly line and the packaging area are mapped out 4 3/4 inches apart. Calculate the real-world distance in feet between the line and packaging area.",
+    "ground_truth": "285",
+    "generation": "1. Convert 4 3/4 inches to a decimal: 4.75 inches\n2. Multiply the decimal inches by the scale factor (15 feet / 0.25 inches): 4.75 * 15 / 0.25 = 4.75 * 60 = 285 feet\n3. The 3/4 inch part of the 4 3/4 inches is 0.75 inches, multiply this by the scale factor: 0.75 * 15 = 11.25 feet\n4. Add the results of steps 2 and 3: 285 + 11.25 = 296.25 feet",
+    "pred_answer_masked": "296.25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 4 3/4 inches to a decimal: 4.75 inches\n2. Find the scale factor in feet per inch: 15 feet / 0.25 inches = 60 feet/inch.\n3. Multiply the decimal inches by the scale factor: 4.75 * 60 = 285 feet.\n4. The real-world distance is 285 feet.\n\nFinal Answer: 285"
+  },
+  {
+    "id": 90,
+    "question": "Wandering through a zoo requires a zoo map where 20 meters of actual path distance is given 5/8 inch of space. The lion enclosure and the reptile house stand 1 7/8 inches apart on the map. What is the actual walking distance in meters between the lion enclosure and reptile house?",
+    "ground_truth": "60",
+    "generation": "1. First, we need to find out how many meters 1 inch represents on the map. We can do this by dividing the actual path distance (20 meters) by the map distance (5/8 inch). \n   20 meters / (5/8 inch) = 20 * (8/5) = 32 inches per meter.\n\n2. Now, we need to convert 1 7/8 inches to a decimal. \n   1 7/8 = 1.875 inches.\n\n3. To find the actual distance between the lion enclosure and reptile house, we multiply the map distance (1.875 inches) by the conversion factor (32 inches per meter).\n   1.875 * 32 = 60 inches.\n\n4. Finally, we convert the map distance (60 inches) to meters by dividing by the conversion factor (32 inches per meter).\n   60 / 32 = 1.875 meters.\n\nFinal Answer: 1.875",
+    "pred_answer_masked": "1.875",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 1 7/8 inches to an improper fraction: 1 7/8 = 15/8 inches.\n2. Find how many 5/8 inch units are in 15/8 inches: (15/8) / (5/8) = 3 units.\n3. Multiply the number of units by 20 meters: 3 * 20 = 60 meters.\n4. The actual walking distance is 60 meters.\n\nFinal Answer: 60"
+  },
+  {
+    "id": 91,
+    "question": "A county zoning map scales 5 miles of actual land distance down to a 1/2 inch visual. The residential zone and the industrial park exhibit a 6 1/2 inch gap on the document. Determine the real distance in miles between the zones.",
+    "ground_truth": "65",
+    "generation": "1. The map scales 5 miles to 1/2 inch, so 1 mile is equal to 1/2 / 5 = 1/10 inch.\n2. The gap between the zones is 6 1/2 inches, which is equal to 13/2 inches.\n3. To find the real distance, multiply the gap by the scale: 13/2 * 1/10 = 13/20 miles.\n4. Simplify the fraction: 13/20 miles.",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 6 1/2 inches to an improper fraction: 6 1/2 = 13/2 inches.\n2. Find how many 1/2 inch units are in 13/2 inches: 13 units.\n3. Since 1/2 inch represents 5 miles, multiply the units by 5: 13 * 5 = 65 miles.\n4. The real distance is 65 miles.\n\nFinal Answer: 65"
+  },
+  {
+    "id": 92,
+    "question": "Looking at a boat construction blueprint, 3 feet of actual deck distance is identically represented by 1/4 inch. The helm and the seating area are plotted 3 1/4 inches apart. In feet, what is the actual physical distance between the helm and seating area?",
+    "ground_truth": "39",
+    "generation": "1. 1/4 inch represents 3 feet, so 1 inch represents 3 * 4 = 12 feet.\n2. 3 1/4 inches is equal to 3 + 1/4 = 3.25 inches.\n3. 3.25 inches represents 3.25 * 12 = 39 feet.\n4. The actual physical distance between the helm and seating area is 39 feet.",
+    "pred_answer_masked": "39",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. 1/4 inch represents 3 feet, so 1 inch represents 3 * 4 = 12 feet.\n2. 3 1/4 inches is equal to 3 + 1/4 = 3.25 inches.\n3. 3.25 inches represents 3.25 * 12 = 39 feet.\n4. The actual physical distance between the helm and seating area is 39 feet.\n\nFinal Answer: 39"
+  },
+  {
+    "id": 93,
+    "question": "A geology map represents 10 kilometers of actual terrain distance using a 1/3 inch line. The epicenter of the earthquake and the monitoring station are separated by 4 1/3 inches on the map. Find the true distance between them in kilometers.",
+    "ground_truth": "130",
+    "generation": "1. First, find the scale of the map in kilometers per inch: 10 km / (1/3) in = 10 / (1/3) = 10 * 3 = 30 km/in.\n2. Now, convert the 4 1/3 inches to a decimal: 4 + 1/3 = 4 + 0.33 = 4.33 in.\n3. Multiply the scale by the map distance to find the true distance: 30 km/in * 4.33 in = 130.9 km.\n4. Round the result to a reasonable number of decimal places: 130.9 km.",
+    "pred_answer_masked": "130.9",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 4 1/3 inches to an improper fraction: 4 1/3 = 13/3 inches.\n2. Find how many 1/3 inch units are in 13/3 inches: 13 units.\n3. Multiply the number of units by the distance per unit (10 km): 13 * 10 = 130 km.\n4. The true distance is 130 km.\n\nFinal Answer: 130"
+  },
+  {
+    "id": 94,
+    "question": "Surveying a real estate plot plan reveals a scale where 3/4 inch covers 20 feet of actual yard distance. The main house and the guest cottage are located 2 1/4 inches apart on the plan. What is the exact yard distance separating the house and cottage in feet?",
+    "ground_truth": "60",
+    "generation": "1. Convert 2 1/4 inches to a fraction: 2 1/4 = 9/4 inches\n2. Set up a proportion to find the actual distance: (3/4 inch) / (20 feet) = (9/4 inch) / x feet\n3. Cross multiply: (3/4)x = (9/4)(20)\n4. Solve for x: x = (9/4)(20) / (3/4) = (9/4)(20) * (4/3) = 9 * 20 / 3 = 180 / 3 = 60 feet",
+    "pred_answer_masked": "60",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert 2 1/4 inches to a fraction: 2 1/4 = 9/4 inches\n2. Set up a proportion to find the actual distance: (3/4 inch) / (20 feet) = (9/4 inch) / x feet\n3. Cross multiply: (3/4)x = (9/4)(20)\n4. Solve for x: x = (9/4)(20) / (3/4) = (9/4)(20) * (4/3) = 9 * 20 / 3 = 180 / 3 = 60 feet\n\nFinal Answer: 60"
+  },
+  {
+    "id": 95,
+    "question": "An amusement park guide map shrinks 40 meters of actual park distance into a 1/5 inch gap. The haunted house and the bumper cars are positioned 3 3/5 inches apart on the guide. How many meters of real park distance sit between the rides?",
+    "ground_truth": "720",
+    "generation": "1. First, we need to find out how many meters 1/5 inch represents. We know 1 inch is equal to 39.37 centimeters, and 1 centimeter is equal to 0.01 meters. So, 1 inch is equal to 0.3937 meters. \n2. Multiply 0.3937 meters by 1/5 to find the distance represented by 1/5 inch. 0.3937 * 1/5 = 0.07874 meters.\n3. Now, we need to find the actual distance represented by 3 3/5 inches. First, convert 3 3/5 to an improper fraction. 3 3/5 = (3*5 + 3)/5 = 18/5. \n4. Multiply 0.3937 meters by 18/5 to find the actual distance represented by 3 3/5 inches. 0.3937 * 18/5 = 1.41828 meters. \n5. Multiply the actual distance represented by 1/5 inch by the number of 1/5 inch gaps in 3 3/5 inches. 3 3/5 = 18/",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 3/5 inches to an improper fraction: 3 3/5 = 18/5 inches.\n2. Find how many 1/5 inch units are in 18/5 inches: 18 units.\n3. Multiply the number of units by the distance per unit (40 meters): 18 * 40 = 720 meters.\n4. 720 meters of real park distance sit between the rides.\n\nFinal Answer: 720"
+  },
+  {
+    "id": 96,
+    "question": "Following an irrigation system schematic shows that 1/8 inch signifies 8 yards of actual pipe distance. The water pump and the main sprinkler head appear 5 1/8 inches apart on the document. Calculate the true distance in yards separating the pump and sprinkler.",
+    "ground_truth": "328",
+    "generation": "1. Convert 5 1/8 inches to a single fraction: 5 1/8 = (5 * 8 + 1) / 8 = 41 / 8 inches\n2. Convert 1/8 inch to yards: 1/8 inch = 1/8 * 8 yards = 1 yard\n3. Multiply the fraction of inches by the conversion factor: (41 / 8) * 1 yard = 41 / 8 yards\n4. Simplify the fraction: 41 / 8 = 5.125 yards\n\nFinal Answer: 5.125",
+    "pred_answer_masked": "5.125",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 5 1/8 inches to an improper fraction: 5 1/8 = 41/8 inches.\n2. Find how many 1/8 inch units are in 41/8 inches: 41 units.\n3. Multiply the number of units by 8 yards: 41 * 8 = 328 yards.\n4. The true distance is 328 yards.\n\nFinal Answer: 328"
+  },
+  {
+    "id": 97,
+    "question": "A campus master plan uses a scale of 3/8 inch to correspond to 25 meters of actual campus distance. The gymnasium and the cafeteria are mapped 3 inches apart. What is the physical distance between the gymnasium and cafeteria in meters?",
+    "ground_truth": "200",
+    "generation": "1. Convert the scale to inches per meter: 3/8 inch / 25 meters = 3/200 inch per meter\n2. Convert the scale to inches per meter to a decimal: (3/200) = 0.015 inches per meter\n3. Multiply the scale by the distance between the gymnasium and cafeteria: 0.015 inches/meter * 3 inches = 0.045 meters\n4. The physical distance between the gymnasium and cafeteria is 0.045 meters.",
+    "pred_answer_masked": "0.045",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Convert 3 inches to a fraction with denominator 8: 3 = 24/8 inches.\n2. Find how many 3/8 inch units are in 24/8 inches: (24/8) / (3/8) = 8 units.\n3. Multiply the number of units by 25 meters: 8 * 25 = 200 meters.\n4. The physical distance is 200 meters.\n\nFinal Answer: 200"
+  },
+  {
+    "id": 98,
+    "question": "Commercial flight routes on an aviation map denote 150 miles of actual flight distance per 2/5 inch. The cities of Miami and Atlanta are placed precisely 4 inches apart on this map. In miles, what is the genuine flight distance between the cities?",
+    "ground_truth": "1500",
+    "generation": "1. To find the actual distance per inch, we divide 150 miles by 2/5 inch. First, convert 2/5 to a decimal: 2/5 = 0.4. Then, divide 150 miles by 0.4 inch to get 375 miles per inch.\n2. Since the cities are 4 inches apart, multiply the actual distance per inch by 4 to find the total distance: 375 miles/inch * 4 inches = 1500 miles.\n3. The result is the actual flight distance between the cities.\n4. No further calculations are needed.\n\nFinal Answer: 1500",
+    "pred_answer_masked": "1500",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. To find the actual distance per inch, we divide 150 miles by 2/5 inch. First, convert 2/5 to a decimal: 2/5 = 0.4. Then, divide 150 miles by 0.4 inch to get 375 miles per inch.\n2. Since the cities are 4 inches apart, multiply the actual distance per inch by 4 to find the total distance: 375 miles/inch * 4 inches = 1500 miles.\n3. The result is the actual flight distance between the cities.\n4. No further calculations are needed.\n\nFinal Answer: 1500"
+  },
+  {
+    "id": 99,
+    "question": "A microscopic scale drawing scales 10 nanometers of actual cellular distance to a 1/4 inch segment. The mitochondria and the ribosome are drawn 2 3/4 inches apart on the page. Find the true distance in nanometers separating them inside the cell.",
+    "ground_truth": "110",
+    "generation": "1. First, convert 1/4 inch to a decimal: 1/4 inch = 0.25 inch.\n2. Then, find the scale factor by dividing the actual distance by the scaled distance: 10 nanometers / 0.25 inch.\n3. Now, multiply the scale factor by the actual distance between the mitochondria and the ribosome: (10 nanometers / 0.25 inch) * 2.75 inches.\n4. Perform the calculation: (10 / 0.25) * 2.75 = 40 * 2.75 = 110 nanometers.\n\nFinal Answer: 110",
+    "pred_answer_masked": "110",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. First, convert 1/4 inch to a decimal: 1/4 inch = 0.25 inch.\n2. Then, find the scale factor by dividing the actual distance by the scaled distance: 10 nanometers / 0.25 inch.\n3. Now, multiply the scale factor by the actual distance between the mitochondria and the ribosome: (10 nanometers / 0.25 inch) * 2.75 inches.\n4. Perform the calculation: (10 / 0.25) * 2.75 = 40 * 2.75 = 110 nanometers.\n\nFinal Answer: 110"
+  },
+  {
+    "id": 100,
+    "question": "Checking a starship deck plan reveals that 16 meters of actual corridor distance is equivalent to 5/8 inch. The engineering bay and the bridge possess a 4 3/8 inch gap on the plan. Determine the exact corridor distance in meters between the engineering bay and bridge.",
+    "ground_truth": "112",
+    "generation": "1. Convert 5/8 inch to a decimal: 5/8 = 0.625 inches.\n2. Convert 4 3/8 inch to a decimal: 4 + 3/8 = 4 + 0.375 = 4.375 inches.\n3. Divide the total gap in inches by the equivalent corridor distance in inches: 4.375 / 0.625 = 7.\n4. Multiply the result by the actual corridor distance in meters: 7 * 16 = 112.\n\nFinal Answer: 112",
+    "pred_answer_masked": "112",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Convert 5/8 inch to a decimal: 5/8 = 0.625 inches.\n2. Convert 4 3/8 inch to a decimal: 4 + 3/8 = 4 + 0.375 = 4.375 inches.\n3. Divide the total gap in inches by the equivalent corridor distance in inches: 4.375 / 0.625 = 7.\n4. Multiply the result by the actual corridor distance in meters: 7 * 16 = 112.\n\nFinal Answer: 112"
+  }
+]

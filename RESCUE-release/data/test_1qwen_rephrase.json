@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "Intending to fully convert her 20 comic books into electronics, Sarah lists the entire inventory at $10 per unit. Her subsequent shopping trip yields 7 pairs of headphones costing $20 apiece, along with an unspent balance of $10. Deduce the number of comic books that Sarah actually failed to sell.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total value of comic books listed = 20 * 10 = 200  \n2. Cost of 7 pairs of headphones = 7 * 20 = 140  \n3. Remaining money after purchase = 10  \n4. Total money spent = 140 + 10 = 150  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of 7 pairs of headphones = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Number of comic books sold = 150 / 10 = 15\n4. Comic books failed to sell = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 2,
+    "question": "With exactly $40 sitting in his wallet and 4 newly purchased guitars (costing $50 each) in hand, Mike reflects on his recent venture. The original strategy dictated auctioning off his complete set of 15 baseball gloves for $20 each to cover the musical instruments. How many baseball gloves are still physically with Mike?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total cost of guitars = 4 * 50 = 200  \n2. Total money available = 40  \n3. Deficit = 200 - 40 = 160  \n4. Money from auction = 15 * 20 = 300  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of guitars = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Gloves sold = 240 / 20 = 12\n4. Gloves kept = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 3,
+    "question": "A total of 10 paint sets were procured by Emily at a unit price of $15, leaving exactly $10 as leftover funds. This capital was supposed to be generated under the premise of liquidating her whole batch of 25 handmade bracelets, individually priced at $8. Based on the final monetary outcome, how many bracelets were ultimately spared from being sold?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total cost of paint sets: 10 * 15 = 150  \n2. Total money Emily had: 150 + 10 = 160  \n3. Total revenue from bracelets: 160  \n4. Number of bracelets sold: 160 / 8 = 20  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of paint sets: 10 * 15 = 150\n2. Total money generated: 150 + 10 = 160\n3. Number of bracelets sold: 160 / 8 = 20\n4. Bracelets spared from being sold: 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 4,
+    "question": "Driven by the desire to furnish his home, David commits to emptying his stock of 10 vintage pocket watches by charging $30 per item. Ultimately, he walks away holding 5 chairs acquired for $40 each, plus a residual $40 in cash. Calculate the remaining count of his original pocket watches.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 10 - 5 = 5  \n2. 5 * 30 = 150  \n3. 5 * 40 = 200  \n4. 150 - 200 = -50  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of chairs = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Watches sold = 240 / 30 = 8\n4. Watches remaining = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 5,
+    "question": "Priced at $5 each, Emma's entire stash of 18 fruit cakes was designated to fund a restock of baking ingredients. When the dust settled, she had secured 3 bags of flour for $20 a pop and retained $10 in spare change. Ascertain the precise quantity of fruit cakes that Emma never actually parted with.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total cost of flour = 3 × 20 = 60  \n2. Total money spent = 60 - 10 = 50  \n3. Total money from fruit cakes = 18 × 5 = 90  \n4. Unspent money = 90 - 50 = 40  \nFinal Answer: 8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of flour = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Fruit cakes sold = 70 / 5 = 14\n4. Fruit cakes kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 6,
+    "question": "Hoping to upgrade his workshop, Chris places all 12 of his toolboxes on the market for $25 apiece. The earnings from this endeavor are funneled into buying 4 power drills at $60 each, after which a strict $10 remains. How many toolboxes successfully avoided being sold?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total earnings from toolboxes: 12 × 25 = 300  \n2. Cost of 4 power drills: 4 × 60 = 240  \n3. Remaining money after buying drills: 300 − 240 = 60  \n4. Toolboxes not sold: 60 ÷ 25 = 2.4 → 2 toolboxes  \nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of 4 power drills = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Toolboxes sold = 250 / 25 = 10\n4. Toolboxes not sold = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 7,
+    "question": "To afford new cosmetics, a complete collection of 30 silk scarves was put up for sale by Jessica, bearing a price tag of $6 each. She completes her objective by bringing home 8 lipsticks valued at $20 per unit, while clutching $8 in leftover cash. Identify the number of scarves Jessica still retains.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from scarves: 30 × 6 = 180  \n2. Total cost of lipsticks: 8 × 20 = 160  \n3. Total money spent: 160 + 8 = 168  \n4. Number of scarves sold: 180 − 168 = 12  \nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of lipsticks = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Scarves sold = 168 / 6 = 28\n4. Scarves retained = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 8,
+    "question": "Possessing $6 in residual cash alongside 5 seed packets bought for $30 each, Tom reviews his agricultural trade. He initially aimed to liquidate all 16 baskets of his farm's apples at a flat rate of $12 per basket. From these financial figures, figure out the exact number of apple baskets he kept.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 5 × 30 = 150  \n2. 16 × 12 = 192  \n3. 192 − 150 = 42  \n4. 6 + 42 = 48  \nFinal Answer: 11",
+    "pred_answer_masked": "11",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of seed packets = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Apple baskets sold = 156 / 12 = 13\n4. Apple baskets kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 9,
+    "question": "Pledging to swap her antiques for home decor, Anna lists her entire collection of 22 silver spoons at a selling price of $15 per unit. Once the transactions are finalized, she has taken possession of 6 vases (costing $40 apiece) and holds onto a $15 monetary surplus. How many silver spoons does she currently possess?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total selling price of spoons = 22 × 15 = 330  \n2. Total value of vases = 6 × 40 = 240  \n3. Total money from spoons = value of vases + surplus = 240 + 15 = 255  \n4. Number of spoons sold = 330 − 255 = 75  \nFinal Answer: 22 − 75 = -53  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of vases = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Spoons sold = 255 / 15 = 17\n4. Spoons kept = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 10,
+    "question": "Exactly 3 camera lenses, bearing a cost of $100 each, were purchased by Robert, who also walked away with $20 in unspent funds. He financed this by supposedly clearing out his full inventory of 14 smartwatches at $40 a unit. Through mathematical deduction, determine how many smartwatches were never actually sold.",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total cost of lenses = 3 × 100 = 300  \n2. Total money available = 300 + 20 = 320  \n3. Total revenue from smartwatches = 320  \n4. Number of smartwatches sold = 320 ÷ 40 = 8  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of lenses = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Smartwatches sold = 320 / 40 = 8\n4. Smartwatches unsold = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 11,
+    "question": "Determined to overhaul her footwear, Lily decides to offload her entire wardrobe of 20 vintage shirts, asking $10 for each. At the end of her shopping spree, she has 7 pairs of sneakers—each bought for $20—and a tiny remainder of $10. Count the number of vintage shirts Lily still has lying around.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 20 - 7 = 13  \n2. 13 × 10 = 130  \n3. 7 × 20 = 140  \n4. 140 - 130 = 10  \nFinal Answer: 13",
+    "pred_answer_masked": "13",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of sneakers = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Shirts sold = 150 / 10 = 15\n4. Shirts kept = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 12,
+    "question": "James's strategy to acquire new appliances involves auctioning his entire kitchenware set of 15 ceramic bowls for $20 each. The final tally shows him acquiring 4 blenders at a unit price of $50, accompanied by $40 in leftover change. Deduce the exact volume of ceramic bowls he managed to keep.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 15 ceramic bowls × $20 = $300  \n2. 4 blenders × $50 = $200  \n3. $300 − $200 = $100  \n4. $100 − $40 = $60  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of blenders = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Bowls sold = 240 / 20 = 12\n4. Bowls kept = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 13,
+    "question": "Carrying 10 small garden statues (purchased at $15 each) and a $10 bill in remaining change, Olivia concludes her garden renovation. The funds were derived from a plan to sell off all 25 of her succulents at a firm rate of $8 per plant. How many succulents are still physically present in her garden?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total cost of statues: 10 × 15 = 150  \n2. Total revenue from succulents: 25 × 8 = 200  \n3. Remaining change: 200 − 150 = 50  \n4. Remaining change after purchase: 50 − 10 = 40  \nFinal Answer: 25",
+    "pred_answer_masked": "25",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of statues = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Succulents sold = 160 / 8 = 20\n4. Succulents kept = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 14,
+    "question": "All 10 of Daniel's vinyl records were slated for liquidation at $30 a piece to cover the cost of upcoming concerts. The financial aftermath reveals he procured 5 tickets for $40 each and was left holding $40 in unused cash. Determine the number of records that remained unsold.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from tickets: 5 * 40 = 200  \n2. Total cash available: 200 + 40 = 240  \n3. Total revenue needed to cover records: 10 * 30 = 300  \n4. Shortfall: 300 - 240 = 60  \nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of tickets = 5 * 40 = 200\n2. Total cash generated = 200 + 40 = 240\n3. Records sold = 240 / 30 = 8\n4. Records unsold = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 15,
+    "question": "Intending to transition from jewelry to handbags, Sophia prices her 18 crystal rings at $5 per unit for a total clearance. She finishes her acquisitions with 3 leather bags costing $20 apiece and precisely $10 to spare. How many crystal rings rest safely in her possession?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. 18 × 5 = 90  \n2. 3 × 20 = 60  \n3. 90 − 60 = 30  \n4. 30 − 10 = 20  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of leather bags = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Rings sold = 70 / 5 = 14\n4. Rings kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 16,
+    "question": "Aiming to fund digital tools, Matthew puts all 12 of his math textbooks on the market, demanding $25 for each copy. He completes his transition by securing 4 premium software licenses at a $60 unit cost, plus keeping a $10 residue. Calculate the count of math books Matthew ultimately kept.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from books: 12 * 25 = 300  \n2. Total cost of software licenses: 4 * 60 = 240  \n3. Remaining money after buying software: 300 - 240 = 60  \n4. Number of books kept: 60 / 25 = 2  \nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of software licenses = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Books sold = 250 / 25 = 10\n4. Books kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 17,
+    "question": "A haul of 8 large bags of premium dog food, billed at $20 each, was secured by Chloe, leaving her with $8 in the bank. This capital originated from a scheme to sell her entire reserve of 30 dog collars for $6 each. From this data, find out how many dog collars avoided the sale.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from dog collars = 30 × 6 = 180  \n2. Total cost of dog food = 8 × 20 = 160  \n3. Remaining money after buying dog food = 180 − 160 = 20  \n4. Money left in bank = 8, so 20 − 8 = 12 unaccounted  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Total cost of dog food = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Collars sold = 168 / 6 = 28\n4. Collars kept = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 18,
+    "question": "Andrew sets out to exchange his entire fleet of 16 airplane models (valued at $12 each) for dedicated display units. Following the final handshake, he owns 5 glass cases purchased at $30 a pop and retains $6 in unspent currency. How many airplane models does Andrew still own?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total value of airplane models = 16 × 12 = 192  \n2. Total spent on glass cases = 5 × 30 = 150  \n3. Total money spent = 150 + 6 = 156  \n4. Remaining value of airplane models = 192 - 156 = 36  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Total spent on glass cases = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Airplane models sold = 156 / 12 = 13\n4. Airplane models kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 19,
+    "question": "With an unspent reserve of $15 and a newly bought set of 6 ring lights costing $40 each, Mia evaluates her gear upgrade. The capital was gathered by allegedly emptying her supply of 22 tripods at a selling point of $15 each. How many tripods were spared from being sold?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 22 tripods × $15 = $330  \n2. $330 - $15 = $315  \n3. 6 ring lights × $40 = $240  \n4. $315 - $240 = $75  \nFinal Answer: 75",
+    "pred_answer_masked": "75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of ring lights = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Tripods sold = 255 / 15 = 17\n4. Tripods spared = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 20,
+    "question": "Ready to tackle the trails, Joshua plans to liquidate his full stock of 14 sleeping bags at $40 per unit to afford new footwear. He concludes the process by buying 3 pairs of hiking boots at $100 each and saving $20 in leftover cash. Compute the number of sleeping bags Joshua still has.",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. 14 × 40 = 560  \n2. 3 × 100 = 300  \n3. 560 − 300 = 260  \n4. 260 − 20 = 240  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of hiking boots = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Sleeping bags sold = 320 / 40 = 8\n4. Sleeping bags kept = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 21,
+    "question": "Priced at $10 per unit, all 20 of Kevin's basketballs were put up for sale so he could afford gym access. The books show he obtained 7 monthly passes at $20 apiece and walked away with a $10 surplus. How many basketballs reside unsold in his garage?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total revenue from basketballs is 20 * 10 = 200  \n2. Total cost of monthly passes is 7 * 20 = 140  \n3. Total amount spent is 140 - 10 = 130  \n4. Unsold basketballs = 20 - (200 - 130) / 10 = 20 - 7 = 13  \nFinal Answer: 13",
+    "pred_answer_masked": "13",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of passes = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Basketballs sold = 150 / 10 = 15\n4. Basketballs unsold = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 22,
+    "question": "Exactly 4 expansion packs, carrying a $50 price tag each, were obtained by Rachel alongside a $40 remaining balance. Her funding plan relied on selling her entire library of 15 strategy games at $20 per box. Deduce the quantity of strategy games she actually retained.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 4 × 50 = 200  \n2. 200 + 40 = 240  \n3. 240 ÷ 20 = 12  \n4. 15 − 12 = 3  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of expansion packs = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Strategy games sold = 240 / 20 = 12\n4. Strategy games retained = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 23,
+    "question": "Seeking to decorate his room with band posters, Ian intends to fully offload his 25 rock CDs for $8 each. He succeeds in buying 10 rare posters at $15 apiece and is left with exactly $10 in cash. How many rock CDs managed to stay in Ian's collection?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from CDs: 25 * 8 = 200  \n2. Money spent on posters: 10 * 15 = 150  \n3. Remaining money after buying posters: 200 - 150 = 50  \n4. Money left in cash: 50 - 10 = 40  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of posters = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. CDs sold = 160 / 8 = 20\n4. CDs kept = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 24,
+    "question": "Fiona's plan to pivot her party supplies into catering involves listing all 10 balloon kits for sale at $30 each. Once the financial dust settles, she has secured 5 food trays for $40 a unit and possesses $40 in unused funds. Identify the number of balloon kits Fiona still holds.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from balloon kits is 10 * 30 = 300  \n2. Total cost of food trays is 5 * 40 = 200  \n3. Total funds after expenses is 300 - 200 = 100  \n4. Unused funds are 40, so funds used for food trays is 100 - 40 = 60  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of food trays = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Balloon kits sold = 240 / 30 = 8\n4. Balloon kits held = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 25,
+    "question": "Holding $10 in residual cash and 3 exclusive action figures priced at $20 each, George reflects on his recent trades. The original intent was to liquidate all 18 of his rare comic issues at $5 per book to cover the figures. How many rare issues did George ultimately end up keeping?",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. 3 × 20 = 60  \n2. 18 × 5 = 90  \n3. 90 − 60 = 30  \n4. 10 + 30 = 40  \nFinal Answer: 14",
+    "pred_answer_masked": "14",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of action figures = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Comic issues sold = 70 / 5 = 14\n4. Comic issues kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 26,
+    "question": "A complete set of 12 dress patterns was set to be sold by Hannah at $25 each to afford premium fabrics. The actual outcome leaves her with 4 rolls of silk (bought at $60 per roll) and $10 in unspent profit. Calculate the number of dress patterns that survived the sale.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from selling patterns = 12 × $25 = $300  \n2. Total cost of silk rolls = 4 × $60 = $240  \n3. Total profit = $300 - $240 = $60  \n4. Actual profit = $60 - $10 = $50  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of silk rolls = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Patterns sold = 250 / 25 = 10\n4. Patterns kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 27,
+    "question": "Victor's desk upgrade is financed by the proposed sale of all 30 mousepads, each offered at a $6 rate. Ultimately, 8 mechanical keyboards are bought at a unit cost of $20, resulting in an $8 leftover balance. Determine exactly how many mousepads remain in Victor's possession.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from mousepads = 30 * 6 = 180  \n2. Total cost of keyboards = 8 * 20 = 160  \n3. Remaining balance = 180 - 160 = 20  \n4. Mousepads sold = 30 - (20 / 6) = 30 - 3 = 27  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of keyboards = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Mousepads sold = 168 / 6 = 28\n4. Mousepads remaining = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 28,
+    "question": "Exactly 5 pruning shears, bought at $30 each, now belong to Wendy, who also kept $6 from the transaction pool. Her initial strategy was to empty her greenhouse of 16 orchids at a flat $12 each. Through the financial totals, figure out how many orchids she didn't sell.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 5 × 30 = 150  \n2. 150 + 6 = 156  \n3. 16 × 12 = 192  \n4. 192 − 156 = 36  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of shears = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Orchids sold = 156 / 12 = 13\n4. Orchids kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 29,
+    "question": "Aiming to transition from performing to studying, Xavier prices his 22 magic card decks at $15 per pack for a total sell-off. He finishes by claiming 6 illusion hardcovers at a $40 unit cost, leaving him with a tiny $15 margin. How many card decks reside unsold on his shelf?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 22 * 15 = 330  \n2. 6 * 40 = 240  \n3. 330 - 240 = 90  \n4. 90 - 15 = 75  \nFinal Answer: 75",
+    "pred_answer_masked": "75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of hardcovers = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Decks sold = 255 / 15 = 17\n4. Decks unsold = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 30,
+    "question": "Intending to hit the slopes, Yara attempts to sell her complete lineup of 14 wool coats for $40 each to bankroll some new snowboards. Her final inventory includes 3 premium boards purchased at $100 apiece, coupled with $20 in extra cash. How many wool coats are left in her closet?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total revenue from coats = 14 × 40 = 560  \n2. Total cost of boards = 3 × 100 = 300  \n3. Net amount after buying boards = 560 - 300 = 260  \n4. Coats left = 260 ÷ 40 = 6.5  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of boards = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Coats sold = 320 / 40 = 8\n4. Coats kept = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 31,
+    "question": "With 7 wooden frames obtained at $20 each and exactly $10 in remaining funds, Zack completes his room renovation. The capital for this was supposed to be drawn from liquidating all 20 of his movie posters at $10 each. Based on the numbers, how many posters were kept?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total cost of wooden frames = 7 * 20 = 140  \n2. Total funds available = 140 + 10 = 150  \n3. Total value of movie posters = 20 * 10 = 200  \n4. Value of sold posters = 150 - 10 = 140  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of frames = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Posters sold = 150 / 10 = 15\n4. Posters kept = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 32,
+    "question": "All 15 of Aaron's RC toy cars were marketed at $20 a piece to generate funds for drone equipment. He wraps up the day having purchased 4 battery packs at $50 each and clutching $40 in leftover bills. Ascertain the quantity of toy cars Aaron actually retained.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total revenue from selling cars: 15 × 20 = 300  \n2. Total spent on battery packs: 4 × 50 = 200  \n3. Total money spent: 200 + 40 = 240  \n4. Number of cars sold: 300 − 240 = 60  \nFinal Answer: 15 − 60 = −45  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of battery packs = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Cars sold = 240 / 20 = 12\n4. Cars retained = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 33,
+    "question": "Priced at $8 per unit, Bella's collection of 25 leather notebooks was intended to be fully sold off for fountain pen funds. She ultimately acquires 10 ink pens at a cost of $15 each and secures a $10 remaining balance. How many leather notebooks avoided the transaction block?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total intended revenue from notebooks: 25 * 8 = 200  \n2. Total cost of ink pens: 10 * 15 = 150  \n3. Total amount spent: 150 - 10 = 140  \n4. Amount spent on notebooks: 200 - 140 = 60  \nFinal Answer: 7.5",
+    "pred_answer_masked": "7.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of ink pens = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Notebooks sold = 160 / 8 = 20\n4. Notebooks kept = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 34,
+    "question": "A total of 5 tubs of protein powder were bought by Carter at $40 each, leaving him with an exact $40 surplus. He generated this cash by theoretically clearing out his gym's stock of 10 kettlebells at $30 per weight. Calculate the number of kettlebells he still physically owns.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total cost of protein powder = 5 × 40 = 200  \n2. Total money Carter had = 200 + 40 = 240  \n3. Total money from selling kettlebells = 10 × 30 = 300  \n4. Kettlebells sold = 300 - 240 = 60  \nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of protein powder = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Kettlebells sold = 240 / 30 = 8\n4. Kettlebells kept = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 35,
+    "question": "To finance new porcelain tea sets, Daisy places her entire set of 18 ceramic mugs up for grabs at $5 each. The resulting purchases consist of 3 sets at $20 a pop, leaving a $10 margin in her pocket. Deduce the exact number of ceramic mugs Daisy chose not to part with.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total revenue from mugs = 18 * 5 = 90  \n2. Total cost of sets = 3 * 20 = 60  \n3. Total money spent = 90 - 10 = 80  \n4. Number of mugs sold = 80 / 5 = 16  \nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of sets = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Mugs sold = 70 / 5 = 14\n4. Mugs kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 36,
+    "question": "Evan aims to upgrade his boat by exchanging his full rack of 12 fishing rods, valued at $25 each, for engine components. He finishes the trades by paying $60 each for 4 motor parts and retains a spare $10 bill. How many fishing rods are left in his garage?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total value of fishing rods = 12 × 25 = 300  \n2. Value of motor parts = 4 × 60 = 240  \n3. Total amount spent = 240 + 10 = 250  \n4. Remaining value = 300 - 250 = 50  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of motor parts = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Fishing rods sold = 250 / 25 = 10\n4. Fishing rods kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 37,
+    "question": "Clutching $8 in unspent money and 8 newly purchased styling irons (billed at $20 each), Faith considers her recent sales. Her plan was to sell off her entire stock of 30 silk scrunchies at $6 apiece to cover the cost. How many silk scrunchies did she end up keeping?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total cost of styling irons = 8 × 20 = 160  \n2. Total revenue from scrunchies = 30 × 6 = 180  \n3. Net profit = 180 − 160 = 20  \n4. Remaining money = 8 + 20 = 28  \nFinal Answer: 28",
+    "pred_answer_masked": "28",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of styling irons = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Scrunchies sold = 168 / 6 = 28\n4. Scrunchies kept = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 38,
+    "question": "Intending to pivot to mechanical repairs, Gavin lists his 16 broken laptops at $12 each to empty the inventory. He buys 5 tool kits for $30 each from the proceeds and logs a $6 leftover balance. Determine the volume of broken laptops still in his possession.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total value of laptops = 16 × 12 = 192  \n2. Total cost of tool kits = 5 × 30 = 150  \n3. Total proceeds used = 150 + 6 = 156  \n4. Value of laptops sold = 192 - 156 = 36  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of tool kits = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Laptops sold = 156 / 12 = 13\n4. Laptops kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 39,
+    "question": "Exactly 6 oil diffusers, costing $40 per unit, were procured by Hazel, who also kept $15 from the sales pool. She financed this by offering up her complete collection of 22 scented candles for $15 a piece. Through mathematical deduction, find out how many candles remained unsold.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total cost of oil diffusers: 6 × 40 = 240  \n2. Total revenue from candle sales: 22 × 15 = 330  \n3. Net amount from sales after keeping $15: 330 − 15 = 315  \n4. Amount used to pay for diffusers: 315 − 240 = 75  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of diffusers = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Candles sold = 255 / 15 = 17\n4. Candles unsold = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 40,
+    "question": "Isaac's strategy to acquire cold-water gear involves auctioning all 14 of his custom surfboards for $40 each. The final accounting reveals he purchased 3 thermal wetsuits at $100 per suit and saved $20 in spare funds. How many custom boards did Isaac actually fail to sell?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total revenue from surfboards = 14 * 40 = 560  \n2. Total cost of wetsuits = 3 * 100 = 300  \n3. Total funds available = 560 - 300 = 260  \n4. Total funds used = 260 - 20 = 240  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of wetsuits = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Surfboards sold = 320 / 40 = 8\n4. Surfboards unsold = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 41,
+    "question": "Driven by the desire for new mixing bowls, Jade commits to emptying her stock of 20 cake pans by charging $10 per item. Ultimately, she walks away holding 7 steel bowls acquired for $20 each, plus a residual $10 in cash. Calculate the remaining count of her original cake pans.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 20 - 7 = 13  \n2. 13 * 10 = 130  \n3. 7 * 20 = 140  \n4. 130 - 140 = -10  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of bowls = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Pans sold = 150 / 10 = 15\n4. Pans kept = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 42,
+    "question": "To fund a batch of carbon tripods, Kyle began auctioning off his entire inventory of 15 film cameras at a rate of $20 per piece. The transaction concluded with the purchase of 4 tripods at $50 each, leaving a balance of $40 in the register. How many original film cameras remain unsold?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 15 × 20 = 300  \n2. 4 × 50 = 200  \n3. 300 − 200 = 100  \n4. 100 − 40 = 60  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of tripods = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Cameras sold = 240 / 20 = 12\n4. Cameras unsold = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 43,
+    "question": "Hoping to finance a collection of tarot decks, Luna attempts to sell off her entire stash of 25 amethyst stones for $8 each. She walks away from the marketplace holding 10 oracle decks purchased at $15 apiece and an exact leftover sum of $10. Determine the number of amethyst stones that were ultimately kept out of the sale.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from selling amethyst stones = 25 × 8 = 200  \n2. Total cost of oracle decks = 10 × 15 = 150  \n3. Remaining money after buying oracle decks = 200 - 150 = 50  \n4. Stones not sold = 50 - 10 = 40  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of oracle decks = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Stones sold = 160 / 8 = 20\n4. Stones kept = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 44,
+    "question": "A stash of 10 silver watches, each valued at $30, was initially intended to be fully auctioned off by Mason to finance leather straps. However, after exactly 5 luxury straps (each carrying a $40 price tag) were procured, a surplus of $40 remained from the transaction. Calculate the quantity of silver watches Mason managed to retain.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total value of silver watches = 10 × 30 = 300  \n2. Total value of 5 luxury straps = 5 × 40 = 200  \n3. Total amount spent on straps and surplus = 200 + 40 = 240  \n4. Number of watches sold = 300 − 240 = 60  \nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of straps = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Watches sold = 240 / 30 = 8\n4. Watches retained = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 45,
+    "question": "Priced at $5 each, Nora's entire stash of 18 vintage enamel pins was designated to fund new display boards. When the dust settled, she had secured 3 cork boards for $20 a pop and retained $10 in spare change. Ascertain the precise quantity of vintage pins that Nora never actually parted with.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. 3 cork boards at $20 each equals 60  \n2. Total money spent on cork boards is 60  \n3. Total money spent plus spare change is 70  \n4. Total money from pins is 5 * 18 = 90  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of cork boards = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Pins sold = 70 / 5 = 14\n4. Pins kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 46,
+    "question": "Intending to fully convert his 12 hand saws into lumber, Owen lists the entire inventory at $25 per unit. His subsequent shopping trip yields 4 oak planks costing $60 apiece, along with an unspent balance of $10. Deduce the number of hand saws that Owen actually failed to sell.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total value of hand saws = 12 × 25 = 300  \n2. Value of oak planks = 4 × 60 = 240  \n3. Total money spent = 240 − 10 = 230  \n4. Remaining money = 300 − 230 = 70  \nFinal Answer: 70",
+    "pred_answer_masked": "70",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of oak planks = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Hand saws sold = 250 / 25 = 10\n4. Hand saws unsold = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 47,
+    "question": "With exactly $8 sitting in her wallet and 8 newly purchased color palettes (costing $20 each) in hand, Paige reflects on her recent venture. The original strategy dictated auctioning off her complete set of 30 fluffy makeup brushes for $6 each to cover the costs. How many fluffy brushes are still physically with Paige?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 30 brushes × $6 = $180  \n2. $180 - $8 = $172  \n3. 8 palettes × $20 = $160  \n4. $172 - $160 = $12  \nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of palettes = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Brushes sold = 168 / 6 = 28\n4. Brushes kept = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 48,
+    "question": "A total of 5 titanium truck sets were procured by Wyatt at a unit price of $30, leaving exactly $6 as leftover funds. This capital was supposed to be generated under the premise of liquidating his whole batch of 16 maple skateboard decks, individually priced at $12. Based on the final monetary outcome, how many maple decks were ultimately spared from being sold?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total cost of titanium truck sets = 5 × 30 = 150  \n2. Total money Wyatt had = 150 + 6 = 156  \n3. Total money from selling maple decks = 156  \n4. Number of maple decks sold = 156 ÷ 12 = 13  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of truck sets = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Maple decks sold = 156 / 12 = 13\n4. Maple decks spared = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 49,
+    "question": "Driven by the desire to upgrade her turntable setup, Ruby commits to emptying her stock of 22 jazz albums by charging $15 per item. Ultimately, she walks away holding 6 speaker cables acquired for $40 each, plus a residual $15 in cash. Calculate the remaining count of her original jazz albums.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 22 * 15 = 330  \n2. 6 * 40 = 240  \n3. 330 - 240 = 90  \n4. 90 - 15 = 75  \nFinal Answer: 75",
+    "pred_answer_masked": "75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of speaker cables = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Albums sold = 255 / 15 = 17\n4. Albums kept = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 50,
+    "question": "Hoping to afford rare storage options, Silas places all 14 of his mythic gathering cards on the market for $40 apiece. The earnings from this endeavor are funneled into buying 3 premium binders at $100 each, after which a strict $20 remains. How many mythic cards successfully avoided being sold?",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. 14 cards × $40 = $560  \n2. 3 binders × $100 = $300  \n3. $560 - $300 = $260  \n4. $260 - $20 = $240  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of binders = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Cards sold = 320 / 40 = 8\n4. Cards kept = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 51,
+    "question": "Harboring ambitions to expand her board game collection, Stella puts all 20 of her landscape puzzles on the market for $10 a piece. After she successfully secures 7 expansion boxes priced at $20 each, a quick count reveals $10 left in her pocket. How many landscape puzzles remain untouched in her inventory?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 20 puzzles × $10 = $200 total revenue  \n2. 7 boxes × $20 = $140 spent on boxes  \n3. $200 − $140 = $60 remaining after buying boxes  \n4. $60 − $10 = $50 left from original money  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of expansion boxes = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Puzzles sold = 150 / 10 = 15\n4. Puzzles untouched = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 52,
+    "question": "A total of 4 velvet albums, carrying a $50 price tag each, were obtained by Tristan alongside a $40 remaining balance. His funding plan relied on selling his entire collection of 15 silver coins at $20 per coin. Deduce the quantity of silver coins he actually retained.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 4 × 50 = 200  \n2. 200 + 40 = 240  \n3. 15 × 20 = 300  \n4. 300 − 240 = 60  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of velvet albums = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Silver coins sold = 240 / 20 = 12\n4. Silver coins retained = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 53,
+    "question": "With an unspent reserve of $10 and a newly bought set of 10 mini bags costing $15 each, Violet evaluates her wardrobe upgrade. The capital was gathered by allegedly emptying her supply of 25 summer dresses at a selling point of $8 each. How many dresses were spared from being sold?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 25 × 8 = 200  \n2. 10 × 15 = 150  \n3. 200 − 150 = 50  \n4. 50 − 10 = 40  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of mini bags = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Dresses sold = 160 / 8 = 20\n4. Dresses spared = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 54,
+    "question": "William's strategy to acquire new safety gear involves auctioning his entire workshop set of 10 electric drills for $30 each. The final tally shows him acquiring 5 safety helmets at a unit price of $40, accompanied by $40 in leftover change. Deduce the exact volume of electric drills he managed to keep.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total money from selling drills: 10 × 30 = 300  \n2. Money spent on helmets: 5 × 40 = 200  \n3. Remaining money: 300 − 200 = 100  \n4. Leftover change: 100 − 40 = 60  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of safety helmets = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Drills sold = 240 / 30 = 8\n4. Drills kept = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 55,
+    "question": "Priced at $5 each, Zoe's entire stash of 18 knit wool scarves was designated to fund a restock of yarn. When the dust settled, she had secured 3 giant skeins for $20 a pop and retained $10 in spare change. Ascertain the precise quantity of wool scarves that Zoe never actually parted with.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. 18 × 5 = 90  \n2. 3 × 20 = 60  \n3. 90 − 60 = 30  \n4. 30 − 10 = 20  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of skeins = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Scarves sold = 70 / 5 = 14\n4. Scarves kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 56,
+    "question": "Intending to transition to digital reading, Arthur prices his 12 hardcover novels at $25 per unit for a total clearance. He finishes his acquisitions with 4 reader accessories costing $60 apiece and precisely $10 to spare. How many hardcover books rest safely on his shelf?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 12 hardcover novels priced at $25 each totals 12 * 25 = 300  \n2. 4 reader accessories priced at $60 each totals 4 * 60 = 240  \n3. Total spent is 300 + 240 = 540  \n4. Total money available is 540 + 10 = 550  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of reader accessories = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Hardcover books sold = 250 / 25 = 10\n4. Hardcover books kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 57,
+    "question": "To afford new headbands, a complete collection of 30 pearl hair clips was put up for sale by Betty, bearing a price tag of $6 each. She completes her objective by bringing home 8 velvet headbands valued at $20 per unit, while clutching $8 in leftover cash. Identify the number of pearl clips Betty still retains.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from pearl clips = 30 × 6 = 180  \n2. Total cost of headbands = 8 × 20 = 160  \n3. Total money spent = 160 + 8 = 168  \n4. Number of pearl clips sold = 180 − 168 = 12  \nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of velvet headbands = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Pearl clips sold = 168 / 6 = 28\n4. Pearl clips retained = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 58,
+    "question": "Caleb sets out to exchange his entire collection of 16 wired headphones (valued at $12 each) for dedicated audio systems. Following the final handshake, he owns 5 compact soundbars purchased at $30 a pop and retains $6 in unspent currency. How many wired headphones does Caleb still own?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total value of wired headphones = 16 × 12 = 192  \n2. Value of soundbars = 5 × 30 = 150  \n3. Total spent = 192 - 150 = 42  \n4. Total money Caleb had = 42 + 6 = 48  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of soundbars = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Headphones sold = 156 / 12 = 13\n4. Headphones owned = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 59,
+    "question": "Hoping to finance a series of new artworks, Doris attempts to sell off her entire stash of 22 watercolor paintings for $15 each. She walks away from the marketplace holding 6 large blank canvases purchased at $40 apiece and an exact leftover sum of $15. Determine the number of watercolor pieces that were ultimately kept out of the sale.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total revenue from watercolor sales = 22 * 15 = 330  \n2. Total cost of canvases = 6 * 40 = 240  \n3. Total amount spent = 240 - 15 = 225  \n4. Number of watercolors kept = 330 - 225 = 105  \nFinal Answer: 105",
+    "pred_answer_masked": "105",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of blank canvases = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Watercolor paintings sold = 255 / 15 = 17\n4. Watercolor paintings kept = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 60,
+    "question": "Exactly 3 gold pocket watches, bearing a cost of $100 each, were purchased by Eli, who also walked away with $20 in unspent funds. He financed this by supposedly clearing out his full inventory of 14 antique mantle clocks at $40 a unit. Through mathematical deduction, determine how many mantle clocks were never actually sold.",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total cost of pocket watches: 3 × 100 = 300  \n2. Total money Eli had: 300 + 20 = 320  \n3. Total money from selling clocks: 320  \n4. Number of clocks sold: 320 ÷ 40 = 8  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of pocket watches = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Mantle clocks sold = 320 / 40 = 8\n4. Mantle clocks unsold = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 61,
+    "question": "All 20 of Flora's vintage rolled maps were slated for liquidation at $10 a piece to cover the cost of antique globes. The financial aftermath reveals she procured 7 globes for $20 each and was left holding $10 in unused cash. Determine the number of rolled maps that remained unsold.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total money from maps: 20 * 10 = 200  \n2. Total cost of globes: 7 * 20 = 140  \n3. Total money spent: 140 + 10 = 150  \n4. Money from maps not used: 200 - 150 = 50  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of globes = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Rolled maps sold = 150 / 10 = 15\n4. Rolled maps unsold = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 62,
+    "question": "Gus's plan to pivot to electric rides involves listing all 15 of his old mountain bikes for sale at $20 each. Once the financial dust settles, he has secured 4 e-bike conversion kits for $50 a unit and possesses $40 in unused funds. Identify the number of mountain bikes Gus still holds.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total revenue from selling mountain bikes = 15 × 20 = 300  \n2. Total cost of e-bike conversion kits = 4 × 50 = 200  \n3. Total funds available = 300 - 200 = 100  \n4. Unused funds = 100 - 40 = 60  \nFinal Answer: 15",
+    "pred_answer_masked": "15",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of e-bike conversion kits = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Mountain bikes sold = 240 / 20 = 12\n4. Mountain bikes held = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 63,
+    "question": "A haul of 10 knitted throws, billed at $15 each, was secured by Helen, leaving her with $10 in the bank. This capital originated from a scheme to sell her entire reserve of 25 decorative velvet pillows for $8 each. From this data, find out how many velvet pillows avoided the sale.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total revenue from throws: 10 * 15 = 150  \n2. Total money Helen had: 150 + 10 = 160  \n3. Total revenue from pillows: 25 * 8 = 200  \n4. Number of pillows sold: 160 / 8 = 20  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of knitted throws = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Velvet pillows sold = 160 / 8 = 20\n4. Velvet pillows avoided sale = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 64,
+    "question": "Driven by the desire to modernize his home audio, Ivan commits to emptying his stock of 10 vintage wooden radios by charging $30 per item. Ultimately, he walks away holding 5 smart speaker hubs acquired for $40 each, plus a residual $40 in cash. Calculate the remaining count of his original wooden radios.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from radios: 10 * 30 = 300  \n2. Total cost of smart speakers: 5 * 40 = 200  \n3. Net profit: 300 - 200 = 100  \n4. Remaining cash: 100 - 40 = 60  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of smart speaker hubs = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Wooden radios sold = 240 / 30 = 8\n4. Wooden radios remaining = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 65,
+    "question": "Intending to fully convert her 18 thick recipe books into digital alternatives, Joy lists the entire inventory at $5 per unit. Her subsequent shopping trip yields 3 kitchen tablets costing $20 apiece, along with an unspent balance of $10. Deduce the number of cookbooks that Joy actually failed to sell.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total value of inventory = 18 * 5 = 90  \n2. Cost of kitchen tablets = 3 * 20 = 60  \n3. Total spent = 60 + 10 = 70  \n4. Value of unsold inventory = 90 - 70 = 20  \nFinal Answer: 4",
+    "pred_answer_masked": "4",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of kitchen tablets = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Recipe books sold = 70 / 5 = 14\n4. Recipe books unsold = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 66,
+    "question": "Hoping to upgrade his gaming setup, Karl places all 12 of his old membrane keyboards on the market for $25 apiece. The earnings from this endeavor are funneled into buying 4 wireless gaming mice at $60 each, after which a strict $10 remains. How many keyboards successfully avoided being sold?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 12 × 25 = 300  \n2. 4 × 60 = 240  \n3. 300 − 240 = 60  \n4. 60 − 10 = 50  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of gaming mice = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Keyboards sold = 250 / 25 = 10\n4. Keyboards kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 67,
+    "question": "With exactly $8 sitting in her wallet and 8 newly purchased rolls of jewelry wire (costing $20 each) in hand, Lily reflects on her recent venture. The original strategy dictated auctioning off her complete set of 30 jars of craft beads for $6 each to cover the supplies. How many jars of beads are still physically with Lily?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total cost of wire rolls = 8 × 20 = 160  \n2. Total money from auctioning beads = 30 × 6 = 180  \n3. Net profit from auction = 180 − 160 = 20  \n4. Remaining money after auction = 8 + 20 = 28  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of jewelry wire = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Jars of beads sold = 168 / 6 = 28\n4. Jars of beads kept = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 68,
+    "question": "Possessing $6 in residual cash alongside 5 boxes of golf balls bought for $30 each, Max reviews his sporting trade. He initially aimed to liquidate all 16 of his old iron clubs at a flat rate of $12 per club. From these financial figures, figure out the exact number of iron clubs he kept.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 5 × 30 = 150  \n2. 16 × 12 = 192  \n3. 192 − 150 = 42  \n4. 6 + 42 = 48  \nFinal Answer: 48",
+    "pred_answer_masked": "48",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of golf ball boxes = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Iron clubs sold = 156 / 12 = 13\n4. Iron clubs kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 69,
+    "question": "Pledging to swap her perfumes for scented lotions, Nina lists her entire collection of 22 glass bottles at a selling price of $15 per unit. Once the transactions are finalized, she has taken possession of 6 pump lotions (costing $40 apiece) and holds onto a $15 monetary surplus. How many glass perfume bottles does she currently possess?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total selling price of perfumes = 22 × 15 = 330  \n2. Total cost of lotions = 6 × 40 = 240  \n3. Total money from selling perfumes = 240 + 15 = 255  \n4. Number of bottles sold = 255 ÷ 15 = 17  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of pump lotions = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Perfume bottles sold = 255 / 15 = 17\n4. Perfume bottles kept = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 70,
+    "question": "Ready to tackle freezing temperatures, Oscar plans to liquidate his full stock of 14 heavy winter coats at $40 per unit to afford heated gear. He concludes the process by buying 3 battery vests at $100 each and saving $20 in leftover cash. Compute the number of winter coats Oscar still has.",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. 14 × 40 = 560  \n2. 3 × 100 = 300  \n3. 560 − 300 = 260  \n4. 260 − 20 = 240  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of battery vests = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Winter coats sold = 320 / 40 = 8\n4. Winter coats kept = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 71,
+    "question": "Determined to overhaul her daily carry bags, Penny decides to offload her entire collection of 20 canvas totes, asking $10 for each. At the end of her shopping spree, she has 7 leather mini backpacks—each bought for $20—and a tiny remainder of $10. Count the number of canvas totes Penny still has lying around.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 20 - 7 = 13  \n2. 13 × 10 = 130  \n3. 7 × 20 = 140  \n4. 130 - 140 = -10  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of leather mini backpacks = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Canvas totes sold = 150 / 10 = 15\n4. Canvas totes kept = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 72,
+    "question": "Exactly 4 monitor arms, carrying a $50 price tag each, were obtained by Ray alongside a $40 remaining balance. His funding plan relied on selling his entire library of 15 old flat screen monitors at $20 per unit. Deduce the quantity of flat screens he actually retained.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 4 × 50 = 200  \n2. 200 + 40 = 240  \n3. 15 × 20 = 300  \n4. 300 − 240 = 60  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of monitor arms = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Flat screen monitors sold = 240 / 20 = 12\n4. Flat screen monitors kept = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 73,
+    "question": "A total of 10 contact lens boxes were procured by Rose at a unit price of $15, leaving exactly $10 as leftover funds. This capital was supposed to be generated under the premise of liquidating her whole batch of 25 aviator sunglasses, individually priced at $8. Based on the final monetary outcome, how many aviator glasses were ultimately spared from being sold?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total cost of contact lens boxes = 10 * 15 = 150  \n2. Total money Rose had = 150 + 10 = 160  \n3. Total money from selling sunglasses = 160 - 150 = 10  \n4. Number of sunglasses sold = 10 / 8 = 1.25 → 1 sunglasses sold  \nFinal Answer: 24",
+    "pred_answer_masked": "24",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of contact lens boxes = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Aviator sunglasses sold = 160 / 8 = 20\n4. Aviator sunglasses spared = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 74,
+    "question": "Seth aims to upgrade his footwear by exchanging his full rack of 10 running shoes, valued at $30 each, for boots. He finishes the trades by paying $40 each for 5 pairs of boots and retains a spare $40 bill. How many running shoes are left in his closet?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total value of running shoes = 10 × 30 = 300  \n2. Total cost of boots = 5 × 40 = 200  \n3. Remaining money = 40  \n4. Total money spent = 200 + 40 = 240  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of boots = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Running shoes sold = 240 / 30 = 8\n4. Running shoes kept = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 75,
+    "question": "Priced at $5 each, Tara's entire stash of 18 silicone phone cases was designated to fund new screen protection. When the dust settled, she had secured 3 glass protectors for $20 a pop and retained $10 in spare change. Ascertain the precise quantity of silicone cases that Tara never actually parted with.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total spent on glass protectors: 3 × 20 = 60  \n2. Total money available: 60 + 10 = 70  \n3. Total money spent on phone cases: 70 - 10 = 60  \n4. Number of phone cases sold: 60 ÷ 5 = 12  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of glass protectors = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Silicone phone cases sold = 70 / 5 = 14\n4. Silicone phone cases kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 76,
+    "question": "Hoping to afford fresh drum skins, Uriel places all 12 of his wooden drum sticks on the market for $25 apiece. The earnings from this endeavor are funneled into buying 4 snare heads at $60 each, after which a strict $10 remains. How many wooden sticks successfully avoided being sold?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 12 × 25 = 300  \n2. 4 × 60 = 240  \n3. 300 − 240 = 60  \n4. 60 − 10 = 50  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of snare heads = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Wooden sticks sold = 250 / 25 = 10\n4. Wooden sticks kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 77,
+    "question": "To finance premium copic markers, Vera places her entire set of 30 spiral sketchbooks up for grabs at $6 each. The resulting purchases consist of 8 marker sets at $20 a pop, leaving an $8 margin in her pocket. Deduce the exact number of sketchbooks Vera chose not to part with.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from sketchbooks = 30 × 6 = 180  \n2. Total spent on marker sets = 8 × 20 = 160  \n3. Remaining money = 180 − 160 = 20  \n4. Money left after purchases = 20 − 8 = 12  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of marker sets = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Sketchbooks sold = 168 / 6 = 28\n4. Sketchbooks kept = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 78,
+    "question": "Wade sets out to exchange his entire collection of 16 silk ties (valued at $12 each) for dedicated cufflinks. Following the final handshake, he owns 5 metal sets purchased at $30 a pop and retains $6 in unspent currency. How many silk ties does Wade still own?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total value of silk ties = 16 × 12 = 192  \n2. Value of metal sets = 5 × 30 = 150  \n3. Total spent = 192 - 150 = 42  \n4. Total money from ties = 42 + 6 = 48  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of metal sets = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Silk ties sold = 156 / 12 = 13\n4. Silk ties kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 79,
+    "question": "With an unspent reserve of $15 and a newly bought set of 6 fabric resistance bands costing $40 each, Xena evaluates her fitness upgrade. The capital was gathered by allegedly emptying her supply of 22 foam yoga mats at a selling point of $15 each. How many foam mats were spared from being sold?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 22 × 15 = 330  \n2. 6 × 40 = 240  \n3. 330 − 240 = 90  \n4. 90 − 15 = 75  \nFinal Answer: 75",
+    "pred_answer_masked": "75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of resistance bands = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Yoga mats sold = 255 / 15 = 17\n4. Yoga mats kept = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 80,
+    "question": "Exactly 3 hunting binoculars, bearing a cost of $100 each, were purchased by Yuri, who also walked away with $20 in unspent funds. He financed this by supposedly clearing out his full inventory of 14 antique brass telescopes at $40 a unit. Through mathematical deduction, determine how many brass telescopes were never actually sold.",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total cost of binoculars = 3 × 100 = 300  \n2. Total money available = 300 + 20 = 320  \n3. Total revenue from telescopes = 320  \n4. Number of telescopes sold = 320 ÷ 40 = 8  \nFinal Answer: 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of hunting binoculars = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Telescopes sold = 320 / 40 = 8\n4. Telescopes kept = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 81,
+    "question": "All 20 of Zara's old sun hats were slated for liquidation at $10 a piece to cover the cost of winter headwear. The financial aftermath reveals she procured 7 wool beanies for $20 each and was left holding $10 in unused cash. Determine the number of sun hats that remained unsold.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total revenue from sun hats = 20 × $10 = $200  \n2. Total cost of wool beanies = 7 × $20 = $140  \n3. Total cash spent = $140 + $10 = $150  \n4. Unsold sun hats = $200 - $150 = $50  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of wool beanies = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Sun hats sold = 150 / 10 = 15\n4. Sun hats unsold = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 82,
+    "question": "Alan's strategy to acquire athletic carryalls involves auctioning his entire collection of 15 school backpacks for $20 each. The final tally shows him acquiring 4 duffel gym bags at a unit price of $50, accompanied by $40 in leftover change. Deduce the exact volume of school bags he managed to keep.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total money from selling backpacks: 15 × 20 = 300  \n2. Money spent on duffel gym bags: 4 × 50 = 200  \n3. Remaining money after purchase: 300 − 200 = 100  \n4. Leftover change: 100 − 40 = 60  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of duffel gym bags = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. School backpacks sold = 240 / 20 = 12\n4. School backpacks kept = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 83,
+    "question": "A haul of 10 elastic suspender sets, billed at $15 each, was secured by Beth, leaving her with $10 in the bank. This capital originated from a scheme to sell her entire reserve of 25 leather belts for $8 each. From this data, find out how many leather belts avoided the sale.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total revenue from selling belts = 25 * 8 = 200  \n2. Total cost of suspender sets = 10 * 15 = 150  \n3. Remaining money after buying suspender sets = 200 - 150 = 50  \n4. Difference between remaining money and bank balance = 50 - 10 = 40  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of suspender sets = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Leather belts sold = 160 / 8 = 20\n4. Leather belts kept = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 84,
+    "question": "Driven by the desire to upgrade his digital storage, Cole commits to emptying his stock of 10 action sports cameras by charging $30 per item. Ultimately, he walks away holding 5 SD memory cards acquired for $40 each, plus a residual $40 in cash. Calculate the remaining count of his original sports cameras.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 10 - 5 = 5  \n2. 5 * 30 = 150  \n3. 5 * 40 = 200  \n4. 150 - 200 = -50  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of SD memory cards = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Sports cameras sold = 240 / 30 = 8\n4. Sports cameras kept = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 85,
+    "question": "Intending to fully convert her 18 plastic water bottles into insulated drinkware, Dawn lists the entire inventory at $5 per unit. Her subsequent shopping trip yields 3 steel tumblers costing $20 apiece, along with an unspent balance of $10. Deduce the number of plastic bottles that Dawn actually failed to sell.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. Total value of inventory = 18 * 5 = 90  \n2. Total cost of 3 steel tumblers = 3 * 20 = 60  \n3. Remaining money = 90 - 60 = 30  \n4. Number of bottles sold = 30 / 5 = 6  \nFinal Answer: 12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of steel tumblers = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Plastic bottles sold = 70 / 5 = 14\n4. Plastic bottles kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 86,
+    "question": "Hoping to afford premium display options, Ezra places all 12 of his vinyl pop figures on the market for $25 apiece. The earnings from this endeavor are funneled into buying 4 floating shelves at $60 each, after which a strict $10 remains. How many vinyl figures successfully avoided being sold?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 12 figures × $25 = $300  \n2. 4 shelves × $60 = $240  \n3. $300 - $240 = $60  \n4. $60 - $10 = $50  \nFinal Answer: 2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of floating shelves = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Vinyl figures sold = 250 / 25 = 10\n4. Vinyl figures kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 87,
+    "question": "With exactly $8 sitting in her wallet and 8 newly purchased metal crochet hooks (costing $20 each) in hand, Fern reflects on her recent venture. The original strategy dictated auctioning off her complete set of 30 bamboo knitting needles for $6 each to cover the tools. How many bamboo needles are still physically with Fern?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 30 - 8 = 22  \n2. 22 × 6 = 132  \n3. 132 - 20 = 112  \n4. 112 ÷ 6 = 18.666...  \nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of metal crochet hooks = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Bamboo needles sold = 168 / 6 = 28\n4. Bamboo needles kept = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 88,
+    "question": "Possessing $6 in residual cash alongside 5 sets of pro swim goggles bought for $30 each, Gene reviews his swimwear trade. He initially aimed to liquidate all 16 of his old board shorts at a flat rate of $12 per pair. From these financial figures, figure out the exact number of beach shorts he kept.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 5 sets of swim goggles cost 5 × 30 = 150  \n2. Total cash after buying goggles is 6 + 150 = 156  \n3. Total money from selling 16 board shorts is 16 × 12 = 192  \n4. Difference between money from shorts and total cash is 192 - 156 = 36  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of swim goggles = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Board shorts sold = 156 / 12 = 13\n4. Board shorts kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 89,
+    "question": "Pledging to swap her old tea service for matcha equipment, Hope lists her entire collection of 22 porcelain cups at a selling price of $15 per unit. Once the transactions are finalized, she has taken possession of 6 bamboo whisks (costing $40 apiece) and holds onto a $15 monetary surplus. How many porcelain cups does she currently possess?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total selling price of cups = 22 × 15 = 330  \n2. Total cost of whisks = 6 × 40 = 240  \n3. Total money from selling cups = 240 + 15 = 255  \n4. Number of cups sold = 330 − 255 = 75  \nFinal Answer: 22 − 75 = −53  \nFinal Answer: 0",
+    "pred_answer_masked": "0",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of bamboo whisks = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Porcelain cups sold = 255 / 15 = 17\n4. Porcelain cups kept = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 90,
+    "question": "Ready to tackle cord management, Jace plans to liquidate his full stock of 14 wireless gaming controllers at $40 per unit to afford charging stations. He concludes the process by buying 3 dual docks at $100 each and saving $20 in leftover cash. Compute the number of wireless pads Jace still has.",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. 14 × 40 = 560  \n2. 3 × 100 = 300  \n3. 560 − 300 = 260  \n4. 260 − 20 = 240  \nFinal Answer: 240",
+    "pred_answer_masked": "240",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of dual docks = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Gaming controllers sold = 320 / 40 = 8\n4. Gaming controllers kept = 14 - 8 = 6\nFinal Answer: 6"
+  },
+  {
+    "id": 91,
+    "question": "Determined to overhaul her stationery supplies, Kira decides to offload her entire collection of 20 spiral planners, asking $10 for each. At the end of her shopping spree, she has 7 gel pen sets—each bought for $20—and a tiny remainder of $10. Count the number of spiral planners Kira still has lying around.",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 20 - 7 = 13  \n2. 13 × 10 = 130  \n3. 7 × 20 = 140  \n4. 140 - 10 = 130  \nFinal Answer: 13",
+    "pred_answer_masked": "13",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of gel pen sets = 7 * 20 = 140\n2. Total money generated = 140 + 10 = 150\n3. Spiral planners sold = 150 / 10 = 15\n4. Spiral planners kept = 20 - 15 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 92,
+    "question": "Exactly 4 boom desk arms, carrying a $50 price tag each, were obtained by Leon alongside a $40 remaining balance. His funding plan relied on selling his entire library of 15 old studio microphones at $20 per unit. Deduce the quantity of studio mics he actually retained.",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. 4 × 50 = 200  \n2. 200 + 40 = 240  \n3. 240 ÷ 20 = 12  \n4. 15 − 12 = 3  \nFinal Answer: 3",
+    "pred_answer_masked": "3",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of boom desk arms = 4 * 50 = 200\n2. Total money generated = 200 + 40 = 240\n3. Studio microphones sold = 240 / 20 = 12\n4. Studio microphones retained = 15 - 12 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 93,
+    "question": "A total of 10 portable mini SSDs were procured by Macy at a unit price of $15, leaving exactly $10 as leftover funds. This capital was supposed to be generated under the premise of liquidating her whole batch of 25 old flash thumb drives, individually priced at $8. Based on the final monetary outcome, how many thumb drives were ultimately spared from being sold?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. Total cost of 10 SSDs = 10 × 15 = 150  \n2. Total money available = 150 + 10 = 160  \n3. Total money from selling thumb drives = 160  \n4. Number of thumb drives sold = 160 ÷ 8 = 20  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of mini SSDs = 10 * 15 = 150\n2. Total money generated = 150 + 10 = 160\n3. Thumb drives sold = 160 / 8 = 20\n4. Thumb drives spared = 25 - 20 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 94,
+    "question": "Neil aims to upgrade his blade maintenance by exchanging his full rack of 10 folding pocket knives, valued at $30 each, for sharpening stones. He finishes the trades by paying $40 each for 5 whetstones and retains a spare $40 bill. How many folding knives are left in his drawer?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total value of knives = 10 * 30 = 300  \n2. Value of whetstones = 5 * 40 = 200  \n3. Remaining money = 300 - 200 = 100  \n4. Knives left = 10 - 5 = 5  \nFinal Answer: 5",
+    "pred_answer_masked": "5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of whetstones = 5 * 40 = 200\n2. Total money generated = 200 + 40 = 240\n3. Pocket knives sold = 240 / 30 = 8\n4. Pocket knives kept = 10 - 8 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 95,
+    "question": "Priced at $5 each, Opal's entire stash of 18 metal keyrings was designated to fund new neck lanyards. When the dust settled, she had secured 3 lanyards for $20 a pop and retained $10 in spare change. Ascertain the precise quantity of keyrings that Opal never actually parted with.",
+    "ground_truth": "4",
+    "generation": "Reasoning:  \n1. 18 keyrings × $5 = $90  \n2. 3 lanyards × $20 = $60  \n3. $90 − $60 = $30  \n4. $30 − $10 = $20  \nFinal Answer: 10",
+    "pred_answer_masked": "10",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of lanyards = 3 * 20 = 60\n2. Total money generated = 60 + 10 = 70\n3. Keyrings sold = 70 / 5 = 14\n4. Keyrings kept = 18 - 14 = 4\nFinal Answer: 4"
+  },
+  {
+    "id": 96,
+    "question": "Hoping to afford a mesh network, Paul places all 12 of his old standalone wifi router boxes on the market for $25 apiece. The earnings from this endeavor are funneled into buying 4 satellite nodes at $60 each, after which a strict $10 remains. How many wifi boxes successfully avoided being sold?",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. 12 × 25 = 300  \n2. 4 × 60 = 240  \n3. 300 − 240 = 60  \n4. 60 − 10 = 50  \nFinal Answer: 50",
+    "pred_answer_masked": "50",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of satellite nodes = 4 * 60 = 240\n2. Total money generated = 240 + 10 = 250\n3. Wifi router boxes sold = 250 / 25 = 10\n4. Wifi router boxes kept = 12 - 10 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 97,
+    "question": "To finance premium ergonomic support, Rita places her entire set of 30 cloth mousepads up for grabs at $6 each. The resulting purchases consist of 8 gel wrist rests at $20 a pop, leaving an $8 margin in her pocket. Deduce the exact number of cloth pads Rita chose not to part with.",
+    "ground_truth": "2",
+    "generation": "Reasoning:  \n1. Total revenue from mousepads = 30 × 6 = 180  \n2. Total cost of gel wrist rests = 8 × 20 = 160  \n3. Total money spent = 160 + 8 = 168  \n4. Number of mousepads sold = 180 − 168 = 12  \nFinal Answer: 18",
+    "pred_answer_masked": "18",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of gel wrist rests = 8 * 20 = 160\n2. Total money generated = 160 + 8 = 168\n3. Cloth mousepads sold = 168 / 6 = 28\n4. Cloth mousepads kept = 30 - 28 = 2\nFinal Answer: 2"
+  },
+  {
+    "id": 98,
+    "question": "Sean sets out to exchange his entire collection of 16 braided HDMI cables (valued at $12 each) for dedicated display ports. Following the final handshake, he owns 5 pro cables purchased at $30 a pop and retains $6 in unspent currency. How many braided cables does Sean still own?",
+    "ground_truth": "3",
+    "generation": "Reasoning:  \n1. Total value of braided cables = 16 × 12 = 192  \n2. Value of pro cables = 5 × 30 = 150  \n3. Remaining money = 192 − 150 = 42  \n4. Unspent currency = 42 − 6 = 36  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of pro cables = 5 * 30 = 150\n2. Total money generated = 150 + 6 = 156\n3. Braided cables sold = 156 / 12 = 13\n4. Braided cables kept = 16 - 13 = 3\nFinal Answer: 3"
+  },
+  {
+    "id": 99,
+    "question": "With an unspent reserve of $15 and a newly bought set of 6 LED neon signs costing $40 each, Tess evaluates her wall decor upgrade. The capital was gathered by allegedly emptying her supply of 22 analog clocks at a selling point of $15 each. How many analog clocks were spared from being sold?",
+    "ground_truth": "5",
+    "generation": "Reasoning:  \n1. 22 × 15 = 330  \n2. 6 × 40 = 240  \n3. 330 − 240 = 90  \n4. 90 − 15 = 75  \nFinal Answer: 75",
+    "pred_answer_masked": "75",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:\n1. Cost of LED neon signs = 6 * 40 = 240\n2. Total money generated = 240 + 15 = 255\n3. Analog clocks sold = 255 / 15 = 17\n4. Analog clocks spared = 22 - 17 = 5\nFinal Answer: 5"
+  },
+  {
+    "id": 100,
+    "question": "Exactly 3 LED light strips, bearing a cost of $100 each, were purchased by Hugo, who also walked away with $20 in unspent funds. He financed this by supposedly clearing out his full inventory of 14 smart color bulbs at $40 a unit. Through mathematical deduction, determine how many color bulbs were never actually sold.",
+    "ground_truth": "6",
+    "generation": "Reasoning:  \n1. Total cost of LED light strips = 3 × 100 = 300  \n2. Total money available = 300 + 20 = 320  \n3. Total revenue from bulbs = 320  \n4. Number of bulbs sold = 320 ÷ 40 = 8  \nFinal Answer: 14 - 8 = 6",
+    "pred_answer_masked": "6",
+    "is_correct_masked": true,
+    "corrected_reasoning": "Reasoning:\n1. Cost of LED light strips = 3 * 100 = 300\n2. Total money generated = 300 + 20 = 320\n3. Color bulbs sold = 320 / 40 = 8\n4. Color bulbs unsold = 14 - 8 = 6\nFinal Answer: 6"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 20 cars leave the parking lot in the first 2 hours, and then she sees 1/2 that many cars return in the next 2 hours. She sees 2 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 2 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 2 hours. How many cars did Alice see return to the parking lot in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 cars leave in the first 2 hours  \n2. 10 cars return in the next 2 hours (20 * 1/2)  \n3. 40 cars leave in the next 2 hours (20 * 2)  \n4. 60 cars return in the last 2 hours (20 + 10 + 40)  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 cars leave in the first 2 hours  \n2. 10 cars return in the next 2 hours (20 * 1/2)  \n3. 40 cars leave in the next 2 hours (20 * 2)  \n4. 50 cars return in the last 2 hours (20 + 40 - 10)  \nFinal Answer: 50"
+  },
+  {
+    "id": 2,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 12 cars leave the parking lot in the first 3 hours, and then she sees 1/3 that many cars return in the next 3 hours. She sees 2 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 3 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 3 hours. How many cars did Alice see return to the parking lot in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 cars leave in the first 3 hours  \n2. 12 / 3 = 4 cars return in the next 3 hours  \n3. 12 * 2 = 24 cars leave in the next 3 hours  \n4. 12 + 4 + 24 = 40 cars had left before the last 3 hours  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 cars leave in the first 3 hours  \n2. 12 / 3 = 4 cars return in the next 3 hours  \n3. 12 * 2 = 24 cars leave in the next 3 hours  \n4. 12 + 24 - 4 = 32 cars had left and not returned before the last 3 hours  \nFinal Answer: 32"
+  },
+  {
+    "id": 3,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 30 cars leave the parking lot in the first 4 hours, and then she sees 1/5 that many cars return in the next 4 hours. She sees 3 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 4 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 4 hours. How many cars did Alice see return to the parking lot in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 cars leave in the first 4 hours.  \n2. 30 * 1/5 = 6 cars return in the next 4 hours.  \n3. 30 * 3 = 90 cars leave in the next 4 hours.  \n4. 30 + 6 + 90 = 126 cars left before the last 4 hours.  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 cars leave in the first 4 hours.  \n2. 30 * 1/5 = 6 cars return in the next 4 hours.  \n3. 30 * 3 = 90 cars leave in the next 4 hours.  \n4. 30 + 90 - 6 = 114 cars had left and not returned before the last 4 hours.  \nFinal Answer: 114"
+  },
+  {
+    "id": 4,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 40 cars leave the parking lot in the first 2 hours, and then she sees 1/4 that many cars return in the next 2 hours. She sees 2 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 2 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 2 hours. How many cars did Alice see return to the parking lot in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 cars leave in the first 2 hours  \n2. 40 / 4 = 10 cars return in the next 2 hours  \n3. 40 * 2 = 80 cars leave in the next 2 hours  \n4. 40 + 10 + 80 = 130 cars had left before the last 2 hours  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 cars leave in the first 2 hours  \n2. 40 / 4 = 10 cars return in the next 2 hours  \n3. 40 * 2 = 80 cars leave in the next 2 hours  \n4. 40 + 80 - 10 = 110 cars had left and not returned before the last 2 hours  \nFinal Answer: 110"
+  },
+  {
+    "id": 5,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 50 cars leave the parking lot in the first 3 hours, and then she sees 1/10 that many cars return in the next 3 hours. She sees 2 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 3 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 3 hours. How many cars did Alice see return to the parking lot in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 cars leave in the first 3 hours  \n2. 50 * 1/10 = 5 cars return in the next 3 hours  \n3. 50 * 2 = 100 cars leave in the next 3 hours  \n4. 50 + 5 = 55 cars had left and not returned before the last 3 hours  \nFinal Answer: 55",
+    "pred_answer_masked": "55",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 cars leave in the first 3 hours  \n2. 50 * 1/10 = 5 cars return in the next 3 hours  \n3. 50 * 2 = 100 cars leave in the next 3 hours  \n4. 50 + 100 - 5 = 145 cars had left and not returned before the last 3 hours  \nFinal Answer: 145"
+  },
+  {
+    "id": 6,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 18 cars leave the parking lot in the first 4 hours, and then she sees 1/2 that many cars return in the next 4 hours. She sees 3 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 4 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 4 hours. How many cars did Alice see return to the parking lot in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 cars leave in the first 4 hours  \n2. 18 / 2 = 9 cars return in the next 4 hours  \n3. 18 * 3 = 54 cars leave in the next 4 hours  \n4. 18 + 9 = 27 cars had left and not returned  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 cars leave in the first 4 hours  \n2. 18 / 2 = 9 cars return in the next 4 hours  \n3. 18 * 3 = 54 cars leave in the next 4 hours  \n4. 18 + 54 - 9 = 63 cars had left and not returned  \nFinal Answer: 63"
+  },
+  {
+    "id": 7,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 24 cars leave the parking lot in the first 5 hours, and then she sees 1/4 that many cars return in the next 5 hours. She sees 2 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 5 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 5 hours. How many cars did Alice see return to the parking lot in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 cars leave in the first 5 hours  \n2. 24 / 4 = 6 cars return in the next 5 hours  \n3. 2 * 24 = 48 cars leave in the next 5 hours  \n4. 24 + 6 = 30 cars had left and not returned  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 cars leave in the first 5 hours  \n2. 24 / 4 = 6 cars return in the next 5 hours  \n3. 2 * 24 = 48 cars leave in the next 5 hours  \n4. 24 + 48 - 6 = 66 cars had left and not returned  \nFinal Answer: 66"
+  },
+  {
+    "id": 8,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 15 cars leave the parking lot in the first 2 hours, and then she sees 1/3 that many cars return in the next 2 hours. She sees 3 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 2 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 2 hours. How many cars did Alice see return to the parking lot in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 cars leave in the first 2 hours  \n2. 15 / 3 = 5 cars return in the next 2 hours  \n3. 15 * 3 = 45 cars leave in the next 2 hours  \n4. 15 + 5 + 45 = 65 cars had left or returned before the last 2 hours  \nFinal Answer: 65",
+    "pred_answer_masked": "65",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 cars leave in the first 2 hours  \n2. 15 / 3 = 5 cars return in the next 2 hours  \n3. 15 * 3 = 45 cars leave in the next 2 hours  \n4. 15 + 45 - 5 = 55 cars had left and not returned before the last 2 hours  \nFinal Answer: 55"
+  },
+  {
+    "id": 9,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 36 cars leave the parking lot in the first 3 hours, and then she sees 1/6 that many cars return in the next 3 hours. She sees 2 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 3 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 3 hours. How many cars did Alice see return to the parking lot in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 cars leave in the first 3 hours.  \n2. 36 / 6 = 6 cars return in the next 3 hours.  \n3. 2 * 36 = 72 cars leave in the next 3 hours.  \n4. 36 + 6 = 42 cars had left and not returned before.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 cars leave in the first 3 hours.  \n2. 36 / 6 = 6 cars return in the next 3 hours.  \n3. 2 * 36 = 72 cars leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 cars had left and not returned before.  \nFinal Answer: 102"
+  },
+  {
+    "id": 10,
+    "question": "Alice is monitoring a parking lot to see how many cars come and go in a day. She sees 28 cars leave the parking lot in the first 4 hours, and then she sees 1/2 that many cars return in the next 4 hours. She sees 2 times as many cars as she saw first leave the parking lot drive from the parking lot and leave in the next 4 hours. Then every car that left before that hadn't already returned returns to the parking lot in the next 4 hours. How many cars did Alice see return to the parking lot in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 cars leave in the first 4 hours  \n2. 14 cars return in the next 4 hours (28 / 2)  \n3. 56 cars leave in the next 4 hours (2 * 28)  \n4. 28 cars return in the last 4 hours (same as first 4 hours)  \nFinal Answer: 28",
+    "pred_answer_masked": "28",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 cars leave in the first 4 hours  \n2. 14 cars return in the next 4 hours (28 / 2)  \n3. 56 cars leave in the next 4 hours (2 * 28)  \n4. 28 + 56 - 14 = 70 cars had left and not returned  \nFinal Answer: 70"
+  },
+  {
+    "id": 11,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 20 boats leave the harbor in the first 2 hours, and then he sees 1/2 that many boats return in the next 2 hours. He sees 2 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 2 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 2 hours. How many boats did Bob see return to the harbor in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 boats leave in the first 2 hours.  \n2. 10 boats return in the next 2 hours (20 / 2).  \n3. 40 boats leave in the next 2 hours (2 * 20).  \n4. 30 boats return in the last 2 hours (20 + 10).  \nFinal Answer: 30",
+    "pred_answer_masked": "30",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 boats leave in the first 2 hours.  \n2. 10 boats return in the next 2 hours (20 / 2).  \n3. 40 boats leave in the next 2 hours (2 * 20).  \n4. 50 boats return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 12,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 12 boats leave the harbor in the first 3 hours, and then he sees 1/3 that many boats return in the next 3 hours. He sees 2 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 3 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 3 hours. How many boats did Bob see return to the harbor in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 boats leave in the first 3 hours.  \n2. 12 / 3 = 4 boats return in the next 3 hours.  \n3. 12 * 2 = 24 boats leave in the next 3 hours.  \n4. 12 + 4 + 24 = 40 boats left before the last 3 hours.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 boats leave in the first 3 hours.  \n2. 12 / 3 = 4 boats return in the next 3 hours.  \n3. 12 * 2 = 24 boats leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 boats left before the last 3 hours.  \nFinal Answer: 32"
+  },
+  {
+    "id": 13,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 30 boats leave the harbor in the first 4 hours, and then he sees 1/5 that many boats return in the next 4 hours. He sees 3 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 4 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 4 hours. How many boats did Bob see return to the harbor in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 boats leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 boats return in the next 4 hours.  \n3. 3 times 30 equals 90 boats leave in the next 4 hours.  \n4. 30 plus 6 plus 90 equals 126 boats left before the last 4 hours.  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 boats leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 boats return in the next 4 hours.  \n3. 3 times 30 equals 90 boats leave in the next 4 hours.  \n4. 30 plus 90 minus 6 equals 114 boats left before the last 4 hours.  \nFinal Answer: 114"
+  },
+  {
+    "id": 14,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 40 boats leave the harbor in the first 2 hours, and then he sees 1/4 that many boats return in the next 2 hours. He sees 2 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 2 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 2 hours. How many boats did Bob see return to the harbor in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 boats leave in the first 2 hours.  \n2. 1/4 of 40 is 10 boats return in the next 2 hours.  \n3. 2 times 40 is 80 boats leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 boats left before the last 2 hours.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 boats leave in the first 2 hours.  \n2. 1/4 of 40 is 10 boats return in the next 2 hours.  \n3. 2 times 40 is 80 boats leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 boats left before the last 2 hours.  \nFinal Answer: 110"
+  },
+  {
+    "id": 15,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 50 boats leave the harbor in the first 3 hours, and then he sees 1/10 that many boats return in the next 3 hours. He sees 2 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 3 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 3 hours. How many boats did Bob see return to the harbor in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 boats leave in the first 3 hours.  \n2. 50 * 1/10 = 5 boats return in the next 3 hours.  \n3. 50 * 2 = 100 boats leave in the next 3 hours.  \n4. 50 + 5 + 100 = 155 boats left before the last 3 hours.  \nFinal Answer: 155",
+    "pred_answer_masked": "155",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 boats leave in the first 3 hours.  \n2. 50 * 1/10 = 5 boats return in the next 3 hours.  \n3. 50 * 2 = 100 boats leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 boats left before the last 3 hours.  \nFinal Answer: 145"
+  },
+  {
+    "id": 16,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 18 boats leave the harbor in the first 4 hours, and then he sees 1/2 that many boats return in the next 4 hours. He sees 3 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 4 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 4 hours. How many boats did Bob see return to the harbor in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 boats leave in the first 4 hours.  \n2. 18 / 2 = 9 boats return in the next 4 hours.  \n3. 18 * 3 = 54 boats leave in the next 4 hours.  \n4. 18 + 9 + 54 = 81 boats left before the last 4 hours.  \nFinal Answer: 81",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 boats leave in the first 4 hours.  \n2. 18 / 2 = 9 boats return in the next 4 hours.  \n3. 18 * 3 = 54 boats leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 boats left before the last 4 hours.  \nFinal Answer: 63"
+  },
+  {
+    "id": 17,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 24 boats leave the harbor in the first 5 hours, and then he sees 1/4 that many boats return in the next 5 hours. He sees 2 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 5 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 5 hours. How many boats did Bob see return to the harbor in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 boats leave in the first 5 hours.  \n2. 1/4 of 24 is 6 boats return in the next 5 hours.  \n3. 2 times 24 is 48 boats leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 boats left before the last 5 hours.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 boats leave in the first 5 hours.  \n2. 1/4 of 24 is 6 boats return in the next 5 hours.  \n3. 2 times 24 is 48 boats leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 boats left before the last 5 hours.  \nFinal Answer: 66"
+  },
+  {
+    "id": 18,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 15 boats leave the harbor in the first 2 hours, and then he sees 1/3 that many boats return in the next 2 hours. He sees 3 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 2 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 2 hours. How many boats did Bob see return to the harbor in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 boats leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 boats return in the next 2 hours.  \n3. 15 × 3 = 45 boats leave in the next 2 hours.  \n4. 15 + 5 + 45 = 65 boats left before the last 2 hours.  \nFinal Answer: 65",
+    "pred_answer_masked": "65",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 boats leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 boats return in the next 2 hours.  \n3. 15 × 3 = 45 boats leave in the next 2 hours.  \n4. 15 + 45 - 5 = 55 boats left before the last 2 hours.  \nFinal Answer: 55"
+  },
+  {
+    "id": 19,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 36 boats leave the harbor in the first 3 hours, and then he sees 1/6 that many boats return in the next 3 hours. He sees 2 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 3 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 3 hours. How many boats did Bob see return to the harbor in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 boats leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 boats return in the next 3 hours.  \n3. 36 × 2 = 72 boats leave in the next 3 hours.  \n4. 36 + 6 = 42 boats had left and not returned before.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 boats leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 boats return in the next 3 hours.  \n3. 36 × 2 = 72 boats leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 boats had left and not returned before.  \nFinal Answer: 102"
+  },
+  {
+    "id": 20,
+    "question": "Bob is monitoring a harbor to see how many boats come and go in a day. He sees 28 boats leave the harbor in the first 4 hours, and then he sees 1/2 that many boats return in the next 4 hours. He sees 2 times as many boats as he saw first leave the harbor sail from the harbor and leave in the next 4 hours. Then every boat that left before that hadn't already returned returns to the harbor in the next 4 hours. How many boats did Bob see return to the harbor in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 boats leave in the first 4 hours.  \n2. 14 boats return in the next 4 hours (28 / 2).  \n3. 56 boats leave in the next 4 hours (28 * 2).  \n4. 28 + 14 = 42 boats had left or returned before the last 4 hours. All 42 return in the last 4 hours.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 boats leave in the first 4 hours.  \n2. 14 boats return in the next 4 hours (28 / 2).  \n3. 56 boats leave in the next 4 hours (28 * 2).  \n4. 28 + 56 - 14 = 70 boats had left or returned before the last 4 hours. All 70 return in the last 4 hours.  \nFinal Answer: 70"
+  },
+  {
+    "id": 21,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 20 planes leave the airport in the first 2 hours, and then he sees 1/2 that many planes return in the next 2 hours. He sees 2 times as many planes as he saw first leave the airport fly from the airport and leave in the next 2 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 2 hours. How many planes did Charlie see return to the airport in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 planes leave in the first 2 hours.  \n2. 10 planes return in the next 2 hours (20 * 1/2).  \n3. 40 planes leave in the next 2 hours (20 * 2).  \n4. 60 planes return in the last 2 hours (20 + 10 + 40).  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 planes leave in the first 2 hours.  \n2. 10 planes return in the next 2 hours (20 * 1/2).  \n3. 40 planes leave in the next 2 hours (20 * 2).  \n4. 50 planes return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 22,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 12 planes leave the airport in the first 3 hours, and then he sees 1/3 that many planes return in the next 3 hours. He sees 2 times as many planes as he saw first leave the airport fly from the airport and leave in the next 3 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 3 hours. How many planes did Charlie see return to the airport in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 planes leave in the first 3 hours.  \n2. 12 / 3 = 4 planes return in the next 3 hours.  \n3. 2 * 12 = 24 planes leave in the next 3 hours.  \n4. 12 + 4 + 24 = 40 planes left before the last 3 hours.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 planes leave in the first 3 hours.  \n2. 12 / 3 = 4 planes return in the next 3 hours.  \n3. 2 * 12 = 24 planes leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 planes left before the last 3 hours.  \nFinal Answer: 32"
+  },
+  {
+    "id": 23,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 30 planes leave the airport in the first 4 hours, and then he sees 1/5 that many planes return in the next 4 hours. He sees 3 times as many planes as he saw first leave the airport fly from the airport and leave in the next 4 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 4 hours. How many planes did Charlie see return to the airport in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 planes leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 planes return in the next 4 hours.  \n3. 3 times 30 equals 90 planes leave in the next 4 hours.  \n4. 30 plus 6 plus 90 equals 126 planes have left or returned before the last 4 hours.  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 planes leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 planes return in the next 4 hours.  \n3. 3 times 30 equals 90 planes leave in the next 4 hours.  \n4. 30 plus 90 minus 6 equals 114 planes have left and not returned before the last 4 hours.  \nFinal Answer: 114"
+  },
+  {
+    "id": 24,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 40 planes leave the airport in the first 2 hours, and then he sees 1/4 that many planes return in the next 2 hours. He sees 2 times as many planes as he saw first leave the airport fly from the airport and leave in the next 2 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 2 hours. How many planes did Charlie see return to the airport in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 planes leave in the first 2 hours.  \n2. 1/4 of 40 is 10 planes return in the next 2 hours.  \n3. 2 times 40 is 80 planes leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 planes left before the last 2 hours.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 planes leave in the first 2 hours.  \n2. 1/4 of 40 is 10 planes return in the next 2 hours.  \n3. 2 times 40 is 80 planes leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 planes left before the last 2 hours.  \nFinal Answer: 110"
+  },
+  {
+    "id": 25,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 50 planes leave the airport in the first 3 hours, and then he sees 1/10 that many planes return in the next 3 hours. He sees 2 times as many planes as he saw first leave the airport fly from the airport and leave in the next 3 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 3 hours. How many planes did Charlie see return to the airport in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 planes leave in the first 3 hours.  \n2. 50 * 1/10 = 5 planes return in the next 3 hours.  \n3. 50 * 2 = 100 planes leave in the next 3 hours.  \n4. 50 + 100 = 150 planes left before the last 3 hours.  \nFinal Answer: 150",
+    "pred_answer_masked": "150",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 planes leave in the first 3 hours.  \n2. 50 * 1/10 = 5 planes return in the next 3 hours.  \n3. 50 * 2 = 100 planes leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 planes left before the last 3 hours.  \nFinal Answer: 145"
+  },
+  {
+    "id": 26,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 18 planes leave the airport in the first 4 hours, and then he sees 1/2 that many planes return in the next 4 hours. He sees 3 times as many planes as he saw first leave the airport fly from the airport and leave in the next 4 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 4 hours. How many planes did Charlie see return to the airport in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 planes leave in the first 4 hours.  \n2. 18 / 2 = 9 planes return in the next 4 hours.  \n3. 3 * 18 = 54 planes leave in the next 4 hours.  \n4. 18 + 9 + 54 = 81 planes left before the last 4 hours.  \nFinal Answer: 81",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 planes leave in the first 4 hours.  \n2. 18 / 2 = 9 planes return in the next 4 hours.  \n3. 3 * 18 = 54 planes leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 planes left before the last 4 hours.  \nFinal Answer: 63"
+  },
+  {
+    "id": 27,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 24 planes leave the airport in the first 5 hours, and then he sees 1/4 that many planes return in the next 5 hours. He sees 2 times as many planes as he saw first leave the airport fly from the airport and leave in the next 5 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 5 hours. How many planes did Charlie see return to the airport in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 planes leave in the first 5 hours.  \n2. 24 / 4 = 6 planes return in the next 5 hours.  \n3. 2 * 24 = 48 planes leave in the next 5 hours.  \n4. 24 + 48 = 72 planes left before the last 5 hours.  \nFinal Answer: 72",
+    "pred_answer_masked": "72",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 planes leave in the first 5 hours.  \n2. 24 / 4 = 6 planes return in the next 5 hours.  \n3. 2 * 24 = 48 planes leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 planes left before the last 5 hours.  \nFinal Answer: 66"
+  },
+  {
+    "id": 28,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 15 planes leave the airport in the first 2 hours, and then he sees 1/3 that many planes return in the next 2 hours. He sees 3 times as many planes as he saw first leave the airport fly from the airport and leave in the next 2 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 2 hours. How many planes did Charlie see return to the airport in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 planes leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 planes return in the next 2 hours.  \n3. 3 × 15 = 45 planes leave in the next 2 hours.  \n4. 15 + 5 + 45 = 65 planes left before the last 2 hours.  \nFinal Answer: 65",
+    "pred_answer_masked": "65",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 planes leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 planes return in the next 2 hours.  \n3. 3 × 15 = 45 planes leave in the next 2 hours.  \n4. 15 + 45 - 5 = 55 planes left before the last 2 hours.  \nFinal Answer: 55"
+  },
+  {
+    "id": 29,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 36 planes leave the airport in the first 3 hours, and then he sees 1/6 that many planes return in the next 3 hours. He sees 2 times as many planes as he saw first leave the airport fly from the airport and leave in the next 3 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 3 hours. How many planes did Charlie see return to the airport in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 planes leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 planes return in the next 3 hours.  \n3. 2 × 36 = 72 planes leave in the next 3 hours.  \n4. 36 + 6 + 72 = 114 planes left before the last 3 hours.  \nFinal Answer: 114",
+    "pred_answer_masked": "114",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 planes leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 planes return in the next 3 hours.  \n3. 2 × 36 = 72 planes leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 planes left before the last 3 hours.  \nFinal Answer: 102"
+  },
+  {
+    "id": 30,
+    "question": "Charlie is monitoring an airport to see how many planes come and go in a day. He sees 28 planes leave the airport in the first 4 hours, and then he sees 1/2 that many planes return in the next 4 hours. He sees 2 times as many planes as he saw first leave the airport fly from the airport and leave in the next 4 hours. Then every plane that left before that hadn't already returned returns to the airport in the next 4 hours. How many planes did Charlie see return to the airport in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 planes leave in the first 4 hours.  \n2. 14 planes return in the next 4 hours (28 / 2).  \n3. 56 planes leave in the next 4 hours (28 * 2).  \n4. 28 + 14 + 56 = 98 planes have left or returned before the last 4 hours.  \nFinal Answer: 98",
+    "pred_answer_masked": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 planes leave in the first 4 hours.  \n2. 14 planes return in the next 4 hours (28 / 2).  \n3. 56 planes leave in the next 4 hours (28 * 2).  \n4. 28 + 56 - 14 = 70 planes have left and not returned before the last 4 hours.  \nFinal Answer: 70"
+  },
+  {
+    "id": 31,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 20 birds leave the birdhouse in the first 2 hours, and then she sees 1/2 that many birds return in the next 2 hours. She sees 2 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 2 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 2 hours. How many birds did Diana see return to the birdhouse in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 birds leave in the first 2 hours.  \n2. 10 birds return in the next 2 hours (half of 20).  \n3. 40 birds leave in the next 2 hours (2 times 20).  \n4. 60 birds return in the last 2 hours (20 + 10 + 30).  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 birds leave in the first 2 hours.  \n2. 10 birds return in the next 2 hours (half of 20).  \n3. 40 birds leave in the next 2 hours (2 times 20).  \n4. 50 birds return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 32,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 12 birds leave the birdhouse in the first 3 hours, and then she sees 1/3 that many birds return in the next 3 hours. She sees 2 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 3 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 3 hours. How many birds did Diana see return to the birdhouse in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 birds leave in the first 3 hours.  \n2. 1/3 of 12 is 4 birds return in the next 3 hours.  \n3. 2 times 12 is 24 birds leave in the next 3 hours.  \n4. 12 + 4 = 16 birds left before that, so 16 birds return in the last 3 hours.  \nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 birds leave in the first 3 hours.  \n2. 1/3 of 12 is 4 birds return in the next 3 hours.  \n3. 2 times 12 is 24 birds leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 birds had left and not returned, so 32 birds return in the last 3 hours.  \nFinal Answer: 32"
+  },
+  {
+    "id": 33,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 30 birds leave the birdhouse in the first 4 hours, and then she sees 1/5 that many birds return in the next 4 hours. She sees 3 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 4 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 4 hours. How many birds did Diana see return to the birdhouse in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 birds leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 birds return in the next 4 hours.  \n3. 3 times 30 equals 90 birds leave in the next 4 hours.  \n4. 30 plus 6 equals 36 birds had left and not returned.  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 birds leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 birds return in the next 4 hours.  \n3. 3 times 30 equals 90 birds leave in the next 4 hours.  \n4. 30 plus 90 minus 6 equals 114 birds had left and not returned.  \nFinal Answer: 114"
+  },
+  {
+    "id": 34,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 40 birds leave the birdhouse in the first 2 hours, and then she sees 1/4 that many birds return in the next 2 hours. She sees 2 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 2 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 2 hours. How many birds did Diana see return to the birdhouse in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 birds leave in the first 2 hours.  \n2. 1/4 of 40 is 10 birds return in the next 2 hours.  \n3. 2 times 40 is 80 birds leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 birds left before returning.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 birds leave in the first 2 hours.  \n2. 1/4 of 40 is 10 birds return in the next 2 hours.  \n3. 2 times 40 is 80 birds leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 birds left before returning.  \nFinal Answer: 110"
+  },
+  {
+    "id": 35,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 50 birds leave the birdhouse in the first 3 hours, and then she sees 1/10 that many birds return in the next 3 hours. She sees 2 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 3 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 3 hours. How many birds did Diana see return to the birdhouse in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 birds leave in the first 3 hours.  \n2. 50 * 1/10 = 5 birds return in the next 3 hours.  \n3. 50 * 2 = 100 birds leave in the next 3 hours.  \n4. 50 + 5 = 55 birds had left and not returned before. All 55 return in the last 3 hours.  \nFinal Answer: 55",
+    "pred_answer_masked": "55",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 birds leave in the first 3 hours.  \n2. 50 * 1/10 = 5 birds return in the next 3 hours.  \n3. 50 * 2 = 100 birds leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 birds had left and not returned before. All 145 return in the last 3 hours.  \nFinal Answer: 145"
+  },
+  {
+    "id": 36,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 18 birds leave the birdhouse in the first 4 hours, and then she sees 1/2 that many birds return in the next 4 hours. She sees 3 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 4 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 4 hours. How many birds did Diana see return to the birdhouse in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 birds leave in the first 4 hours.  \n2. 18 / 2 = 9 birds return in the next 4 hours.  \n3. 3 * 18 = 54 birds leave in the next 4 hours.  \n4. 18 + 9 = 27 birds had left and not returned before.  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 birds leave in the first 4 hours.  \n2. 18 / 2 = 9 birds return in the next 4 hours.  \n3. 3 * 18 = 54 birds leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 birds had left and not returned before.  \nFinal Answer: 63"
+  },
+  {
+    "id": 37,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 24 birds leave the birdhouse in the first 5 hours, and then she sees 1/4 that many birds return in the next 5 hours. She sees 2 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 5 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 5 hours. How many birds did Diana see return to the birdhouse in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 birds leave in the first 5 hours.  \n2. 1/4 of 24 is 6 birds return in the next 5 hours.  \n3. 2 times 24 is 48 birds leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 birds left before returning.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 birds leave in the first 5 hours.  \n2. 1/4 of 24 is 6 birds return in the next 5 hours.  \n3. 2 times 24 is 48 birds leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 birds left before returning.  \nFinal Answer: 66"
+  },
+  {
+    "id": 38,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 15 birds leave the birdhouse in the first 2 hours, and then she sees 1/3 that many birds return in the next 2 hours. She sees 3 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 2 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 2 hours. How many birds did Diana see return to the birdhouse in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 birds leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 birds return in the next 2 hours.  \n3. 15 × 3 = 45 birds leave in the next 2 hours.  \n4. 15 + 5 = 20 birds left before that. All 20 return in the last 2 hours.  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 birds leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 birds return in the next 2 hours.  \n3. 15 × 3 = 45 birds leave in the next 2 hours.  \n4. 15 + 45 - 5 = 55 birds had left and not returned before that. All 55 return in the last 2 hours.  \nFinal Answer: 55"
+  },
+  {
+    "id": 39,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 36 birds leave the birdhouse in the first 3 hours, and then she sees 1/6 that many birds return in the next 3 hours. She sees 2 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 3 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 3 hours. How many birds did Diana see return to the birdhouse in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 birds leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 birds return in the next 3 hours.  \n3. 2 × 36 = 72 birds leave in the next 3 hours.  \n4. 36 + 6 = 42 birds had left and not returned before.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 birds leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 birds return in the next 3 hours.  \n3. 2 × 36 = 72 birds leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 birds had left and not returned before.  \nFinal Answer: 102"
+  },
+  {
+    "id": 40,
+    "question": "Diana is monitoring a birdhouse to see how many birds come and go in a day. She sees 28 birds leave the birdhouse in the first 4 hours, and then she sees 1/2 that many birds return in the next 4 hours. She sees 2 times as many birds as she saw first leave the birdhouse fly from the birdhouse and leave in the next 4 hours. Then every bird that left before that hadn't already returned returns to the birdhouse in the next 4 hours. How many birds did Diana see return to the birdhouse in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 birds leave in the first 4 hours.  \n2. 14 birds return in the next 4 hours (28 / 2).  \n3. 56 birds leave in the next 4 hours (28 * 2).  \n4. 28 + 14 = 42 birds had left and not returned before the last 4 hours.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 birds leave in the first 4 hours.  \n2. 14 birds return in the next 4 hours (28 / 2).  \n3. 56 birds leave in the next 4 hours (28 * 2).  \n4. 28 + 56 - 14 = 70 birds had left and not returned before the last 4 hours.  \nFinal Answer: 70"
+  },
+  {
+    "id": 41,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 20 ants leave the anthill in the first 2 hours, and then he sees 1/2 that many ants return in the next 2 hours. He sees 2 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 2 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 2 hours. How many ants did Evan see return to the anthill in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 ants leave in the first 2 hours.  \n2. 10 ants return in the next 2 hours (20 * 1/2).  \n3. 40 ants leave in the next 2 hours (20 * 2).  \n4. 60 ants return in the last 2 hours (20 + 10 + 40).  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 ants leave in the first 2 hours.  \n2. 10 ants return in the next 2 hours (20 * 1/2).  \n3. 40 ants leave in the next 2 hours (20 * 2).  \n4. 50 ants return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 42,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 12 ants leave the anthill in the first 3 hours, and then he sees 1/3 that many ants return in the next 3 hours. He sees 2 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 3 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 3 hours. How many ants did Evan see return to the anthill in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 ants leave in the first 3 hours.  \n2. 1/3 of 12 is 4 ants return in the next 3 hours.  \n3. 2 times 12 is 24 ants leave in the next 3 hours.  \n4. 12 + 4 + 24 = 40 ants have left or returned before the last 3 hours.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 ants leave in the first 3 hours.  \n2. 1/3 of 12 is 4 ants return in the next 3 hours.  \n3. 2 times 12 is 24 ants leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 ants had left and not returned before the last 3 hours.  \nFinal Answer: 32"
+  },
+  {
+    "id": 43,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 30 ants leave the anthill in the first 4 hours, and then he sees 1/5 that many ants return in the next 4 hours. He sees 3 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 4 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 4 hours. How many ants did Evan see return to the anthill in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 ants leave in the first 4 hours.  \n2. 30 ÷ 5 = 6 ants return in the next 4 hours.  \n3. 3 × 30 = 90 ants leave in the next 4 hours.  \n4. 30 + 6 + 90 = 126 ants have left or returned before the last 4 hours.  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 ants leave in the first 4 hours.  \n2. 30 ÷ 5 = 6 ants return in the next 4 hours.  \n3. 3 × 30 = 90 ants leave in the next 4 hours.  \n4. 30 + 90 - 6 = 114 ants had left and not returned before the last 4 hours.  \nFinal Answer: 114"
+  },
+  {
+    "id": 44,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 40 ants leave the anthill in the first 2 hours, and then he sees 1/4 that many ants return in the next 2 hours. He sees 2 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 2 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 2 hours. How many ants did Evan see return to the anthill in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 ants leave in the first 2 hours.  \n2. 1/4 of 40 is 10 ants return in the next 2 hours.  \n3. 2 times 40 is 80 ants leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 ants have left or returned before the last 2 hours.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 ants leave in the first 2 hours.  \n2. 1/4 of 40 is 10 ants return in the next 2 hours.  \n3. 2 times 40 is 80 ants leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 ants had left and not returned before the last 2 hours.  \nFinal Answer: 110"
+  },
+  {
+    "id": 45,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 50 ants leave the anthill in the first 3 hours, and then he sees 1/10 that many ants return in the next 3 hours. He sees 2 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 3 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 3 hours. How many ants did Evan see return to the anthill in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 ants leave in the first 3 hours.  \n2. 50 * 1/10 = 5 ants return in the next 3 hours.  \n3. 50 * 2 = 100 ants leave in the next 3 hours.  \n4. 50 + 5 + 100 = 155 ants left before the last 3 hours.  \nFinal Answer: 155",
+    "pred_answer_masked": "155",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 ants leave in the first 3 hours.  \n2. 50 * 1/10 = 5 ants return in the next 3 hours.  \n3. 50 * 2 = 100 ants leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 ants left before the last 3 hours.  \nFinal Answer: 145"
+  },
+  {
+    "id": 46,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 18 ants leave the anthill in the first 4 hours, and then he sees 1/2 that many ants return in the next 4 hours. He sees 3 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 4 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 4 hours. How many ants did Evan see return to the anthill in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 ants leave in the first 4 hours.  \n2. 18 / 2 = 9 ants return in the next 4 hours.  \n3. 3 * 18 = 54 ants leave in the next 4 hours.  \n4. 18 + 9 + 54 = 81 ants have left before the last 4 hours.  \nFinal Answer: 81",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 ants leave in the first 4 hours.  \n2. 18 / 2 = 9 ants return in the next 4 hours.  \n3. 3 * 18 = 54 ants leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 ants had left and not returned before the last 4 hours.  \nFinal Answer: 63"
+  },
+  {
+    "id": 47,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 24 ants leave the anthill in the first 5 hours, and then he sees 1/4 that many ants return in the next 5 hours. He sees 2 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 5 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 5 hours. How many ants did Evan see return to the anthill in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 ants leave in the first 5 hours.  \n2. 24 ÷ 4 = 6 ants return in the next 5 hours.  \n3. 2 × 24 = 48 ants leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 ants have left or returned before the last 5 hours.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 ants leave in the first 5 hours.  \n2. 24 ÷ 4 = 6 ants return in the next 5 hours.  \n3. 2 × 24 = 48 ants leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 ants had left and not returned before the last 5 hours.  \nFinal Answer: 66"
+  },
+  {
+    "id": 48,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 15 ants leave the anthill in the first 2 hours, and then he sees 1/3 that many ants return in the next 2 hours. He sees 3 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 2 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 2 hours. How many ants did Evan see return to the anthill in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 ants leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 ants return in the next 2 hours.  \n3. 15 × 3 = 45 ants leave in the next 2 hours.  \n4. 15 + 5 = 20 ants had left and not returned before.  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 ants leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 ants return in the next 2 hours.  \n3. 15 × 3 = 45 ants leave in the next 2 hours.  \n4. 15 + 45 - 5 = 55 ants had left and not returned before.  \nFinal Answer: 55"
+  },
+  {
+    "id": 49,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 36 ants leave the anthill in the first 3 hours, and then he sees 1/6 that many ants return in the next 3 hours. He sees 2 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 3 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 3 hours. How many ants did Evan see return to the anthill in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 ants leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 ants return in the next 3 hours.  \n3. 36 × 2 = 72 ants leave in the next 3 hours.  \n4. 36 + 6 + 72 = 114 ants left before returning.  \nFinal Answer: 114",
+    "pred_answer_masked": "114",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 ants leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 ants return in the next 3 hours.  \n3. 36 × 2 = 72 ants leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 ants left before returning.  \nFinal Answer: 102"
+  },
+  {
+    "id": 50,
+    "question": "Evan is monitoring an anthill to see how many ants come and go in a day. He sees 28 ants leave the anthill in the first 4 hours, and then he sees 1/2 that many ants return in the next 4 hours. He sees 2 times as many ants as he saw first leave the anthill crawl from the anthill and leave in the next 4 hours. Then every ant that left before that hadn't already returned returns to the anthill in the next 4 hours. How many ants did Evan see return to the anthill in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 ants leave in the first 4 hours.  \n2. 14 ants return in the next 4 hours (28 / 2).  \n3. 56 ants leave in the next 4 hours (2 * 28).  \n4. 28 + 14 + 56 = 98 ants have left or returned before the last 4 hours.  \nFinal Answer: 98",
+    "pred_answer_masked": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 ants leave in the first 4 hours.  \n2. 14 ants return in the next 4 hours (28 / 2).  \n3. 56 ants leave in the next 4 hours (2 * 28).  \n4. 28 + 56 - 14 = 70 ants had left and not returned before the last 4 hours.  \nFinal Answer: 70"
+  },
+  {
+    "id": 51,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 20 trains leave the station in the first 2 hours, and then she sees 1/2 that many trains return in the next 2 hours. She sees 2 times as many trains as she saw first leave the station depart from the station and leave in the next 2 hours. Then every train that left before that hadn't already returned returns to the station in the next 2 hours. How many trains did Fiona see return to the station in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 trains leave in the first 2 hours.  \n2. 10 trains return in the next 2 hours (20 * 1/2).  \n3. 40 trains leave in the next 2 hours (20 * 2).  \n4. 60 trains return in the last 2 hours (20 + 10 + 40).  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 trains leave in the first 2 hours.  \n2. 10 trains return in the next 2 hours (20 * 1/2).  \n3. 40 trains leave in the next 2 hours (20 * 2).  \n4. 50 trains return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 52,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 12 trains leave the station in the first 3 hours, and then she sees 1/3 that many trains return in the next 3 hours. She sees 2 times as many trains as she saw first leave the station depart from the station and leave in the next 3 hours. Then every train that left before that hadn't already returned returns to the station in the next 3 hours. How many trains did Fiona see return to the station in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 trains leave in the first 3 hours.  \n2. 12 * 1/3 = 4 trains return in the next 3 hours.  \n3. 12 * 2 = 24 trains leave in the next 3 hours.  \n4. 12 + 4 + 24 = 40 trains left before the last 3 hours.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 trains leave in the first 3 hours.  \n2. 12 * 1/3 = 4 trains return in the next 3 hours.  \n3. 12 * 2 = 24 trains leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 trains had left and not returned before the last 3 hours.  \nFinal Answer: 32"
+  },
+  {
+    "id": 53,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 30 trains leave the station in the first 4 hours, and then she sees 1/5 that many trains return in the next 4 hours. She sees 3 times as many trains as she saw first leave the station depart from the station and leave in the next 4 hours. Then every train that left before that hadn't already returned returns to the station in the next 4 hours. How many trains did Fiona see return to the station in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 trains leave in the first 4 hours.  \n2. 30 / 5 = 6 trains return in the next 4 hours.  \n3. 3 * 30 = 90 trains leave in the next 4 hours.  \n4. 30 + 6 + 90 = 126 trains have left or returned before the last 4 hours.  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 trains leave in the first 4 hours.  \n2. 30 / 5 = 6 trains return in the next 4 hours.  \n3. 3 * 30 = 90 trains leave in the next 4 hours.  \n4. 30 + 90 - 6 = 114 trains had left and not returned before the last 4 hours.  \nFinal Answer: 114"
+  },
+  {
+    "id": 54,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 40 trains leave the station in the first 2 hours, and then she sees 1/4 that many trains return in the next 2 hours. She sees 2 times as many trains as she saw first leave the station depart from the station and leave in the next 2 hours. Then every train that left before that hadn't already returned returns to the station in the next 2 hours. How many trains did Fiona see return to the station in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 trains leave in the first 2 hours.  \n2. 1/4 of 40 is 10 trains return in the next 2 hours.  \n3. 2 times 40 is 80 trains leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 trains left before the last 2 hours.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 trains leave in the first 2 hours.  \n2. 1/4 of 40 is 10 trains return in the next 2 hours.  \n3. 2 times 40 is 80 trains leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 trains left before the last 2 hours.  \nFinal Answer: 110"
+  },
+  {
+    "id": 55,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 50 trains leave the station in the first 3 hours, and then she sees 1/10 that many trains return in the next 3 hours. She sees 2 times as many trains as she saw first leave the station depart from the station and leave in the next 3 hours. Then every train that left before that hadn't already returned returns to the station in the next 3 hours. How many trains did Fiona see return to the station in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 trains leave in the first 3 hours.  \n2. 50 * 1/10 = 5 trains return in the next 3 hours.  \n3. 50 * 2 = 100 trains leave in the next 3 hours.  \n4. 50 + 100 = 150 trains left before the last 3 hours.  \nFinal Answer: 150",
+    "pred_answer_masked": "150",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 trains leave in the first 3 hours.  \n2. 50 * 1/10 = 5 trains return in the next 3 hours.  \n3. 50 * 2 = 100 trains leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 trains left before the last 3 hours.  \nFinal Answer: 145"
+  },
+  {
+    "id": 56,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 18 trains leave the station in the first 4 hours, and then she sees 1/2 that many trains return in the next 4 hours. She sees 3 times as many trains as she saw first leave the station depart from the station and leave in the next 4 hours. Then every train that left before that hadn't already returned returns to the station in the next 4 hours. How many trains did Fiona see return to the station in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 trains leave in the first 4 hours.  \n2. 18 / 2 = 9 trains return in the next 4 hours.  \n3. 3 * 18 = 54 trains leave in the next 4 hours.  \n4. 18 + 9 + 54 = 81 trains left before the last 4 hours.  \nFinal Answer: 81",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 trains leave in the first 4 hours.  \n2. 18 / 2 = 9 trains return in the next 4 hours.  \n3. 3 * 18 = 54 trains leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 trains left before the last 4 hours.  \nFinal Answer: 63"
+  },
+  {
+    "id": 57,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 24 trains leave the station in the first 5 hours, and then she sees 1/4 that many trains return in the next 5 hours. She sees 2 times as many trains as she saw first leave the station depart from the station and leave in the next 5 hours. Then every train that left before that hadn't already returned returns to the station in the next 5 hours. How many trains did Fiona see return to the station in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 trains leave in the first 5 hours.  \n2. 24 / 4 = 6 trains return in the next 5 hours.  \n3. 2 * 24 = 48 trains leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 trains have left or returned before the last 5 hours.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 trains leave in the first 5 hours.  \n2. 24 / 4 = 6 trains return in the next 5 hours.  \n3. 2 * 24 = 48 trains leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 trains had left and not returned before the last 5 hours.  \nFinal Answer: 66"
+  },
+  {
+    "id": 58,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 15 trains leave the station in the first 2 hours, and then she sees 1/3 that many trains return in the next 2 hours. She sees 3 times as many trains as she saw first leave the station depart from the station and leave in the next 2 hours. Then every train that left before that hadn't already returned returns to the station in the next 2 hours. How many trains did Fiona see return to the station in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 trains leave in the first 2 hours.  \n2. 15 × 1/3 = 5 trains return in the next 2 hours.  \n3. 15 × 3 = 45 trains leave in the next 2 hours.  \n4. 15 + 5 + 45 = 65 trains left before the last 2 hours.  \nFinal Answer: 65",
+    "pred_answer_masked": "65",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 trains leave in the first 2 hours.  \n2. 15 × 1/3 = 5 trains return in the next 2 hours.  \n3. 15 × 3 = 45 trains leave in the next 2 hours.  \n4. 15 + 45 - 5 = 55 trains left before the last 2 hours.  \nFinal Answer: 55"
+  },
+  {
+    "id": 59,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 36 trains leave the station in the first 3 hours, and then she sees 1/6 that many trains return in the next 3 hours. She sees 2 times as many trains as she saw first leave the station depart from the station and leave in the next 3 hours. Then every train that left before that hadn't already returned returns to the station in the next 3 hours. How many trains did Fiona see return to the station in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 trains leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 trains return in the next 3 hours.  \n3. 36 × 2 = 72 trains leave in the next 3 hours.  \n4. 36 + 6 + 72 = 114 trains left before the last 3 hours.  \nFinal Answer: 114",
+    "pred_answer_masked": "114",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 trains leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 trains return in the next 3 hours.  \n3. 36 × 2 = 72 trains leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 trains left before the last 3 hours.  \nFinal Answer: 102"
+  },
+  {
+    "id": 60,
+    "question": "Fiona is monitoring a station to see how many trains come and go in a day. She sees 28 trains leave the station in the first 4 hours, and then she sees 1/2 that many trains return in the next 4 hours. She sees 2 times as many trains as she saw first leave the station depart from the station and leave in the next 4 hours. Then every train that left before that hadn't already returned returns to the station in the next 4 hours. How many trains did Fiona see return to the station in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 trains leave in the first 4 hours.  \n2. 14 trains return in the next 4 hours (28 / 2).  \n3. 56 trains leave in the next 4 hours (28 * 2).  \n4. 28 + 14 + 56 = 98 trains have left or returned before the last 4 hours.  \nFinal Answer: 98",
+    "pred_answer_masked": "98",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 trains leave in the first 4 hours.  \n2. 14 trains return in the next 4 hours (28 / 2).  \n3. 56 trains leave in the next 4 hours (28 * 2).  \n4. 28 + 56 - 14 = 70 trains had left and not returned before the last 4 hours.  \nFinal Answer: 70"
+  },
+  {
+    "id": 61,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 20 students leave the school in the first 2 hours, and then he sees 1/2 that many students return in the next 2 hours. He sees 2 times as many students as he saw first leave the school walk from the school and leave in the next 2 hours. Then every student that left before that hadn't already returned returns to the school in the next 2 hours. How many students did George see return to the school in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 students leave initially.  \n2. 10 students return (half of 20).  \n3. 40 students leave (2 times 20).  \n4. 60 students return (20 + 10 + 30).  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 students leave initially.  \n2. 10 students return (half of 20).  \n3. 40 students leave (2 times 20).  \n4. 50 students return (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 62,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 12 students leave the school in the first 3 hours, and then he sees 1/3 that many students return in the next 3 hours. He sees 2 times as many students as he saw first leave the school walk from the school and leave in the next 3 hours. Then every student that left before that hadn't already returned returns to the school in the next 3 hours. How many students did George see return to the school in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 students leave in the first 3 hours.  \n2. 1/3 of 12 is 4 students return in the next 3 hours.  \n3. 2 times 12 is 24 students leave in the next 3 hours.  \n4. 12 + 4 = 16 students had left and not returned.  \nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 students leave in the first 3 hours.  \n2. 1/3 of 12 is 4 students return in the next 3 hours.  \n3. 2 times 12 is 24 students leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 students had left and not returned.  \nFinal Answer: 32"
+  },
+  {
+    "id": 63,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 30 students leave the school in the first 4 hours, and then he sees 1/5 that many students return in the next 4 hours. He sees 3 times as many students as he saw first leave the school walk from the school and leave in the next 4 hours. Then every student that left before that hadn't already returned returns to the school in the next 4 hours. How many students did George see return to the school in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 students leave initially.  \n2. 30 * 1/5 = 6 students return.  \n3. 30 * 3 = 90 students leave again.  \n4. 30 + 6 = 36 students had left and not returned.  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 students leave initially.  \n2. 30 * 1/5 = 6 students return.  \n3. 30 * 3 = 90 students leave again.  \n4. 30 + 90 - 6 = 114 students had left and not returned.  \nFinal Answer: 114"
+  },
+  {
+    "id": 64,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 40 students leave the school in the first 2 hours, and then he sees 1/4 that many students return in the next 2 hours. He sees 2 times as many students as he saw first leave the school walk from the school and leave in the next 2 hours. Then every student that left before that hadn't already returned returns to the school in the next 2 hours. How many students did George see return to the school in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 students leave initially.  \n2. 1/4 of 40 is 10 students return.  \n3. 2 times 40 is 80 students leave again.  \n4. 40 + 10 + 80 = 130 students had left or returned before.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 students leave initially.  \n2. 1/4 of 40 is 10 students return.  \n3. 2 times 40 is 80 students leave again.  \n4. 40 + 80 - 10 = 110 students had left and not returned before.  \nFinal Answer: 110"
+  },
+  {
+    "id": 65,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 50 students leave the school in the first 3 hours, and then he sees 1/10 that many students return in the next 3 hours. He sees 2 times as many students as he saw first leave the school walk from the school and leave in the next 3 hours. Then every student that left before that hadn't already returned returns to the school in the next 3 hours. How many students did George see return to the school in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 students leave initially.  \n2. 50 * 1/10 = 5 students return.  \n3. 50 * 2 = 100 students leave again.  \n4. 50 + 100 = 150 students left before returning.  \nFinal Answer: 150",
+    "pred_answer_masked": "150",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 students leave initially.  \n2. 50 * 1/10 = 5 students return.  \n3. 50 * 2 = 100 students leave again.  \n4. 50 + 100 - 5 = 145 students left before returning.  \nFinal Answer: 145"
+  },
+  {
+    "id": 66,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 18 students leave the school in the first 4 hours, and then he sees 1/2 that many students return in the next 4 hours. He sees 3 times as many students as he saw first leave the school walk from the school and leave in the next 4 hours. Then every student that left before that hadn't already returned returns to the school in the next 4 hours. How many students did George see return to the school in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 students leave in the first 4 hours.  \n2. 18 / 2 = 9 students return in the next 4 hours.  \n3. 3 * 18 = 54 students leave in the next 4 hours.  \n4. 18 + 9 = 27 students had left and not returned.  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 students leave in the first 4 hours.  \n2. 18 / 2 = 9 students return in the next 4 hours.  \n3. 3 * 18 = 54 students leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 students had left and not returned.  \nFinal Answer: 63"
+  },
+  {
+    "id": 67,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 24 students leave the school in the first 5 hours, and then he sees 1/4 that many students return in the next 5 hours. He sees 2 times as many students as he saw first leave the school walk from the school and leave in the next 5 hours. Then every student that left before that hadn't already returned returns to the school in the next 5 hours. How many students did George see return to the school in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 students leave in the first 5 hours.  \n2. 1/4 of 24 is 6 students return in the next 5 hours.  \n3. 2 times 24 is 48 students leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 students left before the last 5 hours.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 students leave in the first 5 hours.  \n2. 1/4 of 24 is 6 students return in the next 5 hours.  \n3. 2 times 24 is 48 students leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 students left before the last 5 hours.  \nFinal Answer: 66"
+  },
+  {
+    "id": 68,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 15 students leave the school in the first 2 hours, and then he sees 1/3 that many students return in the next 2 hours. He sees 3 times as many students as he saw first leave the school walk from the school and leave in the next 2 hours. Then every student that left before that hadn't already returned returns to the school in the next 2 hours. How many students did George see return to the school in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 students leave initially.  \n2. 15 * 1/3 = 5 students return.  \n3. 15 * 3 = 45 students leave again.  \n4. 15 + 5 = 20 students had left and not returned.  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 students leave initially.  \n2. 15 * 1/3 = 5 students return.  \n3. 15 * 3 = 45 students leave again.  \n4. 15 + 45 - 5 = 55 students had left and not returned.  \nFinal Answer: 55"
+  },
+  {
+    "id": 69,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 36 students leave the school in the first 3 hours, and then he sees 1/6 that many students return in the next 3 hours. He sees 2 times as many students as he saw first leave the school walk from the school and leave in the next 3 hours. Then every student that left before that hadn't already returned returns to the school in the next 3 hours. How many students did George see return to the school in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 students leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 students return in the next 3 hours.  \n3. 2 × 36 = 72 students leave in the next 3 hours.  \n4. 36 + 6 = 42 students had left and not returned. These 42 return in the last 3 hours.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 students leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 students return in the next 3 hours.  \n3. 2 × 36 = 72 students leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 students had left and not returned. These 102 return in the last 3 hours.  \nFinal Answer: 102"
+  },
+  {
+    "id": 70,
+    "question": "George is monitoring a school to see how many students come and go in a day. He sees 28 students leave the school in the first 4 hours, and then he sees 1/2 that many students return in the next 4 hours. He sees 2 times as many students as he saw first leave the school walk from the school and leave in the next 4 hours. Then every student that left before that hadn't already returned returns to the school in the next 4 hours. How many students did George see return to the school in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 students leave in the first 4 hours.  \n2. 14 students return in the next 4 hours (half of 28).  \n3. 56 students leave in the next 4 hours (2 times 28).  \n4. 28 students return in the last 4 hours (all who left before had not returned).  \nFinal Answer: 28",
+    "pred_answer_masked": "28",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 students leave in the first 4 hours.  \n2. 14 students return in the next 4 hours (half of 28).  \n3. 56 students leave in the next 4 hours (2 times 28).  \n4. 70 students return in the last 4 hours (28 + 56 - 14).  \nFinal Answer: 70"
+  },
+  {
+    "id": 71,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 20 workers leave the factory in the first 2 hours, and then she sees 1/2 that many workers return in the next 2 hours. She sees 2 times as many workers as she saw first leave the factory walk from the factory and leave in the next 2 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 2 hours. How many workers did Hannah see return to the factory in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 workers leave in the first 2 hours.  \n2. 10 workers return in the next 2 hours (half of 20).  \n3. 40 workers leave in the next 2 hours (2 times 20).  \n4. 20 workers return in the last 2 hours (same as the first group that left).  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 workers leave in the first 2 hours.  \n2. 10 workers return in the next 2 hours (half of 20).  \n3. 40 workers leave in the next 2 hours (2 times 20).  \n4. 50 workers return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 72,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 12 workers leave the factory in the first 3 hours, and then she sees 1/3 that many workers return in the next 3 hours. She sees 2 times as many workers as she saw first leave the factory walk from the factory and leave in the next 3 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 3 hours. How many workers did Hannah see return to the factory in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 workers leave in the first 3 hours.  \n2. 1/3 of 12 is 4 workers return in the next 3 hours.  \n3. 2 times 12 is 24 workers leave in the next 3 hours.  \n4. 12 + 4 = 16 workers had left and not returned.  \nFinal Answer: 16",
+    "pred_answer_masked": "16",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 workers leave in the first 3 hours.  \n2. 1/3 of 12 is 4 workers return in the next 3 hours.  \n3. 2 times 12 is 24 workers leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 workers had left and not returned.  \nFinal Answer: 32"
+  },
+  {
+    "id": 73,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 30 workers leave the factory in the first 4 hours, and then she sees 1/5 that many workers return in the next 4 hours. She sees 3 times as many workers as she saw first leave the factory walk from the factory and leave in the next 4 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 4 hours. How many workers did Hannah see return to the factory in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 workers leave in the first 4 hours.  \n2. 1/5 of 30 is 6 workers return in the next 4 hours.  \n3. 3 times 30 is 90 workers leave in the next 4 hours.  \n4. 30 + 6 = 36 workers had left and not returned before. All 36 return in the last 4 hours.  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 workers leave in the first 4 hours.  \n2. 1/5 of 30 is 6 workers return in the next 4 hours.  \n3. 3 times 30 is 90 workers leave in the next 4 hours.  \n4. 30 + 90 - 6 = 114 workers had left and not returned before. All 114 return in the last 4 hours.  \nFinal Answer: 114"
+  },
+  {
+    "id": 74,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 40 workers leave the factory in the first 2 hours, and then she sees 1/4 that many workers return in the next 2 hours. She sees 2 times as many workers as she saw first leave the factory walk from the factory and leave in the next 2 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 2 hours. How many workers did Hannah see return to the factory in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 workers leave in the first 2 hours.  \n2. 1/4 of 40 is 10 workers return in the next 2 hours.  \n3. 2 times 40 is 80 workers leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 workers left before any returned.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 workers leave in the first 2 hours.  \n2. 1/4 of 40 is 10 workers return in the next 2 hours.  \n3. 2 times 40 is 80 workers leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 workers left before the last 2 hours.  \nFinal Answer: 110"
+  },
+  {
+    "id": 75,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 50 workers leave the factory in the first 3 hours, and then she sees 1/10 that many workers return in the next 3 hours. She sees 2 times as many workers as she saw first leave the factory walk from the factory and leave in the next 3 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 3 hours. How many workers did Hannah see return to the factory in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 workers leave in the first 3 hours.  \n2. 1/10 of 50 is 5 workers return in the next 3 hours.  \n3. 2 times 50 is 100 workers leave in the next 3 hours.  \n4. 50 + 5 + 100 = 155 workers had left before, so 155 return in the last 3 hours.  \nFinal Answer: 155",
+    "pred_answer_masked": "155",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 workers leave in the first 3 hours.  \n2. 1/10 of 50 is 5 workers return in the next 3 hours.  \n3. 2 times 50 is 100 workers leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 workers had left before, so 145 return in the last 3 hours.  \nFinal Answer: 145"
+  },
+  {
+    "id": 76,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 18 workers leave the factory in the first 4 hours, and then she sees 1/2 that many workers return in the next 4 hours. She sees 3 times as many workers as she saw first leave the factory walk from the factory and leave in the next 4 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 4 hours. How many workers did Hannah see return to the factory in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 workers leave in the first 4 hours.  \n2. 18 / 2 = 9 workers return in the next 4 hours.  \n3. 3 * 18 = 54 workers leave in the next 4 hours.  \n4. 18 + 9 = 27 workers had left and not returned before. All 27 return in the last 4 hours.  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 workers leave in the first 4 hours.  \n2. 18 / 2 = 9 workers return in the next 4 hours.  \n3. 3 * 18 = 54 workers leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 workers had left and not returned before. All 63 return in the last 4 hours.  \nFinal Answer: 63"
+  },
+  {
+    "id": 77,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 24 workers leave the factory in the first 5 hours, and then she sees 1/4 that many workers return in the next 5 hours. She sees 2 times as many workers as she saw first leave the factory walk from the factory and leave in the next 5 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 5 hours. How many workers did Hannah see return to the factory in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 workers leave in the first 5 hours.  \n2. 1/4 of 24 is 6 workers return in the next 5 hours.  \n3. 2 times 24 is 48 workers leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 workers left before returning.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 workers leave in the first 5 hours.  \n2. 1/4 of 24 is 6 workers return in the next 5 hours.  \n3. 2 times 24 is 48 workers leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 workers left before returning.  \nFinal Answer: 66"
+  },
+  {
+    "id": 78,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 15 workers leave the factory in the first 2 hours, and then she sees 1/3 that many workers return in the next 2 hours. She sees 3 times as many workers as she saw first leave the factory walk from the factory and leave in the next 2 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 2 hours. How many workers did Hannah see return to the factory in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 workers leave in the first 2 hours.  \n2. 1/3 of 15 is 5 workers return in the next 2 hours.  \n3. 3 times 15 is 45 workers leave in the next 2 hours.  \n4. 15 + 5 = 20 workers had left and not returned before. All 20 return in the last 2 hours.  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 workers leave in the first 2 hours.  \n2. 1/3 of 15 is 5 workers return in the next 2 hours.  \n3. 3 times 15 is 45 workers leave in the next 2 hours.  \n4. 15 + 45 - 5 = 55 workers had left and not returned before. All 55 return in the last 2 hours.  \nFinal Answer: 55"
+  },
+  {
+    "id": 79,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 36 workers leave the factory in the first 3 hours, and then she sees 1/6 that many workers return in the next 3 hours. She sees 2 times as many workers as she saw first leave the factory walk from the factory and leave in the next 3 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 3 hours. How many workers did Hannah see return to the factory in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 workers leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 workers return in the next 3 hours.  \n3. 2 × 36 = 72 workers leave in the next 3 hours.  \n4. 36 + 6 = 42 workers had left and not returned. These 42 return in the last 3 hours.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 workers leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 workers return in the next 3 hours.  \n3. 2 × 36 = 72 workers leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 workers had left and not returned. These 102 return in the last 3 hours.  \nFinal Answer: 102"
+  },
+  {
+    "id": 80,
+    "question": "Hannah is monitoring a factory to see how many workers come and go in a day. She sees 28 workers leave the factory in the first 4 hours, and then she sees 1/2 that many workers return in the next 4 hours. She sees 2 times as many workers as she saw first leave the factory walk from the factory and leave in the next 4 hours. Then every worker that left before that hadn't already returned returns to the factory in the next 4 hours. How many workers did Hannah see return to the factory in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 workers leave in the first 4 hours.  \n2. 14 workers return in the next 4 hours (28 / 2).  \n3. 56 workers leave in the next 4 hours (2 * 28).  \n4. 28 workers return in the last 4 hours (same as those who left first).  \nFinal Answer: 28",
+    "pred_answer_masked": "28",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 workers leave in the first 4 hours.  \n2. 14 workers return in the next 4 hours (28 / 2).  \n3. 56 workers leave in the next 4 hours (2 * 28).  \n4. 70 workers return in the last 4 hours (28 + 56 - 14).  \nFinal Answer: 70"
+  },
+  {
+    "id": 81,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 20 trucks leave the warehouse in the first 2 hours, and then he sees 1/2 that many trucks return in the next 2 hours. He sees 2 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 2 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 2 hours. How many trucks did Ian see return to the warehouse in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 trucks leave in the first 2 hours.  \n2. 10 trucks return in the next 2 hours (20 * 1/2).  \n3. 40 trucks leave in the next 2 hours (20 * 2).  \n4. 60 trucks return in the last 2 hours (20 + 10 + 40).  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 trucks leave in the first 2 hours.  \n2. 10 trucks return in the next 2 hours (20 * 1/2).  \n3. 40 trucks leave in the next 2 hours (20 * 2).  \n4. 50 trucks return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 82,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 12 trucks leave the warehouse in the first 3 hours, and then he sees 1/3 that many trucks return in the next 3 hours. He sees 2 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 3 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 3 hours. How many trucks did Ian see return to the warehouse in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 trucks leave in the first 3 hours.  \n2. 12 / 3 = 4 trucks return in the next 3 hours.  \n3. 2 * 12 = 24 trucks leave in the next 3 hours.  \n4. 12 + 4 + 24 = 40 trucks left before the last 3 hours.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 trucks leave in the first 3 hours.  \n2. 12 / 3 = 4 trucks return in the next 3 hours.  \n3. 2 * 12 = 24 trucks leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 trucks left before the last 3 hours.  \nFinal Answer: 32"
+  },
+  {
+    "id": 83,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 30 trucks leave the warehouse in the first 4 hours, and then he sees 1/5 that many trucks return in the next 4 hours. He sees 3 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 4 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 4 hours. How many trucks did Ian see return to the warehouse in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 trucks leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 trucks return in the next 4 hours.  \n3. 3 times 30 equals 90 trucks leave in the next 4 hours.  \n4. 30 plus 6 equals 36 trucks have left or returned before the last 4 hours.  \nFinal Answer: 36",
+    "pred_answer_masked": "36",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 trucks leave in the first 4 hours.  \n2. 30 divided by 5 equals 6 trucks return in the next 4 hours.  \n3. 3 times 30 equals 90 trucks leave in the next 4 hours.  \n4. 30 plus 90 minus 6 equals 114 trucks had left and not returned before the last 4 hours.  \nFinal Answer: 114"
+  },
+  {
+    "id": 84,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 40 trucks leave the warehouse in the first 2 hours, and then he sees 1/4 that many trucks return in the next 2 hours. He sees 2 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 2 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 2 hours. How many trucks did Ian see return to the warehouse in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 trucks leave in the first 2 hours.  \n2. 1/4 of 40 is 10 trucks return in the next 2 hours.  \n3. 2 times 40 is 80 trucks leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 trucks left before the last 2 hours.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 trucks leave in the first 2 hours.  \n2. 1/4 of 40 is 10 trucks return in the next 2 hours.  \n3. 2 times 40 is 80 trucks leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 trucks left before the last 2 hours.  \nFinal Answer: 110"
+  },
+  {
+    "id": 85,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 50 trucks leave the warehouse in the first 3 hours, and then he sees 1/10 that many trucks return in the next 3 hours. He sees 2 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 3 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 3 hours. How many trucks did Ian see return to the warehouse in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 trucks leave in the first 3 hours.  \n2. 50 * 1/10 = 5 trucks return in the next 3 hours.  \n3. 50 * 2 = 100 trucks leave in the next 3 hours.  \n4. 50 + 5 + 100 = 155 trucks left before the last 3 hours.  \nFinal Answer: 155",
+    "pred_answer_masked": "155",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 trucks leave in the first 3 hours.  \n2. 50 * 1/10 = 5 trucks return in the next 3 hours.  \n3. 50 * 2 = 100 trucks leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 trucks left before the last 3 hours.  \nFinal Answer: 145"
+  },
+  {
+    "id": 86,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 18 trucks leave the warehouse in the first 4 hours, and then he sees 1/2 that many trucks return in the next 4 hours. He sees 3 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 4 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 4 hours. How many trucks did Ian see return to the warehouse in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 trucks leave in the first 4 hours.  \n2. 18 / 2 = 9 trucks return in the next 4 hours.  \n3. 3 * 18 = 54 trucks leave in the next 4 hours.  \n4. 18 + 9 + 54 = 81 trucks left before the last 4 hours.  \nFinal Answer: 81",
+    "pred_answer_masked": "81",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 trucks leave in the first 4 hours.  \n2. 18 / 2 = 9 trucks return in the next 4 hours.  \n3. 3 * 18 = 54 trucks leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 trucks left before the last 4 hours.  \nFinal Answer: 63"
+  },
+  {
+    "id": 87,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 24 trucks leave the warehouse in the first 5 hours, and then he sees 1/4 that many trucks return in the next 5 hours. He sees 2 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 5 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 5 hours. How many trucks did Ian see return to the warehouse in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 trucks leave in the first 5 hours.  \n2. 24 / 4 = 6 trucks return in the next 5 hours.  \n3. 2 * 24 = 48 trucks leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 trucks left before the last 5 hours.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 trucks leave in the first 5 hours.  \n2. 24 / 4 = 6 trucks return in the next 5 hours.  \n3. 2 * 24 = 48 trucks leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 trucks left before the last 5 hours.  \nFinal Answer: 66"
+  },
+  {
+    "id": 88,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 15 trucks leave the warehouse in the first 2 hours, and then he sees 1/3 that many trucks return in the next 2 hours. He sees 3 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 2 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 2 hours. How many trucks did Ian see return to the warehouse in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 trucks leave in the first 2 hours.  \n2. 15 divided by 3 equals 5 trucks return in the next 2 hours.  \n3. 3 times 15 equals 45 trucks leave in the next 2 hours.  \n4. 15 plus 5 plus 45 equals 65 trucks have left or returned before the last 2 hours.  \nFinal Answer: 65",
+    "pred_answer_masked": "65",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 trucks leave in the first 2 hours.  \n2. 15 divided by 3 equals 5 trucks return in the next 2 hours.  \n3. 3 times 15 equals 45 trucks leave in the next 2 hours.  \n4. 15 plus 45 minus 5 equals 55 trucks had left and not returned before the last 2 hours.  \nFinal Answer: 55"
+  },
+  {
+    "id": 89,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 36 trucks leave the warehouse in the first 3 hours, and then he sees 1/6 that many trucks return in the next 3 hours. He sees 2 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 3 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 3 hours. How many trucks did Ian see return to the warehouse in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 trucks leave in the first 3 hours.  \n2. 36 divided by 6 equals 6 trucks return in the next 3 hours.  \n3. 2 times 36 equals 72 trucks leave in the next 3 hours.  \n4. 36 plus 6 equals 42 trucks had left and not returned.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 trucks leave in the first 3 hours.  \n2. 36 divided by 6 equals 6 trucks return in the next 3 hours.  \n3. 2 times 36 equals 72 trucks leave in the next 3 hours.  \n4. 36 plus 72 minus 6 equals 102 trucks had left and not returned.  \nFinal Answer: 102"
+  },
+  {
+    "id": 90,
+    "question": "Ian is monitoring a warehouse to see how many trucks come and go in a day. He sees 28 trucks leave the warehouse in the first 4 hours, and then he sees 1/2 that many trucks return in the next 4 hours. He sees 2 times as many trucks as he saw first leave the warehouse drive from the warehouse and leave in the next 4 hours. Then every truck that left before that hadn't already returned returns to the warehouse in the next 4 hours. How many trucks did Ian see return to the warehouse in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 trucks leave in the first 4 hours.  \n2. 14 trucks return in the next 4 hours (28 / 2).  \n3. 56 trucks leave in the next 4 hours (2 * 28).  \n4. 28 + 14 = 42 trucks had left or returned before the last 4 hours.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 trucks leave in the first 4 hours.  \n2. 14 trucks return in the next 4 hours (28 / 2).  \n3. 56 trucks leave in the next 4 hours (2 * 28).  \n4. 28 + 56 - 14 = 70 trucks had left and not returned before the last 4 hours.  \nFinal Answer: 70"
+  },
+  {
+    "id": 91,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 20 bats leave the cave in the first 2 hours, and then she sees 1/2 that many bats return in the next 2 hours. She sees 2 times as many bats as she saw first leave the cave fly from the cave and leave in the next 2 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 2 hours. How many bats did Julia see return to the cave in the last 2 hours of the day?",
+    "ground_truth": "50",
+    "generation": "Reasoning:  \n1. 20 bats leave in the first 2 hours.  \n2. 10 bats return in the next 2 hours (20 * 1/2).  \n3. 40 bats leave in the next 2 hours (20 * 2).  \n4. 60 bats return in the last 2 hours (20 + 10 + 40).  \nFinal Answer: 60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 20 bats leave in the first 2 hours.  \n2. 10 bats return in the next 2 hours (20 * 1/2).  \n3. 40 bats leave in the next 2 hours (20 * 2).  \n4. 50 bats return in the last 2 hours (20 + 40 - 10).  \nFinal Answer: 50"
+  },
+  {
+    "id": 92,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 12 bats leave the cave in the first 3 hours, and then she sees 1/3 that many bats return in the next 3 hours. She sees 2 times as many bats as she saw first leave the cave fly from the cave and leave in the next 3 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 3 hours. How many bats did Julia see return to the cave in the last 3 hours of the day?",
+    "ground_truth": "32",
+    "generation": "Reasoning:  \n1. 12 bats leave in the first 3 hours.  \n2. 1/3 of 12 is 4 bats return in the next 3 hours.  \n3. 2 times 12 is 24 bats leave in the next 3 hours.  \n4. 12 + 4 + 24 = 40 bats left before the last 3 hours.  \nFinal Answer: 40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 12 bats leave in the first 3 hours.  \n2. 1/3 of 12 is 4 bats return in the next 3 hours.  \n3. 2 times 12 is 24 bats leave in the next 3 hours.  \n4. 12 + 24 - 4 = 32 bats left before the last 3 hours.  \nFinal Answer: 32"
+  },
+  {
+    "id": 93,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 30 bats leave the cave in the first 4 hours, and then she sees 1/5 that many bats return in the next 4 hours. She sees 3 times as many bats as she saw first leave the cave fly from the cave and leave in the next 4 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 4 hours. How many bats did Julia see return to the cave in the last 4 hours of the day?",
+    "ground_truth": "114",
+    "generation": "Reasoning:  \n1. 30 bats leave in the first 4 hours.  \n2. 30 / 5 = 6 bats return in the next 4 hours.  \n3. 3 * 30 = 90 bats leave in the next 4 hours.  \n4. 30 + 6 + 90 = 126 bats left before returning.  \nFinal Answer: 126",
+    "pred_answer_masked": "126",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 30 bats leave in the first 4 hours.  \n2. 30 / 5 = 6 bats return in the next 4 hours.  \n3. 3 * 30 = 90 bats leave in the next 4 hours.  \n4. 30 + 90 - 6 = 114 bats left before returning.  \nFinal Answer: 114"
+  },
+  {
+    "id": 94,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 40 bats leave the cave in the first 2 hours, and then she sees 1/4 that many bats return in the next 2 hours. She sees 2 times as many bats as she saw first leave the cave fly from the cave and leave in the next 2 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 2 hours. How many bats did Julia see return to the cave in the last 2 hours of the day?",
+    "ground_truth": "110",
+    "generation": "Reasoning:  \n1. 40 bats leave in the first 2 hours.  \n2. 1/4 of 40 is 10 bats return in the next 2 hours.  \n3. 2 times 40 is 80 bats leave in the next 2 hours.  \n4. 40 + 10 + 80 = 130 bats left before returning.  \nFinal Answer: 130",
+    "pred_answer_masked": "130",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 40 bats leave in the first 2 hours.  \n2. 1/4 of 40 is 10 bats return in the next 2 hours.  \n3. 2 times 40 is 80 bats leave in the next 2 hours.  \n4. 40 + 80 - 10 = 110 bats left before returning.  \nFinal Answer: 110"
+  },
+  {
+    "id": 95,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 50 bats leave the cave in the first 3 hours, and then she sees 1/10 that many bats return in the next 3 hours. She sees 2 times as many bats as she saw first leave the cave fly from the cave and leave in the next 3 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 3 hours. How many bats did Julia see return to the cave in the last 3 hours of the day?",
+    "ground_truth": "145",
+    "generation": "Reasoning:  \n1. 50 bats leave in the first 3 hours.  \n2. 50 * 1/10 = 5 bats return in the next 3 hours.  \n3. 50 * 2 = 100 bats leave in the next 3 hours.  \n4. 50 + 100 = 150 bats left before returning.  \nFinal Answer: 150",
+    "pred_answer_masked": "150",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 50 bats leave in the first 3 hours.  \n2. 50 * 1/10 = 5 bats return in the next 3 hours.  \n3. 50 * 2 = 100 bats leave in the next 3 hours.  \n4. 50 + 100 - 5 = 145 bats left before returning.  \nFinal Answer: 145"
+  },
+  {
+    "id": 96,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 18 bats leave the cave in the first 4 hours, and then she sees 1/2 that many bats return in the next 4 hours. She sees 3 times as many bats as she saw first leave the cave fly from the cave and leave in the next 4 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 4 hours. How many bats did Julia see return to the cave in the last 4 hours of the day?",
+    "ground_truth": "63",
+    "generation": "Reasoning:  \n1. 18 bats leave in the first 4 hours.  \n2. 18 / 2 = 9 bats return in the next 4 hours.  \n3. 3 * 18 = 54 bats leave in the next 4 hours.  \n4. 18 + 9 = 27 bats had left and not returned before.  \nFinal Answer: 27",
+    "pred_answer_masked": "27",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 18 bats leave in the first 4 hours.  \n2. 18 / 2 = 9 bats return in the next 4 hours.  \n3. 3 * 18 = 54 bats leave in the next 4 hours.  \n4. 18 + 54 - 9 = 63 bats had left and not returned before.  \nFinal Answer: 63"
+  },
+  {
+    "id": 97,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 24 bats leave the cave in the first 5 hours, and then she sees 1/4 that many bats return in the next 5 hours. She sees 2 times as many bats as she saw first leave the cave fly from the cave and leave in the next 5 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 5 hours. How many bats did Julia see return to the cave in the last 5 hours of the day?",
+    "ground_truth": "66",
+    "generation": "Reasoning:  \n1. 24 bats leave in the first 5 hours.  \n2. 1/4 of 24 is 6 bats return in the next 5 hours.  \n3. 2 times 24 is 48 bats leave in the next 5 hours.  \n4. 24 + 6 + 48 = 78 bats left before the last 5 hours.  \nFinal Answer: 78",
+    "pred_answer_masked": "78",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 24 bats leave in the first 5 hours.  \n2. 1/4 of 24 is 6 bats return in the next 5 hours.  \n3. 2 times 24 is 48 bats leave in the next 5 hours.  \n4. 24 + 48 - 6 = 66 bats left before the last 5 hours.  \nFinal Answer: 66"
+  },
+  {
+    "id": 98,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 15 bats leave the cave in the first 2 hours, and then she sees 1/3 that many bats return in the next 2 hours. She sees 3 times as many bats as she saw first leave the cave fly from the cave and leave in the next 2 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 2 hours. How many bats did Julia see return to the cave in the last 2 hours of the day?",
+    "ground_truth": "55",
+    "generation": "Reasoning:  \n1. 15 bats leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 bats return in the next 2 hours.  \n3. 3 × 15 = 45 bats leave in the next 2 hours.  \n4. 15 + 5 = 20 bats left before the last 2 hours. All 20 return in the last 2 hours.  \nFinal Answer: 20",
+    "pred_answer_masked": "20",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 15 bats leave in the first 2 hours.  \n2. 15 ÷ 3 = 5 bats return in the next 2 hours.  \n3. 3 × 15 = 45 bats leave in the next 2 hours.  \n4. 15 + 45 - 5 = 55 bats had left and not returned. All 55 return in the last 2 hours.  \nFinal Answer: 55"
+  },
+  {
+    "id": 99,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 36 bats leave the cave in the first 3 hours, and then she sees 1/6 that many bats return in the next 3 hours. She sees 2 times as many bats as she saw first leave the cave fly from the cave and leave in the next 3 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 3 hours. How many bats did Julia see return to the cave in the last 3 hours of the day?",
+    "ground_truth": "102",
+    "generation": "Reasoning:  \n1. 36 bats leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 bats return in the next 3 hours.  \n3. 2 × 36 = 72 bats leave in the next 3 hours.  \n4. 36 + 6 = 42 bats had left and not returned before.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 36 bats leave in the first 3 hours.  \n2. 36 ÷ 6 = 6 bats return in the next 3 hours.  \n3. 2 × 36 = 72 bats leave in the next 3 hours.  \n4. 36 + 72 - 6 = 102 bats had left and not returned before.  \nFinal Answer: 102"
+  },
+  {
+    "id": 100,
+    "question": "Julia is monitoring a cave to see how many bats come and go in a day. She sees 28 bats leave the cave in the first 4 hours, and then she sees 1/2 that many bats return in the next 4 hours. She sees 2 times as many bats as she saw first leave the cave fly from the cave and leave in the next 4 hours. Then every bat that left before that hadn't already returned returns to the cave in the next 4 hours. How many bats did Julia see return to the cave in the last 4 hours of the day?",
+    "ground_truth": "70",
+    "generation": "Reasoning:  \n1. 28 bats leave in the first 4 hours.  \n2. 14 bats return in the next 4 hours (28 / 2).  \n3. 56 bats leave in the next 4 hours (28 * 2).  \n4. 28 + 14 = 42 bats had left and not returned before the last 4 hours.  \nFinal Answer: 42",
+    "pred_answer_masked": "42",
+    "is_correct_masked": false,
+    "corrected_reasoning": "Reasoning:  \n1. 28 bats leave in the first 4 hours.  \n2. 14 bats return in the next 4 hours (28 / 2).  \n3. 56 bats leave in the next 4 hours (28 * 2).  \n4. 28 + 56 - 14 = 70 bats had left and not returned before the last 4 hours.  \nFinal Answer: 70"
+  }
+]

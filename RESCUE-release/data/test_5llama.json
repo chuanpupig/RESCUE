@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "The Smith family went out to dinner. The steak costs $40, the pasta costs $15, and the salad costs $25. If the bill includes a 10% tax and 5% tip, how much change will Mr. Smith receive from his $100?",
+    "ground_truth": "8",
+    "generation": "1. The total cost of the meal is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The total bill is $80 + $8 = $88.\n4. The tip is 5% of $88, which is 0.05 * $88 = $4.40.\n5. The total bill with the tip is $88 + $4.40 = $92.40.\n6. The change Mr. Smith will receive is $100 - $92.40 = $7.60.",
+    "pred_answer_masked": "7.6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the meal is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The total bill is $80 + $8 = $88.\n4. The tip is 5% of $80, which is 0.05 * $80 = $4.\n5. The total bill with the tip is $88 + $4 = $92.\n6. The change Mr. Smith will receive is $100 - $92 = $8."
+  },
+  {
+    "id": 2,
+    "question": "The Johnsons visited a cafe. The coffee costs $20, the sandwich costs $15, and the pastry costs $15. If the bill includes a 10% service charge and 10% tip, how much change will they receive from their $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The service charge is 10% of $50, which is 0.1 * $50 = $5.\n3. The total bill including the service charge is $50 + $5 = $55.\n4. The tip is 10% of $55, which is 0.1 * $55 = $5.50.\n5. The total bill including the tip is $55 + $5.50 = $60.50.\n6. The change they will receive from their $100 is $100 - $60.50 = $39.50.",
+    "pred_answer_masked": "39.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The service charge is 10% of $50, which is 0.1 * $50 = $5.\n3. The total bill including the service charge is $50 + $5 = $55.\n4. The tip is 10% of $50, which is 0.1 * $50 = $5.\n5. The total bill including the tip is $55 + $5 = $60.\n6. The change they will receive from their $100 is $100 - $60 = $40."
+  },
+  {
+    "id": 3,
+    "question": "Alice went to a seafood restaurant. The lobster costs $50, the crab soup costs $30, and the calamari costs $20. If the bill includes an 8% tax and 7% tip, how much change will Alice receive from her $150?",
+    "ground_truth": "35",
+    "generation": "1. The total cost of the food is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost including tax is $100 + $8 = $108.\n4. The tip is 7% of $108, which is 0.07 * $108 = $7.56.\n5. The total cost including tax and tip is $108 + $7.56 = $115.56.\n6. The change Alice will receive is $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the food is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost including tax is $100 + $8 = $108.\n4. The tip is 7% of $100, which is 0.07 * $100 = $7.\n5. The total cost including tax and tip is $108 + $7 = $115.\n6. The change Alice will receive is $150 - $115 = $35."
+  },
+  {
+    "id": 4,
+    "question": "Bob hosted a dinner party. The roast duck costs $100, the fine wine costs $60, and the dessert platter costs $40. If the bill includes a 5% tax and 15% tip, how much change will Bob receive from his $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the dinner party is $100 + $60 + $40 = $200.\n2. The 5% tax is 0.05 * $200 = $10.\n3. The total cost including tax is $200 + $10 = $210.\n4. The 15% tip is 0.15 * $210 = $31.50.\n5. The total cost including tax and tip is $210 + $31.50 = $241.50.\nFinal Answer: $58.50",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the dinner party is $100 + $60 + $40 = $200.\n2. The 5% tax is 0.05 * $200 = $10.\n3. The total cost including tax is $200 + $10 = $210.\n4. The 15% tip is 0.15 * $200 = $30.\n5. The total cost including tax and tip is $210 + $30 = $240.\nFinal Answer: $60"
+  },
+  {
+    "id": 5,
+    "question": "Clara bought lunch at a diner. The burger costs $15, the fries cost $10, and the milkshake costs $15. If the bill includes a 15% service charge and 5% tax, how much change will Clara receive from her $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the meal is $15 + $10 + $15 = $40.\n2. The service charge is 15% of $40, which is 0.15 * $40 = $6.\n3. The tax is 5% of $40, which is 0.05 * $40 = $2.\n4. The total amount Clara needs to pay is $40 + $6 + $2 = $48.\nFinal Answer: $2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the meal is $15 + $10 + $15 = $40.\n2. The service charge is 15% of $40, which is 0.15 * $40 = $6.\n3. The tax is 5% of $40, which is 0.05 * $40 = $2.\n4. The total amount Clara needs to pay is $40 + $6 + $2 = $48.\nFinal Answer: $2"
+  },
+  {
+    "id": 6,
+    "question": "The Chen family ordered a banquet. The peking duck costs $70, the dumplings cost $50, and the noodles cost $30. If the bill includes a 10% tax and 8% tip, how much change will Mr. Chen receive from his $200?",
+    "ground_truth": "23",
+    "generation": "1. The total cost of the food is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost including tax is $150 + $15 = $165.\n4. The tip is 8% of $165, which is 0.08 * $165 = $13.20.\n5. The total cost including tax and tip is $165 + $13.20 = $178.20.\n6. The change Mr. Chen will receive is $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the food is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost including tax is $150 + $15 = $165.\n4. The tip is 8% of $150, which is 0.08 * $150 = $12.\n5. The total cost including tax and tip is $165 + $12 = $177.\n6. The change Mr. Chen will receive is $200 - $177 = $23."
+  },
+  {
+    "id": 7,
+    "question": "David ate at a steakhouse. The ribeye costs $120, the loaded potato costs $80, and the asparagus costs $50. If the bill includes a 6% tax and 4% service charge, how much change will David receive from his $300?",
+    "ground_truth": "25",
+    "generation": "1. The total cost of the meal is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The service charge is 4% of $250, which is 0.04 * $250 = $10.\n4. The total bill is $250 + $15 + $10 = $275.\nFinal Answer: $25",
+    "pred_answer_masked": "25",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the meal is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The service charge is 4% of $250, which is 0.04 * $250 = $10.\n4. The total bill is $250 + $15 + $10 = $275.\nFinal Answer: $25"
+  },
+  {
+    "id": 8,
+    "question": "Elena and her friends went to a buffet. The adult meals cost $150, the kids meals cost $90, and the drinks cost $60. If the bill includes a 12% tax and 8% tip, how much change will Elena receive from her $400?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the meals is 1 adult meal * $150 + 1 kids meal * $90 = $240.\n2. The total cost of the drinks is 1 drink * $60 = $60.\n3. The subtotal is $240 + $60 = $300.\n4. The tax is 12% of $300, which is 0.12 * $300 = $36.\n5. The total cost is $300 + $36 = $336.\n6. The tip is 8% of $336, which is 0.08 * $336 = $26.88.\n7. The total bill is $336 + $26.88 = $362.88.\n8. The change Elena will receive is $400 - $362.88 = $37.12.",
+    "pred_answer_masked": "37.12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the meals is 1 adult meal * $150 + 1 kids meal * $90 = $240.\n2. The total cost of the drinks is 1 drink * $60 = $60.\n3. The subtotal is $240 + $60 = $300.\n4. The tax is 12% of $300, which is 0.12 * $300 = $36.\n5. The total cost is $300 + $36 = $336.\n6. The tip is 8% of $300, which is 0.08 * $300 = $24.\n7. The total bill is $336 + $24 = $360.\n8. The change Elena will receive is $400 - $360 = $40."
+  },
+  {
+    "id": 9,
+    "question": "The Garcia family got takeout. The family pizza costs $20, the wings cost $25, and the sodas cost $15. If the bill includes a 5% tax and 10% delivery fee, how much change will they receive from their $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of food is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The delivery fee is 10% of $63, which is 0.10 * $63 = $6.30.\n5. The total bill is $63 + $6.30 = $69.30.\n6. The change is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of food is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The delivery fee is 10% of $60, which is 0.10 * $60 = $6.\n5. The total bill is $63 + $6 = $69.\n6. The change is $100 - $69 = $31."
+  },
+  {
+    "id": 10,
+    "question": "Frank went to a sushi bar. The sashimi costs $50, the rolls cost $40, and the sake costs $30. If the bill includes a 10% tax and 5% tip, how much change will Frank receive from his $150?",
+    "ground_truth": "12",
+    "generation": "1. The total cost of the food is $50 + $40 + $30 = $120.\n2. The tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The tip is 5% of $132, which is 0.05 * $132 = $6.60.\n5. The total cost including tax and tip is $132 + $6.60 = $138.60.\n6. The change Frank will receive is $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the food is $50 + $40 + $30 = $120.\n2. The tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The tip is 5% of $120, which is 0.05 * $120 = $6.\n5. The total cost including tax and tip is $132 + $6 = $138.\n6. The change Frank will receive is $150 - $138 = $12."
+  },
+  {
+    "id": 11,
+    "question": "Gina ordered clothes online. The dress costs $40, the hat costs $15, and the belt costs $25. If the order includes a 10% tax and 5% shipping fee, how much change will Gina receive from a $100 gift card?",
+    "ground_truth": "8",
+    "generation": "1. The total cost of the items is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The shipping fee is 5% of $80, which is 0.05 * $80 = $4.\n4. The total cost including tax and shipping is $80 + $8 + $4 = $92.\nFinal Answer: $8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the items is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The shipping fee is 5% of $80, which is 0.05 * $80 = $4.\n4. The total cost including tax and shipping is $80 + $8 + $4 = $92.\nFinal Answer: $8"
+  },
+  {
+    "id": 12,
+    "question": "Harry bought sporting goods. The basketball costs $20, the pump costs $15, and the water bottle costs $15. If the bill includes a 10% tax and 10% handling fee, how much change will Harry receive from his $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The total cost with tax is $50 + $5 = $55.\n4. The handling fee is 10% of $55, which is 0.1 * $55 = $5.50.\n5. The total cost with tax and handling fee is $55 + $5.50 = $60.50.\n6. The change Harry will receive is $100 - $60.50 = $39.50.",
+    "pred_answer_masked": "39.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The total cost with tax is $50 + $5 = $55.\n4. The handling fee is 10% of $50, which is 0.1 * $50 = $5.\n5. The total cost with tax and handling fee is $55 + $5 = $60.\n6. The change Harry will receive is $100 - $60 = $40."
+  },
+  {
+    "id": 13,
+    "question": "Irene ordered cosmetics. The foundation costs $50, the lipstick costs $30, and the mascara costs $20. If the bill includes an 8% tax and 7% delivery fee, how much change will Irene receive from her $150?",
+    "ground_truth": "35",
+    "generation": "1. Calculate the total cost of cosmetics: $50 + $30 + $20 = $100\n2. Calculate the tax: 8% of $100 = 0.08 * $100 = $8\n3. Calculate the delivery fee: 7% of $100 = 0.07 * $100 = $7\n4. Calculate the total bill: $100 + $8 + $7 = $115\nFinal Answer: $35",
+    "pred_answer_masked": "35",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total cost of cosmetics: $50 + $30 + $20 = $100\n2. Calculate the tax: 8% of $100 = 0.08 * $100 = $8\n3. Calculate the delivery fee: 7% of $100 = 0.07 * $100 = $7\n4. Calculate the total bill: $100 + $8 + $7 = $115\nFinal Answer: $35"
+  },
+  {
+    "id": 14,
+    "question": "Jack purchased camping gear online. The tent costs $100, the sleeping bag costs $60, and the lantern costs $40. If the bill includes a 5% tax and 15% expedited shipping fee, how much change will Jack get from his $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the gear is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The shipping fee is 15% of $210, which is 0.15 * $210 = $31.50.\n5. The total cost with tax and shipping is $210 + $31.50 = $241.50.\n6. The change Jack will get is $300 - $241.50 = $58.50.",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the gear is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The shipping fee is 15% of $200, which is 0.15 * $200 = $30.\n5. The total cost with tax and shipping is $210 + $30 = $240.\n6. The change Jack will get is $300 - $240 = $60."
+  },
+  {
+    "id": 15,
+    "question": "Karen bought books online. The novel costs $15, the bookmark costs $10, and the magazine costs $15. If the order includes a 15% tax and 5% packaging fee, how much change will Karen receive from her $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the items is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost with tax is $40 + $6 = $46.\n4. The packaging fee is 5% of $46, which is 0.05 * $46 = $2.30.\n5. The total cost with tax and packaging fee is $46 + $2.30 = $48.30.\n6. The change Karen will receive is $50 - $48.30 = $1.70.",
+    "pred_answer_masked": "1.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the items is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost with tax is $40 + $6 = $46.\n4. The packaging fee is 5% of $40, which is 0.05 * $40 = $2.\n5. The total cost with tax and packaging fee is $46 + $2 = $48.\n6. The change Karen will receive is $50 - $48 = $2."
+  },
+  {
+    "id": 16,
+    "question": "Leo bought art supplies. The easel costs $70, the paints cost $50, and the brushes cost $30. If the bill includes a 10% tax and 8% delivery charge, how much change will Leo receive from his $200?",
+    "ground_truth": "23",
+    "generation": "1. The total cost of the art supplies is $70 + $50 + $30 = $150.\n2. The 10% tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The 8% delivery charge is 8% of $165, which is 0.08 * $165 = $13.20.\n5. The total cost with tax and delivery is $165 + $13.20 = $178.20.\n6. The change Leo will receive is $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the art supplies is $70 + $50 + $30 = $150.\n2. The 10% tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The 8% delivery charge is 8% of $150, which is 0.08 * $150 = $12.\n5. The total cost with tax and delivery is $165 + $12 = $177.\n6. The change Leo will receive is $200 - $177 = $23."
+  },
+  {
+    "id": 17,
+    "question": "Maria ordered home decor. The rug costs $120, the lamp costs $80, and the vase costs $50. If the bill includes a 6% tax and 4% shipping fee, how much change will Maria receive from her $300?",
+    "ground_truth": "25",
+    "generation": "1. The total cost of the items is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The shipping fee is 4% of $250, which is 0.04 * $250 = $10.\n4. The total bill is $250 + $15 + $10 = $275.\nFinal Answer: $25",
+    "pred_answer_masked": "25",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the items is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The shipping fee is 4% of $250, which is 0.04 * $250 = $10.\n4. The total bill is $250 + $15 + $10 = $275.\nFinal Answer: $25"
+  },
+  {
+    "id": 18,
+    "question": "Nate bought car parts online. The battery costs $150, the brake pads cost $90, and the filters cost $60. If the bill includes a 12% tax and 8% freight fee, how much change will Nate receive from his $400?",
+    "ground_truth": "40",
+    "generation": "1. Calculate the total cost of the car parts: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 is 0.12 * $300 = $36.\n3. Calculate the freight fee: 8% of $300 is 0.08 * $300 = $24.\n4. Calculate the total bill: $300 + $36 + $24 = $360.\nFinal Answer: $40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total cost of the car parts: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 is 0.12 * $300 = $36.\n3. Calculate the freight fee: 8% of $300 is 0.08 * $300 = $24.\n4. Calculate the total bill: $300 + $36 + $24 = $360.\nFinal Answer: $40"
+  },
+  {
+    "id": 19,
+    "question": "Olivia purchased skincare products. The cleanser costs $20, the serum costs $25, and the toner costs $15. If the bill includes a 5% tax and 10% shipping fee, how much change will Olivia receive from her $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the products is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost including tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $63, which is 0.1 * $63 = $6.30.\n5. The total cost including tax and shipping is $63 + $6.30 = $69.30.\n6. The change Olivia receives is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the products is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost including tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $60, which is 0.1 * $60 = $6.\n5. The total cost including tax and shipping is $63 + $6 = $69.\n6. The change Olivia receives is $100 - $69 = $31."
+  },
+  {
+    "id": 20,
+    "question": "Paul bought kitchenware. The pan costs $50, the spatula set costs $40, and the mixing bowls cost $30. If the bill includes a 10% tax and 5% delivery fee, how much change will Paul receive from his $150?",
+    "ground_truth": "12",
+    "generation": "1. The total cost of the kitchenware is $50 + $40 + $30 = $120.\n2. The tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The delivery fee is 5% of $132, which is 0.05 * $132 = $6.60.\n5. The total cost including tax and delivery fee is $132 + $6.60 = $138.60.\n6. The change Paul will receive is $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the kitchenware is $50 + $40 + $30 = $120.\n2. The tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The delivery fee is 5% of $120, which is 0.05 * $120 = $6.\n5. The total cost including tax and delivery fee is $132 + $6 = $138.\n6. The change Paul will receive is $150 - $138 = $12."
+  },
+  {
+    "id": 21,
+    "question": "Quinn went to a spa. The massage costs $40, the facial costs $15, and the manicure costs $25. If the bill includes a 10% tax and 5% service tip, how much change will Quinn receive from her $100?",
+    "ground_truth": "8",
+    "generation": "1. The total cost of the services is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The total cost with tax is $80 + $8 = $88.\n4. The service tip is 5% of $88, which is 0.05 * $88 = $4.40.\n5. The total bill is $88 + $4.40 = $92.40.\n6. The change Quinn will receive is $100 - $92.40 = $7.60.",
+    "pred_answer_masked": "7.6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the services is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The total cost with tax is $80 + $8 = $88.\n4. The service tip is 5% of $80, which is 0.05 * $80 = $4.\n5. The total bill is $88 + $4 = $92.\n6. The change Quinn will receive is $100 - $92 = $8."
+  },
+  {
+    "id": 22,
+    "question": "Rachel stayed at a spa resort. The day pass costs $20, the locker costs $15, and the towel rental costs $15. If the bill includes a 10% tax and 10% resort fee, how much change will Rachel receive from her $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the day pass, locker, and towel rental is $20 + $15 + $15 = $50.\n2. Adding the 10% tax to the total cost is $50 + 0.1 * $50 = $50 + $5 = $55.\n3. Adding the 10% resort fee to the total cost is $55 + 0.1 * $55 = $55 + $5.50 = $60.50.\n4. The change Rachel will receive from her $100 is $100 - $60.50 = $39.50.",
+    "pred_answer_masked": "39.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the day pass, locker, and towel rental is $20 + $15 + $15 = $50.\n2. Adding the 10% tax to the total cost is $50 + 0.1 * $50 = $50 + $5 = $55.\n3. Adding the 10% resort fee to the total cost is $55 + 0.1 * $50 = $55 + $5 = $60.\n4. The change Rachel will receive from her $100 is $100 - $60 = $40."
+  },
+  {
+    "id": 23,
+    "question": "Sam booked a hotel room. The night stay costs $50, the room service costs $30, and the movie rental costs $20. If the bill includes an 8% tax and 7% service charge, how much change will Sam receive from his $150?",
+    "ground_truth": "35",
+    "generation": "1. Calculate the total cost of the room, service, and movie: $50 + $30 + $20 = $100.\n2. Add the tax to the total cost: $100 * 0.08 = $8, so the total cost with tax is $100 + $8 = $108.\n3. Add the service charge to the total cost with tax: $108 * 0.07 = $7.56, so the total cost with tax and service charge is $108 + $7.56 = $115.56.\n4. Calculate the change Sam will receive: $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the room, service, and movie: $50 + $30 + $20 = $100.\n2. Add the tax to the total cost: $100 * 0.08 = $8, so the total cost with tax is $100 + $8 = $108.\n3. Add the service charge to the total cost with tax: $100 * 0.07 = $7, so the total cost with tax and service charge is $108 + $7 = $115.\n4. Calculate the change Sam will receive: $150 - $115 = $35."
+  },
+  {
+    "id": 24,
+    "question": "Tina went to a luxury resort. The suite costs $100, the spa treatment costs $60, and the dinner costs $40. If the bill includes a 5% tax and 15% gratuity, how much change will Tina receive from her $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the suite, spa treatment, and dinner is $100 + $60 + $40 = $200.\n2. The 5% tax on $200 is 0.05 * $200 = $10.\n3. The total cost including tax is $200 + $10 = $210.\n4. The 15% gratuity on $210 is 0.15 * $210 = $31.50.\n5. The total cost including tax and gratuity is $210 + $31.50 = $241.50.\nFinal Answer: $58.50",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the suite, spa treatment, and dinner is $100 + $60 + $40 = $200.\n2. The 5% tax on $200 is 0.05 * $200 = $10.\n3. The total cost including tax is $200 + $10 = $210.\n4. The 15% gratuity on $200 is 0.15 * $200 = $30.\n5. The total cost including tax and gratuity is $210 + $30 = $240.\nFinal Answer: $60"
+  },
+  {
+    "id": 25,
+    "question": "Uma visited a hot spring. The entry costs $15, the robe rental costs $10, and the drink costs $15. If the bill includes a 15% tax and 5% environmental fee, how much change will Uma receive from her $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the entry, robe rental, and drink is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The environmental fee is 5% of $40, which is 0.05 * $40 = $2.\n4. The total bill is $40 + $6 + $2 = $48.\nFinal Answer: $2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the entry, robe rental, and drink is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The environmental fee is 5% of $40, which is 0.05 * $40 = $2.\n4. The total bill is $40 + $6 + $2 = $48.\nFinal Answer: $2"
+  },
+  {
+    "id": 26,
+    "question": "Victor stayed at a boutique hotel. The room costs $70, the minibar costs $50, and the laundry service costs $30. If the bill includes a 10% tax and 8% service charge, how much change will Victor receive from his $200?",
+    "ground_truth": "23",
+    "generation": "1. Total cost of room, minibar, and laundry service is $70 + $50 + $30 = $150.\n2. 10% tax on $150 is 0.1 * $150 = $15.\n3. Total cost including tax is $150 + $15 = $165.\n4. 8% service charge on $165 is 0.08 * $165 = $13.20.\n5. Total bill including tax and service charge is $165 + $13.20 = $178.20.\nFinal Answer: $21.80",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of room, minibar, and laundry service is $70 + $50 + $30 = $150.\n2. 10% tax on $150 is 0.1 * $150 = $15.\n3. Total cost including tax is $150 + $15 = $165.\n4. 8% service charge on $150 is 0.08 * $150 = $12.\n5. Total bill including tax and service charge is $165 + $12 = $177.\nFinal Answer: $23"
+  },
+  {
+    "id": 27,
+    "question": "Wendy booked a vacation rental. The nightly rate is $120, the cleaning fee is $80, and the pet fee is $50. If the bill includes a 6% tax and 4% platform fee, how much change will Wendy receive from her $300?",
+    "ground_truth": "25",
+    "generation": "1. Calculate the total cost before tax and fees: $120 (nightly rate) + $80 (cleaning fee) + $50 (pet fee) = $250.\n2. Add the tax to the total cost: $250 + ($250 * 0.06) = $250 + $15 = $265.\n3. Add the platform fee to the total cost: $265 + ($265 * 0.04) = $265 + $10.60 = $275.60.\n4. Calculate the change Wendy will receive: $300 - $275.60 = $24.40.",
+    "pred_answer_masked": "24.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost before tax and fees: $120 (nightly rate) + $80 (cleaning fee) + $50 (pet fee) = $250.\n2. Add the tax to the total cost: $250 + ($250 * 0.06) = $250 + $15 = $265.\n3. Add the platform fee to the total cost: $265 + ($250 * 0.04) = $265 + $10 = $275.\n4. Calculate the change Wendy will receive: $300 - $275 = $25."
+  },
+  {
+    "id": 28,
+    "question": "Xander reserved a venue. The hall costs $150, the catering costs $90, and the decorations cost $60. If the bill includes a 12% tax and 8% service charge, how much change will Xander receive from his $400?",
+    "ground_truth": "40",
+    "generation": "1. Total cost of the hall, catering, and decorations is $150 + $90 + $60 = $300.\n2. The tax is 12% of $300, which is 0.12 * $300 = $36.\n3. The service charge is 8% of $300, which is 0.08 * $300 = $24.\n4. The total bill is $300 + $36 + $24 = $360.\nFinal Answer: $40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total cost of the hall, catering, and decorations is $150 + $90 + $60 = $300.\n2. The tax is 12% of $300, which is 0.12 * $300 = $36.\n3. The service charge is 8% of $300, which is 0.08 * $300 = $24.\n4. The total bill is $300 + $36 + $24 = $360.\nFinal Answer: $40"
+  },
+  {
+    "id": 29,
+    "question": "Yara went to a wellness center. The yoga class costs $20, the smoothie costs $25, and the merchandise costs $15. If the bill includes a 5% tax and 10% facility fee, how much change will Yara receive from her $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the items is $20 + $25 + $15 = $60.\n2. The 5% tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The 10% facility fee is 10% of $63, which is 0.10 * $63 = $6.30.\n5. The total cost with tax and facility fee is $63 + $6.30 = $69.30.\n6. The change Yara will receive is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the items is $20 + $25 + $15 = $60.\n2. The 5% tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The 10% facility fee is 10% of $60, which is 0.10 * $60 = $6.\n5. The total cost with tax and facility fee is $63 + $6 = $69.\n6. The change Yara will receive is $100 - $69 = $31."
+  },
+  {
+    "id": 30,
+    "question": "Zack stayed at a bed and breakfast. The room costs $50, the guided tour costs $40, and the souvenir costs $30. If the bill includes a 10% tax and 5% service charge, how much change will Zack receive from his $150?",
+    "ground_truth": "12",
+    "generation": "1. Calculate the total cost of the room, tour, and souvenir: $50 + $40 + $30 = $120.\n2. Calculate the tax: 10% of $120 is 0.1 * $120 = $12.\n3. Calculate the service charge: 5% of $120 is 0.05 * $120 = $6.\n4. Calculate the total bill: $120 + $12 + $6 = $138.\nFinal Answer: $12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total cost of the room, tour, and souvenir: $50 + $40 + $30 = $120.\n2. Calculate the tax: 10% of $120 is 0.1 * $120 = $12.\n3. Calculate the service charge: 5% of $120 is 0.05 * $120 = $6.\n4. Calculate the total bill: $120 + $12 + $6 = $138.\nFinal Answer: $12"
+  },
+  {
+    "id": 31,
+    "question": "Amy bought tech accessories. The mouse costs $40, the mousepad costs $15, and the cables cost $25. If the bill includes a 10% tax and 5% recycling fee, how much change will Amy receive from her $100?",
+    "ground_truth": "8",
+    "generation": "1. The total cost of the accessories is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The total cost with tax is $80 + $8 = $88.\n4. The recycling fee is 5% of $88, which is 0.05 * $88 = $4.40.\n5. The total cost with tax and recycling fee is $88 + $4.40 = $92.40.\n6. The change Amy will receive is $100 - $92.40 = $7.60.",
+    "pred_answer_masked": "7.6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the accessories is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The total cost with tax is $80 + $8 = $88.\n4. The recycling fee is 5% of $80, which is 0.05 * $80 = $4.\n5. The total cost with tax and recycling fee is $88 + $4 = $92.\n6. The change Amy will receive is $100 - $92 = $8."
+  },
+  {
+    "id": 32,
+    "question": "Ben purchased gaming gear. The controller costs $20, the headset costs $15, and the game costs $15. If the bill includes a 10% tax and 10% warranty fee, how much change will Ben receive from his $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The warranty fee is 10% of $50, which is 0.1 * $50 = $5.\n4. The total bill is $50 + $5 + $5 = $60.\nFinal Answer: $40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The warranty fee is 10% of $50, which is 0.1 * $50 = $5.\n4. The total bill is $50 + $5 + $5 = $60.\nFinal Answer: $40"
+  },
+  {
+    "id": 33,
+    "question": "Chloe bought smart home devices. The smart speaker costs $50, the smart bulb costs $30, and the smart plug costs $20. If the bill includes an 8% tax and 7% shipping fee, how much change will Chloe receive from her $150?",
+    "ground_truth": "35",
+    "generation": "1. The total cost of devices is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost including tax is $100 + $8 = $108.\n4. The shipping fee is 7% of $108, which is 0.07 * $108 = $7.56.\n5. The total cost including tax and shipping is $108 + $7.56 = $115.56.\n6. The change Chloe receives is $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of devices is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost including tax is $100 + $8 = $108.\n4. The shipping fee is 7% of $100, which is 0.07 * $100 = $7.\n5. The total cost including tax and shipping is $108 + $7 = $115.\n6. The change Chloe receives is $150 - $115 = $35."
+  },
+  {
+    "id": 34,
+    "question": "Dan bought a computer setup. The monitor costs $100, the keyboard costs $60, and the webcam costs $40. If the bill includes a 5% tax and 15% delivery fee, how much change will Dan receive from his $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the items is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The delivery fee is 15% of $210, which is 0.15 * $210 = $31.50.\n5. The total cost with tax and delivery fee is $210 + $31.50 = $241.50.\n6. The change Dan receives is $300 - $241.50 = $58.50.",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the items is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The delivery fee is 15% of $200, which is 0.15 * $200 = $30.\n5. The total cost with tax and delivery fee is $210 + $30 = $240.\n6. The change Dan receives is $300 - $240 = $60."
+  },
+  {
+    "id": 35,
+    "question": "Eve bought phone accessories. The case costs $15, the screen protector costs $10, and the charger costs $15. If the bill includes a 15% tax and 5% environmental fee, how much change will Eve receive from her $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the accessories is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The environmental fee is 5% of $40, which is 0.05 * $40 = $2.\n4. The total bill is $40 + $6 + $2 = $48.\nFinal Answer: $2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the accessories is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The environmental fee is 5% of $40, which is 0.05 * $40 = $2.\n4. The total bill is $40 + $6 + $2 = $48.\nFinal Answer: $2"
+  },
+  {
+    "id": 36,
+    "question": "Finn bought audio equipment. The headphones cost $70, the microphone costs $50, and the stand costs $30. If the bill includes a 10% tax and 8% warranty fee, how much change will Finn receive from his $200?",
+    "ground_truth": "23",
+    "generation": "1. The total cost of the equipment is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The warranty fee is 8% of $165, which is 0.08 * $165 = $13.20.\n5. The total cost with tax and warranty is $165 + $13.20 = $178.20.\n6. The change Finn receives is $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the equipment is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The warranty fee is 8% of $150, which is 0.08 * $150 = $12.\n5. The total cost with tax and warranty is $165 + $12 = $177.\n6. The change Finn receives is $200 - $177 = $23."
+  },
+  {
+    "id": 37,
+    "question": "Grace bought photography gear. The tripod costs $120, the lens costs $80, and the bag costs $50. If the bill includes a 6% tax and 4% processing fee, how much change will Grace receive from her $300?",
+    "ground_truth": "25",
+    "generation": "1. The total cost of the gear is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The total cost with tax is $250 + $15 = $265.\n4. The processing fee is 4% of $265, which is 0.04 * $265 = $10.60.\n5. The total cost with tax and processing fee is $265 + $10.60 = $275.60.\n6. The change Grace will receive is $300 - $275.60 = $24.40.",
+    "pred_answer_masked": "24.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the gear is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The total cost with tax is $250 + $15 = $265.\n4. The processing fee is 4% of $250, which is 0.04 * $250 = $10.\n5. The total cost with tax and processing fee is $265 + $10 = $275.\n6. The change Grace will receive is $300 - $275 = $25."
+  },
+  {
+    "id": 38,
+    "question": "Henry bought home theater parts. The soundbar costs $150, the subwoofer costs $90, and the cables cost $60. If the bill includes a 12% tax and 8% delivery fee, how much change will Henry receive from his $400?",
+    "ground_truth": "40",
+    "generation": "1. Calculate the total cost of the parts: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 = 0.12 * $300 = $36.\n3. Calculate the delivery fee: 8% of $300 = 0.08 * $300 = $24.\n4. Calculate the total bill: $300 + $36 + $24 = $360.\nFinal Answer: $40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total cost of the parts: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 = 0.12 * $300 = $36.\n3. Calculate the delivery fee: 8% of $300 = 0.08 * $300 = $24.\n4. Calculate the total bill: $300 + $36 + $24 = $360.\nFinal Answer: $40"
+  },
+  {
+    "id": 39,
+    "question": "Ivy bought fitness wearables. The fitness band costs $20, the extra straps cost $25, and the charger costs $15. If the bill includes a 5% tax and 10% shipping fee, how much change will Ivy receive from her $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the items is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $63, which is 0.1 * $63 = $6.30.\n5. The total cost with tax and shipping is $63 + $6.30 = $69.30.\n6. The change is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the items is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $60, which is 0.1 * $60 = $6.\n5. The total cost with tax and shipping is $63 + $6 = $69.\n6. The change is $100 - $69 = $31."
+  },
+  {
+    "id": 40,
+    "question": "Jake bought a drone kit. The drone body costs $50, the remote costs $40, and the spare battery costs $30. If the bill includes a 10% tax and 5% handling fee, how much change will Jake receive from his $150?",
+    "ground_truth": "12",
+    "generation": "1. The total cost of the drone kit is $50 + $40 + $30 = $120.\n2. The 10% tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost with tax is $120 + $12 = $132.\n4. The 5% handling fee is 5% of $132, which is 0.05 * $132 = $6.60.\n5. The total cost with tax and handling fee is $132 + $6.60 = $138.60.\n6. The change Jake will receive is $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the drone kit is $50 + $40 + $30 = $120.\n2. The 10% tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost with tax is $120 + $12 = $132.\n4. The 5% handling fee is 5% of $120, which is 0.05 * $120 = $6.\n5. The total cost with tax and handling fee is $132 + $6 = $138.\n6. The change Jake will receive is $150 - $138 = $12."
+  },
+  {
+    "id": 41,
+    "question": "Kate visited the pet store. The premium dog food costs $40, the collar costs $15, and the toys cost $25. If the bill includes a 10% tax and 5% donation to a shelter, how much change will Kate receive from her $100?",
+    "ground_truth": "8",
+    "generation": "1. The total cost of the items is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The donation is 5% of $80, which is 0.05 * $80 = $4.\n4. The total bill is $80 + $8 + $4 = $92.\nFinal Answer: $8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the items is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The donation is 5% of $80, which is 0.05 * $80 = $4.\n4. The total bill is $80 + $8 + $4 = $92.\nFinal Answer: $8"
+  },
+  {
+    "id": 42,
+    "question": "Luke bought cat supplies. The litter costs $20, the treats cost $15, and the brush costs $15. If the bill includes a 10% tax and 10% delivery fee, how much change will Luke receive from his $100?",
+    "ground_truth": "40",
+    "generation": "1. Total cost of supplies: $20 + $15 + $15 = $50\n2. Tax: 10% of $50 = 0.1 * $50 = $5\n3. Total cost with tax: $50 + $5 = $55\n4. Delivery fee: 10% of $55 = 0.1 * $55 = $5.50\n5. Total bill: $55 + $5.50 = $60.50\n6. Change: $100 - $60.50 = $39.50",
+    "pred_answer_masked": "39.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of supplies: $20 + $15 + $15 = $50\n2. Tax: 10% of $50 = 0.1 * $50 = $5\n3. Total cost with tax: $50 + $5 = $55\n4. Delivery fee: 10% of $50 = 0.1 * $50 = $5\n5. Total bill: $55 + $5 = $60\n6. Change: $100 - $60 = $40"
+  },
+  {
+    "id": 43,
+    "question": "Mia bought bird accessories. The cage costs $50, the seeds cost $30, and the toys cost $20. If the bill includes an 8% tax and 7% shipping fee, how much change will Mia receive from her $150?",
+    "ground_truth": "35",
+    "generation": "1. The total cost of the accessories is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The shipping fee is 7% of $108, which is 0.07 * $108 = $7.56.\n5. The total cost with tax and shipping is $108 + $7.56 = $115.56.\n6. The change Mia will receive is $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the accessories is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The shipping fee is 7% of $100, which is 0.07 * $100 = $7.\n5. The total cost with tax and shipping is $108 + $7 = $115.\n6. The change Mia will receive is $150 - $115 = $35."
+  },
+  {
+    "id": 44,
+    "question": "Noah bought aquarium gear. The tank costs $100, the filter costs $60, and the decorations cost $40. If the bill includes a 5% tax and 15% installation fee, how much change will Noah receive from his $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the gear is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The installation fee is 15% of $210, which is 0.15 * $210 = $31.50.\n5. The total cost with tax and installation is $210 + $31.50 = $241.50.\n6. The change Noah receives is $300 - $241.50 = $58.50.",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the gear is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The installation fee is 15% of $200, which is 0.15 * $200 = $30.\n5. The total cost with tax and installation is $210 + $30 = $240.\n6. The change Noah receives is $300 - $240 = $60."
+  },
+  {
+    "id": 45,
+    "question": "Owen bought reptile food. The crickets cost $15, the calcium powder costs $10, and the heat lamp bulb costs $15. If the bill includes a 15% tax and 5% processing fee, how much change will Owen receive from his $50?",
+    "ground_truth": "2",
+    "generation": "1. Total cost of items: $15 + $10 + $15 = $40\n2. Tax: $40 * 0.15 = $6\n3. Total cost with tax: $40 + $6 = $46\n4. Processing fee: $46 * 0.05 = $2.30\n5. Total cost with tax and fee: $46 + $2.30 = $48.30\n6. Change: $50 - $48.30 = $1.70",
+    "pred_answer_masked": "1.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of items: $15 + $10 + $15 = $40\n2. Tax: $40 * 0.15 = $6\n3. Total cost with tax: $40 + $6 = $46\n4. Processing fee: $40 * 0.05 = $2\n5. Total cost with tax and fee: $46 + $2 = $48\n6. Change: $50 - $48 = $2"
+  },
+  {
+    "id": 46,
+    "question": "Piper bought supplies for her rabbit. The hutch costs $70, the hay costs $50, and the pellets cost $30. If the bill includes a 10% tax and 8% delivery fee, how much change will Piper receive from her $200?",
+    "ground_truth": "23",
+    "generation": "1. The total cost of the supplies is $70 + $50 + $30 = $150.\n2. The 10% tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The 8% delivery fee is 8% of $165, which is 0.08 * $165 = $13.20.\n5. The total cost with tax and delivery fee is $165 + $13.20 = $178.20.\n6. The change Piper will receive is $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the supplies is $70 + $50 + $30 = $150.\n2. The 10% tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The 8% delivery fee is 8% of $150, which is 0.08 * $150 = $12.\n5. The total cost with tax and delivery fee is $165 + $12 = $177.\n6. The change Piper will receive is $200 - $177 = $23."
+  },
+  {
+    "id": 47,
+    "question": "Quinn bought horse tack. The blanket costs $120, the halter costs $80, and the grooming kit costs $50. If the bill includes a 6% tax and 4% handling fee, how much change will Quinn receive from her $300?",
+    "ground_truth": "25",
+    "generation": "1. The total cost of the items is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The handling fee is 4% of $250, which is 0.04 * $250 = $10.\n4. The total bill is $250 + $15 + $10 = $275.\nFinal Answer: $25",
+    "pred_answer_masked": "25",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the items is $120 + $80 + $50 = $250.\n2. The tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The handling fee is 4% of $250, which is 0.04 * $250 = $10.\n4. The total bill is $250 + $15 + $10 = $275.\nFinal Answer: $25"
+  },
+  {
+    "id": 48,
+    "question": "Ryan bought luxury pet furniture. The cat tree costs $150, the orthopedic bed costs $90, and the scratching post costs $60. If the bill includes a 12% tax and 8% freight fee, how much change will Ryan receive from his $400?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the furniture is $150 + $90 + $60 = $300.\n2. The tax is 12% of $300, which is 0.12 * $300 = $36.\n3. The freight fee is 8% of $300, which is 0.08 * $300 = $24.\n4. The total bill is $300 + $36 + $24 = $360.\nFinal Answer: $40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the furniture is $150 + $90 + $60 = $300.\n2. The tax is 12% of $300, which is 0.12 * $300 = $36.\n3. The freight fee is 8% of $300, which is 0.08 * $300 = $24.\n4. The total bill is $300 + $36 + $24 = $360.\nFinal Answer: $40"
+  },
+  {
+    "id": 49,
+    "question": "Sara bought small animal gear. The hamster wheel costs $20, the bedding costs $25, and the food bowl costs $15. If the bill includes a 5% tax and 10% delivery fee, how much change will Sara receive from her $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the gear is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The delivery fee is 10% of $63, which is 0.10 * $63 = $6.30.\n5. The total cost with tax and delivery fee is $63 + $6.30 = $69.30.\n6. The change Sara receives is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the gear is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The delivery fee is 10% of $60, which is 0.10 * $60 = $6.\n5. The total cost with tax and delivery fee is $63 + $6 = $69.\n6. The change Sara receives is $100 - $69 = $31."
+  },
+  {
+    "id": 50,
+    "question": "Tom bought grooming supplies. The clippers cost $50, the shampoo costs $40, and the towels cost $30. If the bill includes a 10% tax and 5% handling fee, how much change will Tom receive from his $150?",
+    "ground_truth": "12",
+    "generation": "1. Total cost of supplies is $50 + $40 + $30 = $120.\n2. 10% tax on $120 is 0.1 * $120 = $12.\n3. Total cost with tax is $120 + $12 = $132.\n4. 5% handling fee on $132 is 0.05 * $132 = $6.60.\n5. Total cost with tax and handling fee is $132 + $6.60 = $138.60.\n6. Change Tom receives is $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of supplies is $50 + $40 + $30 = $120.\n2. 10% tax on $120 is 0.1 * $120 = $12.\n3. Total cost with tax is $120 + $12 = $132.\n4. 5% handling fee on $120 is 0.05 * $120 = $6.\n5. Total cost with tax and handling fee is $132 + $6 = $138.\n6. Change Tom receives is $150 - $138 = $12."
+  },
+  {
+    "id": 51,
+    "question": "Uma went to the hair salon. The haircut costs $40, the shampoo bottle costs $15, and the styling gel costs $25. If the bill includes a 10% tax and 5% tip, how much change will Uma receive from her $100?",
+    "ground_truth": "8",
+    "generation": "1. The total cost of the haircut, shampoo, and styling gel is $40 + $15 + $25 = $80.\n2. The 10% tax on the total cost is 0.1 * $80 = $8.\n3. The total cost including tax is $80 + $8 = $88.\n4. The 5% tip on the total cost including tax is 0.05 * $88 = $4.40.\n5. The total amount Uma needs to pay is $88 + $4.40 = $92.40.\n6. The change Uma will receive is $100 - $92.40 = $7.60.",
+    "pred_answer_masked": "7.6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the haircut, shampoo, and styling gel is $40 + $15 + $25 = $80.\n2. The 10% tax on the total cost is 0.1 * $80 = $8.\n3. The total cost including tax is $80 + $8 = $88.\n4. The 5% tip on the total cost is 0.05 * $80 = $4.\n5. The total amount Uma needs to pay is $88 + $4 = $92.\n6. The change Uma will receive is $100 - $92 = $8."
+  },
+  {
+    "id": 52,
+    "question": "Vince went to the barber. The shave costs $20, the beard oil costs $15, and the comb costs $15. If the bill includes a 10% tax and 10% tip, how much change will Vince receive from his $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The total bill is $50 + $5 = $55.\n4. The tip is 10% of $55, which is 0.1 * $55 = $5.50.\n5. The total bill with the tip is $55 + $5.50 = $60.50.\n6. The change is $100 - $60.50 = $39.50.",
+    "pred_answer_masked": "39.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The total bill is $50 + $5 = $55.\n4. The tip is 10% of $50, which is 0.1 * $50 = $5.\n5. The total bill with the tip is $55 + $5 = $60.\n6. The change is $100 - $60 = $40."
+  },
+  {
+    "id": 53,
+    "question": "Will got a spa treatment. The facial costs $50, the mud mask costs $30, and the lotion costs $20. If the bill includes an 8% tax and 7% tip, how much change will Will receive from his $150?",
+    "ground_truth": "35",
+    "generation": "1. The total cost of the spa treatment is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The tip is 7% of $108, which is 0.07 * $108 = $7.56.\n5. The total cost with tax and tip is $108 + $7.56 = $115.56.\n6. The change Will receives is $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the spa treatment is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The tip is 7% of $100, which is 0.07 * $100 = $7.\n5. The total cost with tax and tip is $108 + $7 = $115.\n6. The change Will receives is $150 - $115 = $35."
+  },
+  {
+    "id": 54,
+    "question": "Xena had a full makeover. The hair coloring costs $100, the styling costs $60, and the makeup session costs $40. If the bill includes a 5% tax and 15% tip, how much change will Xena receive from her $300?",
+    "ground_truth": "60",
+    "generation": "1. Total cost of makeover = $100 + $60 + $40 = $200.\n2. Tax on makeover = 5% of $200 = 0.05 * $200 = $10.\n3. Total cost including tax = $200 + $10 = $210.\n4. Tip on makeover = 15% of $210 = 0.15 * $210 = $31.50.\n5. Total bill = $210 + $31.50 = $241.50.\n6. Change = $300 - $241.50 = $58.50.",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of makeover = $100 + $60 + $40 = $200.\n2. Tax on makeover = 5% of $200 = 0.05 * $200 = $10.\n3. Total cost including tax = $200 + $10 = $210.\n4. Tip on makeover = 15% of $200 = 0.15 * $200 = $30.\n5. Total bill = $210 + $30 = $240.\n6. Change = $300 - $240 = $60."
+  },
+  {
+    "id": 55,
+    "question": "Yara got a manicure. The basic polish costs $15, the cuticle oil costs $10, and the nail art costs $15. If the bill includes a 15% tax and 5% tip, how much change will Yara receive from her $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the manicure is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost including tax is $40 + $6 = $46.\n4. The tip is 5% of $46, which is 0.05 * $46 = $2.30.\n5. The total cost including tax and tip is $46 + $2.30 = $48.30.\n6. The change Yara will receive is $50 - $48.30 = $1.70.",
+    "pred_answer_masked": "1.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the manicure is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost including tax is $40 + $6 = $46.\n4. The tip is 5% of $40, which is 0.05 * $40 = $2.\n5. The total cost including tax and tip is $46 + $2 = $48.\n6. The change Yara will receive is $50 - $48 = $2."
+  },
+  {
+    "id": 56,
+    "question": "Zane got a premium hair service. The highlights cost $70, the toner costs $50, and the blowout costs $30. If the bill includes a 10% tax and 8% tip, how much change will Zane receive from his $200?",
+    "ground_truth": "23",
+    "generation": "1. The total cost of the service is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The tip is 8% of $165, which is 0.08 * $165 = $13.20.\n5. The total cost with tax and tip is $165 + $13.20 = $178.20.\n6. The change Zane will receive is $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the service is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The tip is 8% of $150, which is 0.08 * $150 = $12.\n5. The total cost with tax and tip is $165 + $12 = $177.\n6. The change Zane will receive is $200 - $177 = $23."
+  },
+  {
+    "id": 57,
+    "question": "Anna went to a wellness clinic. The skin therapy costs $120, the special cream costs $80, and the consultation costs $50. If the bill includes a 6% tax and 4% service charge, how much change will Anna receive from her $300?",
+    "ground_truth": "25",
+    "generation": "1. The total cost of the services is $120 + $80 + $50 = $250.\n2. The 6% tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The total cost with tax is $250 + $15 = $265.\n4. The 4% service charge is 4% of $265, which is 0.04 * $265 = $10.60.\n5. The total bill is $265 + $10.60 = $275.60.\n6. The change Anna will receive is $300 - $275.60 = $24.40.",
+    "pred_answer_masked": "24.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the services is $120 + $80 + $50 = $250.\n2. The 6% tax is 6% of $250, which is 0.06 * $250 = $15.\n3. The total cost with tax is $250 + $15 = $265.\n4. The 4% service charge is 4% of $250, which is 0.04 * $250 = $10.\n5. The total bill is $265 + $10 = $275.\n6. The change Anna will receive is $300 - $275 = $25."
+  },
+  {
+    "id": 58,
+    "question": "Brian booked a couples spa package. The massage costs $150, the aromatherapy costs $90, and the private bath costs $60. If the bill includes a 12% tax and 8% tip, how much change will Brian receive from his $400?",
+    "ground_truth": "40",
+    "generation": "1. Calculate the total cost of the spa package: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 = 0.12 * $300 = $36.\n3. Calculate the total cost including tax: $300 + $36 = $336.\n4. Calculate the tip: 8% of $336 = 0.08 * $336 = $26.88.\n5. Calculate the total cost including tax and tip: $336 + $26.88 = $362.88.\n6. Calculate the change: $400 - $362.88 = $37.12.",
+    "pred_answer_masked": "37.12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the spa package: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 = 0.12 * $300 = $36.\n3. Calculate the total cost including tax: $300 + $36 = $336.\n4. Calculate the tip: 8% of $300 = 0.08 * $300 = $24.\n5. Calculate the total cost including tax and tip: $336 + $24 = $360.\n6. Calculate the change: $400 - $360 = $40."
+  },
+  {
+    "id": 59,
+    "question": "Cole bought salon products. The hair spray costs $20, the dry shampoo costs $25, and the leave-in conditioner costs $15. If the bill includes a 5% tax and 10% processing fee, how much change will Cole receive from his $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the products is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost including tax is $60 + $3 = $63.\n4. The processing fee is 10% of $63, which is 0.10 * $63 = $6.30.\n5. The total amount Cole needs to pay is $63 + $6.30 = $69.30.\n6. The change Cole will receive is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the products is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost including tax is $60 + $3 = $63.\n4. The processing fee is 10% of $60, which is 0.10 * $60 = $6.\n5. The total amount Cole needs to pay is $63 + $6 = $69.\n6. The change Cole will receive is $100 - $69 = $31."
+  },
+  {
+    "id": 60,
+    "question": "Diana went for a pedicure. The luxury pedicure costs $50, the scrub costs $40, and the massage costs $30. If the bill includes a 10% tax and 5% tip, how much change will Diana receive from her $150?",
+    "ground_truth": "12",
+    "generation": "1. The total cost of the pedicure, scrub, and massage is $50 + $40 + $30 = $120.\n2. The 10% tax on $120 is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The 5% tip on $132 is 0.05 * $132 = $6.60.\n5. The total cost including tax and tip is $132 + $6.60 = $138.60.\n6. The change Diana will receive from her $150 is $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the pedicure, scrub, and massage is $50 + $40 + $30 = $120.\n2. The 10% tax on $120 is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The 5% tip on $120 is 0.05 * $120 = $6.\n5. The total cost including tax and tip is $132 + $6 = $138.\n6. The change Diana will receive from her $150 is $150 - $138 = $12."
+  },
+  {
+    "id": 61,
+    "question": "Evan went to the auto shop. The oil change costs $40, the wiper blades cost $15, and the air filter costs $25. If the bill includes a 10% tax and 5% disposal fee, how much change will Evan receive from his $100?",
+    "ground_truth": "8",
+    "generation": "1. The total cost of the oil change, wiper blades, and air filter is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The disposal fee is 5% of $80, which is 0.05 * $80 = $4.\n4. The total bill is $80 + $8 + $4 = $92.\nFinal Answer: $8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the oil change, wiper blades, and air filter is $40 + $15 + $25 = $80.\n2. The tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The disposal fee is 5% of $80, which is 0.05 * $80 = $4.\n4. The total bill is $80 + $8 + $4 = $92.\nFinal Answer: $8"
+  },
+  {
+    "id": 62,
+    "question": "Fiona visited the hardware store. The hammer costs $20, the nails cost $15, and the tape measure costs $15. If the bill includes a 10% tax and 10% service fee, how much change will Fiona receive from her $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The service fee is 10% of $50 + $5 (tax), which is 0.1 * ($50 + $5) = 0.1 * $55 = $5.50.\n4. The total bill is $50 + $5 + $5.50 = $60.50.\nFinal Answer: $39.50",
+    "pred_answer_masked": "39.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The service fee is 10% of $50, which is 0.1 * $50 = $5.\n4. The total bill is $50 + $5 + $5 = $60.\nFinal Answer: $40"
+  },
+  {
+    "id": 63,
+    "question": "George bought gardening tools. The shovel costs $50, the rake costs $30, and the gloves cost $20. If the bill includes an 8% tax and 7% handling fee, how much change will George receive from his $150?",
+    "ground_truth": "35",
+    "generation": "1. The total cost of the gardening tools is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The handling fee is 7% of $108, which is 0.07 * $108 = $7.56.\n5. The total cost with tax and handling fee is $108 + $7.56 = $115.56.\n6. The change George will receive is $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the gardening tools is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The handling fee is 7% of $100, which is 0.07 * $100 = $7.\n5. The total cost with tax and handling fee is $108 + $7 = $115.\n6. The change George will receive is $150 - $115 = $35."
+  },
+  {
+    "id": 64,
+    "question": "Hannah got her car repaired. The new tire costs $100, the alignment costs $60, and the balancing costs $40. If the bill includes a 5% tax and 15% labor fee, how much change will Hannah receive from her $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the repairs is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The labor fee is 15% of $200, which is 0.15 * $200 = $30.\n4. The total bill is $200 + $10 + $30 = $240.\nFinal Answer: $60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the repairs is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The labor fee is 15% of $200, which is 0.15 * $200 = $30.\n4. The total bill is $200 + $10 + $30 = $240.\nFinal Answer: $60"
+  },
+  {
+    "id": 65,
+    "question": "Ian bought painting supplies. The paint can costs $15, the brushes cost $10, and the drop cloth costs $15. If the bill includes a 15% tax and 5% environmental fee, how much change will Ian receive from his $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the supplies is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The environmental fee is 5% of $40, which is 0.05 * $40 = $2.\n4. The total bill is $40 + $6 + $2 = $48.\nFinal Answer: $2",
+    "pred_answer_masked": "2",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the supplies is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The environmental fee is 5% of $40, which is 0.05 * $40 = $2.\n4. The total bill is $40 + $6 + $2 = $48.\nFinal Answer: $2"
+  },
+  {
+    "id": 66,
+    "question": "Jack bought plumbing parts. The pipes cost $70, the wrenches cost $50, and the sealants cost $30. If the bill includes a 10% tax and 8% delivery fee, how much change will Jack receive from his $200?",
+    "ground_truth": "23",
+    "generation": "1. Total cost of items = $70 + $50 + $30 = $150.\n2. Tax = 10% of $150 = 0.1 * $150 = $15.\n3. Total cost including tax = $150 + $15 = $165.\n4. Delivery fee = 8% of $165 = 0.08 * $165 = $13.20.\n5. Total cost including tax and delivery fee = $165 + $13.20 = $178.20.\n6. Change = $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of items = $70 + $50 + $30 = $150.\n2. Tax = 10% of $150 = 0.1 * $150 = $15.\n3. Total cost including tax = $150 + $15 = $165.\n4. Delivery fee = 8% of $150 = 0.08 * $150 = $12.\n5. Total cost including tax and delivery fee = $165 + $12 = $177.\n6. Change = $200 - $177 = $23."
+  },
+  {
+    "id": 67,
+    "question": "Kara bought patio furniture. The chair costs $120, the table costs $80, and the umbrella costs $50. If the bill includes a 6% tax and 4% assembly fee, how much change will Kara receive from her $300?",
+    "ground_truth": "25",
+    "generation": "1. Calculate the total cost of the items: $120 + $80 + $50 = $250\n2. Calculate the tax: 6% of $250 = 0.06 * $250 = $15\n3. Calculate the total cost including tax: $250 + $15 = $265\n4. Calculate the assembly fee: 4% of $265 = 0.04 * $265 = $10.60\n5. Calculate the total cost including tax and assembly fee: $265 + $10.60 = $275.60\n6. Calculate the change Kara will receive: $300 - $275.60 = $24.40",
+    "pred_answer_masked": "24.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the items: $120 + $80 + $50 = $250\n2. Calculate the tax: 6% of $250 = 0.06 * $250 = $15\n3. Calculate the total cost including tax: $250 + $15 = $265\n4. Calculate the assembly fee: 4% of $250 = 0.04 * $250 = $10\n5. Calculate the total cost including tax and assembly fee: $265 + $10 = $275\n6. Calculate the change Kara will receive: $300 - $275 = $25"
+  },
+  {
+    "id": 68,
+    "question": "Liam had his brakes done. The rotors cost $150, the calipers cost $90, and the pads cost $60. If the bill includes a 12% tax and 8% labor fee, how much change will Liam receive from his $400?",
+    "ground_truth": "40",
+    "generation": "1. Calculate the total cost of parts: $150 + $90 + $60 = $300\n2. Calculate the labor fee: $300 * 8% = $300 * 0.08 = $24\n3. Calculate the total cost including labor: $300 + $24 = $324\n4. Calculate the tax: $324 * 12% = $324 * 0.12 = $38.88\n5. Calculate the total bill: $324 + $38.88 = $362.88\n6. Calculate the change: $400 - $362.88 = $37.12",
+    "pred_answer_masked": "37.12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of parts: $150 + $90 + $60 = $300\n2. Calculate the labor fee: $300 * 8% = $300 * 0.08 = $24\n3. Calculate the total cost including labor: $300 + $24 = $324\n4. Calculate the tax: $300 * 12% = $300 * 0.12 = $36\n5. Calculate the total bill: $324 + $36 = $360\n6. Calculate the change: $400 - $360 = $40"
+  },
+  {
+    "id": 69,
+    "question": "Maya bought car cleaning supplies. The wax costs $20, the polish costs $25, and the microfiber towels cost $15. If the bill includes a 5% tax and 10% shipping fee, how much change will Maya receive from her $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the supplies is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $63, which is 0.10 * $63 = $6.30.\n5. The total cost with tax and shipping is $63 + $6.30 = $69.30.\n6. The change Maya will receive is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the supplies is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost with tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $60, which is 0.10 * $60 = $6.\n5. The total cost with tax and shipping is $63 + $6 = $69.\n6. The change Maya will receive is $100 - $69 = $31."
+  },
+  {
+    "id": 70,
+    "question": "Nolan bought power tools. The drill costs $50, the battery costs $40, and the drill bits cost $30. If the bill includes a 10% tax and 5% warranty fee, how much change will Nolan receive from his $150?",
+    "ground_truth": "12",
+    "generation": "1. The total cost of the drill, battery, and drill bits is $50 + $40 + $30 = $120.\n2. The 10% tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The 5% warranty fee is 5% of $132, which is 0.05 * $132 = $6.60.\n5. The total cost including tax and warranty fee is $132 + $6.60 = $138.60.\n6. The change Nolan receives from his $150 is $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the drill, battery, and drill bits is $50 + $40 + $30 = $120.\n2. The 10% tax is 10% of $120, which is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The 5% warranty fee is 5% of $120, which is 0.05 * $120 = $6.\n5. The total cost including tax and warranty fee is $132 + $6 = $138.\n6. The change Nolan receives from his $150 is $150 - $138 = $12."
+  },
+  {
+    "id": 71,
+    "question": "Olivia went to the cinema. The tickets cost $40, the popcorn costs $15, and the drinks cost $25. If the bill includes a 10% amusement tax and 5% booking fee, how much change will Olivia receive from her $100?",
+    "ground_truth": "8",
+    "generation": "1. Total cost of tickets, popcorn, and drinks is $40 + $15 + $25 = $80.\n2. The amusement tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The booking fee is 5% of $80, which is 0.05 * $80 = $4.\n4. The total bill is $80 + $8 + $4 = $92.\nFinal Answer: $8",
+    "pred_answer_masked": "8",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total cost of tickets, popcorn, and drinks is $40 + $15 + $25 = $80.\n2. The amusement tax is 10% of $80, which is 0.1 * $80 = $8.\n3. The booking fee is 5% of $80, which is 0.05 * $80 = $4.\n4. The total bill is $80 + $8 + $4 = $92.\nFinal Answer: $8"
+  },
+  {
+    "id": 72,
+    "question": "Peter visited an arcade. The token package costs $20, the laser tag costs $15, and the VR ride costs $15. If the bill includes a 10% tax and 10% venue fee, how much change will Peter receive from his $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of the token package, laser tag, and VR ride is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The venue fee is also 10% of $50, which is 0.1 * $50 = $5.\n4. The total bill is $50 + $5 + $5 = $60.\n5. The change Peter will receive is $100 - $60 = $40.",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the token package, laser tag, and VR ride is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The venue fee is also 10% of $50, which is 0.1 * $50 = $5.\n4. The total bill is $50 + $5 + $5 = $60.\n5. The change Peter will receive is $100 - $60 = $40."
+  },
+  {
+    "id": 73,
+    "question": "Quinn bought concert tickets. The entry costs $50, the parking costs $30, and the tour poster costs $20. If the bill includes an 8% tax and 7% convenience fee, how much change will Quinn receive from her $150?",
+    "ground_truth": "35",
+    "generation": "1. The total cost of the entry, parking, and tour poster is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost including tax is $100 + $8 = $108.\n4. The convenience fee is 7% of $108, which is 0.07 * $108 = $7.56.\n5. The total cost including tax and convenience fee is $108 + $7.56 = $115.56.\n6. The change Quinn will receive is $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the entry, parking, and tour poster is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost including tax is $100 + $8 = $108.\n4. The convenience fee is 7% of $100, which is 0.07 * $100 = $7.\n5. The total cost including tax and convenience fee is $108 + $7 = $115.\n6. The change Quinn will receive is $150 - $115 = $35."
+  },
+  {
+    "id": 74,
+    "question": "Rose went to a theme park. The admission costs $100, the fast pass costs $60, and the meal voucher costs $40. If the bill includes a 5% tax and 15% service charge, how much change will Rose receive from her $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the admission, fast pass, and meal voucher is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The service charge is 15% of $200, which is 0.15 * $200 = $30.\n4. The total bill is $200 + $10 + $30 = $240.\nFinal Answer: $60",
+    "pred_answer_masked": "60",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of the admission, fast pass, and meal voucher is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The service charge is 15% of $200, which is 0.15 * $200 = $30.\n4. The total bill is $200 + $10 + $30 = $240.\nFinal Answer: $60"
+  },
+  {
+    "id": 75,
+    "question": "Sean went bowling. The lane rental costs $15, the shoe rental costs $10, and the snacks cost $15. If the bill includes a 15% tax and 5% maintenance fee, how much change will Sean receive from his $50?",
+    "ground_truth": "2",
+    "generation": "1. Calculate the total cost of the lane rental, shoe rental, and snacks: $15 + $10 + $15 = $40.\n2. Add the 15% tax to the total cost: $40 * 0.15 = $6, then add the tax to the total cost: $40 + $6 = $46.\n3. Add the 5% maintenance fee to the total cost: $46 * 0.05 = $2.30, then add the fee to the total cost: $46 + $2.30 = $48.30.\n4. Calculate the change Sean will receive: $50 - $48.30 = $1.70.",
+    "pred_answer_masked": "1.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the lane rental, shoe rental, and snacks: $15 + $10 + $15 = $40.\n2. Add the 15% tax to the total cost: $40 * 0.15 = $6, then add the tax to the total cost: $40 + $6 = $46.\n3. Add the 5% maintenance fee to the total cost: $40 * 0.05 = $2, then add the fee to the total cost: $46 + $2 = $48.\n4. Calculate the change Sean will receive: $50 - $48 = $2."
+  },
+  {
+    "id": 76,
+    "question": "Tara booked an escape room. The room booking costs $70, the hint package costs $50, and the souvenir photos cost $30. If the bill includes a 10% tax and 8% booking fee, how much change will Tara receive from her $200?",
+    "ground_truth": "23",
+    "generation": "1. Calculate the total cost of the booking, hint package, and souvenir photos: $70 + $50 + $30 = $150.\n2. Add the 10% tax to the total cost: $150 * 0.10 = $15, then $150 + $15 = $165.\n3. Add the 8% booking fee to the total cost: $165 * 0.08 = $13.20, then $165 + $13.20 = $178.20.\n4. Calculate the change Tara will receive: $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the booking, hint package, and souvenir photos: $70 + $50 + $30 = $150.\n2. Add the 10% tax to the total cost: $150 * 0.10 = $15, then $150 + $15 = $165.\n3. Add the 8% booking fee to the total cost: $150 * 0.08 = $12, then $165 + $12 = $177.\n4. Calculate the change Tara will receive: $200 - $177 = $23."
+  },
+  {
+    "id": 77,
+    "question": "Upton visited a water park. The cabana costs $120, the tickets cost $80, and the tube rentals cost $50. If the bill includes a 6% tax and 4% resort fee, how much change will Upton receive from his $300?",
+    "ground_truth": "25",
+    "generation": "1. The total cost of the cabana, tickets, and tube rentals is $120 + $80 + $50 = $250.\n2. The 6% tax on $250 is 0.06 * $250 = $15.\n3. The total cost including tax is $250 + $15 = $265.\n4. The 4% resort fee on $265 is 0.04 * $265 = $10.60.\n5. The total bill including tax and resort fee is $265 + $10.60 = $275.60.\n6. The change Upton will receive from his $300 is $300 - $275.60 = $24.40.",
+    "pred_answer_masked": "24.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the cabana, tickets, and tube rentals is $120 + $80 + $50 = $250.\n2. The 6% tax on $250 is 0.06 * $250 = $15.\n3. The total cost including tax is $250 + $15 = $265.\n4. The 4% resort fee on $250 is 0.04 * $250 = $10.\n5. The total bill including tax and resort fee is $265 + $10 = $275.\n6. The change Upton will receive from his $300 is $300 - $275 = $25."
+  },
+  {
+    "id": 78,
+    "question": "Vera hosted a roller skating party. The rink rental costs $150, the pizza costs $90, and the skate rentals cost $60. If the bill includes a 12% tax and 8% gratuity, how much change will Vera receive from her $400?",
+    "ground_truth": "40",
+    "generation": "1. Total cost of the party is $150 + $90 + $60 = $300.\n2. The tax is 12% of $300, which is 0.12 * $300 = $36.\n3. The total cost with tax is $300 + $36 = $336.\n4. The gratuity is 8% of $336, which is 0.08 * $336 = $26.88.\n5. The total cost with tax and gratuity is $336 + $26.88 = $362.88.\n6. The change Vera will receive is $400 - $362.88 = $37.12.",
+    "pred_answer_masked": "37.12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of the party is $150 + $90 + $60 = $300.\n2. The tax is 12% of $300, which is 0.12 * $300 = $36.\n3. The total cost with tax is $300 + $36 = $336.\n4. The gratuity is 8% of $300, which is 0.08 * $300 = $24.\n5. The total cost with tax and gratuity is $336 + $24 = $360.\n6. The change Vera will receive is $400 - $360 = $40."
+  },
+  {
+    "id": 79,
+    "question": "Wyatt went to a museum. The general admission costs $20, the special exhibit costs $25, and the audio guide costs $15. If the bill includes a 5% tax and 10% processing fee, how much change will Wyatt receive from his $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the general admission, special exhibit, and audio guide is $20 + $25 + $15 = $60.\n2. Adding the 5% tax to the total cost, we get $60 + 0.05 * $60 = $60 + $3 = $63.\n3. Adding the 10% processing fee to the total cost, we get $63 + 0.10 * $63 = $63 + $6.30 = $69.30.\n4. Subtracting the total cost from the $100 Wyatt paid, we get $100 - $69.30 = $30.70.\n\nFinal Answer: $30.70",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the general admission, special exhibit, and audio guide is $20 + $25 + $15 = $60.\n2. Adding the 5% tax to the total cost, we get $60 + 0.05 * $60 = $60 + $3 = $63.\n3. Adding the 10% processing fee to the total cost, we get $63 + 0.10 * $60 = $63 + $6 = $69.\n4. Subtracting the total cost from the $100 Wyatt paid, we get $100 - $69 = $31.\n\nFinal Answer: $31"
+  },
+  {
+    "id": 80,
+    "question": "Ximena went to a baseball game. The tickets cost $50, the hot dogs cost $40, and the merchandise costs $30. If the bill includes a 10% tax and 5% facility fee, how much change will Ximena receive from her $150?",
+    "ground_truth": "12",
+    "generation": "1. Total cost of tickets, hot dogs, and merchandise is $50 + $40 + $30 = $120.\n2. The 10% tax on $120 is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The 5% facility fee on $132 is 0.05 * $132 = $6.60.\n5. The total bill including tax and facility fee is $132 + $6.60 = $138.60.\n6. The change Ximena will receive from her $150 is $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of tickets, hot dogs, and merchandise is $50 + $40 + $30 = $120.\n2. The 10% tax on $120 is 0.1 * $120 = $12.\n3. The total cost including tax is $120 + $12 = $132.\n4. The 5% facility fee on $120 is 0.05 * $120 = $6.\n5. The total bill including tax and facility fee is $132 + $6 = $138.\n6. The change Ximena will receive from her $150 is $150 - $138 = $12."
+  },
+  {
+    "id": 81,
+    "question": "Yuri went to the bookstore. The hardcover costs $40, the paperback costs $15, and the journal costs $25. If the bill includes a 10% tax and 5% bag fee, how much change will Yuri receive from his $100?",
+    "ground_truth": "8",
+    "generation": "1. Calculate the total cost of items: $40 + $15 + $25 = $80\n2. Calculate the tax: 10% of $80 = 0.1 * $80 = $8\n3. Calculate the total cost including tax: $80 + $8 = $88\n4. Calculate the bag fee: 5% of $88 = 0.05 * $88 = $4.40\n5. Calculate the total cost including tax and bag fee: $88 + $4.40 = $92.40\n6. Calculate the change: $100 - $92.40 = $7.60",
+    "pred_answer_masked": "7.6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of items: $40 + $15 + $25 = $80\n2. Calculate the tax: 10% of $80 = 0.1 * $80 = $8\n3. Calculate the total cost including tax: $80 + $8 = $88\n4. Calculate the bag fee: 5% of $80 = 0.05 * $80 = $4\n5. Calculate the total cost including tax and bag fee: $88 + $4 = $92\n6. Calculate the change: $100 - $92 = $8"
+  },
+  {
+    "id": 82,
+    "question": "Zara bought stationery. The pens cost $20, the notebooks cost $15, and the highlighters cost $15. If the bill includes a 10% tax and 10% handling fee, how much change will Zara receive from her $100?",
+    "ground_truth": "40",
+    "generation": "1. Calculate the total cost of items: $20 + $15 + $15 = $50\n2. Add the 10% tax: $50 * 0.1 = $5, total cost with tax: $50 + $5 = $55\n3. Add the 10% handling fee: $55 * 0.1 = $5.5, total cost with tax and fee: $55 + $5.5 = $60.5\n4. Calculate the change: $100 - $60.5 = $39.5",
+    "pred_answer_masked": "39.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of items: $20 + $15 + $15 = $50\n2. Add the 10% tax: $50 * 0.1 = $5, total cost with tax: $50 + $5 = $55\n3. Add the 10% handling fee: $50 * 0.1 = $5, total cost with tax and fee: $55 + $5 = $60\n4. Calculate the change: $100 - $60 = $40"
+  },
+  {
+    "id": 83,
+    "question": "Adam bought craft supplies. The yarn costs $50, the knitting needles cost $30, and the pattern book costs $20. If the bill includes an 8% tax and 7% delivery fee, how much change will Adam receive from his $150?",
+    "ground_truth": "35",
+    "generation": "1. The total cost of the supplies is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The delivery fee is 7% of $108, which is 0.07 * $108 = $7.56.\n5. The total cost with tax and delivery fee is $108 + $7.56 = $115.56.\n6. The change Adam receives is $150 - $115.56 = $34.44.",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the supplies is $50 + $30 + $20 = $100.\n2. The tax is 8% of $100, which is 0.08 * $100 = $8.\n3. The total cost with tax is $100 + $8 = $108.\n4. The delivery fee is 7% of $100, which is 0.07 * $100 = $7.\n5. The total cost with tax and delivery fee is $108 + $7 = $115.\n6. The change Adam receives is $150 - $115 = $35."
+  },
+  {
+    "id": 84,
+    "question": "Bella bought sewing equipment. The sewing machine costs $100, the fabric costs $60, and the thread set costs $40. If the bill includes a 5% tax and 15% shipping fee, how much change will Bella receive from her $300?",
+    "ground_truth": "60",
+    "generation": "1. The total cost of the equipment is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost including tax is $200 + $10 = $210.\n4. The shipping fee is 15% of $210, which is 0.15 * $210 = $31.50.\n5. The total cost including tax and shipping is $210 + $31.50 = $241.50.\n6. The change Bella receives is $300 - $241.50 = $58.50.",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the equipment is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost including tax is $200 + $10 = $210.\n4. The shipping fee is 15% of $200, which is 0.15 * $200 = $30.\n5. The total cost including tax and shipping is $210 + $30 = $240.\n6. The change Bella receives is $300 - $240 = $60."
+  },
+  {
+    "id": 85,
+    "question": "Carter bought school supplies. The binders cost $15, the paper costs $10, and the pencils cost $15. If the bill includes a 15% tax and 5% processing fee, how much change will Carter receive from his $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the supplies is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost with tax is $40 + $6 = $46.\n4. The processing fee is 5% of $46, which is 0.05 * $46 = $2.30.\n5. The total cost with tax and processing fee is $46 + $2.30 = $48.30.\n6. The change Carter receives is $50 - $48.30 = $1.70.",
+    "pred_answer_masked": "1.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the supplies is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost with tax is $40 + $6 = $46.\n4. The processing fee is 5% of $40, which is 0.05 * $40 = $2.\n5. The total cost with tax and processing fee is $46 + $2 = $48.\n6. The change Carter receives is $50 - $48 = $2."
+  },
+  {
+    "id": 86,
+    "question": "Daisy bought scrapbooking materials. The album costs $70, the stickers cost $50, and the special paper costs $30. If the bill includes a 10% tax and 8% handling fee, how much change will Daisy receive from her $200?",
+    "ground_truth": "23",
+    "generation": "1. The total cost of the materials is $70 + $50 + $30 = $150.\n2. The 10% tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The 8% handling fee is 8% of $165, which is 0.08 * $165 = $13.20.\n5. The total cost with tax and handling fee is $165 + $13.20 = $178.20.\n6. The change Daisy receives is $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the materials is $70 + $50 + $30 = $150.\n2. The 10% tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost with tax is $150 + $15 = $165.\n4. The 8% handling fee is 8% of $150, which is 0.08 * $150 = $12.\n5. The total cost with tax and handling fee is $165 + $12 = $177.\n6. The change Daisy receives is $200 - $177 = $23."
+  },
+  {
+    "id": 87,
+    "question": "Ethan bought drafting tools. The drawing board costs $120, the markers cost $80, and the rulers cost $50. If the bill includes a 6% tax and 4% shipping fee, how much change will Ethan receive from his $300?",
+    "ground_truth": "25",
+    "generation": "1. Calculate the total cost of the items: $120 + $80 + $50 = $250\n2. Calculate the tax: 6% of $250 = 0.06 * $250 = $15\n3. Calculate the total cost including tax: $250 + $15 = $265\n4. Calculate the shipping fee: 4% of $265 = 0.04 * $265 = $10.60\n5. Calculate the total cost including tax and shipping: $265 + $10.60 = $275.60\n6. Calculate the change: $300 - $275.60 = $24.40",
+    "pred_answer_masked": "24.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the items: $120 + $80 + $50 = $250\n2. Calculate the tax: 6% of $250 = 0.06 * $250 = $15\n3. Calculate the total cost including tax: $250 + $15 = $265\n4. Calculate the shipping fee: 4% of $250 = 0.04 * $250 = $10\n5. Calculate the total cost including tax and shipping: $265 + $10 = $275\n6. Calculate the change: $300 - $275 = $25"
+  },
+  {
+    "id": 88,
+    "question": "Fiona bought painting materials. The canvas pack costs $150, the oil paints cost $90, and the easel costs $60. If the bill includes a 12% tax and 8% delivery fee, how much change will Fiona receive from her $400?",
+    "ground_truth": "40",
+    "generation": "1. Total cost of materials = $150 + $90 + $60 = $300\n2. Tax = 12% of $300 = 0.12 * $300 = $36\n3. Total cost including tax = $300 + $36 = $336\n4. Delivery fee = 8% of $336 = 0.08 * $336 = $26.88\n5. Total cost including tax and delivery fee = $336 + $26.88 = $362.88\n6. Change = $400 - $362.88 = $37.12",
+    "pred_answer_masked": "37.12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of materials = $150 + $90 + $60 = $300\n2. Tax = 12% of $300 = 0.12 * $300 = $36\n3. Total cost including tax = $300 + $36 = $336\n4. Delivery fee = 8% of $300 = 0.08 * $300 = $24\n5. Total cost including tax and delivery fee = $336 + $24 = $360\n6. Change = $400 - $360 = $40"
+  },
+  {
+    "id": 89,
+    "question": "Gavin bought origami supplies. The folding paper costs $20, the instruction book costs $25, and the bone folder costs $15. If the bill includes a 5% tax and 10% shipping fee, how much change will Gavin receive from his $100?",
+    "ground_truth": "31",
+    "generation": "1. The total cost of the supplies is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost including tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $63, which is 0.10 * $63 = $6.30.\n5. The total cost including tax and shipping is $63 + $6.30 = $69.30.\n6. The change Gavin will receive is $100 - $69.30 = $30.70.",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the supplies is $20 + $25 + $15 = $60.\n2. The tax is 5% of $60, which is 0.05 * $60 = $3.\n3. The total cost including tax is $60 + $3 = $63.\n4. The shipping fee is 10% of $60, which is 0.10 * $60 = $6.\n5. The total cost including tax and shipping is $63 + $6 = $69.\n6. The change Gavin will receive is $100 - $69 = $31."
+  },
+  {
+    "id": 90,
+    "question": "Hazel bought calligraphy tools. The ink costs $50, the nibs cost $40, and the practice pads cost $30. If the bill includes a 10% tax and 5% handling fee, how much change will Hazel receive from her $150?",
+    "ground_truth": "12",
+    "generation": "1. Total cost of tools = $50 + $40 + $30 = $120.\n2. Tax = 10% of $120 = 0.1 * $120 = $12.\n3. Handling fee = 5% of $120 = 0.05 * $120 = $6.\n4. Total bill = $120 + $12 + $6 = $138.\nFinal Answer: $12",
+    "pred_answer_masked": "12",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Total cost of tools = $50 + $40 + $30 = $120.\n2. Tax = 10% of $120 = 0.1 * $120 = $12.\n3. Handling fee = 5% of $120 = 0.05 * $120 = $6.\n4. Total bill = $120 + $12 + $6 = $138.\nFinal Answer: $12"
+  },
+  {
+    "id": 91,
+    "question": "Ian went to the grocery store. The meat costs $40, the vegetables cost $15, and the fruit costs $25. If the bill includes a 10% tax and 5% delivery fee, how much change will Ian receive from his $100?",
+    "ground_truth": "8",
+    "generation": "1. Total cost of items = $40 + $15 + $25 = $80.\n2. Tax = 10% of $80 = 0.1 * $80 = $8.\n3. Total cost with tax = $80 + $8 = $88.\n4. Delivery fee = 5% of $88 = 0.05 * $88 = $4.40.\n5. Total cost with tax and delivery fee = $88 + $4.40 = $92.40.\n6. Change = $100 - $92.40 = $7.60.",
+    "pred_answer_masked": "7.6",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of items = $40 + $15 + $25 = $80.\n2. Tax = 10% of $80 = 0.1 * $80 = $8.\n3. Total cost with tax = $80 + $8 = $88.\n4. Delivery fee = 5% of $80 = 0.05 * $80 = $4.\n5. Total cost with tax and delivery fee = $88 + $4 = $92.\n6. Change = $100 - $92 = $8."
+  },
+  {
+    "id": 92,
+    "question": "Jane went to the farmer's market. The honey costs $20, the jam costs $15, and the bread costs $15. If the bill includes a 10% tax and 10% service fee, how much change will Jane receive from her $100?",
+    "ground_truth": "40",
+    "generation": "1. The total cost of items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The service fee is also 10% of $50, which is 0.1 * $50 = $5.\n4. The total bill is $50 + $5 + $5 = $60.\nFinal Answer: $40",
+    "pred_answer_masked": "40",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. The total cost of items is $20 + $15 + $15 = $50.\n2. The tax is 10% of $50, which is 0.1 * $50 = $5.\n3. The service fee is also 10% of $50, which is 0.1 * $50 = $5.\n4. The total bill is $50 + $5 + $5 = $60.\nFinal Answer: $40"
+  },
+  {
+    "id": 93,
+    "question": "Kyle bought organic foods. The quinoa costs $50, the almond butter costs $30, and the chia seeds cost $20. If the bill includes an 8% tax and 7% handling fee, how much change will Kyle receive from his $150?",
+    "ground_truth": "35",
+    "generation": "1. Calculate the total cost of the items: $50 + $30 + $20 = $100\n2. Calculate the tax: $100 * 8% = $100 * 0.08 = $8\n3. Calculate the total cost with tax: $100 + $8 = $108\n4. Calculate the handling fee: $108 * 7% = $108 * 0.07 = $7.56\n5. Calculate the total cost with tax and handling fee: $108 + $7.56 = $115.56\n6. Calculate the change: $150 - $115.56 = $34.44",
+    "pred_answer_masked": "34.44",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the items: $50 + $30 + $20 = $100\n2. Calculate the tax: $100 * 8% = $100 * 0.08 = $8\n3. Calculate the total cost with tax: $100 + $8 = $108\n4. Calculate the handling fee: $100 * 7% = $100 * 0.07 = $7\n5. Calculate the total cost with tax and handling fee: $108 + $7 = $115\n6. Calculate the change: $150 - $115 = $35"
+  },
+  {
+    "id": 94,
+    "question": "Lily bought bulk groceries. The rice costs $100, the beans cost $60, and the canned goods cost $40. If the bill includes a 5% tax and 15% freight fee, how much change will Lily receive from her $300?",
+    "ground_truth": "60",
+    "generation": "1. Total cost of groceries is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The freight fee is 15% of $210, which is 0.15 * $210 = $31.50.\n5. The total cost with tax and freight is $210 + $31.50 = $241.50.\n6. The change is $300 - $241.50 = $58.50.",
+    "pred_answer_masked": "58.5",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of groceries is $100 + $60 + $40 = $200.\n2. The tax is 5% of $200, which is 0.05 * $200 = $10.\n3. The total cost with tax is $200 + $10 = $210.\n4. The freight fee is 15% of $200, which is 0.15 * $200 = $30.\n5. The total cost with tax and freight is $210 + $30 = $240.\n6. The change is $300 - $240 = $60."
+  },
+  {
+    "id": 95,
+    "question": "Mason bought snacks. The chips cost $15, the pretzels cost $10, and the dips cost $15. If the bill includes a 15% tax and 5% bag fee, how much change will Mason receive from his $50?",
+    "ground_truth": "2",
+    "generation": "1. The total cost of the snacks is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost with tax is $40 + $6 = $46.\n4. The bag fee is 5% of $46, which is 0.05 * $46 = $2.30.\n5. The total cost with tax and bag fee is $46 + $2.30 = $48.30.\n6. The change Mason will receive is $50 - $48.30 = $1.70.",
+    "pred_answer_masked": "1.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of the snacks is $15 + $10 + $15 = $40.\n2. The tax is 15% of $40, which is 0.15 * $40 = $6.\n3. The total cost with tax is $40 + $6 = $46.\n4. The bag fee is 5% of $40, which is 0.05 * $40 = $2.\n5. The total cost with tax and bag fee is $46 + $2 = $48.\n6. The change Mason will receive is $50 - $48 = $2."
+  },
+  {
+    "id": 96,
+    "question": "Nora bought seafood at the market. The salmon costs $70, the shrimp costs $50, and the scallops cost $30. If the bill includes a 10% tax and 8% processing fee, how much change will Nora receive from her $200?",
+    "ground_truth": "23",
+    "generation": "1. The total cost of seafood is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost including tax is $150 + $15 = $165.\n4. The processing fee is 8% of $165, which is 0.08 * $165 = $13.20.\n5. The total cost including tax and processing fee is $165 + $13.20 = $178.20.\n6. The change Nora receives is $200 - $178.20 = $21.80.",
+    "pred_answer_masked": "21.8",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. The total cost of seafood is $70 + $50 + $30 = $150.\n2. The tax is 10% of $150, which is 0.1 * $150 = $15.\n3. The total cost including tax is $150 + $15 = $165.\n4. The processing fee is 8% of $150, which is 0.08 * $150 = $12.\n5. The total cost including tax and processing fee is $165 + $12 = $177.\n6. The change Nora receives is $200 - $177 = $23."
+  },
+  {
+    "id": 97,
+    "question": "Oscar bought specialty cheeses. The brie costs $120, the gouda costs $80, and the crackers cost $50. If the bill includes a 6% tax and 4% shipping fee, how much change will Oscar receive from his $300?",
+    "ground_truth": "25",
+    "generation": "1. Calculate the total cost of the cheeses and crackers: $120 + $80 + $50 = $250.\n2. Calculate the tax: 6% of $250 = 0.06 * $250 = $15.\n3. Calculate the shipping fee: 4% of $250 = 0.04 * $250 = $10.\n4. Calculate the total bill: $250 + $15 + $10 = $275.\nFinal Answer: $25.",
+    "pred_answer_masked": "25",
+    "is_correct_masked": true,
+    "corrected_reasoning": "1. Calculate the total cost of the cheeses and crackers: $120 + $80 + $50 = $250.\n2. Calculate the tax: 6% of $250 = 0.06 * $250 = $15.\n3. Calculate the shipping fee: 4% of $250 = 0.04 * $250 = $10.\n4. Calculate the total bill: $250 + $15 + $10 = $275.\nFinal Answer: $25."
+  },
+  {
+    "id": 98,
+    "question": "Penelope bought wine and spirits. The champagne costs $150, the red wine costs $90, and the spirits cost $60. If the bill includes a 12% tax and 8% handling fee, how much change will Penelope receive from her $400?",
+    "ground_truth": "40",
+    "generation": "1. Calculate the total cost of the items: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 = 0.12 * $300 = $36.\n3. Calculate the total cost including tax: $300 + $36 = $336.\n4. Calculate the handling fee: 8% of $336 = 0.08 * $336 = $26.88.\n5. Calculate the total bill: $336 + $26.88 = $362.88.\n6. Calculate the change: $400 - $362.88 = $37.12.",
+    "pred_answer_masked": "37.12",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Calculate the total cost of the items: $150 + $90 + $60 = $300.\n2. Calculate the tax: 12% of $300 = 0.12 * $300 = $36.\n3. Calculate the total cost including tax: $300 + $36 = $336.\n4. Calculate the handling fee: 8% of $300 = 0.08 * $300 = $24.\n5. Calculate the total bill: $336 + $24 = $360.\n6. Calculate the change: $400 - $360 = $40."
+  },
+  {
+    "id": 99,
+    "question": "Quinn bought baking ingredients. The flour costs $20, the sugar costs $25, and the vanilla extract costs $15. If the bill includes a 5% tax and 10% delivery fee, how much change will Quinn receive from her $100?",
+    "ground_truth": "31",
+    "generation": "1. Total cost of ingredients is $20 + $25 + $15 = $60.\n2. 5% tax on $60 is 0.05 * $60 = $3.\n3. Total cost with tax is $60 + $3 = $63.\n4. 10% delivery fee on $63 is 0.10 * $63 = $6.30.\n5. Total cost with tax and delivery fee is $63 + $6.30 = $69.30.\n6. Change from $100 is $100 - $69.30 = $30.70.\n\nFinal Answer: $30.70",
+    "pred_answer_masked": "30.7",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of ingredients is $20 + $25 + $15 = $60.\n2. 5% tax on $60 is 0.05 * $60 = $3.\n3. Total cost with tax is $60 + $3 = $63.\n4. 10% delivery fee on $60 is 0.10 * $60 = $6.\n5. Total cost with tax and delivery fee is $63 + $6 = $69.\n6. Change from $100 is $100 - $69 = $31.\n\nFinal Answer: $31"
+  },
+  {
+    "id": 100,
+    "question": "Riley bought frozen foods. The pizza costs $50, the ice cream costs $40, and the frozen veggies cost $30. If the bill includes a 10% tax and 5% insulated packaging fee, how much change will Riley receive from his $150?",
+    "ground_truth": "12",
+    "generation": "1. Total cost of items = $50 + $40 + $30 = $120.\n2. Tax = 10% of $120 = 0.1 * $120 = $12.\n3. Total cost including tax = $120 + $12 = $132.\n4. Insulated packaging fee = 5% of $132 = 0.05 * $132 = $6.60.\n5. Total cost including tax and fee = $132 + $6.60 = $138.60.\n6. Change = $150 - $138.60 = $11.40.",
+    "pred_answer_masked": "11.4",
+    "is_correct_masked": false,
+    "corrected_reasoning": "1. Total cost of items = $50 + $40 + $30 = $120.\n2. Tax = 10% of $120 = 0.1 * $120 = $12.\n3. Total cost including tax = $120 + $12 = $132.\n4. Insulated packaging fee = 5% of $120 = 0.05 * $120 = $6.\n5. Total cost including tax and fee = $132 + $6 = $138.\n6. Change = $150 - $138 = $12."
+  }
+]
