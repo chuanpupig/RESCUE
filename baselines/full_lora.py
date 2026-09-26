@@ -1,18 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""Full-LoRA supervised repair baseline for the Qwen3-8B repair set.
 
-This baseline fits the corrected reasoning targets directly with LoRA adapters
-on all transformer projection matrices, then evaluates both repair accuracy and
-clean accuracy after every epoch.  The default split is flat:
-
-  train: first 150 rows from gsm8k_qwen_repair.json
-  eval:  next 50 rows from gsm8k_qwen_repair.json
-
-The default is a pure repair SFT baseline, with clean protection disabled, so
-clean-accuracy degradation is visible.  Add --clean-protection to train a
-regularized variant using clean NLL replay.
-"""
 
 import argparse
 import json

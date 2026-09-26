@@ -19,9 +19,6 @@ from transformers import (
     set_seed,
 )
 
-# ============================================================
-# Utils
-# ============================================================
 
 def set_random_seed(seed: int = 42):
     random.seed(seed)
@@ -90,11 +87,7 @@ def _last_number(text: str) -> str:
 
 
 def parse_final_answer_strict(text: str) -> str:
-    """Extract answer only from explicit Final Answer / GSM8K #### markers.
 
-    Do not fallback to the last number in the whole generation; otherwise
-    incomplete generations like "... first 4 hours" get wrongly parsed as 4.
-    """
     text = (text or "").strip()
     if not text:
         return ""
@@ -123,7 +116,7 @@ def clean_generation_for_scoring(text: str) -> str:
     for tok in ["<|im_end|>", "<|endoftext|>", "</s>"]:
         s = s.replace(tok, "")
 
-    # Do NOT stop at "\n###". Qwen often uses ### Step 1 / ### Final Answer.
+
     stop_markers = [
         "\nQuestion:", "\nHuman:", "\nComment:",
         "\nInstruction:", "\nUser:", "\nAssistant:", "\n[INST]",
@@ -147,18 +140,12 @@ def get_qwen_eos_ids(tokenizer):
 
 
 def disable_generation_max_length_warning(model):
-    """Clear model.generation_config.max_length so max_new_tokens alone controls generation."""
+
     gen_cfg = getattr(model, "generation_config", None)
     if gen_cfg is not None and hasattr(gen_cfg, "max_length"):
         gen_cfg.max_length = None
     return model
 
-
-# ============================================================
-# RESCUE-style Mask Wrappers
-#   - hard binary forward
-#   - soft gradient backward (STE)
-# ============================================================
 
 class AblatedLinear(nn.Module):
     enabled = True
@@ -176,7 +163,7 @@ class AblatedLinear(nn.Module):
         device = original_layer.weight.device
         self.init_value = init_value
 
-        # logits in float32 for stability
+
         self.logits = nn.Parameter(
             torch.ones(out_features, device=device, dtype=torch.float32) * init_value
         )
@@ -213,13 +200,13 @@ class AblatedLinear(nn.Module):
 
 
 def save_all_masks(model, path: str):
-    """Save neuron-mask logits keyed by MLP projection module name."""
+
     torch.save(AblatedLinear.save_masks(model), path)
     print(f"[Save] neuron masks -> {path}")
 
 
 def configure_ste(temperature: float = 1.0, init_value: float = 0.2):
-    """Configure the only supported training mode: hard forward, STE backward."""
+
     if temperature <= 0:
         raise ValueError("mask temperature must be > 0")
     AblatedLinear.mask_temperature = temperature
@@ -231,14 +218,7 @@ def set_mask_probe_offset(offset: float):
 
 
 def effective_mask_prob(logits: torch.Tensor) -> torch.Tensor:
-    """
-    Identity-centered soft closure.
 
-    At logits == init_value, forward mask is exactly 1.0. Decreasing logits
-    produces a continuous closure in [0, 1], so mask moves from 1 toward 0.
-    The straight-through clamp keeps useful gradients at the initial boundary
-    without applying a diffuse 0.98-style attenuation to every neuron.
-    """
     delta = (
         AblatedLinear.mask_init_value
         - logits
@@ -250,12 +230,8 @@ def effective_mask_prob(logits: torch.Tensor) -> torch.Tensor:
     return 1.0 - close
 
 
-# ============================================================
-# Patch model
-# ============================================================
-
 def patch_model(model):
-    """Wrap only MLP projection rows; attention modules are never modified."""
+
     mlp_targets = ("gate_proj", "up_proj", "down_proj")
     mask_params = []
     for name, module in list(model.named_modules()):
@@ -269,17 +245,8 @@ def patch_model(model):
     return mask_params
 
 
-# ============================================================
-# Prompt / Target
-# ============================================================
-
 def build_prompt(question: str, tokenizer) -> str:
-    """Qwen3-8B no-thinking chat prompt.
 
-    Keep instructions in the system message and the actual problem only in the
-    user message. The old version duplicated the question in both places, which
-    makes the prompt longer and can worsen Qwen-style verbosity.
-    """
     system_prompt = (
         "Solve the following grade-school math problem.\n"
         "Use concise reasoning. Do not write an introduction. Do not use Markdown headings.\n"
@@ -331,9 +298,7 @@ def build_target(corrected_reasoning: str, ground_truth: Optional[str] = None) -
     text = re.sub(r"\n{3,}", "\n", text)
     target = "Reasoning: " + text if not text.startswith("Reasoning:") else text
 
-    # The prompt and evaluator require an explicit final-answer line. Some
-    # repair datasets only store the corrected reasoning steps and keep the
-    # answer in ground_truth/answer, which otherwise teaches no-final outputs.
+
     gt = normalize_text(ground_truth)
     final = parse_final_answer_strict(target) or gt
     target = re.sub(r"\n?\s*Final\s+answer\s*[:：].*$", "", target, flags=re.IGNORECASE | re.DOTALL).rstrip()
@@ -341,10 +306,6 @@ def build_target(corrected_reasoning: str, ground_truth: Optional[str] = None) -
         target = target.rstrip() + f"\nFinal Answer: {final}"
     return target
 
-
-# ============================================================
-# Dataset
-# ============================================================
 
 class RESCUERepairDataset(Dataset):
     def __init__(
@@ -458,11 +419,7 @@ class RESCUERepairDataset(Dataset):
 
 
 def select_clean_target(item: Dict[str, Any]) -> str:
-    """Pick a clean target response for teacher-KL preservation.
 
-    Prefer a full response generated by the base model. If only an answer is
-    available, fall back to a compact final-answer target.
-    """
     response = normalize_text(safe_get(item, [
         "clean_response",
         "model_response",
@@ -543,15 +500,8 @@ class SimpleCollator:
         return batch
 
 
-# ============================================================
-# Loss helpers
-# ============================================================
-
 def token_nll_loss(logits: torch.Tensor, labels: torch.Tensor, loss_weights: Optional[torch.Tensor] = None) -> torch.Tensor:
-    """
-    This is the faithfulness term instantiated with corrected target behavior.
-    It is equivalent to one-hot teacher KL / NLL.
-    """
+
     shift_logits = logits[:, :-1, :].contiguous()
     shift_labels = labels[:, 1:].contiguous()
 
@@ -583,11 +533,7 @@ def token_kl_loss(
     labels: torch.Tensor,
     temperature: float = 1.0,
 ) -> torch.Tensor:
-    """
-    KL(base unmasked model || masked model) on target tokens only.
-    This is the preservation term: clean behavior should stay close to the
-    original model while repair examples can still move.
-    """
+
     shift_student = student_logits[:, :-1, :].float().contiguous() / temperature
     shift_teacher = teacher_logits[:, :-1, :].float().contiguous() / temperature
     shift_labels = labels[:, 1:].contiguous()
@@ -600,10 +546,6 @@ def token_kl_loss(
     denom = valid.sum().clamp_min(1)
     return kl.sum() / denom * (temperature ** 2)
 
-
-# ============================================================
-# Trainer
-# ============================================================
 
 class RESCUERepairTrainer(Trainer):
     def __init__(
@@ -999,10 +941,10 @@ class RESCUERepairTrainer(Trainer):
         )
         logits = outputs.logits
 
-        # faithfulness: fit corrected target behavior
+
         loss_faithfulness = token_nll_loss(logits, inputs["labels"], inputs.get("loss_weights"))
 
-        # light sparsity
+
         loss_sparse_mlp = self._compute_sparsity_loss()
         loss_clean_kl = torch.tensor(0.0, device=device)
         loss_clean_nll = torch.tensor(0.0, device=device)
@@ -1099,10 +1041,6 @@ class RESCUERepairTrainer(Trainer):
         return metrics
 
 
-# ============================================================
-# Generation sanity check
-# ============================================================
-
 @torch.no_grad()
 def generate_examples(
     model,
@@ -1189,10 +1127,6 @@ def generate_examples(
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     print(f"[Generation] saved to {output_file}")
 
-
-# ============================================================
-# Main
-# ============================================================
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Discover an MLP-neuron repair circuit with STE masks.")

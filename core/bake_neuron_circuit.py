@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bake an exact binary MLP-neuron mask into a Hugging Face causal LM."""
+
 
 import argparse
 import json
@@ -13,7 +13,7 @@ MLP_PROJECTIONS = ("gate_proj", "up_proj", "down_proj")
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description='Bake an exact binary MLP-neuron mask into a Hugging Face causal LM.')
     parser.add_argument("--base-model", required=True)
     parser.add_argument("--binary-mask-path", required=True)
     parser.add_argument("--output-dir", required=True)

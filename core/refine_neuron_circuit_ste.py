@@ -17,10 +17,6 @@ import matplotlib.pyplot as plt
 from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
 
 
-# ============================================================
-# Utils
-# ============================================================
-
 def set_random_seed(seed: int = 42):
     random.seed(seed)
     np.random.seed(seed)
@@ -62,7 +58,7 @@ _NUMBER_RE = re.compile(r"-?\$?\d[\d,]*(?:\.\d+)?")
 
 
 def normalize_answer_str(x: str) -> str:
-    """Normalize numeric answers for reward comparison."""
+
     x = normalize_text(x)
     if not x:
         return ""
@@ -88,7 +84,7 @@ def strip_think_blocks(text: str) -> str:
 
 
 def clean_generation_for_scoring(text: str) -> str:
-    """Use the same generation cleanup contract as hard SFT evaluation."""
+
     text = str(text or "")
     text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r"</?think>", "", text, flags=re.IGNORECASE)
@@ -121,21 +117,12 @@ def _last_number(text: str) -> str:
 
 
 def truncate_after_final_answer_for_display(text: str) -> str:
-    """Clean repeated completions for judge/display without changing token ids used by RL loss.
 
-    Qwen sometimes emits a bogus leading line like `Final answer: 10`, then solves,
-    then emits the real `Final answer: 73`, and starts repeating.  We remove only
-    that leading artifact and keep the first final-answer line after the solution.
-    """
     text = strip_think_blocks(normalize_text(text))
     if not text:
         return ""
 
-    # Remove a short leading bogus final-answer line if it is immediately followed
-    # by a step-by-step solution. This fixes cases like:
-    #   Final answer: 10
 
-    #   Step by step... real solution ... Final answer: 73
     text = re.sub(
         r"^\s*Final\s+answer\s*[:：]\s*[^\n]+\n+\s*(?:Step\s+by\s+step\.?)\s*",
         "Step by step.\n\n",
@@ -150,7 +137,7 @@ def truncate_after_final_answer_for_display(text: str) -> str:
 
 
 def extract_final_answer(text: str) -> str:
-    """Strict SFT-aligned extraction: require Final Answer or GSM8K ####."""
+
     text = clean_generation_for_scoring(text)
     if not text:
         return ""
@@ -204,25 +191,15 @@ def resolve_first_existing_path(paths: List[Optional[str]]) -> Optional[str]:
 
 
 def disable_generation_max_length_warning(model):
-    """Avoid the Transformers warning caused by Qwen3.5 generation_config.max_length.
 
-    Some new Qwen checkpoints ship with generation_config.max_length=4096.
-    When we also pass max_new_tokens to generate(), Transformers warns that both
-    max_length and max_new_tokens are set. We only want max_new_tokens to control
-    decoding length, so clear max_length once after loading the model.
-    """
     gen_cfg = getattr(model, "generation_config", None)
     if gen_cfg is not None and hasattr(gen_cfg, "max_length"):
         gen_cfg.max_length = None
     return model
 
 
-# ============================================================
-# Chat prompt / template
-# ============================================================
-
 def build_chat_prompt(question: str, tokenizer) -> str:
-    """Exactly match the hard SFT prompt contract."""
+
     system_prompt = (
         "Solve the following grade-school math problem.\n"
         "Use concise reasoning. Do not write an introduction. Do not use Markdown headings.\n"
@@ -257,10 +234,6 @@ def build_chat_prompt(question: str, tokenizer) -> str:
         f"{question.strip()} [/INST]"
     )
 
-
-# ============================================================
-# RESCUE-style mask wrappers
-# ============================================================
 
 class AblatedLinear(nn.Module):
     enabled = True
@@ -346,7 +319,7 @@ def save_binary_masks(model, path: str):
 
 
 def configure_ste(temperature=1.0, init_value=0.2, hard_threshold=0.5, max_delete_ratio=1.0):
-    """Configure hard-forward neuron masks with straight-through gradients."""
+
     if temperature <= 0:
         raise ValueError("mask temperature must be > 0")
     if not 0.0 < hard_threshold < 1.0:
@@ -364,7 +337,7 @@ def set_mask_probe_offset(offset: float):
 
 
 def get_delete_ratio_for_epoch(epoch: int, schedule: List[float], final_ratio: float) -> float:
-    """Return the deletion budget for a 1-indexed epoch."""
+
     if epoch <= 0:
         return float(schedule[0] if schedule else final_ratio)
     if epoch <= len(schedule):
@@ -385,7 +358,7 @@ def effective_mask_prob(logits: torch.Tensor) -> torch.Tensor:
 
 
 def patch_model(model):
-    """Wrap only MLP projection neurons; attention heads are untouched."""
+
     targets = ("gate_proj", "up_proj", "down_proj")
     params = []
     for name, module in list(model.named_modules()):
@@ -419,10 +392,6 @@ def compute_anchor_loss(mask_params, refs, anchor_mode="init"):
             loss = loss + F.mse_loss(p, r.to(p.device, dtype=torch.float32))
     return loss
 
-
-# ============================================================
-# RL data
-# ============================================================
 
 @dataclass
 class RLItem:
@@ -492,7 +461,7 @@ def compute_repair_replay_nll(model, tokenizer, items: List[RLItem],
 
 
 def compare_current_binary_mask(model, expected_state):
-    """Verify that logits reproduce the companion hard-SFT binary mask."""
+
     mismatched, compared, modules = 0, 0, 0
     for name, module in model.named_modules():
         if not isinstance(module, AblatedLinear) or name not in expected_state:
@@ -552,9 +521,8 @@ def build_clean_items(data_list: List[Dict[str, Any]]) -> List[CleanItem]:
     return items
 
 
-# ============================================================
     print("RL mask refinement v4: anchor + graded answer/reasoning reward + train/eval separated curves")
-# ============================================================
+
 
 class ReasoningJudge:
     def __init__(self, model_path: str, torch_dtype=torch.bfloat16,
@@ -657,9 +625,6 @@ class ReasoningJudge:
             del enc, out
         return results
 
-# ============================================================
-# Rollout generation / rewards
-# ============================================================
 
 @torch.no_grad()
 def sample_group_rollouts(model, tokenizer, items: List[RLItem], group_size: int,
@@ -724,10 +689,6 @@ def assign_rewards_to_groups(groups: List[Dict[str, Any]], judge: ReasoningJudge
             rollout["judge_raw"] = judge_outputs[idx].get("judge_raw", "")
             idx += 1
 
-
-# ============================================================
-# Scoring sampled rollouts
-# ============================================================
 
 def build_scoring_batch_from_rollouts(groups: List[Dict[str, Any]], pad_token_id: int, max_total_len: int = 768):
     flat_rollouts, advantages, meta = [], [], []
@@ -912,7 +873,7 @@ def project_grads_against_clean(
         norm = cur_norm if norm is None else norm + cur_norm
     if dot is None or norm is None or norm.item() <= eps:
         return repair_grads, 0.0
-    # PCGrad projects only when repair and clean gradients conflict.
+
     if dot.item() >= 0.0:
         return repair_grads, 0.0
     coef = dot / norm.clamp_min(eps)
@@ -1035,10 +996,6 @@ def compute_sensitivity_regularizer(mask_params, repair_ema, clean_ema,
         loss = loss + max_closure_weight * F.relu(closure - max_soft_closure).pow(2).mean()
     return loss / max(len(mask_params), 1)
 
-
-# ============================================================
-# Regularization / stats / plotting
-# ============================================================
 
 def compute_sparsity_loss(neuron_mask_params, device):
     if not neuron_mask_params:
@@ -1266,9 +1223,6 @@ def plot_curves(output_dir: str, epoch_logs: List[Dict[str, Any]]):
     plot_single_curve(output_dir, epochs, [x["mlp_changed_gt_005"] for x in epoch_logs], "MLP neurons closure > 0.05", "count", "curve_mlp_changed_gt_005.png")
     plot_single_curve(output_dir, epochs, [x["mlp_changed_gt_010"] for x in epoch_logs], "MLP neurons closure > 0.10", "count", "curve_mlp_changed_gt_010.png")
 
-# ============================================================
-# Eval
-# ============================================================
 
 @torch.no_grad()
 def evaluate_groups(model, tokenizer, judge, eval_items: List[RLItem], group_size: int,
@@ -1298,7 +1252,7 @@ def evaluate_groups(model, tokenizer, judge, eval_items: List[RLItem], group_siz
 def evaluate_repair_accuracy(model, tokenizer, repair_items: List[RLItem],
                              max_prompt_len: int, max_new_tokens: int,
                              batch_size: int = 4):
-    """Deterministic repair evaluation using the exact hard-SFT contract."""
+
     if not repair_items:
         return {
             "repair_generation_acc": 0.0,
@@ -1411,10 +1365,6 @@ def make_json_serializable_groups(groups):
     return cleaned
 
 
-# ============================================================
-# Main
-# ============================================================
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Refine an MLP-neuron circuit using STE masks.")
     parser.add_argument("--model-path", required=True)
@@ -1461,7 +1411,7 @@ def main():
     SPARSITY_WEIGHT_MLP_COMPRESS = 0.01
     SPARSITY_WARMUP_STAGES = 2
     ANCHOR_WEIGHT = 0.03
-    ANCHOR_MODE = "init"  # init | logit
+    ANCHOR_MODE = "init"  
     CLEAN_KL_WEIGHT = 0.0
     CLEAN_NLL_WEIGHT = 1.0
     CLEAN_KL_TEMPERATURE = 1.0
@@ -1478,15 +1428,13 @@ def main():
     MASK_TEMPERATURE = 1.0
     SFT_INIT_HARD_THRESHOLD = 0.95
     SFT_INIT_MAX_DELETE_RATIO = 0.03
-    # Reconstruct the SFT mask with its original threshold, then search with a
-    # slightly higher threshold so STE can expose a small hard circuit before
-    # millions of logits have to move a large distance.
+
+
     SEARCH_HARD_THRESHOLD = min(SFT_INIT_HARD_THRESHOLD + 0.01, 0.99)
     DELETE_RATIO_SCHEDULE = [0.030, 0.020, 0.015, 0.010, 0.008, 0.005]
     MAX_DELETE_RATIO = DELETE_RATIO_SCHEDULE[-1]
-    # Search first, compress later. The loaded SFT mask is allowed to start
-    # below 90%; deletion-budget compression begins only after repair reaches
-    # the target. Once reached, a small accuracy drop is tolerated.
+
+
     MIN_INIT_REPAIR_ACC = 0.0
     REPAIR_TARGET_BEFORE_COMPRESSION = 0.90
     REPAIR_ACC_TOLERANCE_AFTER_TARGET = 0.05
@@ -1494,7 +1442,7 @@ def main():
     SEARCH_CLEAN_TEMP_TOLERANCE = 0.06
     SEARCH_MIN_REPAIR_IMPROVEMENT = 0.02
     USE_SENSITIVITY_REGULARIZER = False
-    SENSITIVITY_PROBE_OFFSET = 0.10  # probe mask is about 0.95 at init
+    SENSITIVITY_PROBE_OFFSET = 0.10
     SENSITIVITY_EMA_BETA = 0.95
     REPAIR_CLOSE_WEIGHT = 0.03
     CLEAN_OPEN_WEIGHT = 0.35
@@ -2027,8 +1975,7 @@ def main():
             step_logs.append(step_row)
             append_jsonl(step_log_path, step_row)
 
-        # Evaluation loads generation KV caches for both the repair model and
-        # the judge. Release the final training-step graphs before that phase.
+
         del clean_loss
         gc.collect()
         if torch.cuda.is_available():

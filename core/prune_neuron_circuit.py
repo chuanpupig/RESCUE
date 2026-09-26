@@ -12,10 +12,6 @@ import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
-# ============================================================
-# Config
-# ============================================================
-
 MODEL_PATH = None
 REPAIR_DATA_PATH = None
 CLEAN_DATA_PATH = None
@@ -42,24 +38,19 @@ PRUNE_CLEAN_SAMPLES = 100
 REPAIR_EVAL_BATCH_SIZE = 32
 CLEAN_EVAL_BATCH_SIZE = 32
 
-# Floors are measured from the loaded RL mask.  Keep them at 0.0 tolerance
-# when you require no repair/clean regression.
+
 REPAIR_ACC_TOLERANCE = 0.0
 CLEAN_ACC_TOLERANCE = 0.0
 
-# Post-pruning.
+
 PRUNE_CHUNK_SIZES = [256, 128, 64, 32]
 PRUNE_MAX_TRIALS_PER_PASS = 100000
 PRUNE_SAVE_EVERY_ACCEPT = True
 
-# Logits used to encode exact binary masks for pruning/eval.
+
 KEEP_LOGIT = MASK_INIT_VALUE + 20.0
 CLOSE_LOGIT = MASK_INIT_VALUE - 20.0
 
-
-# ============================================================
-# Base import / IO
-# ============================================================
 
 def load_base_module(path: str):
     if not os.path.exists(path):
@@ -117,10 +108,6 @@ def set_seed(seed: int = 42):
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
 
-
-# ============================================================
-# Mask helpers
-# ============================================================
 
 def load_logits_masks_if_available(model, path: Optional[str]) -> int:
     if not path or not os.path.exists(path):
@@ -202,7 +189,7 @@ def binary_state_from_paths_or_logits(model, logits_path: Optional[str], binary_
 
 
 def collect_deleted_candidates(model, binary_state: Dict[str, torch.Tensor]) -> List[Tuple[str, int, float]]:
-    """Return deleted neurons sorted from weakest closure to strongest closure."""
+
     candidates = []
     for name, module in model.named_modules():
         if not isinstance(module, base.AblatedLinear) or name not in binary_state:
@@ -266,10 +253,6 @@ def candidate_closure_stats(model, candidate_train_mask: Dict[str, torch.Tensor]
         "closure_max": float(x.max().item()),
     }
 
-
-# ============================================================
-# Evaluation helpers
-# ============================================================
 
 @torch.no_grad()
 def evaluate_repair_answer_acc(model, tokenizer, items, max_prompt_len: int, max_new_tokens: int,
@@ -424,10 +407,6 @@ def evaluate_current(model, tokenizer, repair_eval_items, clean_eval_items, outp
     )
     return {**repair_metrics, **clean_metrics}
 
-
-# ============================================================
-# Post-prune / soft-refine
-# ============================================================
 
 def run_prune(model, tokenizer, init_state, candidates, repair_eval_items, clean_eval_items,
               repair_floor: float, clean_floor: float):
@@ -651,8 +630,7 @@ def main():
         f"repair={init_metrics['repair_acc']:.4f}, clean={init_metrics['clean_eval_acc']:.4f}"
     )
 
-    # Candidates are ranked before exact binary re-encoding, so logits-based
-    # closure strength is preserved when an init logits mask is available.
+
     write_json(os.path.join(OUTPUT_DIR, "deleted_candidates_ranked.json"), [
         {"name": n, "index": i, "closure": s} for n, i, s in candidates
     ])

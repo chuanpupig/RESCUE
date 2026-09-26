@@ -1,14 +1,5 @@
 #!/usr/bin/env python3
-"""Inspect an MLP mask and generate exact-size random binary baselines.
 
-The repository uses keep-mask semantics:
-  1 = keep the masked output channel
-  0 = delete/close the masked output channel
-
-By default, only Qwen MLP projection masks ending in gate_proj, up_proj, or
-down_proj are written to the generated files. This is sufficient for the
-existing MLP-only refinement/evaluation scripts.
-"""
 
 import argparse
 import json

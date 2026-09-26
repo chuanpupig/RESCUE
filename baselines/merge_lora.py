@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""Merge a PEFT LoRA adapter into Qwen3-8B and save a standalone model."""
+
 
 import argparse
 import os

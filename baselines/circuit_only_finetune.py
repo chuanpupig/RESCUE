@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""Safety Circuit Tuning (SaCirT) for Qwen3-8B repair.
 
-This script loads a located circuit mask, freezes the rest of the model, and
-fine-tunes only the rows selected by the circuit.  It is the circuit-only
-counterpart to lora_full_repair_mixed_baseline_qwen3_8b.py.
-"""
 
 import argparse
 import json
@@ -23,25 +17,21 @@ import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
 
 
-# =============================================================================
-# Server paths - edit these explicit paths directly.
-# =============================================================================
-# Dataset sizes. REPAIR train + eval must not exceed rows in REPAIR_DATA_PATH.
 TRAIN_REPAIR_SAMPLES = 150
 EVAL_REPAIR_SAMPLES = 50
 TRAIN_CLEAN_SAMPLES = 100
 EVAL_CLEAN_SAMPLES = 100
 
-# 80GB GPU defaults. If memory is still comfortable, try TRAIN_MICRO_BATCH_SIZE=8.
+
 TRAIN_MICRO_BATCH_SIZE = 4
 EVAL_BATCH_SIZE = 16
 
-# Match the successful LoRA baseline first: pure repair SFT, clean only for eval.
+
 CLEAN_PROTECTION_DEFAULT = False
 NUM_EPOCHS_DEFAULT = 10
 LEARNING_RATE_DEFAULT = 2e-4
 
-# Set this to 1.0 for exactly LoRA-style unweighted SFT loss.
+
 FINAL_ANSWER_WEIGHT = 3.0
 
 
@@ -67,7 +57,7 @@ class CleanItem:
 
 
 class RowSubsetLinear(nn.Module):
-    """Frozen Linear plus trainable deltas on selected output rows only."""
+
 
     def __init__(self, original_layer: nn.Linear, active_indices: torch.Tensor, train_bias: bool = True):
         super().__init__()
@@ -640,7 +630,7 @@ def effective_soft_mask(logits: torch.Tensor, init_value: float, temperature: fl
 
 
 def hard_mask_from_soft(mask_soft: torch.Tensor, hard_threshold: float, max_delete_ratio: float) -> torch.Tensor:
-    """Match the hard SFT/RL scripts: 1 means keep, 0 means closed circuit."""
+
     candidate_close = mask_soft <= hard_threshold
     max_delete = int(mask_soft.numel() * max(0.0, min(1.0, max_delete_ratio)))
     if max_delete <= 0:
