@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+wandb/
+checkpoints/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
